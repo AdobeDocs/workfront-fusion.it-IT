@@ -4,9 +4,9 @@ description: Con i moduli di Adobe Photoshop, puoi avviare uno scenario Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 371adb5a5558674ecb8aa38b503b8a958c9fc5f5
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3714'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
               <p>Immettere la password per il file.</p>
             </li>
             <li value="5">
-              <p>Fai clic su <b>Salva</b> per estrarre il file e tornare alla [!UICONTROL ]configurazione della connessione.</p>
+              <p>Fai clic su <b>Salva</b> per estrarre il file e tornare alla configurazione della connessione.</p>
             </li>
           </ol>
         </td>
