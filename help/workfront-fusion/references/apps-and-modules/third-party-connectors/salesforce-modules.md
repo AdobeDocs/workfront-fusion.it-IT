@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2604'
 ht-degree: 0%
 
 ---
@@ -234,6 +234,7 @@ Questo modulo trigger avvia uno scenario quando un campo viene aggiornato in [!D
 * [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [Carica file](#upload-file)
 
 #### [!UICONTROL Create a Record]
 
@@ -498,6 +499,41 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
  </tbody> 
 </table>
+
+#### Carica file
+
+Questo modulo di azione carica un singolo file in Salesforce.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL  Adobe Workfront Fusion] - Istruzioni di base</a></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td>Seleziona se applicare un collegamento al documento di contenuto.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL linkedEntityId]</td> 
+   <td>Se si utilizza il collegamento di documenti, immettere o mappare l'ID dell'oggetto collegato.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ShareType]</td> 
+   <td>Se si utilizza il collegamento di documenti, selezionare le autorizzazioni per il file.<ul><li><b>Autorizzazione visualizzatore</b><p>L’utente può visualizzare il file.</p></li><li><b>Autorizzazione collaboratore</b><p>L’utente può visualizzare e modificare il file.</p></li><li><b>Autorizzazioni dedotte</b><p>Le autorizzazioni si basano sulle autorizzazioni dell'utente per il record correlato, ad esempio una libreria.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Visibility]</td> 
+   <td>Se si utilizza il collegamento del documento, immettere o mappare la visibilità del documento.<ul><li><b>AllUsers</b><p>Disponibile per tutti gli utenti con autorizzazioni</p></li><li><b>InternalUsers</b><p>Disponibile per gli utenti interni con autorizzazioni.</p></li><li><b>SharedUsers</b><p>Disponibile per gli utenti che possono visualizzare il feed in cui è pubblicato il file.</p></li></ul></td> 
+  </tr>
 
 ### Ricerche
 
