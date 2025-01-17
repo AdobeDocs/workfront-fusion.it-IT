@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 4e45e691ed453cec5af1fa7b52204031af83f869
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1881'
 ht-degree: 1%
 
 ---
@@ -15,50 +15,54 @@ ht-degree: 1%
 
 In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Jira Software] e collegarlo a più applicazioni e servizi di terze parti.
 
+Queste istruzioni sono valide per i moduli Jira Cloud e Jira Server.
+
 Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
 
-<!-- Bob Fix this compared to original -->
-
 ## Requisiti di accesso
+
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisiti
 
@@ -110,10 +114,10 @@ Per connettere [!DNL Jira Software] a [!DNL Workfront Fusion], è necessario cre
 
 #### Crea un token API in [!DNL Jira]
 
-1. Vai a [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens) e accedi.
-1. Fare clic su **[!UICONTROL Create API token]**.
-1. Digitare un nome per il token, ad esempio *Workfront Fusion*.
-1. Copiare il token utilizzando il pulsante **[!UICONTROL Copy to clipboard]**.
+1. Crea un token API in Jira.
+
+   Per istruzioni, consigliamo di cercare &quot;Crea un token API&quot; nella documentazione di Jira.
+1. Dopo aver creato il token, copialo in un percorso sicuro.
 
    >[!IMPORTANT]
    >
@@ -123,9 +127,11 @@ Per connettere [!DNL Jira Software] a [!DNL Workfront Fusion], è necessario cre
 
 #### Configura il token API [!DNL Jira] in [!DNL Workfront Fusion]
 
-1. In [!DNL Workfront Fusion], aggiungere un modulo [!DNL Jira] a uno scenario per aprire la casella **[!UICONTROL Create a connection]**.
+1. In qualsiasi modulo di [!DNL Jira Cloud] in [!DNL Workfront Fusion], fai clic su **[!UICONTROL Add]** accanto al campo [!UICONTROL connection].
 1. Specifica le seguenti informazioni:
 
+   * **Ambiente**
+   * **Tipo**
    * **[!UICONTROL Service URL]:** Questo è l&#39;URL di base che utilizzi per accedere al tuo account Jira. Esempio: `yourorganization.atlassian.net`
    * **[!UICONTROL Username]**
    * **[!UICONTROL API token]:** Questo è il token API creato nella sezione [Creare un token API in [!DNL Jira]](#create-an-api-token-in-jira) di questo articolo.
@@ -133,10 +139,6 @@ Per connettere [!DNL Jira Software] a [!DNL Workfront Fusion], è necessario cre
 1. Fare clic su [!UICONTROL Continue] per creare la connessione e tornare al modulo.
 
 ### Connetti [!DNL Jira Server] a [!DNL Workfront Fusion]
-
-<!--
-<p style="color: #ff1493;">Becky: Find out and document how to find these things</p>
--->
 
 Per autorizzare una connessione tra [!DNL Workfront Fusion] e [!DNL Jira Server], sono necessari la chiave consumer, la chiave privata e l&#39;URL del servizio. Potrebbe essere necessario contattare l&#39;amministratore [!DNL Jira] per ottenere queste informazioni.
 
@@ -160,8 +162,7 @@ Per acquisire una chiave privata per la connessione [!DNL Workfront Fusion Jira]
 
    * `openssl pkcs8 -topk8 -nocrypt -in jira_privatekey.pem -out jira_privatekey.pcks8`
 
-     Questo comando estrae la chiave privata (formato PKCS8) in `jira_privatekey.pcks8`
-file.
+     Questo comando estrae la chiave privata (formato PKCS8) nel file `jira_privatekey.pcks8`.
 
    * `openssl x509 -pubkey -noout -in jira_publickey.cer  > jira_publickey.pem`
 
@@ -175,7 +176,7 @@ file.
      >   
      >   `openssl x509 -pubkey -noout -in jira_publickey.cer`
      >   
-     >1. Copia l&#39;output del terminale (inclusi `-------BEGIN PUBLIC KEY--------` e `-------END PUBLIC KEY--------`
+     >1. Copia l&#39;output del terminale, inclusi `-------BEGIN PUBLIC KEY--------` e `-------END PUBLIC KEY--------`.
      >   
      >1. Incollare l&#39;output del terminale in un file denominato `jira_publickey.pem`.
 
@@ -251,6 +252,14 @@ file.
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td> <p>Immetti un nome per la connessione</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td> <p>Seleziona se utilizzi un ambiente di produzione o non di produzione.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
+      <td> <p>Seleziona se utilizzi un account di servizio o un account personale.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Consumer Key]</td> 
@@ -340,7 +349,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>Aggiungi un ID problema o una chiave per ogni problema che desideri aggiungere allo sprint.</td> 
+   <td>Per ogni problema o chiave che desideri visualizzare, fai clic su <b>[!UICONTROL Add item]</b> e immetti l'ID o la chiave del problema. In un modulo è possibile immettere fino a 50 caratteri.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -363,7 +372,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td> <p>Selezionare il tipo di record che si desidera venga creato dal modulo. Quando si seleziona un tipo di record, nel modulo vengono visualizzati altri campi specifici per tale tipo di record.</p> 
+   <td> <p>Selezionare il tipo di record che si desidera venga creato dal modulo, quindi compilare gli altri campi specifici del tipo di record visualizzato nel modulo.</p> 
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
@@ -378,7 +387,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 #### [!UICONTROL Custom API Call]
 
-Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all&#39;API [!DNL Jira Software]. In questo modo è possibile creare un&#39;automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Jira Software].
+Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all&#39;API [!DNL Jira Software]. Utilizzare questo modulo per creare un&#39;automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Jira Software].
 
 Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
 
@@ -416,7 +425,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 #### [!UICONTROL Delete a record]
 
-Questo modulo di azione elimina un record specifico.
+Questo modulo di azione elimina il record specificato.
 
 Specifica l’ID del record.
 
@@ -542,7 +551,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID or Key]</td> 
-   <td>Immetti o mappa l’ID o la chiave del record da aggiornare.</td> 
+   <td>Immetti o mappa l’ID o la chiave del record da aggiornare, quindi compila gli altri campi specifici di quel tipo di record che vengono visualizzati nel modulo.</td> 
   </tr> 
  </tbody> 
 </table>
