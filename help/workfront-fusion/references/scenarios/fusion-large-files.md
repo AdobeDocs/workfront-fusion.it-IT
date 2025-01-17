@@ -4,10 +4,10 @@ description: Il supporto per file di grandi dimensioni è attualmente disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
+source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
@@ -27,15 +27,26 @@ Per gestire file di grandi dimensioni, è necessario aggiornare gli scenari.
 
 ## Connettori che supportano file di grandi dimensioni
 
-Per la versione iniziale, i seguenti connettori supportano file di grandi dimensioni.
+Attualmente, i seguenti connettori supportano file di grandi dimensioni.
 
-* Workfront > Carica documento
-* Adobe Experience Manager Assets > Carica documento
-* Workfront Proof > Carica file
-* Adobe Authenticator > Effettua una chiamata API personalizzata
-* SharePoint > Crea un file e SharePoint > Ottieni un file
-* Salesforce > Carica file
-* AWS S3 > Carica file e AWS S3 > Ottieni file
+* Workfront
+   * Carica documento
+   * Scarica Documento
+* Adobe Experience Manager Assets
+   * Carica documento
+* Workfront Proof
+   * Carica file
+   * Scarica bozza
+* Adobe Authenticator
+   * Effettuare una chiamata API personalizzata
+* SharePoint
+   * Creare un file
+   * Ottieni un file
+* Forza vendita
+   * Carica file
+* AWS S3
+   * Carica file
+   * Ottieni file
 * HTTP
 
 Altri connettori saranno supportati nelle versioni future.
@@ -74,7 +85,7 @@ No, il numero di operazioni eseguite da un modulo è lo stesso.
 
 ### Quando verrà aggiornata l’interfaccia utente di Fusion per visualizzare i dati di trasferimento dei file?
 
-Stiamo lavorando attivamente agli aggiornamenti dell’interfaccia utente di Fusion per il trasferimento di file sulla dashboard e sulla pagina dei dettagli di esecuzione dello scenario, con una versione mirata nel primo trimestre del 2025.
+Questa funzione è già stata completata e implementata in produzione.
 
 ### Quali sono alcuni modi per pensare ai nuovi limiti di elaborazione dei file che mi aiuteranno a progettare scenari?
 
