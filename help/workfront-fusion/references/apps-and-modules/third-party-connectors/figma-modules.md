@@ -4,9 +4,9 @@ description: Con i  [!DNL Adobe Workfront Fusion] moduli Figma è possibile recu
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: a509fb54c5143945b873b2d8b146b6543107ae03
+source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,55 @@ Il connettore Figma utilizza quanto segue:
  </tbody> 
  </table>
 
+## Creare una connessione a Figma
+
+Per creare una connessione per i moduli Figma:
+
+1. In qualsiasi modulo Figma, fare clic su **[!UICONTROL Add]** accanto alla casella Connessione.
+
+1. Compila i campi seguenti:
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p> Per le nuove connessioni, selezionare <code>Figma</code> senza il tag Legacy. </p><p>Figma ha modificato i requisiti di autenticazione nel gennaio 2025. Il tipo di connessione <code>Figma</code> soddisfa i nuovi requisiti. Il tipo di connessione <code>Figma (Legacy)</code> verrà rimosso in futuro.</p>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Immettere un nome per la connessione.</p>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Immetti [!UICONTROL Figme] [!UICONTROL Client ID].</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Immetti la tua Figma [!UICONTROL Client Secret].</td>
+        </tr>
+        <tr>
+        <td role="rowheader">Ambiti personalizzati</td>
+        <td>Immettere gli ambiti personalizzati necessari per la connessione.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">URL di verifica connessione personalizzato</td>
+        <td>L'endpoint predefinito per verificare che la connessione sia stata creata correttamente è: <code>https://api.figma.com/v1/me</code> Se questo URL non è supportato per l'ambito personalizzato, fornire un URL di verifica personalizzato.</td>
+        </tr>
+      </tbody>
+    </table>
+
+1. Fare clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+
+
+
 ## [!DNL Figma] moduli e relativi campi
 
 Quando configuri [!DNL Figma] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Figma], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
@@ -125,7 +174,7 @@ Questo modulo elimina un singolo commento da un file.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base.</a></p>
+      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
       </td>
     </tr>
     <tr>
@@ -149,7 +198,7 @@ Questo modulo di ricerca elenca tutti i commenti allegati a un singolo file in [
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base.</a></p>
+      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -183,7 +232,7 @@ Questo modulo di azione pubblica un commento su un file Figma.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base.</a></p>
+      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
       <td  role="rowheader">[!UICONTROL File ID]</td>
@@ -228,7 +277,7 @@ Questo modulo di azione recupera un singolo file o immagine da una libreria Figm
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base.</a></p>
+      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Object type]</td>
@@ -451,7 +500,7 @@ Questo modulo di ricerca restituisce la cronologia delle versioni di un singolo 
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base.</a></p>
+      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
       <td>
@@ -483,7 +532,7 @@ Questo modulo di ricerca restituisce un elenco di tutti i file nel progetto spec
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base.</a></p>
+      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL File ID]</td>
@@ -513,7 +562,7 @@ Questo modulo di ricerca restituisce un elenco di tutti i progetti all’interno
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base.</a></p>
+      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Team ID]</td>
@@ -539,7 +588,7 @@ Questo modulo di azione recupera un singolo stile o componente oppure un set di 
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base.</a></p>
+      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
       <td role="rowheader">Oggetto&gt; tipo</td>
@@ -594,7 +643,7 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base.</a></p>
+      <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
