@@ -4,9 +4,9 @@ description: Questo modulo di azione [!DNL Adobe Workfront Fusion] invia una ric
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: c7309422b44b3804a233bcf09443e24808dbffd8
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ Per informazioni sulle [!UICONTROL Adobe Workfront Fusion] licenze, vedere [Lice
 Quando configuri il modulo [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request], [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo all&#39;altro in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 
