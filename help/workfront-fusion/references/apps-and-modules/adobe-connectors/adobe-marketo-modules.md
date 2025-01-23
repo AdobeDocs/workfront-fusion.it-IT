@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1814'
 ht-degree: 0%
 
 ---
@@ -25,42 +25,46 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisiti
 
@@ -87,11 +91,51 @@ Il connettore Marketo utilizza quanto segue:
 
 ## Connetti [!DNL Marketo] a Workfront Fusion {#connect-marketo-to-workfront-fusion}
 
-Puoi creare una connessione al tuo account [!DNL Marketo] direttamente dal modulo [!DNL Marketo].
+Puoi creare una connessione al tuo account [!DNL Marketo] direttamente da qualsiasi modulo di [!DNL Marketo].
 
-1. In qualsiasi modulo [!DNL Marketo], fare clic su **[!UICONTROL Add]** accanto al campo [!UICONTROL Connection].
-1. Immetti l&#39;account [!DNL Marketo] o l&#39;ID [!DNL Marketo] [!UICONTROL Munchkin]. Parte univoca dell&#39;URL di base o dell&#39;endpoint assegnato all&#39;account, utilizzata per accedere a [!DNL Marketo] tramite l&#39;API [!UICONTROL REST]. Per istruzioni su come individuare questo elemento, vedere [URL di base](https://developers.marketo.com/rest-api/base-url/) nella documentazione di [!DNL Marketo].
-1. Immettere [!UICONTROL Client ID] e [!UICONTROL Client secret]. Per istruzioni su come individuarli, vedere [Autenticazione](https://developers.marketo.com/rest-api/authentication/) nella documentazione di [!DNL Marketo].
+1. In qualsiasi modulo di Marketo, fai clic su **Aggiungi** accanto al campo Connessione.
+1. Compila i campi seguenti:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Immettere un nome per la nuova connessione.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>Seleziona se ti connetti a un ambiente di produzione o non di produzione.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>Specificare se ci si connette a un account di servizio o a un account personale.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Account / Munchkin ID]</td>
+        <td>
+          <p>Immetti l'account [!DNL Marketo] o l'ID [!DNL Marketo] [!UICONTROL Munchkin]. Parte univoca dell'URL di base o dell'endpoint assegnato all'account, utilizzata per accedere a [!DNL Marketo] tramite l'API [!UICONTROL REST]. Per istruzioni su come individuare questa posizione, vedere [URL di base](https://developers.marketo.com/rest-api/base-url/) nella documentazione di [!DNL Marketo].</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Immetti l'ID client di Marketo. Per istruzioni su come individuare questo elemento, vedere [Authentication](https://developers.marketo.com/rest-api/authentication/) nella documentazione di [!DNL Marketo].</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Immetti il segreto del client Marketo. Per istruzioni su come individuarli, vedere [Authentication](https://developers.marketo.com/rest-api/authentication/) nella documentazione di [!DNL Marketo].</td>
+      </tr>
+     </tbody>
+    </table>
 1. Fare clic su **[!UICONTROL Continue]** per creare la connessione e tornare al modulo.
 
 ## [!DNL Marketo] moduli e relativi campi
@@ -102,11 +146,11 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Triggers](#triggers)
+* [Trigger](#triggers)
 * [Azioni](#actions)
 * [Ricerche](#searches)
 
-### Triggers
+### Trigger
 
 * [[!UICONTROL Watch events (Instant)]](#watch-events-instant)
 * [[!UICONTROL Watch records]](#watch-records)
@@ -121,7 +165,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Webhook]</p> </td> 
-   <td> <p>Immetti il webhook che desideri venga utilizzato dal modulo.</p> <p>Per ulteriori informazioni sui webhook, vedere <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref"&gt;Trigger istantanei (webhook) in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Immetti il webhook che desideri venga utilizzato dal modulo.</p> <p>Per ulteriori informazioni sui webhook, vedere <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhook</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -147,13 +191,13 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
    <td> <p>Selezionare il tipo di record da creare.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Activity]</strong> </p> <p>Seleziona il tipo di attività da monitorare. </p> <p>Il modulo controlla solo le nuove attività.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Lead]</strong> </p> <p>Specificare se si desidera controllare i nuovi record, i record aggiornati, i record nuovi e aggiornati o gli aggiornamenti specifici dei campi. Se selezioni di controllare specifici aggiornamenti del campo, seleziona il campo che desideri che il modulo controlli.</p> </li> 
-     <li> <p><strong>[!UICONTROL Program]</strong> </p> <p>Specificare se si desidera controllare i nuovi record, i record aggiornati o i record nuovi e aggiornati.</p> </li> 
+     <li> <p><strong>[!UICONTROL Lead]</strong> </p> <p>Nel campo <b>Tipo evento</b>, selezionare se si desidera controllare nuovi record, record aggiornati, record nuovi e aggiornati o aggiornamenti di campi specifici. Se selezioni di controllare specifici aggiornamenti del campo, seleziona il campo che desideri che il modulo controlli.</p> </li> 
+     <li> <p><strong>[!UICONTROL Program]</strong> </p> <p>Nel campo <b>Tipo evento</b>, selezionare se si desidera controllare i nuovi record, i record aggiornati o sia i record nuovi che quelli aggiornati.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Seleziona le informazioni da includere nel bundle di output per questo modulo.</p> </td> 
+   <td> <p>Seleziona i campi da includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -177,7 +221,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
 
 #### [!UICONTROL Add Leads to a List]
 
-Questo modulo di azione aggiunge uno o più lead a un elenco, utilizzando l’ID lead.
+Questo modulo di azione aggiunge uno o più lead a un elenco, utilizzando l’ID lead. Puoi aggiungere fino a 300 lead alla volta.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -300,7 +344,7 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -311,15 +355,8 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
    <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record con cui si desidera lavorare il modulo durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>Per ogni campo che desideri aggiungere alla chiamata API, fai clic su <b>Aggiungi elemento</b> e immetti la chiave e il valore del campo.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -338,7 +375,7 @@ Questo modulo di azione scarica un file utilizzando l’ID file.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Mappa l’ID del file da scaricare.</td> 
+   <td>Inserisci o mappa l’ID del file da scaricare.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -379,7 +416,7 @@ Questo modulo di azione legge le informazioni su un record utilizzando il relati
 
 #### [!UICONTROL Remove Leads from a List]
 
-Questo modulo di azione rimuove uno o più lead da un elenco, utilizzando l’ID lead.
+Questo modulo di azione rimuove uno o più lead da un elenco, utilizzando l’ID lead. Puoi rimuovere fino a 300 lead alla volta.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -395,7 +432,7 @@ Questo modulo di azione rimuove uno o più lead da un elenco, utilizzando l’ID
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Lead IDs]</td> 
-   <td> <p>Per ogni lead che si desidera rimuovere dall'elenco, fare clic su <b>[!UICONTROL Add]</b>, quindi immettere o mappare l'ID del lead che si desidera rimuovere. Puoi aggiungere fino a 300 lead per il modulo da rimuovere dall’elenco. </p> <p>Fare clic sull'interruttore Mappa per mappare una raccolta esistente di lead che si desidera rimuovere dall'elenco.</p> </td> 
+   <td> <p>Per ogni lead che si desidera rimuovere dall'elenco, fare clic su <b>[!UICONTROL Add item]</b>, quindi immettere o mappare l'ID del lead che si desidera rimuovere. Puoi aggiungere fino a 300 lead per il modulo da rimuovere dall’elenco. </p> <p>Fare clic sull'interruttore Mappa per mappare una raccolta esistente di lead che si desidera rimuovere dall'elenco.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -570,11 +607,11 @@ Questo modulo di ricerca recupera un elenco di record che corrispondono a criter
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Field]</p> </td> 
-   <td> <p>Specificare se si desidera eseguire la ricerca per nome, nome del programma o nome dell'area di lavoro.</p> </td> 
+   <td> <p>Selezionare il campo in base al quale si desidera eseguire la ricerca.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
-   <td>Per ogni valore che si desidera cercare, fare clic su <b>[!UICONTROL Add item]</b> e immettere il valore.</td> 
+   <td role="rowheader">[!UICONTROL Value / values]</td> 
+   <td>Immettere il valore del campo che si desidera cercare. Se il campo consente di cercare più valori, per ogni valore che si desidera cercare fare clic su <b>[!UICONTROL Add item]</b> e immettere il valore.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
