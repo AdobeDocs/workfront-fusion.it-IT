@@ -4,9 +4,9 @@ description: Il supporto per file di grandi dimensioni è attualmente disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
+source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->La funzionalità per file di grandi dimensioni è disponibile solo per i clienti di Workfront Ultimate ed è un rollout graduale. Tutte le organizzazioni di Fusion che dispongono di un piano Workfront Ultimate disporranno di grandi capacità di file entro gennaio 2025.
+>La funzionalità per file di grandi dimensioni è disponibile solo per le organizzazioni che utilizzano il pacchetto Workfront Ultimate.
 
 In Workfront Fusion sono ora disponibili funzionalità di trasferimento dati migliorate che consentono di elaborare file di dimensioni notevolmente maggiori.
 
 Per gestire file di grandi dimensioni, è necessario aggiornare gli scenari.
-
->[!NOTE]
->
->Questa funzionalità è disponibile solo per gli utenti del pacchetto Ultimate Workfront.
 
 ## Connettori che supportano file di grandi dimensioni
 
