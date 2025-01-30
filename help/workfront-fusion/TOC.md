@@ -2,10 +2,10 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
+source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 1%
+source-wordcount: '1641'
+ht-degree: 3%
 
 ---
 
@@ -346,6 +346,7 @@ ht-degree: 1%
          * [Moduli operativi e finanziari di Microsoft Dynamics](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
          * [Moduli Microsoft OneDrive](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
          * [Moduli di Microsoft OneDrive for Business](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
+         * [Moduli SharePoint Online di Microsoft](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
          * [Moduli di Microsoft SQL Server](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
          * [Moduli modello di Microsoft Word](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
          * [Moduli NetSuite](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
@@ -356,7 +357,6 @@ ht-degree: 1%
          * [Moduli Salesforce](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
          * [Moduli SDL Managed Translation](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
          * [Moduli ServiceNow](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-         * [Moduli SharePoint](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
          * [moduli di Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
          * [Moduli Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Moduli Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
