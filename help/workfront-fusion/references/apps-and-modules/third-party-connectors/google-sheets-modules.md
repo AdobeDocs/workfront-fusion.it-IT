@@ -4,9 +4,9 @@ description: Per utilizzare  [!DNL Google Sheets] con [!DNL Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3372'
 ht-degree: 0%
 
 ---
@@ -726,7 +726,7 @@ Utilizza il modulo [!UICONTROL Search Rows (Advanced)] e utilizza questa formula
 1. Esegui lo scenario.
 1. In Google Sheets, scegliere **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**... dalla barra del menu principale.
 
-1. Nella finestra [!UICONTROL Drawing], fare clic sull&#39;icona ![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) di **[!UICONTROL Text box]** nella parte superiore della finestra.
+1. Nella finestra [!UICONTROL Drawing], fare clic sull&#39;icona **[!UICONTROL Text box]** ![Casella di testo](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) nella parte superiore della finestra.
 1. Progetta un pulsante e fai clic sul pulsante **[!UICONTROL Save and Close]** nell&#39;angolo in alto a destra:
 1. Il pulsante verrà inserito nel foglio di lavoro. Fai clic sui tre punti verticali nell’angolo in alto a destra del pulsante:
 1. Scegli **[!UICONTROL Assign script..].** dal menu.
@@ -750,7 +750,7 @@ Utilizza il modulo [!UICONTROL Search Rows (Advanced)] e utilizza questa formula
 
 Se memorizzi un valore Data in un foglio di calcolo senza formattazione, questo verrà visualizzato nel foglio di calcolo come testo in formato ISO 8601. Tuttavia, [!DNL Google Sheets] formule o funzioni che funzionano con date che non comprendono questo testo (esempio: formula `=A1+10`) visualizzeranno il seguente errore:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
+![Errore](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 Per consentire a [!DNL Google Sheets] di comprendere la data, formattarla con la funzione [[!UICONTROL formatDate] (data; formato; [fuso orario])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda). Il formato corretto passato alla funzione come secondo argomento dipende dalle impostazioni internazionali del foglio di calcolo.
 
@@ -764,7 +764,7 @@ Per determinare il formato corretto:
 
 **Esempio:** L&#39;utilizzo del formato `MM/DD/YYYY HH:mm:ss` per le impostazioni locali degli Stati Uniti:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![Formula dell&#39;ora locale](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## Sfruttamento di [!DNL Google Sheets] funzioni
 

@@ -4,9 +4,9 @@ description: La funzione Adobe Workfront FusionTemplates consente di creare e ut
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 ## Creare uno scenario da un modello
 
-1. Fare clic sull&#39;icona **[!UICONTROL Templates]** ![](assets/templates-icon.png) nel pannello di navigazione a sinistra.
+1. Fai clic sull&#39;icona **[!UICONTROL Templates]** ![icona Modelli](assets/templates-icon.png) nel pannello di navigazione a sinistra.
 1. Fare clic sulla scheda contenente il modello che si desidera utilizzare (Modelli pubblici o Modelli team).
 1. Fare clic sul modello da utilizzare per iniziare a creare uno scenario. Puoi utilizzare la casella di ricerca nell’angolo in alto a destra per trovare il modello in base al suo nome o al nome dell’app inclusa.
 1. (Condizionale) Se sei membro di più organizzazioni o team, seleziona l&#39;organizzazione o il team per cui vuoi creare lo scenario e fai clic su **[!UICONTROL Continue]**.
@@ -78,4 +78,4 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
    Per informazioni sulla creazione di uno scenario, vedere [flusso di lavoro per la creazione di uno scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
-1. Fai clic sull&#39;icona **[!UICONTROL Save]** ![](assets/save-icon.png) per salvare lo scenario. Lo scenario viene salvato nell&#39;area Scenario di Workfront Fusion.
+1. Fai clic sull&#39;icona **[!UICONTROL Save]** ![Icona Salva](assets/save-icon.png) per salvare lo scenario. Lo scenario viene salvato nell&#39;area Scenario di Workfront Fusion.

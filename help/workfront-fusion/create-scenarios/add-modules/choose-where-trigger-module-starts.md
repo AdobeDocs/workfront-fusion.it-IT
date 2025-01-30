@@ -4,9 +4,9 @@ description: Alcuni moduli di attivazione ti consentono di selezionare il primo 
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
    Fare clic con il pulsante destro del mouse sull&#39;icona del modulo del trigger e selezionare **Scegli da dove iniziare**.
 
-   ![](assets/choose-where-to-start.png)
+   ![Scegli da dove iniziare](assets/choose-where-to-start.png)
 
 1. Selezionare un&#39;opzione nella casella **[!UICONTROL Choose where to start]** visualizzata.
 

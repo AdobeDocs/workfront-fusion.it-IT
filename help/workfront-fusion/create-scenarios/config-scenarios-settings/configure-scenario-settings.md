@@ -5,9 +5,9 @@ description: Puoi configurare impostazioni specifiche per gli scenari nel pannel
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3afa631a44c6dae8b1e6def6f842a9ced9de741e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor dello scenario.
 1. Fai clic sull’icona a forma di ingranaggio nell’angolo inferiore sinistro della pagina.
 
-   ![](assets/scenario-settings-350x221.png)
+   ![Impostazioni scenario](assets/scenario-settings-350x221.png)
 
    Nel pannello [!UICONTROL Scenario settings] visualizzato, è possibile configurare varie impostazioni avanzate per lo scenario.
 1. Attiva o disattiva le impostazioni dello scenario in base alle esigenze. Consulta [Opzioni impostazioni scenario](#scenario-settings-options) di seguito.
@@ -162,13 +162,13 @@ L&#39;impostazione di più cicli può essere utile quando si desidera evitare l&
 
 **Esempi:** [!DNL Workfront] > [!UICONTROL Watch record] verifica la presenza di nuovi problemi e [!DNL Workfront] >[!UICONTROL Convert object] converte la nuova richiesta in un progetto e le assegna il modello appropriato.
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![Impostazioni scenario](assets/scenario-settings-ex-1-350x157.png)
 
 L&#39;impostazione [!UICONTROL more cycles] viene applicata solo quando si pianifica l&#39;esecuzione dello scenario. Quando si utilizza il pulsante [!UICONTROL Run once], vengono prese in considerazione le impostazioni del ciclo.
 
 #### Il numero massimo di cicli è impostato su 1 (impostazione predefinita)
 
-![](assets/max-number-cycles-1-350x201.png)
+![Numero massimo di cicli](assets/max-number-cycles-1-350x201.png)
 
 Il numero massimo di cicli nel modulo Workfront > Osserva record è impostato su `10`.
 Se vengono inviate 100 richieste a [!DNL Workfront] e il campo Numero massimo di cicli è impostato su 10, 90 file non vengono elaborati dopo l&#39;esecuzione di uno scenario. I successivi 10 file vengono elaborati nella successiva esecuzione pianificata dello scenario.
@@ -183,7 +183,7 @@ Tutti i file vengono elaborati entro 1 esecuzione dello scenario.
 
 Puoi visualizzare i cicli già eseguiti nei dettagli dello scenario:
 
-![](assets/scenario-detail-350x207.png)
+![Dettagli scenario](assets/scenario-detail-350x207.png)
 
 Per ulteriori informazioni su questa pagina, vedere [Dettagli scenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 

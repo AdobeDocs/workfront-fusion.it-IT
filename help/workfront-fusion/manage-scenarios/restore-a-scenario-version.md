@@ -4,9 +4,9 @@ description: È possibile ripristinare una versione precedente di uno scenario. 
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 ## Ripristinare una versione dello scenario
 
 1. Apri lo scenario.
-1. Fai clic sull&#39;icona [!UICONTROL More] ![](assets/more-icon.png) nella parte inferiore della schermata, quindi fai clic su **[!UICONTROL Previous Versions]**.
+1. Fai clic sull&#39;icona [!UICONTROL More] ![altra icona](assets/more-icon.png) nella parte inferiore della schermata, quindi fai clic su **[!UICONTROL Previous Versions]**.
 
 1. Fai clic su **[!UICONTROL Pick the version]**, quindi fai clic sulla versione da ripristinare.
 1. Fare clic su **[!UICONTROL OK]**.

@@ -4,9 +4,9 @@ description: I  [!DNL Adobe Workfront Fusion Google Forms] moduli ti consentono 
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Per utilizzare le risposte del modulo, è necessario creare il foglio di calcolo
 
 1. Aprire il modulo.
 1. Passa alla scheda **[!UICONTROL Responses]**.
-1. Fare clic sull&#39;icona **[!UICONTROL Create Spreadsheet]** ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
+1. Fare clic sull&#39;icona **[!UICONTROL Create Spreadsheet]** ![Icona Foglio di calcolo](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Seleziona se desideri creare un nuovo foglio di calcolo o un foglio di calcolo esistente
 1. Fare clic su **[!UICONTROL Create]**.
@@ -98,11 +98,11 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Triggers](#triggers)
+* [Trigger](#triggers)
 * [Azioni](#actions)
 * [Ricerche](#searches)
 
-### Triggers
+### Trigger
 
 #### [!UICONTROL Watch Responses]
 

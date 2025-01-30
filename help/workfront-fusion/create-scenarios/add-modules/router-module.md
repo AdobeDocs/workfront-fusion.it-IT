@@ -4,9 +4,9 @@ description: Il modulo Router consente di diramare il flusso in più route ed el
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -71,13 +71,13 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 1. Nell’editor dello scenario, fai clic sull’handle destro del modulo dopo il quale desideri aggiungere il router.
 1. Selezionare **[!UICONTROL Flow Control]** > **Router** nell&#39;elenco dei moduli visualizzati.
 
-   ![](assets/connect-the-router-350x108.png)
+   ![Connetti la route](assets/connect-the-router-350x108.png)
 
    Oppure
 
    Per inserire il modulo Router tra due moduli, fare clic sull&#39;icona chiave inglese sotto il percorso che collega i due moduli e selezionare **[!UICONTROL Add a router]** dal menu.
 
-   ![](assets/insert-router-350x191.png)
+   ![Inserisci router](assets/insert-router-350x191.png)
 1. Aggiungere la prima route al router facendo clic sull&#39;handle destro del router e aggiungendo un modulo simile all&#39;aggiunta di qualsiasi modulo.
 1. Per aggiungere un&#39;altra route, fare clic sul modulo router. Viene visualizzata una route. Aggiungere i moduli a questa route come desiderato.
 
@@ -125,13 +125,13 @@ Puoi abilitare una route di fallback nel pannello dei filtri.
 1. Nel campo etichetta del pannello visualizzato, aggiungi un’etichetta. Questa etichetta viene visualizzata nello scenario.
 1. Abilitare la casella di controllo della route di fallback.
 
-   ![](assets/fallback-route-350x260.png)
+   ![Route di fallback](assets/fallback-route-350x260.png)
 
 1. Fare clic su **[!UICONTROL OK]** per salvare la configurazione del filtro.
 
 La route di fallback è contrassegnata da una freccia diversa nel modulo Router:
 
-![](assets/arrow-sign-in-router-module-350x361.png)
+![Simbolo freccia nel router](assets/arrow-sign-in-router-module-350x361.png)
 
 ## Esempio: `if/else` caso d&#39;uso
 
@@ -141,10 +141,10 @@ Un caso d’uso tipico della route di fallback consiste nel continuare il flusso
 
 In questo esempio, la prima route è configurata con un filtro. Rappresenta il componente `if`.
 
-![](assets/set-up-a-filter-2-350x242.png)
+![Impostare un filtro nella route](assets/set-up-a-filter-2-350x242.png)
 
 La seconda route è configurata come route di fallback. Rappresenta il componente `else`.
 
-![](assets/enable-fallback-route-option-350x238.png)
+![Abilita opzione di fallback](assets/enable-fallback-route-option-350x238.png)
 
 >[!ENDSHADEBOX]

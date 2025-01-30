@@ -4,9 +4,9 @@ description: È possibile utilizzare lo strumento parser di testo per analizzare
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4fa892b7875af2fcabaf26b375925af7a8cad2a0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -267,21 +267,21 @@ Questa espressione regolare normalmente darebbe luogo a una corrispondenza compl
 
 Tuttavia, l’implementazione di questa espressione nel parser di testo non produce una corrispondenza:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![Nessuna corrispondenza](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 Il motivo è che la &quot;i&quot; mostra solo il numero di corrispondenze per partita, quindi in questo caso abbiamo 2 corrispondenze, quindi dopo la &quot;i&quot; c&#39;è un valore numerico 1 e 2. Il caso d’uso prevede che, se dovesse essere necessario far corrispondere o trasmettere dati attraverso un filtro, solo il secondo valore corrispondente sia possibile specificare quale valore è rappresentato dal valore numerico.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![Corrispondenza](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 Per ottenere i valori di corrispondenza necessari per aggiungere parentesi alla parte che si desidera analizzare, ad esempio per estrarre da &quot;filename.docx&quot; - solo &quot;docx&quot;, in base all&#39;espressione regex utilizzata per questo scenario, le parentesi devono essere applicate a \.(.+)
 
 Questo acquisisce il DOCX, lo inserisce in un gruppo e lascia il &quot;.&quot; fuori di esso.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![Ottieni corrispondenze](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 Nell&#39;output mostrato nell&#39;immagine seguente, il gruppo di cattura corrisponderà a qualsiasi carattere (ad eccezione dei terminatori di riga).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![Output](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 Un’altra soluzione alternativa che incorpora anche regex è l’utilizzo della funzione replace
 

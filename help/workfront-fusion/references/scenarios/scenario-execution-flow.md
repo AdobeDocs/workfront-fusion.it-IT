@@ -5,9 +5,9 @@ description: Questo articolo spiega come viene eseguito uno scenario e come i da
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Il primo passaggio dello scenario, eseguito dal primo modulo, consiste nel contr
 
 Se il primo modulo restituisce un bundle, il bundle passa attraverso il resto dello scenario. In questo esempio, il bundle passerebbe al secondo modulo, che converte la richiesta in un progetto.
 
-![](assets/example-execution-flow-wf-only.png)
+![Flusso di esecuzione dello scenario Workfront](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ Il primo passaggio dello scenario, eseguito dal primo modulo, consiste nel contr
 
 Se viene restituito un bundle, questo passa attraverso il resto dello scenario. In questo esempio, il resto dello scenario è costituito dal modulo secondario, che carica il bundle nella cartella [!DNL Dropbox].
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![Flusso di esecuzione dello scenario di integrazione](assets/example-execution-flow-wf-dropbox.png)
 
 Se il primo modulo restituisce più bundle, il primo viene caricato in [!DNL Dropbox] prima del secondo. Poi viene caricato il secondo bundle, poi il terzo e così via.
 
@@ -71,7 +71,7 @@ Per ogni modulo, il bundle passa attraverso un processo in 4 fasi prima di passa
 
 Al termine dell’esecuzione di uno scenario, ogni modulo visualizza un’icona che mostra il numero di operazioni eseguite. Puoi fare clic su questa icona per visualizzare informazioni dettagliate sui bundle elaborati per ogni passaggio del processo. Puoi vedere quali impostazioni del modulo sono state utilizzate e quali bundle sono stati restituiti da ciascun modulo.
 
-![](assets/Info-processed-bundles.png)
+![Bundle elaborati](assets/Info-processed-bundles.png)
 
 In questo esempio, il modulo ha ricevuto informazioni di input quali:
 

@@ -4,9 +4,9 @@ description: Un webhook è una chiamata HTTP attivata da un evento. Puoi utilizz
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: d5ab7dc135206a7269ad4fa0b5c02bf77b97d873
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ In alternativa, è possibile inviare i dati di esempio tramite il modulo [!UICON
     </tbody> 
    </table>
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![Configurazione nuovo scenario](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. Aprire lo scenario con il modulo [!UICONTROL Webhooks] in una scheda o finestra del browser separata.
 1. Nel modulo webhook fare clic su **[!UICONTROL Redetermine data structure]**.
@@ -132,7 +132,7 @@ In alternativa, è possibile inviare i dati di esempio tramite il modulo [!UICON
 
    Un messaggio &quot;[!UICONTROL Successfully determined]&quot; indica che il modulo ha determinato correttamente la struttura dati.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
+   ![Determinato correttamente](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. Fare clic su **[!UICONTROL OK]** per salvare la struttura dati.
 
@@ -241,7 +241,7 @@ Per accedere alle intestazioni del webhook, abilita Ottieni intestazioni di rich
 >
 >L&#39;esempio seguente mostra una formula che estrae il valore dell&#39;intestazione `authorization` dall&#39;array `Headers[]`. La formula viene utilizzata in un filtro che confronta il valore estratto con il testo specificato per trasmettere solo i webhook in caso di corrispondenza.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![Configura un filtro](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
 >Per ulteriori informazioni su come ottenere l&#39;elemento di un array con una chiave specificata, vedere [Mappare l&#39;elemento di un array con una chiave specificata](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key) nell&#39;articolo Mappare un array.
 
@@ -311,11 +311,11 @@ Il timeout per l’invio di una risposta è di 40 secondi. Se la risposta non è
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![Intestazioni personalizzate](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >In questo modo viene generata una risposta di HTML che viene visualizzata in un browser web:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
+>![Risposta HEML](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### Esempio di reindirizzamento
 
@@ -342,7 +342,7 @@ Il timeout per l’invio di una risposta è di 40 secondi. Se la risposta non è
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
+>![Risposta webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Disattivazione webhook
 
@@ -360,6 +360,6 @@ I webhook disattivati vengono eliminati e annullati automaticamente se non sono 
 
 Se nel pannello di mappatura mancano alcuni elementi nella configurazione dei moduli successivi al modulo [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook], fai clic sul modulo **[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]** per aprirne la configurazione e fai clic su **[!UICONTROL Re-determine data structure]**:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![Rideterminazione struttura dati](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Segui quindi i passaggi descritti nella sezione [Configurare la struttura dati del webhook](#configure-the-webhook-s-data-structure) in questo articolo.

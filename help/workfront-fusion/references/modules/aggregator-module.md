@@ -4,9 +4,9 @@ description: Un modulo aggregatore è un tipo di modulo progettato per unire div
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Quando viene eseguito un modulo [!UICONTROL Aggregator], vengono eseguite le seg
 
 Nell&#39;immagine seguente viene illustrata una configurazione tipica del modulo [!UICONTROL Aggregator]:
 
-![](assets/array-aggregator.png)
+![Aggregatore array](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ Nell&#39;immagine seguente viene illustrata una configurazione tipica del modulo
 
 Questo scenario di esempio mostra come comprimere tutti gli allegati e-mail e caricare il file ZIP in [!DNL Dropbox].
 
-![](assets/dropbox-archive.png)
+![Dropbox archivio esempio](assets/dropbox-archive.png)
 
 Lo scenario seguente mostra come:
 
@@ -129,4 +129,4 @@ Lo scenario seguente mostra come:
 
 Di seguito è riportato un esempio di configurazione dell&#39;aggregatore [!UICONTROL Archive] > [!UICONTROL Create an archive]:
 
-![](assets/archive-create-an-archive.png)
+![Crea un archivio](assets/archive-create-an-archive.png)

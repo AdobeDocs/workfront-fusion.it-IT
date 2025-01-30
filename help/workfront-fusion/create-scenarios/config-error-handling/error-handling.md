@@ -4,9 +4,9 @@ description: Quando si verificano errori durante l'esecuzione di uno scenario, i
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Per aggiungere un gestore degli errori a un modulo:
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
 1. Fare clic con il pulsante destro del mouse sul modulo dopo il quale si desidera aggiungere una route del gestore degli errori e selezionare **[!UICONTROL Add error handler]**:
 
-   ![](assets/error-handler-route.png)
+   ![Route gestore errori](assets/error-handler-route.png)
 
    Al modulo viene aggiunta una route di gestore degli errori. Se il modulo è l’ultimo modulo di una route, il gestore degli errori segue direttamente il modulo. Se il modulo contiene più moduli, viene aggiunta una route separata del gestore degli errori.
 

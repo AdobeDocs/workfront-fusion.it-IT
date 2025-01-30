@@ -4,9 +4,9 @@ description: La mappatura è il processo di assegnazione degli output di un modu
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ Quando fai clic su un campo in cui puoi inserire un valore generato da un modulo
 
 Elemento singolo
 
-![](assets/map-single.png)
+![Mappa elemento singolo](assets/map-single.png)
 
 Più elementi con testo
 
-![](assets/map-multiple-with-text.png)
+![Mappa più elementi](assets/map-multiple-with-text.png)
 
 Funzione con più elementi e testo
 
-![](assets/map-formula-with-text.png)
+![Mappa formula con testo](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -56,11 +56,11 @@ Per istruzioni sulla mappatura, vedere gli articoli in [Dati mappa: indice artic
 
 Quando fai clic su un campo in cui puoi mappare i dati, viene aperto il pannello di mappatura.
 
-Nella prima scheda ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) sono visualizzati gli elementi che è possibile mappare da altri moduli.
+Nella prima scheda ![Mappa da altri moduli](assets/toolbar-icon-functions-you-map-from-other-modules.png) vengono visualizzati gli elementi che è possibile mappare da altri moduli.
 
 Le altre schede includono funzioni, operatori e parole chiave che è possibile utilizzare per creare formule. Questi vengono ordinati in schede diverse in base al tipo di dati che gestiscono.
 
-![](assets/mapping-panel-blank.png)
+![Pannello mappature](assets/mapping-panel-blank.png)
 
 
 Per ulteriori informazioni sulle schede delle funzioni, vedere [Panoramica delle funzioni](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
@@ -73,13 +73,13 @@ Gli elementi possono contenere più valori di vari tipi. Si tratta di elementi d
 
 I bundle di tipo raccolta vengono visualizzati `(Collection)` accanto all&#39;etichetta del bundle nell&#39;output del modulo.
 
-![](assets/collection.png)
+![Raccolta](assets/collection.png)
 
 Nella maggior parte dei casi, è possibile mappare gli elementi della raccolta anziché l&#39;elemento che rappresenta l&#39;intera raccolta.
 
 Per individuare l&#39;elemento di una raccolta nel pannello di mappatura, fate clic sulla freccia accanto alla raccolta.
 
-![](assets/collection-dropdown.png)
+![Elenco a discesa della raccolta](assets/collection-dropdown.png)
 
 Per ulteriori informazioni sulle raccolte, vedere [Tipi di dati elemento](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -93,6 +93,6 @@ I bundle di tipo array vengono visualizzati `(Array)` accanto all&#39;etichetta 
 
 Nel pannello di mappatura, gli array vengono visualizzati con parentesi quadre. È possibile identificare un elemento di tipo matrice tramite le parentesi quadre alla fine dell&#39;etichetta dell&#39;elemento. Per individuare un elemento di array specifico nel pannello di mappatura, fate clic sulla freccia accanto all&#39;array.
 
-![](assets/array.png)
+![Array](assets/array.png)
 
 Per informazioni e istruzioni sulla mappatura di array ed elementi di array, vedere [Mappare array ed elementi di array](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

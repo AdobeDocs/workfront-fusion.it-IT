@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3314'
 ht-degree: 0%
 
 ---
@@ -829,7 +829,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 1. Utilizza il modulo [!UICONTROL Google Calendar] >[!UICONTROL Update an event] per aggiungere un promemoria e-mail all&#39;evento:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![Scenario di attivazione prima dell&#39;evento](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. Crea un nuovo scenario che inizia con il modulo [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook].
 
@@ -847,11 +847,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    1. Fai clic sulla bolla sopra il modulo per controllare l’output del modulo.
    1. Espandere l&#39;elemento `Text` e copiare il codice di conferma:
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![Codice di conferma](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. In Gmail, incolla il codice di conferma nella casella di modifica e fai clic su&#x200B;**[!UICONTROL Verify]**:
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
+      ![Incolla codice](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. Apri la scheda **[!UICONTROL Filters and Blocked Addresses]**.
    1. Fare clic su **[!UICONTROL Create a new filter]**.

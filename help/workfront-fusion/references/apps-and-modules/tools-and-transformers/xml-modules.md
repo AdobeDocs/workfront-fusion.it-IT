@@ -4,9 +4,9 @@ description: L'app XML consente di analizzare un testo in formato XML tramite il
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1302'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ Il modulo [!UICONTROL XML] > [!UICONTROL Parse XML] analizza un testo in formato
 >
 >   **URL**: URL del file XML (esempio: `https://siftrss.com/f/rqLy05ayMBJ`)
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+>   ![URL dell&#39;esempio di file XML](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. Fare clic su **[!UICONTROL OK]** &#x200B; salvare e chiudere la configurazione del modulo.
 1. Aggiungi il modulo [!UICONTROL XML] > [!UICONTROL Parse XML], connettilo dopo il modulo [!UICONTROL HTTP] > [!UICONTROL Get a file] e configuralo come segue:
@@ -143,7 +143,7 @@ Per impostazione predefinita, il modulo [!UICONTROL XML] > [!UICONTROL Parse XML
 
 viene convertito in questo bundle:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML convertito in bundle](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## Crea XML
 
@@ -198,7 +198,7 @@ La configurazione del modulo richiede una struttura di dati che descriva la stru
 >
 1. Fai clic sul pulsante **[!UICONTROL Generator]** e incolla l&#39;esempio XML nel campo [!UICONTROL Sample data]:
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+![Campo dati di esempio](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 1. Fare clic su **[!UICONTROL Save]**. Il campo Specification (Specifica) nella struttura Data (Dati) ora contiene la struttura generata.
 1. Modificare il nome della struttura dati in un nome più specifico e fare clic su **[!UICONTROL Save]**. Un campo corrispondente all’attributo dell’array principale viene visualizzato come campo mappabile nella configurazione del modulo JSON.

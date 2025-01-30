@@ -4,9 +4,9 @@ description: L’app JSON per Adobe Workfront Fusion fornisce moduli per elabora
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: c895d496de66b475f907effaaf43fe2f7b7b457e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Se il campo stringa JSON contiene una raccolta `{ ... }`, l&#39;output è un sin
 ```
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![Raccolta JSON](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 
@@ -115,7 +115,7 @@ Se il campo stringa JSON contiene un array `[ ... ]`, l&#39;output è una serie 
 ]
 ```
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+![Array JSON](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 >[!ENDSHADEBOX]
 
@@ -303,6 +303,6 @@ Quando si utilizzano istruzioni condizionali come `if` nel JSON, inserire le vir
 
 **Esempio:**
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+![Virgolette in JSON](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
 
 >[!ENDSHADEBOX]

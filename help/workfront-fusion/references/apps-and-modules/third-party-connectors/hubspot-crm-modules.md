@@ -4,9 +4,9 @@ description: I moduli di gestione delle relazioni con i clienti HubSpot  [!DNL A
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5655'
+source-wordcount: '5661'
 ht-degree: 0%
 
 ---
@@ -1969,13 +1969,13 @@ Consente di eseguire una chiamata API personalizzata.
 >
 >**Metodo**: `GET`
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
+>![Configurazione API Hubspot](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
 >
 >Le corrispondenze della ricerca si trovano nell&#39;output del modulo in [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL contacts].
 >
 >Nel nostro esempio, sono stati restituiti 3 contatti:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-output.png)
+>![Output API Hubspot](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-output.png)
 
 +++
 

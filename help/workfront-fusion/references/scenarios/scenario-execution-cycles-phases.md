@@ -4,9 +4,9 @@ description: In questo articolo vengono descritti gli eventi che si verificano d
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ Se si verifica un errore durante la fase di operazione o commit di un modulo, la
 >
 >Tutti i moduli [!DNL Workfront Fusion] che supportano il rollback (noto anche come transazionale) sono contrassegnati con il tag ACID.
 >
->![](assets/acid-modules.png)
+>![Moduli acidi](assets/acid-modules.png)
 >
 >I moduli non contrassegnati con questo tag non possono essere ripristinati allo stato iniziale quando si verificano errori in altri moduli. Un esempio tipico di modulo non-ACID è l&#39;azione [!UICONTROL Email] >[!UICONTROL Send an Email]. Una volta inviata l’e-mail, non puoi annullare l’invio.
 

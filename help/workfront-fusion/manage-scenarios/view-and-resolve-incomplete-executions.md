@@ -4,9 +4,9 @@ description: Nella cartella [!UICONTROL Incomplete executions] sono archiviate e
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '602'
 ht-degree: 6%
 
 ---
@@ -79,7 +79,7 @@ Se un modulo rileva un errore durante l’operazione, viene aggiunta una nuova e
 
 <!--
 
-![](assets/incomplete-executions-tab-350x102.png)
+![Incomplete executions tab](assets/incomplete-executions-tab-350x102.png)
 
 -->
 
@@ -113,7 +113,7 @@ Se si desidera visualizzare il registro di tutte le operazioni del modulo prima 
 1. Apri il registro del modulo in cui vengono visualizzate tutte le operazioni del modulo.
 1. Individuare l&#39;operazione non riuscita e fare clic su **[!UICONTROL Resolve]**:
 
-   ![](assets/resolve-btn-350x188.png)
+   ![Pulsante Risolvi](assets/resolve-btn-350x188.png)
 
 ## Opzioni relative alle esecuzioni incomplete
 

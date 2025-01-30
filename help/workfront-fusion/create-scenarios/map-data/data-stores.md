@@ -4,9 +4,9 @@ description: Un archivio dati, simile a un database o a una semplice tabella, pu
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1215'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ I moduli dell&#39;archivio dati consentono di eseguire le azioni seguenti sui re
 * Recupera
 * Elimina
 * Ricerca
-* Conta
+* Conteggio
 
 Per informazioni sull&#39;utilizzo dei moduli dell&#39;archivio dati, vedere [[!UICONTROL Data store] moduli](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
 
@@ -197,8 +197,8 @@ Prima di poter utilizzare un archivio dati in un modulo, è necessario creare l&
 
 Le proprietà di un archivio dati includono la struttura dati utilizzata dall’archivio dati e le relative dimensioni.
 
-1. Fare clic su **[!UICONTROL Data stores]** ![](assets/data-store-icon.png) nel pannello di navigazione a sinistra per aprire l&#39;area [!UICONTROL Data stores].
-1. Fare clic su **[!UICONTROL Edit]** ![](assets/data-store-edit.png) accanto all&#39;archivio dati che si desidera modificare.
+1. Fare clic su **[!UICONTROL Data stores]** ![Icona archivio dati](assets/data-store-icon.png) nel pannello di navigazione a sinistra per aprire l&#39;area [!UICONTROL Data stores].
+1. Fare clic su **[!UICONTROL Edit]** ![Modifica archivio dati](assets/data-store-edit.png) accanto all&#39;archivio dati che si desidera modificare.
 1. (Facoltativo) Se si desidera modificare la struttura dati utilizzata da questo archivio dati in un&#39;altra struttura dati esistente, selezionarla dal menu a discesa **[!UICONTROL Data structure]**.
 
    Oppure
@@ -210,7 +210,7 @@ Le proprietà di un archivio dati includono la struttura dati utilizzata dall’
 
 ### Modificare il contenuto di un archivio dati
 
-1. Fare clic sull&#39;icona **[!UICONTROL Data Store]** ![](assets/data-store-icon.png) nel pannello di navigazione a sinistra per aprire l&#39;area [!UICONTROL Data Store].
+1. Fai clic sull&#39;icona **[!UICONTROL Data Store]** ![icona archivio dati](assets/data-store-icon.png) nel pannello di navigazione a sinistra per aprire l&#39;area [!UICONTROL Data Store].
 1. Fare clic su **[!UICONTROL Browse]** accanto all&#39;archivio dati che si desidera modificare.
 1. (Facoltativo) Riordinare le colonne trascinandole nella posizione desiderata.
 1. (Facoltativo) [!UICONTROL Edit] una singola cella facendo clic sull&#39;icona **[!UICONTROL Edit]** nella cella e immettendo il valore desiderato.

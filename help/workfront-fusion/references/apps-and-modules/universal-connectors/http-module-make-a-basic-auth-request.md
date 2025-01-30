@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Quando configuri il modulo [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authoriza
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo all&#39;altro in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 

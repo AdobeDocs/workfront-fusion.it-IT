@@ -4,9 +4,9 @@ description: Puoi aggiungere tecniche avanzate di gestione degli errori al perco
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Questo scenario di esempio mostra il funzionamento di questi filtri per la gesti
 
 Se si utilizza Dropbox > Crea modulo cartella e esiste già una cartella con lo stesso nome, il modulo genera un errore dati:
 
-![](assets/dropbox.png)
+![Errore nel Dropbox](assets/dropbox.png)
 
 Lo scenario completo funziona come segue:
 
-![](assets/dropbox-scenario.png)
+![Scenario Dropbox](assets/dropbox-scenario.png)
 
 1. Il modulo Strumenti > Imposta variabile contiene il nome della cartella
 1. Il modulo HTTP > Ottieni file recupera il file che deve essere caricato nella cartella
@@ -111,19 +111,19 @@ Di seguito è riportata una spiegazione dettagliata della route DataError.
 
 Per utilizzare la cartella esistente nei moduli successivi, ad esempio Caricare un file, è necessario aggiungere al modulo un percorso del gestore degli errori e recuperare il percorso della cartella da mappare nel modulo della direttiva di ripresa che segue:
 
-![](assets/add-error-handler-route.png)
+![Aggiungi route gestore errori](assets/add-error-handler-route.png)
 
 Il filtro della prima route è impostato per gestire solo l&#39;errore specifico (DataError) che viene visualizzato quando esiste già una cartella con lo stesso nome:
 
-![](assets/condition.png)
+![Condizione](assets/condition.png)
 
 Il Dropbox > Elenca tutti i file in un modulo di cartelle è configurato per restituire tutte le cartelle nella cartella di destinazione. Il seguente filtro passa solo a quello che stavamo originariamente tentando di creare. (Il nome della cartella viene memorizzato in 33. Elemento Nome cartella.)
 
-![](assets/condition2.png)
+![Condizione](assets/condition2.png)
 
 La direttiva Riprendi fornisce quindi il percorso della cartella come output per il modulo non riuscito. L’ID cartella è stato lasciato vuoto perché non è necessario dal modulo Carica file.
 
-![](assets/flow-control.png)
+![Controllo flusso](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -137,7 +137,7 @@ Esempio:
 
 Route del gestore degli errori nidificata con filtri:
 
-![](assets/nested-error-handling-route.png)
+![Errore nidificato durante la gestione della route](assets/nested-error-handling-route.png)
 
 In questo scenario, la seconda route del gestore errori è nidificata sotto la prima route del gestore errori.
 

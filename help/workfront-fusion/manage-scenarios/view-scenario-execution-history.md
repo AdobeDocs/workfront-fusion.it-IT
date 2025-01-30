@@ -4,9 +4,9 @@ description: Nella cartella [!UICONTROL Incomplete executions] sono archiviate e
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ La scheda [!UICONTROL History] mostra più dettagli di quelli disponibili nella 
 
    Oppure
 
-   Se si sta lavorando sullo scenario nell&#39;editor scenari, fare clic sulla freccia sinistra ![](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
+   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
 1. Fare clic su **Cronologia** accanto al nome dello scenario.
    ![scheda cronologia](assets/history-tab.png)
@@ -115,7 +115,7 @@ La scheda [!UICONTROL History] mostra più dettagli di quelli disponibili nella 
 
    Oppure
 
-   Se si sta lavorando sullo scenario nell&#39;editor scenari, fare clic sulla freccia sinistra ![](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
+   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
 1. Fare clic sulla scheda **[!UICONTROL History]** nel pannello di destra.
 1. (Facoltativo) Per informazioni dettagliate sull’esecuzione di uno scenario selezionato, fai clic sull’esecuzione nel pannello a destra.
@@ -133,7 +133,7 @@ La scheda [!UICONTROL History] mostra più dettagli di quelli disponibili nella 
 Puoi filtrare la cronologia di esecuzione per visualizzare solo le esecuzioni con i valori specificati.
 
 1. Aprire la cronologia a pagina intera per uno scenario come descritto in [Visualizzare la cronologia di esecuzione dello scenario nella scheda [!UICONTROL History]](#view-scenario-history-on-the-history-tab) in questo articolo.
-1. Fare clic sull&#39;icona [!UICONTROL filter] ![](assets/fusion-scenario-filter-icon.png) nell&#39;intestazione della colonna in base alla quale si desidera filtrare.
+1. Fai clic sull&#39;icona [!UICONTROL filter] ![Icona filtro scenario](assets/fusion-scenario-filter-icon.png) nell&#39;intestazione della colonna in base alla quale desideri filtrare.
 1. Nella finestra di dialogo [!UICONTROL filter], immettere i valori in base ai quali si desidera filtrare.
 1. Fare clic su **[!UICONTROL Save]**.
 

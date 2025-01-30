@@ -4,9 +4,9 @@ description: L’editor degli scenari consente di creare e modificare scenari in
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '547'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 L’editor degli scenari consente di creare e modificare scenari in un’interfaccia visiva.
 
-![](assets/scenario-editor.jpg)
+![Editor scenario](assets/scenario-editor.jpg)
 
 ## Requisiti di accesso
 
@@ -71,7 +71,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 ## Apri l’editor scenario e aggiungi un modulo:
 
-1. Fai clic su **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) nel pannello a sinistra.
+1. Fai clic su **[!UICONTROL Scenarios]** ![Icona Scenari](assets/scenarios-icon.png) nel pannello a sinistra.
 1. Fai clic sull&#39;icona del punto interrogativo ![icona domanda](assets/question-mark-full-size.png), quindi individua e fai clic sull&#39;app o sul servizio con cui vuoi iniziare. Per informazioni dettagliate sulla configurazione di un modulo, vedere [Configurare un modulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Azioni editor di scenari disponibili

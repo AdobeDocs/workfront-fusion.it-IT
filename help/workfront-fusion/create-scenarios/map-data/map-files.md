@@ -4,9 +4,9 @@ description: Alcuni moduli sono in grado di elaborare i file. Questi moduli poss
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -92,10 +92,10 @@ Per mappare un file:
 1. Nel modulo di destinazione, che è la destinazione a cui si sta eseguendo il mapping, individuare l&#39;area **file Source**.
 1. Per mappare l&#39;output di un file di un modulo precedente, selezionare il modulo che restituisce il file.
 
-   ![](assets/wf-download-document.png)
+   ![Documento di download Workfront](assets/wf-download-document.png)
 
 1. Per mappare il nome e i dati manualmente, selezionare Mappa, quindi immettere o mappare il nome e i dati del file.
 
-   ![](assets/use-the-map-option.png)
+   ![Utilizza l&#39;opzione mappa](assets/use-the-map-option.png)
 
 1. Continuare la configurazione del modulo oppure fare clic su **OK**.

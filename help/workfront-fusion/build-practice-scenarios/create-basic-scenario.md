@@ -7,9 +7,9 @@ description: Scopri come creare uno scenario di automazione semplice con Adobe W
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 8884aef2237ad358c774110b81ac17b9efb386d4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1315'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
    Il nome viene visualizzato appena sotto il modulo. Di seguito, [!DNL Workfront Fusion] include una breve descrizione del tipo di azione eseguita dal modulo.
 
-   ![](assets/module-renamed-wf.png)
+   ![Modulo rinominato](assets/module-renamed-wf.png)
 
 1. Continua con [Aggiungi e configura il secondo modulo](#add-and-configure-the-second-module).
 
@@ -191,9 +191,9 @@ In questo caso, se il test ha esito positivo, la richiesta viene individuata e c
 >
 >1. Chiudere l&#39;area **[!UICONTROL Notes]**.
 >
->     Dopo aver aggiunto una nota a uno scenario, un punto arancione viene visualizzato sull&#39;icona **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png) nella parte inferiore dell&#39;editor dello scenario.
+>     Dopo aver aggiunto una nota a uno scenario, un punto arancione viene visualizzato sull&#39;icona **[!UICONTROL Notes]** ![Note con punto](assets/notes-icon-w-dot.png) nella parte inferiore dell&#39;editor dello scenario.
 >
->1. Fare clic sull&#39;icona **[!UICONTROL Notes]** ![](assets/notes-icon-w-dot.png) per visualizzare le note.
+>1. Fai clic sull&#39;icona **[!UICONTROL Notes]** ![Icona Note con punto](assets/notes-icon-w-dot.png) per visualizzare le note.
 >
 
 ## Attiva lo scenario

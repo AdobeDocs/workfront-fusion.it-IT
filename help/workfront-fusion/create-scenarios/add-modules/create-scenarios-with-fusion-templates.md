@@ -4,9 +4,9 @@ description: La funzione Modelli di Adobe Workfront Fusion consente di creare e 
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ I modelli pubblici sono disponibili senza prerequisiti.
 
 ## Creare uno scenario da un modello
 
-1. Fai clic sulla scheda **Modelli** ![](assets/templates-icon.png) nel pannello di navigazione a sinistra.
+1. Fai clic sulla scheda **Modelli** ![icona Modelli](assets/templates-icon.png) nel pannello di navigazione a sinistra.
 1. Fare clic sulla scheda contenente il modello che si desidera utilizzare (**Modelli pubblici** o **Modelli team**).
 1. Cerca un modello specifico utilizzando la barra di ricerca nell’angolo in alto a sinistra dello schermo. Puoi eseguire ricerche per nome del modello o per applicazioni incluse.
 1. Fare clic sul modello da utilizzare per creare uno scenario.
@@ -84,6 +84,6 @@ I modelli pubblici sono disponibili senza prerequisiti.
 
 1. Dopo aver configurato tutte le impostazioni richieste per il modello, viene visualizzato un messaggio che informa che il modello è pronto per essere utilizzato e che le opzioni dello scenario standard sono visualizzate nella parte inferiore dello schermo. Ora puoi continuare a creare il tuo scenario.
 
-1. Fai clic sull&#39;icona **Salva** ![](assets/save-icon.png) nella parte inferiore della schermata per salvare lo scenario.
+1. Fai clic sull&#39;icona **Salva** ![Salva icona](assets/save-icon.png) nella parte inferiore della schermata per salvare lo scenario.
 
    Lo scenario viene salvato nell&#39;area Scenari di Workfront Fusion.

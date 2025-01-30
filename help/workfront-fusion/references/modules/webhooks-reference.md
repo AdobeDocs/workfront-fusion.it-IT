@@ -4,9 +4,9 @@ description: Molti servizi forniscono webhook per inviare notifiche istantanee o
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 4c0f050e40d28f236d6086e7dccea53d49252aa8
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Molti servizi forniscono webhook per inviare notifiche istantanee ogni volta che si verifica un determinato cambiamento (evento) nel servizio. Per elaborare questi eventi, si consiglia di utilizzare trigger istantanei. I trigger istantanei visualizzano il tag `Instant` nell&#39;elenco dei moduli per un determinato connettore.
 
-![](assets/instant.png)
+![Istantanea](assets/instant.png)
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Per un video introduttivo ai webhook in Workfront Fusion, vedi:
 
 Quando configuri un trigger istantaneo, ti viene richiesto di selezionare quando viene eseguito.
 
-![](assets/schedule-setting.png)
+![Impostazione pianificazione](assets/schedule-setting.png)
 
 Selezionare `Immediately` per eseguire immediatamente lo scenario quando [!DNL Workfront Fusion] riceve nuovi eventi dal servizio. Questi eventi vengono immediatamente inviati in una coda e quindi elaborati nello scenario uno alla volta, nello stesso ordine in cui vengono ricevuti i dati.
 
@@ -62,7 +62,7 @@ Per ulteriori informazioni sui cicli, vedere [Esecuzione dello scenario, cicli e
 
 Se si utilizza un&#39;impostazione di pianificazione diversa da [!UICONTROL Immediately], lo scenario viene eseguito agli intervalli specificati. Poiché è possibile raccogliere più webhook nella coda durante l&#39;intervallo, si consiglia di impostare l&#39;opzione [!UICONTROL Maximum number of cycles] su un valore superiore a quello predefinito 1 per elaborare più webhook in un&#39;esecuzione dello scenario:
 
-1. Fai clic sull&#39;icona [!UICONTROL Scenario settings] ![](assets/scenario-settings-icon.png) nella parte inferiore dello scenario.
+1. Fai clic sull&#39;icona [!UICONTROL Scenario settings] ![icona Impostazioni scenario](assets/scenario-settings-icon.png) nella parte inferiore dello scenario.
 1. Nel pannello **[!UICONTROL Scenario settings]** visualizzato, immettere un numero nel campo **[!UICONTROL Max number of cycles]** per indicare il numero di eventi dalla coda che si desidera eseguire ogni volta che si esegue lo scenario.
 
 Gli eventi rimanenti nella coda verranno elaborati alla successiva esecuzione dello scenario, fino al numero impostato nel campo Numero massimo di cicli.

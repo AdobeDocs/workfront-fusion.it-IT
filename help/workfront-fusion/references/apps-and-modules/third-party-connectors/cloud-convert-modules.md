@@ -4,9 +4,9 @@ description: Moduli CloudConvert
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
@@ -541,7 +541,7 @@ Si attiva quando un processo nell’account o nell’attività viene creato, ter
 >* Se si utilizza l&#39;aggregatore di matrici (ad esempio, sono presenti molti file in formati diversi da convertire), utilizzare l&#39;opzione **[!UICONTROL I don't know the input format]** nella finestra di dialogo [!UICONTROL Add a task]. In caso contrario, viene restituito l’errore.
 >* Collegamento di task all&#39;interno del job (nome > input, nome > input,...):
 >
->  ![](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  ![Collegamento del nome tra processi](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### Attività
 
@@ -745,13 +745,13 @@ URL: `/v2/tasks`
 
 Metodo: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
+![Esempio di input API](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
 Le corrispondenze della ricerca si trovano nell&#39;output del modulo in [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data].
 
 Nel nostro esempio, sono state restituite 6 attività:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![Output di esempio API](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## Risoluzione dei problemi {#troubleshooting}
 
@@ -817,6 +817,6 @@ Per informazioni sui possibili errori e sulle relative soluzioni, vedere la tabe
 >1. Apri le impostazioni del modulo.
 >1. Configura il modulo come mostrato di seguito:
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
+>   ![Esempio CloudConvert](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
 >
 >1. Assicurati di includere tutte le impostazioni nel campo Conversione e opzioni specifiche del motore: per ogni impostazione dal punto 5, individua il parametro corrispondente dal punto 13 e il relativo valore corrispondente.

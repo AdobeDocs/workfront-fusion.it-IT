@@ -4,9 +4,9 @@ description: Dettagli scenario in [!DNL Adobe Workfront Fusion]
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '539'
 ht-degree: 1%
 
 ---
@@ -77,11 +77,11 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
    Oppure
 
-   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
+   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
 1. Nella pagina visualizzata, puoi esaminare gli elementi elencati nella tabella seguente:
 
-   ![](assets/scenario-detail-350x207.png)
+   ![Dettagli scenario](assets/scenario-detail-350x207.png)
 
    <table style="table-layout:auto"> 
     <col> 

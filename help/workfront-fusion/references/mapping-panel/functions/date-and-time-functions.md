@@ -4,9 +4,9 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -333,7 +333,7 @@ La funzione `formatDate` restituisce una rappresentazione testuale del valore Da
 
 **Esempi:** In questi esempi, il fuso orario Scenario e Web sono entrambi impostati su `Europe/Prague`.
 
-![](assets/date&time-functions-examples-350x61.png)
+![Esempio di funzione data e ora](assets/date&time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Questa sezione è stata adattata per [!DNL Workfront Fusion] dalla pagina Web [!
 
 Per calcolare una data corrispondente all&#39;ennesimo giorno della settimana del mese, ad esempio primo martedì, terzo venerdì e così via, è possibile utilizzare la formula seguente:
 
-![](assets/date&time-functions-calc-nth-day-350x31.png)
+![Calcola nono giorno](assets/date&time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Se si desidera calcolare solo un caso specifico, ad esempio ogni due mercoledì,
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![](assets/nth-day-variable-value-350x33.png)
+![Valore variabile del nono giorno](assets/nth-day-variable-value-350x33.png)
 
 #### Spiegazione:
 
@@ -521,7 +521,7 @@ Se si desidera calcolare solo un caso specifico, ad esempio ogni due mercoledì,
 
 Una possibilità consiste nell’utilizzare la seguente espressione:
 
-![](assets/calculate-days-between-dates-350x68.png)
+![Calcola giorni tra date](assets/calculate-days-between-dates-350x68.png)
 
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
@@ -541,7 +541,7 @@ Quando si specifica un intervallo di date, ad esempio in un modulo di ricerca, s
 
 La formula seguente mostra un modo per calcolare l’ultimo giorno del mese precedente:
 
-![](assets/last-day-prev-month.png)
+![Ultimo giorno del mese precedente](assets/last-day-prev-month.png)
 
 ```
 {{addDays(setDate(now; 1); -1)}}
@@ -553,7 +553,7 @@ In alcuni casi, è necessario calcolare non solo l’ultimo giorno del mese, ma 
 
 Questa formula mostra un modo per calcolare l’ultimo millisecondo del mese precedente:
 
-![](assets/last-millisecond-prev-month-350x45.png)
+![Ultimo millisecondo del mese precedente](assets/last-millisecond-prev-month-350x45.png)
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
@@ -561,7 +561,7 @@ Questa formula mostra un modo per calcolare l’ultimo millisecondo del mese pre
 
 Se è necessario che il risultato utilizzi l’impostazione del fuso orario, ometti l’argomento UTC:
 
-![](assets/omit-utc-argument-350x45.png)
+![Ometti UTC](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

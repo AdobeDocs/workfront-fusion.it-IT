@@ -4,9 +4,9 @@ description: In Adobe Workfront Fusion è possibile copiare moduli, gruppi di mo
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ La clonazione di uno scenario ne crea una copia, che potrai quindi modificare.
 
       Oppure
 
-      Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
+      Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
 1. Fare clic con il pulsante destro del mouse su **[!UICONTROL Options]** in alto a destra della pagina.
 1. Selezionare **[!UICONTROL Clone]**.

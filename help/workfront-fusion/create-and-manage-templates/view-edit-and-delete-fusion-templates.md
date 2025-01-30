@@ -7,9 +7,9 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: a252de430a3c712c48c1677433ce6176292bc6ce
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Per istruzioni sulla creazione di uno scenario da un modello, vedere [Creare sce
 
 È possibile modificare qualsiasi modello disponibile nella scheda [!UICONTROL Team templates].
 
-1. Fare clic sull&#39;icona **[!UICONTROL Templates]** ![](assets/templates-icon.png) nel menu di navigazione laterale.
+1. Fai clic sull&#39;icona **[!UICONTROL Templates]** ![icona Modelli](assets/templates-icon.png) nel menu di navigazione laterale.
 1. Fare clic sulla scheda **[!UICONTROL Team templates]**.
 1. Fare clic sulla scheda **[!UICONTROL Private]**.
 1. Fai clic sul modello da modificare.
@@ -128,7 +128,7 @@ Per istruzioni sulla creazione di uno scenario da un modello, vedere [Creare sce
    Fare clic sul diagramma modello.
 
 1. Apporta le modifiche nel modello. Puoi accedere a tutte le opzioni disponibili durante la creazione del modello. Per visualizzare queste opzioni, vedere [Creare nuovi modelli](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md).
-1. Fare clic sull&#39;icona **[!UICONTROL Save]** ![](assets/save-icon.png).
+1. Fai clic sull&#39;icona **[!UICONTROL Save]** ![Icona Salva](assets/save-icon.png).
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Puoi eliminare solo i modelli non ancora approvati. Se desideri eliminare un mod
 
 Tieni presente che un modello eliminato non può essere ripristinato. I modelli di team sono disponibili per tutti i membri del team. Prima di eliminare un modello, è quindi consigliabile verificare con i team se il modello non è necessario.
 
-1. Fare clic sull&#39;icona **[!UICONTROL Templates]** ![](assets/templates-icon.png) nel menu di navigazione laterale.
+1. Fai clic sull&#39;icona **[!UICONTROL Templates]** ![icona Modelli](assets/templates-icon.png) nel menu di navigazione laterale.
 1. Fare clic sulla scheda **[!UICONTROL Team templates]**.
 1. Fai clic su **[!UICONTROL Delete]** accanto al nome del modello
 

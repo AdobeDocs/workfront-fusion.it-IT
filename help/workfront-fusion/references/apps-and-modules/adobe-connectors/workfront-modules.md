@@ -4,9 +4,9 @@ description: Puoi utilizzare il connettore Adobe Workfront Fusion Adobe Workfron
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6213'
 ht-degree: 3%
 
 ---
@@ -2068,7 +2068,7 @@ Nel filtro Workfront > Osserva eventi sono disponibili i seguenti operatori:
 >
 >Utilizzando il filtro eventi, puoi impostare il webhook per attivare lo scenario quando un problema viene assegnato ad Ana al momento della creazione. Ana ha l’ID utente b378489d8f7cd3cee0539260720a84b7.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
+>![Filtro eventi](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
 >Se vengono creati 100 problemi in un giorno, ma solo due di essi sono assegnati ad Ana, lo scenario verrebbe eseguito due volte.
 >
@@ -2076,7 +2076,7 @@ Nel filtro Workfront > Osserva eventi sono disponibili i seguenti operatori:
 >
 >Per filtrare gli eventi in modo che vengano elaborati solo i problemi assegnati ad Ana, è possibile creare un filtro dopo il modulo [!UICONTROL Watch Events].
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
+>![Senza filtro eventi](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
 >Se vengono creati 100 problemi in un giorno, ma solo due di essi sono assegnati ad Ana, lo scenario verrebbe eseguito 100 volte. 98 esecuzioni si fermerebbero al filtro, ma il modulo trigger consuma ancora dati ed esegue operazioni in tutte le esecuzioni.
 

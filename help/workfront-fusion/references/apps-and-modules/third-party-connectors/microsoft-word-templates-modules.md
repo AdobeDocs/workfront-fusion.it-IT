@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, è possibile automatizzare 
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -84,11 +84,11 @@ Per istruzioni sulla connessione dell&#39;account [!DNL Office] a [!UICONTROL Wo
 
 È possibile, ad esempio, utilizzare questo modello [!DNL Microsoft Word]:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
+![Modello di Word prima](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 Per creare questo documento:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
+![Modello di Word compilato](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## Informazioni sui tag dei valori
 
@@ -110,7 +110,7 @@ Un tag di valore semplice viene semplicemente sostituito con un valore corrispon
 
 A questo scopo, imposta il modulo come segue:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
+![Valore semplice modello di Word](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### Tag condizione {#condition-tag}
 
@@ -125,7 +125,7 @@ A questo scopo, imposta il modulo come segue:
 
 A questo scopo, imposta il modulo come segue:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
+![Modello di Word condizionale](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 Nel documento, il numero di telefono apparirà come segue:
 
@@ -148,7 +148,7 @@ Per ripetere una sezione di testo, è possibile utilizzare un tag loop, noto anc
 A questo scopo, imposta il modulo come segue:
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
+![Compila un documento](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 Il modulo crea il seguente documento:
 

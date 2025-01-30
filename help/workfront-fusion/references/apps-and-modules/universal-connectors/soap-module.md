@@ -4,7 +4,7 @@ description: Puoi utilizzare il modulo SOAP per connettersi alle API SOAP in Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: bf9af473f08463c00578a1a8b07c800239225f09
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 1%
@@ -119,7 +119,7 @@ Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari e
     </tbody> 
    </table>
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
+   <!--![Workaround](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
 
 1. Aprire una nuova finestra o scheda del browser Web.
 1. Incollare l&#39;URL WSDL nella barra degli indirizzi del browser Web e recuperare il file XML.
@@ -129,7 +129,7 @@ Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari e
 1. Se il file WSDL non viene visualizzato direttamente nel browser Web, aprire il file scaricato in un editor di testo.
 1. Cerca il tag `<service>` o `<wsdl:service>`:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
+   <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Una volta individuato, copiare l&#39;URL dall&#39;attributo `location`.
 1. In [!DNL Workfront Fusion], incollare l&#39;URL nel campo URL del modulo HTTP.
@@ -141,7 +141,7 @@ Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari e
 1. In [!UICONTROL Workfront Fusion], incolla il contenuto copiato nel campo URL del modulo.
 1. Fornire i valori per i parametri selezionati sostituendo i punti interrogativi con i valori effettivi:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
+   <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
 1. Chiudere la configurazione del modulo facendo clic su **[!UICONTROL OK]**.
 1. Esegui lo scenario o il modulo.

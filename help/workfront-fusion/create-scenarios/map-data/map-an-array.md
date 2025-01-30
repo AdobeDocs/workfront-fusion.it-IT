@@ -4,9 +4,9 @@ description: È possibile mappare un array o singoli elementi di array a un camp
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Per aggiungere elementi all’array:
 
 Gli elementi array vengono visualizzati sotto forma di numero tra parentesi quadre dopo il nome dell’array. Puoi mappare un singolo elemento di un array in un campo utilizzando questo numero di indice.
 
-![](assets/map-array-1st-element.png)
+![Mappa primo elemento](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Per mappare un elemento array:
 
 1. Per mappare un elemento diverso dell&#39;array, fare clic su [1] e immettere il numero di indice dell&#39;elemento dell&#39;array da mappare.
 
-   ![](assets/access-another-element.png)
+   ![Accedere a un altro elemento](assets/access-another-element.png)
 
 ### Mappare l’elemento di un array con una determinata chiave
 
@@ -138,13 +138,13 @@ Alcuni array contengono raccolte con elementi chiave come metadati, attributi e 
 
 Nell&#39;esempio seguente viene illustrato l&#39;output dell&#39;app [!DNL Jira].
 
-![](assets/output-of-jira-app-350x100.png)
+![Output del modulo Jira](assets/output-of-jira-app-350x100.png)
 
 Questo esempio ottiene un nome di file da un array di allegati, per l’allegato specifico con un ID di 10108.
 
 Questo esempio genera il seguente output:
 
-![](assets/output-from-jira-350x261.png)
+![Output del modulo Jira](assets/output-from-jira-350x261.png)
 
 La formula può essere spiegata come segue:
 
@@ -153,7 +153,7 @@ La formula può essere spiegata come segue:
    1. Il primo parametro della funzione `map()` è l&#39;intero elemento dell&#39;array.
    1. Il secondo parametro è il nome non elaborato dell&#39;elemento valore. Per ottenere il nome non elaborato, passa il cursore del mouse sull&#39;elemento nel pannello [!UICONTROL mapping]:
 
-      ![](assets/obtain-raw-name-350x124.png)
+      ![Ottieni nome non elaborato](assets/obtain-raw-name-350x124.png)
 
       >[!NOTE]
       >
@@ -161,7 +161,7 @@ La formula può essere spiegata come segue:
 
    1. Il terzo parametro è il nome non elaborato dell’elemento chiave:
 
-      ![](assets/3rd-parameter-350x166.png)
+      ![Terzo parametro](assets/3rd-parameter-350x166.png)
 
    1. Il quarto parametro è il valore chiave specificato.
 
@@ -175,7 +175,7 @@ La formula può essere spiegata come segue:
 
 Questo esempio genera il seguente output:
 
-![](assets/output-from-jira-350x261.png)
+![Output dal modulo Jira](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -187,4 +187,4 @@ Per ulteriori informazioni sulla funzione `get()`, vedere [Funzioni generali](/h
 
 Gli array possono essere convertiti in una serie di bundle utilizzando il modulo [!UICONTROL Iterator]. Per ulteriori informazioni, vedere il modulo [[!UICONTROL Iterator]](/help/workfront-fusion/references/modules/iterator-module.md).
 
-![](assets/series-of-bundles.png)
+![Serie di bundle](assets/series-of-bundles.png)

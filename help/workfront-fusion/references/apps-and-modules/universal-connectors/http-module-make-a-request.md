@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion HTTP &gt; Creare un modulo di richiesta è u
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 4377870d9441a3e84c51a547f17f154a78fb8f59
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 >
 >**Esempio:** Questo esempio mostra come impostare il modulo per inviare una richiesta [!UICONTROL POST] con payload JSON:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>![Esempio di richiesta](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
 >[!NOTE]
 >

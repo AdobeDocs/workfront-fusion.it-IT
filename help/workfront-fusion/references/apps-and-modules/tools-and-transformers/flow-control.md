@@ -4,9 +4,9 @@ description: Quando crei o modifichi uno scenario, puoi configurare le impostazi
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ce2f13866fef97b5687991dfcf5d9579a5e539e4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -62,13 +62,13 @@ Ad esempio, è possibile utilizzare un modulo [!UICONTROL Repeater] per inviare 
 
 Per utilizzare un modulo [!UICONTROL Repeater]:
 
-1. Fai clic sull&#39;icona [!UICONTROL Flow Control] ![](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) nella parte inferiore della schermata, quindi fai clic su **[!UICONTROL Repeater]** nel menu visualizzato.
+1. Fare clic sull&#39;icona [!UICONTROL Flow Control] ![Icona Controllo flusso](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) nella parte inferiore dello schermo, quindi fare clic su **[!UICONTROL Repeater]** nel menu visualizzato.
 1. Fai clic sul bundle [!UICONTROL Repeater], quindi fai clic su **[!UICONTROL Connect automatically]** nella casella visualizzata.
 1. Nella casella [!UICONTROL Flow Control] visualizzata digitare il numero di ripetizioni (bundle generati) desiderato nella casella **[!UICONTROL Repeats]**.
 
    Nel nostro esempio di e-mail, digita 5.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![Ripetitore](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    Il valore dell&#39;elemento aumenta in ogni ripetizione di questo valore specificato nel campo **[!UICONTROL Step]**, che è possibile visualizzare selezionando **[!UICONTROL Show advanced settings]**. Questo numero è 1 per impostazione predefinita.
 
@@ -79,7 +79,7 @@ Per utilizzare un modulo [!UICONTROL Repeater]:
 
    Nel nostro esempio di e-mail, dovresti digitare Hello nella casella [!UICONTROL Subject], quindi mappare `i` dal modulo del ripetitore.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![Ripetitore](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 | Voce | Descrizione |
 |---|---|

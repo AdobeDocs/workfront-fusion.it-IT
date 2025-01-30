@@ -4,10 +4,10 @@ description: Questo articolo descrive perché gli scenari attivi o disattivati s
 author: Becky
 feature: Workfront Fusion
 exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
-source-git-commit: d79f8ac6d678a874e05e606d7b9ff7c812d93db1
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
+source-wordcount: '303'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ Per istruzioni sulla creazione di uno scenario, consulta [Flusso di lavoro per l
 
 ## Attiva o disattiva uno scenario:
 
-1. Fai clic su **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) nel pannello a sinistra, quindi fai clic sullo scenario per aprirlo.
+1. Fai clic su **[!UICONTROL Scenarios]** ![Icona Scenari](assets/scenarios-icon.png) nel pannello a sinistra, quindi fai clic sullo scenario per aprirlo.
 1. Fai clic sull’interruttore Attivato/Disattivato nell’angolo superiore destro della pagina dei dettagli dello scenario.
 
    ![Attivazione/disattivazione dettagli](assets/active-toggle-details-page.png)
@@ -96,4 +96,4 @@ Per istruzioni sulla creazione di uno scenario, consulta [Flusso di lavoro per l
 
    Fare clic sul diagramma per accedere all&#39;editor scenari, quindi fare clic sull&#39;interruttore **[!UICONTROL On/Off]** nell&#39;angolo inferiore sinistro della finestra.
 
-   ![](assets/on-off-switch.jpg)
+   ![Interruttore di accensione/spegnimento](assets/on-off-switch.jpg)

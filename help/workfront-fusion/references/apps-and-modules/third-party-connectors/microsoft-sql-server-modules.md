@@ -4,9 +4,9 @@ description: È possibile utilizzare  [!DNL Adobe Workfront Fusion]  per connett
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,6 @@ Se un altro modulo tenta di accedere agli stessi dati, deve attendere il complet
 
 Attiva il commit automatico. Il commit automatico termina (esegue il commit) ogni transazione subito dopo l&#39;esecuzione del modulo.
 
-1. Fare clic sull&#39;icona [!UICONTROL Scenario settings] ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) nella parte inferiore della schermata.
+1. Fai clic sull&#39;icona [!UICONTROL Scenario settings] ![icona Impostazioni scenario](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)nella parte inferiore della schermata.
 1. Selezionare la casella di controllo **[!UICONTROL Auto commit]**.
 1. Fare clic su **[!UICONTROL OK]** per salvare le impostazioni dello scenario.

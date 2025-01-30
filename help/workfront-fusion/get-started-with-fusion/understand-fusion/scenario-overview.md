@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Workfront Fusion consente di automatizzare flussi di lavoro semplici o complessi
 
 In questo esempio, lo scenario si attiva quando un campo specificato cambia in un&#39;attività o in un problema in [!DNL Workfront]. Quando viene attivato, lo scenario ottiene informazioni nel progetto correlato e crea un aggiornamento personalizzato per una persona assegnata a un ruolo specifico nel progetto.
 
-![](assets/fusion-template-example.png)
+![Esempio di modello](assets/fusion-template-example.png)
 
 +++
 
@@ -90,7 +90,7 @@ Molte applicazioni dispongono di connettori [!DNL Workfront Fusion] dedicati. Se
 
 In questo esempio, lo scenario viene attivato quando un utente viene aggiunto a un foglio di calcolo [!DNL Excel]. Lo scenario controlla se l&#39;utente si trova in [!DNL Workfront]. In caso contrario, l&#39;utente verrà creato in [!DNL Workfront] e il relativo ID utente Workfront verrà nuovamente aggiunto al foglio di calcolo.
 
-![](assets/fusion-integration-example.png)
+![Esempio di integrazione](assets/fusion-integration-example.png)
 
 Per un elenco dei connettori dedicati, vedere [Riferimenti alle applicazioni Fusion e ai relativi moduli: indice articolo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 

@@ -4,9 +4,9 @@ description: La sezione  [!DNL Adobe Workfront Fusion Tools]  include diversi mo
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 La sezione [!DNL Adobe Workfront Fusion Tools] include diversi moduli utili che possono migliorare il tuo scenario.
 
-[!UICONTROL Tools] moduli sono disponibili dall&#39;elenco delle app o dall&#39;icona ![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) di [!UICONTROL Tools] nella parte inferiore dello schermo.
+I moduli [!UICONTROL Tools] sono disponibili dall&#39;elenco delle app o dall&#39;icona [!UICONTROL Tools] ![Strumenti](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) nella parte inferiore dello schermo.
 
 ## Requisiti di accesso
 
@@ -161,14 +161,14 @@ Questo modulo può essere utilizzato per implementare un’assegnazione &quot;ro
 
 Lo scenario seguente invia un’e-mail al primo destinatario dopo ogni esecuzione dello scenario con numero dispari e al secondo destinatario dopo ogni esecuzione dello scenario con numero pari.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![E-mail di esempio](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 Per creare questo scenario:
 
 1. Impostare il campo **[!UICONTROL Reset a value]** del modulo su Mai.
 1. Impostare la route per i valori dispari. Impostare il filtro per questa route utilizzando la funzione matematica del modulo che è uguale a `1`:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![Numeri dispari](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **Nota**: non dimenticare di modificare l&#39;operatore [!UICONTROL Equal to] dall&#39;operatore [!UICONTROL Text] predefinito all&#39;operatore [!UICONTROL Numeric].
 
