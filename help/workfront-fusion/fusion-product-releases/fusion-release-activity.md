@@ -4,7 +4,7 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: product-releases
 title: Panoramica dell’attività di Adobe Workfront Fusion release
-description: Adobe Workfront Fusion collega perfettamente le tue app e i tuoi servizi web in modo da poterti concentrare su nuove attività invece di ripetere le stesse attività più volte.
+description: Adobe Workfront Fusion collega perfettamente le tue app e i tuoi servizi web, permettendoti di concentrarti su nuove attività anziché ripetere sempre le stesse.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -12,13 +12,13 @@ exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 # Panoramica dell’attività di Adobe Workfront Fusion release
 
-Adobe Workfront Fusion collega perfettamente le tue app e i tuoi servizi web in modo da poterti concentrare su nuove attività invece di ripetere le stesse attività più volte.
+Adobe Workfront Fusion collega perfettamente le tue app e i tuoi servizi web, permettendoti di concentrarti su nuove attività anziché ripetere sempre le stesse.
 
 ## Versioni di fusione nel 2025
 
