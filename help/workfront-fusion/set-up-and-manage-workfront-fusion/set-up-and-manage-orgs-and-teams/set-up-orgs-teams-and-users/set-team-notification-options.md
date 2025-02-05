@@ -4,9 +4,9 @@ description: Le opzioni di notifica e-mail sono impostate a livello di team.
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ Le opzioni di notifica e-mail sono impostate a livello di team.
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Scenario deactivation]</p> </td> 
-      <td><p>Ricevi un’e-mail quando uno scenario si disattiva.</p><p><b>Nota:</b> ricevi una notifica relativa alla disattivazione dello scenario solo quando lo scenario è stato disattivato automaticamente a causa di errori. Non ricevi notifiche su scenari disattivati manualmente.</p><p>In alcuni casi, uno scenario potrebbe essere disattivato dal team di progettazione [!DNL Workfront Fusion] perché causa problemi di prestazioni o di altro tipo. In questi casi, non si ricevono notifiche in [!DNL Workfront Fusion]. </p></td>
+      <td><p>Ricevi un’e-mail quando uno scenario si disattiva.</p><p>In alcuni casi, uno scenario potrebbe essere disattivato dal team di progettazione [!DNL Workfront Fusion] perché causa problemi di prestazioni o di altro tipo. In questi casi, non si ricevono notifiche in [!DNL Workfront Fusion]. </p></td>
 
 </tr>
 </tbody>
