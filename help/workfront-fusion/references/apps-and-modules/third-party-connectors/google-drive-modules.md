@@ -4,10 +4,10 @@ description: I  [!DNL Adobe Workfront Fusion Google Drive] moduli ti consentono 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 1%
+source-wordcount: '1617'
+ht-degree: 0%
 
 ---
 
@@ -23,42 +23,46 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Informazioni sull&#39;API di Google Drive
 
@@ -87,7 +91,7 @@ Il connettore Google Drive utilizza quanto segue:
 
 ## Connessione di [!DNL Google Drive] a [!DNL Workfront Fusion]
 
-Se sei un utente [!DNL @gmail.com] o [!DNL @googlemail.com] devi creare un client OAuth su [the [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) per ottenere [!UICONTROL Client ID] e [!UICONTROL Client Secret].
+Se utilizzi l&#39;utente [!DNL @gmail.com] o [!DNL @googlemail.com], devi creare un client OAuth in [!DNL Google Cloud Platform] per ottenere [!UICONTROL Client ID] e [!UICONTROL Client Secret].
 
 Per istruzioni dettagliate su come creare il client OAuth (e ottenere [!UICONTROL Client ID] e [!UICONTROL Client Secret]), vedi [Connetti [!DNL Adobe Workfront Fusion] a [!DNL Google Services] utilizzando un client OAuth personalizzato](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
@@ -103,19 +107,96 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 
 
-* [Triggers](#triggers)
+* [Trigger](#triggers)
 * [Azioni](#actions)
 
-### Triggers
+### Trigger
 
-* [[!UICONTROL Watch Files In Folder]](#watch-files-in-folder)
-* [[!UICONTROL Watch All Files]](#watch-all-files)
+* [[!UICONTROL Watch all files]](#watch-all-files)
+* [[!UICONTROL Watch comments]](#watch-comments)
+* [[!UICONTROL Watch files in folder]](#watch-files-in-folder)
 * [[!UICONTROL Watch shared files]](#watch-shared-files)
-* [[!UICONTROL Watch Comments]](#watch-comments)
 
-#### [!UICONTROL Watch Files In Folder]
+#### [!UICONTROL Watch all files]
 
-Recupera i dettagli del file quando un file viene aggiunto o modificato nella cartella specificata.
+Questo modulo trigger avvia uno scenario quando un file in [!DNL Google Drive] viene aggiunto o modificato.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL What files to watch]</td> 
+   <td> <p>Selezionare il tipo di file che si desidera visualizzare.</p> 
+    <ul> 
+     <li>[!UICONTROL All]</li> 
+     <li>[!DNL Google Documents]</li> 
+     <li>[!DNL Google Spreadsheets]</li> 
+     <li>[!DNL Google Slides]</li> 
+     <li>[!DNL Google Drawings]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+    <td >[!UICONTROL Convert [!DNL Google Documents] file da formattare]</td>
+    <td>Selezionare il formato di file in cui convertire [!DNL Google Documents].</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] file da formattare]</td>
+    <td>Selezionare il formato di file in cui convertire [!DNL Google Spreadsheets].</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Convert [!DNL Google Slides] file da formattare]</td>
+    <td>Selezionare il formato di file in cui convertire [!DNL Google Slides].</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Convert [!DNL Google Drawings] file da formattare]</td>
+    <td>Selezionare il formato di file in cui convertire [!DNL Google Drawings].</td>
+  </tr>  
+  <tr> 
+   <td>[!UICONTROL Watch]</td> 
+   <td>Selezionare se si desidera visualizzare i nuovi file e tutte le modifiche o solo i nuovi file.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximum number of downloaded files]</td> 
+   <td>Impostare il numero massimo di risultati che [!DNL Workfront Fusion] scaricherà durante un ciclo (il numero di ripetizioni per esecuzione dello scenario).</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Comments]
+
+Questo modulo di attivazione avvia uno scenario quando un commento viene aggiunto o modificato sul file selezionato.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL File]</td> 
+   <td>Selezionare il file da controllare per i commenti.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Watch]</td> 
+   <td>Seleziona se desideri controllare tutte le modifiche o solo i nuovi commenti</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximum number of returned comments]</td> 
+   <td>Impostare il numero massimo di commenti che [!DNL Workfront Fusion] restituirà durante un ciclo (il numero di ripetizioni per esecuzione dello scenario).</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch files in folder]
+
+Questo modulo di attivazione avvia uno scenario quando un file viene aggiunto o modificato nella cartella specificata.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -163,56 +244,6 @@ Recupera i dettagli del file quando un file viene aggiunto o modificato nella ca
   <tr> 
     <td>[!UICONTROL Maximum number of downloaded files]</td>
     <td>Impostare il numero massimo di risultati che [!DNL Workfront Fusion] scaricherà durante un ciclo (il numero di ripetizioni per esecuzione dello scenario).</td>
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch All Files]
-
-Recupera i dettagli del file quando un file in [!DNL Google Drive] viene aggiunto o modificato.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL What files to watch]</td> 
-   <td> <p>Selezionare il tipo di file che si desidera visualizzare.</p> 
-    <ul> 
-     <li>[!UICONTROL All]</li> 
-     <li>[!DNL Google Documents]</li> 
-     <li>[!DNL Google Spreadsheets]</li> 
-     <li>[!DNL Google Slides]</li> 
-     <li>[!DNL Google Drawings]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] file da formattare]</td>
-    <td>Selezionare il formato di file in cui convertire [!DNL Google Documents].</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] file da formattare]</td>
-    <td>Selezionare il formato di file in cui convertire [!DNL Google Spreadsheets].</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] file da formattare]</td>
-    <td>Selezionare il formato di file in cui convertire [!DNL Google Slides].</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] file da formattare]</td>
-    <td>Selezionare il formato di file in cui convertire [!DNL Google Drawings].</td>
-  </tr>  
-  <tr> 
-   <td>[!UICONTROL Watch]</td> 
-   <td>Selezionare se si desidera visualizzare i nuovi file e tutte le modifiche o solo i nuovi file.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Maximum number of downloaded files]</td> 
-   <td>Impostare il numero massimo di risultati che [!DNL Workfront Fusion] scaricherà durante un ciclo (il numero di ripetizioni per esecuzione dello scenario).</td> 
   </tr> 
  </tbody> 
 </table>
@@ -271,95 +302,21 @@ Si attiva quando viene condiviso un nuovo file o viene aggiornato un file condiv
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Comments]
-
-Si attiva quando un commento viene aggiunto o modificato nel file selezionato.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File]</td> 
-   <td>Selezionare il file da controllare per i commenti.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Watch]</td> 
-   <td>Seleziona se desideri controllare tutte le modifiche o solo i nuovi commenti</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Maximum number of returned comments]</td> 
-   <td>Impostare il numero massimo di commenti che [!DNL Workfront Fusion] restituirà durante un ciclo (il numero di ripetizioni per esecuzione dello scenario).</td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### Azioni
 
-* [[!UICONTROL Upload a File]](#upload-a-file)
-* [[!UICONTROL Update a File]](#update-a-file)
-* [[!UICONTROL Copy a File]](#copy-a-file)
-* [[!UICONTROL Delete a File]](#delete-a-file)
-* [[!UICONTROL Move a File/Folder to Trash]](#move-a-filefolder-to-trash)
+* [[!UICONTROL Copy a file]](#copy-a-file)
+* [[!UICONTROL Create a fFolder]](#create-a-folder)
+* [[!UICONTROL Delete a file]](#delete-a-file)
 * [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Search for Files/Folders]](#search-for-filesfolders)
-* [[!UICONTROL Create a Folder]](#create-a-folder)
 * [[!UICONTROL Get a share link]](#get-a-share-link)
+* [[!UICONTROL Move a file to trash]](#move-a-filefolder-to-trash)
+* [[!UICONTROL Search for Files/Folders]](#search-for-filesfolders)
+* [[!UICONTROL Update a File]](#update-a-file)
+* [[!UICONTROL Upload a File]](#upload-a-file)
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Copy a file]
 
-Carica un file in [!DNL Google Drive].
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!DNL Destination]</td> 
-   <td> <p>Seleziona la destinazione in cui desideri caricare un file.</p> 
-    <ul> 
-     <li>[!DNL My Drive]</li> 
-     <li>[!DNL Shared with Me]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Target folder]</td> 
-   <td>Selezionare la cartella in cui si desidera caricare un file. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Source file]</td> 
-   <td>Seleziona se desideri utilizzare un file trasmesso da un modulo precedente o se desideri mappare il file manualmente.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File name]</td> 
-   <td>Selezionare il nome del file. Questa opzione è disponibile se si seleziona "[!UICONTROL Map]" nel campo [!UICONTROL source file].</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Data]</td> 
-   <td>Seleziona il file di dati da caricare. Questa opzione è disponibile se si seleziona "[!UICONTROL Map]" nel campo [!UICONTROL source file].</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Title]</td> 
-   <td>Immettere un titolo per il nuovo file.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Convert a file]</td> 
-   <td>L'attivazione di questa opzione consente al modulo di convertire i file nel formato [!DNL Google] corrispondente.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Update a File]
-
-Aggiorna i metadati o il contenuto di un file.
+Questo modulo di azione copia un file nella nuova posizione.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -371,58 +328,7 @@ Aggiorna i metadati o il contenuto di un file.
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
-   <td> <p>Seleziona la destinazione in cui desideri caricare un file.</p> 
-    <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Move to a folder]</td> 
-   <td>Se si desidera spostare il file in una cartella diversa, selezionare la cartella in cui si desidera spostare il file.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File ID]</td> 
-   <td>Mappa l’ID del file da aggiornare.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Title]</td> 
-   <td>Immetti un titolo per il file aggiornato.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Change a file content]</td> 
-   <td>Seleziona se desideri sostituire il contenuto del file.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Source file]</td> 
-   <td>Seleziona se desideri utilizzare un file trasmesso da un modulo precedente o se desideri mappare il file manualmente. Questo campo è disponibile se si è scelto di modificare il contenuto del file nel campo precedente.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File name]</td> 
-   <td>Selezionare il nome del file. Questa opzione è disponibile se si seleziona "[!UICONTROL Map]" nel campo [!UICONTROL source file].</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Data]</td> 
-   <td>Seleziona il file di dati da caricare. Questa opzione è disponibile se si seleziona "[!UICONTROL Map]" nel campo [!UICONTROL source file].</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Copy a File]
-
-Copia un file nella nuova posizione.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Destination]</td> 
-   <td> <p>Seleziona la destinazione in cui desideri caricare un file.</p> 
+   <td> <p>Selezionare la destinazione in cui si desidera copiare un file.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared with Me]</li> 
@@ -430,11 +336,11 @@ Copia un file nella nuova posizione.
   </tr> 
   <tr> 
    <td>[!UICONTROL Target folder]</td> 
-   <td>Selezionare la cartella in cui si trova il file che si desidera copiare/</td> 
+   <td>Selezionare la cartella contenente il file da copiare.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
-   <td>Mappa l’ID del file da aggiornare.</td> 
+   <td>Mappa l’ID del file da copiare.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL The name of the copy]</td> 
@@ -443,9 +349,44 @@ Copia un file nella nuova posizione.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a File]
+#### [!UICONTROL Create a folder]
 
-Elimina definitivamente un file o una cartella.
+Questo modulo di azione crea una cartella nel percorso specificato.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Destination]</td> 
+   <td> <p>Seleziona la destinazione in cui desideri creare una cartella.</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared with Me]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL New folder location]</td> 
+   <td>Passa alla posizione in cui desideri creare una nuova cartella.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL The name of the new folder]</td> 
+   <td>Immettere un nome per la cartella che si sta creando.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Share folder]</td> 
+   <td>Selezionare questa opzione se si desidera condividere la cartella con chiunque disponga del collegamento [!UICONTROL Share]. In caso contrario, il collegamento di condivisione è solo per il proprietario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a file]
+
+Questo modulo di azione elimina definitivamente un file o una cartella.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -462,28 +403,9 @@ Elimina definitivamente un file o una cartella.
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File/Folder to Trash]
-
-Sposta un file o una cartella nel cestino.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File ID]</td> 
-   <td>Mappa l’ID del file da spostare nel cestino.</td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Get a file]
 
-Recupera il file con l’ID specificato.
+Questo modulo di azione recupera il file con l’ID specificato.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -516,9 +438,47 @@ Recupera il file con l’ID specificato.
  </tbody> 
 </table>
 
+#### [!UICONTROL Get a share link]
+
+Questo modulo di azione recupera il collegamento di condivisione per un file in Google Drive.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL File ID]</td> 
+   <td>Mappa l’ID del file per il quale desideri ottenere il collegamento di condivisione.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Move a file to trash]
+
+Questo modulo di azione sposta un file o una cartella nel cestino.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL File ID]</td> 
+   <td>Mappa l’ID del file da spostare nel cestino.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Search for Files/Folders]
 
-Cerca file o cartelle in base ai criteri di ricerca.
+Questo modulo di ricerca cerca file o cartelle in base ai criteri di ricerca.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -530,7 +490,7 @@ Cerca file o cartelle in base ai criteri di ricerca.
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
-   <td> <p>Seleziona la destinazione in cui desideri eseguire la ricerca.</p> 
+   <td> <p>Selezionare l'unità di destinazione in cui si desidera eseguire la ricerca.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared with Me]</li> 
@@ -575,9 +535,9 @@ Cerca file o cartelle in base ai criteri di ricerca.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Folder]
+#### [!UICONTROL Update a File]
 
-Crea una cartella nel percorso specificato.
+Questo modulo di azione aggiorna i metadati o il contenuto di un file.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -589,30 +549,42 @@ Crea una cartella nel percorso specificato.
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
-   <td> <p>Seleziona la destinazione in cui desideri caricare un file.</p> 
+   <td> <p>Selezionare la destinazione contenente il file che si desidera aggiornare.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared with Me]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New folder location]</td> 
-   <td>Passa alla posizione in cui desideri creare una nuova cartella.</td> 
+   <td>[!UICONTROL Move to a folder]</td> 
+   <td>Per spostare il file in una cartella specifica, selezionare la cartella in cui si desidera spostare il file.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL The name of the new folder]</td> 
-   <td>Immettere un nome per la cartella che si sta creando.</td> 
+   <td>[!UICONTROL File ID]</td> 
+   <td>Mappa l’ID del file da aggiornare.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Share folder]</td> 
-   <td>Selezionare questa opzione se si desidera condividere la cartella con chiunque disponga del collegamento [!UICONTROL Share]. In caso contrario, il collegamento di condivisione è solo per il proprietario.</td> 
+   <td>[!UICONTROL Title]</td> 
+   <td>Immetti un titolo per il file aggiornato.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Change a file content]</td> 
+   <td>Seleziona se desideri sostituire il contenuto del file.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source file]</td> 
+   <td>Se stai sostituendo il contenuto, seleziona un file di origine da un modulo precedente o mappane il nome e i dati del file di origine.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Conver a file]</td> 
+   <td>Abilita questa opzione per convertire il file nel formato di file Google corrispondente.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a share link]
+#### [!UICONTROL Upload a File]
 
-Recupera il collegamento di condivisione per un file in Google Drive.
+Carica un file in [!DNL Google Drive].
 
 <table style="table-layout:auto"> 
  <col> 
@@ -623,8 +595,28 @@ Recupera il collegamento di condivisione per un file in Google Drive.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Drive] a [!DNL Workfront Fusion], vedere <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Google Drive] a [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
-   <td>Mappa l’ID del file per il quale desideri ottenere il collegamento di condivisione.</td> 
+   <td>[!DNL Destination]</td> 
+   <td> <p>Seleziona la destinazione in cui desideri caricare un file.</p> 
+    <ul> 
+     <li>[!DNL My Drive]</li> 
+     <li>[!DNL Shared with Me]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Target folder]</td> 
+   <td>Selezionare la cartella in cui si desidera caricare un file. </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source file]</td> 
+   <td>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Title]</td> 
+   <td>Immettere un titolo per il nuovo file.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Convert a file]</td> 
+   <td>L'attivazione di questa opzione consente al modulo di convertire i file nel formato [!DNL Google] corrispondente.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -633,29 +625,31 @@ Recupera il collegamento di condivisione per un file in Google Drive.
 
 ### Impossibile caricare o aggiornare un file
 
-Esistono diverse situazioni in cui il caricamento o l’aggiornamento di un file non riesce:
+Esistono diversi motivi per cui il caricamento o l’aggiornamento di un file non riesce:
 
 * Il file caricato è troppo grande e supera la dimensione massima consentita per il piano [!DNL Google Drive] oppure hai superato il limite di archiviazione di [!DNL Google Drive]. È possibile aggiornare il piano di archiviazione o eliminare i file esistenti dal servizio [!DNL Google Drive].
-* La cartella selezionata in cui doveva essere caricato il file non esiste più. Lo scenario si interrompe ed è quindi necessario selezionare nuovamente una cartella di destinazione.
+* La cartella selezionata in cui doveva essere caricato il file non esiste più. In questo caso, lo scenario si interrompe e devi selezionare una cartella di destinazione diversa nel modulo.
 
-## Cerca file
+<!-- Not present February 2025
 
-Nel modulo Elenca i file in una cartella è possibile utilizzare una query personalizzata costituita dalle seguenti parti:
+## Search for files
 
-* **[!UICONTROL Field]** - Attributo del file in cui viene eseguita la ricerca, ad esempio l&#39;attributo `name` del file.
+In the module List files in a folder you can use your own query which consists of these parts:
 
-* **[!UICONTROL Operator]** - Test eseguito sui dati per fornire una corrispondenza, ad esempio `contains`.
+* **[!UICONTROL Field]** - Attribute of the file that is being searched, for example, the attribute `name` of the file.
 
-* **[!UICONTROL Value]** - Contenuto dell&#39;attributo testato, ad esempio il nome del file `My cool document`.
+* **[!UICONTROL Operator]** - Test that is performed on the data to provide a match, for example, `contains`.
 
-Combinare le clausole con le congiunzioni `and` o `or` e negare la query con `not`.
+* **[!UICONTROL Value]** - The content of the attribute that is tested, for example, the name of the file `My cool document`.
 
-* [Campi](#fields)
-* [Tipi di valore](#value-types)
-* [Operatori](#operators)
-* [Esempi](#examples)
+Combine clauses with the conjunctions `and` or `or`, and negate the query with `not`.
 
-### Campi
+* [Fields](#fields)
+* [Value types](#value-types)
+* [Operators](#operators)
+* [Examples](#examples)
+
+### Fields 
 
 <table style="table-layout:auto"> 
  <col> 
@@ -664,242 +658,244 @@ Combinare le clausole con le congiunzioni `and` o `or` e negare la query con `no
  <col> 
  <thead> 
   <tr> 
-   <th>Campo </th> 
-   <th>Tipo di valore </th> 
-   <th>Operatori</th> 
-   <th> <p> Descrizione</p> </th> 
+   <th>Field </th> 
+   <th>Value Type </th> 
+   <th>Operators</th> 
+   <th> <p> Description</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td><code>[!UICONTROL title]</code></td> 
-   <td>stringa</td> 
+   <td>string</td> 
    <td><code>contains</code><sup>1</sup>, <code>=</code>, <code>!=</code></td> 
-   <td> <p> Nome del file.</p> </td> 
+   <td> <p> Name of the file.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL fullText]</code> </td> 
-   <td>stringa </td> 
+   <td>string </td> 
    <td><code>contains</code><sup>2, 3</sup> </td> 
-   <td> <p> Testo completo del file con nome, descrizione, contenuto e testo indicizzabile.</p> </td> 
+   <td> <p> Full text of the file including name, description, content, and indexable text.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL mimeType]</code> </td> 
-   <td> stringa</td> 
+   <td> string</td> 
    <td><code>contains</code>, <code>=</code>, <code>!=</code></td> 
-   <td> <p> Tipo MIME del file.</p> </td> 
+   <td> <p> MIME type of the file.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL modifiedDate]</code> </td> 
-   <td> data<sup>4</sup></td> 
+   <td> date<sup>4</sup></td> 
    <td><code> &lt;=</code>, <code>&lt;</code>, <code>=</code>, <code>!=</code>, <code>></code>, <code>>=</code></td> 
-   <td> <p> Data dell’ultima modifica apportata al file.</p> </td> 
+   <td> <p> Date of the last modification to the file.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL lastViewedByMeDate]</code> </td> 
-   <td> data<sup>4</sup></td> 
+   <td> date<sup>4</sup></td> 
    <td><code>&lt;=</code>, <code>&lt;</code>, <code>=</code>, <code>!=</code>, <code>></code>, <code>>=</code></td> 
-   <td> <p> Data dell’ultima visualizzazione di un file da parte dell’utente.</p> </td> 
+   <td> <p> Date that the user last viewed a file.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL trashed]</code></td> 
-   <td>booleano </td> 
+   <td>boolean </td> 
    <td><code>=</code>, <code>!=</code></td> 
-   <td> <p> Indica se il file si trova o meno nel cestino.</p> </td> 
+   <td> <p> Whether the file is in the trash or not.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL starred]</code></td> 
-   <td>booleano </td> 
+   <td>boolean </td> 
    <td><code>=</code>, <code>!=</code></td> 
-   <td> <p>Indica se il file è interpretato o meno.</p> </td> 
+   <td> <p>Whether the file is starred or not.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL parents]</code></td> 
-   <td>raccolta </td> 
+   <td>collection </td> 
    <td><code>in </code> </td> 
-   <td> <p>Indica se la raccolta [!UICONTROL parents] contiene l'ID specificato.</p> </td> 
+   <td> <p>Whether the [!UICONTROL parents] collection contains the specified ID.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL owners]</code></td> 
-   <td>raccolta </td> 
+   <td>collection </td> 
    <td><code>in </code> </td> 
-   <td> <p>Utenti proprietari del file.</p> </td> 
+   <td> <p>Users who own the file.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL writers]</code></td> 
-   <td>raccolta </td> 
+   <td>collection </td> 
    <td><code>in </code> </td> 
-   <td> <p>Utenti che dispongono dell'autorizzazione per modificare il file.</p> </td> 
+   <td> <p>Users who have permission to modify the file.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL readers] </code> </td> 
-   <td>raccolta </td> 
+   <td>collection </td> 
    <td><code>in </code> </td> 
-   <td> <p>Utenti che dispongono dell'autorizzazione per la lettura del file.</p> </td> 
+   <td> <p>Users who have permission to read the file.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL sharedWithMe]</code> </td> 
-   <td>booleano </td> 
+   <td>boolean </td> 
    <td><code>=</code>, <code>!=</code></td> 
-   <td> <p> File inclusi nella raccolta "Condivisi con me" dell'utente.</p> </td> 
+   <td> <p> Files that are in the user's "Shared with me" collection.</p> </td> 
   </tr> 
   <tr> 
    <td><code>[!UICONTROL properties] </code> </td> 
-   <td>raccolta</td> 
+   <td>collection</td> 
    <td><code>has </code> </td> 
-   <td> <p> Proprietà personalizzate del file pubblico.</p> </td> 
+   <td> <p> Public custom file properties.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Considera quanto segue sugli operatori in questi campi:
+Consider the following about operators in these fields:
 
-* L&#39;operatore `contains` esegue solo la corrispondenza del prefisso per un `title`.
+* The `contains` operator only performs prefix matching for a `title`.
 
-  Ad esempio, il titolo &quot;HelloWorld&quot; corrisponde a `title contains 'Hello'` ma non a `title contains 'World'`.
+   For example, the title "HelloWorld" matches for `title contains 'Hello'` but not for `title contains 'World'`.
 
-* L&#39;operatore `contains` esegue la corrispondenza solo su token di stringa interi per `fullText`.
+* The `contains` operator only performs matching on entire string tokens for `fullText`.
 
-  Ad esempio, se il testo completo di un documento contiene la stringa &quot;HelloWorld&quot;, solo la query `fullText contains 'HelloWorld'` restituisce un risultato. Query come `fullText contains 'Hello'` non restituirebbero risultati in questo scenario.
+   For example, if the full text of a doc contains the string "HelloWorld" only the query `fullText contains 'HelloWorld'` returns a result. Queries such as `fullText contains 'Hello'` would not return results in this scenario.
 
-* L&#39;operatore `contains` corrisponde a una frase alfanumerica esatta se è racchiuso tra virgolette doppie.
+* The `contains` operator matches on an exact alphanumeric phrase if it is surrounded by double quotes.
 
-  Ad esempio, se il `fullText` di un documento contiene la stringa &quot;Hello there world&quot;, la query `fullText contains '"Hello there"'` restituisce un risultato, ma la query `fullText contains '"Hello world"'` no.
+   For example, if the `fullText` of a doc contains the string "Hello there world", then the query `fullText contains '"Hello there"'` returns a result, but the query `fullText contains '"Hello world"'` does not.
 
-  Inoltre, poiché la ricerca è alfanumerica, se il `fullText` di un documento contiene la stringa &quot;Hello_world&quot;, la query `fullText contains '"Hello world"'` restituisce un risultato.
+   Furthermore, because the search is alphanumeric, if the `fullText` of a doc contains the string "Hello_world", then the query `fullText contains '"Hello world"'` returns a result.
 
-* I campi con data `type` non sono attualmente confrontabili tra loro, ma solo con date costanti.
+* Fields of `type` date are currently not comparable to each other, only to constant dates.
 
-### Tipi di valore
+### Value types
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <thead> 
   <tr> 
-   <th>Tipo di valore</th> 
-   <th> <p> Note</p> </th> 
+   <th>Value Type</th> 
+   <th> <p> Notes</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td>Stringa </td> 
-   <td> <p>Racchiudi tra virgolette singole '. Eliminare le virgolette singole nelle query con <code>\'</code>, ad esempio <code> 'Valentine\'s Day'</code>.</p> </td> 
+   <td>String </td> 
+   <td> <p>Surround with single quotes '. Escape single quotes in queries with <code>\'</code>, e.g.,<code> 'Valentine\'s Day'</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Booleano </td> 
-   <td> <p><code>true </code>o <code>false</code>.</p> </td> 
+   <td>Boolean </td> 
+   <td> <p><code>true </code>or <code>false</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Data </td> 
-   <td> <p>Formato RFC 3339, il fuso orario predefinito è UTC, ad esempio <code>2012-06-04T12:00:00-08:00</code>.</p> </td> 
+   <td>Date </td> 
+   <td> <p>RFC 3339 format, default timezone is UTC, e.g., <code>2012-06-04T12:00:00-08:00</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Operatori
+### Operators
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <thead> 
   <tr> 
-   <th>Operatore </th> 
-   <th> <p>Note</p> </th> 
+   <th>Operator </th> 
+   <th> <p>Notes</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td><code>contains</code></td> 
-   <td> <p>Il contenuto di una stringa è presente nell’altra.</p> </td> 
+   <td> <p>The content of one string is present in the other.</p> </td> 
   </tr> 
   <tr> 
    <td><code>=</code> </td> 
-   <td> <p> Il contenuto di una stringa o di un valore booleano è uguale all’altro.</p> </td> 
+   <td> <p> The content of a string or boolean is equal to the other.</p> </td> 
   </tr> 
   <tr> 
    <td><code>!=</code> </td> 
-   <td> <p> Il contenuto di una stringa o di un valore booleano non è uguale all’altro.</p> </td> 
+   <td> <p> The content of a string or boolean is not equal to the other.</p> </td> 
   </tr> 
   <tr> 
    <td><code>&lt;</code> </td> 
-   <td> <p> Una data è precedente a un’altra.</p> </td> 
+   <td> <p> A date is earlier than another.</p> </td> 
   </tr> 
   <tr> 
    <td><code>&lt;=</code> </td> 
-   <td> <p> Una data è precedente o uguale a un'altra.</p> </td> 
+   <td> <p> A date is earlier than or equal to another.</p> </td> 
   </tr> 
   <tr> 
    <td><code>></code> </td> 
-   <td> <p> Una data è successiva a un'altra.</p> </td> 
+   <td> <p> A date is later than another.</p> </td> 
   </tr> 
   <tr> 
    <td><code>>=</code> </td> 
-   <td> <p> Una data è successiva o uguale a un’altra.</p> </td> 
+   <td> <p> A date is later than or equal to another.</p> </td> 
   </tr> 
   <tr> 
    <td><code>in </code> </td> 
-   <td> <p>Un elemento è contenuto in una raccolta.</p> </td> 
+   <td> <p>An element is contained within a collection.</p> </td> 
   </tr> 
   <tr> 
    <td><code>and </code> </td> 
-   <td> <p>Restituire i file che corrispondono a entrambe le clausole.</p> </td> 
+   <td> <p>Return files that match both clauses.</p> </td> 
   </tr> 
   <tr> 
    <td><code>or </code> </td> 
-   <td> <p>Restituire i file che corrispondono a una delle due clausole.</p> </td> 
+   <td> <p>Return files that match either clause.</p> </td> 
   </tr> 
   <tr> 
    <td><code>not </code> </td> 
-   <td> <p>Nega una clausola di ricerca.</p> </td> 
+   <td> <p>Negates a search clause.</p> </td> 
   </tr> 
   <tr> 
    <td><code>has </code> </td> 
-   <td> <p>Una raccolta contiene un elemento che corrisponde ai parametri.</p> </td> 
+   <td> <p>A collection contains an element matching the parameters.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Per le clausole composte è possibile utilizzare le parentesi per raggruppare le clausole. Ad esempio:
-`modifiedDate > '2012-06-04T12:00:00' and (mimeType contains 'image/' or mimeType contains 'video/')` Questa ricerca restituisce tutti i file con un tipo MIME immagine o video la cui ultima modifica è successiva al 4 giugno 2012. Poiché gli operatori `and` e `or` vengono valutati da sinistra a destra, senza parentesi, nell&#39;esempio precedente verranno restituite solo le immagini modificate dopo il 4 giugno 2012, ma tutti i video verranno restituiti anche prima del 4 giugno 2012.
+For compound clauses, you can use parentheses to group clauses together. For example:
+`modifiedDate > '2012-06-04T12:00:00' and (mimeType contains 'image/' or mimeType contains 'video/')` This search returns all files with an image or video MIME type that their last modification was after June 4, 2012. Because `and` and `or` operators are evaluated from left to right, without parentheses, the above example would return only images modified after June 4, 2012, but would return all videos, even those before June 4, 2012.
 
-### Esempi
+### Examples 
 
-Tutti gli esempi in questa pagina mostrano il parametro `<q>q</q>` non codificato, dove `title = 'hello'` è codificato come `title+%3d+%27hello%27`. Le librerie client gestiscono automaticamente questa codifica.
+All examples on this page show the unencoded `<q>q</q>` parameter, where `title = 'hello'` is encoded as `title+%3d+%27hello%27`. Client libraries handle this encoding automatically.
 
-* Cerca file con nome &quot;hello&quot;
-  <pre>title = 'ciao'</pre>
-* Cerca le cartelle utilizzando il tipo MIME specifico per la cartella
-  <pre>mimeType = 'application/vnd.google-apps.folder'</pre>
-* Cerca file che non sono cartelle
-  <pre>mimeType!= 'application/vnd.google-apps.folder'</pre>
-* Cerca i file con un nome contenente le parole &quot;hello&quot; e &quot;bye&quot;
-  <pre>il titolo contiene 'hello' e [!UICONTROL name] contiene 'bye'</pre>
-* Cerca file con un nome che non contiene la parola &quot;hello&quot;
-  <pre>il titolo non contiene 'hello'</pre>
-* Cerca i file che contengono la parola &quot;hello&quot; nel contenuto
-  <pre>fullText contiene 'hello'</pre>
-* Cerca i file che non contengono la parola &quot;hello&quot; nel contenuto
-  <pre>fullText non contiene 'hello'</pre>
-* Cerca i file che contengono la frase esatta &quot;hello world&quot; nel contenuto
-  <pre>fullText contiene '"hello world"'fullText contiene '"hello_world"'</pre>
-* Cercare i file con una query contenente il carattere &quot;\&quot; (ad esempio, &quot;\authors&quot;)
-  <pre>fullText contiene "\\authors"</pre>
-* Cerca file scrivibili dall&#39;utente `test@example.org`
-  <pre>'test@example.org' in [!DNL writers]</pre>
-* Cercare l&#39;ID `1234567` nella raccolta `parents`. Verranno trovati tutti i file e le cartelle che si trovano direttamente nella cartella con ID `1234567`.
-  <pre>'1234567' in [!UICONTROL parents]</pre>
-* Cercare l&#39;ID alias `appDataFolder` nella raccolta `parents`. Questo consente di trovare tutti i file e le cartelle che si trovano direttamente nella [cartella Dati applicazioni](https://developers.google.com/drive/api/v2/appdata).
-  <pre>'appDataFolder' negli elementi padre</pre>
-* Cerca file scrivibili dagli utenti `test@example.org` e `test2@example.org`
-  <pre>'test@example.org' negli autori e 'test2@example.org' negli autori</pre>
-* Cerca i file che contengono il testo &quot;importante&quot; nel cestino
-  <pre>fullText contiene 'important' e cestino = true</pre>
-* Cerca i file modificati dopo il 4 giugno 2012
-  <pre>modifiedDate &gt; '2012-06-04T12:00:00' // fuso orario predefinito: UTC</pre><pre>modifiedDate &gt; '2012-06-04T12:00:00-08:00'</pre>
-* Cerca i file condivisi con l’utente autorizzato con &quot;hello&quot; nel nome
-  <pre>sharedWithMe e il titolo contiene 'hello'</pre>
-* Cercare i file con una [proprietà di file personalizzata](https://developers.google.com/drive/api/v2/properties) denominata `additionalID` con il valore `8e8aceg2af2ge72e78`.
-  <pre>proprietà con { key='additionalID' e value='8e8aceg2af2ge72e78' e visibility='PRIVATE' }</pre>
+* Search for files with the name "hello"
+   <pre>title = 'hello'</pre>
+* Search for folders using the folder-specific MIME type
+   <pre>mimeType = 'application/vnd.google-apps.folder'</pre>
+* Search for files that are not folders
+   <pre>mimeType != 'application/vnd.google-apps.folder'</pre>
+* Search for files with a name containing the words "hello" and "goodbye"
+   <pre>title contains 'hello' and [!UICONTROL name] contains 'goodbye'</pre>
+* Search for files with a name that does not contain the word "hello"
+   <pre>not title contains 'hello'</pre>
+* Search for files containing the word "hello" in the content
+   <pre>fullText contains 'hello'</pre>
+* Search for files not containing the word "hello" in the content
+   <pre>not fullText contains 'hello'</pre>
+* Search for files containing the exact phrase "hello world" in the content
+   <pre>fullText contains '"hello world"'fullText contains '"hello_world"'</pre>
+* Search for files with a query containing the "\" character (e.g., "\authors")
+   <pre>fullText contains '\\authors'</pre>
+* Search for files writeable by the user `test@example.org`
+   <pre>'test@example.org' in [!DNL writers]</pre>
+* Search for the ID `1234567` in the `parents` collection. This finds all files and folders located directly in the folder whose ID is `1234567`.
+   <pre>'1234567' in [!UICONTROL parents]</pre>
+* Search for the alias ID `appDataFolder` in the `parents` collection. This finds all files and folders located directly under the [Application Data folder](https://developers.google.com/drive/api/v2/appdata).
+   <pre>'appDataFolder' in parents</pre>
+* Search for files writeable by the users `test@example.org` and `test2@example.org`
+   <pre>'test@example.org' in writers and 'test2@example.org' in writers</pre>
+* Search for files containing the text "important" which are in the trash
+   <pre>fullText contains 'important' and trashed = true</pre>
+* Search for files modified after June 4th 2012
+   <pre>modifiedDate > '2012-06-04T12:00:00' // default time zone is UTC</pre><pre>modifiedDate > '2012-06-04T12:00:00-08:00'</pre>
+* Search for files shared with the authorized user with "hello" in the name
+   <pre>sharedWithMe and title contains 'hello'</pre>
+* Search for files with a [custom file property](https://developers.google.com/drive/api/v2/properties) named `additionalID` with the value `8e8aceg2af2ge72e78`.
+   <pre>properties has { key='additionalID' and value='8e8aceg2af2ge72e78' and visibility='PRIVATE' }</pre>
 
-Il Source di questa guida è [[!DNL Google Drive] documentazione](https://developers.google.com/drive/api/v2/search-shareddrives).
+Source of this guide is [[!DNL Google Drive] documentation](https://developers.google.com/drive/api/v2/search-shareddrives).
+
+-->
