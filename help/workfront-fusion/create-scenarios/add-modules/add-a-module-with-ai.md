@@ -4,9 +4,9 @@ description: Puoi utilizzare l’intelligenza artificiale per immettere un promp
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -68,6 +68,15 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 +++
 
+## Prerequisiti
+
+Per utilizzare questa funzionalità, la tua organizzazione deve soddisfare i seguenti prerequisiti:
+
+* L&#39;organizzazione deve aver partecipato al programma Workfront AI Assistant Beta.
+* Adobe deve disporre di un accordo Adobe Gen AI firmato su file per la tua organizzazione.
+
+  Per ulteriori informazioni sulla firma del contratto, consulta [Firmare il contratto di IA per Adobe](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) nell&#39;articolo Panoramica dell&#39;Assistente IA nella documentazione di Workfront.
+
 ## Applicazioni del modulo di IA attualmente supportate
 
 Fusion AI può attualmente generare moduli che si connettono alle seguenti applicazioni:
@@ -95,15 +104,8 @@ Fusion AI può attualmente generare moduli che si connettono alle seguenti appli
 1. Fare clic sulla scheda **[!UICONTROL Scenarios]** nel pannello a sinistra.
 1. Seleziona lo scenario in cui desideri aggiungere un modulo.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
-1. Fai clic sull&#39;icona Genera con IA ![Genera con IA](assets/generate-with-ai-icon-beta.png) nella parte inferiore della pagina dell&#39;editor di scenari.
-
-   Oppure
-
-   Inizia ad aggiungere un modulo e seleziona **Genera con IA** dall&#39;elenco delle applicazioni. Questa opzione non viene visualizzata quando si aggiunge il primo modulo (trigger) a uno scenario.
-
-   Viene visualizzato il pannello Assistente AI.
-1. (Condizionale) Se è la prima volta che si utilizza AI per aggiungere un segmento di scenario, leggere il contratto visualizzato e fare clic su **Accetto**.
-1. Immettere un prompt di testo nella casella.
+1. Fai clic sull&#39;icona **Assistente AI** ![Icona Assistente AI](assets/ai-assistant-icon.png) nell&#39;angolo superiore destro dello schermo.
+1. Immettete un prompt di testo nel pannello Assistente AI.
 
    Per suggerimenti sui prompt, vedere [Suggerimenti per la creazione di prompt per i segmenti di scenario](#tips-for-creating-prompts-for-scenario-segments) in questo articolo.
 
