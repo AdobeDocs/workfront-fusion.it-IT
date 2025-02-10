@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
-source-git-commit: 1be98b5f6d869f93e1786b1c2be7a325037d7c02
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 L&#39;app HTTP fornisce vari moduli per la comunicazione basata sul protocollo HTTP (Hypertext Transfer Protocol). HTTP è la base della comunicazione dei dati per il World Wide Web. Puoi utilizzare i moduli per scaricare pagine web e file, chiamare webhook, endpoint API e così via.
 
-La scelta giusta del modulo dipende dal meccanismo di autenticazione/autorizzazione utilizzato dalla risorsa a cui desideri accedere.
+La scelta corretta del modulo dipende dal meccanismo di autenticazione/autorizzazione utilizzato dalla risorsa a cui desideri accedere.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ La scelta giusta del modulo dipende dal meccanismo di autenticazione/autorizzazi
 
 Consulta i seguenti articoli per istruzioni specifiche sui moduli:
 
-* [Modulo HTTP >[!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
+* [http > modulo [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
 * [Modulo [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-basic-auth-request.md)
 * [Modulo [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-oauth-2-request.md)
 * [Modulo [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md)
