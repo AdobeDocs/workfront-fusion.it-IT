@@ -4,7 +4,7 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 2%
@@ -83,7 +83,7 @@ Il connettore Airtable utilizza quanto segue:
 -->
 1. Aprire Workfront Fusion e la finestra di dialogo **Crea una connessione** del modulo desiderato.
 1. Immettere un nome per la connessione.
-1. (Facoltativo) Fai clic su Mostra impostazioni avanzate e immetti l&#39;ID cliente Airtable e il segreto cliente.
+1. (Facoltativo) Fai clic su Mostra impostazioni avanzate e immetti l’ID client Airtable e il segreto client.
 1. Fai clic sul pulsante **Continua** per creare la connessione e tornare al modulo.
 
 ## Moduli aerodinamici e relativi campi

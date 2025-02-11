@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,10 @@ Il connettore Bynder utilizza quanto segue:
 
 ## Connetti [!DNL Bynder] a Workfront Fusion  {#connect-bynder-to-workfront-fusion}
 
+>[!NOTE]
+>
+>Bynder utilizza il tipo di concessione Codice di autorizzazione/token di aggiornamento. Questo è l’unico tipo di concessione utilizzato dal connettore Fusion Bynder.
+
 * [Crea una connessione a  [!DNL Bynder] da [!DNL Workfront Fusion]](#create-a-connection-to-bynder-from-workfront-fusion)
 * [Genera [!UICONTROL Client ID] e [!UICONTROL Client Secret] in [!DNL Bynder] (Facoltativo)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
@@ -107,9 +111,10 @@ Per istruzioni sulla creazione di un&#39;app in [!DNL Bynder], vedere [App Oauth
 
 >[!NOTE]
 >
->Durante la creazione dell&#39;app in [!DNL Bynder], immetti `redirect uri` come segue:
+>* Durante la creazione dell&#39;app in [!DNL Bynder], immetti `redirect uri` come segue:
 >
->`https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>* Bynder utilizza il tipo di concessione Codice di autorizzazione/token di aggiornamento. Questo è l’unico tipo di concessione utilizzato dal connettore Fusion Bynder.
 
 ## [!DNL Bynder] moduli e relativi campi
 
