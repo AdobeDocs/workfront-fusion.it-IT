@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Creare un modulo di richiesta OAuth 2.0
+title: HTTP > Creare un modulo di richiesta OAuth 2.0
 description: Per effettuare una richiesta HTTP [!DNL Adobe Workfront Fusion] ai server che richiedono un'autorizzazione OAuth 2.0, devi innanzitutto creare una connessione OAuth. [!DNL Adobe Workfront Fusion] garantisce che tutte le chiamate effettuate con questa connessione dispongano delle intestazioni di autorizzazione appropriate e aggiornino automaticamente i token associati quando necessario.
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1978'
 ht-degree: 0%
 
 ---
@@ -227,7 +227,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 1. Fare clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
 1. Continua con [Configurare il modulo di richiesta Make a OAuth 2.0](#configure-the-make-an-oauth-20-request-module).
 
-### Istruzioni per creare una connessione a [!DNL Google] in [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]
+### Istruzioni per creare una connessione a [!DNL Google] in [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request module]
 
 Nell&#39;esempio seguente viene illustrato come utilizzare il modulo di richiesta [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] per connettersi a [!DNL Google].
 
@@ -333,7 +333,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
    <td> <p>Il corpo HTTP è costituito dai byte di dati trasmessi in un messaggio di transazione HTTP immediatamente dopo le intestazioni, se ve ne sono altre da utilizzare.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Il tipo di corpo Raw è generalmente adatto per la maggior parte delle richieste HTTP body, anche in situazioni in cui la documentazione per gli sviluppatori non specifica i dati da inviare.</p> <p>Specificare una forma di analisi dei dati nel campo [!UICONTROL Content type].</p> <p>Nonostante il tipo di contenuto selezionato, i dati vengono immessi in qualsiasi formato stabilito o richiesto dalla documentazione per gli sviluppatori.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Questo tipo di corpo è destinato ai dati POST utilizzando <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>Per <code>[!UICONTROL application/x-www-form-urlencoded]</code>, il corpo del messaggio HTTP inviato al server è essenzialmente una stringa di query. Le chiavi e i valori sono codificati in coppie chiave-valore separate da <code>&amp;</code> e con un <code>=</code> tra la chiave e il valore. </p> <p>Per i dati binari, <code>use [!UICONTROL multipart/form-data]</code>.</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Questo tipo di corpo deve pubblicare i dati utilizzando <code>[!UICONTROL application/x-www-form-urlencoded]</code>.</p> <p>Per <code>[!UICONTROL application/x-www-form-urlencoded]</code>, il corpo del messaggio HTTP inviato al server è essenzialmente una stringa di query. Le chiavi e i valori sono codificati in coppie chiave-valore separate da <code>&amp;</code> e con un <code>=</code> tra la chiave e il valore. </p> <p>Per i dati binari, <code>use [!UICONTROL multipart/form-data]</code>.</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Esempio: </b></span></span> 
        <p>Esempio del formato di richiesta HTTP risultante:</p> 
@@ -342,7 +342,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] è una richiesta HTTP multipart utilizzata per inviare file e dati. Viene comunemente utilizzato per caricare file sul server.</p> <p>Aggiungi i campi da inviare nella richiesta. Ogni campo deve contenere una coppia chiave-valore.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Immetti la chiave e il valore da inviare nel corpo della richiesta.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Immetti la chiave e specifica il file di origine da inviare nel corpo della richiesta.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt;[!UICONTROL Get a File]) oppure immettere manualmente il nome del file e i dati del file.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Immetti la chiave e specifica il file di origine da inviare nel corpo della richiesta.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt; [!UICONTROL Get a File]) oppure immettere manualmente il nome del file e i dati del file.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

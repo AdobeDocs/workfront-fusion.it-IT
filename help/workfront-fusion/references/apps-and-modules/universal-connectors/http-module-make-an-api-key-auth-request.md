@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Crea una richiesta di autorizzazione chiave API
+title: HTTP > Creare una richiesta di autorizzazione della chiave API
 description: Questo modulo di azione [!DNL Adobe Workfront Fusion] invia una richiesta HTTPS a un URL specificato che richiede un'autorizzazione di autenticazione della chiave API ed elabora la risposta.
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '862'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] è una richiesta HTTP multipart utilizzata per inviare file e dati. Viene comunemente utilizzato per caricare file sul server.</p> <p>Aggiungi i campi da inviare nella richiesta. Ogni campo deve contenere una coppia chiave-valore.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Immetti la chiave e il valore da inviare nel corpo della richiesta.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Immetti la chiave e specifica il file di origine da inviare nel corpo della richiesta.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)], oppure immettere manualmente il nome del file e i dati del file.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Immetti la chiave e specifica il file di origine da inviare nel corpo della richiesta.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File]) oppure immettere manualmente il nome del file e i dati del file.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

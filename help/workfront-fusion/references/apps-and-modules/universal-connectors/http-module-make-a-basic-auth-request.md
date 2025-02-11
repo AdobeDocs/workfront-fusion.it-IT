@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Crea un modulo di richiesta di autorizzazione di base
+title: HTTP > Creare un modulo di richiesta di autorizzazione di base
 description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion oltre a una licenza Adobe Workfront.
 author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -60,9 +60,9 @@ Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contatta
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
-## Configurazione modulo [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request]
+## Configurazione modulo [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]
 
-Quando configuri il modulo [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request], [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri il modulo [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request], [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo all&#39;altro in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

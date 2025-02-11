@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Crea un modulo di richiesta di autorizzazione del certificato client
+title: HTTP > Crea un modulo di richiesta di autorizzazione del certificato client
 description: Questo modulo [!DNL Adobe Workfront Fusion] ti consente di configurare una richiesta HTTP con l'autorizzazione del certificato client HTTP e di inviarla a un server. La risposta HTTP ricevuta è quindi contenuta nel bundle di output.
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -64,9 +64,9 @@ Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contatta
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
-## Configurazione modulo [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request]
+## Configurazione modulo [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]
 
-Quando configuri il modulo [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request], [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri il modulo [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request], [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo all&#39;altro in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -114,7 +114,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] è una richiesta HTTP multipart utilizzata per inviare file e dati. Viene comunemente utilizzato per caricare file sul server.</p> <p>Aggiungi i campi da inviare nella richiesta. Ogni campo deve contenere una coppia chiave-valore.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Immetti la chiave e il valore da inviare nel corpo della richiesta.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Immetti la chiave e specifica il file di origine da inviare nel corpo della richiesta.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)], oppure immettere manualmente il nome del file e i dati del file.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Immetti la chiave e specifica il file di origine da inviare nel corpo della richiesta.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)], oppure immettere manualmente il nome del file e i dati del file.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

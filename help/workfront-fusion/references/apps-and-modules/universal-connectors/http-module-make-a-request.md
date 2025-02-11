@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Crea un modulo di richiesta
-description: Adobe Workfront Fusion HTTP &gt; Creare un modulo di richiesta è un modulo universale che consente di configurare una richiesta HTTP e inviarla a un server. La risposta HTTP ricevuta è quindi contenuta nel bundle di output.
+title: HTTP > Creare un modulo di richiesta
+description: Adobe Workfront Fusion HTTP > Creare un modulo di richiesta è un modulo universale che consente di configurare una richiesta HTTP e inviarla a un server. La risposta HTTP ricevuta è quindi contenuta nel bundle di output.
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '815'
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Quando configuri il modulo [!UICONTROL HTTP] > [!UICONTROL Make a request], [!DN
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data] è una richiesta HTTP multipart utilizzata per inviare file e dati. Viene comunemente utilizzato per caricare file sul server.</p> <p>Aggiungi i campi da inviare nella richiesta. Ogni campo deve contenere una coppia chiave-valore.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Immetti la chiave e il valore da inviare nel corpo della richiesta.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Immetti la chiave e specifica il file di origine da inviare nel corpo della richiesta.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt; Scarica un file) oppure immettere manualmente il nome del file e i dati del file.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Immetti la chiave e specifica il file di origine da inviare nel corpo della richiesta.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] o [!UICONTROL Google Drive] &gt; Download a File) oppure immettere manualmente il nome del file e i dati del file.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

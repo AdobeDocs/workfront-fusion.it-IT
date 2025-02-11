@@ -4,7 +4,7 @@ description: I  [!DNL Adobe Workfront Fusion Google Team Drive] moduli ti consen
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### Triggers
+### Trigger
 
 #### [!UICONTROL Watch Files]
 
@@ -162,7 +162,7 @@ Carica un file nell&#39;unità condivisa specificata.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Specificare il file da caricare nell'unità condivisa.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] o [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)], oppure immettere manualmente il nome del file e i dati del file.</p> </td> 
+   <td> <p>Specificare il file da caricare nell'unità condivisa.</p> <p>Mappare il file che si desidera caricare dal modulo precedente (ad esempio [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] o [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)], oppure immettere manualmente il nome del file e i dati del file.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 
