@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: da0c82d66bcd90a9e676f54c93252218f9b1de99
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1648'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 3%
 * Attività del rilascio di Fusion {#fusion-release-activity}
    * [Attività di rilascio di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versioni di Fusion - 2025 {#fusion-releases-2025}
+      * [Attività di rilascio di Workfront Fusion: settimana del 10 febbraio 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 20 gennaio 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 13 gennaio 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 6 gennaio 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
@@ -229,7 +230,7 @@ ht-degree: 3%
    * [Creare nuovi modelli](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Creare scenari con i modelli](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Visualizzare, modificare ed eliminare i modelli](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
-   * [Publish e modelli di condivisione](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
+   * [Pubblicare e condividere modelli](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Modelli di Adobe Workfront Fusion attualmente disponibili](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
    * [Domande frequenti su [!DNL Adobe Workfront Fusion] modelli](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Riferimenti {#references}
@@ -298,14 +299,14 @@ ht-degree: 3%
          * [Moduli Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
          * [Moduli Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
          * [Moduli Adobe Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-         * [Moduli Eventi Adobe I/O](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+         * [Moduli Adobe I/O Events](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
          * [Moduli Adobe Journey Optimizer](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
          * [Moduli Adobe Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
          * [Moduli Marketo di Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
          * [Moduli dei servizi Adobe PDF](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Moduli Adobe Photoshop](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
          * [Moduli Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
-         * [Moduli di gestione utente di Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+         * [Moduli di gestione utenti di Adobe](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
          * [Moduli Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
          * [Moduli di Adobe Workfront Planning](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
          * [Moduli delle schede madri Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
@@ -332,7 +333,7 @@ ht-degree: 3%
          * [Moduli calendario di Google](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
          * [Moduli Google Docs](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
          * [Moduli unità Google](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-drive-modules.md)
-         * [Moduli Forms di Google](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-forms-modules.md)
+         * [Moduli Google Forms](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-forms-modules.md)
          * [Moduli Google Sheets](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)
          * [Moduli diapositive di Google](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
          * [Moduli di Google Team Drive](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
@@ -357,7 +358,7 @@ ht-degree: 3%
          * [Moduli Salesforce](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
          * [Moduli SDL Managed Translation](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
          * [Moduli ServiceNow](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-         * [moduli di Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+         * [Moduli Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
          * [Moduli Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Moduli Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [Amplia moduli](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
