@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , è possibile autom
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
 workflow-type: tm+mt
-source-wordcount: '4259'
+source-wordcount: '4320'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisiti
 
@@ -107,9 +111,9 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Bacheche
 
-+++ **[!UICONTROL Watch Boards]**
++++ **[!UICONTROL Archive or Unarchive a Board]**
 
-Questo modulo di attivazione inizia uno scenario quando viene aggiunta una nuova bacheca.
+Questo modulo di azione chiude (archivia) o riapre (annulla l’archiviazione) una bacheca specificata.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -120,8 +124,50 @@ Questo modulo di attivazione inizia uno scenario quando viene aggiunta una nuova
    <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Il numero massimo di bacheche [!DNL Workfront Fusion] verrà restituito durante un ciclo di esecuzione.</p> </td> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> Inserisci o mappa l’ID della bacheca da chiudere o riaprire.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> Seleziona se desideri chiudere (archiviare) o riaprire (annullare l’archiviazione) la bacheca.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+Questo modulo di azione assegna un membro a una bacheca specificata.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> Selezionare la bacheca in cui si desidera aggiungere un membro.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Email address]</td> 
+   <td> <p> Inserisci o mappa l’indirizzo e-mail del membro che desideri aggiungere alla bacheca.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
+   <td> <p>Selezionare il tipo di membro desiderato per il nuovo membro.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Admin]</strong>: un amministratore della bacheca può eseguire qualsiasi azione sulla bacheca.</li> 
+     <li><strong>[!UICONTROL Normal]</strong>: un membro normale è semplicemente un membro del consiglio di amministrazione.</li> 
+     <li><strong>[!UICONTROL Observer]</strong>: un osservatore è un membro con accesso in sola lettura alla bacheca. <br>Gli osservatori sono disponibili solo per i team con [!UICONTROL Trello Business Class].</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Full name]</td> 
+   <td> <p> Inserisci o mappa il nome completo dell’utente che desideri aggiungere alla bacheca.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,18 +196,18 @@ Questo modulo di azione crea una nuova bacheca con le impostazioni selezionate.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Inserisci o mappa l’ID dell’organizzazione. L’ID organizzazione può essere recuperato utilizzando un altro modulo, ad esempio il modulo Osserva attività.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/id-of-org.png"> </p> </td> 
+   <td> <p>Inserisci o mappa l’ID dell’organizzazione. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
-   <td> <p>Le bacheche hanno regole di voto e commento diverse per ogni livello di autorizzazione. Ad esempio: se la tua bacheca è [!UICONTROL Private] e hai impostato le regole di voto e commento come [!UICONTROL All], riceverai un errore. </p> <p>Le votazioni e i commenti sono limitati ai seguenti gruppi per ogni livello di autorizzazione:</p> 
+   <td> <p>Le bacheche hanno regole di voto e commento diverse per ogni livello di autorizzazione. Ad esempio, se la tua bacheca è [!UICONTROL Private] e hai impostato le regole di voto e commento come [!UICONTROL All], riceverai un errore. </p> <p>Le votazioni e i commenti sono limitati ai seguenti gruppi per ogni livello di autorizzazione:</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      —&gt;Membri, membri e osservatori</li> 
+      Membri, membri e osservatori</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      —&gt;Membri, membri e osservatori, membri dell'organizzazione</li> 
+      Membri, membri e osservatori, membri dell’organizzazione</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      —&gt;Membri, membri e osservatori, membri dell'organizzazione, tutti</li> 
+      Membri, membri e osservatori, membri dell'organizzazione, tutti</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -201,11 +247,15 @@ Questo modulo di azione crea una nuova bacheca con le impostazioni selezionate.
    <td> <p>Seleziona il colore dello sfondo o dello sfondo personalizzato.</p> <p>Nota: gli sfondi personalizzati sono disponibili solo per gli abbonati [!UICONTROL Trello Gold and Business Class].</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Background ID]</td> 
+   <td> <p> Se si è scelto di utilizzare uno sfondo personalizzato nel campo [!UICONTROL Background], immettere o mappare l'ID dello sfondo che si desidera utilizzare.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Scegli tra due modalità di aging della carta. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: le carte diventano progressivamente più trasparenti con l’avanzare dell’età. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>: le carte si strappano, diventano gialle e si rompono come una vecchia mappa pirata quando invecchiano.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: le carte si strappano, diventano gialle e si rompono come una vecchia mappa pirata quando invecchiano.</li> 
+     <li><strong>[!UICONTROL Regular mode ]</strong>: le carte diventano progressivamente più trasparenti con l’avanzare dell’età. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -217,8 +267,10 @@ Questo modulo di azione crea una nuova bacheca con le impostazioni selezionate.
 
 Questo modulo di azione modifica le impostazioni di una scheda esistente.
 
-<table style="table-layout:auto"> 
- <col> 
+>[!SUCCESS]
+>
+><table style="table-layout:auto">
+<col> 
  <col> 
  <tbody> 
   <tr> 
@@ -235,26 +287,26 @@ Questo modulo di azione modifica le impostazioni di una scheda esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New description]</td> 
-   <td> <p> Inserisci o mappa una nuova descrizione della bacheca, se necessario.</p> </td> 
+   <td> <p> Inserisci o mappa una nuova descrizione della bacheca.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Immettere o mappare l'ID [!UICONTROL Trello] univoco della bacheca che si desidera modificare con il modulo. È possibile recuperare l'ID bacheca utilizzando un altro modulo, ad esempio il modulo [!DNL Watch Activities].</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/org-id.png"> </p> </td> 
+   <td> <p>Immettere o mappare l'ID [!UICONTROL Trello] univoco della bacheca che si desidera modificare con il modulo.  </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe] </td> 
-   <td> <p>Seleziona un’opzione per specificare se l’utente che agisce è abbonato alla bacheca.</p> </td> 
+   <td> <p>Seleziona un’opzione per specificare se l’utente proprietario della connessione utilizzata da questo modulo è abbonato alla bacheca.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
    <td> <p>Le bacheche hanno regole di voto e commento diverse per ogni livello di autorizzazione. Ad esempio: se la tua bacheca è [!UICONTROL Private] e hai impostato le regole di voto e commento come [!UICONTROL All], riceverai un errore. </p> <p>Le votazioni e i commenti sono limitati ai seguenti gruppi per ogni livello di autorizzazione:</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      —&gt;Membri, membri e osservatori</li> 
+      Membri, membri e osservatori</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      —&gt;Membri, membri e osservatori, membri dell'organizzazione</li> 
+      Membri, membri e osservatori, membri dell’organizzazione</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      —&gt;Membri, membri e osservatori, membri dell'organizzazione, tutti</li> 
+      Membri, membri e osservatori, membri dell'organizzazione, tutti</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -289,8 +341,8 @@ Questo modulo di azione modifica le impostazioni di una scheda esistente.
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Scegli tra due modalità di aging della carta. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: le carte diventano progressivamente più trasparenti con l’avanzare dell’età. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>: le carte si strappano, diventano gialle e si rompono come una vecchia mappa pirata quando invecchiano.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: le carte si strappano, diventano gialle e si rompono come una vecchia mappa pirata quando invecchiano.</li> 
+     <li><strong>[!UICONTROL Regular mode]</strong>: le carte diventano progressivamente più trasparenti con l’avanzare dell’età. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -307,6 +359,7 @@ Questo modulo di azione modifica le impostazioni di una scheda esistente.
   </tr> 
  </tbody> 
 </table>
+
 
 +++
 
@@ -364,69 +417,6 @@ Questo modulo di ricerca recupera informazioni su una bacheca specificata.
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Board]**
-
-Questo modulo di azione chiude o riapre una bacheca specificata.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> Inserisci o mappa l’ID della bacheca da chiudere o riaprire.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> Seleziona se desideri chiudere (archiviare) o riaprire (annullare l’archiviazione) la bacheca.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-Questo modulo di azione assegna un membro a una bacheca specificata.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> Selezionare la bacheca in cui si desidera aggiungere un membro.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Email address]</td> 
-   <td> <p> Inserisci o mappa l’indirizzo e-mail del membro che desideri aggiungere alla bacheca.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
-   <td> <p>Selezionare il tipo di membro da aggiungere alla bacheca.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Admin]</strong>: un amministratore della bacheca può eseguire qualsiasi azione sulla bacheca.</li> 
-     <li><strong>[!UICONTROL Normal]</strong>: un membro normale è semplicemente un membro del consiglio di amministrazione.</li> 
-     <li><strong>[!UICONTROL Observer]</strong>: un osservatore è un membro con accesso in sola lettura alla bacheca. <br>Gli osservatori sono disponibili solo per i team con [!UICONTROL Trello Business Class].</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Full name]</td> 
-   <td> <p> Inserisci il nome completo dell’utente che desideri aggiungere alla bacheca.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Unassign a Member from a Board]**
 
 Questo modulo rimuove un membro da una bacheca.
@@ -452,11 +442,9 @@ Questo modulo rimuove un membro da una bacheca.
 
 +++
 
-### Elenchi
++++ **[!UICONTROL Watch Boards]**
 
-+++ **[!UICONTROL Watch cards moved to a list]**
-
-Questo modulo di attivazione si attiva quando una scheda viene spostata in un elenco specifico.
+Questo modulo di attivazione inizia uno scenario quando viene aggiunta una nuova bacheca.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -467,21 +455,15 @@ Questo modulo di attivazione si attiva quando una scheda viene spostata in un el
    <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Board]</td> 
-   <td>Seleziona la bacheca contenente l’elenco da controllare per le schede.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL List]</td> 
-   <td>Seleziona l’elenco da controllare per le schede.</td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Il numero massimo di schede [!DNL Workfront Fusion] restituite durante un ciclo di esecuzione.</p>  </td> 
+   <td> <p>Immetti o mappa il numero massimo di bacheche che il modulo deve restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
+
+### Elenchi
 
 +++ **[!UICONTROL Create a List]**
 
@@ -509,7 +491,7 @@ Questo modulo di azione crea un elenco su una bacheca specificata.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy list]</td> 
-   <td> <p> Seleziona la modalità di immissione dell’ID dell’elenco da copiare.</p> 
+   <td> <p> Se si sta copiando un elenco, selezionare la modalità di immissione dell'ID dell'elenco che si desidera copiare.</p> 
     <ul> 
      <li> <p><strong>Immetti manualmente</strong> </p> <p>Nel campo <strong>[!UICONTROL List ID]</strong>, immettere o mappare l'ID dell'elenco che si desidera copiare.<br></p> </li> 
      <li> <p><strong>Seleziona</strong> </p> <p>Seleziona la bacheca contenente l’elenco da copiare, quindi seleziona l’elenco.</p> </li> 
@@ -578,11 +560,9 @@ Questo modulo di azione recupera i dettagli di un elenco specifico.
 
 +++
 
-### Schede
++++ **[!UICONTROL Watch cards moved to a list]**
 
-+++ **[!UICONTROL Watch cards]**
-
-Questo modulo di attivazione si attiva quando viene aggiunta una nuova scheda.
+Questo modulo di attivazione si attiva quando una scheda viene spostata in un elenco specifico.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -593,17 +573,76 @@ Questo modulo di attivazione si attiva quando viene aggiunta una nuova scheda.
    <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>Seleziona la posizione da controllare per le schede.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL All cards]</strong> </li> 
-     <li> <p><strong>Schede in una bacheca specifica</strong> </p> <p>Seleziona la bacheca da controllare per le schede</p> </li> 
-     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>Seleziona la bacheca contenente l’elenco da controllare per le schede, quindi seleziona l’elenco.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Board]</td> 
+   <td>Seleziona la bacheca contenente l’elenco da controllare per le schede.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL List]</td> 
+   <td>Seleziona l’elenco da controllare per le schede.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Il numero massimo di schede [!DNL Workfront Fusion] restituite durante un ciclo di esecuzione.</p> </td> 
+   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
+### Schede
+
++++ **[!UICONTROL Add an Attachment]**
+
+Questo modulo di azione aggiunge un allegato alla scheda selezionata.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
+   <td> <p> Seleziona la modalità di immissione dell’ID della scheda a cui desideri aggiungere un allegato.</p> 
+    <ul> 
+     <li> <p><strong>Immetti manualmente</strong> </p> <p>Nel campo <strong>[!UICONTROL Card ID]</strong> immettere o mappare l'ID della scheda a cui si desidera aggiungere un allegato.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Seleziona la bacheca contenente la scheda a cui desideri aggiungere un allegato, quindi seleziona l’elenco contenente la scheda, infine la scheda.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
+   <td> <p>Seleziona se desideri caricare il file direttamente o fornire un URL al file.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </li> 
+     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Immettere l'URL del file e specificare un nome per l'allegato.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Archive or Unarchive a Card]**
+
+Questo modulo di azione archivia o invia nuovamente una scheda alla bacheca.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card ID]</td> 
+   <td> <p> Inserisci o mappa l’ID della scheda che desideri archiviare o inviare alla bacheca.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> Seleziona se desideri chiudere la scheda (archivio) o inviarla nuovamente alla bacheca (annulla archiviazione).</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -627,16 +666,16 @@ Questo modulo di azione crea una scheda in un elenco selezionato.
    <td> <p> Seleziona la modalità di immissione dell’ID dell’elenco in cui desideri aggiungere una scheda.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Nel campo <strong>[!UICONTROL List ID]</strong>, immetti o mappa l'ID dell'elenco in cui desideri aggiungere una scheda.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Seleziona la bacheca contenente l’elenco da copiare, quindi seleziona l’elenco.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Seleziona la bacheca contenente l’elenco in cui desideri aggiungere una scheda, quindi seleziona l’elenco.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>Per ogni etichetta che desideri aggiungere alla scheda, inserisci l’ID dell’etichetta. L'ID può essere recuperato, ad esempio, utilizzando il modulo [!UICONTROL Retrieve Labels].</p> </td> 
+   <td> <p>Per ogni etichetta da aggiungere alla scheda, fare clic su <b>Aggiungi elemento</b> e immettere l'ID dell'etichetta.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members]</td> 
-   <td>Per ogni membro che si desidera aggiungere alla scheda, immettere l'ID del membro. </td> 
+   <td>Per ogni membro che si desidera aggiungere alla scheda, fare clic su <b>Aggiungi elemento</b> e immettere l'ID del membro. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -648,7 +687,7 @@ Questo modulo di azione crea una scheda in un elenco selezionato.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Selezionare se si desidera aggiungere la scheda all'inizio o [!UICONTROL append] la scheda alla fine dell'elenco.</p> </td> 
+   <td> <p>Seleziona se desideri aggiungere la scheda in alto o aggiungerla in basso nell’elenco.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
@@ -664,18 +703,14 @@ Questo modulo di azione crea una scheda in un elenco selezionato.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Source file]</p> </td> 
-   <td> <p>Immettere o mappare le informazioni per un file da aggiungere come allegato alla scheda.</p> 
-    <ul> 
-     <li>[!UICONTROL File name]: immetti o mappa il nome del file, inclusa l’estensione.</li> 
-     <li> 
-     <p>Seleziona un file da un modulo precedente o mappane il nome e i dati del file</p> 
+   <td> <p>Immettere o mappare le informazioni per un file da aggiungere come allegato alla scheda. Seleziona un file da un modulo precedente o mappane il nome e i dati del file</p> 
      <p>Nota: esiste un limite di caricamento di file di 10 MB per ogni allegato. Tuttavia, [!UICONTROL Business Class] e [!UICONTROL Trello Gold] membri hanno un limite di caricamento file di 250 MB per allegato.</p> 
      </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy card]</td> 
-   <td> <p> Seleziona la modalità di immissione dell’ID della scheda da copiare.</p> 
+   <td> <p> Se stai creando una nuova scheda come copia di una scheda esistente, seleziona la modalità di immissione dell’ID della scheda che desideri copiare.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Nel campo <strong>[!UICONTROL Card ID]</strong>, immetti o mappa l'ID della carta da copiare.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Seleziona la scheda che contiene la scheda da copiare, quindi seleziona l’elenco che contiene la scheda, infine la scheda.</p> </li> 
@@ -720,7 +755,7 @@ Questo modulo di azione modifica una scheda esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>Aggiungi gli ID delle etichette da aggiungere alla scheda. </p> </td> 
+   <td> <p>Per ogni etichetta da aggiungere alla scheda, fare clic su <b>Aggiungi elemento</b> e immettere l'ID dell'etichetta.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
@@ -732,11 +767,11 @@ Questo modulo di azione modifica una scheda esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
-   <td> <p> Se questa opzione è abilitata, la scheda viene contrassegnata come completata alla data di scadenza.</p> </td> 
+   <td> <p> Abilita questa opzione per contrassegnare la scheda come completata alla data di scadenza.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members] </td> 
-   <td> <p>Aggiungi o mappa l’ID di tutti i membri che desideri aggiungere alla scheda.</p> </td> 
+   <td> <p>Per ogni membro che si desidera aggiungere alla scheda, fare clic su <b>Aggiungi elemento</b> e immettere o mappare l'ID del membro.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachment cover ID]</p> </td> 
@@ -813,14 +848,14 @@ Questo modulo di azione restituisce schede che corrispondono alla query di ricer
      <li><code><strong>due:day</strong></code> <p>Restituisce le carte in scadenza entro 24 ore. L'operatore <code>due:</code> può essere utilizzato anche con altri intervalli di tempo, ad esempio <code>due:week</code>, <code>due:month</code> o <code>due:overdue</code>. Puoi anche cercare un intervallo di giorni specifico. Ad esempio, l'aggiunta di <code>due:14</code> alla ricerca include le schede con scadenza nei successivi 14 giorni.</p> </li> 
      <li><code><strong>created:day</strong></code> <p>Restituisce le schede create nelle ultime 24 ore. L'operatore <code> created:</code> può essere utilizzato anche con altri intervalli di tempo come <code>created:week</code> o <code>created:month</code>. Puoi anche cercare un intervallo di giorni specifico. Ad esempio, l'aggiunta di <code>created:14</code> alla ricerca include schede create negli ultimi 14 giorni.</p> </li> 
      <li><code><strong>edited:day</strong></code> <p>Restituisce le schede modificate nelle ultime 24 ore. L'operatore <code>edited:</code> può essere utilizzato anche con altri intervalli di tempo, ad esempio <code>edited:week</code> o <code>edited:month</code>. Puoi anche cercare un intervallo di giorni specifico. Ad esempio, l'aggiunta di <code>edited:21</code> alla ricerca include schede modificate negli ultimi 21 giorni.</p> </li> 
-     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>Restituisce schede che corrispondono al testo delle descrizioni delle schede, degli elenchi di controllo, dei commenti o dei nomi. Ad esempio, commento: "FIX IT" restituirà le schede con "FIX IT" in un commento.</p> </li> 
+     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>Restituisce schede che corrispondono al testo delle descrizioni delle schede, degli elenchi di controllo, dei commenti o dei nomi. Ad esempio, <code>comment:"FIX IT"</code> restituirà le schede con "FIX IT" in un commento.</p> </li> 
      <li><code><strong>is:open</strong> and <strong>is:archived</strong></code> <p>Restituisce schede aperte o archiviate. Se nessuno dei due è specificato, [!UICONTROL Trello] restituisce entrambi i tipi.</p> </li> 
      <li><code><strong>is:starred</strong> </code> <p>Sono incluse solo le schede su bacheche con protagonista.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned cards]</td> 
-   <td> <p> Il numero massimo di schede [!DNL Workfront Fusion] restituite durante un ciclo di esecuzione. Questo valore deve essere minore o uguale a 1000.</p> </td> 
+   <td> <p> Immettere o mappare il numero massimo di schede che [!DNL Workfront Fusion] deve restituire durante un ciclo di esecuzione. Questo valore deve essere minore o uguale a 1000.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -828,16 +863,16 @@ Questo modulo di azione restituisce schede che corrispondono alla query di ricer
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cards] </td> 
-   <td> <p>Aggiungi le schede che desideri cercare in modo specifico.</p> </td> 
+   <td> <p>Per cercare schede specifiche, fai clic su <b>Aggiungi elemento</b> e aggiungi l'ID della scheda.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Card]**
++++ **[!UICONTROL Watch cards]**
 
-Questo modulo di azione archivia o invia nuovamente una scheda alla bacheca.
+Questo modulo di attivazione si attiva quando viene aggiunta una nuova scheda.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -848,45 +883,17 @@ Questo modulo di azione archivia o invia nuovamente una scheda alla bacheca.
    <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Card ID]</td> 
-   <td> <p> Inserisci o mappa l’ID della scheda che desideri archiviare o inviare alla bacheca.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> Seleziona se desideri chiudere la scheda (archivio) o inviarla nuovamente alla bacheca (annulla archiviazione).</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Add an Attachment]**
-
-Questo modulo di azione aggiunge un allegato alla scheda selezionata.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
-   <td> <p> Seleziona la modalità di immissione dell'ID della scheda su cui desideri recuperare i dettagli.</p> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>Seleziona la posizione da controllare per le schede.</p> 
     <ul> 
-     <li> <p><strong>Immetti manualmente</strong> </p> <p>Nel campo <strong>[!UICONTROL Card ID]</strong>, immetti o mappa l'ID della carta di cui desideri recuperare i dettagli.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Seleziona la bacheca contenente la scheda di cui desideri recuperare i dettagli, quindi seleziona l’elenco che contiene la scheda, infine la scheda.</p> </li> 
+     <li><strong>[!UICONTROL All cards]</strong> </li> 
+     <li> <p><strong>Schede in una bacheca specifica</strong> </p> <p>Seleziona la bacheca da controllare per le schede</p> </li> 
+     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>Seleziona la bacheca contenente l’elenco da controllare per le schede, quindi seleziona l’elenco.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
-   <td> <p>Seleziona se desideri caricare il file direttamente o fornire un URL al file.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </li> 
-     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Immettere l'URL del file e specificare un nome per l'allegato.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>Il numero massimo di schede [!DNL Workfront Fusion] restituite durante un ciclo di esecuzione.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -894,18 +901,6 @@ Questo modulo di azione aggiunge un allegato alla scheda selezionata.
 +++
 
 ### Membri
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-Vedi &quot;[!UICONTROL Assign a Member to a Board]&quot; in [Bacheche](#boards).
-
-+++
-
-+++ **[!UICONTROL Unassign a Member from a Board]**
-
-Vedi &quot;[!UICONTROL Unassign a Member from a Board]&quot; in [Bacheche](#boards).
-
-+++
 
 +++ **[!UICONTROL Add a Member to a Card]**
 
@@ -929,6 +924,12 @@ Questo modulo di azione aggiunge il membro specificato alla scheda specificata.
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+Vedi &quot;[!UICONTROL Assign a Member to a Board]&quot; in [Bacheche](#boards).
 
 +++
 
@@ -958,6 +959,12 @@ Questo modulo di azione recupera informazioni su [!UICONTROL Trello] membri.
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Unassign a Member from a Board]**
+
+Vedi &quot;[!UICONTROL Unassign a Member from a Board]&quot; in [Bacheche](#boards).
 
 +++
 
@@ -1107,38 +1114,6 @@ Questo modulo di azione aggiunge un’etichetta a una scheda selezionata.
 
 ### Commenti
 
-+++ **[!UICONTROL Watch Comments]**
-
-Recupera i dettagli del commento quando è presente un nuovo commento in una posizione specificata.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>Selezionare la posizione da controllare per i commenti.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL All cards] ovunque</strong> </li> 
-     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>Seleziona la bacheca da controllare per i commenti</p> </li> 
-     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>Seleziona la bacheca contenente l’elenco da controllare per i commenti, quindi seleziona l’elenco.</p> </li> 
-     <li><strong>[!UICONTROL Card]</strong> </li> 
-     <li>Seleziona la bacheca contenente la scheda da controllare per i commenti, quindi seleziona l’elenco che contiene la scheda, quindi seleziona la scheda.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Numero massimo di commenti [!DNL Workfront Fusion] restituiti durante un ciclo di esecuzione.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Create a Comment in a Card]**
 
 Questo modulo di azione aggiunge un commento alla scheda selezionata.
@@ -1197,6 +1172,38 @@ Questo modulo di azione aggiunge un commento alla scheda selezionata.
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
    <td> <p>Imposta la data di fine del periodo in cui è stato creato il commento. Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Watch Comments]**
+
+Recupera i dettagli del commento quando è presente un nuovo commento in una posizione specificata.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>Selezionare la posizione da controllare per i commenti.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL All cards] ovunque</strong> </li> 
+     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>Seleziona la bacheca da controllare per i commenti</p> </li> 
+     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>Seleziona la bacheca contenente l’elenco da controllare per i commenti, quindi seleziona l’elenco.</p> </li> 
+     <li><strong>[!UICONTROL Card]</strong> </li> 
+     <li>Seleziona la bacheca contenente la scheda da controllare per i commenti, quindi seleziona l’elenco che contiene la scheda, quindi seleziona la scheda.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>Numero massimo di commenti [!DNL Workfront Fusion] restituiti durante un ciclo di esecuzione.</p> </td> 
   </tr> 
  </tbody> 
 </table>
