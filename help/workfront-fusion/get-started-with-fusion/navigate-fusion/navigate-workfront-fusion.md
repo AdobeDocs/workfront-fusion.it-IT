@@ -4,7 +4,7 @@ description: All'apertura di Fusion sono disponibili molte opzioni per le azioni
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 45775149d8e4e8c2c25b4ebf0b5392f56a04633c
+source-git-commit: 6817565ec2a6a06a26033bb51a080b619a0d211d
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -32,3 +32,4 @@ Questo articolo introduce queste aree e fornisce collegamenti a ulteriori inform
 >[!NOTE]
 >
 >Tutte le aree sotto l’intestazione Team sono di proprietà di singoli team. Per visualizzare la pagina appartenente a un team diverso (ad esempio la pagina Scenari di un team diverso), fai clic sul menu a discesa Team nella parte superiore della pagina e seleziona un altro team.
+
