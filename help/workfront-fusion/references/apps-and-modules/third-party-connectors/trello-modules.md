@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , è possibile autom
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
+source-git-commit: 46bb455ecc0820dc68468f9f810bd51074c224fa
 workflow-type: tm+mt
-source-wordcount: '4320'
+source-wordcount: '4370'
 ht-degree: 0%
 
 ---
@@ -872,7 +872,7 @@ Questo modulo di azione restituisce schede che corrispondono alla query di ricer
 
 +++ **[!UICONTROL Watch cards]**
 
-Questo modulo di attivazione si attiva quando viene aggiunta una nuova scheda.
+Questo modulo di attivazione avvia uno scenario quando viene aggiunta una nuova scheda.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -893,7 +893,7 @@ Questo modulo di attivazione si attiva quando viene aggiunta una nuova scheda.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Il numero massimo di schede [!DNL Workfront Fusion] restituite durante un ciclo di esecuzione.</p> </td> 
+   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -947,7 +947,7 @@ Questo modulo di azione recupera informazioni su [!UICONTROL Trello] membri.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
-   <td> <p>Immettere il nome completo o il nome utente dell'utente che si desidera trovare.</p> </td> 
+   <td> <p>Immettere il nome o il nome utente dell'utente che si desidera trovare.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -955,7 +955,7 @@ Questo modulo di azione recupera informazioni su [!UICONTROL Trello] membri.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
-   <td> <p> Il numero massimo di membri [!DNL Workfront Fusion] verrà restituito durante un ciclo di esecuzione.</p> </td> 
+   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -996,11 +996,11 @@ Questo modulo di azione crea un elenco di controllo sulla scheda selezionata.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Selezionare se si desidera aggiungere l'elenco di controllo all'inizio o l'elenco di controllo [!UICONTROL append the] alla fine della scheda.</p> </td> 
+   <td> <p>Seleziona se desideri aggiungere l’elenco di controllo in alto o aggiungerlo in basso nella scheda.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter checklist ID]</p> </td> 
-   <td> <p>Inserisci o mappa l’ID di un elenco di controllo di origine da copiare in quello nuovo.</p> </td> 
+   <td> <p>Se si sta creando l'elenco di controllo copiandone uno esistente, immettere o mappare l'ID di un elenco di controllo di origine che si desidera copiare in quello nuovo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1021,7 +1021,7 @@ Questo modulo di azione aggiunge un elemento a un elenco di controllo specifico.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
-   <td> <p> Selezionare la modalità di immissione dell'ID dell'elenco di controllo in cui si desidera aggiungere un elemento.</p> 
+   <td> <p> Se si sta creando un nuovo elenco di controllo copiandone uno esistente, selezionare la modalità di immissione dell'ID dell'elenco di controllo in cui si desidera aggiungere un elemento.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Nel campo <strong>[!UICONTROL Checklist ID]</strong>, immetti o mappa l'ID della scheda in cui desideri aggiungere un elenco di controllo.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Seleziona la bacheca che contiene la scheda in cui desideri aggiungere un elenco di controllo, quindi seleziona l’elenco che contiene la scheda, quindi seleziona la scheda, quindi seleziona l’elenco di controllo.</p> </li> 
@@ -1136,7 +1136,7 @@ Questo modulo di azione aggiunge un commento alla scheda selezionata.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment] </td> 
-   <td> <p>Immetti il commento da aggiungere alla scheda selezionata.</p> </td> 
+   <td> <p>Inserisci o mappa il commento da aggiungere alla scheda selezionata.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1180,7 +1180,7 @@ Questo modulo di azione aggiunge un commento alla scheda selezionata.
 
 +++ **[!UICONTROL Watch Comments]**
 
-Recupera i dettagli del commento quando è presente un nuovo commento in una posizione specificata.
+Questo modulo di attivazione avvia uno scenario quando viene aggiunto un commento.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1203,7 +1203,7 @@ Recupera i dettagli del commento quando è presente un nuovo commento in una pos
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Numero massimo di commenti [!DNL Workfront Fusion] restituiti durante un ciclo di esecuzione.</p> </td> 
+   <td> <p>Immettere o mappare il numero massimo di commenti che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1223,4 +1223,4 @@ Se desideri modificare una scheda o creare un nuovo commento, è necessario cono
 
 ### Come trovare gli ID di altri oggetti in [!DNL Trello]
 
-È possibile ottenere gli ID di bacheca, elenco e commento solo utilizzando i trigger. Il sito Web [!DNL trello.com] non mostra questi ID.
+È possibile ottenere gli ID di bacheca, elenco e commento solo utilizzando i trigger. Il sito Web [!DNL `trello.com`] non mostra questi ID.
