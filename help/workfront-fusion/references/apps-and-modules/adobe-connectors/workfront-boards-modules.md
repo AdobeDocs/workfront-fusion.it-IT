@@ -4,10 +4,10 @@ description: Puoi utilizzare il connettore per schede madri Adobe Workfront per 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
 workflow-type: tm+mt
-source-wordcount: '2439'
-ht-degree: 1%
+source-wordcount: '2659'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +25,8 @@ Puoi utilizzare i moduli Schede Adobe Workfront per leggere o aggiornare i recor
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
 <table style="table-layout:auto">
@@ -32,29 +34,29 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacchetto</td>
-  <td> <p>Qualsiasi</p> </td>
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza</td>
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisito licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione lavoro, [!UICONTROL [!DNL Workfront Fusion] per automazione lavoro</p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -62,6 +64,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
 
 ## Prerequisiti
 
@@ -148,51 +151,6 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Tag](#tags)
 * [Commenti](#comments)
 * [Altro](#other)
-
-<!--
-
-### Watch
-
-#### Watch events
-
-This trigger module starts a scenario when an event occurs on a board.
-
-1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
-
-1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
-
-   When you are configuring this module, the following fields display.
-
-   <table style="table-layout:auto"> 
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td>[!UICONTROL Webhook name]</td> 
-      <td>(Optional) Type a new name for the webhook</td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Connection]</td> 
-      <td> <p>You can use an existing Workfront connection to connect to Workfront Boards, or you can use a specific Workfront Boards connection. </p><p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Create a connection to Workfront Boards</a> in this article.</p> </td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Object type]</td> 
-      <td>Select the type of [!DNL Workfront] object that you want the module to watch.</td> 
-     </tr> 
-     <tr> 
-      <td> <p>[!UICONTROL Objects to watch]</p> </td> 
-      <td> Select whether you want to trigger a scenario when there is a new object, an updated object, a new or updated object, or a deleted object. </td> 
-     </tr> 
-     <tr data-mc-conditions=""> 
-      <td>Exclude events made by this connection</td> 
-      <td>Enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-After the webhook is created, you can view the address of the endpoint that events are sent to.
-
--->
 
 ### Schede
 
@@ -298,7 +256,7 @@ Questo modulo di azione sposta una scheda in una colonna diversa sulla stessa ba
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Inserisci o mappa l’ID della bacheca che contiene la scheda da spostare.<p>Puoi trovare l’ID della scheda nell’URL quando la visualizzi in Workfront.</p></td> 
+   <td>Inserisci o mappa l’ID della bacheca che contiene la scheda da spostare.<p>Puoi trovare l’ID della bacheca nell’URL quando visualizzi la bacheca in Workfront.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination column ID]</td> 
@@ -327,6 +285,10 @@ Questo modulo di azione recupera informazioni su una scheda specifica.
    <td>[!UICONTROL Card ID]</td> 
    <td>Inserisci o mappa l’ID della carta da leggere.<p>Puoi trovare l’ID della scheda nell’URL quando la visualizzi in Workfront.</p></td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL Card ID]</td> 
+   <td>Inserisci o mappa l’ID della bacheca che contiene la scheda che desideri leggere.<p>Puoi trovare l’ID della bacheca nell’URL quando visualizzi la bacheca in Workfront.</p></td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -348,15 +310,29 @@ Questo modulo di azione aggiorna le informazioni relative a una scheda specifica
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Inserisci o mappa l’ID della bacheca che contiene la scheda da aggiornare.<p>Puoi trovare l’ID della scheda nell’URL quando la visualizzi in Workfront.</p></td> 
+   <td>Inserisci o mappa l’ID della bacheca che contiene la scheda da aggiornare.<p>Puoi trovare l’ID della bacheca nell’URL quando visualizzi la bacheca in Workfront.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Name]</td> 
    <td>Immetti o mappa un nuovo nome per la scheda.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>Immettere o mappare una nuova descrizione per la scheda.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Estimation]</td> 
+   <td>Immetti o mappa una stima del tempo necessario per completare questa scheda.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Due date]</td> 
+   <td>Immetti o mappa la data di scadenza per questa scheda.</p>
+   <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Status]</td> 
+   <td>Selezionare un nuovo stato per la scheda.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -383,8 +359,8 @@ Questo modulo di azione crea una scheda in Workfront. Puoi specificare il tipo d
    <td>Inserisci o mappa un nome per la nuova bacheca.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type]</td> 
-   <td>Seleziona il tipo di bacheca da creare.</td> 
+   <td>[!UICONTROL Template]</td> 
+   <td>Seleziona il modello per il tipo di bacheca che desideri creare.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -438,10 +414,6 @@ Questo modulo di azione crea una nuova colonna sulla bacheca specificata.
    <td>[!UICONTROL Column name]</td> 
    <td>Immettere o mappare un nuovo nome per la colonna.</td> 
   </tr> 
-  <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
-   <td>Immettere o mappare un nuovo limite WIP per la colonna.</td> 
-  </tr> 
  </tbody> 
 </table>
 
@@ -488,12 +460,16 @@ Questo modulo di azione aggiorna il nome o il limite WIP della colonna specifica
    <td>[!UICONTROL Column Name]</td> 
    <td>Immettere o mappare il nome della colonna che si desidera recuperare.</td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL WIP Limit]</td> 
+   <td>Immettere o mappare un nuovo limite WIP per la colonna.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### Tag
 
-* [Aggiungere un tag a una scheda](#add-card-tag)
+* [Aggiungere un tag a una scheda](#add-a-tag-to-a-card)
 * [Creare un tag](#create-a-tag)
 
 #### Aggiungere un tag a una scheda
@@ -638,5 +614,45 @@ Questo modulo di azione effettua una chiamata personalizzata all’API delle sch
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
+ </tbody> 
+</table>
+
+
+#### Effettuare una chiamata API GraphQL personalizzata
+
+Questo modulo di azione invia una richiesta GraphQL personalizzata all’API delle schede madri Workfront.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+      <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app [!DNL Workfront] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Seleziona il metodo per questa chiamata. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td> <p>Immettere un nome per l'operazione. Questo può semplificare il tracciamento e il debug della chiamata.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td> <p>Seleziona se le variabili devono provenire da un modulo o da una raccolta.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables]</td> 
+   <td> <p>Per ogni variabile da aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore della variabile.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td> 
+   </tr> 
  </tbody> 
 </table>

@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
+source-git-commit: 1861522827aa782877f612bf3f9dc522f6ca221e
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisiti
 
@@ -113,7 +117,9 @@ Per istruzioni sulla creazione di un&#39;app in [!DNL Bynder], vedere [App Oauth
 >
 >* Durante la creazione dell&#39;app in [!DNL Bynder], immetti `redirect uri` come segue:
 >
->   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Cluster USA: `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Cluster UE: `https://app-eu.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Cluster Azure: `https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
 >* Bynder utilizza il tipo di concessione Codice di autorizzazione/token di aggiornamento. Questo è l’unico tipo di concessione utilizzato dal connettore Fusion Bynder.
 
 ## [!DNL Bynder] moduli e relativi campi
@@ -130,15 +136,61 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Azioni
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
 * [[!UICONTROL Add a tag to assets]](#add-a-tag-to-assets)
-* [[!UICONTROL Remove a tag] da risorse](#remove-a-tag-from-assets)
+* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Download asset]](#download-asset)
+* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
+* [[!UICONTROL Remove a tag] da risorse](#remove-a-tag-from-assets)
+* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
+* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
 * [[!UICONTROL Upload asset]](#upload-asset)
+
+#### [!UICONTROL Add a tag to assets]
+
+Questo modulo di azione aggiunge un tag a una o più risorse
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>Inserisci o mappa l’ID del tag da aggiungere alle risorse.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>Per ogni risorsa di cui vuoi assegnare il tag, fai clic su <strong>[!UICONTROL Add item]</strong>, quindi immetti o mappa l'ID della risorsa.</p> </td> 
+  </tr> 
+ </tbody> 
+ </table>
+
+#### [!UICONTROL Add assets to a collection]
+
+Questo modulo di azione aggiunge una o più risorse a una raccolta.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>Inserisci o mappa l’ID della raccolta in cui desideri aggiungere le risorse.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>Per ogni risorsa da aggiungere alla raccolta, fai clic su <strong>[!UICONTROL Add item]</strong>, quindi immetti o mappa l'ID della risorsa.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -162,7 +214,7 @@ Il modulo restituisce un codice di stato, insieme alle intestazioni e al corpo d
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -178,6 +230,29 @@ Il modulo restituisce un codice di stato, insieme alle intestazioni e al corpo d
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download asset]
+
+Questo modulo di azione scarica una singola risorsa.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td>Inserisci o mappa l’ID della risorsa da scaricare.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset version]</td> 
+   <td> <p>Immetti o mappa la versione della risorsa da scaricare. Per scaricare la versione più recente della risorsa, lascia vuoto il campo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -201,6 +276,52 @@ Questo modulo di azione legge i metadati di una risorsa.
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
    <td> <p>Seleziona le informazioni da includere nel bundle di output per questo modulo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove a tag from assets]
+
+Questo modulo di azione rimuove un tag da una o più risorse
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>Immetti o mappa l’ID del tag da rimuovere dalle risorse.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>Per ogni risorsa da cui vuoi rimuovere un tag, fai clic su <strong>[!UICONTROL Add item]</strong>, quindi immetti o mappa l'ID della risorsa.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove assets from collection]
+
+Questo modulo di azione rimuove una o più risorse da una raccolta.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>Inserisci o mappa l’ID della raccolta in cui desideri rimuovere le risorse.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>Per ogni risorsa da rimuovere dalla raccolta, fai clic su <strong>[!UICONTROL Add item]</strong>, quindi immetti o mappa l'ID della risorsa.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -232,121 +353,6 @@ Questo modulo di azione aggiorna i metadati di una risorsa esistente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to a collection]
-
-Questo modulo di azione aggiunge una o più risorse a una raccolta.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>Inserisci o mappa l’ID della raccolta in cui desideri aggiungere le risorse.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Per ogni risorsa da aggiungere alla raccolta, fai clic su <strong>[!UICONTROL Add item]</strong>, quindi immetti o mappa l'ID della risorsa.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove assets from collection]
-
-Questo modulo di azione rimuove una o più risorse da una raccolta.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>Inserisci o mappa l’ID della raccolta in cui desideri rimuovere le risorse.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Per ogni risorsa da rimuovere dalla raccolta, fai clic su <strong>[!UICONTROL Add item]</strong>, quindi immetti o mappa l'ID della risorsa.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a tag to assets]
-
-Aggiungere un tag a una o più risorse
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>Inserisci o mappa l’ID del tag da aggiungere alle risorse.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Per ogni risorsa di cui vuoi assegnare il tag, fai clic su <strong>[!UICONTROL Add item]</strong>, quindi immetti o mappa l'ID della risorsa.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove a tag from assets]
-
-Rimuovere un tag da una o più risorse
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>Immetti o mappa l’ID del tag da rimuovere dalle risorse.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Per ogni risorsa da cui vuoi rimuovere un tag, fai clic su <strong>[!UICONTROL Add item]</strong>, quindi immetti o mappa l'ID della risorsa.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download asset]
-
-Questo modulo di azione scarica una singola risorsa.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td>Inserisci o mappa l’ID della risorsa da scaricare.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset version]</td> 
-   <td> <p>Immetti o mappa la versione della risorsa da scaricare. Per scaricare la versione più recente della risorsa, lascia vuoto il campo.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Upload asset]
 
 Questo modulo di azione carica una singola risorsa.
@@ -371,13 +377,17 @@ Questo modulo di azione carica una singola risorsa.
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asynchronous file upload]</td> 
+   <td>Abilita questa opzione durante il caricamento di file di grandi dimensioni. Questo impedisce ai file di grandi dimensioni di bloccare l’esecuzione dello scenario.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### Ricerche
 
 * [[!UICONTROL List record]](#list-record)
-* [[!UICONTROL Search for assets]](#search-for-assets)
+* [[!UICONTROL Search Assets]](#search-assets)
 
 #### [!UICONTROL List record]
 
@@ -411,7 +421,7 @@ Questo modulo di ricerca recupera tutti gli elementi di un tipo specifico.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for assets]
+#### [!UICONTROL Search Assets]
 
 Questo modulo di ricerca cerca le risorse in base ai criteri specificati.
 
@@ -424,12 +434,12 @@ Questo modulo di ricerca cerca le risorse in base ai criteri specificati.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Criteria]</td> 
+   <td role="rowheader">[!UICONTROL Search criteria]</td> 
    <td> <p>Inserire i criteri di ricerca. </p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>Selezionare il campo da utilizzare nella ricerca</p> </li> 
      <li> <p><strong>[!UICONTROL Logical Operator]</strong> </p> <p>Seleziona l’operatore da utilizzare nella ricerca.</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Immetti o mappa il valore da cercare nel campo selezionato. Il tipo di valore deve essere uguale al tipo di dati del campo selezionato. </p> <p>Per ulteriori informazioni sui tipi di dati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipi di dati elemento in [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Immetti o mappa il valore da cercare nel campo selezionato. Il tipo di valore deve essere uguale al tipo di dati del campo selezionato. </p> <p>Per ulteriori informazioni sui tipi di dati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipi di dati elemento</a>.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -469,21 +479,17 @@ Questo modulo di attivazione avvia uno scenario quando una risorsa viene creata 
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Event type</td>
-   --> <!--
-    <td>Select whether you want to start the scenario when a new asset is created or when an existing asset is updated.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">Tipo di evento</td>
+    <td>Seleziona se avviare lo scenario quando viene creata una nuova risorsa o quando viene aggiornata una risorsa esistente.</td>
   </tr> 
   <tr>
      <td role="rowheader">[!UICONTROL Collections]</td>
    <td> <p>Seleziona la raccolta da controllare per le nuove risorse. Per controllare tutte le raccolte, lascia vuoto questo campo.</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Outputs</td>
-   --> <!--
-    <td>Select the fields that you want to include in the output.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">Uscite</td>
+    <td>Selezionare i campi da includere nell'output.</td>
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Limit]</td>
