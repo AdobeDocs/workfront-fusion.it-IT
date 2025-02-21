@@ -1,50 +1,62 @@
 ---
-title: Moduli Eventi Adobe I/O
-description: Con i moduli Adobe I/O Events, puoi avviare uno scenario Adobe Workfront Fusion basato sugli eventi nelle applicazioni Adobe.
+title: Moduli Adobe I/O Events
+description: Con i moduli Adobe I/O Events puoi avviare uno scenario Adobe Workfront Fusion basato sugli eventi nelle applicazioni Adobe.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '901'
 ht-degree: 1%
 
 ---
 
-# Moduli Eventi Adobe I/O
+# Moduli Adobe I/O Events
 
-Con i moduli Adobe I/O Events, puoi avviare uno scenario Adobe Workfront Fusion basato su eventi negli account e nei servizi di Adobe che non dispongono di un connettore Workfront Fusion dedicato.
+Con i moduli Adobe I/O Events, puoi avviare uno scenario Adobe Workfront Fusion basato su eventi negli account e nei servizi Adobe che non dispongono di un connettore Workfront Fusion dedicato.
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Piano Adobe Workfront*</td> 
-   <td> <p>Pro o superiore</p> </td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront*</td> 
-   <td> <p>Piano, Lavoro</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
-   <td> <p>Workfront Fusion per l'automazione e l'integrazione del lavoro </p>  </td> 
+   <td>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Oppure</p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
-   <td>Per utilizzare le funzionalità descritte in questo articolo, la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront.</td> 
-  </tr> 
+   <td>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Oppure</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
  </tbody> 
 </table>
 
-&#42;Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore di Workfront.
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-&#42;&#42;Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisiti
 
@@ -52,7 +64,7 @@ Prima di poter utilizzare il connettore Adobe I/O Events, è necessario assicura
 
 * Devi disporre di un account Adobe attivo.
 
-## Informazioni API per eventi di Adobe I/O
+## Informazioni API di Adobe I/O Events
 
 Il connettore Adobe I/O Events utilizza quanto segue:
 
@@ -71,7 +83,7 @@ Il connettore Adobe I/O Events utilizza quanto segue:
  </tbody> 
  </table>
 
-## Creare una connessione a eventi Adobe I/O
+## Creare una connessione a Adobe I/O Events
 
 Per creare una connessione per i moduli Adobe I/O Events:
 
@@ -309,7 +321,7 @@ Questo modulo di azione effettua una chiamata API personalizzata all&#39;API [!D
 
 #### Ottieni ID provider ed evento
 
-Questo modulo di ricerca ottiene gli ID evento Adobe I/O per il provider e gli eventi specificati.
+Questo modulo di ricerca ottiene gli ID Adobe I/O Events per il provider e gli eventi specificati.
 
 <table>
      <col/>
