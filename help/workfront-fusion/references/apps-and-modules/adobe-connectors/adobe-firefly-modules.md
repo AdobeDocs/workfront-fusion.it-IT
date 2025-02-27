@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1219642306c03cb0aa6037493ce2f02ced80b99d
+source-git-commit: a3494479614a4930427842fa68e6b586edca0833
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '2248'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Prima di poter utilizzare il connettore [!DNL Adobe Firefly], è necessario veri
 
 ## Informazioni API di Adobe Firefly
 
-Il connettore di Adobe Firefly utilizza quanto segue:
+Il connettore Adobe Firefly utilizza quanto segue:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -136,6 +136,8 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 Questo modulo di azione espande un’immagine, facoltativamente con il contenuto di un prompt fornito.
 
+Questo modulo funziona con Firefly API V3 Async. La versione precedente di questo modulo è stata dichiarata obsoleta e verrà rimossa a breve.
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
@@ -153,29 +155,43 @@ Questo modulo di azione espande un’immagine, facoltativamente con il contenuto
    <td>Immettere un numero compreso tra 1 e 4. Il modulo genera questo numero di varianti di immagine espanse.</td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Source]</td> 
+   <td>Seleziona la modalità di fornitura del file di origine:<ul><li><p><b>File</b></p><p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di immagine di riferimento e il file di immagine di riferimento del file di origine.</p></li><li><p><b>URL preceduto</b></p><p>Inserisci o mappa l’URL dell’immagine sorgente.</p></li></ul></td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Expanded image format]</td> 
    <td>Selezionare il formato di file con cui verrà salvata l'immagine espansa.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>Selezionare un file di origine da un modulo precedente o mappare il nome del file di immagine e il file di immagine (dati) del file di origine.</p> </td> 
+   <td role="rowheader">[!UICONTROL Expand by]</td> 
+   <td>  <p>Seleziona se desideri espandere l’immagine utilizzando il posizionamento dell’immagine o una maschera.</p> 
+   <ul>
+   <li><b>Posizionamento</b><p>Immettete l'allineamento orizzontale e verticale e l'inizio dell'immagine posizionata dai bordi.</p></li>
+   <li><b>Maschera</b><p>Selezionate il file di origine per la maschera e specificate se la maschera deve essere invertita.</p></li>
+   </ul>
+</td> 
 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
-   <td>Selezionare la dimensione desiderata per l'immagine espansa.</td> 
+   <td>Selezionate l'altezza e la larghezza desiderate per l'immagine espansa.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>Per ogni valore di inizializzazione che si desidera utilizzare, fare clic su <b>Aggiungi elemento</b> e immettere o mappare un numero intero. Puoi utilizzare lo stesso valore di inizializzazione in un altro modulo Espandi un’immagine per generare un’immagine simile con stili diversi. </td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>Per ogni immagine generata dal modulo, fare clic su <b>Aggiungi elemento</b> e immettere o mappare un numero intero. Puoi utilizzare lo stesso valore di inizializzazione in un altro modulo Espandi un’immagine per generare un’immagine simile con stili diversi. Il numero di seed aggiunti deve essere uguale al campo Numero di varianti.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Riempi un’immagine
+### Espandere un’immagine (obsoleto)
+
+Questo modulo è stato dichiarato obsoleto e verrà rimosso a breve. Utilizza invece il modulo Espandi immagine.
+
+### Riempi un’immagine
 
 Questo modulo di azione riempie l’area nascosta di un’immagine, facoltativamente con il contenuto di un prompt fornito dall’utente.
 
+Questo modulo funziona con Firefly API V3 Async. La versione precedente di questo modulo è stata dichiarata obsoleta e verrà rimossa a breve.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -184,6 +200,14 @@ Questo modulo di azione riempie l’area nascosta di un’immagine, facoltativam
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Campaign], vedere <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Creare una connessione a [!DNL Adobe Firefly]</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td>Selezionare la modalità di fornitura del file di origine dell'immagine:<ul><li><p><b>File</b></p><p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di immagine di riferimento e il file di immagine di riferimento del file di origine.</p></li><li><p><b>URL preceduto</b></p><p>Inserisci o mappa l’URL dell’immagine sorgente.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Mask > Source]</td> 
+   <td>Selezionare la modalità di fornitura del file di origine della maschera:<ul><li><p><b>File</b></p><p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di immagine di riferimento e il file di immagine di riferimento del file di origine.</p></li><li><p><b>URL preceduto</b></p><p>Inserisci o mappa l’URL dell’immagine sorgente.</p></li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
@@ -197,30 +221,31 @@ Questo modulo di azione riempie l’area nascosta di un’immagine, facoltativam
    <td role="rowheader">[!UICONTROL Filled image format]</td> 
    <td>Selezionate il formato di file con cui verrà salvata l'immagine riempita.</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Image]</td> 
-   <td>  <p> Per ogni immagine che si desidera riempire, fare clic su <b>Aggiungi un'immagine</b>, quindi selezionare un file di origine da un modulo precedente o mappare il nome del file di immagine e i dati dell'immagine del file di origine.</p> </td> 
-</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mask]</td> 
-   <td>  <p>  Per ogni maschera che si desidera utilizzare, fare clic su <b>Aggiungi maschera</b>. Selezionare un file di origine da un modulo precedente o mappare il nome del file di origine e i dati della maschera. Il file Maschera rappresenta la maschera personalizzata che verrà riempita con il contenuto generato.</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>Per ogni immagine generata dal modulo, fare clic su <b>Aggiungi elemento</b> e immettere o mappare un numero intero. Puoi utilizzare lo stesso valore di inizializzazione in un altro modulo Espandi un’immagine per generare un’immagine simile con stili diversi. Il numero di seed aggiunti deve essere uguale al campo Numero di varianti.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>Selezionate la dimensione desiderata per l'immagine riempita.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seeds]</td> 
-   <td>Per ogni immagine generata dal modulo, fare clic su <b>Aggiungi elemento<b> e immettere o mappare un numero intero. Puoi utilizzare lo stesso valore di inizializzazione in un altro modulo Espandi un’immagine per generare un’immagine simile con stili diversi. Il numero di seed aggiunti deve essere uguale al campo Numero di varianti.</td> 
+   <td role="rowheader">[!UICONTROL Locale]</td> 
+   <td>Se viene fornita una lingua, il modulo genera contenuto più pertinente alla lingua specificata. <p>Le impostazioni internazionali devono essere specificate nel codice della lingua ISO 639-1 e nell'area geografica ISO 3166-1.</p><p> Esempio: <code>en-US</code></p></td> 
   </tr> 
  </tbody> 
 </table>
 
+### Riempire un’immagine (obsoleto)
+
+Questo modulo è stato dichiarato obsoleto e verrà rimosso a breve. Utilizza invece il modulo Riempi immagine.
+
 ## Generare un’immagine
 
 Questo modulo di azione genera un’immagine e in base a un prompt fornito. È inoltre possibile fornire un&#39;immagine di riferimento facoltativa. L&#39;immagine generata corrisponderà allo stile dell&#39;immagine di riferimento.
+
+Questo modulo funziona con Firefly API V3 Async. La versione precedente di questo modulo è stata dichiarata obsoleta e verrà rimossa a breve.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -232,7 +257,7 @@ Questo modulo di azione genera un’immagine e in base a un prompt fornito. È i
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
-   <td>Immettete o mappate un prompt per l'immagine da creare. Un maggior numero di dettagli nel prompt consente un maggiore controllo su ciò che appare nell'immagine.</td> 
+   <td>Immettete o mappate un prompt per l'immagine da generare. Un maggior numero di dettagli nel prompt consente un maggiore controllo su ciò che appare nell'immagine.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Number of variations]</td> 
@@ -243,12 +268,23 @@ Questo modulo di azione genera un’immagine e in base a un prompt fornito. È i
    <td>Selezionare il formato di file con cui verrà salvata l'immagine espansa. Se si seleziona predefinito, il formato del file sarà JPEG se non viene fornita alcuna immagine di riferimento. Se viene fornita un’immagine di riferimento, il formato del file dell’immagine generata sarà lo stesso dell’immagine di riferimento.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>Selezionare un file di origine da un modulo precedente o mappare il nome del file di immagine di riferimento e il file di immagine di riferimento (dati) del file di origine. L’immagine generata viene creata in modo che corrisponda allo stile dell’immagine di riferimento.</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Structure > Image reference]</td> 
+    <td>Selezionare la modalità di creazione del file di origine per la struttura della nuova immagine:<ul><li><p><b>File</b></p><p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di immagine di riferimento e il file di immagine di riferimento del file di origine.</p></li><li><p><b>URL preceduto</b></p><p>Inserisci o mappa l’URL dell’immagine sorgente.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presets]</td> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Immettete un numero compreso tra 0 e 100 per controllare il rigoroso rispetto di Firefly alla struttura dell'immagine sorgente. Numeri più alti indicano che Firefly segue l'immagine in modo più rigoroso.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Selezionare la modalità di creazione del file di origine per lo stile della nuova immagine:<ul><li><p><b>File</b></p><p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di immagine di riferimento e il file di immagine di riferimento del file di origine.</p></li><li><p><b>URL preceduto</b></p><p>Inserisci o mappa l’URL dell’immagine sorgente.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Immettete un numero compreso tra 0 e 100 per controllare in che modo Firefly rispetta rigorosamente lo stile dell'immagine sorgente. Numeri più alti indicano che Firefly segue l'immagine in modo più rigoroso.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
    <td>Se si desidera utilizzare uno stile predefinito, fare clic su Aggiungi elemento e immettere o mappare lo stile che si desidera utilizzare.<p>Per un elenco degli stili predefiniti, consulta <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Stili modello immagine</a> nella documentazione per gli sviluppatori di Adobe.</td> 
   </tr> 
   <tr> 
@@ -261,17 +297,13 @@ Questo modulo di azione genera un’immagine e in base a un prompt fornito. È i
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>Inserisci o mappa un numero intero. Puoi utilizzare lo stesso valore di inizializzazione in un altro modulo Espandi un’immagine per generare un’immagine simile con stili diversi. </td> 
+   <td>Per ogni immagine generata dal modulo, fare clic su <b>Aggiungi elemento</b> e immettere o mappare un numero intero. Puoi utilizzare lo stesso valore di inizializzazione in un altro modulo Espandi un’immagine per generare un’immagine simile con stili diversi. Il numero di seed aggiunti deve essere uguale al campo Numero di varianti.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>Seleziona la dimensione desiderata per l'immagine generata.</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Strength]</td> 
-   <td>Immettete o mappate un numero intero che rappresenta l'intensità con cui l'immagine generata corrisponderà allo stile dello stile predefinito o dell'immagine di riferimento. </td> 
-  </tr> 
-  <tr> 
+   <tr> 
    <td role="rowheader">[!UICONTROL Visual intensity]</td> 
    <td>Immettere o mappare un numero intero che rappresenta l'intensità complessiva delle caratteristiche visive esistenti della foto. </td> 
   </tr> 
@@ -279,14 +311,115 @@ Questo modulo di azione genera un’immagine e in base a un prompt fornito. È i
    <td role="rowheader">[!UICONTROL Locale]</td> 
    <td>Se viene fornita una lingua, il modulo genera contenuto più pertinente alla lingua specificata. <p>Le impostazioni internazionali devono essere specificate nel codice della lingua ISO 639-1 e nell'area geografica ISO 3166-1.</p><p> Esempio: <code>en-US</code></p></td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>Abilita questa opzione per generare un’immagine che possa essere ripetuta all’infinito in ogni direzione.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Genera un’immagine (obsoleto)
+
+Questo modulo è stato dichiarato obsoleto e verrà rimosso a breve. Al suo posto, utilizza il modulo Genera un’immagine.
+
+### Generare un oggetto composito
+
+Questo modulo di azione combina immagini generate da Firefly per creare un’immagine composita.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Campaign], vedere <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Creare una connessione a [!DNL Adobe Firefly]</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>Immettete o mappate un prompt per l'immagine da generare. Un maggior numero di dettagli nel prompt consente un maggiore controllo su ciò che appare nell'immagine.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>Immettere un numero compreso tra 1 e 4. Il modulo genera questo numero di varianti di immagine.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Content classs]</td> 
+   <td>Seleziona se desideri che l'immagine generata sia più simile a una foto o a un'immagine.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>Selezionare la modalità di creazione del file di origine per la struttura della nuova immagine:<ul><li><p><b>File</b></p><p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di immagine di riferimento e il file di immagine di riferimento del file di origine.</p></li><li><p><b>URL preceduto</b></p><p>Inserisci o mappa l’URL dell’immagine sorgente.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>Selezionare il formato di file con cui verrà salvata l'immagine espansa. Se si seleziona predefinito, il formato del file sarà JPEG se non viene fornita alcuna immagine di riferimento. Se viene fornita un’immagine di riferimento, il formato del file dell’immagine generata sarà lo stesso dell’immagine di riferimento.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Selezionare la modalità di creazione del file di origine per lo stile della nuova immagine:<ul><li><p><b>File</b></p><p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di immagine di riferimento e il file di immagine di riferimento del file di origine.</p></li><li><p><b>URL preceduto</b></p><p>Inserisci o mappa l’URL dell’immagine sorgente.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Immettete un numero compreso tra 0 e 100 per controllare in che modo Firefly rispetta rigorosamente lo stile dell'immagine sorgente. Numeri più alti indicano che Firefly segue l'immagine in modo più rigoroso.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td>Se si desidera utilizzare uno stile predefinito, fare clic su Aggiungi elemento e immettere o mappare lo stile che si desidera utilizzare.<p>Per un elenco degli stili predefiniti, consulta <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Stili modello immagine</a> nella documentazione per gli sviluppatori di Adobe.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>Selezionare la dimensione desiderata per il composito generato. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Genera immagini simili
+
+Questo modulo di azione genera immagini simili all’immagine di origine specificata.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Campaign], vedere <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Creare una connessione a [!DNL Adobe Firefly]</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>Immettere un numero compreso tra 1 e 4. Il modulo genera questo numero di varianti di immagine.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>Selezionare il formato di file con cui verrà salvata l'immagine espansa. Se si seleziona predefinito, il formato del file sarà JPEG se non viene fornita alcuna immagine di riferimento. Se viene fornita un’immagine di riferimento, il formato del file dell’immagine generata sarà lo stesso dell’immagine di riferimento.</td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>Selezionare la modalità di creazione del file di origine per la struttura della nuova immagine:<ul><li><p><b>File</b></p><p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di immagine di riferimento e il file di immagine di riferimento del file di origine.</p></li><li><p><b>URL preceduto</b></p><p>Inserisci o mappa l’URL dell’immagine sorgente.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Selezionare la modalità di creazione del file di origine per lo stile della nuova immagine:<ul><li><p><b>File</b></p><p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di immagine di riferimento e il file di immagine di riferimento del file di origine.</p></li><li><p><b>URL preceduto</b></p><p>Inserisci o mappa l’URL dell’immagine sorgente.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>Selezionare la dimensione desiderata per il composito generato. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>Per ogni immagine generata dal modulo, fare clic su <b>Aggiungi elemento</b> e immettere o mappare un numero intero. Puoi utilizzare lo stesso valore di inizializzazione in un altro modulo Espandi un’immagine per generare un’immagine simile con stili diversi. Il numero di seed aggiunti deve essere uguale al campo Numero di varianti.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>Abilita questa opzione per generare un’immagine che possa essere ripetuta all’infinito in ogni direzione.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 
-
 ### Effettuare una chiamata API personalizzata
 
-Questo modulo di azione effettua una chiamata personalizzata all’API di Firefly.
+Questo modulo di azione effettua una chiamata personalizzata all’API Firefly.
 
 Per le API disponibili specifiche, vedi [API Adobe Firefly](https://developer.adobe.com/firefly-services/docs/firefly-api/) nella documentazione di Adobe Developer.
 
