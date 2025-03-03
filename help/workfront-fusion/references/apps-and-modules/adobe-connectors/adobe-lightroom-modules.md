@@ -4,9 +4,9 @@ description: Con i moduli di Adobe Lightroom, puoi avviare uno scenario Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -190,10 +190,10 @@ Questo modulo di azione recupera un ID di versione del server Lightroom, verific
 
 * [Creare un file originale della risorsa](#create-an-asset-external-xmp-develop-setting-file)
 * [Creare una risorsa](#create-an-asset)
-* [Creare una risorsa esterna XMP sviluppare un file di impostazione](#create-an-asset-external-xmp-develop-setting-file)
+* [Creazione di una risorsa esterna XMP sviluppo file di impostazione](#create-an-asset-external-xmp-develop-setting-file)
 * [Generare copie trasformate per un file originale](#generate-renditions-for-an-original-file)
 * [Ottieni una risorsa catalogo](#get-a-catalog-asset)
-* [Ottieni l’impostazione di sviluppo XMP esterna più recente per le risorse](#get-the-latest-asset-external-xmp-develop-setting-file)
+* [Ottieni l’impostazione di sviluppo XMP esterna per la risorsa più recente](#get-the-latest-asset-external-xmp-develop-setting-file)
 * [Ottieni la rappresentazione più recente delle risorse](#get-the-latest-asset-rendition)
 * [Recuperare le risorse](#retrieve-assets)
 
@@ -295,7 +295,7 @@ Questo modulo di azione crea una nuova risorsa con metadati iniziali e informazi
   </tbody>
 </table>
 
-#### Creare una risorsa esterna XMP sviluppare un file di impostazione
+#### Creazione di una risorsa esterna XMP sviluppo file di impostazione
 
 Questo modulo di azione supporta due flussi di lavoro. Il primo flusso di lavoro consiste nel caricare il file delle impostazioni di sviluppo XMP esterno per la risorsa. Il secondo flusso di lavoro consiste nel creare un file delle impostazioni di sviluppo XMP esterno copiando dal file delle impostazioni di sviluppo xmp esterno di un’altra risorsa.
 
@@ -407,7 +407,7 @@ Questo modulo di azione recupera informazioni su una singola risorsa in un catal
 </table>
 
 
-#### Ottieni il file di impostazione per lo sviluppo XMP esterno più recente per la risorsa
+#### Ottieni la risorsa più recente dal file delle impostazioni di sviluppo XMP esterno
 
 Questo modulo di azione recupera il file di impostazione XMP esterno della risorsa più recente.
 
@@ -428,7 +428,7 @@ Questo modulo di azione recupera il file di impostazione XMP esterno della risor
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>Inserisci o mappa l’ID della risorsa associata al file delle impostazioni per lo sviluppo dell’XMP.</p>
+        <p>Immetti o mappa l’ID della risorsa associata al file delle impostazioni di sviluppo di XMP.</p>
       </td>
     </tr>
   </tbody>
@@ -455,7 +455,7 @@ Questo modulo di azione recupera la rappresentazione più recente della risorsa 
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>Inserisci o mappa l’ID della risorsa associata al file delle impostazioni per lo sviluppo dell’XMP.</p>
+        <p>Immetti o mappa l’ID della risorsa associata al file delle impostazioni di sviluppo di XMP.</p>
       </td>
     </tr>
     <tr>
@@ -500,7 +500,7 @@ Questo modulo di azione recupera le risorse di proprietà dell’utente le cui c
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>Impostare il numero massimo di risorse che [!DNL Workfront Fusion] restituirà durante un ciclo di esecuzione. Questo numero deve essere minore o uguale a 100.</p>
+        <p>Immettere il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p>
       </td>
     </tr>
     <tr>
