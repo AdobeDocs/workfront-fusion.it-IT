@@ -3,19 +3,19 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
-title: Moduli di gestione utente di Adobe
+title: Moduli di gestione utenti di Adobe
 description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare i flussi di lavoro che gestiscono gli utenti nel tuo account Adobe.
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 640fec2de63ad59ba89fae5373f85b8147d8dac0
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 2%
 
 ---
 
-# Moduli di gestione utente di Adobe
+# Moduli di gestione utenti di Adobe
 
 In uno scenario [!DNL Adobe Workfront Fusion], puoi automatizzare i flussi di lavoro che gestiscono gli utenti nel tuo account Adobe.
 
@@ -104,7 +104,7 @@ Per creare una connessione per i moduli [!DNL Adobe User Management]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
-        <td>Immetti le tue credenziali IMS di [!DNL Adobe]. L’identificatore univoco di un’organizzazione. Questa è una stringa del formato A495E53@AdobeOrg in cui il prefisso prima di @ è un numero esadecimale. Puoi trovare questo valore come parte del percorso URL per l’organizzazione nell’Admin Console o nella console adobe.io per l’integrazione di User Management.</td>
+        <td>Immetti le tue credenziali IMS di [!DNL Adobe]. L’identificatore univoco di un’organizzazione. Questa è una stringa del formato A495E53@AdobeOrg in cui il prefisso prima di @ è un numero esadecimale. Puoi trovare questo valore come parte del percorso URL per l’organizzazione in Admin Console o nella console adobe.io per l’integrazione di User Management.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Additional scopes]</td>
@@ -119,7 +119,7 @@ Per creare una connessione per i moduli [!DNL Adobe User Management]:
 
 ## Moduli di gestione utenti di Adobe e relativi campi
 
-Quando configuri i moduli di Gestione utenti di Adobe, Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, possono essere visualizzati campi aggiuntivi di Gestione utente di Adobe, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli di Gestione utenti di Adobe, Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, possono essere visualizzati altri campi di Gestione utente di Adobe, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -148,7 +148,7 @@ Questo modulo di ricerca recupera un elenco di tutti i gruppi di utenti e i prof
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Numero massimo di risultati restituiti</td> 
@@ -167,7 +167,7 @@ Questo modulo di ricerca recupera i dettagli per un singolo utente dell’organi
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Indirizzo e-mail</td> 
@@ -186,7 +186,7 @@ Questo modulo di ricerca recupera un elenco di tutti gli utenti nel gruppo di ut
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome gruppo</td> 
@@ -222,7 +222,7 @@ Questo modulo di ricerca restituisce tutti gli utenti dell’organizzazione asso
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Numero massimo di risultati restituiti</td> 
@@ -248,7 +248,7 @@ Questo modulo di azione aggiunge un utente come membro del gruppo o dei gruppi s
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Utente</td> 
@@ -279,11 +279,11 @@ Questo modulo di azione crea un nuovo utente nell’organizzazione.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo ID</td> 
-   <td>Seleziona se desideri creare un utente con un’Adobe ID, un’Enterprise ID o un Federated ID. </td> 
+   <td>Seleziona se desideri creare un utente con un Adobe ID, un Enterprise ID o un Federated ID. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Accedi</td> 
@@ -319,7 +319,7 @@ Questo modulo di azione crea un nuovo utente nell’organizzazione.
   </tr> 
   <tr> 
    <td role="rowheader">Utilizzare Adobe ID</td> 
-   <td>Se è true, l'ID utente viene interpretato come riferito a un Adobe ID esistente anche se esiste un'azienda o un Federated ID con lo stesso nome.</td> 
+   <td>Se è true, l’ID utente viene interpretato come riferito a un’Adobe ID esistente anche se esiste un’azienda o un Federated ID con lo stesso nome.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -334,7 +334,7 @@ Questo modulo di azione rimuove l’appartenenza di un utente dai gruppi specifi
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Utente</td> 
@@ -367,7 +367,7 @@ Questo modulo aggiorna un utente esistente.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Utente</td> 
@@ -410,7 +410,7 @@ Questo modulo di azione aggiunge utenti e profili di prodotto a un gruppo di ute
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome gruppo</td> 
@@ -437,7 +437,7 @@ Questo modulo di azione crea un nuovo gruppo di utenti. Se esiste già un gruppo
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome gruppo</td> 
@@ -464,7 +464,7 @@ Questo modulo di azione elimina un gruppo di utenti esistente.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome gruppo</td> 
@@ -483,7 +483,7 @@ Questo modulo di azione rimuove utenti o profili da un gruppo di utenti.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome gruppo</td> 
@@ -499,7 +499,7 @@ Questo modulo di azione rimuove utenti o profili da un gruppo di utenti.
   </tr> 
   <tr> 
    <td role="rowheader">Utilizzare Adobe ID</td> 
-   <td>Se è true, l’ID utente viene interpretato come riferito a un Adobe ID esistente anche se esiste un’azienda o un Federated ID con lo stesso nome.</td> 
+   <td>Se è true, l’ID utente viene interpretato come riferito a un’Adobe ID esistente anche se esiste un’azienda o un Federated ID con lo stesso nome.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -514,7 +514,7 @@ Questo modulo di azione aggiorna un gruppo di utenti esistente.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+   <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome gruppo originale</td> 
@@ -528,13 +528,15 @@ Questo modulo di azione aggiorna un gruppo di utenti esistente.
    <td role="rowheader">Nome gruppo originale</td> 
    <td>Immettere o mappare la descrizione aggiornata del gruppo.</td> 
   </tr> 
- </tbody>
+ </tbody> 
+ </table>
 
 ### Altro
 
-Questo modulo di azione effettua una chiamata personalizzata all’API User Management di Adobe.
 
 #### Effettuare una chiamata API personalizzata
+
+Questo modulo di azione effettua una chiamata personalizzata all’API User Management di Adobe.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -542,7 +544,7 @@ Questo modulo di azione effettua una chiamata personalizzata all’API User Mana
   <tbody>
     <tr>
       <td role="rowheader">Connessione</td>
-      <td>Per istruzioni sulla creazione di una connessione a Gestione utenti Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti Adobe</a> in questo articolo.</td> 
+      <td>Per istruzioni sulla creazione di una connessione a Gestione utenti di Adobe, vedere <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Creare una connessione a Gestione utenti di Adobe</a> in questo articolo.</td> 
     </tr>
     <tr>
       <td role="rowheader">
