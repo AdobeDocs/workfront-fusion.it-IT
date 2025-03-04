@@ -4,9 +4,9 @@ description: I moduli FTP consentono di monitorare le modifiche apportate ai fil
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c5e9c643c828e5556e386a5f46e1d17680b7d4e9
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -17,46 +17,50 @@ I moduli FTP consentono di monitorare le modifiche apportate ai file in una cart
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
+
 ## Prerequisiti
 
-Per utilizzare [Fusion App] con [!DNL Workfront Fusion], è necessario disporre di un account FTP.
+Per utilizzare i moduli FTP, è necessario disporre di un account FTP.
 
 ## Creare una connessione in un modulo FTP {#create-a-connection}
 
@@ -65,7 +69,7 @@ Per utilizzare [Fusion App] con [!DNL Workfront Fusion], è necessario disporre 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection name]</td> 
+   <td>[!UICONTROL Nome connessione]</td> 
    <td> <p> Immetti il nome della connessione FTP.</p> </td> 
   </tr> 
   <tr> 
@@ -73,11 +77,11 @@ Per utilizzare [Fusion App] con [!DNL Workfront Fusion], è necessario disporre 
    <td> <p>Immetti il nome host del server FTP. E.g. <code>myftp123.server.com</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Port] </td> 
+   <td>Porta [!UICONTROL] </td> 
    <td> <p>Immettere il numero di porta del server FTP. E.g. <code>21</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL User name] </td> 
+   <td>[!UICONTROL Nome utente] </td> 
    <td> <p>Immetti il nome utente dell'account FTP.</p> </td> 
   </tr> 
   <tr> 
@@ -86,35 +90,35 @@ Per utilizzare [Fusion App] con [!DNL Workfront Fusion], è necessario disporre 
   </tr> 
   <tr> 
    <td> <p>Utilizzare una connessione protetta (TLS)</p> </td> 
-   <td> <p>Selezionare se si desidera utilizzare una connessione protetta.</p> <p style="font-weight: bold;">[!UICONTROL No]</p> <p>Connessione non protetta.</p> <p style="font-weight: bold;">[!UICONTROL Explicit encryption or Implicit encryption]</p> <p>La connessione è protetta tramite SSL.</p> </td> 
+   <td> <p>Selezionare se si desidera utilizzare una connessione protetta.</p> <p style="font-weight: bold;">[!UICONTROL No]</p> <p>Connessione non protetta.</p> <p style="font-weight: bold;">[!UICONTROL Crittografia esplicita o Crittografia implicita]</p> <p>La connessione è protetta tramite SSL.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Reject unauthorized certificates]</p> </td> 
+   <td> <p>[!UICONTROL Rifiuta certificati non autorizzati]</p> </td> 
    <td> <p>Abilita questa opzione per verificare il certificato del server FTP. Se la verifica non riesce, la connessione non viene creata. Per superare la verifica, il certificato deve soddisfare uno dei seguenti criteri:</p> 
     <ul> 
      <li>essere firmato da un'autorità di certificazione <a href="https://en.wikipedia.org/wiki/Certificate_authority">radice</a></li> 
      <li>essere firmato da un'autorità di certificazione intermedia (vedere ad esempio <a href="https://knowledge.digicert.com/solution/SO16297.html">Funzionamento delle catene di certificati</a> per ulteriori spiegazioni). In questo caso, tutti i certificati intermedi devono essere installati sul server FTP.</li> 
-     <li>essere un certificato autofirmato fornito nel campo [!UICONTROL Self-signed certificate] (vedere di seguito)</li> </ul>
+     <li>essere un certificato autofirmato fornito nel campo [!UICONTROL Self-signed certificate] (vedi di seguito)</li> </ul>
 
 Se questa opzione è disabilitata, il certificato del server FTP non viene verificato. Consigliamo vivamente di non disabilitare l’opzione in quanto rende la connessione insicura e comporta un grave rischio per la sicurezza.</td>
 </tr> 
   <tr> 
    <td> <p>[!UICONTROL Self-signed certificate]</p> </td> 
-   <td> <p>Fare clic sul pulsante <b>[!UICONTROL Extract]</b> per aprire la finestra di dialogo di caricamento.</p> <p>Carica il certificato per utilizzare TLS con il certificato autofirmato. [!DNL Workfront Fusion] non conserva né archivia i dati forniti, ad esempio file e password. File e password vengono utilizzati solo per estrarre il certificato.</p> </td> 
+   <td> <p>Fai clic sul pulsante <b>[!UICONTROL Extract]</b> per aprire la finestra di dialogo di caricamento.</p> <p>Carica il certificato per utilizzare TLS con il certificato autofirmato. [!DNL Workfront Fusion] non conserva né archivia i dati forniti, ad esempio file e password. File e password vengono utilizzati solo per estrarre il certificato.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Moduli FTP e relativi campi
 
-* [Triggers](#triggers)
+* [Trigger](#triggers)
 * [Azioni](#actions)
 
-### Triggers
+### Trigger
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL File di controllo]
 
-[!UICONTROL Watch files] è l&#39;unico modulo di attivazione per FTP. Controlla il contenuto del file della cartella selezionata. Il trigger viene eseguito quando un nuovo file viene inserito nella cartella specificata.
+[!UICONTROL File di controllo] è l&#39;unico modulo di attivazione per FTP. Controlla il contenuto del file della cartella selezionata. Il trigger viene eseguito quando un nuovo file viene inserito nella cartella specificata.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -129,7 +133,7 @@ Se questa opzione è disabilitata, il certificato del server FTP non viene verif
    <td> <p>Seleziona la cartella da controllare.</p> <p><b>Nota:</b> è consentita una sola cartella per scenario. Le sottocartelle vengono ignorate.</p> <p><b>Suggerimento:</b> Per tenere traccia di più cartelle, creare uno scenario indipendente per ognuna di esse.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned files] </td> 
+   <td>[!UICONTROL Numero massimo di file restituiti] </td> 
    <td> <p>Impostare il numero massimo di risultati con cui [!DNL Workfront Fusion] lavorerà durante un ciclo. Se il valore è impostato su un valore troppo alto, la connessione potrebbe essere interrotta sul lato del servizio di terze parti specificato (timeout). [!DNL Workfront Fusion] non ha alcuna influenza su questo elemento. È consigliabile impostare un valore più basso e definire un valore più alto per il numero massimo di cicli oppure eseguire lo scenario più frequentemente.</p> </td> 
   </tr> 
  </tbody> 
@@ -137,16 +141,16 @@ Se questa opzione è disabilitata, il certificato del server FTP non viene verif
 
 ### Azioni
 
-* [[!UICONTROL Change permissions]](#change-permissions)
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL List of files in a folder]](#list-of-files-in-a-folder)
-* [[!UICONTROL Move a file or folder]](#move-a-file-or-folder)
-* [[!UICONTROL Upload] un file](#upload-a-file)
+* [[!UICONTROL Modifica autorizzazioni]](#change-permissions)
+* [[!UICONTROL Crea una cartella]](#create-a-folder)
+* [[!UICONTROL Eliminare un file]](#delete-a-file)
+* [[!UICONTROL Eliminare una cartella]](#delete-a-folder)
+* [[!UICONTROL Ottieni un file]](#get-a-file)
+* [[!UICONTROL Elenco di file in una cartella]](#list-of-files-in-a-folder)
+* [[!UICONTROL Spostare un file o una cartella]](#move-a-file-or-folder)
+* [[!UICONTROL Carica] un file](#upload-a-file)
 
-#### [!UICONTROL Change permissions]
+#### [!UICONTROL Modifica autorizzazioni]
 
 Questo modulo di azione modifica le impostazioni delle autorizzazioni di un file o di una cartella.
 
@@ -159,13 +163,13 @@ Questo modulo di azione modifica le impostazioni delle autorizzazioni di un file
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] in un modulo FTP</a> in questo articolo.</td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Change permission settings of]</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Modifica le impostazioni delle autorizzazioni di]</td>
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-MediumGray">
                <p>Specificare se si desidera modificare le impostazioni di un file o di una cartella.</p>
             </td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL File path]</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-LightGray" role="rowheader">[!UICONTROL Percorso file]</td>
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Immettere o mappare il percorso del file alla cartella o al file.</td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
@@ -178,7 +182,7 @@ Questo modulo di azione modifica le impostazioni delle autorizzazioni di un file
    </tbody>
 </table>
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Crea una cartella]
 
 Questo modulo di azione crea una nuova cartella.
 
@@ -191,11 +195,11 @@ Questo modulo di azione crea una nuova cartella.
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-LightGray">Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] in un modulo FTP</a> in questo articolo.</td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-MediumGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Folder path]</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyE-Column1-MediumGray" role="rowheader">[!UICONTROL Percorso cartella]</td>
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyD-Column2-MediumGray">Immettere o mappare il percorso del file alla nuova cartella.</td>
          </tr>
          <tr class="TableStyle-TableStyle-List-options-in-steps-Body-LightGray">
-            <td class="TableStyle-TableStyle-List-options-in-steps-BodyB-Column1-LightGray" role="rowheader">[!UICONTROL New folder name]</td>
+            <td class="TableStyle-TableStyle-List-options-in-steps-BodyB-Column1-LightGray" role="rowheader">[!UICONTROL Nome nuova cartella]</td>
             <td class="TableStyle-TableStyle-List-options-in-steps-BodyA-Column2-LightGray">
                <p>Immettere o mappare un nome per la nuova cartella.</p>
             </td>
@@ -203,7 +207,7 @@ Questo modulo di azione crea una nuova cartella.
    </tbody>
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Eliminare un file]
 
 Elimina un file dalla cartella specificata.
 
@@ -220,13 +224,13 @@ Elimina un file dalla cartella specificata.
    <td> <p>Selezionare la cartella FTP da cui si desidera eliminare un file.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File name]</td> 
+   <td>[!UICONTROL Nome file]</td> 
    <td> <p> Immettere il nome del file, inclusa l'estensione. Esempio: <code>[!DNL image].png</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Eliminare una cartella]
 
 Questo modulo di azione elimina definitivamente la cartella specificata.
 
@@ -247,7 +251,7 @@ Questo modulo di azione elimina definitivamente la cartella specificata.
    </tbody>
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Ottieni un file]
 
 Recupera un file dal server FTP che può essere ulteriormente elaborato, ad esempio caricato in [!DNL Dropbox].
 
@@ -260,13 +264,13 @@ Recupera un file dal server FTP che può essere ulteriormente elaborato, ad esem
    <td> <p>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#creating-the-ftp-connection" class="MCXref xref">Creazione della connessione FTP</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File path]</td> 
+   <td>[!UICONTROL Percorso file]</td> 
    <td> <p> Immettere il percorso del file che si desidera ottenere.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List of files in a folder]
+#### [!UICONTROL Elenco di file in una cartella]
 
 Recupera le informazioni sul file e/o sulla cartella.
 
@@ -287,17 +291,17 @@ Recupera le informazioni sul file e/o sulla cartella.
    <td> <p>Specificare se si desidera recuperare informazioni su file, cartelle o entrambi.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search] </td> 
+   <td>[!UICONTROL - Ricerca] </td> 
    <td> <p>Immettere il termine di ricerca. Se non viene immesso alcun termine di ricerca, verranno recuperati tutti i file e le cartelle della cartella specificata.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned files]</td> 
+   <td>[!UICONTROL Numero massimo di file restituiti]</td> 
    <td> <p> Imposta il numero massimo di file recuperati da questo modulo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a file or folder]
+#### [!UICONTROL Spostare un file o una cartella]
 
 Questo modulo di azione sposta un file o una cartella in una posizione diversa.
 
@@ -310,13 +314,13 @@ Questo modulo di azione sposta un file o una cartella in una posizione diversa.
             <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-LightGray">Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] in un modulo FTP</a> in questo articolo.</td>
          </tr>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-MediumGray">
-            <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-MediumGray" style="font-weight: bold;">[!UICONTROL Old file path]</td>
+            <td class="TableStyle-TableStyle-HeaderRow-BodyE-Column1-MediumGray" style="font-weight: bold;">[!UICONTROL Percorso file precedente]</td>
             <td class="TableStyle-TableStyle-HeaderRow-BodyD-Column1-MediumGray">
                <p>Immettere il percorso da cui si desidera spostare il file. Esempio: <code>/folder1/document.txt</code>.</p>
             </td>
          </tr>
          <tr class="TableStyle-TableStyle-HeaderRow-Body-LightGray">
-            <td class="TableStyle-TableStyle-HeaderRow-BodyB-Column1-LightGray" style="font-weight: bold;">[!UICONTROL New file path]</td>
+            <td class="TableStyle-TableStyle-HeaderRow-BodyB-Column1-LightGray" style="font-weight: bold;">[!UICONTROL Percorso nuovo file]</td>
             <td class="TableStyle-TableStyle-HeaderRow-BodyA-Column1-LightGray">
                <p>Immettere il percorso in cui spostare il file. Esempio: <code>/folder2/document.txt</code>.</p>
             </td>
@@ -325,7 +329,7 @@ Questo modulo di azione sposta un file o una cartella in una posizione diversa.
 </table>
 
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Carica un file]
 
 Carica un file sul server FTP.
 
@@ -346,11 +350,11 @@ Carica un file sul server FTP.
    <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Append to an already existing file]</td> 
+   <td>[!UICONTROL Aggiungi a un file già esistente]</td> 
    <td> <p>Se questa opzione è abilitata e il file esiste già sul server FTP, il contenuto del file viene aggiunto al file esistente. Se questa opzione non è abilitata, il contenuto del file verrà sovrascritto.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Create folders if don't exist] </td> 
+   <td>[!UICONTROL Crea cartelle se non esiste] </td> 
    <td> <p>Se questa opzione è abilitata e la cartella immessa nel campo Cartella non esiste sul server FTP, il modulo crea la cartella</p> </td> 
   </tr> 
  </tbody> 

@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '3275'
+source-wordcount: '3704'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
       <td>
-        <p>[!UICONTROL Pro] o superiore</p>
+        <p>[!UICONTROL Pro] o versione successiva</p>
       </td>
     </tr>
     <tr>
@@ -47,13 +47,13 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
       <td>
    <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Requisito licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">Prodotto</td>
       <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
    <p>Oppure</p>
    <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
    </td>
@@ -97,7 +97,7 @@ Il connettore Adobe Journey Optimizer utilizza quanto segue:
 
 Puoi creare una connessione in qualsiasi modulo di Adobe Journey Optimizer.
 
-1. Fare clic su **[!UICONTROL Add]** accanto alla casella Connessione.
+1. In qualsiasi modulo, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
 1. Compila i campi seguenti:
 
@@ -108,7 +108,7 @@ Puoi creare una connessione in qualsiasi modulo di Adobe Journey Optimizer.
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL Nome connessione]</td>
         <td>
           <p>Immettere un nome per la connessione.</p>
         </td>
@@ -122,19 +122,19 @@ Puoi creare una connessione in qualsiasi modulo di Adobe Journey Optimizer.
         <td>Specificare se ci si connette a un account di servizio o a un account personale.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Immetti [!UICONTROL Adobe] [!UICONTROL Client ID]. È disponibile nella sezione dei dettagli [!UICONTROL Credentials] della sezione [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL ID client]</td>
+        <td>Immetti [!UICONTROL Adobe] [!UICONTROL ID client]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Immetti [!DNL Adobe] [!UICONTROL Client Secret]. È disponibile nella sezione dei dettagli [!UICONTROL Credentials] della sezione [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL Segreto client]</td>
+        <td>Immetti [!DNL Adobe] [!UICONTROL Client Secret]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>Immetti [!DNL Adobe] [!UICONTROL Organization ID]. È disponibile nella sezione dei dettagli [!UICONTROL Credentials] della sezione [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL ID organizzazione]</td>
+        <td>Immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Sandbox Name]</td>
+        <td role="rowheader">[!UICONTROL Nome Sandbox]</td>
         <td>Immetti il nome della sandbox che verrà utilizzata da questa connessione.</td>
         </tr>
       </tbody>
@@ -187,7 +187,7 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di configurazione]</td> 
    <td>Seleziona se stai creando una configurazione di limitazione o limitazione.<ul><li><p><b>Limiti</b></p>Passa a <a href="#capping-fields" class="MCXref xref" >Campi limite</a>.</li><li><p><b>Limitazione</b></p>Passa a <a href="#throttling-fields" class="MCXref xref" >Campi di limitazione</a>.</li></ul></td> 
   </tr> 
    </tbody> 
@@ -203,11 +203,11 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
    <td>Inserisci o mappa l’URL dell’endpoint da configurare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL IMS Org ID]</td> 
+   <td role="rowheader">[!UICONTROL ID organizzazione IMS]</td> 
    <td>Inserisci o mappa l’ID Adobe IMS dell’organizzazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Methods]</td> 
+   <td role="rowheader">Metodi [!UICONTROL]</td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
@@ -215,7 +215,7 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
    <td>Seleziona se utilizzi un’azione o un’origine dati per questa configurazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum HTTP connections]</td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di connessioni HTTP]</td> 
    <td>Immettere o mappare il numero massimo di connessioni simultanee a questo endpoint.</td> 
   </tr> 
   <tr> 
@@ -223,7 +223,7 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
    <td>Immettere o mappare il numero massimo di chiamate da eseguire nel periodo specificato nel campo Periodo di tempo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Time period (milliseconds)]</td> 
+   <td role="rowheader">[!UICONTROL Periodo di tempo (millisecondi)]</td> 
    <td>Immettere o mappare il numero di millisecondi relativi al campo Numero massimo di chiamate.</td> 
   </tr> 
  </tbody> 
@@ -238,7 +238,7 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
    <td role="rowheader">[!UICONTROL Name]</td> 
    <td>Immetti o mappa un nome per questa configurazione.</td> 
 <tr> 
-   <td role="rowheader">[!UICONTROL Description]</td> 
+   <td role="rowheader">[!UICONTROL Descrizione]</td> 
    <td>Immetti o mappa una descrizione per questa configurazione.</td> 
   </tr> 
 <tr> 
@@ -247,15 +247,15 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Methods]</td> 
+   <td role="rowheader">Metodi [!UICONTROL]</td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max throughput]</td> 
+   <td role="rowheader">Velocità effettiva massima [!UICONTROL]</td> 
    <td>Seleziona se utilizzi un’azione o un’origine dati per questa configurazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum HTTP connections]</td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di connessioni HTTP]</td> 
    <td>Immettere o mappare il numero massimo di connessioni simultanee a questo endpoint.</td> 
   </tr> 
   <tr> 
@@ -278,11 +278,11 @@ Questo modulo di azione distribuisce la configurazione di limitazione o limitazi
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di configurazione]</td> 
    <td>Seleziona se stai distribuendo una configurazione di limitazione o di limitazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID configurazione]</td> 
    <td>Immetti o mappa l’ID della configurazione da distribuire.</td> 
   </tr> 
  </tbody> 
@@ -301,7 +301,7 @@ Questo modulo di azione aggiorna la configurazione di limitazione o limite speci
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di configurazione]</td> 
    <td>Seleziona se stai aggiornando una configurazione di limitazione o di limitazione.<ul><li><p><b>Limiti</b></p>Per i campi, vedi <a href="#capping-fields" class="MCXref xref" >Limitazione dei campi</a> nella sezione Creare una configurazione di questo articolo.</li><li><p><b>Limitazione</b></p>Per i campi, vedi <a href="#throttling-fields" class="MCXref xref" >Limitazione dei campi</a> nella sezione Creare una configurazione di questo articolo.</li></ul></td> 
   </tr> 
   </tbody> 
@@ -320,11 +320,11 @@ Questo modulo di azione annulla la distribuzione di una configurazione di limita
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di configurazione]</td> 
    <td>Seleziona se stai annullando la distribuzione di una configurazione di limitazione o di limitazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID configurazione]</td> 
    <td>Immetti o mappa l’ID della configurazione di cui vuoi annullare la distribuzione.</td> 
   </tr> 
  </tbody> 
@@ -343,11 +343,11 @@ Questo modulo di azione verifica se è possibile distribuire una configurazione 
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di configurazione]</td> 
    <td>Seleziona se stai controllando una configurazione di limite o una configurazione di limitazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID configurazione]</td> 
    <td>Immetti o mappa l’ID della configurazione da controllare.</td> 
   </tr> 
  </tbody> 
@@ -368,11 +368,11 @@ Se la configurazione è stata distribuita, è necessario annullarne la distribuz
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di configurazione]</td> 
    <td>Seleziona se stai eliminando una configurazione di limitazione o di limitazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID configurazione]</td> 
    <td>Inserisci o mappa l’ID della configurazione da eliminare.</td> 
   </tr> 
  </tbody> 
@@ -391,11 +391,11 @@ Questo modulo di azione restituisce la configurazione di limitazione o limitazio
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di configurazione]</td> 
    <td>Seleziona se stai recuperando una configurazione di limite o una configurazione di limitazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Configuration ID]</td> 
+   <td role="rowheader">[!UICONTROL ID configurazione]</td> 
    <td>Immetti o mappa l’ID della configurazione da recuperare.</td> 
   </tr> 
  </tbody> 
@@ -411,7 +411,7 @@ Questo modulo di azione restituisce la configurazione di limitazione o limitazio
 * [Eliminare un pacchetto](#delete-a-package)
 * [Cercare un pacchetto](#look-up-a-package)
 * [Importare un pacchetto](#import-a-package)
-* [Publish un pacchetto](#publish-a-package)
+* [Pubblicare un pacchetto](#publish-a-package)
 * [Inviare un’importazione](#submit-an-import)
 
 
@@ -433,15 +433,15 @@ Questo modulo di azione crea un pacchetto con più artefatti.
    <td>Immettere o mappare un nome per il pacchetto.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Description]</td> 
+   <td role="rowheader">[!UICONTROL Descrizione]</td> 
    <td>Immettere o mappare una descrizione del pacchetto.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Expiration date]</td> 
+   <td role="rowheader">[!UICONTROL Data di scadenza]</td> 
    <td>Immetti o mappa la marca temporale che definisce la data di scadenza per il pacchetto. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo pacchetto]</td> 
    <td>Seleziona il tipo di pacchetto da creare.<ul><li><p><b>Full</b></p>Il pacchetto includerà tutti gli artefatti</p></li><li><p><b>Parziale</b></p><p>Il pacchetto includerà solo gli artefatti aggiunti. </p></li><ul></td> 
   </tr> 
   <tr> 
@@ -468,7 +468,7 @@ Questo modulo di azione aggiunge o elimina gli artefatti da un pacchetto o aggio
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select action]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona azione]</td> 
    <td>Seleziona l’azione da eseguire.<ul><li><p><b>Aggiungi artefatto</b></p><p>Per ogni artifact che si desidera aggiungere, fare clic su <b>Aggiungi artifact</b> e specificare l'ID, il tipo e il titolo dell'artifact, quindi immettere o mappare la data di scadenza del pacchetto. </p></li><li><p><b>Elimina artefatto</b></p><p>Per ogni elemento che si desidera eliminare, fare clic su <b>Aggiungi elemento</b> e specificare l'ID, il tipo e il titolo dell'elemento. </p></li><li><p><b>Aggiorna metadati</b></p><p>Immetti nuovi valori per il nome, la descrizione o l’ID dell’organizzazione IMS della sandbox di origine.</p></li></ul></td> 
   </tr> 
  </tbody> 
@@ -537,7 +537,7 @@ Questo modulo di azione recupera gli oggetti in conflitto nella sandbox di desti
  </tbody> 
 </table>
 
-#### Publish un pacchetto
+#### Pubblicare un pacchetto
 
 È necessario pubblicare un pacchetto prima di poterlo importare.
 
@@ -577,19 +577,19 @@ Questo modulo di azione invia un&#39;importazione per un pacchetto dopo aver esa
    <td>Immettere o mappare un nome per il processo di importazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Description]</td> 
+   <td role="rowheader">[!UICONTROL Descrizione]</td> 
    <td>Immettere o mappare una descrizione del processo di importazione</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Destination sandbox) Name]</td> 
+   <td role="rowheader">Nome [!UICONTROL (sandbox di destinazione)]</td> 
    <td>Inserisci o mappa il nome della sandbox a cui stai inviando l’importazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Destination sandbox) IMS Org ID]</td> 
+   <td role="rowheader">[!UICONTROL (sandbox di destinazione) ID organizzazione IMS]</td> 
    <td>Inserisci o mappa l’ID dell’organizzazione Adobe IMS per la sandbox a cui stai inviando l’importazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Source sandbox) ID]</td> 
+   <td role="rowheader">ID [!UICONTROL (sandbox Source)]</td> 
    <td>Inserisci o mappa l’ID della sandbox che contiene il pacchetto da pubblicare.</td> 
   </tr> 
   <tr> 
@@ -597,7 +597,7 @@ Questo modulo di azione invia un&#39;importazione per un pacchetto dopo aver esa
    <td></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL (Source sandbox) Link]</td> 
+   <td role="rowheader">Collegamento a [!UICONTROL (sandbox Source)]</td> 
    <td>Immetti o mappa il collegamento per il pacchetto da pubblicare.</td> 
   </tr> 
  </tbody> 
@@ -824,7 +824,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di contenuto]</td> 
    <td>Seleziona se stai creando un modello di contenuto o un frammento di contenuto.<ul><li><p><b>Modello di contenuto</b></p>Passa a <a href="#template-fields" class="MCXref xref" >Campi modello</a>.</li><li><p><b>Frammento di contenuto</b></p>Passa a <a href="#fragment-fields" class="MCXref xref" >Campi frammento</a>.</li></ul></td> 
   </tr> 
   </tbody> 
@@ -839,7 +839,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td role="rowheader">[!UICONTROL Name]</td> 
    <td>Immettere o mappare un nome per questo modello di contenuto.</td> 
 <tr> 
-   <td role="rowheader">[!UICONTROL Description]</td> 
+   <td role="rowheader">[!UICONTROL Descrizione]</td> 
    <td>Immettere o mappare una descrizione per questo modello di contenuto.</td> 
   </tr> 
 <tr> 
@@ -848,19 +848,19 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Channels]</td> 
+   <td role="rowheader">[!UICONTROL Canali]</td> 
    <td>Seleziona i canali inclusi in questo modello.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Content template origin]</td> 
+   <td role="rowheader">[!UICONTROL Origine modello di contenuto]</td> 
    <td>Selezionare l'origine del modello.</td>  
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Metadata]</td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Email HTML]</td> 
+   <td role="rowheader">[!UICONTROL E-mail HTML]</td> 
    <td>Inserisci o mappa il HTML dell’e-mail inclusa in questo modello.</td> 
   </tr> 
   <tr> 
@@ -879,7 +879,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td role="rowheader">[!UICONTROL Name]</td> 
    <td>Immetti o mappa un nome per questo frammento di contenuto.</td> 
 <tr> 
-   <td role="rowheader">[!UICONTROL Description]</td> 
+   <td role="rowheader">[!UICONTROL Descrizione]</td> 
    <td>Immetti o mappa una descrizione per questo frammento di contenuto.</td> 
   </tr> 
 <tr> 
@@ -888,15 +888,15 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Channels]</td> 
+   <td role="rowheader">[!UICONTROL Canali]</td> 
    <td>Seleziona i canali inclusi in questo modello.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Content fragment origin]</td> 
+   <td role="rowheader">[!UICONTROL Origine frammento di contenuto]</td> 
    <td>Seleziona l’origine del frammento.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Metadata]</td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
@@ -923,7 +923,7 @@ Questo modulo di azione aggiorna un modello di contenuto o un frammento.
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di contenuto]</td> 
    <td>Seleziona se stai aggiornando una configurazione di limitazione o di limitazione.<ul><li><p><b>Modello</b></p>Per i campi, vedi <a href="#template-fields" class="MCXref xref" >Campi modello</a> nella sezione Creare un record di questo articolo.</li><li><p><b>Frammento</b></p>Per i campi, vedi <a href="#fragment-fields" class="MCXref xref" >Campi frammento</a> nella sezione Creare un record di questo articolo.</li></ul></td> 
   </tr> 
   </tbody> 
@@ -942,11 +942,11 @@ Questo modulo di azione elimina un modello di contenuto o un frammento di conten
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di contenuto]</td> 
    <td>Seleziona se stai eliminando un modello di contenuto o un frammento di contenuto.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Template/Fragment ID]</td> 
+   <td role="rowheader">[!UICONTROL ID modello/frammento]</td> 
    <td>Inserisci o mappa l’ID del modello o del frammento da eliminare.</td> 
   </tr> 
  </tbody> 
@@ -965,15 +965,15 @@ Questo modulo di azione aggiorna un record utilizzando PATCH con formato puntato
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di contenuto]</td> 
    <td>Seleziona se applicare la patch a un modello di contenuto o a un frammento di contenuto.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Template/Fragment ID]</td> 
+   <td role="rowheader">[!UICONTROL ID modello/frammento]</td> 
    <td>Inserisci o mappa l’ID del modello o del frammento a cui desideri applicare la patch.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Payload data]</td> 
+   <td role="rowheader">[!UICONTROL Dati payload]</td> 
    <td>Per aggiungere un record al payload di questa patch: <ol><li>Fare clic su <b>Aggiungi un record</b>.</li><li>Selezionare l'operazione Aggiungi, Rimuovi o Sostituisci.</li><li>Nel campo Percorso, seleziona se desideri applicare la patch al nome o alla descrizione.</li><li> Nel campo Da, inserisci o mappa una stringa contenente un valore del puntatore JSON.</li><li>Nel campo Valore immettere il valore da utilizzare nell'operazione.</li></ol></td> 
   </tr> 
  </tbody> 
@@ -992,11 +992,11 @@ Questo modulo di azione restituisce il modello di contenuto o il frammento di co
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di contenuto]</td> 
    <td>Seleziona se stai recuperando un modello di contenuto o un frammento di contenuto.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Template/Fragment ID]</td> 
+   <td role="rowheader">[!UICONTROL ID modello/frammento]</td> 
    <td>Inserisci o mappa l’ID del modello o del frammento che desideri recuperare.</td> 
   </tr> 
  </tbody> 
@@ -1024,15 +1024,15 @@ Questo modulo di azione attiva un messaggio unitario ai destinatari specificati.
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Request ID]</td> 
+   <td role="rowheader">[!UICONTROL ID richiesta]</td> 
    <td>Immetti o mappa l’ID della richiesta associata a questo messaggio.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Campaign ID]</td> 
+   <td role="rowheader">[!UICONTROL ID campagna]</td> 
    <td>Inserisci o mappa l’ID della campagna associata a questo messaggio.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Recipients]</td> 
+   <td role="rowheader">[!UICONTROL Destinatari]</td> 
    <td>Per ogni destinatario che si desidera ricevere questo messaggio, fare clic su <b>Aggiungi destinatario</b> e immettere quanto segue:
    <ul>
    <li><p><b>Tipo</b></p>Selezionare <code>aep</code>.</li>
@@ -1061,11 +1061,11 @@ Questo modulo di azione attiva l’esecuzione di un messaggio basato sul pubblic
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Request ID]</td> 
+   <td role="rowheader">[!UICONTROL ID richiesta]</td> 
    <td>Immetti o mappa l’ID della richiesta associata a questo messaggio.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Campaign ID]</td> 
+   <td role="rowheader">[!UICONTROL ID campagna]</td> 
    <td>Inserisci o mappa l’ID della campagna associata a questo messaggio.</td> 
   </tr> 
   <tr> 
@@ -1088,7 +1088,7 @@ Questo modulo di azione controlla lo stato di un messaggio batch basato su un pu
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Message execution ID]</td> 
+   <td role="rowheader">[!UICONTROL ID esecuzione messaggio]</td> 
    <td>Inserisci o mappa l’ID dell’esecuzione del messaggio che desideri controllare.</td> 
   </tr> 
  </tbody> 
@@ -1155,7 +1155,7 @@ Questo modulo di azione controlla se un processo di importazione ha avuto esito 
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Job ID]</td> 
+   <td role="rowheader">[!UICONTROL ID processo]</td> 
    <td>Immetti o mappa l’ID del processo per il quale desideri recuperare i dati.</td> 
   </tr> 
  </tbody> 
@@ -1182,7 +1182,7 @@ Questo modulo di ricerca elenca tutti gli oggetti dipendenti per gli oggetti nel
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Package objects]</td> 
+   <td role="rowheader">[!UICONTROL Oggetti Package]</td> 
    <td>Per ogni oggetto del pacchetto per cui si desidera restituire l'oggetto dipendente, fare clic su <b>Aggiungi oggetto</b> e immettere il nome e il tipo dell'oggetto.</td> 
   </tr> 
   <tr> 
@@ -1209,7 +1209,7 @@ Questo modulo di azione elenca tutte le configurazioni di limitazione o limitazi
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select configuration type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di configurazione]</td> 
    <td>Seleziona se desideri elencare le configurazioni di limite o di limitazione.</td> 
   </tr> 
  </tbody> 
@@ -1232,15 +1232,15 @@ Questo modulo di ricerca elenca i processi di esportazione e importazione corren
    <td></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di risultati restituiti]</td> 
       <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Ordina per]</td> 
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL Query parameter]</td> 
+   <td role="rowheader">Parametro query [!UICONTROL]</td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 
@@ -1265,15 +1265,15 @@ Questo modulo di ricerca elenca tutti i pacchetti dell’organizzazione. Puoi ut
    <td></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di risultati restituiti]</td> 
       <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Ordina per]</td> 
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL Query parameter]</td> 
+   <td role="rowheader">Parametro query [!UICONTROL]</td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 
@@ -1292,11 +1292,11 @@ Questo modulo di ricerca elenca tutte le configurazioni di limitazione o limitaz
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Journey Optimizer], vedere <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Creare una connessione a [!DNL Adobe Journey Optimizer]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select content type]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona tipo di contenuto]</td> 
    <td>Seleziona se stai recuperando un modello di contenuto o un frammento di contenuto.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Ordina per]</td> 
    <td>Immettere o mappare il nome del parametro in base al quale si desidera ordinare l'elenco. Aggiungi <code>-</code> o <code>+</code> per ordinare in ordine decrescente o crescente. Se non viene specificato alcun segno, l'elenco viene ordinato in ordine decrescente.</td> 
   </tr> 
   <tr> 
@@ -1304,11 +1304,11 @@ Questo modulo di ricerca elenca tutte le configurazioni di limitazione o limitaz
    <td>Questo campo viene utilizzato per l’impaginazione. Immettere o mappare i criteri per la pagina successiva rispetto alla proprietà specificata nel campo Ordina per.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Ordina per]</td> 
    <td>Immettere o mappare il nome del parametro in base al quale si desidera ordinare l'elenco. Aggiungi <code>-</code> o <code>+</code> per ordinare in ordine decrescente o crescente. Se non viene specificato alcun segno, l'elenco viene ordinato in ordine decrescente.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter by property]</td> 
+   <td role="rowheader">[!UICONTROL Filtra per proprietà]</td> 
    <td>Per ogni filtro delle proprietà che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore della proprietà. I record che includono il valore specificato per la proprietà vengono inclusi nell'elenco.</td> 
   </tr> 
  </tbody> 
@@ -1351,7 +1351,7 @@ Questo modulo di azione effettua una chiamata API personalizzata all’API Adobe
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td role="rowheader">[!UICONTROL Stringa Di Query]  </td>
       <td>
         <p>Immettere la stringa di query richiesta.</p>
       </td>

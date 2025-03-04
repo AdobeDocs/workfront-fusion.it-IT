@@ -4,9 +4,9 @@ description: Con i moduli di Adobe Lightroom, puoi avviare uno scenario Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2376'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
       <td>
-        <p>[!UICONTROL Pro] o superiore</p>
+        <p>[!UICONTROL Pro] o versione successiva</p>
       </td>
     </tr>
     <tr>
@@ -42,7 +42,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td>
       <td >
-        <p>[!UICONTROL Workfront Fusion for Work Automation and Integration]</p>
+        <p>[!UICONTROL Workfront Fusion per l'automazione e l'integrazione del lavoro]</p>
       </td>
     </tr>
     <tr>
@@ -89,7 +89,7 @@ Il connettore Adobe Lightroom utilizza quanto segue:
 
 Per creare una connessione per i moduli [!DNL Adobe Lightroom]:
 
-1. Fare clic su **[!UICONTROL Add]** accanto alla casella Connessione.
+1. In qualsiasi modulo, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
 1. Compila i campi seguenti:
 
@@ -100,7 +100,7 @@ Per creare una connessione per i moduli [!DNL Adobe Lightroom]:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL Nome connessione]</td>
         <td>
           <p>Immettere un nome per la connessione.</p>
         </td>
@@ -114,17 +114,17 @@ Per creare una connessione per i moduli [!DNL Adobe Lightroom]:
         <td>Specificare se ci si connette a un account di servizio o a un account personale.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Immetti [!UICONTROL Adobe] [!UICONTROL Client ID]. È disponibile nella sezione dei dettagli [!UICONTROL Credentials] della sezione [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL ID client]</td>
+        <td>Immetti [!UICONTROL Adobe] [!UICONTROL ID client]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Immetti [!DNL Adobe] [!UICONTROL Client Secret]. È disponibile nella sezione dei dettagli [!UICONTROL Credentials] della sezione [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL Segreto client]</td>
+        <td>Immetti [!DNL Adobe] [!UICONTROL Client Secret]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
       </tbody>
     </table>
 
-1. Fare clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
 
 
 
@@ -211,31 +211,31 @@ Questo modulo di azione crea e carica un file originale per una risorsa.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
         <p>Immetti o mappa l’ID della risorsa per cui desideri creare e caricare un file.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Lunghezza del contenuto in byte]</td>
       <td>
         <p>Immettere o mappare la lunghezza del contenuto in byte.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Byte range]</td>
+      <td role="rowheader">[!UICONTROL Intervallo byte]</td>
       <td>
         <p>Immettere o mappare l'intervallo di byte per la richiesta, inclusi il primo e l'ultimo byte e la lunghezza dell'entità come definito nella RFC 2616. Deve essere incluso solo quando i dati sono troppo grandi per essere caricati in una singola chiamata.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Content type]</td>
+      <td role="rowheader">[!UICONTROL Tipo di contenuto]</td>
       <td>
         <p>Selezionare il tipo di contenuto per il nuovo file.</p>
       </td>
@@ -257,19 +257,19 @@ Questo modulo di azione crea una nuova risorsa con metadati iniziali e informazi
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Inserisci o mappa l’ID del catalogo in cui verrà creata la risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
         <p>Inserisci o mappa l’ID della nuova risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset type]</td>
+      <td role="rowheader">[!UICONTROL Tipo risorsa]</td>
       <td>
         <p>Seleziona se la risorsa è un’immagine o un video.</p>
       </td>
@@ -287,7 +287,7 @@ Questo modulo di azione crea una nuova risorsa con metadati iniziali e informazi
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Date captured]</td>
+      <td role="rowheader">[!UICONTROL Data acquisita]</td>
       <td>
         <p>Immettere o mappare una data con il formato <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
@@ -308,31 +308,31 @@ Questo modulo di azione supporta due flussi di lavoro. Il primo flusso di lavoro
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Lunghezza del contenuto in byte]</td>
       <td>
         <p>Immettere o mappare la lunghezza del contenuto in byte.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Upload new or copy XMP/develop file]</td>
+      <td role="rowheader">[!UICONTROL Carica nuovo o copia file XMP/di sviluppo]</td>
       <td>
         <p>Seleziona se stai caricando un nuovo file o copiando un file da una risorsa esistente.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
         <p>Inserisci o mappa l’ID della risorsa in cui desideri caricare o copiare un file.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Link to XMP/develop file]</td>
+      <td role="rowheader">[!UICONTROL Collega a XMP/file di sviluppo]</td>
       <td>
         <p>Inserisci o mappa un collegamento al file da caricare o copiare.</p><p>Questo file deve essere JSON se si copia un file, o XML se si carica un file.</p>
       </td>
@@ -353,25 +353,25 @@ Questo modulo di azione genera in modo asincrono le rappresentazioni di un file 
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rendition Type(s) (semi-colon separated)]</td>
+      <td role="rowheader">[!UICONTROL Tipo/i di rappresentazione (separati da punto e virgola)]</td>
       <td>
         <p>Immettere il tipo di rappresentazione da creare. Se si immettono più tipi, separarli con un punto e virgola (;). <p>Tipi possibili:</p><ul><li><code>fullsize</code></li><li><code>2560</code></li></ul></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Lunghezza del contenuto in byte]</td>
       <td>
         <p>Immettere o mappare la lunghezza del contenuto in byte.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
         <p>Immetti o mappa l’ID della risorsa per la quale desideri creare una rappresentazione di un file.</p>
       </td>
@@ -392,13 +392,13 @@ Questo modulo di azione recupera informazioni su una singola risorsa in un catal
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
         <p>Inserisci o mappa l’ID della risorsa per la quale desideri recuperare le informazioni.</p>
       </td>
@@ -420,13 +420,13 @@ Questo modulo di azione recupera il file di impostazione XMP esterno della risor
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
         <p>Immetti o mappa l’ID della risorsa associata al file delle impostazioni di sviluppo di XMP.</p>
       </td>
@@ -447,19 +447,19 @@ Questo modulo di azione recupera la rappresentazione più recente della risorsa 
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
         <p>Immetti o mappa l’ID della risorsa associata al file delle impostazioni di sviluppo di XMP.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Rendition type]</td>
+      <td role="rowheader">Tipo di rappresentazione [!UICONTROL]</td>
       <td>
         <p>Selezionare il tipo di rappresentazione da recuperare.</p>
       </td>
@@ -480,60 +480,60 @@ Questo modulo di azione recupera le risorse di proprietà dell’utente le cui c
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Starting timestamp]</td>
+      <td role="rowheader">[!UICONTROL Timestamp iniziale]</td>
       <td>
         <p>Immetti o mappa un timestamp. Il modulo restituisce i record che sono stati aggiornati dopo questa marca temporale.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Return assets captured before]</td>
+      <td role="rowheader">[!UICONTROL Restituisci risorse acquisite in precedenza]</td>
       <td>
         <p>Immettere una data in formato <code>YYYY-MM-DDT00:00:00</code>. Il modulo restituisce i risultati acquisiti prima di questa data.</p><p> Questo campo non può essere utilizzato con il campo <code>Return assets captured after</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
+      <td role="rowheader">[!UICONTROL Numero massimo di risorse restituite]</td>
       <td>
         <p>Immettere il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SHA256 Hash value of original file]</td>
+      <td role="rowheader">[!UICONTROL SHA256 Valore hash del file originale]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Hide assets that are inside stacks?"]</td>
+      <td role="rowheader">[!UICONTROL Nascondi le risorse che si trovano all'interno di pile?"]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset subtype values]</td>
+      <td role="rowheader">[!UICONTROL Valori sottotipo risorsa]</td>
       <td>
         <p></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset IDs]</td>
+      <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
         <p>Inserisci o mappa fino a 100 ID di risorse, separati da virgole.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Types of assets to exclude]</td>
+      <td role="rowheader">[!UICONTROL Tipi di risorse da escludere]</td>
       <td>
         <p>Seleziona questa opzione per escludere le risorse complete o incomplete. Per includere tutte le risorse, lascia vuoto questo campo.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Group values]</td>
+      <td role="rowheader">[!UICONTROL Valori gruppo]</td>
       <td>
         <p></p>
       </td>
@@ -545,7 +545,7 @@ Questo modulo di azione recupera le risorse di proprietà dell’utente le cui c
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Favorite status]</td>
+      <td role="rowheader">[!UICONTROL Stato preferito]</td>
       <td>
         <p></p>
       </td>
@@ -577,13 +577,13 @@ Questo modulo di azione aggiunge una o più risorse all’album specificato. Puo
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Inserisci o mappa l’ID del catalogo contenente l’album a cui desideri aggiungere le risorse.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL ID album]</td>
       <td>
         <p>Inserisci o mappa l’ID dell’album a cui desideri aggiungere le risorse.</p>
       </td>
@@ -594,12 +594,12 @@ Questo modulo di azione aggiunge una o più risorse all’album specificato. Puo
         <p>Per ogni risorsa da aggiungere all'album, fare clic su <b>Aggiungi elemento</b> e immettere i campi seguenti.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Asset ID]</td>
+      <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
         <p>Inserisci o mappa l’ID della risorsa da aggiungere all’album</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Is this asset an album cover?]</td>
+      <td role="rowheader">[!UICONTROL La risorsa è una copertina per album?]</td>
       <td>
         <p>Seleziona se desideri che questa risorsa venga visualizzata come immagine che rappresenta l'album.</p>
       </td>
@@ -609,12 +609,12 @@ Questo modulo di azione aggiunge una o più risorse all’album specificato. Puo
         <p></p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Metadata]</td>
+      <td role="rowheader">Metadati di [!UICONTROL]</td>
       <td>
         <p>Immetti o mappa i metadati che desideri includere nella risorsa. Deve essere una singola stringa di testo con una lunghezza massima di 1-24 caratteri.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Remote ID]</td>
+      <td role="rowheader">[!UICONTROL ID remoto]</td>
       <td>
         <p>Immetti un identificatore per la risorsa.</p>
       </td>
@@ -635,19 +635,19 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Immettere o mappare l'ID del catalogo in cui si desidera creare un album.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL ID album]</td>
       <td>
         <p>Immettere o mappare un ID per il nuovo album.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Subtype]</td>
+      <td role="rowheader">Sottotipo [!UICONTROL]</td>
       <td>
         <p>Selezionare il sottotipo dell'album.</p>
       </td>
@@ -669,46 +669,46 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album name]</td>
+      <td role="rowheader">[!UICONTROL Nome album]</td>
       <td>
         <p>Immettere o mappare un nome per il nuovo album.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Cover ID]</td>
+      <td role="rowheader">[!UICONTROL ID copertina]</td>
       <td>
         <p>Inserisci o mappa l’ID di una risorsa da utilizzare come copertina dell’album.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Remote ID]</td>
+      <td role="rowheader">[!UICONTROL ID remoto]</td>
       <td>
         <p>Immetti un identificatore per la risorsa.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Created date]</td>
+      <td role="rowheader">[!UICONTROL Data di creazione]</td>
       <td>
         <p>Immettere o mappare una data con il formato <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Updated date]</td>
+      <td role="rowheader">[!UICONTROL Data di aggiornamento]</td>
       <td>
         <p>Immettere o mappare una data con il formato <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Is the album deleted?]</td>
+      <td role="rowheader">[!UICONTROL L'album è stato eliminato?]</td>
       <td>
         <p>Abilita questa opzione se il contenuto affiliato esternamente è stato eliminato.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL URL of location to edit affiliated content]</td>
+      <td role="rowheader">[!UICONTROL URL della posizione in cui modificare il contenuto affiliato]</td>
       <td>
         <p>Se è presente un URL in cui gli utenti possono modificare il contenuto dell'album, immettere l'URL qui.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL URL of location to view affiliated content]</td>
+      <td role="rowheader">[!UICONTROL URL della posizione per visualizzare il contenuto affiliato]</td>
       <td>
         <p>Se è presente un URL in cui gli utenti possono visualizzare il contenuto dell'album, immettere l'URL qui.</p>
       </td>
@@ -731,19 +731,19 @@ L&#39;album eliminato deve essere stato creato dalla stessa app client che lo st
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Immettere o mappare l'ID del catalogo contenente l'album che si desidera eliminare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL ID album]</td>
       <td>
         <p>Immettere o mappare l'ID dell'album che si desidera eliminare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Delete child albums?]</td>
+      <td role="rowheader">[!UICONTROL Eliminare gli album secondari?]</td>
       <td>
         <p>Selezionare se si desidera eliminare gli album secondari dell'album eliminato.</p>
       </td>
@@ -764,13 +764,13 @@ Questo modulo di azione recupera l&#39;album specificato
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Immettere o mappare l'ID del catalogo contenente l'album che si desidera recuperare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL ID album]</td>
       <td>
         <p>Immettere o mappare l'ID dell'album che si desidera recuperare.</p>
       </td>
@@ -797,25 +797,25 @@ Questo modulo di azione recupera un elenco di album nel catalogo specificato.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Immettere o mappare l'ID del catalogo contenente gli album che si desidera recuperare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Subtypes]</td>
+      <td role="rowheader">[!UICONTROL Sottotipi]</td>
       <td>
         <p>Immettere o mappare l'ID dell'album che si desidera recuperare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Name of album to precede current results]</td>
+      <td role="rowheader">[!UICONTROL Nome dell'album da anteporre ai risultati correnti]</td>
       <td>
         <p>Se si sta impaginando i risultati, immettere o mappare il nome dell'ultimo album nella pagina precedente.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned albums]</td>
+      <td role="rowheader">[!UICONTROL Numero massimo di album restituiti]</td>
       <td>
         <p>Impostare il numero massimo di risorse che [!DNL Workfront Fusion] restituirà durante un ciclo di esecuzione. Il valore predefinito per questo campo è 100. Questo modulo può restituire più album oltre questo limite se più album al limite del limite hanno lo stesso valore <code>name_after</code>.</p>
       </td>
@@ -838,13 +838,13 @@ L&#39;album aggiornato deve essere stato creato dalla stessa app client che lo s
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
         <p>Immettere o mappare l'ID del catalogo contenente l'album che si desidera aggiornare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td role="rowheader">[!UICONTROL ID album]</td>
       <td>
         <p>Immettere o mappare l'ID dell'album che si desidera aggiornare.</p>
       </td>

@@ -4,16 +4,16 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , è possibile autom
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 04f0678b67cf6bffdb791a9ab38be27a6417370c
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '3203'
 ht-degree: 0%
 
 ---
 
 # [!DNL Dropbox] moduli
 
-In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!UICONTROL Dropbox] o [!DNL Dropbox Business], nonché collegarli a più applicazioni e servizi di terze parti. Ciò consente di automatizzare attività quali il monitoraggio, la ricerca, il recupero, l&#39;inserimento in elenco, la creazione e la modifica di file e cartelle in [!UICONTROL Dropbox].
+In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!UICONTROL Dropbox] o [!DNL Dropbox Business], nonché collegarli a più applicazioni e servizi di terze parti. Ciò consente di automatizzare attività quali il monitoraggio, la ricerca, il recupero, l&#39;elenco, la creazione e la modifica di file e cartelle nel [!UICONTROL Dropbox].
 
 Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -100,7 +100,7 @@ Il connettore Dropbox utilizza quanto segue:
 
 Per creare una connessione per i moduli [!DNL Dropbox]:
 
-1. Fare clic su **[!UICONTROL Add]** accanto alla casella Connessione.
+1. In qualsiasi modulo, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
 1. Compila i campi seguenti:
 
@@ -111,7 +111,7 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL Nome connessione]</td>
         <td>
           <p>Immettere un nome per la connessione.</p>
         </td>
@@ -125,14 +125,14 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
         </tr>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td role="rowheader">[!UICONTROL ID client]</td>
         <td>Immetti [!UICONTROL Dropbox] [!UICONTROL Client ID]. </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td role="rowheader">[!UICONTROL Segreto client]</td>
         <td>Immetti [!DNL Dropbox] [!UICONTROL Client Secret]. </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Account Type]</td>
+        <td role="rowheader">Tipo di account [!UICONTROL]</td>
         <td>Seleziona se ti stai connettendo a un account Dropbox personale o a un account aziendale (Dropbox Business).</td>
         </tr>
         <tr>
@@ -142,7 +142,7 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
       </tbody>
     </table>
 
-1. Fare clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.## [!DNL Dropbox] moduli e relativi campi
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.## [!DNL Dropbox] moduli e relativi campi
 
 ## [!DNL Dropbox] moduli e relativi campi
 
@@ -159,7 +159,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Moduli trigger
 
-#### [!UICONTROL Watch Files]
+#### [!UICONTROL File di controllo]
 
 Questo modulo del tipo Trigger restituisce i dettagli del file quando viene modificato il file in una cartella specificata.
 
@@ -176,7 +176,7 @@ Questo modulo del tipo Trigger restituisce i dettagli del file quando viene modi
    <td> <p>Selezionare la cartella in cui si desidera verificare le modifiche.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Watch also subfolders]</td> 
+   <td>[!UICONTROL Guarda anche le sottocartelle]</td> 
    <td> <p> Abilita questa opzione per monitorare anche le sottocartelle nella cartella selezionata per i file modificati.</p> </td> 
   </tr> 
   <tr> 
@@ -188,13 +188,13 @@ Questo modulo del tipo Trigger restituisce i dettagli del file quando viene modi
 
 ### Moduli per ottenere [!DNL Dropbox] file e cartelle
 
-* [[!UICONTROL Download a File]](#download-a-file)
-* [[!UICONTROL Get a Folder Metadata]](#get-a-folder-metadata)
-* [[!UICONTROL List All Files/Subfolders in a Folder]](#list-all-filessubfolders-in-a-folder)
-* [[!UICONTROL List File Revisions]](#list-file-revisions)
-* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
+* [[!UICONTROL Scarica un file]](#download-a-file)
+* [[!UICONTROL Ottieni metadati cartella]](#get-a-folder-metadata)
+* [[!UICONTROL Elenca tutti i file/sottocartelle in una cartella]](#list-all-filessubfolders-in-a-folder)
+* [[!UICONTROL Elenca revisioni file]](#list-file-revisions)
+* [[!UICONTROL Cerca file/cartelle]](#search-filesfolders)
 
-#### [!UICONTROL Download a File]
+#### [!UICONTROL Scarica un file]
 
 Questo modulo di azione scarica un file da una cartella.
 
@@ -227,7 +227,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Folder Metadata]
+#### [!UICONTROL Ottieni metadati cartella]
 
 Questo modulo di azione recupera i dettagli della cartella condivisa.
 
@@ -252,7 +252,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL List All Files/Subfolders in a Folder]
+#### [!UICONTROL Elenca tutti i file/sottocartelle in una cartella]
 
 Questo modulo di azione elenca i file o le cartelle presenti in una cartella specifica.
 
@@ -289,7 +289,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL List File Revisions]
+#### [!UICONTROL Elenca revisioni file]
 
 Questo modulo di azione recupera tutte le revisioni di file (una cronologia delle versioni) di un determinato file.\
 Specifica l’ID del file.
@@ -321,7 +321,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Files/Folders]
+#### [!UICONTROL Cerca file/cartelle]
 
 Questo modulo di ricerca cerca i record in un oggetto in [!DNL Dropbox] che corrispondono alla query di ricerca specificata.
 
@@ -336,7 +336,7 @@ Puoi mappare queste informazioni nei moduli successivi nello scenario.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search] </td> 
+   <td>[!UICONTROL - Ricerca] </td> 
    <td> <p>Immettere il termine di ricerca.</p> </td> 
   </tr> 
   <tr> 
@@ -364,16 +364,16 @@ Puoi mappare queste informazioni nei moduli successivi nello scenario.
 
 ### Moduli per la creazione e la modifica di [!DNL Dropbox] file e cartelle
 
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
-* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
-* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
-* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
-* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
-* [[!UICONTROL Restore a File]](#restore-a-file)
-* [[!UICONTROL Upload] un file](#upload-a-file)
+* [[!UICONTROL Crea una cartella]](#create-a-folder)
+* [[!UICONTROL Crea/Sovrascrivi un file di testo]](#createoverwrite-a-text-file)
+* [[!UICONTROL Crea/aggiorna un collegamento di condivisione]](#createupdate-a-share-link)
+* [[!UICONTROL Eliminare un file o una cartella]](#delete-a-filefolder)
+* [[!UICONTROL Sposta file/cartella]](#move-a-filefolder)
+* [[!UICONTROL Rinominare un file o una cartella]](#rename-a-filefolder)
+* [[!UICONTROL Ripristina un file]](#restore-a-file)
+* [[!UICONTROL Carica] un file](#upload-a-file)
 
-#### [!UICONTROL Create a Folder]
+#### [!UICONTROL Crea una cartella]
 
 Questo modulo di azione crea una nuova cartella.
 
@@ -392,7 +392,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder Name] </td> 
+   <td>[!UICONTROL Nome cartella] </td> 
    <td> <p>Immettere il nome della nuova cartella.</p> </td> 
   </tr> 
   <tr> 
@@ -400,13 +400,13 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immetti o mappa il percorso in cui desideri creare una nuova cartella.</p> <p>Nota:   <p>Se si utilizza un account [!DNL Dropbox Business] (con spazi del team), è necessario rimuovere la barra <code>/</code> oppure non fare clic su <strong>Fare clic qui per scegliere la cartella</strong> per creare una cartella del team nella radice.</p> <p>Se la barra non viene rimossa, viene restituito l'errore <code>[409] path/malformed_path/..</code>.</p> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Auto rename]</td> 
+   <td>[!UICONTROL Rinomina automaticamente]</td> 
    <td> <p> Abilita questa opzione per rinominare la nuova cartella, se nel percorso di destinazione esiste già una cartella con lo stesso nome.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Overwrite a Text File]
+#### [!UICONTROL Crea/Sovrascrivi un file di testo]
 
 Questo modulo di azione crea un file DOC o sovrascrive il contenuto di un file esistente.
 
@@ -423,7 +423,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Select to]</td> 
+   <td>[!UICONTROL Seleziona per]</td> 
    <td> <p> Selezionare se si desidera creare o sovrascrivere un file DOC.</p><ul><li><b>Crea</b></p>Selezionare la cartella in cui si desidera creare un file.</li><li><b>Sovrascrivi</b><p>Seleziona la modalità di selezione del file da sovrascrivere, quindi mappa il percorso del file o seleziona il file. </td> 
   </tr> 
   <tr> 
@@ -433,7 +433,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Share Link]
+#### [!UICONTROL Crea/aggiorna un collegamento di condivisione]
 
 Questo modulo crea un collegamento pubblico a un file.
 
@@ -452,30 +452,30 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files]</td> 
+   <td>[!UICONTROL Modalità di selezione dei file]</td> 
    <td> <p> Selezionare se si desidera mappare o immettere il percorso del file oppure selezionare il file manualmente.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File Path / File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Immettete o mappate il percorso del file di destinazione.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Selezionare il file di destinazione.</p> </td> 
+   <td> <p>[!UICONTROL Percorso File / File]</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL Percorso File]</p> <p>Immettete o mappate il percorso del file di destinazione.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Selezionare il file di destinazione.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Requested Visibility]</p> </td> 
-   <td> <p>Seleziona se il collegamento è pubblico, per team o con password limitata.</p> <p><b>Nota:</b></p><p> [!UICONTROL Team only] è disponibile solo per gli account Dropbox Business. [!UICONTROL Access with password] è disponibile solo per [!DNL Dropbox Pro] o account Dropbox Business.</p> </td> 
+   <td> <p>Visibilità richiesta [!UICONTROL]</p> </td> 
+   <td> <p>Seleziona se il collegamento è pubblico, per team o con password limitata.</p> <p><b>Nota:</b></p><p> [!UICONTROL Solo team] è disponibile solo per gli account Dropbox Business. [!UICONTROL Access with password] è disponibile solo per [!DNL Dropbox Pro] o account Dropbox Business.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Link's Expiration Date]</td> 
+   <td>Data di scadenza del collegamento [!UICONTROL]</td> 
    <td> <p> Immetti la data e l’ora in cui il collegamento scadrà e non sarà più accessibile. Se questo campo viene lasciato vuoto, il collegamento non scade. Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Tipo di coercizione</a>.</p>  </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Link's Access Level]</p> </td> 
+   <td> <p>Livello di accesso di [!UICONTROL Link]</p> </td> 
    <td> <p>Imposta l’autorizzazione per il destinatario del collegamento.</p> <ul><li><strong>[!UICONTROL Viewer]</strong> <p>Gli utenti che utilizzano il collegamento possono visualizzare e commentare il contenuto.</p> </li><li><strong>[!UICONTROL Editor]</strong><p> Gli utenti che utilizzano il collegamento possono modificare, visualizzare e commentare il contenuto. Questo livello di accesso è disponibile solo per i documenti basati su cloud.</p> </li><li><strong>[!UICONTROL Max]</strong> <p>Gli utenti che utilizzano il collegamento ricevono il livello di accesso massimo su cui puoi impostare il collegamento.</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### [!UICONTROL Delete a File/Folder]
+#### [!UICONTROL Eliminare un file o una cartella]
 
 Questo modulo di azione elimina un file o una cartella.
 
@@ -494,17 +494,17 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files]</td> 
+   <td>[!UICONTROL Modalità di selezione dei file]</td> 
    <td> <p> Selezionare se si desidera mappare o immettere il percorso del file oppure selezionare il file manualmente.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File or Folder Path] / [!UICONTROL File or Folder]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Immettere o mappare il percorso di destinazione al file o alla cartella.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Seleziona il file o la cartella dal menu.</p> </td> 
+   <td> <p>[!UICONTROL Percorso file o cartella] / [!UICONTROL File o cartella]</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL Percorso file/cartella]</p> <p>Immettere o mappare il percorso di destinazione al file o alla cartella.</p> <p style="font-weight: bold;">[!UICONTROL file/cartella]</p> <p>Seleziona il file o la cartella dal menu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File/Folder]
+#### [!UICONTROL Sposta file/cartella]
 
 Questo modulo di azione sposta un file o una cartella in una posizione diversa.
 
@@ -523,33 +523,33 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files / folders] </td> 
+   <td>[!UICONTROL Modalità di selezione file/cartelle] </td> 
    <td> <p>Selezionare se si desidera mappare o immettere il percorso del file o della cartella oppure selezionare il file o la cartella manualmente.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File / Folder Path] /</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Immettere o mappare il percorso di destinazione al file o alla cartella.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Seleziona se stai spostando un file o una cartella, quindi il file o la cartella.</p> </td> 
+   <td> <p>[!UICONTROL File / Percorso cartella] /</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL Percorso file/cartella]</p> <p>Immettere o mappare il percorso di destinazione al file o alla cartella.</p> <p style="font-weight: bold;">[!UICONTROL file/cartella]</p> <p>Seleziona se stai spostando un file o una cartella, quindi il file o la cartella.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL To Folder]</p> </td> 
+   <td> <p>[!UICONTROL Nella Cartella]</p> </td> 
    <td> <p>Immettere o mappare il percorso di destinazione del file o della cartella.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL New Name]</p> </td> 
+   <td> <p>[!UICONTROL Nuovo Nome]</p> </td> 
    <td> <p>Immettere il nuovo nome per il file o la cartella nella nuova posizione.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Auto Rename]</p> </td> 
+   <td> <p>[!UICONTROL Rinomina automaticamente]</p> </td> 
    <td> <p>Abilitare questa opzione per assicurarsi che, se esiste un file o una cartella con lo stesso nome, il modulo rinomini il nuovo file o la nuova cartella aggiungendo ([!UICONTROL NUMBER]) dopo il nome del file o della cartella. In caso contrario, il file o la cartella nel percorso di destinazione viene sovrascritto.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Allow ownership transfer]</p> </td> 
+   <td> <p>[!UICONTROL Consenti trasferimento proprietà]</p> </td> 
    <td> <p>Abilita questa opzione per consentire gli spostamenti per proprietario, anche se comporterebbe un trasferimento di proprietà per il contenuto spostato.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Rename a File/Folder]
+#### [!UICONTROL Rinominare un file o una cartella]
 
 Questo modulo di azione rinomina un file o una cartella.
 
@@ -583,7 +583,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 </table>
 
 
-#### [!UICONTROL Restore a File]
+#### [!UICONTROL Ripristina un file]
 
 Questo modulo ripristina una versione precedente di un file.
 
@@ -602,21 +602,21 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files]</td> 
+   <td>[!UICONTROL Modalità di selezione dei file]</td> 
    <td> <p> Selezionare se si desidera mappare o immettere il percorso del file oppure selezionare il file manualmente.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>Immetti o mappa il percorso di destinazione del file.</p> <p><strong>[!UICONTROL File]</strong> </p> <p>Seleziona il file dal menu.</p> </td> 
+   <td> <p>[!UICONTROL Percorso File] / [!UICONTROL File]</p> </td> 
+   <td> <p><strong>[!UICONTROL Percorso File]</strong> </p> <p>Immetti o mappa il percorso di destinazione del file.</p> <p><strong>[!UICONTROL File]</strong> </p> <p>Seleziona il file dal menu.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Revision]</p> </td> 
+   <td> <p>[!UICONTROL Revisione]</p> </td> 
    <td> <p>Immettere o mappare il numero di revisione della revisione da ripristinare.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Carica un file]
 
 Questo modulo di azione carica un file in una cartella.
 
@@ -643,7 +643,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> <p><b>Nota:</b></p><p> La dimensione massima del file caricato è di 150 MB.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Overwrite an existing file]</td> 
+   <td>[!UICONTROL Sovrascrive un file esistente]</td> 
    <td> <p> Abilita questa opzione per sostituire il file esistente con il nuovo file. Se questa opzione viene lasciata disattivata, il file caricato viene rinominato.</p> </td> 
   </tr> 
  </tbody> 
@@ -652,7 +652,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 ### Altri moduli
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Effettuare una chiamata API]
 
 Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all&#39;API [!DNL Dropbox]. In questo modo è possibile creare un&#39;automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Dropbox].
 
@@ -679,7 +679,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Inserisci le intestazioni di richiesta desiderate. [!DNL Workfront Fusion] aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Query String]</td> 
+   <td>[!UICONTROL Stringa Di Query]</td> 
    <td> <p> Immettere la stringa di query richiesta.</p> </td> 
   </tr> 
   <tr> 
@@ -711,7 +711,7 @@ Corpo:
 }
 ```
 
-Le corrispondenze della ricerca si trovano nell&#39;Output del modulo in [!UICONTROL Bundle] > [!UICONTROL Body] > voci.
+Le corrispondenze della ricerca si trovano nell&#39;output del modulo in [!UICONTROL Bundle] > [!UICONTROL Corpo] > voci.
 
 Nel nostro esempio, sono stati restituiti 10 biglietti.
 
@@ -731,7 +731,7 @@ Di seguito sono riportati alcuni possibili motivi per cui il caricamento o l’a
 
 ### L’immagine a cui si fa riferimento tramite un collegamento condiviso non viene riprodotta
 
-L&#39;URL restituito da [!UICONTROL Dropbox] >[!UICONTROL Create a shared link] non è collegato direttamente a un&#39;immagine, ma a una pagina [!DNL Dropbox]. Per forzare il download dell&#39;immagine, sostituire `?dl=0` finale con `?dl=1`. Per forzare il rendering dell&#39;immagine (ad esempio, in un browser Web o in Facebook Messenger), aggiungi `&raw=1` all&#39;URL.
+L&#39;URL restituito da [!UICONTROL Dropbox] >[!UICONTROL Crea un collegamento condiviso] non è collegato direttamente a un&#39;immagine, ma a una pagina [!DNL Dropbox]. Per forzare il download dell&#39;immagine, sostituire `?dl=0` finale con `?dl=1`. Per forzare il rendering dell&#39;immagine (ad esempio, in un browser Web o in Facebook Messenger), aggiungi `&raw=1` all&#39;URL.
 
 Se devi ottenere il collegamento diretto o non elaborato dell&#39;immagine per il tuo sito Web o per altri moduli di [!DNL Workfront Fusion], devi modificare l&#39;URL condiviso iniziale nel modo seguente:
 

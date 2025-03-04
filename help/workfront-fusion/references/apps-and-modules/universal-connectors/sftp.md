@@ -4,9 +4,9 @@ description: I moduli  [!DNL Adobe Workfront Fusion SFTP]  consentono di monitor
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '2077'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Per connettere l&#39;account SFTP a [!DNL Workfront Fusion] è necessario creare
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection name]</td> 
+   <td role="rowheader">[!UICONTROL Nome connessione]</td> 
    <td> <p> Immetti il nome della connessione SFTP.</p> </td> 
   </tr> 
   <tr> 
@@ -87,19 +87,19 @@ Per connettere l&#39;account SFTP a [!DNL Workfront Fusion] è necessario creare
    <td> <p>Immetti il nome host del server SFTP che desideri connettere.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Port] </td> 
+   <td role="rowheader">Porta [!UICONTROL] </td> 
    <td> <p>Immetti la porta del server SFTP. Ad esempio, 22.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Auth type]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Tipo di autenticazione]</p> </td> 
    <td> <p>Seleziona il metodo di autorizzazione da utilizzare per la connessione al server SFTP.</p> 
     <ul> 
-     <li><strong>[!UICONTROL User name and password]</strong>: immetti le credenziali.</li> 
-     <li> <p><strong>[!UICONTROL User name and key]</strong>: immetti il nome utente e la chiave privata/certificato</p> <p>Carica la chiave privata per utilizzare l’autorizzazione lato client oppure carica il certificato (file P12 o PFX) se desideri utilizzare TLS con il certificato autofirmato. Se utilizzi l’autorizzazione del certificato lato client, puoi immettere qui il certificato CA.</p> <p>[!DNL Workfront Fusion] non conserva né archivia i dati (file, password) forniti in questo documento. File e password vengono utilizzati solo per estrarre una chiave privata o un certificato.</p> </li> 
+     <li><strong>[!UICONTROL Nome utente e password]</strong>: immetti le credenziali.</li> 
+     <li> <p><strong>[!UICONTROL Nome utente e chiave]</strong>: immetti il nome utente e la chiave/certificato privato</p> <p>Carica la chiave privata per utilizzare l’autorizzazione lato client oppure carica il certificato (file P12 o PFX) se desideri utilizzare TLS con il certificato autofirmato. Se utilizzi l’autorizzazione del certificato lato client, puoi immettere qui il certificato CA.</p> <p>[!DNL Workfront Fusion] non conserva né archivia i dati (file, password) forniti in questo documento. File e password vengono utilizzati solo per estrarre una chiave privata o un certificato.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Key exchange algorithms] </td> 
+   <td role="rowheader">[!UICONTROL Algoritmi di scambio chiavi] </td> 
    <td> <p>È possibile immettere un set di algoritmi per lo scambio di chiavi. Il modulo assegna la priorità agli algoritmi in base all’ordine in cui sono stati aggiunti. Per ogni algoritmo che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e selezionare l'algoritmo.</p> </td> 
   </tr> 
   <tr> 
@@ -109,11 +109,11 @@ Per connettere l&#39;account SFTP a [!DNL Workfront Fusion] è necessario creare
  </tbody> 
 </table>
 
-Dopo aver immesso le informazioni di connessione, fare clic su **[!UICONTROL Continue]** per stabilire una connessione.
+Dopo aver immesso le informazioni di connessione, fare clic su **[!UICONTROL Continua]** per stabilire una connessione.
 
-## [!UICONTROL SFTP] moduli e relativi campi
+## [!UICONTROL Moduli SFTP] e relativi campi
 
-Quando configuri [!UICONTROL SFTP] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!UICONTROL SFTP], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri [!UICONTROL moduli SFTP], [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi [!UICONTROL SFTP], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -124,7 +124,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Controllare i file in una cartella](#watch-files-in-a-folder)
 * [Osservare le sottocartelle in una cartella](#watch-subfolders-in-a-folder)
 
-#### [!UICONTROL Watch Files in a Folder]
+#### [!UICONTROL Guarda i file in una cartella]
 
 Restituisce i file con i dettagli quando un file viene creato o modificato in una cartella specificata.
 
@@ -145,13 +145,13 @@ Restituisce i file con i dettagli quando un file viene creato o modificato in un
    <td> <p> Immettere la dimensione del buffer in byte. Il valore definisce la dimensione dei blocchi trasferiti dal server. Alcuni server possono causare problemi o file danneggiati quando il valore è troppo alto.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned files]</td> 
+   <td>[!UICONTROL Numero massimo di file restituiti]</td> 
    <td> <p> Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Subfolders in a Folder]
+#### [!UICONTROL Esaminare le sottocartelle in una cartella]
 
 Restituisce le cartelle con i dettagli quando una cartella viene creata o modificata in una cartella specificata.
 
@@ -168,7 +168,7 @@ Restituisce le cartelle con i dettagli quando una cartella viene creata o modifi
    <td> <p>Immetti o mappa la cartella da controllare. È possibile specificare un percorso assoluto come <code>/home/user/</code>. Oppure puoi specificare un percorso relativo che punti a una cartella specifica dell’utente connesso, ad esempio <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned files]</td> 
+   <td>[!UICONTROL Numero massimo di file restituiti]</td> 
    <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
@@ -187,13 +187,13 @@ Restituisce le cartelle con i dettagli quando una cartella viene creata o modifi
 * [Autorizzazioni di aggiornamento file](#update-file-permissions)
 * [Carica un file](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Crea una cartella]
 
-Crea una nuova cartella nel percorso specificato.
+Questo modulo di azione crea una nuova cartella nel percorso specificato.
 
 >[!NOTE]
 >
->Se la cartella esiste già, il modulo genera un errore. Per continuare il flusso senza interruzioni, allegare al modulo una route di gestore degli errori per rilevare l&#39;errore e utilizzare la direttiva [!UICONTROL Resume] per continuare il flusso. Per informazioni su come allegare una route del gestore degli errori, vedere [Gestione degli errori in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Per informazioni sulla route del gestore degli errori, vedere [Direttive per la gestione degli errori in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+>Se la cartella esiste già, il modulo genera un errore. Per continuare il flusso senza interruzioni, allegare al modulo una route del gestore degli errori per rilevare l&#39;errore e utilizzare la direttiva [!UICONTROL Riprendi] per continuare il flusso. Per informazioni su come allegare una route del gestore degli errori, vedere [Gestione degli errori in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Per informazioni sulla route del gestore degli errori, vedere [Direttive per la gestione degli errori in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -208,7 +208,7 @@ Crea una nuova cartella nel percorso specificato.
    <td> <p>Specificare una cartella esistente come percorso di archiviazione per la nuova cartella. È possibile specificare un percorso assoluto come <code>/home/user/file.txt</code>. Oppure è possibile specificare un percorso relativo che punti a una cartella specifica dell'utente connesso, ad esempio <code>./</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder Name]</td> 
+   <td>[!UICONTROL Nome cartella]</td> 
    <td> <p> Immetti il nome della cartella.</p> </td> 
   </tr> 
   <tr> 
@@ -218,7 +218,7 @@ Crea una nuova cartella nel percorso specificato.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Eliminare un file]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -229,13 +229,13 @@ Crea una nuova cartella nel percorso specificato.
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[!UICONTROL Percorso File]</td> 
    <td> <p> Immettere il percorso del file che si desidera eliminare. È possibile specificare un percorso assoluto come <code>/home/user/file.txt</code>. Oppure è possibile specificare un percorso relativo che punti a una cartella specifica dell'utente connesso, ad esempio <code>./file.txt</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Eliminare una cartella]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -252,7 +252,7 @@ Crea una nuova cartella nel percorso specificato.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Ottieni un file]
 
 Questo modulo recupera i dettagli del file, inclusi i dati di un file.
 
@@ -265,17 +265,17 @@ Questo modulo recupera i dettagli del file, inclusi i dati di un file.
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Buffer Size [B]]</td> 
+   <td>[!UICONTROL Dimensione Buffer [B]]</td> 
    <td> <p> Immettere la dimensione del buffer in byte. Il valore definisce la dimensione dei blocchi trasferiti dal server. Alcuni server possono causare problemi o file danneggiati quando il valore è troppo alto.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path] </td> 
+   <td>[!UICONTROL Percorso File] </td> 
    <td> <p>Immettere il percorso del file. È possibile specificare un percorso assoluto come <code>/home/user/file.txt</code>. Oppure è possibile specificare un percorso relativo che punti a una cartella specifica dell'utente connesso, ad esempio <code>./file.txt</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get files]
+#### [!UICONTROL Ottieni file]
 
 Questo modulo restituisce file da una cartella specificata.
 
@@ -288,7 +288,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Buffer Size [B]]</td> 
+   <td>[!UICONTROL Dimensione Buffer [B]]</td> 
    <td> <p> Immettere la dimensione del buffer in byte. Il valore definisce la dimensione dei blocchi trasferiti dal server. Alcuni server possono causare problemi o file danneggiati quando il valore è troppo alto.</p> </td> 
   </tr> 
   <tr> 
@@ -296,29 +296,29 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p>Immettere o mappare la cartella contenente i file o le cartelle da elencare. È possibile specificare un percorso assoluto come <code>/home/user/</code>. Oppure puoi specificare un percorso relativo che punti a una cartella specifica dell’utente connesso, ad esempio <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search] </td> 
+   <td>[!UICONTROL - Ricerca] </td> 
    <td> <p>Inserisci o mappa il termine di ricerca. Se ad esempio si desidera cercare file con estensione .txt, immettere <code>.txt</code>.È inoltre possibile immettere o mappare il nome del file che si desidera cercare.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort By]</td> 
+   <td>[!UICONTROL Ordina per]</td> 
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome del file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort Order]</td> 
+   <td>Ordinamento [!UICONTROL]</td> 
    <td> <p> Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Continue the execution of the route even if the module returns no results]</p> </td> 
+   <td> <p>[!UICONTROL Continua l'esecuzione della route anche se il modulo non restituisce alcun risultato]</p> </td> 
    <td>Abilita questa opzione per garantire che questo modulo non interrompa lo scenario se non restituisce alcun risultato.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>[!UICONTROL Numero massimo di risultati restituiti]</td> 
    <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List a folder's content]
+#### [!UICONTROL Elencare il contenuto di una cartella]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -337,29 +337,29 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p>Immettere o mappare la cartella contenente i file o le cartelle da elencare. È possibile specificare un percorso assoluto come <code>/home/user/</code>. Oppure puoi specificare un percorso relativo che punti a una cartella specifica dell’utente connesso, ad esempio <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search] </td> 
+   <td>[!UICONTROL - Ricerca] </td> 
    <td> <p>Inserisci o mappa il termine di ricerca. Se ad esempio si desidera cercare file con estensione .txt, immettere <code>.txt</code>.È inoltre possibile immettere o mappare il nome del file che si desidera cercare.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort By]</td> 
+   <td>[!UICONTROL Ordina per]</td> 
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort Order] </td> 
+   <td>Ordinamento [!UICONTROL] </td> 
    <td> <p>Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Continue the execution of the route even if the module returns no results]</p> </td> 
+   <td> <p>[!UICONTROL Continua l'esecuzione della route anche se il modulo non restituisce alcun risultato]</p> </td> 
    <td>Abilita questa opzione per garantire che questo modulo non interrompa lo scenario se non restituisce alcun risultato.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>[!UICONTROL Numero massimo di risultati restituiti]</td> 
    <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
+#### [!UICONTROL Sposta un file]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -370,17 +370,17 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[!UICONTROL Percorso File]</td> 
    <td> <p> Immettere il percorso del file che si desidera spostare. È possibile specificare un percorso assoluto come <code>/home/user/file.txt</code>. Oppure è possibile specificare un percorso relativo che punti a una cartella specifica dell'utente connesso, ad esempio <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New Folder]</td> 
+   <td>[!UICONTROL Nuova Cartella]</td> 
    <td> <p> Immettere il percorso della nuova posizione del file. È possibile specificare un percorso assoluto come <code>/home/user/</code>. Oppure puoi specificare un percorso relativo che punti a una cartella specifica dell’utente connesso, ad esempio <code>./.</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Rename a File]
+#### [!UICONTROL Rinominare un file]
 
 Rinomina un file.
 
@@ -393,17 +393,17 @@ Rinomina un file.
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[!UICONTROL Percorso File]</td> 
    <td> <p> Immettere il percorso del file da rinominare. È possibile specificare un percorso assoluto come <code>/home/user/file.txt</code>. Oppure è possibile specificare un percorso relativo che punti a una cartella specifica dell'utente connesso, ad esempio <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New file name]</td> 
+   <td>[!UICONTROL Nome nuovo file]</td> 
    <td> <p> Immettere il nuovo nome del file, inclusa l'estensione.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update file permissions]
+#### [!UICONTROL Aggiorna autorizzazioni file]
 
 Consente di modificare le autorizzazioni del file.
 
@@ -416,7 +416,7 @@ Consente di modificare le autorizzazioni del file.
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[!UICONTROL Percorso File]</td> 
    <td> <p> Immettere il percorso del file che si desidera spostare. È possibile specificare un percorso assoluto come <code>/home/user/file.txt</code>. Oppure è possibile specificare un percorso relativo che punti a una cartella specifica dell'utente connesso, ad esempio <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
@@ -426,7 +426,7 @@ Consente di modificare le autorizzazioni del file.
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Carica un file]
 
 Questo modulo ti consente di caricare un file sul server SFTP.
 
