@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2494'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 ## Informazioni API di Microsoft Power BI
 
-Il connettore Microsoft Power BI utilizza quanto segue:
+Il connettore Power BI di Microsoft utilizza quanto segue:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -95,7 +95,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 ![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Dashboard](#dashboards)
-* [Report](#reports)
+* [Rapporti](#reports)
 * [Set di dati](#dataset)
 * [App](#apps)
 * [Altro](#other)
@@ -108,7 +108,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Elencare riquadri del dashboard](#list-dashboard-tiles)
 * [Elenca dashboard](#list-dashboards)
 
-#### [!UICONTROL Create a Dashboard]
+#### [!UICONTROL Crea un dashboard]
 
 Questo modulo di azione crea un nuovo dashboard.
 
@@ -118,20 +118,20 @@ Questo modulo di azione crea un nuovo dashboard.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Name]</td>
       <td>Immettete o mappate un nome per il dashboard.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo proprietario del nuovo dashboard.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Dashboard]
+#### [!UICONTROL Ottieni un dashboard]
 
 Questo modulo di azione recupera i metadati di un dashboard specificato.
 
@@ -141,10 +141,10 @@ Questo modulo di azione recupera i metadati di un dashboard specificato.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Dashboard ID]</td>
+      <td role="rowheader">[!UICONTROL Inserisci un ID dashboard]</td>
       <td>
         <p>Seleziona o mappa l’opzione per scegliere il dashboard per il quale desideri recuperare i metadati.</p>
       </td>
@@ -156,13 +156,13 @@ Questo modulo di azione recupera i metadati di un dashboard specificato.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo a cui appartengono le dashboard per le quali desideri recuperare i metadati.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Dashboard Tile]
+#### [!UICONTROL Ottieni riquadro dashboard]
 
 Questo modulo di azione recupera i metadati di una sezione del dashboard specificata.
 
@@ -172,10 +172,10 @@ Questo modulo di azione recupera i metadati di una sezione del dashboard specifi
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Dashboard ID]</td>
+      <td role="rowheader">[!UICONTROL Inserisci un ID dashboard]</td>
       <td>
         <p>Seleziona o mappa l’opzione per scegliere i dettagli del dashboard da recuperare.</p>
       </td>
@@ -191,13 +191,13 @@ Questo modulo di azione recupera i metadati di una sezione del dashboard specifi
       <td>Immettere o mappare l'ID del riquadro [!DNL Power BI] per il quale si desidera recuperare i dettagli.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo a cui appartiene la sezione da recuperare.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List Dashboard Tiles]
+#### [!UICONTROL Elenca riquadri dashboard]
 
 Questo modulo di ricerca recupera un elenco di riquadri del dashboard.
 
@@ -207,10 +207,10 @@ Questo modulo di ricerca recupera un elenco di riquadri del dashboard.
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Enter a Dashboard ID]</td>
+    <td role="rowheader">[!UICONTROL Inserisci un ID dashboard]</td>
     <td>
       <p>Seleziona o mappa l’opzione per scegliere il dashboard di cui desideri elencare le tessere.</p>
     </td>
@@ -222,7 +222,7 @@ Questo modulo di ricerca recupera un elenco di riquadri del dashboard.
     </td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Group ID]  </td>
+    <td role="rowheader">[!UICONTROL ID gruppo]  </td>
     <td>Seleziona o mappa l’ID del Gruppo a cui appartengono le dashboard contenenti le tessere che desideri elencare.</td>
   </tr>
   <tr>
@@ -234,7 +234,7 @@ Questo modulo di ricerca recupera un elenco di riquadri del dashboard.
 </tbody>
 </table>
 
-#### [!UICONTROL List Dashboards]
+#### [!UICONTROL Elenca dashboard]
 
 Questo modulo di ricerca recupera un elenco di dashboard.
 
@@ -244,10 +244,10 @@ Questo modulo di ricerca recupera un elenco di dashboard.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>
         <p>Seleziona o mappa l’ID del gruppo a cui appartengono le dashboard che desideri elencare.</p>
       </td>
@@ -261,14 +261,14 @@ Questo modulo di ricerca recupera un elenco di dashboard.
   </tbody>
 </table>
 
-### Report
+### Rapporti
 
 * [Copiare un rapporto](#copy-a-report)
 * [Eliminare un rapporto](#delete-a-report)
 * [Ottieni un rapporto](#get-a-report)
 * [Elencare rapporti](#list-reports)
 
-#### [!UICONTROL Copy a Report]
+#### [!UICONTROL Copia un report]
 
 Questo modulo di azione copia un rapporto esistente.
 
@@ -278,32 +278,32 @@ Questo modulo di azione copia un rapporto esistente.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL Inserisci un ID report]</td>
       <td>
         <p>Seleziona o mappa l’opzione per scegliere il rapporto da copiare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL ID report]</td>
       <td>
         <p>Inserisci o mappa l’ID del rapporto da copiare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo a cui appartiene il rapporto da copiare.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL New Copied Report Name]</td>
+      <td role="rowheader">[!UICONTROL Nome nuovo report copiato]</td>
       <td>Immettere o mappare un nome per il nuovo rapporto.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Delete a Report]
+#### [!UICONTROL Eliminare un report]
 
 Questo modulo di azione elimina un rapporto.
 
@@ -313,28 +313,28 @@ Questo modulo di azione elimina un rapporto.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL Inserisci un ID report]</td>
       <td>
         <p>Seleziona o mappa l’opzione per scegliere il rapporto da eliminare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL ID report]</td>
       <td>
         <p>Inserisci o mappa l’ID del rapporto da eliminare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo proprietario del rapporto che desideri eliminare.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Report]
+#### [!UICONTROL Ottieni un report]
 
 Questo modulo di azione recupera i metadati di un rapporto specificato.
 
@@ -344,28 +344,28 @@ Questo modulo di azione recupera i metadati di un rapporto specificato.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL Inserisci un ID report]</td>
       <td>
         <p>Seleziona o mappa l’opzione per scegliere il rapporto per il quale desideri recuperare i metadati.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL ID report]</td>
       <td>
         <p>Inserisci o mappa l’ID del rapporto per il quale desideri recuperare i metadati.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo a cui appartiene il rapporto per il quale desideri recuperare i metadati.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List Reports]
+#### [!UICONTROL Elenca report]
 
 Questo modulo di ricerca recupera un elenco di rapporti.
 
@@ -375,10 +375,10 @@ Questo modulo di ricerca recupera un elenco di rapporti.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>
         <p>Seleziona o mappa l’ID del gruppo a cui appartengono i rapporti che desideri elencare.</p>
       </td>
@@ -402,7 +402,7 @@ Questo modulo di ricerca recupera un elenco di rapporti.
 * [Elencare set di dati](#list-datasets)
 * [Aggiornare un set di dati](#refresh-a-dataset)
 
-#### [!UICONTROL Add or Delete Rows in a Dataset Table]
+#### [!UICONTROL Aggiungere o eliminare righe in una tabella di set di dati]
 
 Questo modulo di azione aggiunge o elimina righe di una tabella di set di dati push specificata.
 
@@ -412,36 +412,36 @@ Questo modulo di azione aggiunge o elimina righe di una tabella di set di dati p
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a table]</td>
+      <td role="rowheader">[!UICONTROL Immettere una tabella]</td>
       <td>Seleziona o mappa l’opzione per selezionare il set di dati contenente la tabella da regolare.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Dataset ID]</td>
+      <td role="rowheader">[!UICONTROL ID set di dati]</td>
       <td>Inserisci o mappa l’ID del set di dati contenente le righe da aggiungere o eliminare.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Table Name]  </td>
+      <td role="rowheader">[!UICONTROL Nome Tabella]  </td>
       <td>
         <p>Immettere o mappare il nome della tabella contenente le righe che si desidera aggiungere o eliminare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Inserisci o mappa l’ID del gruppo proprietario del set di dati.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Select the Action]</td>
+      <td role="rowheader">[!UICONTROL Seleziona azione]</td>
       <td>
         <p>Seleziona o mappa l’azione da eseguire.</p>
         <ul>
           <li>
-            <p>[!UICONTROL Add rows]</p>
+            <p>[!UICONTROL Aggiungi righe]</p>
           </li>
           <li>
-            <p>[!UICONTROL Delete All Rows]</p>
+            <p>[!UICONTROL Elimina tutte le righe]</p>
           </li>
         </ul>
       </td>
@@ -457,7 +457,7 @@ Questo modulo di azione aggiunge o elimina righe di una tabella di set di dati p
             <p>Immetti o mappa il nome della chiave.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Field Type]</b>
+            <p><b>[!UICONTROL Tipo di campo]</b>
             </p>
             <p>Seleziona o mappa il tipo di campo:</p>
             <ul>
@@ -476,7 +476,7 @@ Questo modulo di azione aggiunge o elimina righe di una tabella di set di dati p
             </ul>
           </li>
           <li>
-            <p>[!UICONTROL Value]</p>
+            <p>Valore [!UICONTROL]</p>
             <p>Immetti o mappa il valore chiave.</p>
           </li>
         </ul>
@@ -485,7 +485,7 @@ Questo modulo di azione aggiunge o elimina righe di una tabella di set di dati p
   </tbody>
 </table>
 
-#### [!UICONTROL Create a Dataset]
+#### [!UICONTROL Crea un set di dati]
 
 Questo modulo di azione crea un nuovo set di dati.
 
@@ -495,26 +495,26 @@ Questo modulo di azione crea un nuovo set di dati.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Name]</td>
       <td>Inserisci o mappa un nome per il set di dati.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo proprietario del nuovo set di dati.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Default Mode]</td>
+      <td role="rowheader">Modalità predefinita [!UICONTROL]</td>
       <td>
         <p>Seleziona o mappa la modalità predefinita per il set di dati:</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL As Azure]</b>: set di dati con una connessione live a [!DNL Azure Analysis Service]</p>
+            <p><b>[!UICONTROL As Azure]</b>: un set di dati con una connessione live a [!DNL Azure Analysis Service]</p>
           </li>
           <li>
-            <p><b>[!UICONTROL As on Prem]</b>: set di dati con una connessione live al servizio [!DNL On-premise Analysis]</p>
+            <p><b>[!UICONTROL As on Prem]</b>: un set di dati con una connessione live al servizio [!DNL On-premise Analysis]</p>
           </li>
           <li>
             <p><b>[!DNL Push]</b>: set di dati che consente l’accesso programmatico per la trasmissione di dati in [!DNL Power BI]</p>
@@ -529,7 +529,7 @@ Questo modulo di azione crea un nuovo set di dati.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Tables]</td>
+      <td role="rowheader">[!UICONTROL Tabelle]</td>
       <td>Aggiungi tabelle al set di dati. Per i campi, vedere <a href="#Table" class="MCXref_0">Campi tabella</a></td>
     </tr>
     <tr>
@@ -542,10 +542,10 @@ Questo modulo di azione crea un nuovo set di dati.
         <p>Seleziona o mappa il criterio intenzionale per il set di dati:</p>
         <ul>
           <li>
-            <p>[!UICONTROL None]</p>
+            <p>[!UICONTROL Nessuno]</p>
           </li>
           <li>
-            <p>[!UICONTROL Basic FIFO]</p>
+            <p>[!UICONTROL FIFO di base]</p>
           </li>
         </ul>
       </td>
@@ -566,22 +566,22 @@ Questo modulo di azione crea un nuovo set di dati.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Columns]</td>
+      <td role="rowheader">[!UICONTROL Colonne]</td>
       <td>
         <p>Aggiungi le colonne:</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL Name]</b>
+            <p><b>[!UICONTROL Nome]</b>
             </p>
             <p>Immetti (mappare) un nome di colonna.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Data Type]</b>
+            <p><b>[!UICONTROL Tipo di dati]</b>
             </p>
             <p>Selezionare o mappare il tipo di dati:</p>
             <ul>
               <li>
-                <p>[!UICONTROL String]</p>
+                <p>[!UICONTROL Stringa]</p>
               </li>
               <li>
                 <p>[!UICONTROL Integer]</p>
@@ -595,7 +595,7 @@ Questo modulo di azione crea un nuovo set di dati.
             </ul>
           </li>
           <li>
-            <p><b>[!UICONTROL Format String]</b>
+            <p><b>[!UICONTROL Formato Stringa]</b>
             </p>
             <p>Immetti (mappa) la stringa di formato.</p>
           </li>
@@ -607,7 +607,7 @@ Questo modulo di azione crea un nuovo set di dati.
       <td>Immetti o mappa i dettagli della riga.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Measures]</td>
+      <td role="rowheader">[!UICONTROL Misure]</td>
       <td>Aggiungere la misura per le tabelle.</td>
     </tr>
   </tbody>
@@ -620,7 +620,7 @@ Questo modulo di azione crea un nuovo set di dati.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Database]  </td>
+      <td role="rowheader">Database [!UICONTROL]  </td>
       <td>
         <p>Immettere o mappare il database che si desidera utilizzare.</p>
       </td>
@@ -638,25 +638,25 @@ Questo modulo di azione crea un nuovo set di dati.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Data source ID]</td>
+      <td role="rowheader">[!UICONTROL ID origine dati]</td>
       <td>
         <p>  Immetti o mappa l’ID dell’origine dati.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Data source Type]  </td>
+      <td role="rowheader">Tipo di origine dati [!UICONTROL]  </td>
       <td>
         <p>Selezionare o mappare il tipo di origine dati. Esempio: SQL.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Gateway ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gateway]  </td>
       <td>Immettere o mappare l'ID del gateway che si desidera utilizzare.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Delete a Dataset]
+#### [!UICONTROL Eliminare un set di dati]
 
 Questo modulo di azione elimina un set di dati.
 
@@ -666,28 +666,28 @@ Questo modulo di azione elimina un set di dati.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL Inserisci un ID report]</td>
       <td>
         <p>Seleziona o mappa l’opzione per scegliere il set di dati da eliminare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL ID report]</td>
       <td>
         <p>Inserisci o mappa l’ID del set di dati da eliminare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo proprietario del set di dati da eliminare.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Get a Dataset]
+#### [!UICONTROL Ottieni un set di dati]
 
 Questo modulo di azione recupera i metadati di un set di dati specificato.
 
@@ -697,28 +697,28 @@ Questo modulo di azione recupera i metadati di un set di dati specificato.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a Report ID]</td>
+      <td role="rowheader">[!UICONTROL Inserisci un ID report]</td>
       <td>
         <p>Seleziona o mappa l’opzione per scegliere il rapporto per il quale desideri recuperare i metadati.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL ID report]</td>
       <td>
         <p>Inserisci o mappa l’ID del set di dati per il quale desideri recuperare i metadati.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo a cui appartiene il set di dati per il quale desideri recuperare i metadati.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List Datasets]
+#### [!UICONTROL Elenca set di dati]
 
 Questo modulo di ricerca recupera un elenco di set di dati.
 
@@ -728,22 +728,22 @@ Questo modulo di ricerca recupera un elenco di set di dati.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Seleziona o mappa l’ID del gruppo a cui appartiene il rapporto per il quale desideri recuperare i metadati.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Limit]</td>
       <td>
-        <p>Immettere o mappare il numero massimo di record che si desidera vengano inseriti nel modulo in [action] durante ogni ciclo di esecuzione dello scenario.</p>
+        <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p>
       </td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL Refresh a Dataset]
+#### [!UICONTROL Aggiorna un set di dati]
 
 Questo modulo di azione aggiorna un set di dati specificato.
 
@@ -753,39 +753,39 @@ Questo modulo di azione aggiorna un set di dati specificato.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Enter a dataset]</td>
+      <td role="rowheader">[!UICONTROL Immettere un set di dati]</td>
       <td>Seleziona o mappa l’opzione per selezionare il set di dati da aggiornare.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Dataset ID]</td>
+      <td role="rowheader">[!UICONTROL ID set di dati]</td>
       <td>Immetti o mappa l’ID del set di dati da aggiornare.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Table Name]  </td>
+      <td role="rowheader">[!UICONTROL Nome Tabella]  </td>
       <td>
         <p>Immettere o mappare il nome della tabella contenente le righe che si desidera aggiungere o eliminare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Group ID]  </td>
+      <td role="rowheader">[!UICONTROL ID gruppo]  </td>
       <td>Inserisci o mappa l’ID del gruppo proprietario del set di dati.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Notify Option]  </td>
+      <td role="rowheader">[!UICONTROL Opzione Notify]  </td>
       <td>
         <p>Seleziona o mappa l’opzione per la notifica:</p>
         <ul>
           <li>
-            <p>[!UICONTROL Mail on Completion]</p>
+            <p>[!UICONTROL Mail al completamento]</p>
           </li>
           <li>
             <p>[!UICONTROL Mail on Failure]</p>
           </li>
           <li>
-            <p>[!UICONTROL No Notification]</p>
+            <p>[!UICONTROL Nessuna notifica]</p>
           </li>
         </ul>
       </td>
@@ -803,7 +803,7 @@ Questo modulo di azione aggiorna un set di dati specificato.
 * [Elenca app](#list-apps)
 * [Guarda le app](#watch-apps)
 
-#### [!UICONTROL Get an App]
+#### [!UICONTROL Ottieni un&#39;app]
 
 Questo modulo di azione recupera i metadati di un’app specificata.
 
@@ -813,10 +813,10 @@ Questo modulo di azione recupera i metadati di un’app specificata.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]  </td>
+      <td role="rowheader">[!UICONTROL ID app]  </td>
       <td>
         <p>Seleziona o mappa l’ID dell’app da recuperare.</p>
       </td>
@@ -824,7 +824,7 @@ Questo modulo di azione recupera i metadati di un’app specificata.
   </tbody>
 </table>
 
-#### [!UICONTROL Get an App's Dashboard]
+#### [!UICONTROL Ottieni dashboard app]
 
 Questo modulo di azione recupera i metadati del dashboard di un’app specificata.
 
@@ -834,16 +834,16 @@ Questo modulo di azione recupera i metadati del dashboard di un’app specificat
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]  </td>
+      <td role="rowheader">[!UICONTROL ID app]  </td>
       <td>
         <p>Seleziona o mappa l’ID dell’app che contiene il dashboard da recuperare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL ID report]</td>
       <td>
         <p>  Seleziona o mappa l’ID del dashboard che desideri recuperare.</p>
       </td>
@@ -851,7 +851,7 @@ Questo modulo di azione recupera i metadati del dashboard di un’app specificat
   </tbody>
 </table>
 
-#### [!UICONTROL Get an App's Report]
+#### [!UICONTROL Ottieni rapporto app]
 
 Questo modulo di azione recupera i metadati del rapporto di un’app specificata.
 
@@ -861,16 +861,16 @@ Questo modulo di azione recupera i metadati del rapporto di un’app specificata
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]  </td>
+      <td role="rowheader">[!UICONTROL ID app]  </td>
       <td>
         <p>Seleziona o mappa l’ID dell’app che contiene il rapporto da recuperare.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Report ID]</td>
+      <td role="rowheader">[!UICONTROL ID report]</td>
       <td>
         <p>  Seleziona o mappa l’ID del rapporto che desideri recuperare.</p>
       </td>
@@ -878,7 +878,7 @@ Questo modulo di azione recupera i metadati del rapporto di un’app specificata
   </tbody>
 </table>
 
-#### [!UICONTROL List Apps]
+#### [!UICONTROL Elenca app]
 
 Questo modulo di ricerca recupera un elenco di tutte le app installate.
 
@@ -888,7 +888,7 @@ Questo modulo di ricerca recupera un elenco di tutte le app installate.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Limit]  </td>
@@ -899,7 +899,7 @@ Questo modulo di ricerca recupera un elenco di tutte le app installate.
   </tbody>
 </table>
 
-#### [!UICONTROL List App's Dashboards]
+#### [!UICONTROL Elenca dashboard dell&#39;app]
 
 Questo modulo di ricerca recupera un elenco di dashboard da un’app specificata.
 
@@ -909,10 +909,10 @@ Questo modulo di ricerca recupera un elenco di dashboard da un’app specificata
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]</td>
+      <td role="rowheader">[!UICONTROL ID app]</td>
       <td>Seleziona o mappa l’ID dell’app da cui desideri elencare le dashboard.</td>
     </tr>
     <tr>
@@ -924,7 +924,7 @@ Questo modulo di ricerca recupera un elenco di dashboard da un’app specificata
   </tbody>
 </table>
 
-#### [!UICONTROL List App's Reports]
+#### [!UICONTROL Elenca i report dell&#39;app]
 
 Questo modulo di ricerca recupera un elenco di tutti i rapporti dall’app specificata.
 
@@ -934,10 +934,10 @@ Questo modulo di ricerca recupera un elenco di tutti i rapporti dall’app speci
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL App ID]</td>
+      <td role="rowheader">[!UICONTROL ID app]</td>
       <td>Seleziona o mappa l’ID dell’app da cui desideri elencare i rapporti.</td>
     </tr>
     <tr>
@@ -949,7 +949,7 @@ Questo modulo di ricerca recupera un elenco di tutti i rapporti dall’app speci
   </tbody>
 </table>
 
-#### [!UICONTROL Watch Apps]
+#### [!UICONTROL App Watch]
 
 Questo modulo di attivazione avvia uno scenario quando un’app viene aggiornata.
 
@@ -959,7 +959,7 @@ Questo modulo di attivazione avvia uno scenario quando un’app viene aggiornata
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Limit]  </td>
@@ -972,7 +972,7 @@ Questo modulo di attivazione avvia uno scenario quando un’app viene aggiornata
 
 ### Altro
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Effettuare una chiamata API]
 
 Questo modulo di azione esegue una chiamata API all&#39;API [!DNL Power BI].
 
@@ -982,7 +982,7 @@ Questo modulo di azione esegue una chiamata API all&#39;API [!DNL Power BI].
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-   <td> <p>Adobe Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Power BI] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe [!DNL Workfront Fusion] - Istruzioni di base</a></p> </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -997,7 +997,7 @@ Questo modulo di azione esegue una chiamata API all&#39;API [!DNL Power BI].
         <p>[!UICONTROL Method]</p>
       </td>
       <td>
-        <p>Selezionare il metodo di richiesta [!UICONTROL HTTP] necessario per configurare la chiamata API. Per ulteriori informazioni, vedere Metodi di richiesta [!UICONTROL HTTP].</p>
+        <p>Seleziona il metodo di richiesta [!UICONTROL HTTP] necessario per configurare la chiamata API. Per ulteriori informazioni, vedere Metodi di richiesta [!UICONTROL HTTP].</p>
       </td>
     </tr>
     <tr>
@@ -1009,7 +1009,7 @@ Questo modulo di azione esegue una chiamata API all&#39;API [!DNL Power BI].
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td role="rowheader">[!UICONTROL Stringa Di Query]  </td>
       <td>
         <p>Immettere la stringa di query richiesta.</p>
       </td>

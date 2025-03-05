@@ -4,9 +4,9 @@ description: Per utilizzare  [!DNL Google Sheets] con [!DNL Adobe Workfront Fusi
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 994dffd83d5b7d8b72396f147df352dfb74d6219
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3957'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Trigger
 
-#### [!UICONTROL Watch Rows]
+#### [!UICONTROL Righe di controllo]
 
 Recupera i valori dalle righe appena aggiunte nel foglio di calcolo.
 
@@ -116,36 +116,36 @@ Il modulo recupera solo le nuove righe che non sono state compilate in precedenz
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Spreadsheet] </td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sheet] </td> 
+   <td role="rowheader">[!UICONTROL Foglio] </td> 
    <td> <p>Selezionare il foglio da controllare per una nuova riga.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table contains headers]</td> 
+   <td role="rowheader">[!UICONTROL La tabella contiene intestazioni]</td> 
    <td> <p> Specificare se il foglio di calcolo contiene una riga di intestazione.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Yes]</strong> </p> <p>Il modulo non recupera la riga di intestazione come dati di output. </p> <p>I nomi delle variabili nell’output vengono richiamati dalle intestazioni.</p> </li> 
+     <li> <p><strong>[!UICONTROL Sì]</strong> </p> <p>Il modulo non recupera la riga di intestazione come dati di output. </p> <p>I nomi delle variabili nell’output vengono richiamati dalle intestazioni.</p> </li> 
      <li> <p><strong>[!UICONTROL No]</strong> </p> <p>Il modulo recupera anche la prima riga della tabella</p> <p>I nomi delle variabili nell'output sono denominati A, B, C, D e così via.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Row with headers] </td> 
+   <td role="rowheader">[!UICONTROL Riga con intestazioni] </td> 
    <td> <p>Immettere l'intervallo della riga di intestazione. Ad esempio, <code>A1:F1</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL First table row]</td> 
+   <td role="rowheader">[!UICONTROL Prima riga tabella]</td> 
    <td> <p>Immettere l'intervallo della prima riga della tabella. Ad esempio, <code>A1:F1</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Value render option]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
+   <td role="rowheader"> <p>Opzione di rendering del valore [!UICONTROL]</p> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Valore formattato]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Valore non formattato]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Date and time render option]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>I campi di data, ora, dataora e durata vengono generati come duplicati in formato "numero seriale", come reso popolare da Lotus 1-2-3. La porzione del numero intero del valore (a sinistra del decimale) conta i giorni dal 30 dicembre 1899. La parte frazionaria (a destra del decimale) conta l’ora come frazione del giorno. Ad esempio, il 1 gennaio 1900 a mezzogiorno sarebbe 2,5, 2 perché sono 2 giorni dopo il 30 dicembre 1899, e 0,5 perché mezzogiorno è mezza giornata. Il primo febbraio 1900 alle 15:00 sarebbe il 33.625. Questo considera correttamente l'anno 1900 come non un anno bisestile.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>I campi di data, ora, dataora e durata vengono generati come stringhe nel formato numero specificato (che dipende dalle impostazioni internazionali del foglio di calcolo).</p></li><ul> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Data e ora opzione di rendering]</p> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Numero di serie]</p> <p>I campi di data, ora, dataora e durata vengono generati come duplicati in formato "numero seriale", come reso popolare da Lotus 1-2-3. La porzione del numero intero del valore (a sinistra del decimale) conta i giorni dal 30 dicembre 1899. La parte frazionaria (a destra del decimale) conta l’ora come frazione del giorno. Ad esempio, il 1 gennaio 1900 a mezzogiorno sarebbe 2,5, 2 perché sono 2 giorni dopo il 30 dicembre 1899, e 0,5 perché mezzogiorno è mezza giornata. Il primo febbraio 1900 alle 15:00 sarebbe il 33.625. Questo considera correttamente l'anno 1900 come non un anno bisestile.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Stringa formattata]</p> <p>I campi di data, ora, dataora e durata vengono generati come stringhe nel formato numero specificato (che dipende dalle impostazioni internazionali del foglio di calcolo).</p></li><ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -156,19 +156,19 @@ Il modulo recupera solo le nuove righe che non sono state compilate in precedenz
 
 ### Azioni
 
-* [[!UICONTROL Add a Row]](#add-a-row)
-* [[!UICONTROL Add a Sheet]](#add-a-sheet)
-* [[!UICONTROL Clear a Cell]](#clear-a-cell)
-* [[!UICONTROL Clear a Row]](#clear-a-row)
-* [[!UICONTROL Create a Spreadsheet]](#create-a-spreadsheet)
-* [[!UICONTROL Delete a Row]](#delete-a-row)
-* [[!UICONTROL Delete a Sheet]](#delete-a-sheet)
-* [[!UICONTROL Get a Cell]](#get-a-cell)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Update a Cell]](#update-a-cell)
-* [[!UICONTROL Update a Row]](#update-a-row)
+* [[!UICONTROL Aggiungi riga]](#add-a-row)
+* [[!UICONTROL Aggiungi foglio]](#add-a-sheet)
+* [[!UICONTROL Cancella cella]](#clear-a-cell)
+* [[!UICONTROL Cancella riga]](#clear-a-row)
+* [[!UICONTROL Creare un foglio di calcolo]](#create-a-spreadsheet)
+* [[!UICONTROL Elimina riga]](#delete-a-row)
+* [[!UICONTROL Elimina foglio]](#delete-a-sheet)
+* [[!UICONTROL Ottieni una cella]](#get-a-cell)
+* [[!UICONTROL Effettuare una chiamata API]](#make-an-api-call)
+* [[!UICONTROL Aggiorna cella]](#update-a-cell)
+* [[!UICONTROL Aggiorna riga]](#update-a-row)
 
-#### [!UICONTROL Add a Row]
+#### [!UICONTROL Aggiungi riga]
 
 Questo modulo aggiunge una riga a un foglio.
 
@@ -191,22 +191,22 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
    <td> <p>Specificare se si desidera selezionare il foglio di calcolo e il foglio manualmente o mediante mapping.</p> <p>Nota: la mappatura manuale è utile, ad esempio, quando si crea un nuovo foglio di calcolo in uno scenario [!DNL Workfront Fusion] e si desidera aggiungere dati nel nuovo foglio di calcolo direttamente nello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p>Selezionare il foglio a cui si desidera aggiungere una riga.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Range]</td> 
+   <td>[!UICONTROL Intervallo colonne]</td> 
    <td>Selezionare l'intervallo di colonne che si desidera utilizzare.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Table contains headers]</td> 
+   <td>[!UICONTROL La tabella contiene intestazioni]</td> 
    <td> <p> Selezionare se il foglio di calcolo contiene la riga di intestazione.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Yes]</strong> </p> <p>Il modulo non recupera la riga di intestazione come dati di output. </p> <p>I nomi delle variabili nell’output vengono richiamati dalle intestazioni.</p> </li> 
+     <li> <p><strong>[!UICONTROL Sì]</strong> </p> <p>Il modulo non recupera la riga di intestazione come dati di output. </p> <p>I nomi delle variabili nell’output vengono richiamati dalle intestazioni.</p> </li> 
      <li> <p><strong>[!UICONTROL No]</strong> </p> <p>Il modulo recupera anche la prima riga della tabella</p> <p>I nomi delle variabili nell'output sono denominati A, B, C, D e così via.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -215,7 +215,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
    <td> <p>Immetti o mappa le celle desiderate della riga da aggiungere.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value input option]</td> 
+   <td>Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>I valori vengono analizzati come se l’utente li avesse digitati nell’interfaccia utente. I numeri rimangono numeri, ma le stringhe possono essere convertite in numeri, date o altri formati seguendo le stesse regole applicate quando si immette testo in una cella tramite l'interfaccia utente [!DNL Google Sheets].</p> </li> 
@@ -223,17 +223,17 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Insert data option]</td> 
+   <td>[!UICONTROL Inserisci dati, opzione]</td> 
    <td> <p>Specifica come vengono modificati i dati esistenti quando vengono immessi nuovi dati. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Insert rows]</strong></p> <p>Le righe vengono inserite per i nuovi dati.</p> </li> 
-     <li> <p><strong>[!UICONTROL Overwrite]</strong> </p> <p>I nuovi dati sovrascrivono quelli esistenti nelle aree in cui vengono scritti. L'aggiunta di dati alla fine del foglio consente di inserire nuove righe o colonne in modo da poter scrivere i dati.</p> </li> 
+     <li> <p><strong>[!UICONTROL Inserisci righe]</strong></p> <p>Le righe vengono inserite per i nuovi dati.</p> </li> 
+     <li> <p><strong>[!UICONTROL Sovrascrivi]</strong> </p> <p>I nuovi dati sovrascrivono quelli esistenti nelle aree in cui vengono scritti. L'aggiunta di dati alla fine del foglio consente di inserire nuove righe o colonne in modo da poter scrivere i dati.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a Sheet]
+#### [!UICONTROL Aggiungi foglio]
 
 Crea un nuovo foglio in un foglio di calcolo selezionato.
 
@@ -246,11 +246,11 @@ Crea un nuovo foglio in un foglio di calcolo selezionato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo Google in cui si desidera aggiungere un foglio.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Properties]</td> 
+   <td>Proprietà [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p style="font-weight: bold;">[!UICONTROL Title]</p> <p>Immettere il nome del nuovo foglio.</p> </li> 
@@ -260,7 +260,7 @@ Crea un nuovo foglio in un foglio di calcolo selezionato.
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Cell]
+#### [!UICONTROL Cancella cella]
 
 Elimina un valore da una cella specificata.
 
@@ -273,21 +273,21 @@ Elimina un valore da una cella specificata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo di Google contenente il foglio da cui si desidera cancellare una cella.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p>Selezionare il foglio da cui si desidera cancellare una cella.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cell] </td> 
+   <td>[!UICONTROL Cella] </td> 
    <td> <p>Immettere o mappare l'ID della cella da cancellare. Esempio: <code>A5</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Row]
+#### [!UICONTROL Cancella riga]
 
 Elimina i valori da una riga specificata.
 
@@ -300,21 +300,21 @@ Elimina i valori da una riga specificata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google] contenente il foglio da cui si desidera cancellare una riga.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p> Selezionare il foglio da cui si desidera cancellare i dati.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Row number]</td> 
+   <td>[!UICONTROL Numero riga]</td> 
    <td> <p>Immettere il numero della riga da cui si desidera cancellare i dati. Esempio: <code> 23</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Spreadsheet]
+#### [!UICONTROL Creare un foglio di calcolo]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -338,25 +338,25 @@ Elimina i valori da una riga specificata.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Recalculation interval]</td> 
-   <td> <p>Quantità di tempo di attesa prima del ricalcolo delle funzioni volatili:</p> <ul><li><p style="font-weight: bold;">[!UICONTROL On change]</p> <p>Le funzioni volatili vengono aggiornate a ogni modifica.</p></li><li> <p style="font-weight: bold;">[!UICONTROL On change and every minute]</p> <p>Le funzioni volatili vengono aggiornate a ogni cambiamento e ogni minuto.</p></li> <li><p style="font-weight: bold;">[!UICONTROL On change and hourly]</p> <p>Le funzioni volatili vengono aggiornate a ogni modifica e ogni ora.</p></li></ul> </td> 
+   <td>[!UICONTROL Intervallo di ricalcolo]</td> 
+   <td> <p>Quantità di tempo di attesa prima del ricalcolo delle funzioni volatili:</p> <ul><li><p style="font-weight: bold;">[!UICONTROL in caso di modifica]</p> <p>Le funzioni volatili vengono aggiornate a ogni modifica.</p></li><li> <p style="font-weight: bold;">[!UICONTROL su modifica e ogni minuto]</p> <p>Le funzioni volatili vengono aggiornate a ogni cambiamento e ogni minuto.</p></li> <li><p style="font-weight: bold;">[!UICONTROL su modifica e su base oraria]</p> <p>Le funzioni volatili vengono aggiornate a ogni modifica e ogni ora.</p></li></ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Time zone]</td> 
+   <td>[!UICONTROL Fuso orario]</td> 
    <td> <p> Seleziona il fuso orario del foglio di calcolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Number format]</td> 
-   <td> <p>Selezionare il formato predefinito di tutte le celle del foglio di calcolo.</p> <p><strong>[!UICONTROL Text]</strong>: formattazione del testo. Esempio: <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong>: formattazione dei numeri. Esempio: <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong>: formattazione percentuale. Esempio: <code>10. 12%</code></p> <p><strong>[!UICONTROL Currency]</strong>: formattazione della valuta. Esempio: <code>$1,000.12</code></p> <p><strong>[!UICONTROL Date]</strong>: formattazione della data. Esempio: <code>9/26/2008</code></p> <p><strong>[!UICONTROL Time]</strong>: formattazione del tempo. Esempio: <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL Date time]</strong>: formattazione di data e ora. Esempio: <code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>: formattazione scientifica dei numeri. Esempio: <code>1. 01E+03</code></p> </td> 
+   <td>[!UICONTROL Formato numero]</td> 
+   <td> <p>Selezionare il formato predefinito di tutte le celle del foglio di calcolo.</p> <p><strong>[!UICONTROL Text]</strong>: Formattazione del testo. Esempio: <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong>: Formattazione dei numeri. Esempio: <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong>: Formattazione percentuale. Esempio: <code>10. 12%</code></p> <p><strong>[!UICONTROL Valuta]</strong>: Formattazione valuta. Esempio: <code>$1,000.12</code></p> <p><strong>[!UICONTROL Date]</strong>: Formattazione data. Esempio: <code>9/26/2008</code></p> <p><strong>[!UICONTROL Time]</strong>: Formattazione dell'ora. Esempio: <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL Data e ora]</strong>: Formattazione di data e ora. Esempio: <code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>: Formattazione numeri scientifici. Esempio: <code>1. 01E+03</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheets] </td> 
+   <td>[!UICONTROL Fogli] </td> 
    <td> <p>Per ogni foglio che si desidera aggiungere al foglio di calcolo, fare clic su <strong>[!UICONTROL Add item]</strong> e immettere o mappare un titolo per il foglio e l'indice del foglio. Un indice pari a 0 rappresenta il primo foglio.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Row]
+#### [!UICONTROL Elimina riga]
 
 Elimina una riga specificata.
 
@@ -369,7 +369,7 @@ Elimina una riga specificata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo di Google contenente il foglio da cui si desidera eliminare una riga.</p> </td> 
   </tr> 
   <tr> 
@@ -383,7 +383,7 @@ Elimina una riga specificata.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Sheet]
+#### [!UICONTROL Elimina foglio]
 
 Elimina un foglio specifico.
 
@@ -396,17 +396,17 @@ Elimina un foglio specifico.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p>Selezionare il foglio che si desidera eliminare.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Cell]
+#### [!UICONTROL Ottieni una cella]
 
 Recupera un valore da una cella selezionata.
 
@@ -419,20 +419,20 @@ Recupera un valore da una cella selezionata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p>Selezionare il foglio contenente la cella da cui si desidera recuperare i dati.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cell] </td> 
+   <td>[!UICONTROL Cella] </td> 
    <td> <p>Immettere l'ID della cella da cui si desidera recuperare i dati. Esempio: <code>A6</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
+   <td>Opzione di rendering del valore [!UICONTROL]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Valore formattato]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Valore non formattato]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
   </tr> 
   <tr> 
    <td>[!DNL Date and time render option]</td> 
@@ -441,7 +441,7 @@ Recupera un valore da una cella selezionata.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Effettuare una chiamata API]
 
 Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
 
@@ -451,7 +451,7 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [Fusion App] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Google Sheets a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
@@ -466,7 +466,7 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Ad esempio, <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] aggiunge le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
    <td> <p> Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> </td> 
   </tr> 
   <tr> 
@@ -479,7 +479,7 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Cell]
+#### [!UICONTROL Aggiorna cella]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -490,23 +490,23 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p>Selezionare il foglio in cui si desidera aggiornare una cella.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cell] </td> 
+   <td>[!UICONTROL Cella] </td> 
    <td> <p>Immettere l'ID della cella da aggiornare. Esempio: <code>A5</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value]</td> 
+   <td>Valore [!UICONTROL]</td> 
    <td> <p>Immettere il nuovo valore per la cella.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value input option]</td> 
+   <td>Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>I valori vengono analizzati come se l’utente li avesse digitati nell’interfaccia utente. I numeri rimangono numeri, ma le stringhe possono essere convertite in numeri, date o altri formati seguendo le stesse regole applicate quando si immette testo in una cella tramite l'interfaccia utente [!DNL Google Sheets].</p> </li> 
@@ -516,7 +516,7 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Row]
+#### [!UICONTROL Aggiorna riga]
 
 Questo modulo consente di modificare il contenuto della cella in una riga selezionata.
 
@@ -533,22 +533,22 @@ Questo modulo consente di modificare il contenuto della cella in una riga selezi
    <td> <p>Specificare se si desidera selezionare il foglio di calcolo e il foglio manualmente o mediante mapping.</p> <p>Nota: la mappatura manuale è utile, ad esempio, quando si crea un nuovo foglio di calcolo nello scenario [!UICONTROL Workfront Fusion] e si desidera aggiungere dati al nuovo foglio di calcolo direttamente nello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p>Selezionare il foglio in cui si desidera aggiornare una riga.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Row number]</td> 
+   <td>[!UICONTROL Numero riga]</td> 
    <td> <p> Immettere il numero della riga da aggiornare.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Table contains headers]</td> 
+   <td>[!UICONTROL La tabella contiene intestazioni]</td> 
    <td> <p> Selezionare se il foglio di calcolo contiene la riga di intestazione.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Yes]</strong> </p> <p>Il modulo non recupera la riga di intestazione come dati di output. </p> <p>I nomi delle variabili nell’output vengono richiamati dalle intestazioni.</p> </li> 
+     <li> <p><strong>[!UICONTROL Sì]</strong> </p> <p>Il modulo non recupera la riga di intestazione come dati di output. </p> <p>I nomi delle variabili nell’output vengono richiamati dalle intestazioni.</p> </li> 
      <li> <p><strong>[!UICONTROL No]</strong> </p> <p>Il modulo recupera anche la prima riga della tabella</p> <p>I nomi delle variabili nell'output sono denominati A, B, C, D e così via.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -557,7 +557,7 @@ Questo modulo consente di modificare il contenuto della cella in una riga selezi
    <td> <p>Immettere o mappare i valori alle celle desiderate della riga che si desidera modificare (aggiornare).</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value input option]</td> 
+   <td>Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>I valori vengono analizzati come se l’utente li avesse digitati nell’interfaccia utente. I numeri rimangono numeri, ma le stringhe possono essere convertite in numeri, date o altri formati seguendo le stesse regole applicate quando si immette testo in una cella tramite l'interfaccia utente [!DNL Google Sheets].</p> </li> 
@@ -569,12 +569,12 @@ Questo modulo consente di modificare il contenuto della cella in una riga selezi
 
 ### Ricerche
 
-* [[!UICONTROL Get Range Values]](#get-range-values)
-* [[!UICONTROL List Sheets]](#list-sheets)
-* [[!UICONTROL Search Rows]](#search-rows)
-* [[!UICONTROL Search Rows (Advanced)]](#search-rows-advanced)
+* [[!UICONTROL Ottieni valori intervallo]](#get-range-values)
+* [[!UICONTROL Elenca fogli]](#list-sheets)
+* [[!UICONTROL Cerca righe]](#search-rows)
+* [[!UICONTROL Cerca righe (avanzate)]](#search-rows-advanced)
 
-#### [!UICONTROL Get Range Values]
+#### [!UICONTROL Ottieni valori intervallo]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -585,11 +585,11 @@ Questo modulo consente di modificare il contenuto della cella in una riga selezi
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p>Selezionare il foglio da cui si desidera ottenere il contenuto dell'intervallo.</p> </td> 
   </tr> 
   <tr> 
@@ -597,25 +597,25 @@ Questo modulo consente di modificare il contenuto della cella in una riga selezi
    <td> <p>Immettere l'intervallo che si desidera ottenere. Esempio: <code>A1:D25</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Table contains headers]</td> 
+   <td>[!UICONTROL La tabella contiene intestazioni]</td> 
    <td> <p>Selezionare questa casella se il foglio contiene una riga di intestazione</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Row with headers]</td> 
+   <td>[!UICONTROL Riga con intestazioni]</td> 
    <td>Immetti l’intervallo delle intestazioni della tabella. Esempio <code>A1:F1</code>. Se si lascia vuoto il campo, [!DNL Workfront Fusion] considera la prima riga dell'intervallo specificato come intestazione.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
+   <td>Opzione di rendering del valore [!UICONTROL]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Valore formattato]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Valore non formattato]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>I campi di data, ora, dataora e durata vengono generati come duplicati in formato "numero seriale", come reso popolare da Lotus 1-2-3. La porzione del numero intero del valore (a sinistra del decimale) conta i giorni dal 30 dicembre 1899. La parte frazionaria (a destra del decimale) conta l’ora come frazione del giorno. Ad esempio, il 1 gennaio 1900 a mezzogiorno sarebbe 2,5, 2 perché sono 2 giorni dopo il 30 dicembre 1899, e 0,5 perché mezzogiorno è mezza giornata. Il primo febbraio 1900 alle 15:00 sarebbe il 33.625. Questo considera correttamente l'anno 1900 come non un anno bisestile.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>I campi di data, ora, dataora e durata vengono generati come stringhe nel formato numero specificato (che dipende dalle impostazioni internazionali del foglio di calcolo).</p></li><ul> </td> 
+   <td>[!UICONTROL Data e ora opzione di rendering]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Numero di serie]</p> <p>I campi di data, ora, dataora e durata vengono generati come duplicati in formato "numero seriale", come reso popolare da Lotus 1-2-3. La porzione del numero intero del valore (a sinistra del decimale) conta i giorni dal 30 dicembre 1899. La parte frazionaria (a destra del decimale) conta l’ora come frazione del giorno. Ad esempio, il 1 gennaio 1900 a mezzogiorno sarebbe 2,5, 2 perché sono 2 giorni dopo il 30 dicembre 1899, e 0,5 perché mezzogiorno è mezza giornata. Il primo febbraio 1900 alle 15:00 sarebbe il 33.625. Questo considera correttamente l'anno 1900 come non un anno bisestile.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Stringa formattata]</p> <p>I campi di data, ora, dataora e durata vengono generati come stringhe nel formato numero specificato (che dipende dalle impostazioni internazionali del foglio di calcolo).</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Sheets]
+#### [!UICONTROL Elenca fogli]
 
 Questo modulo restituisce un elenco di tutti i fogli di un foglio di calcolo.
 
@@ -628,13 +628,13 @@ Questo modulo restituisce un elenco di tutti i fogli di un foglio di calcolo.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google] contenente i fogli che si desidera elencare.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows]
+#### [!UICONTROL Cerca righe]
 
 Cerca le righe utilizzando le opzioni di filtro.
 
@@ -644,52 +644,52 @@ Cerca le righe utilizzando le opzioni di filtro.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [Fusion App] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Google Sheets a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p>Seleziona il foglio in cui desideri cercare le righe.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Table contains headers]</td> 
-   <td> <p> Selezionare se il foglio di calcolo contiene la riga di intestazione. Se è selezionata l'opzione [!UICONTROL Yes], il modulo non recupera la riga di intestazione in quanto i dati di output e i nomi delle variabili nell'output vengono quindi chiamati dalle intestazioni. Se è selezionata l'opzione [!UICONTROL No], il modulo recupera anche la prima riga della tabella e i nomi delle variabili nell'output vengono quindi chiamati solo A, B, C, D e così via.</p> </td> 
+   <td>[!UICONTROL La tabella contiene intestazioni]</td> 
+   <td> <p> Selezionare se il foglio di calcolo contiene la riga di intestazione. Se è selezionata l'opzione [!UICONTROL Yes], il modulo non recupera la riga di intestazione in quanto i dati di output e i nomi delle variabili nell'output vengono quindi richiamati dalle intestazioni. Se è selezionata l'opzione [!UICONTROL No], il modulo recupera anche la prima riga della tabella e i nomi delle variabili nell'output vengono quindi chiamati solo A, B, C, D e così via.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column range]</td> 
+   <td>[!UICONTROL Intervallo colonne]</td> 
    <td>Seleziona l’intervallo di colonne su cui lavorare. Esempio: <code>A-F</code></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Filter]</td> 
+   <td>[!UICONTROL Filtro]</td> 
    <td> <p>Imposta il filtro da utilizzare per cercare le righe.</p> <!--<p>For more information about filters, see <a href="/help/workfront-fusion/create-scenarios/add-modules/" class="MCXref xref">Add a filter to a scenario in [!UICONTROL Adobe Workfront Fusion]</a>.</p>--> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort order]</td> 
+   <td>Ordinamento [!UICONTROL]</td> 
    <td>Seleziona se desideri ordinare in modo crescente o decrescente.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Order by]</td> 
+   <td>[!UICONTROL Ordina per]</td> 
    <td>Scegliere la colonna in base alla quale si desidera eseguire l'ordinamento.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
+   <td>Opzione di rendering del valore [!UICONTROL]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Valore formattato]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Valore non formattato]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>I campi di data, ora, dataora e durata vengono generati come duplicati in formato "numero seriale", come reso popolare da Lotus 1-2-3. La porzione del numero intero del valore (a sinistra del decimale) conta i giorni dal 30 dicembre 1899. La parte frazionaria (a destra del decimale) conta l’ora come frazione del giorno. Ad esempio, il 1 gennaio 1900 a mezzogiorno sarebbe 2,5, 2 perché sono 2 giorni dopo il 30 dicembre 1899, e 0,5 perché mezzogiorno è mezza giornata. Il primo febbraio 1900 alle 15:00 sarebbe il 33.625. Questo considera correttamente l'anno 1900 come non un anno bisestile.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>I campi di data, ora, dataora e durata vengono generati come stringhe nel formato numero specificato (che dipende dalle impostazioni internazionali del foglio di calcolo).</p></li><ul> </td> 
+   <td>[!UICONTROL Data e ora opzione di rendering]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Numero di serie]</p> <p>I campi di data, ora, dataora e durata vengono generati come duplicati in formato "numero seriale", come reso popolare da Lotus 1-2-3. La porzione del numero intero del valore (a sinistra del decimale) conta i giorni dal 30 dicembre 1899. La parte frazionaria (a destra del decimale) conta l’ora come frazione del giorno. Ad esempio, il 1 gennaio 1900 a mezzogiorno sarebbe 2,5, 2 perché sono 2 giorni dopo il 30 dicembre 1899, e 0,5 perché mezzogiorno è mezza giornata. Il primo febbraio 1900 alle 15:00 sarebbe il 33.625. Questo considera correttamente l'anno 1900 come non un anno bisestile.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Stringa formattata]</p> <p>I campi di data, ora, dataora e durata vengono generati come stringhe nel formato numero specificato (che dipende dalle impostazioni internazionali del foglio di calcolo).</p></li><ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned rows]</td> 
+   <td>[!UICONTROL Numero massimo di righe restituite]</td> 
    <td>Impostare il numero massimo di righe che [!DNL Workfront Fusion] restituirà durante un ciclo di esecuzione.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows (Advanced)]
+#### [!UICONTROL Cerca righe (avanzate)]
 
 Restituisce risultati che corrispondono ai criteri specificati.
 
@@ -702,11 +702,11 @@ Restituisce risultati che corrispondono ai criteri specificati.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo di Google contenente il foglio che si desidera cercare.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sheet] </td> 
+   <td>[!UICONTROL Foglio] </td> 
    <td> <p>Selezionare il foglio contenente le righe da cercare.</p> </td> 
   </tr> 
   <tr> 
@@ -731,7 +731,7 @@ Ulteriori dettagli sono disponibili all&#39;indirizzo [developers.google.com/she
 
 ### Ottieni celle vuote da un [!DNL Google Sheet]
 
-Per ottenere celle vuote, è possibile utilizzare il modulo [!UICONTROL Search Rows (Advanced)]. Utilizzare questa formula per ottenere le colonne vuote.
+Per ottenere celle vuote, puoi utilizzare il modulo [!UICONTROL Righe ricerca (avanzate)]. Utilizzare questa formula per ottenere le colonne vuote.
 
 ```
 select * where E is null
@@ -741,18 +741,18 @@ Qui &quot;E&quot; è la colonna e &quot;è nullo&quot; è la condizione. Puoi cr
 
 ### Aggiungere un pulsante in un foglio per eseguire uno scenario
 
-1. In [!DNL Workfront Fusion], inserire il modulo **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** nello scenario e configurarlo. Per istruzioni, consulta [Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+1. In [!DNL Workfront Fusion], inserisci il modulo **[!UICONTROL Webhook]** > **[!UICONTROL Webhook personalizzati]** nello scenario e configuralo. Per istruzioni, consulta [Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 1. Copia l’URL del webhook.
 1. Esegui lo scenario.
-1. In Google Sheets, scegliere **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**... dalla barra del menu principale.
+1. In Google Sheets, scegliere **[!UICONTROL Inserisci]** > **[!UICONTROL Disegno]**... dalla barra del menu principale.
 
-1. Nella finestra [!UICONTROL Drawing], fare clic sull&#39;icona **[!UICONTROL Text box]** ![Casella di testo](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) nella parte superiore della finestra.
-1. Progetta un pulsante e fai clic sul pulsante **[!UICONTROL Save and Close]** nell&#39;angolo in alto a destra:
+1. Nella finestra [!UICONTROL Disegno], fare clic sull&#39;icona ![Casella di testo ]**accanto alla parte superiore della finestra.**(/help/workfront-fusion/references/apps-and-modules/assets/text-box.png)
+1. Progetta un pulsante e fai clic sul pulsante **[!UICONTROL Salva e chiudi]** nell&#39;angolo in alto a destra:
 1. Il pulsante viene inserito nel foglio di lavoro. Fai clic sui tre punti verticali nell’angolo in alto a destra del pulsante:
-1. Scegli **[!UICONTROL Assign script..].** dal menu.
+1. Scegli **[!UICONTROL Assegna script..].** dal menu.
 1. Immettere il nome dello script (funzione), ad esempio `runScenario` e fare clic su **[!UICONTROL OK]**:
-1. Scegliere **[!UICONTROL Tools]** > **[!UICONTROL Script editor]** dalla barra del menu principale.
+1. Scegliere **[!UICONTROL Strumenti]** > **[!UICONTROL Editor di script]** dalla barra del menu principale.
 
 1. Inserire il codice seguente:
 
@@ -783,9 +783,9 @@ Per ulteriori informazioni su questa funzione, vedere [[!UICONTROL formatDate] (
 
 Per determinare il formato corretto:
 
-1. In Google Sheets, scegliere **[!UICONTROL File]** > **[!UICONTROL Spreadsheet]** impostazioni dal menu principale per verificare e impostare le impostazioni locali.
+1. In Google Sheets, scegliere **[!UICONTROL File]** > **[!UICONTROL Impostazioni foglio di calcolo]** dal menu principale per verificare e impostare le impostazioni locali.
 
-1. Dopo aver verificato o impostato le impostazioni locali appropriate, determinare il formato di data e ora corrispondente scegliendo **[!UICONTROL Format]** > **[!UICONTROL Number]** dal menu principale. Il formato viene visualizzato accanto alla voce di menu Data e ora:
+1. Dopo aver verificato o impostato le impostazioni locali appropriate, determinare il formato di data e ora corrispondente scegliendo **[!UICONTROL Formato]** > **[!UICONTROL Numero]** dal menu principale. Il formato viene visualizzato accanto alla voce di menu Data e ora:
 
 1. Per comporre il formato corretto da passare alla funzione [!UICONTROL formatDate()], fare riferimento all&#39;elenco di [token per la formattazione della data e dell&#39;ora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md).
 
@@ -808,6 +808,6 @@ Per utilizzare una funzione incorporata da Google Sheets, puoi sfruttarla. Per u
 Se una stringa di numeri utilizzata come testo viene interpretata come data in un foglio di lavoro [!DNL Google], è possibile preformattare il numero come testo normale per evitare che ciò si verifichi. Ad esempio, se si digita 1-2019, intendendolo come testo, Google potrebbe interpretarlo come una data.
 
 1. In [!DNL Google Sheets], evidenziare la colonna o la cella contenente il numero o i numeri.
-1. Fare clic su **[!UICONTROL Format]** > **[!UICONTROL Number]** > **[!UICONTROL Plain text]**.
+1. Fare clic su **[!UICONTROL Formato]** > **[!UICONTROL Numero]** > **[!UICONTROL Testo normale]**.
 
 Un&#39;altra soluzione alternativa in [!DNL Workfront Fusion] consiste nel digitare un apostrofo (&#39;) prima di un numero, ad esempio &#39;1-2019 o &#39;1/47. L&#39;apostrofo non viene visualizzato nella cella dopo l&#39;invio dei dati da [!DNL Workfront Fusion].
