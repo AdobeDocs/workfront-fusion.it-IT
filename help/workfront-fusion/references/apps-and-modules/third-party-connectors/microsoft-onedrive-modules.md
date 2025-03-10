@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , è possibile autom
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 632128bdcb6f8b8361f5a28e4a5fb527eb274d54
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4088'
 ht-degree: 0%
 
 ---
@@ -207,8 +207,6 @@ Questo modulo di azione copia un file in un nuovo percorso di cartella
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL Crea una cartella]
 
 Questo modulo di azione crea una nuova cartella nell&#39;unità specificata.
@@ -255,7 +253,7 @@ Questo modulo di azione crea una nuova cartella nell&#39;unità specificata.
 
 #### [!UICONTROL Eliminare un file o una cartella]
 
-Questo modulo di azione elimina il file selezionato.
+Questo modulo di azione elimina il file o la cartella selezionata.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -730,7 +728,7 @@ Questo modulo esegue una chiamata API personalizzata.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 

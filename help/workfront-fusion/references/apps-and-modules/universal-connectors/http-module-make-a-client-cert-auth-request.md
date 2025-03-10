@@ -4,14 +4,14 @@ description: Questo modulo [!DNL Adobe Workfront Fusion] ti consente di configur
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: c2680972c616a90b55fdaf2c907920e435f23469
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '1037'
 ht-degree: 1%
 
 ---
 
-# HTTP > Modulo [!UICONTROL Make a Client Certificate Authorization request]
+# HTTP > [!UICONTROL Crea una richiesta di autorizzazione del certificato client] modulo
 
 >[!NOTE]
 >
@@ -27,46 +27,50 @@ Questo modulo [!DNL Adobe Workfront Fusion] consente di configurare una richiest
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td> 
-   <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## Configurazione modulo [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]
++++
 
-Quando configuri il modulo [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request], [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+## [!UICONTROL HTTP] > [!UICONTROL Crea una richiesta di autorizzazione del certificato client] configurazione del modulo
+
+Quando configuri il modulo [!UICONTROL HTTP] > [!UICONTROL Crea una richiesta di autorizzazione del certificato client], [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo all&#39;altro in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -78,10 +82,27 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Credentials]</td> 
-   <td> <p>Selezionare la chiave che contiene le credenziali di autenticazione del certificato client oppure fare clic su <strong>[!UICONTROL Add]</strong> per aggiungere le credenziali a una nuova chiave. </p> <p>Nota: puoi aggiungere più credenziali per passare facilmente da una connessione all’altra.</p> </td> 
+   <td> <p>Selezionare la chiave che contiene le credenziali di autenticazione del certificato client oppure fare clic su <strong>[!UICONTROL Add]</strong> per aggiungere le credenziali a una nuova chiave. </p> <p>Nota: puoi aggiungere più credenziali per passare facilmente da una connessione all’altra.</p>           <p>Per estrarre la chiave privata o il certificato:</p>
+          <ol>
+            <li value="1">
+              <p>Fare clic su <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li value="2">
+              <p>Selezionare il tipo di file da estrarre.</p>
+            </li>
+            <li value="3">
+              <p>Seleziona il file che contiene la chiave privata o il certificato.</p>
+            </li>
+            <li value="4">
+              <p>Immettere la password per il file.</p>
+            </li>
+            <li value="5">
+              <p>Fare clic su <b>[!UICONTROL Salva]</b> per estrarre il file e tornare alla configurazione della connessione.</p>
+            </li>
+</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
+   <td role="rowheader">[!UICONTROL Valuta tutti gli stati come errori (tranne 2xx e 3xx )] </td> 
    <td> <p>Utilizza questa opzione per configurare la gestione degli errori.</p> <p>Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Gestione degli errori in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -97,29 +118,29 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Ad esempio: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
    <td> <p> Immetti le coppie chiave-valore di query desiderate.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Body type]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Tipo di corpo]</p> </td> 
    <td> <p>Il corpo HTTP è costituito dai byte di dati trasmessi in un messaggio di transazione HTTP immediatamente dopo le intestazioni, se ve ne sono altre da utilizzare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Il tipo di corpo Raw è generalmente adatto per la maggior parte delle richieste HTTP body, anche in situazioni in cui la documentazione per gli sviluppatori non specifica i dati da inviare.</p> <p>Specificare una forma di analisi dei dati nel campo [!UICONTROL Content type].</p> <p>Nonostante il tipo di contenuto selezionato, il modulo immette i dati in qualsiasi formato stabilito o richiesto dalla documentazione per gli sviluppatori.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Questo tipo di corpo è [!UICONTROL POST] dati utilizzando <code>application/x-www-form-urlencoded</code>.</p> <p>Per <code>[!UICONTROL application/x-www-form-urlencoded]</code>, il corpo del messaggio HTTP inviato al server è essenzialmente una stringa di query. Le chiavi e i valori sono codificati in coppie chiave-valore separate da <code>&amp;</code> e con un <code>=</code> tra la chiave e il valore. </p> <p>Per i dati binari, utilizzare <code>[!UICONTROL multipart/form-data]</code>.</p> <p>Per ogni coppia chiave-valore che si desidera aggiungere, nel campo Campi fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore.</p>
+     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Il tipo di corpo Raw è generalmente adatto per la maggior parte delle richieste HTTP body, anche in situazioni in cui la documentazione per gli sviluppatori non specifica i dati da inviare.</p> <p>Specificare un tipo di analisi dei dati nel campo [!UICONTROL Content type].</p> <p>Nonostante il tipo di contenuto selezionato, il modulo immette i dati in qualsiasi formato stabilito o richiesto dalla documentazione per gli sviluppatori.</p> </li> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Questo tipo di corpo è nei dati [!UICONTROL POST] che utilizzano <code>application/x-www-form-urlencoded</code>.</p> <p>Per <code>[!UICONTROL application/x-www-form-urlencoded]</code>, il corpo del messaggio HTTP inviato al server è essenzialmente una stringa di query. Le chiavi e i valori sono codificati in coppie chiave-valore separate da <code>&amp;</code> e con un <code>=</code> tra la chiave e il valore. </p> <p>Per i dati binari, utilizzare <code>[!UICONTROL multipart/form-data]</code>.</p> <p>Per ogni coppia chiave-valore che si desidera aggiungere, nel campo Campi fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore.</p>
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Esempio: </b></span></span> 
        <p>Esempio del formato di richiesta HTTP risultante:</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] è una richiesta HTTP multipart utilizzata per inviare file e dati. Viene comunemente utilizzato per caricare file sul server.</p> <p>Aggiungi i campi da inviare nella richiesta. Ogni campo deve contenere una coppia chiave-valore.</p> 
+     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] è una richiesta multipart HTTP utilizzata per inviare file e dati. Viene comunemente utilizzato per caricare file sul server.</p> <p>Aggiungi i campi da inviare nella richiesta. Ogni campo deve contenere una coppia chiave-valore.</p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Immetti la chiave e il valore da inviare nel corpo della richiesta.</p> </li> 
+       <li> <p><strong>[!UICONTROL Testo]</strong> </p> <p>Immetti la chiave e il valore da inviare nel corpo della richiesta.</p> </li> 
        <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Immetti la chiave e specifica il file di origine da inviare nel corpo della richiesta. Selezionare un file di origine da un modulo precedente o mapparne il nome e i dati.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Analizza risposta]</p> </td> 
    <td> <p>Abilita questa opzione per analizzare automaticamente le risposte e convertire le risposte JSON e XML in modo da non dover utilizzare i moduli [!UICONTROL JSON] &gt; [!UICONTROL Parse JSON] o [!UICONTROL XML] &gt; [!UICONTROL Parse XML].</p> <p>Prima di poter utilizzare contenuti JSON o XML analizzati, esegui il modulo una volta manualmente in modo che possa riconoscere il contenuto della risposta e consentirti di mapparlo nei moduli successivi.</p> </td> 
   </tr> 
   <tr> 
@@ -127,7 +148,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
    <td> <p>Specifica il timeout della richiesta in secondi (1-300). Il valore predefinito è 40 secondi.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules]</td> 
+   <td role="rowheader">[!UICONTROL Condividi i cookie con altri moduli HTTP]</td> 
    <td> <p> Abilita questa opzione per condividere i cookie dal server con tutti i moduli HTTP nel tuo scenario.</p> </td> 
   </tr> 
   <tr> 
@@ -147,13 +168,13 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
               <p>Immettere la password per il file.</p>
             </li>
             <li value="5">
-              <p>Fare clic su <b>[!UICONTROL Save]</b> per estrarre il file e tornare alla configurazione del modulo.</p>
+              <p>Fare clic su <b>[!UICONTROL Salva]</b> per estrarre il file e tornare alla configurazione del modulo.</p>
             </li>
           </ol>
 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
+   <td role="rowheader">[!UICONTROL Rifiuta le connessioni che utilizzano certificati non verificati (autofirmati)] </td> 
    <td> <p>Abilita questa opzione per rifiutare le connessioni che utilizzano certificati TLS non verificati.</p> </td> 
   </tr> 
   <tr> 
@@ -161,19 +182,19 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
    <td> <p> Abilita questa opzione per seguire i reindirizzamenti URL con risposte 3xx.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Follow all redirects] </td> 
+   <td role="rowheader">[!UICONTROL Segui tutti i reindirizzamenti] </td> 
    <td> <p>Abilita questa opzione per seguire i reindirizzamenti URL con tutti i codici di risposta.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Disable serialization of multiple same query string keys as arrays]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Disattiva la serializzazione di più chiavi di stringa di query come matrici]</p> </td> 
    <td> <p>Per impostazione predefinita, [!DNL Workfront Fusion] gestisce più valori per la stessa chiave di parametro della stringa di query URL come array. Ad esempio, <code>www.test.com?foo=bar&amp;foo=baz</code> verrà convertito in <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Attiva questa opzione per disabilitare questa funzione. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Request compressed content]</td> 
+   <td role="rowheader">[!UICONTROL Richiedi contenuto compresso]</td> 
    <td> <p> Abilita questa opzione per richiedere una versione compressa del sito web.</p> <p>Aggiunge un'intestazione <code>[!UICONTROL Accept-Encoding]</code> per richiedere contenuto compresso.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
+   <td role="rowheader">[!UICONTROL Usa TLS reciproco]</td> 
    <td> <p>Abilita questa opzione per utilizzare Mutual TLS nella richiesta HTTP.</p> <p>Per ulteriori informazioni su Mutual TLS, vedere <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Utilizzare Mutual TLS nei moduli HTTP</a>.</p> </td> 
   </tr> 
  </tbody> 
