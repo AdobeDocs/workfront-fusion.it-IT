@@ -4,16 +4,18 @@ description: Le opzioni di notifica e-mail sono impostate a livello di team.
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
+source-git-commit: 0689cfee7cf546a6c1f5f72c79a1e7be9df85a8c
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '300'
 ht-degree: 1%
 
 ---
 
 # Imposta opzioni di notifica team
 
-In Workfront Fusion, riceverai notifiche tramite l’area Notifiche di Adobe. Puoi scegliere le notifiche che un team riceve. Le notifiche sono impostate a livello di team.
+Nell’organizzazione utilizza Adobe Unified Shell, ricevi notifiche tramite l’area Notifiche di Adobe.
+
+Se nell’organizzazione non è stata effettuata la migrazione ad Adobe Unified Shell, puoi scegliere le notifiche che un team riceve. Le notifiche sono impostate a livello di team.
 
 ## Requisiti di accesso
 
@@ -44,7 +46,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Nuovo:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>Il piano [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -69,10 +71,12 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 ## Impostare le opzioni di notifica
 
+Se la tua organizzazione non si trova in Adobe Unified Shell, puoi impostare le impostazioni di notifica direttamente in Fusion.
+
 Le opzioni di notifica e-mail sono impostate a livello di team.
 
-1. Nel pannello di navigazione a sinistra, fare clic su **[!UICONTROL Team]**
-1. Selezionare la scheda **[!UICONTROL Notification Options]**.
+1. Nel pannello di navigazione a sinistra, fai clic su **[!UICONTROL Team]**
+1. Selezionare la scheda **[!UICONTROL Opzioni di notifica]**.
 1. Abilitare le notifiche che si desidera vengano ricevute dal team.
 
    <table style="table-layout:auto"> 
@@ -80,15 +84,15 @@ Le opzioni di notifica e-mail sono impostate a livello di team.
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Warning in scenario run]</td> 
+      <td role="rowheader">'[!UICONTROL Warning in esecuzione scenario]'</td> 
       <td> <p>Ricevi un’e-mail quando viene visualizzato un avviso in un’esecuzione di uno scenario</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Errors in scenario run]</td> 
+      <td role="rowheader">[!UICONTROL Errori nell'esecuzione dello scenario]</td> 
       <td>Ricevi un’e-mail quando si verifica un errore in un’esecuzione di uno scenario.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Scenario deactivation]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Disattivazione scenario]</p> </td> 
       <td><p>Ricevi un’e-mail quando uno scenario si disattiva.</p><p>In alcuni casi, uno scenario potrebbe essere disattivato dal team di progettazione [!DNL Workfront Fusion] perché causa problemi di prestazioni o di altro tipo. In questi casi, non si ricevono notifiche in [!DNL Workfront Fusion]. </p></td>
 
 </tr>
