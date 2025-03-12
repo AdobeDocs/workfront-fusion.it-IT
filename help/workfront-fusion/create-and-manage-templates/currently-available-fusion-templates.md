@@ -4,9 +4,9 @@ description: In Adobe Workfront Fusion sono attualmente disponibili i seguenti m
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,15 @@ Questi modelli automatizzano i processi e i flussi di lavoro di Workfront.
 
 ### [!BADGE Nuovo!]{type=Informative}
 
+<!--New March 12, 2025-->
+
+Elimina le schede archiviate da una colonna designata su una bacheca designata su richiesta.
+
+### Bacheche Workfront > Crea un elenco di controllo standard in base alla colonna Bacheche
+
 Questo modello Fusion crea una checklist standard per tutte le schede che immettono una colonna specifica su una bacheca specifica a tempo.
 
-### [!BADGE Nuovo!]{type=Informative}
-
-<!--new Aug 1. 2024-->
+### Workfront > Schede Workfront - Creazione di una scheda con una configurazione personalizzata
 
 Questo scenario viene attivato dalla creazione di un nuovo progetto. Con questo scenario, puoi creare una bacheca denominata dopo il progetto, rinominare o creare colonne in base alle tue esigenze, creare tag personalizzati e associare un filtro per le colonne di assegnazione al progetto di origine.  Potrebbero essere apportate migliaia di modifiche aggiuntive, ma partendo da qui potrai vedere le possibilità di creare un punto di partenza per la standardizzazione del consiglio di amministrazione della tua organizzazione.
 
@@ -57,7 +61,7 @@ Utilizzare questo modello per copiare le note e le risposte da un problema o una
 
 Questa automazione controlla i nuovi progetti nei programmi con moduli personalizzati. Quindi aggiunge i moduli e i campi personalizzati del programma ai nuovi progetti.
 
-### Workfront: copia dati di campo e Forms personalizzati del Portfolio nei nuovi progetti associati
+### Workfront: copia i dati di campo e Forms personalizzati di Portfolio nei nuovi progetti associati
 
 Questa automazione controlla nuovi progetti in portfolio con moduli personalizzati. Quindi aggiunge i moduli e i campi personalizzati del portfolio ai nuovi progetti.
 
@@ -97,6 +101,12 @@ Una volta al mese, rivedi i modelli di progetto utilizzando il tuo criterio con 
 
 Questi modelli automatizzano i flussi di lavoro che combinano Workfront con Workfront Proof.
 
+### [!BADGE Nuovo!]{type=Informative}
+
+<!--New March 12, 2025-->
+
+Questo modello controlla i progetti che si aggiornano in stati che equivalgono a rifiutati, completati o inattivi. In seguito, modifica in Sola lettura tutti gli utenti con decisioni Bozza in sospeso. Infine, blocca le bozze e invia un aggiornamento ai documenti.
+
 ### Workfront Proof > Workfront - Aggiornamento progetto sulla decisione bozza
 
 Quando si prende una decisione su una bozza aggiunta direttamente a un progetto, questa automazione raccoglie informazioni sulla decisione della bozza, ad esempio chi ha preso la decisione, e quindi riflette questo progresso nel progetto Workfront corrispondente come aggiornamento.
@@ -129,17 +139,17 @@ Questi modelli supportano l&#39;integrazione Workfront-Marketo.
 >
 > Per utilizzare i modelli in questa sezione è necessario disporre di una licenza Workfront Fusion for Work Automation and Integration.
 
-### Approvare la bozza e-mail del Marketo Engage con i flussi di lavoro di approvazione di Workfront
+### Approvare la bozza dell’e-mail Marketo Engage con i flussi di lavoro di approvazione Workfront
 
-Questo fa parte dell’integrazione Revisione e approvazione tra Workfront e Marketo Engage. Questo modello rileva se è stata approvata una bozza e-mail in Workfront, quindi aggiorna l’e-mail corrispondente nel Marketo Engage in base all’approvazione.
+Questo fa parte dell’integrazione Revisione e approvazione tra Workfront e Marketo Engage. Questo modello rileva se è stata approvata una bozza e-mail in Workfront, quindi aggiorna l’e-mail corrispondente in Marketo Engage come approvato.
 
-### Acquisisci le richieste delle campagne di marketing in Workfront e automatizza la creazione di campagne in Marketo Engage
+### Acquisire richieste di campagne di marketing in Workfront e automatizzare la creazione di campagne in Marketo Engage
 
 Questo scenario offre un modo programmatico per creare campagne e-mail e webinar in Marketo Engage da una richiesta effettuata in Workfront. Utilizzando l’automazione per creare, organizzare e configurare le campagne, i team sono in grado di migliorare l’efficienza.
 
-### Verifica una bozza e-mail del Marketo Engage in Workfront
+### Verifica una bozza e-mail della bozza e-mail di Marketo Engage in Workfront
 
-Questo modello rileva se un’attività di Workfront è stata impostata sullo stato Pronto per la revisione, quindi esporta la bozza e-mail dal Marketo Engage per salvarla come bozza in Workfront.
+Questo modello rileva se un’attività di Workfront è stata impostata sullo stato Pronto per la revisione, quindi esporta la bozza e-mail da Marketo Engage per salvarla come bozza in Workfront.
 
 ## Modelli Workfront-SharePoint
 
