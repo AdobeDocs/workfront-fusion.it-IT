@@ -4,16 +4,16 @@ description: È possibile utilizzare lo strumento parser di testo per analizzare
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Text parser]
+# [!UICONTROL Parser di testo]
 
-È possibile utilizzare [!UICONTROL Text parser tool] per analizzare il testo da utilizzare in altri moduli scenario [!DNL Adobe Workfront Fusion]. [!UICONTROL Text parser] non richiede una connessione.
+È possibile utilizzare lo strumento [!UICONTROL parser di testo] per analizzare il testo da utilizzare in altri moduli di scenario [!DNL Adobe Workfront Fusion]. Il parser [!UICONTROL Text] non richiede una connessione.
 
 ## Requisiti di accesso
 
@@ -36,7 +36,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Nessuna licenza Workfront Fusion richiesta.</p>
+   <p>Nessun requisito di licenza per Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -71,9 +71,9 @@ Il connettore parser di testo utilizza quanto segue:
  </tbody> 
  </table>
 
-## [!UICONTROL Text parser] moduli e relativi campi
+## [!UICONTROL Moduli parser di testo] e relativi campi
 
-Quando configuri [!UICONTROL Text parser] moduli, [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli [!UICONTROL Parser di testo], [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -81,13 +81,13 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Trasformatori
 
-* [[!UICONTROL Get Elements from HTML]](#get-elements-from-html)
-* [[!UICONTROL Get Elements from text]](#get-elements-from-text)
-* [[!UICONTROL HTML to Text]](#html-to-text)
-* [[!UICONTROL Match Pattern]](#match-pattern)
-* [[!UICONTROL Replace]](#replace)
+* [[!UICONTROL Ottieni elementi da HTML]](#get-elements-from-html)
+* [[!UICONTROL Ottieni elementi dal testo]](#get-elements-from-text)
+* [[!UICONTROL Da HTML a testo]](#html-to-text)
+* [[!UICONTROL Corrispondenza pattern]](#match-pattern)
+* [[!UICONTROL Sostituisci]](#replace)
 
-#### [!UICONTROL Get Elements from HTML]
+#### [!UICONTROL Ottieni elementi da HTML]
 
 Recupera gli elementi desiderati dal codice HTML.
 
@@ -96,26 +96,26 @@ Recupera gli elementi desiderati dal codice HTML.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module finds no matches]</td> 
+   <td>[!UICONTROL Continua l'esecuzione della route anche se il modulo non trova corrispondenze]</td> 
    <td> <p>Abilita questa opzione per garantire che il modulo non interrompa lo scenario se non restituisce alcun risultato.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Element type]</td> 
+   <td>[!UICONTROL Tipo di elemento]</td> 
    <td> <p> Seleziona il tipo di elemento da recuperare dal codice HTML. </p> 
     <ul> 
      <li>[!UICONTROL Image]</li> 
      <li>[!UICONTROL Link]</li> 
-     <li>[!UICONTROL iFrame element(s)]</li> 
+     <li>[!UICONTROL elementi iFrame]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL HTML] </td> 
-   <td> <p>Immettere o mappare il codice HTML da cui si desidera recuperare i tipi di elemento specificati.</p> </td> 
+   <td> <p>Immetti o mappa il codice HTML da cui desideri recuperare i tipi di elemento specificati.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get Elements from text]
+#### [!UICONTROL Ottieni elementi dal testo]
 
 Analizza gli elementi dal testo in base al pattern specificato.
 
@@ -124,7 +124,7 @@ Analizza gli elementi dal testo in base al pattern specificato.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Input text]</td> 
+   <td>[!UICONTROL Testo di input]</td> 
    <td> <p>Immettere o mappare il testo che si desidera analizzare.</p> </td> 
   </tr> 
   <tr> 
@@ -132,13 +132,13 @@ Analizza gli elementi dal testo in base al pattern specificato.
    <td> <p>Selezionate il motivo che riflette gli elementi da analizzare dal testo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
+   <td>[!UICONTROL Ignora occorrenze duplicate]</td> 
    <td> <p>Selezionare questa casella per ignorare le occorrenze duplicate di un elemento di testo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL HTML to Text]
+#### [!UICONTROL Da HTML a testo]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -146,22 +146,22 @@ Analizza gli elementi dal testo in base al pattern specificato.
  <tbody> 
   <tr> 
    <td>[!UICONTROL HTML] </td> 
-   <td> <p>Immettere il codice HTML che si desidera convertire in testo normale.</p> </td> 
+   <td> <p>Immetti il codice HTML da convertire in testo normale.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Line break] </td> 
+   <td>[!UICONTROL Interruzione di riga] </td> 
    <td> <p>Seleziona il tipo di nuova riga (interruzione di riga).</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Uppercase headings]</p> </td> 
+   <td> <p>[!UICONTROL Intestazioni in maiuscolo]</p> </td> 
    <td> <p>Abilita questa opzione per convertire in testo maiuscolo il testo racchiuso nei tag di intestazione (ad esempio &lt;h2&gt; &lt;/h2&gt;).</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Match Pattern]
+#### [!UICONTROL Corrispondenza pattern]
 
-Il modulo [!UICONTROL Match pattern] consente di trovare ed estrarre elementi stringa corrispondenti a un pattern di ricerca da un determinato testo. Questo modulo utilizza espressioni regolari (note anche come regex o regexp).
+Il modulo [!UICONTROL Match pattern] consente di trovare ed estrarre elementi stringa che corrispondono a un pattern di ricerca da un determinato testo. Questo modulo utilizza espressioni regolari (note anche come regex o regexp).
 
 Un’espressione regolare è una sequenza di caratteri in cui ogni carattere è un metacarattere, con un significato speciale, o un carattere regolare con un significato letterale. Questi caratteri e metacaratteri identificano un pattern che può essere utilizzato per la ricerca di testo. Ad esempio, se si desidera cercare i nomi, è possibile impostare un&#39;espressione regolare per cercare un motivo costituito da due parole consecutive che iniziano con lettere maiuscole. Le espressioni regolari sono uno strumento utile per la ricerca e la manipolazione del testo.
 
@@ -180,11 +180,11 @@ Una discussione sulle espressioni regolari va oltre lo scopo di questo articolo.
    <td> <p>Immettete il pattern di espressione regolare. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Esempio: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> estrae tutti i numeri nel testo specificato.</p> <p>Nota:  <p>Il modello deve contenere almeno un gruppo di acquisizione tra parentesi <code>()</code>. Se il modello non contiene gruppi di acquisizione, il bundle di output è vuoto.</p> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[!UICONTROL Corrispondenza globale]</td> 
    <td> <p>Abilita questa opzione per recuperare tutte le corrispondenze nel testo. Ogni corrispondenza viene generata in un bundle separato. Se questa opzione è disattivata, il modulo recupera solo la prima voce.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[!UICONTROL Distinzione maiuscole/minuscole]</td> 
    <td> <p> Abilita questa opzione per questo modulo per trattare il testo con distinzione tra maiuscole e minuscole.</p> </td> 
   </tr> 
   <tr> 
@@ -196,7 +196,7 @@ Una discussione sulle espressioni regolari va oltre lo scopo di questo articolo.
    <td>Abilitare questa opzione per assicurarsi che il punto (.) corrisponda ai caratteri di nuova riga (<code>\n</code>).</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[!UICONTROL Continua l'esecuzione della route anche se il modulo non restituisce alcun risultato]</td> 
    <td> <p>Abilita questa opzione per garantire che il modulo non interrompa lo scenario se non restituisce alcun risultato.</p> </td> 
   </tr> 
   <tr> 
@@ -206,7 +206,7 @@ Una discussione sulle espressioni regolari va oltre lo scopo di questo articolo.
  </tbody> 
 </table>
 
-#### [!UICONTROL Replace]
+#### [!UICONTROL Sostituisci]
 
 Cerca un valore o un&#39;espressione regolare specificata nel testo immesso e sostituisce il risultato con il nuovo valore.
 
@@ -219,15 +219,15 @@ Cerca un valore o un&#39;espressione regolare specificata nel testo immesso e so
    <td> <p>Immettere il termine di ricerca. È inoltre possibile utilizzare un'espressione regolare. Per ulteriori dettagli sull'espressione regolare, fare riferimento al modulo <a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New value]</td> 
+   <td>[!UICONTROL Nuovo valore]</td> 
    <td> <p> Immettere il valore che si desidera sostituire al termine di ricerca.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[!UICONTROL Corrispondenza globale]</td> 
    <td> <p>Abilita questa opzione per recuperare tutte le corrispondenze nel testo. Ogni corrispondenza viene generata in un bundle separato. Se questa opzione è disattivata, il modulo recupera solo la prima voce.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[!UICONTROL Distinzione maiuscole/minuscole]</td> 
    <td> <p> Abilita questa opzione per questo modulo per trattare il testo con distinzione tra maiuscole e minuscole.</p> </td> 
   </tr> 
   <tr> 

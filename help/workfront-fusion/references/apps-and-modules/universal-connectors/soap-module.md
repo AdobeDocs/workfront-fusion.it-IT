@@ -4,16 +4,16 @@ description: Puoi utilizzare il modulo SOAP per connettersi alle API SOAP in Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 3a27a51e10438e6cf8862bf28b1d58273bbaff36
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
 
 # Modulo [!UICONTROL SOAP]
 
-È possibile utilizzare il modulo [!UICONTROL SOAP] per connettersi alle API [!UICONTROL SOAP] in [!UICONTROL Adobe Workfront Fusion].
+È possibile utilizzare il modulo [!UICONTROL SOAP] per connettersi alle [!UICONTROL API SOAP] in [!UICONTROL Adobe Workfront Fusion].
 
 ## Modulo SOAP e relativi campi
 
@@ -46,7 +46,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -95,11 +95,11 @@ Questo modulo di azione esegue un&#39;azione SOAP, in base al file WSDL specific
    <td> Per ogni intestazione HTTP da aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere il nome e il valore dell'intestazione.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP headers]</td> 
+   <td>[!UICONTROL Intestazioni SOAP]</td> 
    <td> Per ogni intestazione SOAP che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere il nome, il valore, lo spazio dei nomi e l'XMLNS dell'intestazione.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Force SOAP headers]</td> 
+   <td>[!UICONTROL Forza intestazioni SOAP]</td> 
    <td> Abilita questa opzione per configurare le intestazioni per SOAP 1.2. </td> 
   </tr> 
   </tbody> 
@@ -143,10 +143,10 @@ Questo esempio include i riferimenti `soapenc:Array`, `soapenc:arrayType` e `wsd
 
 ## Soluzione alternativa
 
-Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari errori nella configurazione del modulo, provare a utilizzare il modulo universale **[!UICONTROL HTTP]>[!UICONTROL Make a request]**:
+Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari errori nella configurazione del modulo, è possibile provare a utilizzare il modulo universale **[!UICONTROL HTTP] > [!UICONTROL Richiedi]**:
 
 1. In [!DNL Workfront Fusion] creare un nuovo scenario.
-1. Inserire il modulo **[!UICONTROL HTTP]>[!UICONTROL Make a request]** nello scenario.
+1. Inserisci il modulo **[!UICONTROL HTTP] > [!UICONTROL Invia una richiesta]** nello scenario.
 1. Apri la configurazione del modulo e compila i campi seguenti:
 
    <table style="table-layout:auto"> 
@@ -158,16 +158,16 @@ Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari e
       <td> <p>[!UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td role="rowheader">[!UICONTROL Body type]</td> 
+      <td role="rowheader">[!UICONTROL Tipo di corpo]</td> 
       <td> <p>[!UICONTROL Raw]</p> </td>
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Content type]</td> 
+      <td role="rowheader">[!UICONTROL Tipo di contenuto]</td> 
       <td> <p>[!UICONTROL XML (application/xml)]</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Parse response]</td> 
-      <td>[!UICONTROL Enabled]</td> 
+      <td role="rowheader">[!UICONTROL Analizza risposta]</td> 
+      <td>[!UICONTROL abilitato]</td> 
      </tr> 
     </tbody> 
    </table>
@@ -186,11 +186,11 @@ Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari e
 
 1. Una volta individuato, copiare l&#39;URL dall&#39;attributo `location`.
 1. In [!DNL Workfront Fusion], incollare l&#39;URL nel campo URL del modulo HTTP.
-1. Aprire il client [Online [!UICONTROL SOAP]](https://wsdlbrowser.com/) in una nuova finestra o scheda del browser Web.
+1. Apri il [client [!UICONTROL SOAP] in linea](https://wsdlbrowser.com/) in una nuova finestra/scheda del browser Web.
 1. Incollare l&#39;URL WSDL nel campo URL WSDL.
-1. Fare clic su **[!UICONTROL Browse]**.
+1. Fare clic su **[!UICONTROL Sfoglia]**.
 1. Selezionare dall&#39;elenco di funzioni a sinistra, ad esempio `getLanguages`.
-1. Copia il contenuto dell&#39;area di testo [!UICONTROL Request XML].
+1. Copia il contenuto dell&#39;area di testo [!UICONTROL Richiedi XML].
 1. In [!UICONTROL Workfront Fusion], incolla il contenuto copiato nel campo URL del modulo.
 1. Fornire i valori per i parametri selezionati sostituendo i punti interrogativi con i valori effettivi:
 

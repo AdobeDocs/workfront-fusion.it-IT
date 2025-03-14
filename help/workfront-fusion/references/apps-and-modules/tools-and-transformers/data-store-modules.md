@@ -4,14 +4,14 @@ description: Un archivio dati  [!DNL Adobe Workfront Fusion] , simile a un datab
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Data store] moduli
+# [!UICONTROL Moduli archivio dati]
 
 Un archivio dati [!DNL Adobe Workfront Fusion], simile a un database o a una semplice tabella, può memorizzare i dati di scenari, consentendo il trasferimento dei dati tra scenari singoli o l&#39;esecuzione di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
 
@@ -44,7 +44,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Nessuna licenza Workfront Fusion richiesta.</p>
+   <p>Nessun requisito di licenza per Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -66,11 +66,11 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 ## Prerequisiti
 
-Per utilizzare i moduli [!UICONTROL Data Store], è innanzitutto necessario creare un archivio dati.
+Per utilizzare i moduli [!UICONTROL Archivio dati], è necessario innanzitutto creare un archivio dati.
 
 Per informazioni sulla creazione di archivi dati, vedere [Creare e gestire archivi dati](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
-## [!UICONTROL Data store] moduli e relativi campi
+## [!UICONTROL Moduli dell&#39;archivio dati] e relativi campi
 
 Quando si configurano i moduli Archivio dati, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi aggiuntivi del Data Store, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
@@ -90,7 +90,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Cerca record](#search-records)
 * [Aggiornare un record](#update-a-record)
 
-### [!UICONTROL Add/Replace a Record]
+### [!UICONTROL Aggiungi/Sostituisci un record]
 
 Questo modulo di azione aggiunge o sostituisce un record.
 
@@ -100,7 +100,7 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
 
 >[!NOTE]
 >
->Il modulo genera un errore quando si tenta di aggiungere un record già presente nell&#39;archivio dati con lo stesso nome e l&#39;opzione [!UICONTROL Overwrite an existing record] è disabilitata.
+>Il modulo genera un errore quando si tenta di aggiungere un record già presente nell&#39;archivio dati con lo stesso nome e l&#39;opzione [!UICONTROL Sovrascrivi un record esistente] è disabilitata.
 
 Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
 
@@ -109,7 +109,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 
@@ -117,7 +117,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immettere la chiave univoca del record che si desidera venga aggiunto o sostituito dal modulo. La chiave può essere utilizzata in un secondo momento per recuperare il record. Se lasci vuoto questo campo, viene generata automaticamente una chiave.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Overwrite an existing record] </td> 
+   <td>[!UICONTROL Sovrascrive un record esistente] </td> 
    <td> <p>Abilita questa opzione per sovrascrivere il record. Il record che desideri sovrascrivere deve essere specificato nel campo Chiave qui sopra.</p> </td> 
   </tr> 
   <tr> 
@@ -127,7 +127,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-### [!UICONTROL Check the Existence of a Record]
+### [!UICONTROL Verifica l&#39;esistenza di un record]
 
 Questo modulo di azione specifica se esiste un record specifico.
 
@@ -138,7 +138,7 @@ Specificare l&#39;archivio dati e la chiave del record.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -148,7 +148,7 @@ Specificare l&#39;archivio dati e la chiave del record.
  </tbody> 
 </table>
 
-### [!UICONTROL Count Records]
+### [!UICONTROL Conteggio record]
 
 Questo modulo di azione numera i record in un archivio dati.
 
@@ -161,13 +161,13 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati contenente i record che si desidera conteggiare.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a Record]
+### [!UICONTROL Eliminare un record]
 
 Questo modulo di azione elimina un record.
 
@@ -180,7 +180,7 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -190,7 +190,7 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
  </tbody> 
 </table>
 
-### [!UICONTROL Delete All Records]
+### [!UICONTROL Elimina tutti i record]
 
 Questo modulo di azione elimina tutti i record da un particolare archivio dati.
 
@@ -201,13 +201,13 @@ Specifica l’archivio dati.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati da cui si desidera eliminare tutti i record.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Get a Record]
+### [!UICONTROL Ottieni un record]
 
 Questo modulo di azione recupera un record.
 
@@ -220,7 +220,7 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare l'archivio dati da cui si desidera recuperare un record</p> </td> 
   </tr> 
   <tr> 
@@ -230,7 +230,7 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
  </tbody> 
 </table>
 
-### [!UICONTROL Search Records]
+### [!UICONTROL Cerca record]
 
 Questo modulo di ricerca cerca i record in un oggetto nell’archivio dati che corrispondono alla query di ricerca specificata.
 
@@ -243,11 +243,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Seleziona l’archivio dati in cui desideri eseguire la ricerca.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>[!UICONTROL Filtro]</p> </td> 
    <td> <p>Imposta il filtro per la ricerca.</p> </td> 
   </tr> 
   <tr> 
@@ -259,13 +259,13 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p> Impostare il numero massimo di risultati di ricerca [!DNL Workfront Fusion] restituiti durante un ciclo di esecuzione.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[!UICONTROL Continua l'esecuzione della route anche se il modulo non restituisce alcun risultato]</td> 
    <td> <p> Se attivato, il ciclo di lavorazione di cui fa parte il modulo continua l'elaborazione anche se il modulo non restituisce alcun risultato.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Update a Record]
+### [!UICONTROL Aggiorna un record]
 
 Questo modulo di azione aggiorna un record.
 
@@ -280,7 +280,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 
@@ -288,7 +288,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immettere la chiave univoca del record che si desidera aggiornare nel modulo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Insert missing record] </td> 
+   <td>[!UICONTROL Inserisci record mancante] </td> 
    <td> <p>Abilita questa opzione per creare un nuovo record se il record con la chiave specificata non esiste già.</p> </td> 
   </tr> 
   <tr> 

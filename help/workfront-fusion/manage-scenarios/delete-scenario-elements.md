@@ -4,9 +4,9 @@ description: Puoi visualizzare e gestire le connessioni dei team nell’area Con
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: 945fd574afef0cfdd8b36ba5a24f5262e772ed8b
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '224'
 ht-degree: 1%
 
 ---
@@ -16,12 +16,12 @@ ht-degree: 1%
 È possibile archiviare ed eliminare gli elementi dello scenario nelle seguenti aree nell&#39;account [!DNL Adobe Workfront Fusion]:
 
 * [!UICONTROL Scenario]
-* [!UICONTROL Connections]
-* [!UICONTROL Webhooks]
-* [!UICONTROL Keys]
-* [!UICONTROL Devices]
-* [!UICONTROL Data stores]
-* [!UICONTROL User profiles]
+* [!UICONTROL Connessioni]
+* [!UICONTROL Webhook]
+* [!UICONTROL Chiavi]
+* [!UICONTROL Dispositivi]
+* [!UICONTROL Archivi dati]
+* [!UICONTROL Profili utente]
 
 
 ## Requisiti di accesso
@@ -45,7 +45,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -84,5 +84,5 @@ Per eliminare gli elementi dello scenario:
 
    Ad esempio, se desideri eliminare uno scenario, fai clic su **[!UICONTROL Scenario]** nel pannello a sinistra.
 
-1. Fare clic sulla freccia giù a destra dell&#39;elemento che si desidera eliminare, quindi fare clic su **[!UICONTROL Delete]**.
+1. Fare clic sulla freccia giù a destra dell&#39;elemento che si desidera eliminare, quindi fare clic su **[!UICONTROL Elimina]**.
 1. Fai clic su **[!UICONTROL Really]** per confermare.

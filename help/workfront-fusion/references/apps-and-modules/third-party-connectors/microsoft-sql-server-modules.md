@@ -4,9 +4,9 @@ description: È possibile utilizzare  [!DNL Adobe Workfront Fusion]  per connett
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -82,7 +82,7 @@ Per ulteriori informazioni sulla creazione di una stored procedure, vedere la do
 >
 >[!DNL Workfront Fusion] non supporta più recordset. Viene elaborato solo il primo.
 
-## Risoluzione dei problemi errore [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Lock wait timeout exceeded; try restarting transaction]
+## Risoluzione dei problemi errore [!UICONTROL ER_LOCK_WAIT_TIMEOUT: timeout di attesa blocco superato; provare a riavviare la transazione]
 
 Questo errore si verifica quando si modificano gli stessi dati utilizzando più moduli. È causata da transazioni SQL.
 
@@ -94,6 +94,6 @@ Se un altro modulo tenta di accedere agli stessi dati, deve attendere il complet
 
 Attiva il commit automatico. Il commit automatico termina (esegue il commit) ogni transazione subito dopo l&#39;esecuzione del modulo.
 
-1. Fai clic sull&#39;icona [!UICONTROL Scenario settings] ![icona Impostazioni scenario](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)nella parte inferiore della schermata.
+1. Fai clic sull&#39;icona [!UICONTROL Impostazioni scenario] ![Icona Impostazioni scenario](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)nella parte inferiore della schermata.
 1. Selezionare la casella di controllo **[!UICONTROL Auto commit]**.
 1. Fare clic su **[!UICONTROL OK]** per salvare le impostazioni dello scenario.

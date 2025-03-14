@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '3050'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -89,7 +89,7 @@ Il connettore Workfront Proof utilizza quanto segue:
 
 Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente da un modulo [!DNL Workfront Fusion].
 
-1. In qualsiasi modulo [!DNL Workfront Fusion], fai clic su [!UICONTROL **Aggiungi**] accanto al campo [!UICONTROL Connection]
+1. In qualsiasi modulo [!DNL Workfront Fusion], fai clic su [!UICONTROL **Aggiungi**] accanto al campo [!UICONTROL Connessione]
 
 2. Compila i campi seguenti:
 
@@ -99,7 +99,7 @@ Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente d
         <tbody>
             <tr>
                 <td role="rowheader">
-                    <p role="rowheader">[!UICONTROL Connection name]</p>
+                    <p role="rowheader">[!UICONTROL Nome connessione]</p>
                 </td>
                 <td>Immetti un nome per la connessione</td>
             </tr>
@@ -120,15 +120,15 @@ Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente d
                 <td>Immettere la password per l'account [!DNL Workfront Proof].</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Tenant ID]</td>
+                <td  role="rowheader">[!UICONTROL ID tenant]</td>
                 <td><strong>Nota</strong>: i clienti che non utilizzano BYOK devono lasciare vuoto questo campo. <p>Immetti l’ID tenant per questo account. Se hai bisogno di aiuto per trovare l’ID tenant, contatta l’Assistenza clienti Workfront.</p></td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Domain Extension]</td>
+                <td role="rowheader">Estensione di dominio [!UICONTROL]</td>
                 <td>Immetti l’estensione per l’URL utilizzato per accedere al tuo account. <p>Esempio: <code>com</code> o <code>eu</code></p></td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Production, Preview, or Custom Environment]</td>
+                <td  role="rowheader">[!UICONTROL Produzione, Anteprima o Ambiente personalizzato]</td>
                 <td>L’ambiente di produzione, anteprima o personalizzato a cui desideri connetterti.</td>
             </tr>
         </tbody>
@@ -151,17 +151,17 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Trigger
 
-* [Osserva riepilogo PDF](#watch-for-pdf-summary)
-* [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [Guarda il riepilogo di PDF](#watch-for-pdf-summary)
+* [[!UICONTROL Attività verifica bozze]](#watch-proof-activity)
 * [Guarda le bozze](#watch-proofs)
 
-#### [!UICONTROL Watch for PDF Summary]
+#### [!UICONTROL Controlla riepilogo PDF]
 
 Questo modulo di attivazione immediata esegue uno scenario quando un utente crea un riepilogo di PDF per una bozza.
 
 In questo modulo è necessario un webhook.
 
-Il modulo restituisce tutti i campi standard associati alla bozza, insieme a tutti i campi e i valori personalizzati a cui la connessione accede. Viene inoltre creata una nuova sottoscrizione di evento per i riepiloghi PDF e viene restituito il contenuto dall&#39;attributo `pdf_url` inviato nel payload. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce tutti i campi standard associati alla bozza, insieme a tutti i campi e i valori personalizzati a cui la connessione accede. Viene inoltre creata una nuova sottoscrizione di evento per i riepiloghi di PDF e viene restituito il contenuto dall&#39;attributo `pdf_url` inviato nel payload. Puoi mappare queste informazioni nei moduli successivi nello scenario.
 
 Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
 
@@ -170,7 +170,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Webhook name]</td> 
+   <td>[!UICONTROL Nome webhook]</td> 
    <td>Immetti o mappa un nome per il nuovo webhook</td> 
   </tr> 
   <tr> 
@@ -180,11 +180,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proof Activity]
+#### [!UICONTROL Attività verifica bozze]
 
 Questo modulo di attivazione esegue uno scenario quando si verifica un’attività specificata su una bozza di bozza.
 
-Il modulo restituisce tutti i campi standard associati alla bozza, insieme a tutti i campi e i valori personalizzati a cui la connessione accede. Viene inoltre creata una nuova sottoscrizione di evento per i riepiloghi PDF e viene restituito il contenuto dall&#39;attributo `pdf_url` inviato nel payload. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce tutti i campi standard associati alla bozza, insieme a tutti i campi e i valori personalizzati a cui la connessione accede. Viene inoltre creata una nuova sottoscrizione di evento per i riepiloghi di PDF e viene restituito il contenuto dall&#39;attributo `pdf_url` inviato nel payload. Puoi mappare queste informazioni nei moduli successivi nello scenario.
 
 Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
 
@@ -197,7 +197,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Activity type]</td> 
+   <td>[!UICONTROL Tipo di attività]</td> 
    <td>Seleziona se desideri controllare le nuove decisioni (comprese le modifiche dello stato della bozza) o solo le modifiche generali dello stato della bozza.</td> 
   </tr> 
   <tr> 
@@ -207,7 +207,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Proofs]
+#### [!UICONTROL Guarda le bozze]
 
 Questo modulo di attivazione pianificato esegue uno scenario quando un utente crea o prende una decisione su una bozza.
 
@@ -244,15 +244,15 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 ### Azioni
 
-* [[!UICONTROL Create Proof]](#create-proof)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Download Proof]](#download-proof)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Request PDF Summary]](#request-pdf-summary)
-* [[!UICONTROL Update Proof]](#update-proof)
-* [[!UICONTROL Upload File]](#upload-file)
+* [[!UICONTROL Crea bozza]](#create-proof)
+* [[!UICONTROL Chiamata API personalizzata]](#custom-api-call)
+* [[!UICONTROL Scarica bozza]](#download-proof)
+* [[!UICONTROL Leggi un record]](#read-a-record)
+* [[!UICONTROL Richiedi riepilogo PDF]](#request-pdf-summary)
+* [[!UICONTROL Aggiorna bozza]](#update-proof)
+* [[!UICONTROL Carica file]](#upload-file)
 
-#### [!UICONTROL Create Proof]
+#### [!UICONTROL Crea bozza]
 
 <!--Cannot test Jan 2025-->
 
@@ -273,35 +273,35 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof Type]</td> 
-   <td> <p>Specificare se si desidera che la bozza creata abbia un flusso di lavoro di base o un [!UICONTROL Automated Workflow].</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Automated Workflow], compila il campo <strong>[!UICONTROL Workflow Stages]</strong> per configurare le fasi.</p></td> 
+   <td>Tipo di bozza [!UICONTROL]</td> 
+   <td> <p>Specifica se la bozza creata deve avere un flusso di lavoro di base o un flusso di lavoro automatico [!UICONTROL].</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Flusso di lavoro automatico], compila il campo <strong>[!UICONTROL Fasi del flusso di lavoro]</strong> per configurare le fasi.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Allow original file to be downloaded]</td> 
+   <td>[!UICONTROL Consenti il download del file originale]</td> 
    <td>Seleziona se desideri consentire il download del file originale da cui è stata creata la bozza.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Classic Proof Viewer]</td> 
+   <td>Visualizzatore bozze di [!UICONTROL Classic]</td> 
    <td>Seleziona se utilizzi il visualizzatore di bozze classico.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Combine all files into single proof]</td> 
+   <td>[!UICONTROL Combina tutti i file in un'unica bozza]</td> 
    <td>Abilita questa opzione per combinare tutti i file in un’unica bozza multipagina.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Create a new proof version]</td> 
-   <td>Seleziona questa opzione se desideri che il modulo crei una nuova versione di una bozza esistente. Quindi, nel campo <strong>[!UICONTROL Existing Proof ID]</strong> visualizzato, mappa o immetti l'ID univoco della bozza.</td> 
+   <td>[!UICONTROL Crea una nuova versione di bozza]</td> 
+   <td>Seleziona questa opzione se desideri che il modulo crei una nuova versione di una bozza esistente. Quindi, nel campo <strong>[!UICONTROL ID bozza esistente]</strong> che visualizza, mappa o immetti l'ID univoco della bozza.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Custom Link Label]</td> 
+   <td>Etichetta collegamento personalizzato [!UICONTROL]</td> 
    <td>Inserisci o mappa un’etichetta per il collegamento della bozza personalizzata.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Custom Link URL]</td> 
+   <td>[!UICONTROL URL collegamento personalizzato]</td> 
    <td>Inserisci o mappa l’URL del collegamento personalizzato.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Default email notifications for subscribers]</td> 
+   <td>[!UICONTROL Notifiche e-mail predefinite per gli abbonati]</td> 
    <td>Digita uno dei seguenti numeri per indicare quale delle seguenti impostazioni predefinite di notifica e-mail desideri utilizzare per la bozza creata.
     <ul>
      <li><strong>1</strong> - Tutti i nuovi commenti e risposte</li>
@@ -313,63 +313,63 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     </ul></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Disable Excel Summary]</td> 
+   <td>[!UICONTROL Disattiva riepilogo Excel]</td> 
    <td>Seleziona se vuoi disabilitare la possibilità di scaricare i commenti della bozza in un file Excel.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Disable PDF Summary]</td> 
+   <td>[!UICONTROL Disattiva Riepilogo PDF]</td> 
    <td>Seleziona se vuoi disabilitare la possibilità di scaricare i commenti della bozza in un file PDF.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Disable Subscription Email]</td> 
+   <td>[!UICONTROL Disattiva E-Mail Sottoscrizione]</td> 
    <td>Seleziona se vuoi disabilitare l’e-mail di abbonamento per questa bozza.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Embed Player]</td> 
+   <td>[!UICONTROL - Abilita lettore incorporato]</td> 
    <td>Seleziona se desideri abilitare il lettore incorporato per questa bozza.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Subscriptions]</td> 
+   <td>[!UICONTROL - Abilita sottoscrizioni]</td> 
    <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare il Ruolo predefinito per i sottoscrittori, come descritto in questa tabella.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Subscriptions Validation]</td> 
+   <td>[!UICONTROL Abilita convalida sottoscrizioni]</td> 
    <td>Specificare se si desidera abilitare la convalida e-mail dell'abbonamento. Se questa opzione è abilitata, l’abbonato deve fare clic su un collegamento in un messaggio e-mail per accedere a una bozza.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Enable Team URL]</td> 
+   <td>[!UICONTROL - Abilita URL team]</td> 
    <td>Seleziona se desideri che la bozza creata nasconda o mostri l’URL del team.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL File Hash] <span style="font-weight: normal;">oppure</span> [!UICONTROL File Hashes]</td> 
+   <td>[!UICONTROL Hash File] <span style="font-weight: normal;">or</span> [!UICONTROL Hash File]</td> 
    <td>Aggiungi l’ID del file o dei file da cui desideri creare una bozza o delle bozze.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL File Names]</td> 
+   <td>[!UICONTROL Nomi File]</td> 
    <td>Aggiungi il nome o i nomi del file per la bozza creata Questo campo è obbligatorio.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Lock proof when all required decisions are made]</td> 
+   <td>[!UICONTROL Blocca la bozza quando vengono prese tutte le decisioni necessarie]</td> 
    <td>Specifica se desideri che la bozza creata venga bloccata dopo aver preso tutte le decisioni necessarie.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Notify recipients about this proof]</td> 
+   <td>[!UICONTROL Notifica i destinatari relativamente a questa bozza]</td> 
    <td>Seleziona un’opzione per indicare se desideri che i destinatari ricevano una notifica al momento della creazione della bozza.&gt;</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof name]</td> 
+   <td>[!UICONTROL Nome bozza]</td> 
    <td>Digita un nome per la bozza creata Questo è un campo obbligatorio. Utilizza un simbolo di barra verticale (|) per separare i nomi per più bozze.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof owner ID]</td> 
+   <td>[!UICONTROL ID proprietario bozza]</td> 
    <td>Inserisci o mappa l’ID del proprietario della bozza. Se questo campo viene lasciato vuoto, il proprietario della bozza viene impostato sull’utente corrente.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Reference ID]</td> 
+   <td>[!UICONTROL ID riferimento]</td> 
    <td>Immetti l’ID di riferimento per la bozza.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Require electronic signature]</td> 
+   <td>[!UICONTROL Richiedi firma elettronica]</td> 
    <td>Seleziona se desideri richiedere a chiunque prenda una decisione su una bozza di inviare una firma elettronica.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -377,7 +377,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Specifica se la bozza creata deve richiedere l’accesso. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Resolution ID]</td> 
+   <td>[!UICONTROL ID risoluzione]</td> 
    <td>Immetti l’ID della risoluzione da utilizzare per la bozza. Per un elenco degli ID risoluzione, consulta la [!DNL Workfront Proof] <a href="https://api.proofhq.com/home/objects/soapworkflowproofobject.html">documentazione API</a>.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -393,11 +393,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Immetti l’ID dell’area di lavoro in cui desideri creare la bozza. </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Recipients]</td> 
+   <td>[!UICONTROL Destinatari]</td> 
    <td>Aggiungi gli indirizzi e-mail dei destinatari desiderati per la bozza creata.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Deadline]</td> 
+   <td>[!UICONTROL Scadenza]</td> 
    <td> <p>Specifica la scadenza desiderata per la bozza creata. Utilizza il seguente formato data:</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
   </tr> 
  </tbody> 
@@ -405,7 +405,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Chiamata API personalizzata]
 
 Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all&#39;API [!DNL Workfront Proof]. In questo modo è possibile creare un&#39;automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Workfront Proof].
 
@@ -441,7 +441,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 >
 >![Esempio di modulo API di bozza](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
 
-#### [!UICONTROL Download Proof]
+#### [!UICONTROL Scarica bozza]
 
 Questo modulo di azione scarica il file sorgente di una particolare bozza che identifichi utilizzando il relativo ID.
 
@@ -462,13 +462,13 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Digitare l'ID univoco della bozza, disponibile nella pagina [!UICONTROL Proof Details].  </td> 
+   <td>[!UICONTROL ID bozza]</td> 
+   <td> <p>Digita l’ID univoco della bozza, reperibile nella pagina [!UICONTROL Proof Details] (Dettagli bozza).  </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a Record]
+#### [!UICONTROL Leggi un record]
 
 Questo modulo di azione legge i dati da una singola bozza in [!DNL Workfront Proof].
 
@@ -489,11 +489,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record Type]</td> 
+   <td>[!UICONTROL Tipo di record]</td> 
    <td>Seleziona se desideri leggere una bozza, i commenti della bozza o i revisori della bozza.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Outputs]</td> 
+   <td>[!UICONTROL Output]</td> 
    <td> <p>Seleziona le informazioni da includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
   <tr> 
@@ -503,13 +503,13 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Request PDF Summary]
+#### [!UICONTROL Richiedi riepilogo PDF]
 
-Questo modulo richiede il riepilogo PDF per una determinata bozza in [!DNL Workfront Proof].
+Questo modulo richiede il riepilogo di PDF per una determinata bozza in [!DNL Workfront Proof].
 
 Specifica l’ID della bozza.
 
-Il modulo restituisce informazioni di riepilogo PDF. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce informazioni di riepilogo di PDF. Puoi mappare queste informazioni nei moduli successivi nello scenario.
 
 Per recuperare queste informazioni, è necessario disporre di autorizzazioni sufficienti per accedere al record in [!DNL Workfront Proof].
 
@@ -524,22 +524,22 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Immettere l'ID [!DNL Workfront Proof] univoco della bozza per la quale si desidera richiedere un riepilogo dei PDF.</p> </td> 
+   <td>[!UICONTROL ID bozza]</td> 
+   <td> <p>Immettere l'ID [!DNL Workfront Proof] univoco della bozza per la quale si desidera richiedere un riepilogo di PDF.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Callback URL]</td> 
-   <td>Inserisci o mappa l’URL in cui desideri inviare il riepilogo dei PDF.</td> 
+   <td>[!UICONTROL URL callback]</td> 
+   <td>Inserisci o mappa l’URL in cui desideri inviare il riepilogo di PDF.</td> 
   </tr> 
  </tbody> 
 </table>
 
 ##### Possibile errore
 
-* **Errore**: &quot;[!UICONTROL You do not have privilege to perform this request. The stage must contain at least one recipient.]&quot;
+* **Errore**: &quot;[!UICONTROL Non si dispone dei privilegi per eseguire questa richiesta. La fase deve contenere almeno un destinatario.]&quot;
 * **Soluzione**: assicurati di non essere l&#39;unico assegnato alle fasi del flusso di lavoro. Un altro utente deve essere assegnato alle fasi del flusso di lavoro.
 
-#### [!UICONTROL Update Proof]
+#### [!UICONTROL Aggiorna bozza]
 
 Questo modulo di azione aggiorna una bozza esistente in [!DNL Workfront Proof].
 
@@ -560,59 +560,59 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Digitare l'ID univoco della bozza, disponibile nella pagina [!UICONTROL Proof Details]. </td> 
+   <td>[!UICONTROL ID bozza]</td> 
+   <td> <p>Digita l’ID univoco della bozza, reperibile nella pagina [!UICONTROL Proof Details] (Dettagli bozza). </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Deadline]</td> 
+   <td>[!UICONTROL Scadenza]</td> 
    <td> <p>Specifica la scadenza desiderata per la bozza creata. Utilizza il formato data <code>YYYY-MM-DD hh:mm</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Default email notifications for subscribers]</td> 
+   <td>[!UICONTROL Notifiche e-mail predefinite per gli abbonati]</td> 
    <td>Seleziona una delle seguenti impostazioni predefinite di notifica e-mail da utilizzare per la bozza creata.
     <ul>
-     <li> [!UICONTROL All new comments and replies]</li>
-     <li>[!UICONTROL Replies to my comments]</li>
-     <li>[!UICONTROL Daily summary]</li>
-     <li> [!UICONTROL Hourly summary]</li>
+     <li> [!UICONTROL Tutti i nuovi commenti e risposte]</li>
+     <li>[!UICONTROL Risponde ai miei commenti]</li>
+     <li>Riepilogo giornaliero di [!UICONTROL]</li>
+     <li> Riepilogo orario [!UICONTROL]</li>
      <li> [!UICONTROL Decisions only]</li>
-     <li> [!UICONTROL Disabled]</li>
+     <li> [!UICONTROL Disabilitato]</li>
     </ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Default Role]</td> 
+   <td>Ruolo predefinito di [!UICONTROL]</td> 
    <td>Seleziona il ruolo predefinito per la bozza.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Disable Subscription Email]</td> 
+   <td>[!UICONTROL Disattiva E-Mail Sottoscrizione]</td> 
    <td>Seleziona se vuoi disabilitare l’e-mail di abbonamento per questa bozza.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo [!UICONTROL Default Role].</td> 
+   <td>[!UICONTROL - Abilita sottoscrizioni]</td> 
+   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo Ruolo predefinito di [!UICONTROL].</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enable Subscriptions Validation]</td> 
+   <td>[!UICONTROL Abilita convalida sottoscrizioni]</td> 
    <td>Specificare se si desidera abilitare la convalida e-mail dell'abbonamento. Se questa opzione è abilitata, l’abbonato deve fare clic su un collegamento in un messaggio e-mail per accedere a una bozza.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enable Team URL]</td> 
+   <td>[!UICONTROL - Abilita URL team]</td> 
    <td>Seleziona se desideri che la bozza creata nasconda o mostri l’URL del team.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Lock proof when all required decisions are made]</td> 
+   <td>[!UICONTROL Blocca la bozza quando vengono prese tutte le decisioni necessarie]</td> 
    <td>Specifica se desideri che la bozza creata venga bloccata dopo aver preso tutte le decisioni necessarie.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Message]</td> 
+   <td>[!UICONTROL Messaggio]</td> 
    <td>Immetti o mappa un messaggio da allegare alla bozza.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof ID] </td> 
+   <td>[!UICONTROL ID bozza] </td> 
    <td>Inserisci o mappa l’ID della bozza da aggiornare.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Proof Name]</td> 
+   <td>[!UICONTROL Nome bozza]</td> 
    <td>Inserisci o mappa il nome della bozza da aggiornare.</td> 
   </tr> 
   <tr> 
@@ -620,7 +620,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Specifica se la bozza creata deve richiedere l’accesso. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Show Versions Like]</td> 
+   <td>[!UICONTROL Mostra Versioni Simili]</td> 
    <td>Seleziona se desideri visualizzare un collegamento ad altre versioni di questa bozza.</td> 
   </tr> 
   <tr> 
@@ -630,9 +630,9 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload File]
+#### [!UICONTROL Carica file]
 
-Questo modulo di azione carica un file da utilizzare con il modulo [!UICONTROL Create Proof] in [!DNL Workfront Proof].
+Questo modulo di azione carica un file da utilizzare con il modulo [!UICONTROL Crea bozza] in [!DNL Workfront Proof].
 
 Il modulo restituisce un ID hash per il file caricato. Puoi mappare queste informazioni nei moduli successivi nello scenario.
 
@@ -655,10 +655,10 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 ### Ricerche
 
-* [[!UICONTROL List Workflow Templates]](#list-workflow-templates)
-* [[!UICONTROL Search]](#search)
+* [[!UICONTROL Modelli flusso di lavoro elenco]](#list-workflow-templates)
+* [[!UICONTROL Ricerca]](#search)
 
-#### [!UICONTROL List Workflow Templates]
+#### [!UICONTROL Modelli flusso di lavoro elenco]
 
 Questo modulo di ricerca elenca tutti i modelli di flusso di lavoro disponibili.
 
@@ -671,7 +671,7 @@ Questo modulo di ricerca elenca tutti i modelli di flusso di lavoro disponibili.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Outputs]</td> 
+   <td>[!UICONTROL Output]</td> 
    <td> <p>Seleziona le informazioni da includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -681,7 +681,7 @@ Questo modulo di ricerca elenca tutti i modelli di flusso di lavoro disponibili.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search]
+#### [!UICONTROL Ricerca]
 
 Questo modulo di ricerca cerca i record in un oggetto in [!DNL Workfront Proof] che corrispondono alla query di ricerca specificata.
 
@@ -700,23 +700,23 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Search for]</td> 
+   <td>[!UICONTROL Cerca]</td> 
    <td> <p>Selezionare il tipo di record da cercare nel modulo.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>Immetti il Nome bozza della bozza da cercare.</p> </li> 
-     <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>Immetti l’indirizzo e-mail del destinatario da cercare.</p> </li> 
+     <li> <p><strong>[!UICONTROL Bozza]</strong> </p> <p>Immetti il Nome bozza della bozza da cercare.</p> </li> 
+     <li> <p><strong>[!UICONTROL Destinatario]</strong> </p> <p>Immetti l’indirizzo e-mail del destinatario da cercare.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Result Set]</td> 
-   <td>Indica se il modulo cercherà <strong>[!UICONTROL All Matching Records]</strong> o solo <strong>[!UICONTROL First Matching Record]</strong>.</td> 
+   <td>Indica se il modulo cercherà <strong>[!UICONTROL Tutti i record corrispondenti]</strong> o solo il <strong>[!UICONTROL Primo record corrispondente]</strong>.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Sort By]</td> 
+   <td>[!UICONTROL Ordina per]</td> 
    <td>Selezionare il campo in base al quale ordinare i risultati.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Sorting Direction]</td> 
+   <td>[!UICONTROL Direzione ordinamento]</td> 
    <td> <p>Seleziona se desideri ordinare i risultati in modo crescente o decrescente.</p> </td> 
   </tr> 
  </tbody> 

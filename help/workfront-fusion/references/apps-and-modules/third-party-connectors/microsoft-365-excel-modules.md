@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 2ef98aa858c1459f214b12be3bf52f4f731012a2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2260'
+source-wordcount: '2637'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -120,7 +120,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Cerca cartelle di lavoro](#search-workbooks)
 * [Cartelle di lavoro di controllo](#watch-workbooks)
 
-#### [!UICONTROL Download a Workbook]
+#### [!UICONTROL Scarica una cartella di lavoro]
 
 Questo modulo di azione scarica il contenuto della cartella di lavoro di Excel specificata.
 
@@ -133,16 +133,16 @@ Questo modulo di azione scarica il contenuto della cartella di lavoro di Excel s
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
+   <td role="rowheader">[!UICONTROL Scarica una cartella di lavoro]</td> 
    <td> <p>Selezionare la modalità di identificazione della cartella di lavoro per il modulo da scaricare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>Nel campo [!UICONTROL Workbook ID], immettere o mappare l'ID della cartella di lavoro specifica che si desidera scaricare dal modulo.</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>Nel campo [!UICONTROL Workbook] selezionare la cartella di lavoro che si desidera scaricare dal modulo, incluso il relativo percorso se non si trova nella cartella principale.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immettendo manualmente un ID]</strong> </p> <p>Nel campo [!UICONTROL ID cartella di lavoro] immettere o mappare l'ID della cartella di lavoro specifica che si desidera scaricare dal modulo.</p> </li> 
+     <li> <p><strong>[!UICONTROL Selezionando dal percorso]</strong> </p> <p>Nel campo [!UICONTROL Cartella di lavoro] selezionare la cartella di lavoro che si desidera scaricare dal modulo, incluso il relativo percorso se non si trova nella cartella principale.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody>
 
-#### [!UICONTROL Search Workbooks]
+#### [!UICONTROL Cerca cartelle di lavoro]
 
 Questo modulo di azione cerca [!DNL Excel] cartelle di lavoro.
 
@@ -159,7 +159,7 @@ Questo modulo di azione cerca [!DNL Excel] cartelle di lavoro.
    <td> <p>Selezionare la cartella in cui si desidera cercare le cartelle di lavoro.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Filtro]</p> </td> 
    <td> <p>È possibile impostare un filtro per cercare solo le cartelle di lavoro che soddisfano i criteri selezionati.</p> <p>Per ogni filtro, immetti il campo che desideri che il filtro valuti, l’operatore e il valore che desideri che il filtro consenta. Puoi utilizzare più di un filtro aggiungendo regole AND o OR.</p> </td> 
   </tr> 
   <tr> 
@@ -170,7 +170,7 @@ Questo modulo di azione cerca [!DNL Excel] cartelle di lavoro.
 </table>
 </table>
 
-#### [!UICONTROL Watch Workbooks]
+#### [!UICONTROL Cartelle di lavoro osservate]
 
 Questo modulo di attivazione avvia uno scenario quando viene creata una cartella di lavoro.
 
@@ -187,7 +187,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creata una cartella
    <td> <p>Selezionare la cartella da controllare per le nuove cartelle di lavoro.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Filtro]</p> </td> 
    <td> <p>È possibile impostare un filtro per controllare solo le cartelle di lavoro che soddisfano i criteri selezionati.</p> <p>Per ogni filtro, immetti il campo che desideri che il filtro valuti, l’operatore e il valore che desideri che il filtro consenta. Puoi utilizzare più di un filtro aggiungendo regole AND o OR.</p> </td> 
   </tr> 
   <tr> 
@@ -199,15 +199,15 @@ Questo modulo di attivazione avvia uno scenario quando viene creata una cartella
 
 ### Foglio di lavoro
 
-* [[!UICONTROL Add a Worksheet]](#add-a-worksheet)
-* [[!UICONTROL Add a Worksheet Row]](#add-a-worksheet-row)
-* [[!UICONTROL Delete a Worksheet Row]](#delete-a-worksheet-row)
-* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
-* [[!UICONTROL List Worksheets]](#list-worksheets)
-* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
-* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
+* [[!UICONTROL Aggiungi un foglio di lavoro]](#add-a-worksheet)
+* [[!UICONTROL Aggiungi riga foglio di lavoro]](#add-a-worksheet-row)
+* [[!UICONTROL Elimina riga foglio di lavoro]](#delete-a-worksheet-row)
+* [[!UICONTROL Elenca righe foglio di lavoro]](#list-worksheet-rows)
+* [[!UICONTROL Elenca fogli di lavoro]](#list-worksheets)
+* [[!UICONTROL Aggiorna riga foglio di lavoro]](#update-a-worksheet-row)
+* [[!UICONTROL Righe foglio di lavoro di controllo]](#watch-worksheet-rows)
 
-#### [!UICONTROL Add a Worksheet]
+#### [!UICONTROL Aggiungi un foglio di lavoro]
 
 Questo modulo di azione crea un nuovo foglio di lavoro all’interno della cartella di lavoro selezionata.
 
@@ -220,7 +220,7 @@ Questo modulo di azione crea un nuovo foglio di lavoro all’interno della carte
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro in cui si desidera aggiungere un foglio di lavoro, incluso il percorso se la cartella di lavoro non si trova nella directory principale.</p> </td> 
   </tr> 
   <tr> 
@@ -230,7 +230,7 @@ Questo modulo di azione crea un nuovo foglio di lavoro all’interno della carte
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a Worksheet Row]
+#### [!UICONTROL Aggiungi riga foglio di lavoro]
 
 Questo modulo di azione aggiunge una nuova riga al foglio di lavoro selezionato.
 
@@ -243,7 +243,7 @@ Questo modulo di azione aggiunge una nuova riga al foglio di lavoro selezionato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro contenente il foglio di lavoro in cui si desidera aggiungere una riga, incluso il percorso se la cartella di lavoro non si trova nella directory principale.</p> </td> 
   </tr> 
   <tr> 
@@ -251,22 +251,22 @@ Questo modulo di azione aggiunge una nuova riga al foglio di lavoro selezionato.
    <td> <p>Selezionare il foglio di lavoro in cui aggiungere una riga.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Tipo di valori immessi]</p> </td> 
    <td> <p>Selezionare il tipo di valore da immettere nel foglio di lavoro. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel tenta di valutare l'espressione specificata. I nomi delle funzioni in una formula sono in inglese. Esempio: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel tenta di valutare l'espressione specificata. I nomi delle funzioni sono nella lingua dell'applicazione Excel. Esempio: <code>=SUM(A1, 1.5)</code> vs. <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel non valuta il valore. </p> </li> 
+     <li> <p><strong>[!UICONTROL Formule]</strong> </p> <p> Excel tenta di valutare l'espressione specificata. I nomi delle funzioni in una formula sono in inglese. Esempio: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Formule locali]</strong> </p> <p>Excel tenta di valutare l'espressione specificata. I nomi delle funzioni sono nella lingua dell'applicazione Excel. Esempio: <code>=SUM(A1, 1.5)</code> vs. <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Valore]</strong> </p> <p>Excel non valuta il valore. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td role="rowheader" >[!UICONTROL Riga]</td>
     <td>Per ogni colonna, immettere il valore desiderato per la colonna nella nuova riga.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Worksheet Row]
+#### [!UICONTROL Elimina riga foglio di lavoro]
 
 Questo modulo di azione elimina una riga da un foglio di lavoro.
 
@@ -279,7 +279,7 @@ Questo modulo di azione elimina una riga da un foglio di lavoro.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro contenente il foglio di lavoro che include la riga che si desidera eliminare.</p> </td> 
   </tr> 
   <tr> 
@@ -293,7 +293,7 @@ Questo modulo di azione elimina una riga da un foglio di lavoro.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Worksheet Rows]
+#### [!UICONTROL Elenca righe foglio di lavoro]
 
 Questo modulo di azione recupera un elenco di righe nel foglio di lavoro specificato.
 
@@ -306,7 +306,7 @@ Questo modulo di azione recupera un elenco di righe nel foglio di lavoro specifi
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro contenente il foglio di lavoro che include le righe da elencare, incluso il percorso se la cartella di lavoro non si trova nella directory principale.</p> </td> 
   </tr> 
   <tr> 
@@ -320,7 +320,7 @@ Questo modulo di azione recupera un elenco di righe nel foglio di lavoro specifi
  </tbody> 
 </table>
 
-#### [!UICONTROL List Worksheets]
+#### [!UICONTROL Elenca fogli di lavoro]
 
 Questo modulo di azione recupera un elenco di fogli di lavoro nella cartella di lavoro specificata.
 
@@ -333,7 +333,7 @@ Questo modulo di azione recupera un elenco di fogli di lavoro nella cartella di 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro contenente i fogli di lavoro che si desidera elencare nel modulo.</p> </td> 
   </tr> 
   <tr> 
@@ -343,7 +343,7 @@ Questo modulo di azione recupera un elenco di fogli di lavoro nella cartella di 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Worksheet Row]
+#### [!UICONTROL Aggiorna riga foglio di lavoro]
 
 Questo modulo di azione aggiorna una riga del foglio di lavoro esistente.
 
@@ -356,7 +356,7 @@ Questo modulo di azione aggiorna una riga del foglio di lavoro esistente.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro contenente il foglio di lavoro che include la riga che si desidera aggiornare.</p> </td> 
   </tr> 
   <tr> 
@@ -364,12 +364,12 @@ Questo modulo di azione aggiorna una riga del foglio di lavoro esistente.
    <td> <p>Selezionare il foglio di lavoro contenente la riga da aggiornare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Tipo di valori immessi]</p> </td> 
    <td> <p>Selezionare il tipo di valore da immettere nel foglio di lavoro. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel tenta di valutare l'espressione specificata. I nomi delle funzioni in una formula sono in inglese. Esempio: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel tenta di valutare l'espressione specificata. I nomi delle funzioni sono nella lingua dell'applicazione Excel. Esempio: <code>=SUM(A1, 1.5)</code> vs. <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel non valuta il valore. </p> </li> 
+     <li> <p><strong>[!UICONTROL Formule]</strong> </p> <p> Excel tenta di valutare l'espressione specificata. I nomi delle funzioni in una formula sono in inglese. Esempio: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Formule locali]</strong> </p> <p>Excel tenta di valutare l'espressione specificata. I nomi delle funzioni sono nella lingua dell'applicazione Excel. Esempio: <code>=SUM(A1, 1.5)</code> vs. <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Valore]</strong> </p> <p>Excel non valuta il valore. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -377,13 +377,13 @@ Questo modulo di azione aggiorna una riga del foglio di lavoro esistente.
    <td>Seleziona il numero della riga da aggiornare.</td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td role="rowheader" >[!UICONTROL Riga]</td>
     <td>Per ogni colonna, immettere il valore desiderato per la colonna nella nuova riga.</td>
     </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Worksheet Rows]
+#### [!UICONTROL Righe foglio di lavoro di controllo]
 
 Questo modulo di attivazione avvia uno scenario quando viene aggiunta una nuova riga al foglio.
 
@@ -396,7 +396,7 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunta una nuova 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro contenente il foglio di lavoro che si desidera controllare per le nuove righe.</p> </td> 
   </tr> 
   <tr>
@@ -404,7 +404,7 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunta una nuova 
    <td> <p>Selezionare il foglio di Excel da controllare per le nuove righe.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Skip Empty Rows] </td>
+    <td role="rowheader" >[!UICONTROL Ignora righe vuote] </td>
    <td> <p>Abilita questa opzione per non restituire i bundle per le righe vuote nel foglio di lavoro.</p> </td> 
   </tr> 
   <tr> 
@@ -416,16 +416,16 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunta una nuova 
 
 ### Tabella
 
-* [[!UICONTROL Add a table]](#add-a-table)
-* [[!UICONTROL Add a table row]](#add-a-table-row)
-* [[!UICONTROL Delete a table]](#delete-a-table)
-* [[!UICONTROL Get a Table]](#get-a-table)
-* [[!UICONTROL List table rows]](#list-table-rows)
-* [[!UICONTROL List tables]](#list-tables)
-* [[!UICONTROL Update a table]](#update-a-table)
-* [[!UICONTROL Watch table rows]](#watch-table-rows)
+* [[!UICONTROL Aggiungi una tabella]](#add-a-table)
+* [[!UICONTROL Aggiungi una riga di tabella]](#add-a-table-row)
+* [[!UICONTROL Eliminare una tabella]](#delete-a-table)
+* [[!UICONTROL Ottieni una tabella]](#get-a-table)
+* [[!UICONTROL Elenca righe tabella]](#list-table-rows)
+* [[!UICONTROL Elenca tabelle]](#list-tables)
+* [[!UICONTROL Aggiorna una tabella]](#update-a-table)
+* [[!UICONTROL Osserva righe tabella]](#watch-table-rows)
 
-#### [!UICONTROL Add a table]
+#### [!UICONTROL Aggiungi una tabella]
 
 Questo modulo di azione crea un elemento tabella nel foglio di lavoro di Excel.
 
@@ -438,7 +438,7 @@ Questo modulo di azione crea un elemento tabella nel foglio di lavoro di Excel.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workbook] </td> 
+   <td role="rowheader">[!UICONTROL cartella di lavoro] </td> 
    <td> <p>Selezionare la cartella di lavoro contenente il foglio di lavoro in cui si desidera aggiungere una tabella.</p> </td> 
   </tr> 
   <tr> 
@@ -446,7 +446,7 @@ Questo modulo di azione crea un elemento tabella nel foglio di lavoro di Excel.
    <td> <p>Selezionare il foglio di lavoro in cui aggiungere una tabella.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Has headers]</td> 
+   <td role="rowheader">[!UICONTROL Ha Intestazioni]</td> 
    <td> <p>Abilita questa opzione per definire la prima riga come intestazioni di tabella.</p> </td> 
   </tr> 
   <tr> 
@@ -456,7 +456,7 @@ Questo modulo di azione crea un elemento tabella nel foglio di lavoro di Excel.
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a table row]
+#### [!UICONTROL Aggiungi una riga di tabella]
 
 Questo modulo modifica una tabella esistente.
 
@@ -469,7 +469,7 @@ Questo modulo modifica una tabella esistente.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro contenente la tabella in cui si desidera aggiungere una riga.</p> </td> 
   </tr> 
   <tr> 
@@ -477,11 +477,11 @@ Questo modulo modifica una tabella esistente.
    <td> <p>Selezionare il foglio di lavoro contenente la tabella in cui si desidera aggiungere una riga.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Table]</td>
+    <td role="rowheader" >Tabella [!UICONTROL]</td>
    <td>Selezionare la tabella in cui si desidera aggiungere una riga.</td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td role="rowheader" >[!UICONTROL Riga]</td>
     <td>Per ogni colonna, immettere il valore desiderato per la colonna nella nuova riga.</td>
   </tr> 
   <tr> 
@@ -491,7 +491,7 @@ Questo modulo modifica una tabella esistente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a table]
+#### [!UICONTROL Eliminare una tabella]
 
 Questo modulo di azione elimina la tabella specificata da un foglio di lavoro [!DNL Excel].
 
@@ -504,17 +504,17 @@ Questo modulo di azione elimina la tabella specificata da un foglio di lavoro [!
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Delete a table]</td> 
+   <td role="rowheader">[!UICONTROL Elimina una tabella]</td> 
    <td> <p>Selezionare la modalità di identificazione della tabella da eliminare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Immettere o mappare l'ID della cartella di lavoro contenente la tabella da eliminare, quindi immettere o mappare l'ID del foglio di lavoro contenente la tabella.</p> <p>Nel campo [!UICONTROL Table Name] immettere o mappare il nome della tabella che si desidera eliminare.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Selezionare la cartella di lavoro e il foglio di lavoro contenenti la tabella che si desidera eliminare, quindi selezionare la tabella.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID della cartella di lavoro contenente la tabella da eliminare, quindi immettere o mappare l'ID del foglio di lavoro contenente la tabella.</p> <p>Nel campo [!UICONTROL Nome tabella] immettere o mappare il nome della tabella che si desidera eliminare.</p> </li> 
+     <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare la cartella di lavoro e il foglio di lavoro contenenti la tabella che si desidera eliminare, quindi selezionare la tabella.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Table]
+#### [!UICONTROL Ottieni una tabella]
 
 Questo modulo di azione recupera i metadati per la tabella specificata.
 
@@ -531,17 +531,17 @@ Questo modulo di azione recupera i metadati per la tabella specificata.
     --&gt; </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
+   <td role="rowheader">[!UICONTROL Recupera una tabella]</td> 
    <td> <p>Selezionare la modalità di identificazione della tabella che si desidera recuperare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Immettere o mappare l'ID della cartella di lavoro contenente la tabella che si desidera recuperare, quindi immettere o mappare l'ID del foglio di lavoro contenente la tabella.</p> <p>Nel campo [!UICONTROL Table Name], immettere o mappare il nome della tabella che si desidera recuperare.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Selezionare la cartella di lavoro e il foglio di lavoro contenenti la tabella che si desidera recuperare, quindi selezionare la tabella.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID della cartella di lavoro contenente la tabella che si desidera recuperare, quindi immettere o mappare l'ID del foglio di lavoro contenente la tabella.</p> <p>Nel campo [!UICONTROL Nome tabella] immettere o mappare il nome della tabella che si desidera recuperare.</p> </li> 
+     <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare la cartella di lavoro e il foglio di lavoro contenenti la tabella che si desidera recuperare, quindi selezionare la tabella.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List table rows]
+#### [!UICONTROL Elenca righe tabella]
 
 Questo modulo di ricerca recupera un elenco di tutte le righe di tabella in una cartella di lavoro.
 
@@ -554,7 +554,7 @@ Questo modulo di ricerca recupera un elenco di tutte le righe di tabella in una 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro contenente la tabella che include le righe da elencare.</p> </td> 
   </tr> 
   <tr> 
@@ -562,7 +562,7 @@ Questo modulo di ricerca recupera un elenco di tutte le righe di tabella in una 
    <td> <p>Selezionare il foglio di lavoro contenente la tabella che include le righe da elencare</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Table] </td>
+    <td role="rowheader" >Tabella [!UICONTROL] </td>
    <td> <p>Selezionare la tabella contenente le righe da elencare.</p> </td> 
   </tr> 
   <tr> 
@@ -572,7 +572,7 @@ Questo modulo di ricerca recupera un elenco di tutte le righe di tabella in una 
  </tbody> 
 </table>
 
-#### [!UICONTROL List tables]
+#### [!UICONTROL Elenca tabelle]
 
 Questo modulo di ricerca recupera un elenco di tutti gli oggetti tabella.
 
@@ -585,7 +585,7 @@ Questo modulo di ricerca recupera un elenco di tutti gli oggetti tabella.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
+    <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
    <td> <p>Selezionare la cartella di lavoro contenente le tabelle da elencare.</p> </td> 
   </tr> 
   <tr> 
@@ -599,7 +599,7 @@ Questo modulo di ricerca recupera un elenco di tutti gli oggetti tabella.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a table]
+#### [!UICONTROL Aggiorna una tabella]
 
 Questo modulo di azione aggiorna una tabella esistente.
 
@@ -612,11 +612,11 @@ Questo modulo di azione aggiorna una tabella esistente.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Update a table]</td> 
+   <td role="rowheader">[!UICONTROL Aggiorna una tabella]</td> 
    <td> <p>Selezionare la modalità di identificazione della tabella da aggiornare.</p> 
     <ul> 
-     <li> <p><strong>Immetti manualmente</strong> </p> <p>Nel campo [!UICONTROL Workbook ID] immettere o mappare l'ID della cartella di lavoro contenente la tabella che si desidera aggiornare.</p> <p>Nel campo [!UICONTROL Table Name], immettere o mappare il nome della tabella che si desidera aggiornare.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Selezionare la cartella di lavoro e il foglio di lavoro contenenti la tabella che si desidera aggiornare, quindi selezionare la tabella.</p> </li> 
+     <li> <p><strong>Immetti manualmente</strong> </p> <p>Nel campo [!UICONTROL ID cartella di lavoro] immettere o mappare l'ID della cartella di lavoro contenente la tabella che si desidera aggiornare.</p> <p>Nel campo [!UICONTROL Nome tabella] immettere o mappare il nome della tabella che si desidera aggiornare.</p> </li> 
+     <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare la cartella di lavoro e il foglio di lavoro contenenti la tabella che si desidera aggiornare, quindi selezionare la tabella.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -624,11 +624,11 @@ Questo modulo di azione aggiorna una tabella esistente.
    <td> <p>Se si desidera rinominare la tabella, immettere o mappare un nuovo nome per la tabella.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Show Headers]</td> 
+   <td role="rowheader">[!UICONTROL Mostra intestazioni]</td> 
    <td> <p>Abilita questa opzione per mostrare le intestazioni della tabella aggiornata.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Show totals]</td> 
+   <td role="rowheader">[!UICONTROL Mostra totali]</td> 
    <td>Abilita questa opzione per visualizzare i valori totali della tabella.</td> 
   </tr> 
   <tr> 
@@ -638,7 +638,7 @@ Questo modulo di azione aggiorna una tabella esistente.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch table rows]
+#### [!UICONTROL Osserva righe tabella]
 
 Questo trigger avvia uno scenario quando viene aggiunta una nuova riga a una tabella.
 
@@ -657,7 +657,7 @@ Questo trigger avvia uno scenario quando viene aggiunta una nuova riga a una tab
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL cartella di lavoro]</p> </td> 
    <td> <p>Selezionare la cartella di lavoro contenente la tabella che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
@@ -665,7 +665,7 @@ Questo trigger avvia uno scenario quando viene aggiunta una nuova riga a una tab
    <td> <p> Selezionare il foglio di lavoro contenente la tabella che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
+   <td role="rowheader"> <p>Tabella [!UICONTROL]</p> </td> 
    <td> <p>Selezionare la tabella che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
@@ -677,10 +677,10 @@ Questo trigger avvia uno scenario quando viene aggiunta una nuova riga a una tab
 
 ### Altro
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Retrieve data]](#retrieve-data)
+* [[!UICONTROL Effettuare una chiamata API]](#make-an-api-call)
+* [[!UICONTROL Recupera dati]](#retrieve-data)
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Effettuare una chiamata API]
 
 Questo modulo di azione ti consente di effettuare una chiamata API personalizzata.
 
@@ -705,7 +705,7 @@ Questo modulo di azione ti consente di effettuare una chiamata API personalizzat
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
    <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -718,7 +718,7 @@ Questo modulo di azione ti consente di effettuare una chiamata API personalizzat
  </tbody> 
 </table>
 
-#### [!UICONTROL Retrieve data]
+#### [!UICONTROL Recupera dati]
 
 Questa azione recupera i dati dall&#39;intervallo del foglio di lavoro definito e restituisce un bundle per ogni riga.
 
@@ -731,7 +731,7 @@ Questa azione recupera i dati dall&#39;intervallo del foglio di lavoro definito 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workbook] </td> 
+   <td role="rowheader">[!UICONTROL cartella di lavoro] </td> 
    <td> <p>Selezionare la cartella di lavoro contenente i dati da recuperare.</p> </td> 
   </tr> 
   <tr> 

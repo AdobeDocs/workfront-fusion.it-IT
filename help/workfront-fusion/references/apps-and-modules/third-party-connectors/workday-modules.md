@@ -5,9 +5,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -92,7 +92,7 @@ Il connettore Workday utilizza quanto segue:
 
 ## Connetti [!DNL Workday] a [!DNL Workfront Fusion]
 
-1. In qualsiasi modulo [!DNL Workfront Fusion], fai clic su [!UICONTROL Add] accanto al campo [!UICONTROL Connection]
+1. In qualsiasi modulo [!DNL Workfront Fusion], fai clic su [!UICONTROL Aggiungi] accanto al campo [!UICONTROL Connessione]
 
 2. Compila i campi seguenti:
 
@@ -102,7 +102,7 @@ Il connettore Workday utilizza quanto segue:
         <tbody>
             <tr>
                 <td role="rowheader">
-                    <p role="rowheader">[!UICONTROL Connection name]</p>
+                    <p role="rowheader">[!UICONTROL Nome connessione]</p>
                 </td>
                 <td>Immetti un nome per la connessione</td>
             </tr>
@@ -111,19 +111,19 @@ Il connettore Workday utilizza quanto segue:
                 <td>Immettere l'indirizzo dell'host [!DNL Workday] senza <code>https://</code>. Esempio: <code>mycompany.workday.com</code>.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Services URL]</td>
+                <td role="rowheader">[!UICONTROL URL servizi]</td>
                 <td>Immettere l'indirizzo dei servizi Web [!DNL Workday] senza <code>https://</code>. Esempio: <code>mycompany-services.workday.com</code>.</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Tenant name]</td>
+                <td  role="rowheader">[!UICONTROL Nome tenant]</td>
                 <td>Immettere il tenant per l'account [!DNL Workday]. Il tenant è l'identificatore dell'organizzazione ed è visibile nell'URL utilizzato per accedere a Workday. Esempio: nell'indirizzo <code>https://www.myworkday.com/mycompany</code>, il tenant è <code>mycompany</code>.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Client ID]</td>
+                <td role="rowheader">[!UICONTROL ID client]</td>
                 <td>Immettere l'ID client per l'applicazione [!DNL Workday] utilizzata da questa connessione. Otteni questo risultato quando crei l'applicazione in [!DNL Workday].</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Client Secret]</td>
+                <td  role="rowheader">[!UICONTROL Segreto client]</td>
                 <td>Immettere il segreto client per l'applicazione [!DNL Workday] utilizzata dalla connessione. Otteni questo risultato quando crei l'applicazione in [!DNL Workday].</td>
             </tr>
             <tr>
@@ -134,7 +134,7 @@ Il connettore Workday utilizza quanto segue:
     </table>
 
 
-3. Fai clic su [!UICONTROL Continue] per salvare la connessione e tornare al modulo
+3. Fai clic su [!UICONTROL Continua] per salvare la connessione e tornare al modulo
 
 ## [!DNL Workday] moduli e relativi campi
 
@@ -151,16 +151,16 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Azione
 
-* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Crea un record]](#create-a-record)
 
-* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL Eliminare un record]](#delete-a-record)
 
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
+* [[!UICONTROL Effettuare una chiamata API personalizzata]](#make-a-custom-api-call)
 
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL Aggiorna un record]](#update-a-record)
 
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL Crea un record]
 
 Questo modulo di azione crea un singolo record in [!DNL Workday].
 
@@ -173,7 +173,7 @@ Questo modulo di azione crea un singolo record in [!DNL Workday].
             <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td  role="rowheader">[!UICONTROL Tipo di record]</td>
             <td>Selezionare il tipo di record da creare.</td>
         </tr>
         <tr>
@@ -181,13 +181,13 @@ Questo modulo di azione crea un singolo record in [!DNL Workday].
             <td>Inserisci o mappa l’ID del record che desideri creare.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td role="rowheader">[!UICONTROL ID sottorisorsa]</td>
             <td >Immetti o mappa l’ID della risorsa secondaria da creare.</td>
         </tr>
     </tbody>
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL Eliminare un record]
 
 Questo modulo di azione elimina un singolo record in [!DNL Workday].
 
@@ -202,15 +202,15 @@ Questo modulo di azione elimina un singolo record in [!DNL Workday].
             <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a [!DNL Workfront Fusion], vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record type]</td>
+            <td  role="rowheader">[!UICONTROL Tipo di record]</td>
             <td>Selezionare il tipo di record che si desidera eliminare.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Specific record type]</td>
+            <td role="rowheader">[!UICONTROL Tipo di record specifico]</td>
             <td>Selezionare il tipo di record specifico che si desidera eliminare. Questi sono basati sul tipo di record scelto.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td  role="rowheader">[!UICONTROL ID sottorisorsa]</td>
             <td>Immetti o mappa l’ID della risorsa secondaria da eliminare.</td>
         </tr>
         <tr>
@@ -221,7 +221,7 @@ Questo modulo di azione elimina un singolo record in [!DNL Workday].
 </table>
 
 
-### [!UICONTROL Make a custom API call]
+### [!UICONTROL Effettuare una chiamata API personalizzata]
 
 Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all&#39;API [!DNL Workday]. In questo modo è possibile creare un&#39;automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Workday].
 
@@ -247,10 +247,10 @@ Il modulo restituisce il codice di stato a, insieme alle intestazioni e al corpo
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] aggiunge le intestazioni di autorizzazione.</p> </td> 
+   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
    <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -263,7 +263,7 @@ Il modulo restituisce il codice di stato a, insieme alle intestazioni e al corpo
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL Aggiorna un record]
 
 Questo modulo di azione aggiorna un singolo record in [!DNL Workday].
 
@@ -273,10 +273,10 @@ Questo modulo di azione aggiorna un singolo record in [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] a Workfront Fusion]</a></td>
+            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >[!UICONTROL Connetti [!DNL Workday] a Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td  role="rowheader">[!UICONTROL Tipo di record]</td>
             <td>Selezionare il tipo di record da aggiornare.</td>
         </tr>
         <tr>
@@ -284,7 +284,7 @@ Questo modulo di azione aggiorna un singolo record in [!DNL Workday].
             <td>Immetti o mappa l’ID del record da aggiornare.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td role="rowheader">[!UICONTROL ID sottorisorsa]</td>
             <td >Immetti o mappa l’ID della risorsa secondaria da aggiornare.</td>
         </tr>
     </tbody>
@@ -292,12 +292,12 @@ Questo modulo di azione aggiorna un singolo record in [!DNL Workday].
 
 ### Ricerca
 
-* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL Leggi un record]](#read-a-record)
 
-* [[!UICONTROL List records]](#list-records)
+* [[!UICONTROL Elenca record]](#list-records)
 
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Leggi un record]
 
 Questo modulo di azione legge un singolo record.
 
@@ -309,14 +309,14 @@ Questo modulo di azione legge un singolo record.
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] a Workfront Fusion]</a></td>
+            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >[!UICONTROL Connetti [!DNL Workday] a Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record type]</td>
+            <td  role="rowheader">[!UICONTROL Tipo di record]</td>
             <td>Selezionare il tipo di record che si desidera eliminare.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Specific record type]</td>
+            <td role="rowheader">[!UICONTROL Tipo di record specifico]</td>
             <td>Selezionare il tipo di record specifico che si desidera leggere. Questi sono basati sul tipo di record scelto.</td>
         </tr>
         <tr>
@@ -326,7 +326,7 @@ Questo modulo di azione legge un singolo record.
     </tbody>
 </table>
 
-#### [!UICONTROL List records]
+#### [!UICONTROL Elenca record]
 
 Questo modulo di ricerca recupera un elenco di record del tipo specificato.
 
@@ -339,7 +339,7 @@ Questo modulo di ricerca recupera un elenco di record del tipo specificato.
               <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a [!DNL Workfront Fusion], vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a [!DNL Workfront Fusion]</a></td>
           </tr>
           <tr>
-              <td  role="rowheader">[!UICONTROL Record Type]</td>
+              <td  role="rowheader">[!UICONTROL Tipo di record]</td>
               <td>Selezionare il tipo di record da recuperare.</td>
           </tr>
           <tr>

@@ -4,10 +4,10 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 7357044d19f93a91d22cede81e7316ff86733fdf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 0%
+source-wordcount: '1575'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -89,7 +89,7 @@ Il connettore ServiceNow utilizza quanto segue:
 
 Per creare una connessione per i moduli [!DNL ServiceNow]:
 
-1. Fare clic su **[!UICONTROL Add]** accanto alla casella [!UICONTROL Connection] quando si inizia la configurazione del primo modulo [!DNL ServiceNow].
+1. Fare clic su **[!UICONTROL Aggiungi]** accanto alla casella [!UICONTROL Connessione] quando si inizia la configurazione del primo modulo [!DNL ServiceNow].
 1. Immetti quanto segue:
 
    <table style="table-layout:auto"> 
@@ -97,7 +97,7 @@ Per creare una connessione per i moduli [!DNL ServiceNow]:
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Nome connessione]</p> </td> 
       <td>Immettere un nome per la nuova connessione [!DNL ServiceNow]</td> 
      </tr> 
      <tr> 
@@ -125,7 +125,7 @@ Per creare una connessione per i moduli [!DNL ServiceNow]:
 
    <!--Markdown placeholder-->
 
-## [!UICONTROL ServiceNow] moduli e relativi campi
+## Moduli [!UICONTROL ServiceNow] e relativi campi
 
 Quando configuri [!DNL ServiceNow] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL ServiceNow], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
@@ -135,13 +135,13 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 >[!NOTE]
 >
->* Se si seleziona un record personalizzato in un campo &quot;[!UICONTROL Record type]&quot;, il caricamento dei campi personalizzati potrebbe richiedere del tempo.
+>* Se si seleziona un record personalizzato in un campo &quot;[!UICONTROL Tipo di record]&quot;, il caricamento dei campi personalizzati potrebbe richiedere del tempo.
 >
 >* Se non sono presenti record personalizzati, il menu a discesa del campo &quot;Tipo di record&quot; sarà vuoto.
 
 ### Trigger
 
-#### [!UICONTROL Watch records]
+#### [!UICONTROL Osserva record]
 
 Questo modulo di attivazione attiva uno scenario quando viene creato o aggiornato un record.
 
@@ -154,11 +154,11 @@ Questo modulo di attivazione attiva uno scenario quando viene creato o aggiornat
    <td> <p>Per istruzioni sulla connessione dell'account ServiceNow a [!DNL Workfront Fusion], vedere <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connettere [!DNL ServiceNow] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di tabella]</td> 
    <td>Seleziona se la tabella da guardare è una tabella personalizzata o standard.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di record]</td> 
    <td>Selezionare il tipo di record che si desidera controllare.</td> 
   </tr> 
   <tr> 
@@ -166,11 +166,11 @@ Questo modulo di attivazione attiva uno scenario quando viene creato o aggiornat
    <td>Selezionare il tipo di valori che si desidera visualizzare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Output]</td> 
    <td>Selezionare i campi che si desidera vengano generati dal modulo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td role="rowheader">[!UICONTROL Filtro]</td> 
    <td>Specificare se si desidera controllare i nuovi record o i record aggiornati.</td> 
   </tr> 
   <tr> 
@@ -182,16 +182,16 @@ Questo modulo di attivazione attiva uno scenario quando viene creato o aggiornat
 
 ### Azioni
 
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Deactivate a User]](#deactivate-a-user)
-* [[!UICONTROL Delete a record]](#delete-a-record)
-* [[!UICONTROL Download an attachment]](#download-an-attachment)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Upload an attachment]](#upload-an-attachment)
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL Crea un record]](#create-a-record)
+* [[!UICONTROL Chiamata API personalizzata]](#custom-api-call)
+* [[!UICONTROL Disattiva un utente]](#deactivate-a-user)
+* [[!UICONTROL Eliminare un record]](#delete-a-record)
+* [[!UICONTROL Scarica un allegato]](#download-an-attachment)
+* [[!UICONTROL Leggi un record]](#read-a-record)
+* [[!UICONTROL Carica un allegato]](#upload-an-attachment)
+* [[!UICONTROL Aggiorna un record]](#update-a-record)
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL Crea un record]
 
 Questo modulo azioni crea un nuovo record [!DNL ServiceNow].
 
@@ -206,17 +206,17 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account ServiceNow a [!DNL Workfront Fusion], vedere <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connettere [!DNL ServiceNow] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di tabella]</td> 
    <td>Specificare se si desidera creare un record in una tabella personalizzata o standard.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di record]</td> 
    <td>Selezionare il tipo di record [!DNL ServiceNow] che si desidera venga creato dal modulo. È quindi possibile compilare i campi disponibili per questo tipo di record.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Chiamata API personalizzata]
 
 Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all&#39;API [!DNL ServiceNow]. In questo modo è possibile creare un&#39;automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL ServiceNow].
 
@@ -231,7 +231,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account ServiceNow a [!DNL Workfront Fusion], vedere <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connettere [!DNL ServiceNow] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Relative URL]</td> 
+   <td role="rowheader">[!UICONTROL URL relativo]</td> 
    <td> Immettere un percorso relativo a <code>https://&ltinstance_url&gt/api/</code>. </td> 
   </tr> 
   <tr> 
@@ -243,7 +243,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
    <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -256,7 +256,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Deactivate a User]
+#### [!UICONTROL Disattiva un utente]
 
 Questo modulo di azione disattiva un utente in [!DNL ServiceNow] utilizzando l&#39;ID di sistema.
 
@@ -275,7 +275,7 @@ Questo modulo di azione disattiva un utente in [!DNL ServiceNow] utilizzando l&#
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL Eliminare un record]
 
 Questo modulo di azione elimina un incidente o un utente.
 
@@ -290,17 +290,17 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account ServiceNow a [!DNL Workfront Fusion], vedere <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connettere [!DNL ServiceNow] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di record]</td> 
    <td>Specificare se si desidera eliminare un incidente o un utente.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL System ID]</td> 
+   <td role="rowheader">[!UICONTROL ID sistema]</td> 
    <td>Immettere o mappare l'ID [!DNL ServiceNow] univoco del record che si desidera eliminare dal modulo.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Download an attachment]
+#### [!UICONTROL Scarica un allegato]
 
 Questo modulo di azione scarica un allegato in un record [!DNL ServiceNow].
 
@@ -319,7 +319,7 @@ Questo modulo di azione scarica un allegato in un record [!DNL ServiceNow].
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Leggi un record]
 
 Questo modulo di azione legge un record [!DNL ServiceNow] utilizzando l&#39;ID di sistema.
 
@@ -340,11 +340,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Immettere o mappare l'ID [!DNL ServiceNow] univoco del record che si desidera venga letto dal modulo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di tabella]</td> 
    <td>Specificare se il record da leggere si trova in una tabella personalizzata o in una tabella standard.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di record]</td> 
    <td>Selezionare il tipo di record [!DNL ServiceNow] che si desidera venga letto dal modulo.</td> 
   </tr> 
   <tr> 
@@ -352,13 +352,13 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Selezionare il tipo di valori che si desidera visualizzare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Output]</td> 
    <td>Selezionare i campi che si desidera vengano generati dal modulo.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL Aggiorna un record]
 
 Questo modulo azioni crea un nuovo record [!DNL ServiceNow].
 
@@ -377,17 +377,17 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Immettere o mappare l'ID [!DNL ServiceNow] univoco del record che si desidera aggiornare nel modulo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di tabella]</td> 
    <td>Specificare se il record da aggiornare si trova in una tabella personalizzata o in una tabella standard.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di record]</td> 
    <td>Selezionare il tipo di record [!DNL ServiceNow] da aggiornare nel modulo. È quindi possibile compilare i campi disponibili per questo tipo di record.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload an attachment]
+#### [!UICONTROL Carica un allegato]
 
 Questo modulo di azione carica un allegato in un record [!DNL ServiceNow].
 
@@ -400,11 +400,11 @@ Questo modulo di azione carica un allegato in un record [!DNL ServiceNow].
    <td> <p>Per istruzioni sulla connessione dell'account ServiceNow a [!DNL Workfront Fusion], vedere <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connettere [!DNL ServiceNow] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table name]</td> 
+   <td role="rowheader">[!UICONTROL Nome tabella]</td> 
    <td>Immettere o mappare il nome della tabella in cui si desidera caricare l'allegato.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL System ID]</td> 
+   <td role="rowheader">[!UICONTROL ID sistema]</td> 
    <td>Immettere o mappare l'ID [!DNL ServiceNow] univoco dell'elemento in cui si desidera caricare l'allegato.</td> 
   </tr> 
   <tr> 
@@ -416,7 +416,7 @@ Questo modulo di azione carica un allegato in un record [!DNL ServiceNow].
 
 ### Ricerche
 
-#### [!UICONTROL Search for records]
+#### [!UICONTROL Cerca record]
 
 Questo modulo cerca i record utilizzando i criteri selezionati.
 
@@ -431,33 +431,33 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
    <td> <p>Per istruzioni sulla connessione dell'account ServiceNow a [!DNL Workfront Fusion], vedere <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Connettere [!DNL ServiceNow] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di tabella]</td> 
    <td>Seleziona se la tabella da cercare è una tabella personalizzata o standard.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di record]</td> 
    <td>Selezionare il tipo di record che si desidera cercare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Result set]</td> 
+   <td role="rowheader">[!UICONTROL Set di risultati]</td> 
    <td>Specificare se si desidera che il modulo restituisca tutti i record che corrispondono ai criteri oppure solo il primo record corrispondente. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximal count of records]</td> 
+   <td role="rowheader">[!UICONTROL Conteggio massimo dei record]</td> 
    <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search type]</td> 
+   <td role="rowheader">Tipo di ricerca [!UICONTROL]</td> 
    <td> <p>Seleziona il tipo di ricerca da eseguire nel modulo</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Advanced query]</strong> </p> 
+     <li> <p><strong>[!UICONTROL Query avanzata]</strong> </p> 
       <ul> 
-       <li> <p>[!UICONTROL Search Query]</p> <p>Immettere la query di ricerca personalizzata. Per informazioni su [!DNL ServiceNow] query di ricerca personalizzate, consulta la <a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">documentazione sulle query ServiceNow</a>.</p> </li> 
+       <li> <p>Query di ricerca [!UICONTROL]</p> <p>Immettere la query di ricerca personalizzata. Per informazioni su [!DNL ServiceNow] query di ricerca personalizzate, consulta la <a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">documentazione sulle query ServiceNow</a>.</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL Simple]</strong> </p> 
+     <li> <p><strong>[!UICONTROL Semplice]</strong> </p> 
       <ul> 
-       <li> <p>[!UICONTROL Search Criteria]</p> <p>Immettere i criteri in base ai quali si desidera eseguire la ricerca nel modulo. </li> 
-       <li> <p>[!UICONTROL Sort by]</p> <p>Indica per quale campo desideri che il modulo ordini i risultati e se devono essere ordinati in ordine crescente o decrescente.</p> </li> 
+       <li> <p>Criteri di ricerca di [!UICONTROL]</p> <p>Immettere i criteri in base ai quali si desidera eseguire la ricerca nel modulo. </li> 
+       <li> <p>[!UICONTROL Ordina per]</p> <p>Indica per quale campo desideri che il modulo ordini i risultati e se devono essere ordinati in ordine crescente o decrescente.</p> </li> 
       </ul> </li> 
     </ul> <p> </p> </td> 
   </tr> 
@@ -466,7 +466,7 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
    <td>Selezionare il tipo di valori che si desidera visualizzare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Output]</td> 
    <td>Selezionare i campi che si desidera vengano generati dal modulo.</td> 
   </tr> 
  </tbody> 

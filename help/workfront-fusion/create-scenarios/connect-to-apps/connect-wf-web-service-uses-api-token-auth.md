@@ -4,7 +4,7 @@ description: Alcuni servizi non consentono alle soluzioni di integrazione, come 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -109,7 +109,7 @@ Per collegare un servizio web allo scenario Workfront Fusion, devi utilizzare HT
      </tr> 
      <tr> 
       <td role="rowheader"> Metodo</td> 
-      <td> <p><code>POST</code> </p> <p>Il metodo utilizzato dipende dall’endpoint corrispondente. L’endpoint Pushover per la trasmissione dei messaggi utilizza il metodo POST.</p> </td> 
+      <td> <p><code>POST</code> </p> <p>Il metodo utilizzato dipende dall’endpoint corrispondente. L’endpoint di push dei messaggi utilizza il metodo POST.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p> Intestazioni</p> </td> 

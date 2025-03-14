@@ -4,7 +4,7 @@ description: Una connessione deve rispettare i requisiti impostati dall’API de
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -66,7 +66,7 @@ Per istruzioni sulla creazione di una connessione senza considerazioni particola
 
 ## Connettersi a un’app o a un servizio Adobe
 
-Per connetterti a un’app o a un servizio di Adobe, potresti aver bisogno di informazioni provenienti da Adobe Admin Console, ad esempio l’ID organizzazione o l’ID account tecnico.
+Per connetterti a un’app o a un servizio Adobe, potresti aver bisogno di informazioni provenienti da Adobe Admin Console, ad esempio il tuo ID organizzazione o ID account tecnico.
 
 Puoi anche utilizzare il modulo Adobe Authenticator per connetterti a qualsiasi API Adobe, utilizzando una singola connessione. Questo consente di connettersi più facilmente a prodotti Adobe che non dispongono ancora di un connettore Fusion dedicato.
 

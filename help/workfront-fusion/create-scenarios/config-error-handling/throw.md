@@ -8,9 +8,9 @@ description: In alcuni casi può essere utile interrompere forzatamente l’esec
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -72,7 +72,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 
 ## Soluzione alternativa per `throw`
 
-Per generare un errore in modo condizionale, puoi configurare un modulo in modo che, durante il suo funzionamento, abbia intenzionalmente esito negativo. Una possibilità è quella di utilizzare il modulo [!UICONTROL JSON] > [!UICONTROL Parse JSON], configurato per generare facoltativamente un errore (`BundleValidationError` in questo caso):
+Per generare un errore in modo condizionale, puoi configurare un modulo in modo che, durante il suo funzionamento, abbia intenzionalmente esito negativo. È possibile utilizzare il modulo [!UICONTROL JSON] > [!UICONTROL Analizza JSON], configurato per generare facoltativamente un errore (`BundleValidationError` in questo caso):
 
 ![Errore JSON](assets/json-parse-json.png)
 

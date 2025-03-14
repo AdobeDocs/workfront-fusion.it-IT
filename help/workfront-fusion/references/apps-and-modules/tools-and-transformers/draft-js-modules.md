@@ -4,14 +4,14 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi utilizzare i 
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 54098f2da1db85d9a596f3fc4753aebb298d5b78
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 2%
+source-wordcount: '244'
+ht-degree: 1%
 
 ---
 
-# [!UICONTROL Draft.js] moduli
+# [!UICONTROL Moduli Draft.js]
 
 In uno scenario [!DNL Adobe Workfront Fusion], è possibile utilizzare i moduli [!UICONTROL Draft.js] per convertire Draft.js in HTML e HTML in Draft.js. È possibile utilizzarlo in combinazione con i moduli di Workfront per aggiungere testo RTF o leggere testo RTF dai campi di Workfront.
 
@@ -21,6 +21,8 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
 <table style="table-layout:auto">
@@ -28,27 +30,25 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacchetto</td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
    <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza</td> 
-   <td> <p>Nuovo: [!UICONTROL Standard]</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza [!DNL Workfront Fusion].</p>
-   <p>Oppure</p>
-   <p>Legacy: qualsiasi </p>
+   <p>Nessun requisito di licenza per Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] Piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Il piano [!DNL Workfront Fusion] è incluso.</li></ul>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,9 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## [!UICONTROL Draft.js to HTML]
++++
+
+## [!UICONTROL Bozza.js in HTML]
 
 Questo modulo converte Draft.js in HTML.
 
@@ -70,12 +72,12 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Immettete il testo Draft.js.</p> </td> 
+   <td> <p>Immettete o mappate il testo Draft.js da convertire in HTML.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL HTML to Draft.js]
+## [!UICONTROL Da HTML a Bozza.js]
 
 Questo modulo converte il codice HTML in Draft.js.
 
@@ -85,7 +87,7 @@ Questo modulo converte il codice HTML in Draft.js.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Immetti il codice HTML da convertire in Draft.js.</p> </td> 
+   <td> <p>Immetti o mappa il codice HTML da convertire in Draft.js.</p> </td> 
   </tr> 
  </tbody> 
 </table>

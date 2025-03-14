@@ -4,9 +4,9 @@ description: Con i  [!DNL Adobe Workfront Fusion] moduli Figma è possibile recu
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -93,7 +93,7 @@ Il connettore Figma utilizza quanto segue:
 
 Per creare una connessione per i moduli Figma:
 
-1. In qualsiasi modulo Figma, fare clic su **[!UICONTROL Add]** accanto alla casella Connessione.
+1. In qualsiasi modulo Figma, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
 1. Compila i campi seguenti:
 
@@ -104,24 +104,24 @@ Per creare una connessione per i moduli Figma:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td role="rowheader">[!UICONTROL Tipo di connessione]</td>
         <td>
           <p> Per le nuove connessioni, selezionare <code>Figma</code> senza il tag Legacy. </p><p>Figma ha modificato i requisiti di autenticazione nel gennaio 2025. Il tipo di connessione <code>Figma</code> soddisfa i nuovi requisiti. Il tipo di connessione <code>Figma (Legacy)</code> verrà rimosso in futuro.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL Nome connessione]</td>
         <td>
           <p>Immettere un nome per la connessione.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Immetti [!UICONTROL Figme] [!UICONTROL Client ID].</td>
+        <td role="rowheader">[!UICONTROL ID client]</td>
+        <td>Immetti il [!UICONTROL Figme] [!UICONTROL Client ID].</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Immetti la tua Figma [!UICONTROL Client Secret].</td>
+        <td role="rowheader">[!UICONTROL Segreto client]</td>
+        <td>Immetti il segreto client Figma [!UICONTROL].</td>
         </tr>
         <tr>
         <td role="rowheader">Ambiti personalizzati</td>
@@ -134,7 +134,7 @@ Per creare una connessione per i moduli Figma:
       </tbody>
     </table>
 
-1. Fare clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
 
 
 
@@ -164,7 +164,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Pubblica un commento](#post-a-comment)
 
 
-#### [!UICONTROL Delete a comment]
+#### [!UICONTROL Elimina commento]
 
 Questo modulo elimina un singolo commento da un file.
 
@@ -178,17 +178,17 @@ Questo modulo elimina un singolo commento da un file.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL File ID]</td>
+      <td role="rowheader">[!UICONTROL ID file]</td>
       <td>Immettere o mappare l'ID file del file da cui si desidera aggiungere un commento. </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Comment ID]</td>
+      <td role="rowheader">[!UICONTROL ID commento]</td>
       <td>Immettere il testo del commento che si desidera eliminare.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List comments]
+#### [!UICONTROL Elenca commenti]
 
 Questo modulo di ricerca elenca tutti i commenti allegati a un singolo file in [!DNL Figma].
 
@@ -201,28 +201,28 @@ Questo modulo di ricerca elenca tutti i commenti allegati a un singolo file in [
       <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL File ID]</td>
+      <td role="rowheader">[!UICONTROL ID file]</td>
       <td>
         <p>Immettere o mappare l'ID file per il quale si desidera recuperare i commenti. </p>
         <ul>
           <li>
-            <p>Se non si conosce l'ID, fare clic su <b>[!UICONTROL Find Files]</b> e immettere o mappare l'ID del progetto a cui è associato il file, quindi selezionare il file.</p>
+            <p>Se non si conosce l'ID, fare clic su <b>[!UICONTROL Trova file]</b> e immettere o mappare l'ID del progetto a cui è associato il file, quindi selezionare il file.</p>
           </li>
           <li>
-            <p>Se non si conosce l'ID del progetto, fare clic su <b>[!UICONTROL Find Projects]</b> e immettere o mappare l'ID del team a cui appartiene il progetto a cui è associato il file, quindi selezionare il progetto e selezionare il file.</p>
+            <p>Se non si conosce l'ID del progetto, fare clic su <b>[!UICONTROL Trova progetti]</b> e immettere o mappare l'ID del team a cui appartiene il progetto a cui è associato il file, quindi selezionare il progetto e selezionare il file.</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned comments]</td>
+      <td role="rowheader">[!UICONTROL Numero massimo di commenti restituiti]</td>
       <td>Immettere o mappare il numero massimo di commenti che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td>
     </tr>
   </tbody>
 </table>
 
 
-#### [!UICONTROL Post a comment]
+#### [!UICONTROL Pubblica un commento]
 
 Questo modulo di azione pubblica un commento su un file Figma.
 
@@ -235,15 +235,15 @@ Questo modulo di azione pubblica un commento su un file Figma.
       <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
-      <td  role="rowheader">[!UICONTROL File ID]</td>
+      <td  role="rowheader">[!UICONTROL ID file]</td>
       <td>
         <p>Immettere o mappare l'ID file del file in cui si desidera inserire un commento. </p>
         <ul>
           <li>
-            <p>Se non si conosce l'ID del file, fare clic su <b>[!UICONTROL Find Files]</b> e immettere o mappare l'ID del progetto a cui è associato il file, quindi selezionare il file.</p>
+            <p>Se non si conosce l'ID del file, fare clic su <b>[!UICONTROL Trova file]</b> e immettere o mappare l'ID del progetto a cui è associato il file, quindi selezionare il file.</p>
           </li>
           <li>
-            <p>Se si tenta di trovare l'ID del file e non si conosce l'ID del progetto, fare clic su <b>[!UICONTROL Find Projects]</b> e immettere o mappare l'ID del team a cui appartiene il progetto a cui è associato il file. Seleziona il progetto, quindi il file.</p>
+            <p>Se si sta tentando di trovare l'ID del file e non si conosce l'ID del progetto, fare clic su <b>[!UICONTROL Trova progetti]</b> e immettere o mappare l'ID del team proprietario del progetto a cui è associato il file. Seleziona il progetto, quindi il file.</p>
           </li>
         </ul>
       </td>
@@ -267,7 +267,7 @@ Questo modulo di azione pubblica un commento su un file Figma.
 * [Elencare progetti](#list-projects)
 
 
-#### [!UICONTROL Get a file or image]
+#### [!UICONTROL Ottieni un file o un&#39;immagine]
 
 Questo modulo di azione recupera un singolo file o immagine da una libreria Figma
 
@@ -280,33 +280,33 @@ Questo modulo di azione recupera un singolo file o immagine da una libreria Figm
       <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Object type]</td>
+      <td role="rowheader">[!UICONTROL Tipo di oggetto]</td>
       <td>
         <p>Selezionare il tipo di oggetto da recuperare.</p>
         <ul>
           <li>
             <p><b>[!UICONTROL File]</b>
             </p>
-            <p>Il modulo restituisce il documento a cui [!UICONTROL Key] fa riferimento come oggetto JSON. La chiave del file può essere analizzata da qualsiasi URL di file Figma.</p>
-            <p>Per i campi, vedere <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Get a file or image: File]</a>.</p>
+            <p>Il modulo restituisce il documento a cui fa riferimento [!UICONTROL Key] come oggetto JSON. La chiave del file può essere analizzata da qualsiasi URL di file Figma.</p>
+            <p>Per i campi, vedere <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Ottenere un file o un'immagine: File]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL File nodes]</b>
+            <p><b>[!UICONTROL Nodi file]</b>
             </p>
             <p>Restituisce i nodi a cui fanno riferimento gli ID come oggetto JSON. I nodi vengono recuperati dal file [!DNL Figma] a cui fa riferimento [!UICONTROL Key].</p>
-            <p>Per i campi, vedere <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Get a file or image: File nodes]</a>.</p>
+            <p>Per i campi, vedere <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Ottenere un file o un'immagine: Nodi di file]</a>.</p>
           </li>
           <li>
             <p><b>[!UICONTROL Image]</b>
             </p>
             <p>Il modulo esegue il rendering delle immagini da un file.</p>
-            <p>Per i campi, vedere <a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Get a file or image: Image]</a>.</p>
+            <p>Per i campi, vedere <a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Ottenere un file o un'immagine: Image]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Image fills]</b>
+            <p><b>[!UICONTROL Riempimenti immagine]</b>
             </p>
             <p>Il modulo restituisce i collegamenti di download per tutte le immagini presenti nei riempimenti immagine di un documento. I riempimenti di immagini rappresentano il modo in cui [!DNL Figma] rappresenta qualsiasi immagine fornita dall'utente. Quando si trascina un'immagine in [!DNL Figma], [!DNL Figma] crea un rettangolo con un singolo riempimento che rappresenta l'immagine e l'utente è in grado di trasformare il rettangolo (e le proprietà sul riempimento).</p>
-            <p>Per i campi, vedere <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Get a file or image: Image fills]</a>.</p>
+            <p>Per i campi, vedere <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Ottenere un file o un'immagine: riempimenti immagine]</a>.</p>
           </li>
         </ul>
       </td>
@@ -322,15 +322,15 @@ Questo modulo di azione recupera un singolo file o immagine da una libreria Figm
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL File Key]</td>
       <td>Seleziona il file da cui vuoi restituire il JSON.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Version ID]</td>
+      <td role="rowheader">[!UICONTROL ID versione]</td>
       <td>Immettere o mappare la versione del file che si desidera venga restituita dal modulo. Per il modulo corrente, lascia vuoto questo campo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Node IDs]</td>
+      <td role="rowheader">[!UICONTROL ID nodo]</td>
       <td>
         <p>Per restituire solo un sottoinsieme del documento, immettere i nodi che si desidera restituire al modulo. Il modulo restituisce i nodi elencati, i relativi nodi secondari e qualsiasi cosa tra il nodo principale e i nodi elencati.</p>
         <p>Per ogni nodo da restituire, fare clic su <b>[!UICONTROL Add]</b> e immettere il testo del nodo.</p>
@@ -375,18 +375,18 @@ Questo modulo di azione recupera un singolo file o immagine da una libreria Figm
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL File Key]</td>
       <td>Seleziona il file da cui vuoi restituire il JSON.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Node IDs]</td>
+      <td role="rowheader">[!UICONTROL ID nodo]</td>
       <td>
         <p>Immettere i nodi che si desidera vengano restituiti e convertiti dal modulo</p>
         <p>Per ogni nodo da restituire, fare clic su <b>[!UICONTROL Add]</b> e immettere il testo del nodo.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Version ID]</td>
+      <td role="rowheader">[!UICONTROL ID versione]</td>
       <td>Immettere o mappare la versione del file che si desidera venga restituita dal modulo. Per il modulo corrente, lascia vuoto questo campo.</td>
     </tr>
     <tr>
@@ -425,11 +425,11 @@ Questo modulo di azione recupera un singolo file o immagine da una libreria Figm
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL File Key]</td>
       <td>Seleziona il file da cui vuoi restituire il JSON.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Node IDs]</td>
+      <td role="rowheader">[!UICONTROL ID nodo]</td>
       <td>
         <p>Immetti i nodi di cui vuoi eseguire il rendering nel modulo.</p>
         <p>Per ogni nodo di cui si desidera eseguire il rendering, fare clic su <b>[!UICONTROL Add]</b> e immettere il testo del nodo.</p>
@@ -445,7 +445,7 @@ Questo modulo di azione recupera un singolo file o immagine da una libreria Figm
         <p>Selezionate il formato per l'output dell'immagine.</p>
         <ul>
           <li>
-            <p>JPG-</p>
+            <p>JPG</p>
           </li>
           <li>
             <p>PNG</p>
@@ -460,19 +460,19 @@ Questo modulo di azione recupera un singolo file o immagine da una libreria Figm
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SVG - Include ID]</td>
+      <td role="rowheader">[!UICONTROL SVG - ID inclusione]</td>
       <td>Abilita questa opzione per includere gli attributi ID per tutti gli elementi SVG. Impostazione predefinita: [!UICONTROL false].</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SVG - Simplify Stroke]</td>
+      <td role="rowheader">[!UICONTROL SVG - Tratto semplificato]</td>
       <td>Abilita questa opzione per semplificare i tratti interni ed esterni e se possibile utilizza l'attributo tratto anziché &lt;mask&gt;. Impostazione predefinita: [!UICONTROL true].</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Use absolute bounds]</td>
+      <td role="rowheader">[!UICONTROL Usa limiti assoluti]</td>
       <td>Abilita questa opzione per utilizzare le dimensioni complete del nodo indipendentemente dal fatto che sia ritagliato o meno o che lo spazio intorno a esso sia vuoto. Utilizzare questa opzione per esportare nodi di testo senza ritaglio. Impostazione predefinita: [!UICONTROL false].</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Version]</td>
+      <td role="rowheader">[!UICONTROL versione]</td>
       <td>Immettere o mappare la versione del file che si desidera venga restituita dal modulo. Per il modulo corrente, lascia vuoto questo campo.</td>
     </tr>
   </tbody>
@@ -485,13 +485,13 @@ Questo modulo di azione recupera un singolo file o immagine da una libreria Figm
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL File Key]</td>
       <td>Seleziona il file da cui vuoi restituire il JSON.</td>
     </tr>
   </tbody>
 </table>
 
-### [!UICONTROL List file version history]
+### [!UICONTROL Elenca cronologia versioni file]
 
 Questo modulo di ricerca restituisce la cronologia delle versioni di un singolo file in [!UICONTROL Figma].
 <table style="table-layout:auto"> 
@@ -502,27 +502,27 @@ Questo modulo di ricerca restituisce la cronologia delle versioni di un singolo 
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     <tr>
-      <td role="rowheader">[!UICONTROL File ID]</td>
+      <td role="rowheader">[!UICONTROL ID file]</td>
       <td>
         <p>Immetti o mappa l’ID file per il quale desideri recuperare la cronologia delle versioni. </p>
         <ul>
           <li>
-            <p>Se non si conosce l'ID del file, fare clic su <b>[!UICONTROL Find Files]</b> e immettere o mappare l'ID del progetto a cui è associato il file, quindi selezionare il file.</p>
+            <p>Se non si conosce l'ID del file, fare clic su <b>[!UICONTROL Trova file]</b> e immettere o mappare l'ID del progetto a cui è associato il file, quindi selezionare il file.</p>
           </li>
           <li>
-            <p>Se si tenta di trovare l'ID del file e non si conosce l'ID del progetto, fare clic su <b>[!UICONTROL Find Projects]</b> e immettere o mappare l'ID del team a cui appartiene il progetto a cui è associato il file. Seleziona il progetto, quindi il file.</p>
+            <p>Se si sta tentando di trovare l'ID del file e non si conosce l'ID del progetto, fare clic su <b>[!UICONTROL Trova progetti]</b> e immettere o mappare l'ID del team proprietario del progetto a cui è associato il file. Seleziona il progetto, quindi il file.</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned files]</td>
+      <td role="rowheader">[!UICONTROL Numero massimo di file restituiti]</td>
       <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List project files]
+#### [!UICONTROL Elenca file di progetto]
 
 Questo modulo di ricerca restituisce un elenco di tutti i file nel progetto specificato.
 
@@ -535,24 +535,24 @@ Questo modulo di ricerca restituisce un elenco di tutti i file nel progetto spec
       <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL File ID]</td>
+      <td role="rowheader">[!UICONTROL ID file]</td>
       <td>
         <p>Immetti o mappa l’ID del progetto per il quale desideri recuperare i file. </p>
         <ul>
           <li>
-            <p>Se non conosci l'ID del progetto, fai clic su <b>[!UICONTROL Find Projects]</b> e immetti o mappa l'ID del team a cui è associato il progetto, quindi seleziona il progetto.</p>
+            <p>Se non conosci l'ID del progetto, fai clic su <b>[!UICONTROL Trova progetti]</b> e immetti o mappa l'ID del team a cui è associato il progetto, quindi seleziona il progetto.</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned files]</td>
+      <td role="rowheader">[!UICONTROL Numero massimo di file restituiti]</td>
       <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List projects]
+#### [!UICONTROL Elencare progetti]
 
 Questo modulo di ricerca restituisce un elenco di tutti i progetti all’interno del team specificato.
 
@@ -565,11 +565,11 @@ Questo modulo di ricerca restituisce un elenco di tutti i progetti all’interno
       <td> <p>Per istruzioni sulla connessione dell'account [!DNL Figma] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Creare una connessione a Figma</a> in questo articolo.</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Team ID]</td>
+      <td role="rowheader">[!UICONTROL ID team]</td>
       <td>Immetti o mappa l’ID del progetto per il quale desideri recuperare i file. L’ID del team si trova nell’URL della pagina del team a Figma</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned projects]</td>
+      <td role="rowheader">[!UICONTROL Numero massimo di progetti restituiti]</td>
       <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td>
     </tr>
   </tbody>
@@ -578,7 +578,7 @@ Questo modulo di ricerca restituisce un elenco di tutti i progetti all’interno
 
 ### Componenti e stili
 
-#### [!UICONTROL Get a style or component]
+#### [!UICONTROL Ottieni uno stile o un componente]
 
 Questo modulo di azione recupera un singolo stile o componente oppure un set di stili o componenti.
 
@@ -595,21 +595,21 @@ Questo modulo di azione recupera un singolo stile o componente oppure un set di 
       <td>Selezionare il tipo di oggetto da recuperare.</td>
     </tr>
     <tr>
-      <td role="rowheader">&lt;[!UICONTROL Object> key]</td>
+      <td role="rowheader">&lt;[!UICONTROL Object&gt; chiave]</td>
       <td>Immettere la chiave (identificatore univoco) dell'oggetto da recuperare.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Team ID]</td>
+      <td role="rowheader">[!UICONTROL ID team]</td>
       <td>Se si recupera un componente o un set di componenti del team, immettere o mappare l'ID del team a cui sono associati il record o i record.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Page Size]</td>
+      <td role="rowheader">[!UICONTROL Dimensioni Pagina]</td>
       <td>Se si recupera un componente o un set di componenti team, immettere o mappare il numero o i risultati da restituire per pagina. Predefinito: 30.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL After]</td>
       <td>
-        <p>Se si recupera un componente o un set di componenti del team, immettere o mappare il numero del risultato dopo il quale iniziare a recuperare i risultati. Può essere combinato con il campo [!UICONTROL Page Size] per impaginare i risultati.</p>
+        <p>Se si recupera un componente o un set di componenti del team, immettere o mappare il numero del risultato dopo il quale iniziare a recuperare i risultati. Questo può essere combinato con il campo [!UICONTROL Dimensioni pagina] per impaginare i risultati.</p>
         <p>Questo valore non corrisponde agli ID oggetto.</p>
         <p>Questo campo non può essere utilizzato in combinazione con il campo [!UICONTROL Before].</p>
       </td>
@@ -617,7 +617,7 @@ Questo modulo di azione recupera un singolo stile o componente oppure un set di 
     <tr>
       <td role="rowheader">[!UICONTROL Before]</td>
       <td>
-        <p>Se si recupera un componente o un set di componenti del team, immettere o mappare il numero del risultato prima del quale iniziare a recuperare i risultati. Può essere combinato con il campo [!UICONTROL Page Size] per impaginare i risultati.</p>
+        <p>Se si recupera un componente o un set di componenti del team, immettere o mappare il numero del risultato prima del quale iniziare a recuperare i risultati. Questo può essere combinato con il campo [!UICONTROL Dimensioni pagina] per impaginare i risultati.</p>
         <p>Questo valore non corrisponde agli ID oggetto.</p>
         <p>Questo campo non può essere utilizzato in combinazione con il campo [!UICONTROL After].</p>
       </td>
@@ -633,7 +633,7 @@ Questo modulo di azione recupera un singolo stile o componente oppure un set di 
 * [Guarda gli eventi](#watch-events)
 
 
-#### [!UICONTROL Make an API call]
+#### [!UICONTROL Effettuare una chiamata API]
 
 Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all’API Figma senza dover ricorrere all’autenticazione. In questo modo, puoi creare un’automazione del flusso di dati che non può essere eseguita dagli altri moduli Figma.
 
@@ -665,7 +665,7 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]</td>
+      <td role="rowheader">[!UICONTROL Stringa Di Query]</td>
       <td>
         <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p>
         <p>Ad esempio: <code>{"name":"something-urgent"}</code></p>
@@ -680,7 +680,7 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
   </tbody>
 </table>
 
-#### [!UICONTROL Watch events]
+#### [!UICONTROL Guarda gli eventi]
 
 Questo modulo trigger avvia uno scenario quando si verifica uno dei seguenti eventi per un team specifico nello spazio del team [!DNL Figma]:
 
@@ -726,7 +726,7 @@ Questo modulo trigger avvia uno scenario quando si verifica uno dei seguenti eve
             <p>Immettere una descrizione per il webhook.</p>
           </li>
           <li>
-            <p>Fare clic su <b>[!UICONTROL Save]</b> per salvare il webhook e tornare al modulo.</p>
+            <p>Fai clic su <b>[!UICONTROL Salva]</b> per salvare il webhook e tornare al modulo.</p>
           </li>
         </ol>
       </td>

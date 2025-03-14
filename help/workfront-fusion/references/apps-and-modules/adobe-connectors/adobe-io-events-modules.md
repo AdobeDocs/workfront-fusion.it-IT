@@ -4,9 +4,9 @@ description: Con i moduli Adobe I/O Events puoi avviare uno scenario Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '957'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -175,7 +175,7 @@ Per creare un webhook:
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Webhook name]</td>
+         <td role="rowheader">[!UICONTROL Nome webhook]</td>
         <td>Immettere un nome per il webhook.</td>
        </tr>
        <tr>
@@ -184,7 +184,7 @@ Per creare un webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook description]
+           [!UICONTROL Descrizione webhook]
          </td>
          <td>
            Immettere una descrizione per il webhook.
@@ -192,7 +192,7 @@ Per creare un webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Event Provider]
          </td>
          <td>
            Seleziona il prodotto o l’account da cui desideri creare gli eventi.
@@ -200,7 +200,7 @@ Per creare un webhook:
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL Tipo evento]
          </td>
          <td>
            Seleziona gli eventi che desideri che il webhook guardi. Lo scenario si attiva quando si verificano questi eventi.
@@ -227,7 +227,7 @@ Questo modulo di ricerca recupera tutti gli eventi per una registrazione da un g
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Registration ID]
+           [!UICONTROL ID registrazione]
          </td>
          <td>
            Seleziona la registrazione per la quale desideri recuperare gli eventi.
@@ -235,7 +235,7 @@ Questo modulo di ricerca recupera tutti gli eventi per una registrazione da un g
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Maximum number of returned records]
+           [!UICONTROL Numero massimo di record restituiti]
          </td>
          <td>
               Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario. 
@@ -243,7 +243,7 @@ Questo modulo di ricerca recupera tutti gli eventi per una registrazione da un g
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Return events that occur after]
+           [!UICONTROL Restituisce eventi che si verificano dopo]
          </td>
          <td>
          </td>
@@ -303,7 +303,7 @@ Questo modulo di azione effettua una chiamata API personalizzata all&#39;API [!D
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td role="rowheader">[!UICONTROL Stringa Di Query]  </td>
       <td>
         <p>Immettere la stringa di query richiesta.</p>
       </td>
@@ -333,7 +333,7 @@ Questo modulo di ricerca ottiene gli ID Adobe I/O Events per il provider e gli e
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Event Provider]
          </td>
          <td>
            Seleziona il provider per il quale desideri recuperare l’ID.
@@ -341,7 +341,7 @@ Questo modulo di ricerca ottiene gli ID Adobe I/O Events per il provider e gli e
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL Tipo evento]
          </td>
          <td>
               Seleziona gli eventi per i quali desideri fornire gli ID. Gli eventi sono disponibili in base al provider di eventi. 

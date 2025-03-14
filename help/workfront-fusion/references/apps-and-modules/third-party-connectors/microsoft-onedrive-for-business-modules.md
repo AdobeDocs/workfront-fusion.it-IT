@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -89,10 +89,10 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Trigger
 
-* [[!UICONTROL Watch files]](#watch-files)
-* [[!UICONTROL Watch folders]](#watch-folders)
+* [[!UICONTROL File di controllo]](#watch-files)
+* [[!UICONTROL Cartelle controllate]](#watch-folders)
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL File di controllo]
 
 Questo modulo di attivazione si attiva quando viene aggiunto o aggiornato un nuovo file in una cartella controllata.
 
@@ -105,7 +105,7 @@ Questo modulo di attivazione si attiva quando viene aggiunto o aggiornato un nuo
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL ID unità]</p> </td> 
    <td> <p>Selezionare l'unità che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
@@ -113,17 +113,17 @@ Questo modulo di attivazione si attiva quando viene aggiunto o aggiornato un nuo
    <td> <p> Seleziona la cartella da controllare. All’interno di uno scenario, puoi monitorare solo una cartella.</p> <p>Suggerimento: per guardare più cartelle, crea uno scenario indipendente per ciascuna di esse.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL I want to watch]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Voglio guardare]</p> </td> 
    <td> <p>Specificare se si desidera visualizzare i nuovi file e tutte le modifiche o solo i nuovi file.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di righe restituite]</td> 
    <td> <p> Imposta il numero massimo di risultati che il modulo deve restituire durante un ciclo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch folders]
+#### [!UICONTROL Cartelle controllate]
 
 Questo modulo di attivazione si attiva quando si aggiunge una nuova cartella alla cartella controllata.
 
@@ -136,7 +136,7 @@ Questo modulo di attivazione si attiva quando si aggiunge una nuova cartella all
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL ID unità]</p> </td> 
    <td> <p>Selezionare l'unità che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
@@ -144,11 +144,11 @@ Questo modulo di attivazione si attiva quando si aggiunge una nuova cartella all
    <td> <p> Seleziona la cartella da controllare. All’interno di uno scenario, puoi monitorare solo una cartella.</p> <p>Suggerimento: per tenere traccia di più cartelle, crea uno scenario indipendente per ciascuna di esse.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL I want to watch]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Voglio guardare]</p> </td> 
    <td> <p>Seleziona se desideri guardare le nuove cartelle e tutte le modifiche o solo le nuove cartelle.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di righe restituite]</td> 
    <td> <p> Imposta il numero massimo di risultati che il modulo deve restituire durante un ciclo.</p> </td> 
   </tr> 
  </tbody> 
@@ -156,14 +156,14 @@ Questo modulo di attivazione si attiva quando si aggiunge una nuova cartella all
 
 ### Azioni
 
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Get a sharing link]](#get-a-sharing-link)
-* [[!UICONTROL Upload a file]](#upload-a-file)
+* [[!UICONTROL Crea una cartella]](#create-a-folder)
+* [[!UICONTROL Eliminare un file]](#delete-a-file)
+* [[!UICONTROL Eliminare una cartella]](#delete-a-folder)
+* [[!UICONTROL Ottieni un file]](#get-a-file)
+* [[!UICONTROL Ottieni un collegamento di condivisione]](#get-a-sharing-link)
+* [[!UICONTROL Carica un file]](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Crea una cartella]
 
 Crea una cartella all&#39;interno della cartella padre specificata.
 
@@ -173,25 +173,25 @@ Crea una cartella all&#39;interno della cartella padre specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td><strong>[!UICONTROL Connection]</strong> </td> 
+   <td><strong>[!Connessione UICONTROL]</strong> </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL Drive ID]</strong> </td> 
+   <td><strong>[!UICONTROL ID unità]</strong> </td> 
    <td> <p>Selezionare l'unità in cui creare una nuova cartella.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL Folder]</strong> </td> 
+   <td><strong>[!UICONTROL Cartella]</strong> </td> 
    <td> <p>Seleziona la cartella in cui desideri creare una nuova cartella.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL Folder name]</strong> </td> 
+   <td><strong>[!UICONTROL Nome cartella]</strong> </td> 
    <td>Immettere o mappare un nome per la nuova cartella.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Eliminare un file]
 
 Questo modulo di azione sposta il file specificato nel Cestino.
 
@@ -205,17 +205,17 @@ Questo modulo di azione sposta il file specificato nel Cestino.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL ID unità]</td> 
    <td> <p>Selezionare l'unità da cui si desidera eliminare un file.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL ID file]</td> 
    <td> <p>Immettere l'ID del file che si desidera eliminare. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Eliminare una cartella]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -227,17 +227,17 @@ Questo modulo di azione sposta il file specificato nel Cestino.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL ID unità]</td> 
    <td> <p>Selezionare l'unità da cui si desidera eliminare un file.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder ID]</td> 
+   <td>[!UICONTROL ID cartella]</td> 
    <td> <p>Immetti o mappa l’ID della cartella da eliminare. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Ottieni un file]
 
 Questo modulo di azione recupera il file con l’ID specificato.
 
@@ -251,17 +251,17 @@ Questo modulo di azione recupera il file con l’ID specificato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL ID unità]</td> 
    <td> <p>Selezionare l'unità da cui si desidera recuperare un file.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL ID file]</td> 
    <td> <p>Immettere l'ID del file che si desidera recuperare. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a sharing link]
+#### [!UICONTROL Ottieni un collegamento di condivisione]
 
 Questo modulo recupera un collegamento che puoi condividere per dare accesso al file specificato.
 
@@ -275,25 +275,25 @@ Questo modulo recupera un collegamento che puoi condividere per dare accesso al 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL ID unità]</td> 
    <td> <p>Selezionare l'unità in cui si desidera caricare un file.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enter]</td> 
+   <td>[!UICONTROL INVIO]</td> 
    <td> <p>Seleziona se desideri scegliere un file utilizzando l’ID file o il percorso del file. Immetti l’ID o il percorso del file nel campo visualizzato.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permission type]</p> </td> 
+   <td> <p>[!UICONTROL Tipo di autorizzazione]</p> </td> 
    <td> <p>Specificare se si desidera che gli utenti che ricevono il collegamento dispongano di autorizzazioni di lettura/scrittura o di sola lettura.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Scope]</td> 
+   <td>[!UICONTROL Ambito]</td> 
    <td> <p> Seleziona se desideri che il file sia accessibile solo da parte di chi dispone del collegamento o accessibile solo ai membri della tua organizzazione.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Carica un file]
 
 Questo modulo di azione carica un file binario o di testo in una cartella specificata
 
@@ -307,7 +307,7 @@ Questo modulo di azione carica un file binario o di testo in una cartella specif
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL ID unità]</td> 
    <td> <p>Selezionare l'unità in cui si desidera caricare un file.</p> </td> 
   </tr> 
   <tr> 
@@ -319,12 +319,12 @@ Questo modulo di azione carica un file binario o di testo in una cartella specif
    <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL If the file with the same name exists]</td> 
+   <td>[!UICONTROL Se esiste un file con lo stesso nome]</td> 
    <td> <p> Seleziona l’operazione da eseguire se esiste già un file con lo stesso nome di quello che stai tentando di caricare.</p> 
     <ul> 
-     <li>[!UICONTROL Replace the existing file]</li> 
-     <li>[!UICONTROL Rename the new file]</li> 
-     <li>[!UICONTROL End with an error]</li> 
+     <li>[!UICONTROL Sostituisci il file esistente]</li> 
+     <li>[!UICONTROL Rinomina il nuovo file]</li> 
+     <li>[!UICONTROL End with an error] (Fine con errore)</li> 
     </ul> </td> 
   </tr> 
  </tbody> 

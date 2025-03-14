@@ -4,9 +4,9 @@ description: Molti  [!DNL Adobe Workfront Fusion]  connettori non richiedono una
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -70,17 +70,17 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 
 Per creare una connessione all&#39;interno di un modulo [!DNL Workfront Fusion]:
 
-1. Fare clic su **[!UICONTROL Add]** accanto alla casella [!UICONTROL Connection] per aprire il pannello **[!UICONTROL Create a connection]**.
-1. (Facoltativo) Modificare il valore predefinito **[!UICONTROL Connection name]**.
+1. Fai clic su **[!UICONTROL Aggiungi]** accanto alla casella [!UICONTROL Connessione] per aprire il pannello **[!UICONTROL Crea connessione]**.
+1. (Facoltativo) Modificare il nome predefinito della connessione ****.
 1. Nel campo Ambiente, seleziona se si tratta di un ambiente di produzione o non di produzione. Queste informazioni vengono visualizzate nell&#39;area Connessioni di Fusion.
 1. Nel campo Tipo selezionare se si tratta di un account di servizio o personale. Queste informazioni vengono visualizzate nell&#39;area Connessioni di Fusion.
-1. (Condizionale) Se l&#39;app richiede impostazioni di connessione avanzate, ad esempio un ID, una chiave o [!UICONTROL secret], immetti tali informazioni.
+1. (Condizionale) Se l&#39;app richiede impostazioni di connessione avanzate, ad esempio un ID, una chiave o un [!UICONTROL segreto], immetti tali informazioni.
 
-   Potrebbe essere necessario fare clic su **[!UICONTROL Show advanced settings]** per visualizzare i campi in cui è possibile immettere questo tipo di informazioni.
+   Potrebbe essere necessario fare clic su **[!UICONTROL Mostra impostazioni avanzate]** per visualizzare i campi in cui è possibile immettere questo tipo di informazioni.
 
-1. Fare clic su **[!UICONTROL Continue]**.
+1. Fai clic su **[!UICONTROL Continua]**.
 1. Nella finestra di accesso visualizzata, inserisci le credenziali per accedere all’app, se non lo hai già fatto.
-1. (Condizionale) Se viene visualizzato un pulsante **[!UICONTROL Allow]**, esamina le azioni che il connettore potrà eseguire, quindi fai clic sul pulsante per connettere l&#39;app a [!DNL Workfront Fusion].
+1. (Condizionale) Se viene visualizzato un pulsante **[!UICONTROL Consenti]**, esamina le azioni che il connettore potrà eseguire, quindi fai clic sul pulsante per connettere l&#39;app a [!DNL Workfront Fusion].
 
    >[!NOTE]
    >

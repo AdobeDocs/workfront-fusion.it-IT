@@ -4,9 +4,9 @@ description: A volte è utile rieseguire un modulo non riuscito se è possibile 
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -60,7 +60,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 
 +++
 
-## Soluzioni per la direttiva di gestione degli errori [!UICONTROL Retry]
+## Soluzioni per la direttiva di gestione degli errori [!UICONTROL Riprova]
 
 Workfront Fusion attualmente non offre la direttiva di gestione degli errori `retry`. Utilizza una delle seguenti soluzioni per simulare la funzionalità dei nuovi tentativi.
 
@@ -82,7 +82,7 @@ Per istruzioni sulla risoluzione delle esecuzioni incomplete, vedere [Visualizza
 * L&#39;intervallo minimo tra i tentativi è di un minuto.
 * Se il modulo elabora più bundle e l&#39;elaborazione di un bundle non riesce, l&#39;esecuzione parziale (solo il bundle che ha causato l&#39;errore) viene spostata nella cartella esecuzioni incomplete e pianificata per i nuovi tentativi in base alle impostazioni della direttiva [!UICONTROL Break]. Tuttavia, l’esecuzione corrente continua e il modulo continua a elaborare i bundle successivi.
 
-  Per impedire che lo scenario venga eseguito nuovamente finché l&#39;esecuzione archiviata nella cartella Esecuzioni incomplete non viene risolta correttamente, abilitare l&#39;opzione &quot;[!UICONTROL Sequential processing]&quot; in [!UICONTROL Scenario settings].
+  Per impedire che lo scenario venga eseguito nuovamente finché l&#39;esecuzione archiviata nella cartella Esecuzioni incomplete non è stata risolta correttamente, abilitare l&#39;opzione &quot;[!UICONTROL Elaborazione sequenziale]&quot; nelle [!UICONTROL Impostazioni scenario].
 
 Per ulteriori informazioni sulle esecuzioni incomplete, vedere [Visualizzare e risolvere le esecuzioni incomplete](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -92,37 +92,37 @@ La soluzione alternativa del modulo Repeater è più complessa, ma più personal
 
 #### Configurare la route del gestore degli errori
 
-1. Fare clic sulla scheda **[!UICONTROL Scenarios]** nel pannello a sinistra.
+1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Selezionare lo scenario in cui si desidera aggiungere la soluzione alternativa.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
 1. Fare clic sull&#39;icona **Controllo flusso** ![Controllo flusso](assets/flow-control-icon.png) e selezionare **Ripetitore**.
-1. Nel modulo Repeater (Ripetitore), impostare il campo **[!UICONTROL Repeats]** sul numero massimo di tentativi che si desidera vengano ripetuti.
-1. Allegare il modulo che potrebbe non riuscire dopo il modulo **[!UICONTROL Repeater]**.
+1. Nel modulo Repeater (Ripetitore), impostare il campo **[!UICONTROL Repeats]** sul numero massimo di tentativi che si desidera vengano ripetuti dallo scenario.
+1. Allega il modulo che potrebbe generare errori dopo il modulo **[!UICONTROL Repeater]**.
 1. Collegare una route del gestore degli errori al modulo che potrebbe non riuscire.
 
    Per istruzioni, vedere [Gestione degli errori](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
-1. Aggiungere il modulo **[!UICONTROL Tools]>[!UICONTROL Sleep]** alla route del gestore degli errori e impostare il relativo campo **[!UICONTROL Delay]** sul numero di secondi tra un tentativo e l&#39;altro.
+1. Aggiungi il modulo **[!UICONTROL Strumenti] > [!UICONTROL Sospendi]** alla route del gestore errori e imposta il campo **[!UICONTROL Ritarda]** sul numero di secondi tra un tentativo e l&#39;altro.
 
-1. Aggiungi la direttiva **[!UICONTROL Ignore]** dopo il modulo **[!UICONTROL Tools]>[!UICONTROL Sleep]**.
+1. Aggiungi la direttiva **[!UICONTROL Ignora]** dopo il modulo **[!UICONTROL Strumenti] > [!UICONTROL Sospendi]**.
 1. Continua con [Configurare la route predefinita](#configure-the-default-route).
 
 #### Configurare la route predefinita
 
-1. Aggiungere il modulo **[!UICONTROL Tools]>[!UICONTROL Set variable]** in una route separata (gestore non di errore) dopo il modulo che potrebbe non riuscire e configurarlo per memorizzare il risultato del modulo in una variabile denominata, ad esempio `Result`.
+1. Aggiungere il modulo **[!UICONTROL Strumenti] > [!UICONTROL Imposta variabile]** in una route separata (gestore non di errore) dopo il modulo che potrebbe generare un errore e configurarlo per memorizzare il risultato del modulo in una variabile denominata, ad esempio `Result`.
 
-1. Aggiungere il modulo **[!UICONTROL Array aggregator]** dopo **[!UICONTROL Tools]>[!UICONTROL Set variable]** e selezionare il modulo **[!DNL Repeater]** nel relativo campo Modulo Source.
+1. Aggiungere il modulo **[!UICONTROL Array aggregator]** dopo **[!UICONTROL Tools] > [!UICONTROL Set variable]** e selezionare il modulo **[!DNL Repeater]** nel relativo campo Source Module.
 
-1. Aggiungere il modulo **[!UICONTROL Tools]>[!UICONTROL Get variable]** dopo il modulo **[!UICONTROL Array aggregator]** e mappare il valore della variabile `Result` su di esso.
+1. Aggiungere il modulo **[!UICONTROL Strumenti] > [!UICONTROL Ottieni variabile]** dopo il modulo **[!UICONTROL Array aggregator]** e mappare il valore della variabile `Result` su di esso.
 
-1. Inserire il modulo **[!UICONTROL Tools]>[!UICONTROL Get variable]** tra il modulo **[!UICONTROL Repeater]** e il modulo che potrebbe non riuscire e mappare il valore della variabile `Result` su di esso.
+1. Inserire il modulo **[!UICONTROL Tools] > [!UICONTROL Get variable]** tra il modulo **[!UICONTROL Repeater]** e il modulo che potrebbe non riuscire e mappare il valore della variabile `Result` su di esso.
 
-1. Inserire un filtro tra questo modulo **[!UICONTROL Tools]>[!UICONTROL Get variable]** e il modulo che potrebbe non riuscire per continuare solo se la variabile `Result` non esiste.
+1. Inserire un filtro tra il modulo **[!UICONTROL Tools] > [!UICONTROL Get variable]** e il modulo che potrebbe non riuscire per continuare solo se la variabile `Result` non esiste.
 
 >[!BEGINSHADEBOX]
 
 **Esempio:**
 
-In questo scenario di esempio, il modulo [!UICONTROL HTTP] > [!UICONTROL Make a request] rappresenta il modulo che potrebbe non riuscire:
+In questo scenario di esempio, il modulo [!UICONTROL HTTP] > [!UICONTROL Effettua una richiesta] rappresenta il modulo che potrebbe non riuscire:
 
 ![HTTP Fai una richiesta](assets/http-make-request.png)
 

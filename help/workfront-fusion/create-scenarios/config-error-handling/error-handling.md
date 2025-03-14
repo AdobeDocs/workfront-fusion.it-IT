@@ -4,9 +4,9 @@ description: Quando si verificano errori durante l'esecuzione di uno scenario, i
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -77,10 +77,10 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 
 Per aggiungere un gestore degli errori a un modulo:
 
-1. Fare clic sulla scheda **[!UICONTROL Scenarios]** nel pannello a sinistra.
+1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Selezionare lo scenario in cui si desidera aggiungere un ciclo di lavorazione per la gestione degli errori.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
-1. Fare clic con il pulsante destro del mouse sul modulo dopo il quale si desidera aggiungere una route del gestore degli errori e selezionare **[!UICONTROL Add error handler]**:
+1. Fare clic con il pulsante destro del mouse sul modulo dopo il quale si desidera aggiungere una route del gestore degli errori e selezionare **[!UICONTROL Aggiungi gestore errori]**:
 
    ![Route gestore errori](assets/error-handler-route.png)
 
@@ -114,9 +114,9 @@ Esistono cinque direttive, che possono essere raggruppate nelle seguenti categor
 
 Le seguenti direttive garantiscono la prosecuzione dell’esecuzione di uno scenario:
 
-* **[!UICONTROL Resume]**: consente di specificare un output sostitutivo per il modulo con l&#39;errore. Lo stato di esecuzione dello scenario è contrassegnato come completato.
-* **[!UICONTROL Ignore]**: ignora l&#39;errore. Lo stato di esecuzione dello scenario è contrassegnato come completato.
-* **[!UICONTROL Break]**: memorizza l&#39;input nella coda di esecuzioni incomplete. Lo stato di esecuzione dello scenario è contrassegnato come avviso.
+* **[!UICONTROL Riprendi]**: consente di specificare un output sostitutivo per il modulo con l&#39;errore. Lo stato di esecuzione dello scenario è contrassegnato come completato.
+* **[!UICONTROL Ignora]**: ignora l&#39;errore. Lo stato di esecuzione dello scenario è contrassegnato come completato.
+* **[!UICONTROL Interruzione]**: memorizza l&#39;input nella coda di esecuzioni incomplete. Lo stato di esecuzione dello scenario è contrassegnato come avviso.
 
   Per ulteriori informazioni, vedere [Visualizzare e risolvere le esecuzioni incomplete](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 

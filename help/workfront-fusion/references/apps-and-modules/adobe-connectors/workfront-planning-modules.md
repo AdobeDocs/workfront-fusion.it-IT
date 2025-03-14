@@ -4,9 +4,9 @@ description: Con i  [!DNL Adobe Workfront Planning] moduli, puoi avviare uno  [!
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 06ba97ec4245f9620f013711df9a77b76abb20be
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -89,7 +89,7 @@ Il connettore Adobe Workfront Planning utilizza quanto segue:
 
 Puoi creare una connessione al tuo account [!DNL Workfront Planning] direttamente da un modulo [!DNL Workfront Fusion].
 
-1. In qualsiasi modulo [!DNL Adobe Workfront Planning], fare clic su **[!UICONTROL Add]** accanto alla casella Connessione.
+1. In qualsiasi modulo di [!DNL Adobe Workfront Planning], fare clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
 1. Compila i campi seguenti:
 
@@ -100,7 +100,7 @@ Puoi creare una connessione al tuo account [!DNL Workfront Planning] direttament
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td role="rowheader">[!UICONTROL Nome connessione]</td>
           <td>
             <p>Immettere un nome per la connessione.</p>
           </td>
@@ -114,25 +114,25 @@ Puoi creare una connessione al tuo account [!DNL Workfront Planning] direttament
           <td>Seleziona se ti interessa la connessione a un account di servizio o a un account personale.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>(Facoltativo)</p></td>
-          <td>Immetti [!DNL Adobe] [!UICONTROL Client ID]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
+          <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
+          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>(Facoltativo)</p></td>
+          <td role="rowheader">[!UICONTROL Segreto client]<p>(Facoltativo)</p></td>
           <td>Immetti [!DNL Adobe] [!UICONTROL Client Secret]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]</td>
+          <td role="rowheader">[!UICONTROL URL autenticazione]</td>
           <td>Immetti l’URL che verrà utilizzato dall’istanza di Workfront per autenticare questa connessione. <p>Il valore predefinito è <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Host prefix]</td>
+          <td role="rowheader">[!UICONTROL Prefisso host]</td>
           <td>Immetti il prefisso host.<p>Il valore predefinito è <code>origin-</code>.</p>
         </tr>
       </tbody>
     </table>
 
-1. Fare clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
 
 ## [!DNL Adobe Workfront Planning] moduli e relativi campi
 
@@ -167,32 +167,32 @@ Questo modulo di attivazione avvia uno scenario quando un record, un tipo di rec
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Workfront Planning], vedere <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Creare una connessione a [!DNL Adobe Workfront Planning]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Object type]</td>
+      <td role="rowheader">[!UICONTROL Tipo di oggetto]</td>
       <td>Specificare se si desidera controllare record, tipi di record o aree di lavoro.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL State]</td>
-      <td>Seleziona se desideri controllare lo stato precedente o quello nuovo.<ul><li><p><b>[!UICONTROL New state]</b></p><p>Attiva uno scenario quando il record cambia <b>in</b> un valore specificato.</p></li><li><p><b>[!UICONTROL Old state]</b></p><p>Attiva uno scenario quando il record cambia <b> da</b> a un determinato valore.</p></li></ul></td> 
+      <td>Seleziona se desideri controllare lo stato precedente o quello nuovo.<ul><li><p><b>[!UICONTROL Nuovo stato]</b></p><p>Attiva uno scenario quando il record cambia <b>in</b> un valore specificato.</p></li><li><p><b>[!UICONTROL Old State]</b></p><p>Attiva uno scenario quando il record cambia <b> da</b> a un determinato valore.</p></li></ul></td> 
     <tr>
       <td role="rowheader">[!UICONTROL Workspace]</td>
       <td>Se si desidera controllare i record, selezionare il Workspace che si desidera controllare.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Record type]</td>
+      <td role="rowheader">[!UICONTROL Tipo di record]</td>
       <td>Se si desidera controllare i record, selezionare il tipo di record che si desidera controllare.</td>
     </tr>
     </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>È possibile impostare i filtri per controllare solo i record che soddisfano i criteri selezionati.</p> <p>Per ogni filtro, immetti il campo che desideri che il filtro valuti, l’operatore e il valore che desideri che il filtro consenta. Puoi utilizzare più di un filtro aggiungendo regole AND.</p> <p>Nota: non è possibile modificare i filtri nei webhook [!DNL Workfront] esistenti. Per impostare filtri diversi per le sottoscrizioni di eventi [!DNL Workfront], rimuovere il webhook corrente e crearne uno nuovo.</p> <p>Per ulteriori informazioni sui filtri eventi, vedere <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtri sottoscrizioni eventi nell'articolo [!DNL Workfront] &gt; [!UICONTROL Watch Events] moduli</a> nei moduli di Workfront.</p> </td> 
+      <td> <p>È possibile impostare i filtri per controllare solo i record che soddisfano i criteri selezionati.</p> <p>Per ogni filtro, immetti il campo che desideri che il filtro valuti, l’operatore e il valore che desideri che il filtro consenta. Puoi utilizzare più di un filtro aggiungendo regole AND.</p> <p>Nota: non è possibile modificare i filtri nei webhook [!DNL Workfront] esistenti. Per impostare filtri diversi per le sottoscrizioni di eventi [!DNL Workfront], rimuovere il webhook corrente e crearne uno nuovo.</p> <p>Per ulteriori informazioni sui filtri eventi, vedere <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtri di sottoscrizione eventi nei moduli [!DNL Workfront] &gt; [!UICONTROL Watch Events]</a> nell'articolo Moduli di Workfront.</p> </td> 
      </tr> 
     <tr>
-      <td role="rowheader">[!UICONTROL Objects to watch]</td>
+      <td role="rowheader">[!UICONTROL Oggetti da controllare]</td>
       <td>Seleziona se desideri controllare le nuove. record aggiornati, nuovi e aggiornati o eliminati.</td>
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Exclude updates made by this connection]</p>
+        <p>[!UICONTROL Escludi aggiornamenti effettuati da questa connessione]</p>
       </td>
       <td>Abilita questa opzione per impedire che lo scenario venga attivato quando viene apportata una modifica dalla connessione utilizzata da questo modulo. Questo impedisce l’attivazione di un’altra istanza dello scenario se questo esegue un’azione di attivazione.</td> 
       </tr>
@@ -222,7 +222,7 @@ Questo modulo di azione elimina un singolo tipo di record in Workfront Planning 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type ID]</p>
+        <p>[!UICONTROL ID tipo di record]</p>
       </td>
       <td>Immettere o mappare l'ID del tipo di record che si desidera eliminare.</td> 
       </tr>
@@ -264,7 +264,7 @@ Questo modulo effettua una chiamata API personalizzata all&#39;API [!DNL Adobe W
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td role="rowheader">[!UICONTROL Stringa Di Query]  </td>
       <td>
         <p>Per ogni coppia chiave/valore che si desidera aggiungere alla stringa di query, fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore.</p>
       </td>
@@ -301,19 +301,19 @@ Questo modulo di azione recupera un elenco di record in base ai criteri specific
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
+        <p>[!UICONTROL Tipo di record]</p>
       </td>
       <td>Selezionare il tipo di record che si desidera cercare.</td> 
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record Fields]</p>
+        <p>[!UICONTROL Campi Record]</p>
       </td>
       <td>Per ogni campo che si desidera utilizzare nella ricerca, individuare tale campo, selezionare l'operatore e immettere o mappare il valore che si desidera cercare. I campi sono disponibili in base al tipo di record selezionato.</td> 
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Condition for filters]</p>
+        <p>Condizione [!UICONTROL per filtri]</p>
       </td>
       <td>Seleziona la condizione per i filtri:<ul><li><b>E</b><p>Il modulo restituisce record che soddisfano <b>tutti</b> i valori di campo selezionati.</p></li><li><b>OPPURE</b><p>Il modulo restituisce record che soddisfano <b>qualsiasi</b> dei valori di campo selezionati.</p></li></ul></td> 
       </tr>
@@ -344,7 +344,7 @@ Questa azione consente di creare un singolo record in Workfront Planning.
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record type ID]</p>
+        <p>[!UICONTROL ID tipo di record]</p>
       </td>
       <td>Immettere o mappare il tipo di record che si desidera creare. I tipi di record disponibili sono basati sull'account Workfront Planning.</td> 
       </tr>
@@ -372,7 +372,7 @@ Questo modulo di azione elimina il record specificato in Workfront Planning.
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record ID]</p>
+        <p>[!UICONTROL ID record]</p>
       </td>
       <td>Immettere o mappare l'ID del record che si desidera eliminare.</td> 
       </tr>
@@ -392,7 +392,7 @@ Questo modulo azioni recupera un singolo record da [!DNL Adobe Workfront Plannin
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Workfront Planning], vedere <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Creare una connessione a [!DNL Adobe Workfront Planning]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Record ID]</td>
+      <td role="rowheader">[!UICONTROL ID record]</td>
       <td>Immettere o mappare l'ID del record che si desidera recuperare.</td>
     </tr>
   </tbody>
@@ -415,7 +415,7 @@ Questo modulo di azione recupera tutti i record del tipo specificato.
       <td>Selezionare o mappare l'area di lavoro contenente i record da recuperare.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Record type]</td>
+      <td role="rowheader">[!UICONTROL Tipo di record]</td>
       <td>Selezionare il tipo di record da recuperare.</td>
     </tr>
      <!--<tr>
@@ -459,7 +459,7 @@ Questa azione aggiorna un singolo record in Workfront Planning.
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Record ID]</p>
+        <p>[!UICONTROL ID record]</p>
       </td>
       <td>Immettere o mappare il tipo di record che si desidera aggiornare. I tipi di record disponibili sono basati sull'account Workfront Planning.</td> 
       </tr>

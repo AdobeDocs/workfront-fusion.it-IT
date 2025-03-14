@@ -4,9 +4,9 @@ description: Quando crei o modifichi uno scenario, puoi configurare le impostazi
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Nessuna licenza Workfront Fusion richiesta.</p>
+   <p>Nessun requisito di licenza per Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -63,7 +63,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 <table>
     <tr>
-        <td>[!UICONTROL Initial value]</td>
+        <td>[!UICONTROL Valore iniziale]</td>
         <td>Immettere o mappare il valore che si desidera assegnare al modulo nella prima iterazione. Il valore predefinito è 1.</td>
     </tr>
     <tr>
@@ -78,27 +78,27 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 >[!BEGINSHADEBOX]
 
-Ad esempio, è possibile utilizzare un modulo [!UICONTROL Repeater] per inviare cinque messaggi di posta elettronica con gli oggetti &quot;Hello 1&quot;, &quot;Hello 2&quot; e così via, collegando il modulo **[!UICONTROL Email]>[!UICONTROL Send me an email]** al modulo [!UICONTROL Repeater].
+Ad esempio, puoi utilizzare un modulo [!UICONTROL Repeater] per inviare cinque e-mail con gli oggetti &quot;Hello 1&quot;, &quot;Hello 2&quot; e così via, collegando il modulo **[!UICONTROL Email] >[!UICONTROL Send me an email]** al modulo [!UICONTROL Repeater].
 
-1. Fare clic sull&#39;icona [!UICONTROL Flow Control] ![Icona Controllo flusso](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) nella parte inferiore dello schermo, quindi fare clic su **[!UICONTROL Repeater]** nel menu visualizzato.
-1. Fare clic sul modulo [!UICONTROL Repeater], quindi fare clic su **[!UICONTROL Connect automatically]** nella casella visualizzata.
+1. Fai clic sull&#39;icona [!UICONTROL Controllo di flusso] ![Icona Controllo di flusso](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) nella parte inferiore dello schermo, quindi fai clic su **[!UICONTROL Ripetitore]** nel menu visualizzato.
+1. Fai clic sul modulo [!UICONTROL Repeater], quindi fai clic su **[!UICONTROL Connetti automaticamente]** nella casella visualizzata.
 
    Viene visualizzato il modulo Repeater (Ripetitore).
 
-1. Nel campo **[!UICONTROL Repeats]** immettere il numero di ripetizioni (bundle generati) che si desidera ottenere con il modulo.
+1. Nel campo **[!UICONTROL Ripetizioni]**, immetti il numero di ripetizioni (bundle generati) che si desidera ottenere con il modulo.
 
    In questo esempio, immetti 5.
 
    ![Ripetitore](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
-   Il valore dell&#39;elemento aumenta in ogni ripetizione di questo valore specificato nel campo **[!UICONTROL Step]**, che è possibile visualizzare selezionando **[!UICONTROL Show advanced settings]**. Questo numero è 1 per impostazione predefinita.
+   Il valore dell&#39;elemento aumenta in ogni ripetizione di questo valore specificato nel campo **[!UICONTROL Passaggio]**, che puoi visualizzare selezionando **[!UICONTROL Mostra impostazioni avanzate]**. Questo numero è 1 per impostazione predefinita.
 
-1. Fare clic su **[!UICONTROL OK]** per chiudere la casella **[!UICONTROL Flow Control]**.
+1. Fare clic su **[!UICONTROL OK]** per chiudere la casella **[!UICONTROL Controllo flusso]**.
 
 1. Fare clic sull&#39;app o sul modulo di servizio connesso al modulo [!UICONTROL Repeater].
 1. Nella casella visualizzata digitare le informazioni che si desidera ripetere.
 
-   Nel nostro esempio di e-mail, dovresti digitare Hello nella casella [!UICONTROL Subject], quindi mappare `i` dal modulo del ripetitore.
+   Nel nostro esempio di e-mail, dovresti digitare Hello nella casella [!UICONTROL Oggetto], quindi mappare `i` dal modulo del ripetitore.
 
    ![Ripetitore](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
@@ -106,13 +106,13 @@ Ad esempio, è possibile utilizzare un modulo [!UICONTROL Repeater] per inviare 
 
 >[!NOTE]
 >
->Il numero di ripetizioni non è determinato dal valore di `i`, poiché si troverebbe in un ciclo nella programmazione. Il modulo ripeterà il numero di volte indicato nel campo [!UICONTROL Repeats]. Il valore `i` cambia con ogni iterazione del modulo [!DNL repeater] e può essere mappato ai moduli successivi. Nell&#39;esempio precedente il valore di `i` viene mappato nel messaggio Hello, con messaggi che indicano &quot;Hello 1&quot;, Hello 2&quot; e così via.
+>Il numero di ripetizioni non è determinato dal valore di `i`, poiché si troverebbe in un ciclo nella programmazione. Il modulo ripeterà il numero di volte indicato nel campo [!UICONTROL Ripeti]. Il valore `i` cambia con ogni iterazione del modulo [!DNL repeater] e può essere mappato ai moduli successivi. Nell&#39;esempio precedente il valore di `i` viene mappato nel messaggio Hello, con messaggi che indicano &quot;Hello 1&quot;, Hello 2&quot; e così via.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL Iterator]
+## [!UICONTROL Iteratore]
 
-Un [!UICONTROL Iterator] è un tipo speciale di modulo che converte un array in una serie di bundle. Ogni elemento array sarà un bundle separato nell&#39;output del modulo [!UICONTROL Iterator]. Per ulteriori informazioni, vedere [Modulo Iterator](/help/workfront-fusion/references/modules/iterator-module.md).
+Un [!UICONTROL Iterator] è un tipo speciale di modulo che converte un array in una serie di bundle. Ogni elemento di array sarà un bundle separato nell&#39;output del modulo [!UICONTROL Iterator]. Per ulteriori informazioni, vedere [Modulo Iterator](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Aggregatore array
 
@@ -120,7 +120,7 @@ Un aggregatore di array è un tipo speciale di modulo che consente di unire più
 
 ## [!UICONTROL Router]
 
-Il modulo [!UICONTROL Router] ti consente di diramare il flusso in più route ed elaborare i dati all&#39;interno di ciascuna route in modo diverso. Quando un modulo [!UICONTROL Router] riceve un bundle, lo inoltra a ogni route connessa nell&#39;ordine in cui le route sono state collegate al modulo [!UICONTROL Router]. Per ulteriori informazioni, vedere [Modulo router in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Il modulo [!UICONTROL Router] ti consente di diramare il flusso in più route ed elaborare i dati all&#39;interno di ogni route in modo diverso. Quando un modulo [!UICONTROL Router] riceve un bundle, lo inoltra a ogni route connessa nell&#39;ordine in cui le route sono state collegate al modulo [!UICONTROL Router]. Per ulteriori informazioni, vedere [Modulo router in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 ## Direttive
 

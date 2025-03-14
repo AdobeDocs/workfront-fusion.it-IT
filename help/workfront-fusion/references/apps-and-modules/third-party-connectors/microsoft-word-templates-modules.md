@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, è possibile automatizzare 
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -100,7 +100,7 @@ Un modello [!DNL Microsoft Word] è un normale documento [!DNL Microsoft Word] (
 
 ### Tag valore semplice {#simple-value-tag}
 
-Un tag di valore semplice viene semplicemente sostituito con un valore corrispondente. Il nome del tag corrisponde al valore del campo [!UICONTROL Key], che viene inserito all&#39;interno di parentesi graffe doppie, ad esempio `{{name}}`.
+Un tag di valore semplice viene semplicemente sostituito con un valore corrispondente. Il nome del tag corrisponde al valore del campo [!UICONTROL Chiave], che si trova all&#39;interno di parentesi graffe doppie, ad esempio `{{name}}`.
 
 **Esempio:** Per creare un documento con la dicitura &quot;Ciao, Petr!&quot;, puoi utilizzare un modulo [!DNL Microsoft Word Template] per creare il seguente modello:
 
@@ -164,7 +164,7 @@ Questi moduli non richiedono una connessione.
 * [Compila un documento](#fill-out-a-document)
 * [Riempire un documento con un batch di dati](#fill-a-document-with-a-batch-of-data)
 
-### [!UICONTROL Fill out a document] {#fill-out-a-document}
+### [!UICONTROL Compila un documento] {#fill-out-a-document}
 
 Questo modulo di trasformazione consente di riempire un documento con i dati specificati. Può essere utilizzato con tag di valori semplici, tag condizionali o tag di loop.
 
@@ -173,11 +173,11 @@ Questo modulo di trasformazione consente di riempire un documento con i dati spe
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL Delimitatore iniziale del testo da sostituire]</td> 
    <td> <p>Immettere il carattere o i caratteri che si desidera contrassegnare come inizio del testo da sostituire. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Esempio: </b></span></span>Immettere <code>&#91;&#91;</code> per sostituire <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Delimitatore finale del testo da sostituire]</p> </td> 
    <td> <p>Immettere il carattere o i caratteri che si desidera contrassegnare come fine del testo da sostituire. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Esempio: </b></span></span>Inserisci <code>&#93;&#93;</code> da sostituire <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
@@ -185,11 +185,11 @@ Questo modulo di trasformazione consente di riempire un documento con i dati spe
    <td> <p> Selezionare un file di origine da un modulo precedente o mappare i dati del file di origine.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL Nome del file compilato]</td> 
    <td>Immettere un nome di file (con estensione) per il file di output di destinazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data source]</td> 
+   <td role="rowheader">[!UICONTROL Origine dati]</td> 
    <td> <p>Selezionare un'opzione per indicare se i dati utilizzati provengono da un modulo o da una raccolta di dati non elaborati (dati non elaborati del computer).</p> </td> 
   </tr> 
   <tr> 
@@ -216,7 +216,7 @@ Questo modulo di trasformazione consente di riempire un documento con i dati spe
  </tbody> 
 </table>
 
-### [!UICONTROL Fill a document with a batch of data] {#fill-a-document-with-a-batch-of-data}
+### [!UICONTROL Compila un documento con un batch di dati] {#fill-a-document-with-a-batch-of-data}
 
 Questo modulo di aggregazione è utile se i dati inseriti vengono forniti come bundle separati. Con questo modulo, puoi facilmente impostare la struttura richiesta per il campo Valore e mappare gli elementi a ciascun elemento di valore. A differenza del modulo Compila un documento, il campo Valori del modulo Compila un documento con un batch di dati consente una sola voce contenente variabili.
 
@@ -231,23 +231,23 @@ Questo modulo di aggregazione è particolarmente utile per la creazione di elenc
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Modulo Source]</td> 
    <td>Selezionare il modulo che costituisce l'origine del testo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL Delimitatore iniziale del testo da sostituire]</td> 
    <td> <p>Immettere il carattere o i caratteri che si desidera contrassegnare come inizio del testo da sostituire. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Esempio: </b></span></span>Immettere <code>&#91;&#91;</code> per sostituire <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Delimitatore finale del testo da sostituire]</p> </td> 
    <td> <p>Immettere il carattere o i caratteri che si desidera contrassegnare come fine del testo da sostituire. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Esempio: </b></span></span>Immettere <code>&#93;&#93;</code> per sostituire <code>[[replace_me]]</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Group by]</td> 
+   <td role="rowheader">[!UICONTROL Raggruppa per]</td> 
    <td> Definisci un’espressione contenente uno o più elementi mappati. I dati aggregati vengono separati in Gruppi con il valore della stessa espressione. Ogni gruppo restituisce come bundle separato contenente una Chiave con l’espressione valutata e il testo aggregato. In questo modo, puoi utilizzare la Chiave come filtro nei moduli successivi.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td role="rowheader">[!UICONTROL Interrompi elaborazione dopo un'aggregazione vuota]</td> 
    <td>Abilita questa opzione per interrompere l’elaborazione quando un’aggregazione non contiene bundle.</td> 
   </tr> 
   <tr> 
@@ -255,7 +255,7 @@ Questo modulo di aggregazione è particolarmente utile per la creazione di elenc
    <td> <p> Selezionare un file di origine da un modulo precedente o mappare i dati del file di origine.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL Nome del file compilato]</td> 
    <td>Immettere un nome di file (con estensione) per il file di output di destinazione.</td> 
   </tr> 
   <tr> 

@@ -4,9 +4,9 @@ description: I  [!DNL Adobe Workfront Fusion Google Forms] moduli ti consentono 
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: ca8cee58b6586dbcd1a7ff7bffb0131b59dbb897
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1383'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
@@ -88,11 +88,11 @@ Il connettore Google Forms utilizza quanto segue:
 Per utilizzare le risposte del modulo, è innanzitutto necessario creare il foglio di calcolo delle risposte.
 
 1. Aprire il modulo.
-1. Passa alla scheda **[!UICONTROL Responses]**.
-1. Fare clic sull&#39;icona **[!UICONTROL Create Spreadsheet]** ![Icona Foglio di calcolo](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
+1. Passa alla scheda **[!UICONTROL Risposte]**.
+1. Fare clic sull&#39;icona **[!UICONTROL Crea foglio di calcolo]** ![Icona Foglio di calcolo](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Seleziona se desideri creare un nuovo foglio di calcolo o un foglio di calcolo esistente
-1. Fare clic su **[!UICONTROL Create]**.
+1. Fai clic su **[!UICONTROL Crea]**.
 
 ## [!DNL Google Forms] moduli e relativi campi
 
@@ -108,7 +108,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Trigger
 
-#### [!UICONTROL Watch Responses]
+#### [!UICONTROL Osserva le risposte]
 
 Controlla il modulo per individuare nuove risposte.
 
@@ -121,28 +121,28 @@ Controlla il modulo per individuare nuove risposte.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
    <td> <p>Selezionare il foglio di calcolo contenente le risposte del modulo che si desidera controllare per individuare le nuove risposte.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sheet]</td> 
+   <td role="rowheader">[!UICONTROL Foglio]</td> 
    <td> <p> Selezionare il foglio contenente le risposte del modulo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Row with headers]</td> 
+   <td role="rowheader">[!UICONTROL Riga con intestazioni]</td> 
    <td>Specifica la riga di intestazione della tabella. La riga predefinita è <code>A1:Z1</code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Value Render Option]</td> 
+   <td role="rowheader">Opzione di rendering del valore [!UICONTROL]</td> 
    <td> <p>Specifica come eseguire il rendering dei valori nell’output.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Formatted value]</strong> </p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>$1. 23</code>.</p> </li> 
-     <li> <p><strong>[!UICONTROL Unformatted value]</strong> </p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce il numero <code>1. 23</code>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Valore formattato]</strong> </p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>$1. 23</code>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Valore non formattato]</strong> </p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce il numero <code>1. 23</code>.</p> </li> 
      <li> <p><strong>[!UICONTROL Formula]</strong> </p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>=A1</code>.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Date and time render option]</td> 
+   <td role="rowheader">[!UICONTROL Data e ora opzione di rendering]</td> 
    <td>Seleziona la modalità di rappresentazione di date, ore e durata nell’output. Questo campo viene ignorato se [!UICONTROL Value Render Option] è impostato su [!UICONTROL Formatted Value].</td> 
   </tr> 
   <tr> 
@@ -154,11 +154,11 @@ Controlla il modulo per individuare nuove risposte.
 
 ### Azioni
 
-* [[!UICONTROL Add a Response]](#add-a-response)
-* [[!UICONTROL Delete a Response]](#delete-a-response)
-* [[!UICONTROL Update a Response]](#update-a-response)
+* [[!UICONTROL Aggiungi una risposta]](#add-a-response)
+* [[!UICONTROL Elimina una risposta]](#delete-a-response)
+* [[!UICONTROL Aggiorna una risposta]](#update-a-response)
 
-#### [!UICONTROL Add a Response]
+#### [!UICONTROL Aggiungi una risposta]
 
 Questo modulo aggiunge una nuova risposta alla parte inferiore del foglio di calcolo del modulo.
 
@@ -173,19 +173,19 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio in cui si desidera aggiungere una risposta.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sheet]</td> 
+   <td role="rowheader">[!UICONTROL Foglio]</td> 
    <td> <p> Selezionare il foglio contenente le risposte del modulo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>Immetti i valori desiderati nelle colonne del foglio. Le colonne sono disponibili in base al foglio.</p> <p>Per la colonna [!UICONTROL Timestamp], utilizzare il valore seguente:</p><pre>formatDate(now;GG/MM/AAAA HH:mm;UTC)</pre> </td> 
+   <td> <p>Immetti i valori desiderati nelle colonne del foglio. Le colonne sono disponibili in base al foglio.</p> <p>Per la colonna [!UICONTROL Timestamp], utilizza il valore seguente:</p><pre>formatDate(now;GG/MM/AAAA HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Value input option]</td> 
+   <td role="rowheader">Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> I valori immessi dall’utente non vengono analizzati e vengono memorizzati così come sono. </p> </li> 
@@ -193,17 +193,17 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     </ul> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Insert data option]</td> 
+   <td role="rowheader">[!UICONTROL Inserisci dati, opzione]</td> 
    <td> <p>Specifica come vengono modificati i dati esistenti quando vengono immessi nuovi dati. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Overwrite]</strong> </p> <p>I nuovi dati sovrascrivono quelli esistenti nelle aree in cui vengono scritti. L'aggiunta di dati alla fine del foglio consente di inserire nuove righe o colonne in modo da poter scrivere i dati.</p> </li> 
-     <li> <p><strong>[!UICONTROL Insert rows]</strong></p> <p>Le righe vengono inserite per i nuovi dati.</p> </li> 
+     <li> <p><strong>[!UICONTROL Sovrascrivi]</strong> </p> <p>I nuovi dati sovrascrivono quelli esistenti nelle aree in cui vengono scritti. L'aggiunta di dati alla fine del foglio consente di inserire nuove righe o colonne in modo da poter scrivere i dati.</p> </li> 
+     <li> <p><strong>[!UICONTROL Inserisci righe]</strong></p> <p>Le righe vengono inserite per i nuovi dati.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Response]
+#### [!UICONTROL Elimina una risposta]
 
 Questo modulo elimina una risposta selezionata.
 
@@ -216,21 +216,21 @@ Questo modulo elimina una risposta selezionata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio in cui si desidera eliminare una risposta.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sheet]</td> 
+   <td role="rowheader">[!UICONTROL Foglio]</td> 
    <td> <p> Selezionare il foglio contenente le risposte del modulo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Row number]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Numero riga]</p> </td> 
    <td> <p>Immettere o mappare il numero della riga da eliminare.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Response]
+#### [!UICONTROL Aggiorna una risposta]
 
 Questo modulo aggiorna la risposta selezionata.
 
@@ -245,15 +245,15 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Spreadsheet]</td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio in cui si desidera aggiornare una risposta.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sheet]</td> 
+   <td role="rowheader">[!UICONTROL Foglio]</td> 
    <td> <p> Selezionare il foglio contenente le risposte del modulo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Row number]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Numero riga]</p> </td> 
    <td> <p>Immettere o mappare il numero della riga da aggiornare.</p> </td> 
   </tr> 
   <tr> 
@@ -261,7 +261,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immetti i nuovi valori per le colonne desiderate. Le colonne sono disponibili in base al foglio.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Value input option]</td> 
+   <td role="rowheader">Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> I valori immessi dall’utente non vengono analizzati e vengono memorizzati così come sono. </p> </li> 
@@ -273,10 +273,10 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 ### Ricerche
 
-* [[!UICONTROL Search Responses]](#search-responses)
-* [[!UICONTROL Search Responses (Advanced])](#search-responses-advanced)
+* [[!UICONTROL Cerca risposte]](#search-responses)
+* [[!UICONTROL Risposte di ricerca (avanzate])](#search-responses-advanced)
 
-#### [!UICONTROL Search Responses]
+#### [!UICONTROL Cerca risposte]
 
 Questo modulo restituisce le risposte che corrispondono ai criteri specificati.
 
@@ -288,50 +288,50 @@ Questo modulo restituisce le risposte che corrispondono ai criteri specificati.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-    <td>[!UICONTROL Spreadsheet]</td>
+    <td>Foglio di calcolo di [!UICONTROL]</td>
    <td> <p>Selezionare il modulo in cui eseguire la ricerca.</p> </td> 
   </tr> 
   <tr data-mc-conditions="">
-    <td>[!UICONTROL Sheet] </td>
+    <td>[!UICONTROL Foglio] </td>
    <td> <p>Selezionare il foglio contenente le risposte del modulo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-    <td>[!UICONTROL Column range]</td>
+    <td>[!UICONTROL Intervallo colonne]</td>
    <td> <p> Selezionare l'intervallo di colonne che si desidera cercare.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td role="rowheader">[!UICONTROL Filtro]</td> 
    <td> <p>Definisci il filtro in base al quale desideri cercare le risposte.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-    <td>[!UICONTROL Sort Order] </td>
+    <td>Ordinamento [!UICONTROL] </td>
    <td> <p>Seleziona se ordinare le risposte restituite in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-    <td>[!UICONTROL Order By]</td>
+    <td>[!UICONTROL Ordina per]</td>
    <td> <p> Selezionare la colonna in base alla quale ordinare le risposte restituite.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Value Render Option]</td> 
+   <td role="rowheader">Opzione di rendering del valore [!UICONTROL]</td> 
    <td> <p>Specifica come eseguire il rendering dei valori nell’output.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Formatted value]</strong></p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>$1. 23</code>.</p> </li> 
-     <li> <p><strong>[!UICONTROL Unformatted value]</strong> </p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce il numero <code>1. 23</code>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Valore formattato]</strong></p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>$1. 23</code>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Valore non formattato]</strong> </p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce il numero <code>1. 23</code>.</p> </li> 
      <li> <p><strong>[!UICONTROL Formula]</strong> </p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>=A1</code>.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr data-mc-conditions="">
-    <td>[!UICONTROL Date and time render option]</td>
-    <td>Seleziona la modalità di rappresentazione di date, ore e durata nell’output. Questo campo viene ignorato se l'opzione [!UICONTROL Value Render] è impostata su Valore formattato. </td>
+    <td>[!UICONTROL Data e ora opzione di rendering]</td>
+    <td>Seleziona la modalità di rappresentazione di date, ore e durata nell’output. Questo campo viene ignorato se l'opzione [!UICONTROL Value Render] è impostata su Formatted Value. </td>
   </tr> 
   <tr>
-    <td role="rowheader">[!UICONTROL Maximum number of returned responses]</td>
+    <td role="rowheader">[!UICONTROL Numero massimo di risposte restituite]</td>
    <td> <p> Impostare il numero massimo di risposte restituite da [!DNL Workfront Fusion] durante un ciclo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Responses (Advanced)]
+#### [!UICONTROL Risposte di ricerca (avanzate)]
 
 Questo modulo esegue una ricerca utilizzando [[!DNL Google Charts Query Language]](https://developers.google.com/chart/interactive/docs/querylanguage). Questo modulo non restituisce un numero di riga.
 
@@ -344,11 +344,11 @@ Questo modulo esegue una ricerca utilizzando [[!DNL Google Charts Query Language
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL Spreadsheet]</td>
+    <td>Foglio di calcolo di [!UICONTROL]</td>
    <td> <p>Selezionare il foglio di calcolo contenente il foglio che si desidera cercare.</p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL Sheet]</td>
+    <td>[!UICONTROL Foglio]</td>
    <td> <p> Selezionare il foglio contenente le risposte del modulo.</p> </td> 
   </tr> 
   <tr> 
@@ -356,7 +356,7 @@ Questo modulo esegue una ricerca utilizzando [[!DNL Google Charts Query Language
    <td> <p>Definire la query di ricerca utilizzando <a href="https://developers.google.com/chart/interactive/docs/querylanguage">[!DNL Google Charts Query Language]</a>.</p> <p>Esempio: <code>select * where C = "John"</code> recupera tutti i valori per la riga in cui la colonna C è "John".</p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL Maximum number of returned rows]</td>
+    <td>[!UICONTROL Numero massimo di righe restituite]</td>
    <td> <p> Impostare il numero massimo di risposte restituite da [!DNL Workfront Fusion] durante un ciclo.</p> </td> 
   </tr> 
  </tbody> 

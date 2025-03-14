@@ -1,12 +1,12 @@
 ---
 title: Moduli JWT
-description: L'app  [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] fornisce un modulo che crea token JWT in base all'algoritmo fornito.
+description: L'app  [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] fornisce un modulo che crea token JWT in base all'algoritmo specificato.
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Nessuna licenza Workfront Fusion richiesta.</p>
+   <p>Nessun requisito di licenza per Workfront Fusion</p>
    </td> 
   </tr> 
   <tr> 
@@ -99,7 +99,7 @@ Questo modulo genera un JWT basato sull’algoritmo selezionato.
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Payload] </td> 
+   <td role="rowheader">Payload [!UICONTROL] </td> 
    <td> <p>Per ogni elemento del payload che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore dell'elemento.</p> </td> 
   </tr> 
   <tr> 

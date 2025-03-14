@@ -4,9 +4,9 @@ description: Puoi aggiungere tecniche avanzate di gestione degli errori al perco
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -87,9 +87,9 @@ Per informazioni su come Fusion valuta ed elabora vari tipi di dati, vedere [Tip
 
 Questo scenario di esempio mostra il funzionamento di questi filtri per la gestione degli errori.
 
-Se si utilizza Dropbox > Crea modulo cartella e esiste già una cartella con lo stesso nome, il modulo genera un errore dati:
+Se utilizzi Dropbox > Crea modulo cartella e esiste già una cartella con lo stesso nome, il modulo genera un DataError:
 
-![Errore nel Dropbox](assets/dropbox.png)
+![Errore in Dropbox](assets/dropbox.png)
 
 Lo scenario completo funziona come segue:
 
@@ -101,9 +101,9 @@ Lo scenario completo funziona come segue:
 1. La route del gestore degli errori (bolle trasparenti) contiene un router per filtrare gli errori
 La prima route è per un tipo di errore specificato denominato `DataError`.
 
-   1. Se si verifica un `DataError` e i dettagli dell&#39;errore passano attraverso il filtro, il Dropbox >Elenca tutti i file/sottocartelle in un modulo cartella elenca tutte le cartelle nel Dropbox.
+   1. Se si verifica un `DataError` e i dettagli dell&#39;errore passano attraverso il filtro, Dropbox >Elenca tutti i file/sottocartelle in un modulo cartelle elenca tutte le cartelle in Dropbox.
    1. Il filtro successivo corrisponde ai nomi delle cartelle.
-   1. La direttiva **Riprendi** specifica l&#39;ID cartella e il percorso della cartella esistente e l&#39;esecuzione dello scenario riprende dal Dropbox > Crea modulo cartella. Tuttavia, invece di creare una nuova cartella, Fusion utilizza i valori della direttiva Riprendi per passare al modulo successivo e caricare il file nella cartella esistente.
+   1. La direttiva **Riprendi** specifica l&#39;ID cartella e il percorso della cartella esistente e l&#39;esecuzione dello scenario riprende da Dropbox > Crea modulo cartella. Tuttavia, invece di creare una nuova cartella, Fusion utilizza i valori della direttiva Riprendi per passare al modulo successivo e caricare il file nella cartella esistente.
 
 1. La seconda route è per tutti gli altri errori e termina con la direttiva Rollback, che determina l&#39;interruzione immediata dello scenario
 
@@ -117,7 +117,7 @@ Il filtro della prima route è impostato per gestire solo l&#39;errore specifico
 
 ![Condizione](assets/condition.png)
 
-Il Dropbox > Elenca tutti i file in un modulo di cartelle è configurato per restituire tutte le cartelle nella cartella di destinazione. Il seguente filtro passa solo a quello che stavamo originariamente tentando di creare. (Il nome della cartella viene memorizzato in 33. Elemento Nome cartella.)
+Il modulo Dropbox > Elenca tutti i file in una cartella è configurato per restituire tutte le cartelle presenti nella cartella di destinazione. Il seguente filtro passa solo a quello che stavamo originariamente tentando di creare. (Il nome della cartella viene memorizzato in 33. Elemento Nome cartella.)
 
 ![Condizione](assets/condition2.png)
 
@@ -143,6 +143,6 @@ In questo scenario, la seconda route del gestore errori è nidificata sotto la p
 
 Se il modulo Dropbox > Crea cartella riscontra un errore, l’esecuzione si sposta sulla prima route. Se viene passato il filtro `DataError Takes Place`, viene eseguito il modulo successivo, seguito dal modulo Riprendi direttiva se non si verifica un errore in Dropbox > Elenca tutti i file/sottocartelle in un modulo cartella.
 
-Tuttavia, se si verifica un errore in Dropbox > Elenca tutti i file/sottocartelle in un modulo cartelle, l&#39;esecuzione si sposta su Gestione errori Route 2 e termina con la direttiva [!UICONTROL Ignore]. Il modulo [!UICONTROL Resume directive] non viene eseguito in questo caso.
+Tuttavia, se si verifica un errore in Dropbox > Elenca tutti i file/sottocartelle in un modulo cartella, l&#39;esecuzione si sposta su Gestione errori Route 2 e termina con la direttiva [!UICONTROL Ignora]. Il modulo [!UICONTROL Riprendi direttiva] non è eseguito in questo caso.
 
 >[!ENDSHADEBOX]
