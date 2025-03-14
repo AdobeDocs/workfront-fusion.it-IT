@@ -4,9 +4,9 @@ description: L'automazione del lavoro richiede un'elaborazione rapida, quindi  [
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ Per ulteriori informazioni, vedere [Utilizzo di file di grandi dimensioni](/help
 ## Webhook
 
 * La dimensione massima predefinita di un payload è **5 MB**.
-* I webhook sono limitati a **100 richieste al secondo**. Al raggiungimento di questo limite, Workfront Fusion invia uno stato 429 ([!UICONTROL Too Many Requests]).
-* [!DNL Workfront Fusion] memorizza i payload del webhook per 30 giorni. L&#39;accesso a un payload del webhook dopo più di 30 giorni dalla ricezione genera l&#39;errore &quot;[!UICONTROL Failed to read file from storage.]&quot;
+* I webhook sono limitati a **100 richieste al secondo**. Al raggiungimento di questo limite, Workfront Fusion invia uno stato 429 ([!UICONTROL Troppe richieste]).
+* [!DNL Workfront Fusion] memorizza i payload del webhook per 30 giorni. L&#39;accesso a un payload del webhook dopo più di 30 giorni dalla ricezione genera l&#39;errore &quot;[!UICONTROL Impossibile leggere il file dall&#39;archivio.]&quot;
 * I webhook vengono disattivati automaticamente se si applica una delle seguenti condizioni:
 
    * Il webhook non è stato connesso ad alcuno scenario per più di 5 giorni
@@ -76,3 +76,17 @@ Per ulteriori informazioni, vedere [Utilizzo di file di grandi dimensioni](/help
 ## Nuovi tentativi
 
 * Quando si utilizza il modulo Interrompi e si specifica la direttiva Riprova, se uno scenario si interrompe consecutivamente 10 volte in un arco temporale di 2 minuti, viene disattivato automaticamente.
+
+## Ricorsione
+
+La ricorsione si verifica quando uno scenario attiva una nuova esecuzione di se stesso, che attiva una nuova esecuzione e così via in un ciclo infinito.
+
+Ad esempio, uno scenario viene attivato quando viene creata un&#39;attività e tale scenario crea un&#39;attività. L’attività appena creata attiva nuovamente lo scenario, creando un’altra attività. Ogni volta che viene creata un&#39;attività, viene attivato lo scenario e ogni volta che lo scenario viene eseguito, viene creata un&#39;attività.
+
+La ricorsione può causare problemi di prestazioni sia per l’organizzazione proprietaria dello scenario ricorsivo che per altre organizzazioni.
+
+Per quanto riguarda la ricorsione, considera quanto segue:
+
+* **Quando uno scenario provoca la ricorsione, viene disattivato dal team di progettazione di Fusion per evitare ulteriori problemi di prestazioni.**
+* Poiché la ricorsione è il risultato della progettazione dello scenario, è necessario progettare gli scenari in modo tale che lo scenario non includa azioni che attivino lo scenario.
+

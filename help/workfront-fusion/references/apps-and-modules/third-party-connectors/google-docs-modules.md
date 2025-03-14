@@ -4,9 +4,9 @@ description: I moduli di Adobe Workfront Fusion [!DNL Google Docs] ti consentono
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: eac874d588e026cab3a01017d32e291d5c8b7b74
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4045'
 ht-degree: 0%
 
 ---
@@ -498,8 +498,12 @@ Questo modulo di azione sostituisce il testo di un documento.
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL ID documento]</td> 
+   <td> <p>Mappare o selezionare il documento in cui si desidera sostituire il testo.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Sostituisci testo]</p> </td> 
-   <td> <p>Aggiungere ogni testo da sostituire.</p> 
+   <td> <p>Per ogni parte di testo che si desidera sostituire, fare clic su <b>Aggiungi elemento</b> e immettere quanto segue:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Vecchio testo da sostituire]</strong> </p> <p>Immettere il testo che si desidera sostituire.</p> </li> 
      <li> <p><strong>[!UICONTROL Nuovo testo da inserire]</strong> </p> <p>Immettere il nuovo testo.</p> </li> 
@@ -538,8 +542,12 @@ Questo modulo sostituisce un’immagine esistente. Vengono mantenute le proporzi
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL URL immagine]</p> </td> 
-   <td> <p>Inserisci o mappa l’URL della nuova immagine che sostituirà l’immagine esistente.</p> <p>Le immagini sono elencate nell'ordine in cui compaiono nel documento. <code>Body: Image No. 1</code> è ad esempio la prima immagine del documento.</p> </td> 
+   <td role="rowheader">[!UICONTROL ID documento]</td> 
+   <td> <p>Mappare o selezionare il documento in cui si desidera sostituire un'immagine.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Immagini sostituzione]</p> </td> 
+   <td> Per ogni immagine da sostituire, fare clic su <b>Aggiungi elemento</b> e immettere l'ID immagine esistente, quindi immettere o mappare l'URL della nuova immagine che sostituirà l'immagine esistente. <p>Le immagini sono elencate nell'ordine in cui compaiono nel documento. <code>Body: Image No. 1</code> è ad esempio la prima immagine del documento.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -579,8 +587,48 @@ Questo modulo di attivazione restituisce i dettagli del documento quando viene c
 
 ### Altro
 
-* [[!UICONTROL Effettuare una chiamata API]](#make-an-api-call)
 * [[!UICONTROL Rendere selezionabili tutti i collegamenti in un documento]](#make-all-links-in-a-document-clickable)
+* [[!UICONTROL Effettuare una chiamata API]](#make-an-api-call)
+
+#### [!UICONTROL Rendere selezionabili tutti i collegamenti in un documento]
+
+Questo modulo di azione trova tutti i collegamenti nel documento e li rende cliccabili.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Crea tutti i collegamenti in un documento]</p> </td> 
+   <td> 
+    <ul> 
+     <li><strong>[!UICONTROL By Mapping]</strong> <br>Selezionare questa opzione per mappare il modello di documento.</li> 
+     <li><strong>[!UICONTROL Per elenco a discesa]</strong> <br> Selezionare questa opzione per scegliere il documento dal menu a discesa.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scegli unità]</td> 
+   <td> <p>Selezionare il tipo di unità in cui si trova il documento in cui si desidera rendere cliccabili i collegamenti. Questa opzione è disponibile se nel campo precedente è stato selezionato [!UICONTROL Per elenco a discesa].</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Unità]</strong> </p> <p>Selezionare la cartella in cui si trova il documento in cui si desidera rendere cliccabili i collegamenti.</p> </li> 
+     <li> <p><strong>[!UICONTROL Condiviso Con Me]</strong> </p> <p>Selezionare la cartella in cui si trova il documento in cui si desidera rendere cliccabili i collegamenti.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Unità condivisa]</strong> (disponibile solo per [!DNL Google Workspace] utenti)</p> <p>Selezionare se si desidera [!UICONTROL Utilizzare Domain Admin Access]. Se si seleziona [!UICONTROL Sì], la richiesta viene inviata come amministratore di dominio e vengono restituite tutte le unità condivise in cui il richiedente è un amministratore.</p> <p>Selezionare l'unità condivisa in cui si trova il documento in cui si desidera rendere cliccabili i collegamenti, quindi selezionare il documento.</p> <p>Nota: se hai selezionato l'opzione [!DNL Google Docs] in questo campo e non sei un utente [!DNL Google Workspace], viene restituito l'errore <code>[400] Invalid Value</code>.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Unità condivisa]</td> 
+   <td> <p>Selezionare l'unità contenente il documento in cui si desidera aggiornare i collegamenti, quindi selezionare un documento. Questa opzione è disponibile se è stato selezionato [!DNL My Drive] nel campo [!UICONTROL Scegli un'unità].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID documento]</td> 
+   <td> <p> Selezionare o mappare il documento in cui si desidera aggiornare i collegamenti.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Effettuare una chiamata API]
 
@@ -620,6 +668,8 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
 **Esempio:** La chiamata API seguente recupera i dettagli del documento specificato nel Google Docs:
 
 **URL:**
@@ -636,42 +686,4 @@ I dettagli del documento recuperato si trovano nell&#39;output del modulo in [!U
 
 ![Output chiamata API](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
-#### [!UICONTROL Rendere selezionabili tutti i collegamenti in un documento]
-
-Questo modulo di azione trova tutti i collegamenti nel documento e li rende cliccabili.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Crea tutti i collegamenti in un documento]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[!UICONTROL By Mapping]</strong> <br>Selezionare questa opzione per mappare il modello di documento.</li> 
-     <li><strong>[!UICONTROL Per elenco a discesa]</strong> <br> Selezionare questa opzione per scegliere il documento dal menu a discesa.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Scegli unità]</td> 
-   <td> <p>Selezionare il tipo di unità in cui si trova il documento in cui si desidera rendere cliccabili i collegamenti. Questa opzione è disponibile se nel campo precedente è stato selezionato [!UICONTROL Per elenco a discesa].</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Unità]</strong> </p> <p>Selezionare la cartella in cui si trova il documento in cui si desidera rendere cliccabili i collegamenti, quindi selezionare il documento.</p> </li> 
-     <li> <p><strong>[!UICONTROL Condiviso Con Me]</strong> </p> <p>Selezionare la cartella in cui si trova il documento in cui si desidera rendere cliccabili i collegamenti, quindi selezionare il documento.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Unità condivisa]</strong> (disponibile solo per [!DNL Google Workspace] utenti)</p> <p>Selezionare se si desidera [!UICONTROL Utilizzare Domain Admin Access]. Se si seleziona [!UICONTROL Sì], la richiesta viene inviata come amministratore di dominio e vengono restituite tutte le unità condivise in cui il richiedente è un amministratore.</p> <p>Selezionare l'unità condivisa in cui si trova il documento in cui si desidera rendere cliccabili i collegamenti, quindi selezionare il documento.</p> <p>Nota: se hai selezionato l'opzione [!DNL Google Docs] in questo campo e non sei un utente [!DNL Google Workspace], viene restituito l'errore <code>[400] Invalid Value</code>.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Unità condivisa]</td> 
-   <td> <p>Selezionare l'unità contenente il documento in cui si desidera aggiornare i collegamenti, quindi selezionare un documento. Questa opzione è disponibile se è stato selezionato [!DNL My Drive] nel campo [!UICONTROL Scegli un'unità].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID documento]</td> 
-   <td> <p> Selezionare o mappare il documento in cui si desidera aggiornare i collegamenti.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]
