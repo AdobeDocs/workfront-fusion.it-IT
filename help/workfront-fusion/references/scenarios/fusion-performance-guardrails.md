@@ -4,9 +4,9 @@ description: L'automazione del lavoro richiede un'elaborazione rapida, quindi  [
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
+source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Per ulteriori informazioni, vedere [Utilizzo di file di grandi dimensioni](/help
 
 La ricorsione si verifica quando uno scenario attiva una nuova esecuzione di se stesso, che attiva una nuova esecuzione e così via in un ciclo infinito.
 
-Ad esempio, uno scenario viene attivato quando viene creata un&#39;attività e tale scenario crea un&#39;attività. L’attività appena creata attiva nuovamente lo scenario, creando un’altra attività. Ogni volta che viene creata un&#39;attività, viene attivato lo scenario e ogni volta che lo scenario viene eseguito, viene creata un&#39;attività.
+Ad esempio, uno scenario viene attivato quando viene creata un&#39;attività e tale scenario crea due attività. Le nuove attività create attivano entrambe di nuovo lo scenario, che crea quattro nuove attività. Ogni volta che viene creata un&#39;attività, lo scenario viene attivato e ogni volta che lo scenario viene eseguito, il numero di attività raddoppia. Il numero di attività aumenta in modo esponenziale.
 
 La ricorsione può causare problemi di prestazioni sia per l’organizzazione proprietaria dello scenario ricorsivo che per altre organizzazioni.
 
