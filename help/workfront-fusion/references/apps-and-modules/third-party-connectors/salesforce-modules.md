@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 87b15e32338b798983adbf0016709752ee862567
 workflow-type: tm+mt
-source-wordcount: '3042'
+source-wordcount: '2952'
 ht-degree: 0%
 
 ---
@@ -185,15 +185,15 @@ Questo modulo trigger avvia uno scenario quando un campo viene aggiornato in [!D
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record] </td> 
-   <td> <p>Selezionare il tipo di record contenente il campo che si desidera controllare nel modulo. È necessario scegliere un tipo di record con [!UICONTROL Field History] attivato nella configurazione di [!DNL Salesforce]. Per ulteriori informazioni, vedere <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">Tracciamento cronologia campi</a> nella documentazione di [!DNL Salesforce]. </p> </td> 
+   <td> <p>Selezionare il tipo di record contenente il campo che si desidera controllare nel modulo. È necessario scegliere un tipo di record con [!UICONTROL Field History] attivato nella configurazione di [!DNL Salesforce]. Per ulteriori informazioni, vedere <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Tracciamento cronologia campi</a> nella documentazione di [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
-   <td> <p>Selezionare i campi che si desidera che il modulo controlli per verificare le modifiche.</p> </td> 
+   <td> <p>Selezionare i campi che si desidera che il modulo controlli per verificare le modifiche. I campi disponibili dipendono dal tipo di record selezionato.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
@@ -214,7 +214,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
@@ -239,29 +239,36 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 Questo modulo di attivazione esegue uno scenario quando un utente invia un messaggio. Il modulo restituisce tutti i campi standard associati al record o ai record, insieme a tutti i campi e i valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
 
-Questo modulo richiede una configurazione aggiuntiva:
+Questo modulo richiede una configurazione aggiuntiva. È necessario configurare un flusso per i messaggi in uscita.
 
-1. Passare alla pagina di installazione di [!DNL Salesforce].
+* Per istruzioni sui flussi in Salesforce, vedi [Automatizzare le attività con flussi](https://help.salesforce.com/s/articleView?id=platform.flow.htm) nella documentazione di Salesforce.
+* Per informazioni sulla configurazione di un messaggio in uscita in Salesforce, vedi [Inviare un messaggio in uscita dal flusso attivato dal record](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) nella documentazione di Salesforce
 
-   Per accedere alla pagina di installazione, individuare e fare clic sul pulsante &quot;[!UICONTROL Configurazione]&quot; nell&#39;angolo superiore destro dell&#39;account [!DNL Salesforce]. Dalla pagina di configurazione di [!DNL Salesforce], individuare la barra &quot;[!UICONTROL Ricerca rapida/Ricerca]&quot; sul lato sinistro. Cerca &quot;[!UICONTROL Regole flusso di lavoro].&quot;
+<!--
 
-1. Fare clic su **[!UICONTROL Regole flusso di lavoro]**.
-1. Nella pagina [!UICONTROL Regole flusso di lavoro] visualizzata, fare clic su **[!UICONTROL Nuova regola]** e selezionare il tipo di oggetto a cui applicare la regola, ad esempio &quot;[!UICONTROL Opportunità]&quot; se si monitorano gli aggiornamenti ai record Opportunità.
-1. Fai clic su **[!UICONTROL Avanti]**.
-1. Imposta il nome di una regola, i criteri di valutazione e i criteri della regola, quindi fai clic su **[!UICONTROL Salva]** e **[!UICONTROL Successivo]**.
+1. Go to the [!DNL Salesforce] setup page.
 
-1. Fai clic su **[!UICONTROL Fine]**.
-1. Dalla regola del flusso di lavoro appena creata, fai clic su **[!UICONTROL Modifica]**.
-1. Dall&#39;elenco a discesa **[!UICONTROL Aggiungi azione flusso di lavoro]**, selezionare **[!UICONTROL Nuovo messaggio in uscita]**.
+   To access the setup page, locate and click the button labeled "[!UICONTROL Setup]" in the upper-right hand corner of the [!DNL Salesforce] account. From the [!DNL Salesforce] setup page, locate the "[!UICONTROL Quick Find / Search]" bar on the left hand side. Search for "[!UICONTROL Workflow Rules]." 
 
-1. Specifica il nome, la descrizione, l&#39;URL dell&#39;endpoint e i campi da includere nel nuovo messaggio in uscita, quindi fai clic su **[!UICONTROL Salva]**.
+1. Click **[!UICONTROL Workflow Rules]**. 
+1. On the the [!UICONTROL Workflow Rules] page that appears, click **[!UICONTROL New Rule]** and select the object type the rule will apply to (such as "[!UICONTROL Opportunity]" if you are monitoring updates to Opportunity records).
+1. Click **[!UICONTROL Next]**.
+1. Set a rule name, evaluation criteria, and rule criteria, then click **[!UICONTROL Save]** and **[!UICONTROL Next]**.
 
-   Il campo **[!UICONTROL URL endpoint]** contiene l&#39;URL specificato nel [!DNL Salesforce] [!UICONTROL messaggio in uscita] in [!DNL Workfront Fusion].
+1. Click **[!UICONTROL Done]**.
+1. From the newly created Workflow rule, click **[!UICONTROL Edit]**..
+1. From the **[!UICONTROL Add Workflow Action]** drop-down list, select **[!UICONTROL New Outbound Message]**.
 
-1. Configura uno scenario che inizia con l&#39;evento [!UICONTROL Messaggio in uscita].
+1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.
 
-1. Fai clic sull&#39;icona **&lt;/>** in basso a destra e copia l&#39;URL specificato.
-1. Torna alla pagina **[!UICONTROL Regole flusso di lavoro]**, individua la regola appena creata, quindi fai clic su **[!UICONTROL Attiva]**.
+   The **[!UICONTROL Endpoint URL]** field contains the URL provided on the [!DNL Salesforce] [!UICONTROL Outbound Message] in [!DNL Workfront Fusion].
+
+1. Configure a scenario beginning with the [!UICONTROL Outbound Message] event. 
+
+1. Click the **</>** icon in the bottom right and copy the provided URL.
+1. Return to the **[!UICONTROL Workflow Rules]** page, locate the newly created rule, then click **[!UICONTROL Activate]**.
+
+-->
 
 Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
 
@@ -310,7 +317,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Tipo di record] </p> </td> 
@@ -344,15 +351,15 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Immettere un percorso relativo a <code> &lt;Instance URL&gt;/services/data/v46.0/</code>.</p> <p>Per l'elenco degli endpoint disponibili, fare riferimento alla <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Guida per gli sviluppatori di API REST di Salesforce</a>.</p> </td> 
+   <td> <p>Immettere un percorso relativo a <code> &lt;Instance URL&gt;/services/data/v62.0/</code>.</p> <p>Per l'elenco degli endpoint disponibili, fare riferimento alla <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Guida per gli sviluppatori di API REST di Salesforce</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   td&gt; <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -372,6 +379,28 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
+**Esempio:** La seguente chiamata API restituisce l&#39;elenco di tutti gli utenti nel tuo account [!DNL Salesforce]:
+
+* **URL**: `query`
+
+* **Metodo**: [!UICONTROL GET]
+
+* **Stringa di query**:
+
+* **Chiave**: `q`
+
+* **Valore**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+
+Le corrispondenze della ricerca si trovano nell&#39;output del modulo in **[!UICONTROL Bundle] > [!UICONTROL Corpo] > [!UICONTROL record]**.
+
+Nel nostro esempio, sono stati restituiti 6 utenti:
+
+![Corrisponde alla ricerca](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+
+>[!ENDSHADEBOX]
+
 #### [!UICONTROL Eliminare un record]
 
 Questo modulo di azione elimina un record esistente in un oggetto.
@@ -388,7 +417,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record] </td> 
@@ -417,7 +446,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Tipo di download]</td>
@@ -451,7 +480,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Tipo di record]</td>
@@ -459,7 +488,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr>
     <td>[!UICONTROL Campi Record]</td>
-    <td>Seleziona i campi che desideri che il modulo legga. Selezionare almeno un campo.</td>
+    <td>Seleziona i campi che desideri che il modulo legga. Selezionare almeno un campo. I campi disponibili dipendono dal tipo di record.</td>
   </tr> 
   <tr>
     <td>[!UICONTROL ID]</td>
@@ -467,26 +496,6 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
  </tbody> 
 </table>
-
->[!INFO]
->
->**Esempio:** La seguente chiamata API restituisce l&#39;elenco di tutti gli utenti nel tuo account [!DNL Salesforce]:
->
->* **URL**: `query`
->
->* **Metodo**: [!UICONTROL GET]
->
->* **Stringa di query**:
->
->* **Chiave**: `q`
->
->* **Valore**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
->
->Le corrispondenze della ricerca si trovano nell&#39;output del modulo in **[!UICONTROL Bundle] > [!UICONTROL Corpo] > [!UICONTROL record]**.
->
->Nel nostro esempio, sono stati restituiti 6 utenti:
->
->![Corrisponde alla ricerca](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
 #### [!UICONTROL Aggiorna un record]
@@ -505,7 +514,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
@@ -537,7 +546,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di caricamento]</td> 
@@ -549,7 +558,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder]</td> 
-   <td>Seleziona la cartella contenente il file da caricare nel modulo. </td> 
+   <td>Selezionare la cartella in cui si desidera caricare un documento. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source File]</td> 
@@ -561,8 +570,6 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 #### Carica file
 
 Questo modulo di azione carica un singolo file in Salesforce.
-
-
 
 <table style="table-layout:auto"> 
  <col> 
@@ -591,47 +598,14 @@ Questo modulo di azione carica un singolo file in Salesforce.
   <tr> 
    <td role="rowheader">[!UICONTROL Visibility]</td> 
    <td>Se si utilizza il collegamento del documento, immettere o mappare la visibilità del documento.<ul><li><b>AllUsers</b><p>Disponibile per tutti gli utenti con autorizzazioni</p></li><li><b>InternalUsers</b><p>Disponibile per gli utenti interni con autorizzazioni.</p></li><li><b>SharedUsers</b><p>Disponibile per gli utenti che possono visualizzare il feed in cui è pubblicato il file.</p></li></ul></td> 
-  </tr>
-
-### Ricerche
-
-#### [!UICONTROL Cerca con query]
-
-Questo modulo di ricerca cerca i record in un oggetto in [!DNL Salesforce] che corrispondono alla query di ricerca specificata. Puoi mappare queste informazioni nei moduli successivi nello scenario.
-
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Tipo di ricerca [!UICONTROL]</td> 
-   <td> <p>Selezionare il tipo di ricerca che si desidera venga eseguita dal modulo:</p> 
-    <ul> 
-     <li> <p>[!UICONTROL semplice]</p> </li> 
-     <li> <p>[!UICONTROL Tramite SOSL (Salesforce Object Search Language)]</p> </li> 
-     <li> <p>[!UICONTROL Tramite SOQL (Salesforce Object Query Language)]</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Type] </p> </td> 
-   <td> <p>Se è stato selezionato il tipo di ricerca Semplice, scegliere il tipo di record [!DNL Salesforce] che si desidera cercare nel modulo.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
-   <td> <p>Immettere la query in base alla quale si desidera eseguire la ricerca.</p> <p>Per ulteriori informazioni su SOSL, vedere <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> nella documentazione di [!DNL Salesforce].</p> <p>Per ulteriori informazioni su SOQL, vedere <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> nella documentazione di [!DNL Salesforce].</p> <p>Nota: il valore del parametro <code>RETURNING </code> influenza l'output del modulo. Se si utilizza <code>LIMIT</code>, [!DNL Fusion] ignorerà le impostazioni nel campo [!UICONTROL Conteggio massimo dei record]. Se non si imposta alcun limite, verrà inserito il valore [!UICONTROL LIMIT = Maximal count of records].</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Conteggio massimo dei record]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### Ricerche
+
+* [Ricerca](#search)
+* [Cerca con query](#search-with-query)
 
 #### [!UICONTROL Ricerca]
 
@@ -655,7 +629,7 @@ Questo modulo di azione recupera tutti i record che soddisfano un determinato cr
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
-   <td>Selezionare i campi da includere nell'output del modulo.</td> 
+   <td>Selezionare i campi da includere nell'output del modulo. I campi sono disponibili in base al tipo di record</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Set di risultati]</td> 
@@ -664,6 +638,44 @@ Questo modulo di azione recupera tutti i record che soddisfano un determinato cr
   <tr> 
    <td role="rowheader">[!UICONTROL max]</td> 
    <td>Immettere o mappare il numero massimo di record che il modulo deve recuperare durante ogni ciclo di esecuzione dello scenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Cerca con query]
+
+Questo modulo di ricerca cerca i record in un oggetto in [!DNL Salesforce] che corrispondono alla query di ricerca specificata. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+
+Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a [!DNL Workfront Fusion], vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Tipo di ricerca [!UICONTROL]</td> 
+   <td> <p>Selezionare il tipo di ricerca che si desidera venga eseguita dal modulo:</p> 
+    <ul> 
+     <li> <p>[!UICONTROL semplice]</p> </li> 
+     <li> <p>[!UICONTROL Tramite SOSL (Salesforce Object Search Language)]</p> </li> 
+     <li> <p>[!UICONTROL Tramite SOQL (Salesforce Object Query Language)]</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Type] </p> </td> 
+   <td> <p>Se è stato selezionato il tipo di ricerca Semplice, scegliere il tipo di record [!DNL Salesforce] che si desidera cercare nel modulo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
+   <td> <p>Immettere la query in base alla quale si desidera eseguire la ricerca.</p> <p>Per ulteriori informazioni su SOSL, vedere <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> nella documentazione di [!DNL Salesforce].</p> <p>Per ulteriori informazioni su SOQL, vedere <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> nella documentazione di [!DNL Salesforce].</p> <p>Nota: il valore del parametro <code>RETURNING </code> influenza l'output del modulo. Se si utilizza <code>LIMIT</code>, [!DNL Fusion] ignorerà le impostazioni nel campo [!UICONTROL Conteggio massimo dei record]. Se non si imposta alcun limite, verrà inserito il valore [!UICONTROL LIMIT = Maximal count of records].</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Conteggio massimo dei record]</td> 
+   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
