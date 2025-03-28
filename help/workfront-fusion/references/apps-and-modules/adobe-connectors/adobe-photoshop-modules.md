@@ -4,9 +4,9 @@ description: Con i moduli di Adobe Photoshop, puoi avviare uno scenario Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
+source-git-commit: db1d6f5bf29063b069681395c6ff6d3554c67dc3
 workflow-type: tm+mt
-source-wordcount: '4352'
+source-wordcount: '4359'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,8 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 Prima di poter utilizzare il connettore [!DNL Adobe Photoshop], è necessario verificare che siano soddisfatti i seguenti prerequisiti:
 
 * Devi avere un account [!DNL Adobe Photoshop] attivo.
-* È necessario disporre di un ID client e di un segreto client. Puoi acquistarli dalla Adobe Developer Console.
+* È necessario disporre di una licenza di Firefly Services.
+* È necessario disporre di un ID client e di un segreto client. Puoi acquistarli da Adobe Developer Console.
 
 ## Informazioni API di Adobe Photoshop
 
