@@ -4,7 +4,7 @@ description: Puoi utilizzare il connettore Adobe Workfront Fusion Adobe Workfron
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
+source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 2%
@@ -940,11 +940,6 @@ Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;ev
 
 +++ **Aggiorna un record**
 
->[!IMPORTANT]
->
->Questo modulo è stato sostituito dal modulo Aggiorna record. È consigliabile utilizzare tale modulo in nuovi scenari.
->Gli scenari esistenti che utilizzano questo modulo continueranno a funzionare come previsto. Questo modulo verrà rimosso dal selettore dei moduli a maggio 2025.
-
 
 Questo modulo di azione aggiorna un oggetto, ad esempio un progetto, un’attività o un problema. Il modulo consente di selezionare quale dei campi dell’oggetto è disponibile nel modulo.
 
@@ -993,6 +988,11 @@ Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile ut
 +++
 
 +++ **[!UICONTROL Aggiorna record (legacy)]**
+
+>[!IMPORTANT]
+>
+>Questo modulo è stato sostituito dal modulo Aggiorna record. È consigliabile utilizzare tale modulo in nuovi scenari.
+>Gli scenari esistenti che utilizzano questo modulo continueranno a funzionare come previsto. Questo modulo verrà rimosso dal selettore dei moduli a maggio 2025.
 
 Questo modulo di azione aggiorna un oggetto, ad esempio un progetto, un’attività o un problema. Il modulo consente di selezionare quale dei campi dell’oggetto è disponibile nel modulo.
 
