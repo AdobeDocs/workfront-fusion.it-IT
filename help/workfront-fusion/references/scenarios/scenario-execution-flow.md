@@ -5,9 +5,9 @@ description: Questo articolo spiega come viene eseguito uno scenario e come i da
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 # Flusso di esecuzione dello scenario
 
 Questo articolo spiega come viene eseguito uno scenario, come scorrono i dati al suo interno e come visualizzare i dati elaborati da ciascun modulo.
+
+Per visualizzare il modo in cui i dati scorrono attraverso uno scenario attivo, vedere [Visualizzare il flusso di dati in uno scenario in esecuzione](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
 ## Flusso di esecuzione dello scenario
 
@@ -26,7 +28,7 @@ Se il modulo trigger restituisce eventuali bundle di dati, tali bundle passano a
 
 Se i bundle vengono elaborati correttamente in tutti i moduli, lo scenario viene contrassegnato come riuscito nella pagina dei dettagli dello scenario.
 
-### Esempio: [!UICONTROL [!DNL Workfront Fusion] for Work Automation]
+### Esempio: [!UICONTROL [!DNL Workfront Fusion] per l&#39;automazione del lavoro]
 
 >[!BEGINSHADEBOX]
 
@@ -40,7 +42,7 @@ Se il primo modulo restituisce un bundle, il bundle passa attraverso il resto de
 
 >[!ENDSHADEBOX]
 
-### Esempio: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
+### Esempio: [!UICONTROL [!DNL Workfront Fusion] per l&#39;automazione e l&#39;integrazione del lavoro]
 
 >[!BEGINSHADEBOX]
 

@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
-source-git-commit: cbbc885e757d07c42a09dc2d6165e586b1875333
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 0%
 * [Visualizzare e risolvere le esecuzioni incomplete](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
 * [Visualizzare la cronologia di esecuzione di uno scenario](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
 * [Visualizzare la coda di un webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
+* [Visualizzare il flusso di dati in uno scenario in esecuzione](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
 * [Assistente AI in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [Eseguire l’esperto di punteggio scenario](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [Elimina elementi scenario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)

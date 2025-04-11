@@ -1,12 +1,12 @@
 ---
-title: Visualizzare e risolvere le esecuzioni incomplete
-description: Nella cartella [!UICONTROL Incomplete executions] sono archiviate esecuzioni dello scenario che non sono state completate correttamente a causa di un errore. Ogni esecuzione incompleta archiviata può essere risolta manualmente o automaticamente.
+title: Visualizzare la cronologia di esecuzione di uno scenario
+description: È possibile visualizzare informazioni sugli eventi o sulle esecuzioni di uno scenario oppure cercare dati specifici in tutte le esecuzioni dello scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Nuovo:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>Il piano [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -80,7 +80,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 ### Visualizzare la cronologia degli scenari nella scheda Cronologia
 
-La scheda [!UICONTROL History] mostra più dettagli di quelli disponibili nella pagina [!UICONTROL Scenario detail]. È inoltre possibile filtrare e ordinare le esecuzioni nella scheda [!UICONTROL History].
+La scheda [!UICONTROL Cronologia] mostra più dettagli di quelli disponibili nella pagina [!UICONTROL Dettagli scenario]. Puoi anche filtrare e ordinare le esecuzioni nella scheda [!UICONTROL Cronologia].
 
 1. Fai clic sulla scheda **[!UICONTROL Scenario]** nel pannello a sinistra, quindi fai clic sullo scenario.
 
@@ -93,12 +93,12 @@ La scheda [!UICONTROL History] mostra più dettagli di quelli disponibili nella 
 
    Per ogni esecuzione dello scenario sono elencati i seguenti dettagli:
 
-   * Data di esecuzione: **[!UICONTROL Started]**
+   * Data in cui è stata **[!UICONTROL avviata]**
    * ID esecuzione
-   * **[!UICONTROL Status]** (operazione riuscita o non riuscita)
-   * Esegui **[!UICONTROL Duration]**
-   * Numero di **[!UICONTROL Operations]**
-   * Dimensione di **[!UICONTROL Data Transfer]**
+   * **[!UICONTROL Stato]** (operazione riuscita o non riuscita)
+   * Esegui **[!UICONTROL Durata]**
+   * Numero di **[!UICONTROL operazioni]**
+   * Dimensione di **[!UICONTROL Trasferimento dati]**
 
    >[!NOTE]
    >
@@ -117,7 +117,7 @@ La scheda [!UICONTROL History] mostra più dettagli di quelli disponibili nella 
 
    Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
-1. Fare clic sulla scheda **[!UICONTROL History]** nel pannello di destra.
+1. Fai clic sulla scheda **[!UICONTROL Cronologia]** nel pannello di destra.
 1. (Facoltativo) Per informazioni dettagliate sull’esecuzione di uno scenario selezionato, fai clic sull’esecuzione nel pannello a destra.
 
    Per ulteriori informazioni sull&#39;elaborazione dei bundle, vedi [Flusso di esecuzione dello scenario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
@@ -132,10 +132,10 @@ La scheda [!UICONTROL History] mostra più dettagli di quelli disponibili nella 
 
 Puoi filtrare la cronologia di esecuzione per visualizzare solo le esecuzioni con i valori specificati.
 
-1. Aprire la cronologia a pagina intera per uno scenario come descritto in [Visualizzare la cronologia di esecuzione dello scenario nella scheda [!UICONTROL History]](#view-scenario-history-on-the-history-tab) in questo articolo.
+1. Aprire la cronologia a pagina intera per uno scenario come descritto in [Visualizzare la cronologia di esecuzione dello scenario nella scheda [!UICONTROL Cronologia]](#view-scenario-history-on-the-history-tab) in questo articolo.
 1. Fai clic sull&#39;icona [!UICONTROL filter] ![Icona filtro scenario](assets/fusion-scenario-filter-icon.png) nell&#39;intestazione della colonna in base alla quale desideri filtrare.
-1. Nella finestra di dialogo [!UICONTROL filter], immettere i valori in base ai quali si desidera filtrare.
-1. Fare clic su **[!UICONTROL Save]**.
+1. Nella finestra di dialogo [!UICONTROL filter], immetti i valori in base ai quali desideri filtrare.
+1. Fai clic su **[!UICONTROL Salva]**.
 
 L’icona del filtro è arancione nelle colonne con un filtro attivo.
 
@@ -151,48 +151,48 @@ You can sort the scenario execution history.
 
 ## Cercare tutte le esecuzioni di uno scenario
 
-1. Aprire la cronologia a pagina intera per uno scenario come descritto in [Visualizzare la cronologia di esecuzione dello scenario nella scheda [!UICONTROL History]](#view-scenario-history-on-the-history-tab) in questo articolo.
-1. Fai clic su **[!UICONTROL Fulltext search]** in alto nell&#39;elenco delle esecuzioni.
+1. Aprire la cronologia a pagina intera per uno scenario come descritto in [Visualizzare la cronologia di esecuzione dello scenario nella scheda [!UICONTROL Cronologia]](#view-scenario-history-on-the-history-tab) in questo articolo.
+1. Fai clic su **[!UICONTROL Ricerca full-text]** in alto nell&#39;elenco delle esecuzioni.
 
    Oppure
 
    Digitare **Ctrl+Maiusc+F** (Windows) o **Cmd+Maiusc+F** (Mac)
-Viene visualizzata la finestra [!UICONTROL Search in history].
+Viene visualizzata la finestra [!UICONTROL Cerca nella cronologia].
 
-1. (Facoltativo) Per cercare esecuzioni contenenti testo specifico, immettere il testo nella barra di ricerca della finestra **[!UICONTROL Search in history]**.
+1. (Facoltativo) Per cercare esecuzioni contenenti testo specifico, immettere il testo nella barra di ricerca della finestra **[!UICONTROL Cerca nella cronologia]**.
 
    Per cercare il testo esatto, racchiuderlo tra virgolette doppie (&quot;esempio&quot;).
 
    >[!INFO]
    >
-   >**Esempio:** Se desideri trovare l&#39;esecuzione che ha creato un progetto specifico, immetti l&#39;ID del progetto nella barra [!UICONTROL Fulltext search].
+   >**Esempio:** Se desideri trovare l&#39;esecuzione che ha creato un progetto specifico, immetti l&#39;ID del progetto nella barra di [!UICONTROL Ricerca full-text].
    >
    >&quot;625ef2ef0006036bd1794b6e52d737c5&quot;
 
-1. (Facoltativo) Per limitare la ricerca in base all&#39;intervallo di date, selezionare le date di inizio e fine della ricerca desiderata nell&#39;area [!UICONTROL By date range].
+1. (Facoltativo) Per limitare la ricerca in base all&#39;intervallo di date, selezionare le date di inizio e fine della ricerca desiderata nell&#39;area [!UICONTROL Per intervallo di date].
 
    >[!NOTE]
    >
    >* Le esecuzioni sono disponibili solo per i 30 giorni precedenti.
    >
-   >* [!DNL Workfront Fusion] memorizza i payload del webhook per 30 giorni. L&#39;accesso a un payload del webhook oltre 30 giorni dopo la sua creazione causa l&#39;errore &quot;[!UICONTROL Failed to read file from storage.]&quot;
+   >* [!DNL Workfront Fusion] memorizza i payload del webhook per 30 giorni. L&#39;accesso a un payload del webhook dopo più di 30 giorni dalla creazione genera l&#39;errore &quot;[!UICONTROL Impossibile leggere il file dall&#39;archivio.]&quot;
 
 
-1. (Facoltativo) Per limitare la ricerca in base allo stato, selezionare lo stato desiderato nel menu a discesa **[!UICONTROL By status]**.
+1. (Facoltativo) Per limitare la ricerca in base allo stato, seleziona lo stato desiderato nel menu a discesa **[!UICONTROL Per stato]**.
 
 
    Gli stati disponibili sono:
 
-   * [!UICONTROL All]
+   * [!UICONTROL Tutti]
 
-   * [!UICONTROL Error]
+   * [!UICONTROL Errore]
 
-   * [!UICONTROL Warning]
+   * [!UICONTROL Avviso]
 
-   * [!UICONTROL Success]
+   * [!UICONTROL Operazione completata]
 
-1. (Facoltativo) Modificare l&#39;ordine di visualizzazione dei risultati nel menu a discesa **[!UICONTROL Sort by dates]**.
+1. (Facoltativo) Modifica l&#39;ordine di visualizzazione dei risultati nel menu a discesa **[!UICONTROL Ordina per date]**.
 
-1. (Facoltativo) Per copiare un ID di esecuzione di uno scenario, fai clic sull&#39;icona **[!UICONTROL Copy execution ID]** <img src="assets/copy-fusion-execution-id-icon.png"> nella riga dell&#39;esecuzione desiderata.
+1. (Facoltativo) Per copiare un ID di esecuzione dello scenario, fai clic sull&#39;icona **[!UICONTROL Copia ID esecuzione]** <img src="assets/copy-fusion-execution-id-icon.png"> nella riga dell&#39;esecuzione desiderata.
 
-1. (Facoltativo) Fare clic su un risultato di [!UICONTROL Fulltext search] per esaminare il bundle di output del modulo scenario contenente le informazioni.
+1. (Facoltativo) Fai clic su un risultato della [!UICONTROL ricerca full-text] per esaminare il bundle di output del modulo scenario contenente le informazioni.
