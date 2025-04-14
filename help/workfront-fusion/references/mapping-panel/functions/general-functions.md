@@ -4,16 +4,23 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
 # Funzioni generali
 
-## [!UICONTROL get (object or array; path)]
+## Variabili
+
+Esistono due variabili generali che puoi utilizzare per identificare i dettagli di un’esecuzione:
+
+* `executionID`: ID dell&#39;esecuzione dello scenario
+* `triggerTimestamp`: ora in cui è stata attivata l&#39;esecuzione
+
+## [!UICONTROL get (oggetto o array; percorso)]
 
 Restituisce il percorso del valore di un oggetto o di una matrice. Per accedere agli oggetti nidificati, utilizzare la notazione del punto. Il primo elemento di un array è l&#39;indice 1.
 
@@ -28,7 +35,7 @@ Restituisce il percorso del valore di un oggetto o di una matrice. Per accedere 
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL if (expression; value1; value2)]
+## [!UICONTROL if (espressione; valore1; valore2)]
 
 Restituisce `value1` se l&#39;espressione viene valutata come true, altrimenti restituisce `value2`.
 
@@ -56,7 +63,7 @@ Per combinare `if` istruzioni, utilizzare gli operatori `and` e `or`.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL ifempty (value1; value2)]
+## [!UICONTROL ifempty (valore1; valore2)]
 
 Restituisce `value1` se questo valore non è vuoto, altrimenti restituisce `value2`.
 
@@ -78,7 +85,7 @@ Restituisce `value1` se questo valore non è vuoto, altrimenti restituisce `valu
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL switch (expression; value1; result1; [value2; result2; ...]; [else])]
+## [!UICONTROL opzione (espressione; valore1; risultato1; [valore2; risultato2; ...]; [altro])]
 
 Valuta un valore (denominato espressione) rispetto a un elenco di valori; restituisce il risultato corrispondente al primo valore corrispondente. Per includere un valore `else`, aggiungerlo dopo l&#39;espressione o il valore finale.
 
@@ -116,7 +123,7 @@ Restituisce una raccolta delle informazioni dell&#39;utente, esclusa la password
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL pick(object; key1; [key2; ...])]
+## [!UICONTROL scegli(oggetto; chiave1; [chiave2; ...])]
 
 Seleziona dall’oggetto solo le chiavi specificate.
 
