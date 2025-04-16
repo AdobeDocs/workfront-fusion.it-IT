@@ -4,14 +4,16 @@ description: È possibile ripristinare una versione precedente di uno scenario. 
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '287'
+ht-degree: 1%
 
 ---
 
-# Ripristinare una versione dello scenario
+# Visualizzare e gestire le versioni degli scenari
+
+È possibile visualizzare, ripristinare o rinominare versioni precedenti di uno scenario.
 
 ## Requisiti di accesso
 
@@ -42,7 +44,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Nuovo:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>Il piano [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -65,16 +67,20 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 +++
 
-## Ripristinare una versione dello scenario
+<!--procedure - open, optional add comment, optional restore version-->
 
-1. Apri lo scenario.
-1. Fai clic sull&#39;icona [!UICONTROL More] ![altra icona](assets/more-icon.png) nella parte inferiore della schermata, quindi fai clic su **[!UICONTROL Previous Versions]**.
+## Visualizzare e gestire la cronologia delle versioni di uno scenario
 
-1. Fai clic su **[!UICONTROL Pick the version]**, quindi fai clic sulla versione da ripristinare.
-1. Fare clic su **[!UICONTROL OK]**.
+1. Fai clic su **[!UICONTROL Scenari]** ![Icona Scenari](assets/scenarios-icon.png) nel pannello a sinistra, quindi fai clic sullo scenario per aprirlo.
+1. Fai clic sull&#39;icona [!UICONTROL Altro] ![Icona Altro](assets/more-icon.png) nella parte inferiore dello schermo, quindi fai clic su **[!UICONTROL Versioni precedenti]**.
 
-   La versione dello scenario selezionata viene ripristinata.
+   Viene visualizzato un elenco delle versioni precedenti.
+1. (Facoltativo) Per rinominare la versione, fare clic sul menu Altro ![Altro menu](assets/more-icon-vertical.png) nella riga relativa a tale versione, selezionare **Modifica** e immettere un nome nel campo. Fai clic su **Salva** per salvare il nuovo nome.
 
->[!NOTE]
->
->La versione ripristinata dello scenario non viene salvata automaticamente. Se desideri salvare la versione ripristinata dello scenario, devi salvarla manualmente.
+   È consigliabile assegnare un nome che descriva le modifiche apportate per questa versione.
+1. (Facoltativo) Per ripristinare la versione, fai clic su ripristina ![altro menu](assets/more-icon-vertical.png) nella riga per quella versione
+
+
+   >[!NOTE]
+   >
+   >La versione ripristinata dello scenario non viene salvata automaticamente. Se desideri salvare la versione ripristinata dello scenario, devi salvarla manualmente.
