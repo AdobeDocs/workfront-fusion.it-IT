@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -108,24 +108,28 @@ Puoi creare una connessione al tuo account [!DNL Datadog] direttamente da un mod
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">Tipo di connessione [!UICONTROL]</td> 
-      <td> <p> Selezionare l'opzione [!UICONTROL [!DNL Datadog] Application] per accedere completamente all'API [!DNL Datadog].</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">[!UICONTROL Nome connessione]</td> 
       <td> <p> Immettere un nome per la connessione.</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>Seleziona se la connessione è per un ambiente di produzione o non di produzione.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>Specificare se ci si connette a un account di servizio o a un account personale.</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Domain] </td> 
       <td> <p>Seleziona il dominio a cui desideri connetterti (USA o UE).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API Key]</td> 
-      <td> <p> Immetti la tua chiave API [!DNL Datadog]. </p> <p>Per istruzioni sul recupero della chiave API, consulta <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Recuperare la chiave API e la chiave dell'applicazione</a> in questo articolo.</p> </td> 
+      <td role="rowheader">Posizione chiave API [!UICONTROL] </td> 
+      <td> <p>Seleziona se includere la chiave API nell’intestazione o nella stringa di query.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Chiave Applicazione]</td> 
-      <td> <p> Immetti la chiave dell'applicazione [!DNL Datadog]. </p> <p>Per istruzioni sul recupero della chiave dell'applicazione, vedere <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Recuperare la chiave dell'API e la chiave dell'applicazione</a> in questo articolo.</p> </td> 
+      <td role="rowheader">[!UICONTROL API Key]</td> 
+      <td> <p> Immetti la tua chiave API [!DNL Datadog]. </p> <p>Per istruzioni sul recupero della chiave API, consulta <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Recuperare la chiave API e la chiave dell'applicazione</a> in questo articolo.</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -217,18 +221,28 @@ Il limite per i payload compressi è di 3,2 megabyte (3200000) e 62 megabyte (62
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
-   <td> Seleziona il tipo di metrica da utilizzare. </td> 
+   <td> Seleziona il tipo di metrica da utilizzare. 
+   <ul>
+   <li>Indicatori</li>
+   <li>Tariffa</li>
+   <li>Conteggio</li>
+   </ul>
+   </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Interval]</td> 
+   <td> Se il tipo di metrica è tasso o conteggio, definisci l’intervallo corrispondente.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Series]</td> 
-   <td> <p>Aggiungere serie temporali da inviare a [!DNL Datadog].</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Metrica]</strong> </p> <p>Immetti il nome della serie temporale.</p> </li> 
-     <li> <p><strong>[!UICONTROL Type]</strong> </p> <p>Seleziona il tipo di metrica.</p> </li> 
-     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> Se il tipo di metrica è tasso o conteggio, definisci l’intervallo corrispondente.</p> </li> 
-     <li> <p><strong>[!UICONTROL Punti]</strong> </p> <p>Aggiungere punti relativi a una metrica.</p> <p>Questo è un array JSON di punti. Ogni punto ha il formato: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Nota:  <p>Il timestamp deve essere in secondi.</p> <p>Il timestamp deve essere corrente. Corrente è definita come non più di 10 minuti nel futuro o più di 1 ora nel passato.</p> <p> Il formato del valore numerico deve essere un valore mobile.</p> </p> <p>Questo campo deve contenere almeno 1 elemento.</p> </li> 
-     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>Immetti il nome dell’host che ha prodotto la metrica.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Punti]</td> 
+   <td><p>Aggiungere punti relativi a una metrica.</p> <p>Questo è un array JSON di punti. Ogni punto ha il formato: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Nota:  <p>Il timestamp deve essere in secondi.</p> <p>Il timestamp deve essere corrente. Corrente è definita come non più di 10 minuti nel futuro o più di 1 ora nel passato.</p> <p> Il formato del valore numerico deve essere un valore mobile.</p> </p> <p>Questo campo deve contenere almeno 1 elemento.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Host]</td> 
+   <td>Immetti il nome dell’host che ha prodotto la metrica. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tags]</td> 
+   <td> Per ogni tag che desideri aggiungere alla metrica, fai clic su <b>Aggiungi elemento</b> e immetti il valore del tag.</td> 
   </tr> 
  </tbody> 
 </table>
