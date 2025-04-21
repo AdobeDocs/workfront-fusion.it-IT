@@ -4,9 +4,9 @@ description: I moduli di gestione delle relazioni con i clienti HubSpot  [!DNL A
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
 workflow-type: tm+mt
-source-wordcount: '6203'
+source-wordcount: '7003'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,6 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Oggetti CRM
 
-<!--* [Search for CRM objects](#search-for-crm-objects)
-* [Watch CRM objects](#watch-crm-objects)-->
-
 +++ **[!UICONTROL Cerca oggetti CRM]**
 
 Questo modulo di ricerca cerca oggetti CRM per proprietà personalizzate o per query. Per cercare prodotti o elementi riga, utilizza una connessione speciale con un ambito personalizzato richiesto.
@@ -208,15 +205,6 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
 +++
 
 ### Record (offerte, contatti e società)
-
-<!--* [Create a Record](#create-a-record)
-* [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Get a Record]](#get-a-record)
-* [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [List Records](#list-records)
-* [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)-->
 
 +++ **Crea un record**
 
@@ -464,17 +452,6 @@ Questo modulo di attivazione avvia uno scenario in cui un contatto, una società
 +++
 
 ### Conttati
-
-<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Create/Update a contact](#createupdate-a-contact)
-* [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
-* [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
-* [[!UICONTROL List Contacts]](#list-contacts)
-* [[!UICONTROL List Contacts of a Company]](#list-contacts-of-a-company)
-* [[!UICONTROL Merge contacts]](#merge-contacts)
-* [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
-* [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
 +++ **[!UICONTROL Aggiungi contatti a un elenco]**
 
@@ -744,9 +721,6 @@ Questo modulo di attivazione avvia uno scenario quando un nuovo contatto viene a
 
 ### Offerte
 
-<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
-
 +++ **[!UICONTROL Ottieni pipeline CRM dell&#39;offerta]**
 
 Restituisce una pipeline di offerta specifica.
@@ -825,11 +799,6 @@ Recupera un elenco di aziende in base a una corrispondenza esatta con la proprie
 +++
 
 ### Coinvolgimenti
-
-<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
-* [Create an Engagement](#create-an-engagement)
-* [Delete an Engagement](#delete-an-engagement)
-* [Watch Engagements](#watch-engagements)-->
 
 +++ **Associa un accordo a un oggetto CRM**
 
@@ -1117,11 +1086,6 @@ Questo modulo di attivazione avvia uno scenario quando viene creato un nuovo imp
 
 ### Eventi e notifiche
 
-<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
-* [List Timeline Event Types](#list-timeline-event-types)
-* [Watch Calendar Events](#watch-calendar-events)
-* [Watch Notifications](#watch-notifications)-->
-
 +++ **Crea/aggiorna un evento sequenza temporale**
 
 Questo modulo di azione crea o aggiorna un evento timeline. Questo modulo può essere utilizzato solo con una connessione per sviluppatori che includa l’identificatore utente, la chiave API HubSpot, l’ID client e il segreto client.
@@ -1253,14 +1217,6 @@ Per creare un webhook per questo modulo, fai clic su **Aggiungi** accanto al cam
 +++
 
 ### File
-
-<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Delete a File](#delete-a-file)
-* [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [List Files](#list-files)
-* [[!UICONTROL Move a File]](#move-a-file)
-* [Upload a file](#upload-a-file)
-* [Watch files](#watch-files)-->
 
 +++ **[!UICONTROL Crea una cartella]**
 
@@ -1451,10 +1407,6 @@ Questo modulo di attivazione avvia uno scenario quando un nuovo file viene salva
 
 ### Attività
 
-<!--* [Create a Calendar Task](#create-a-calendar-task)
-* [Delete a Calendar Task](#create-a-calendar-task)
-* [Watch Task Events](#watch-task-events)-->
-
 +++ **Crea un&#39;attività Calendario**
 
 Questo modulo di azione crea una nuova attività per un calendario. La connessione utilizzata in questo modulo deve utilizzare le credenziali di un utente con un account Marketing a pagamento.
@@ -1552,9 +1504,6 @@ Questo modulo di attivazione avvia uno scenario quando è presente un nuovo even
 
 ### Utenti
 
-<!--* [Get an Owner](#get-an-owner)
-* [List Owners](#list-owners)-->
-
 +++ **Ottieni un proprietario**
 
 Questo modulo di azione restituisce i dettagli di un proprietario.
@@ -1595,13 +1544,6 @@ Questo modulo di ricerca restituisce un elenco di tutti i proprietari di un acco
 
 ### Biglietti
 
-<!--* [Create a Ticket]-->
-<!--* [Delete a Ticket](#delete-a-ticket)-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-
 <!-- Create a Ticket Need to find a working connection-->
 
 +++ **[!UICONTROL Elimina ticket]**
@@ -1634,11 +1576,6 @@ Elimina un ticket esistente in base al suo ID.
 <!-- Watch Tickets Need to find a working connection-->
 
 ### Moduli
-
-<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
-* [List Forms](#list-forms)-->
-<!--* [Submit Data to a Form]-->
-<!--* [Watch Submissions for a Form]-->
 
 +++ **Ottieni un file caricato tramite modulo**
 
@@ -1689,10 +1626,6 @@ Questo modulo di azione restituisce tutti i moduli creati nell&#39;account assoc
 &lt;!—#### Osserva gli invii per un modulo—È necessario trovare una connessione funzionante>—>
 
 ### Social media (broadcast)
-
-<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
-* [Create a Broadcast Message](#create-a-broadcast-message)
-* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
 +++ **Annullare un messaggio di trasmissione**
 
@@ -1791,16 +1724,90 @@ Questo modulo di attivazione avvia uno scenario quando un messaggio viene inviat
 
 ### Post di blog
 
-<!--* [Create a Blog Post]-->
-<!--* [Delete a Blog Post](#delete-a-blog-post)-->
-<!--* [List Blog Posts]-->
-&lt;!—* [Pubblicare/Annullare la pubblicazione di un post di blog](#publish--unpublish-a-blog-post)—>
-<!--* [Watch Blog Posts]-->
++++ **Crea post di blog**
 
-<!--
-#### Create a Blog Post May need connection
--->
+Questo modulo di azione crea un nuovo post di blog.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nome</td> 
+   <td>Inserisci o mappa il titolo del post (il nome interno del post).</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Corpo del post</td> 
+   <td>Inserisci o mappa il corpo principale del post in formato HTML.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Pubblica riepilogo</td> 
+   <td>Immettere o mappare un riepilogo del post. Questo riepilogo viene visualizzato nella pagina dell'elenco principale.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID autore blog</td> 
+   <td>Inserisci o mappa l'ID dell'autore associato al post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID gruppo di contenuti</td> 
+   <td>Immetti o mappa l'ID del blog a cui appartiene questo post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">HTML piè di pagina</td> 
+   <td>Immetti o mappa il HTML per i codici da incorporare o per il codice JavaScript da inserire prima del tag della pagina.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">HTML principale</td> 
+   <td>Inserisci o mappa il HTML per i codici da incorporare o JavaScript che devono essere posizionati in alto.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID campagna</td> 
+   <td>Inserisci o mappa l'ID della campagna a cui è associato questo post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Immagine in evidenza</td> 
+   <td>Inserisci o mappa l'URL dell'immagine che verrà utilizzata come immagine in primo piano da questo post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Parola chiave</td> 
+   <td>Per ogni parola chiave da aggiungere al post, fare clic su <b>Aggiungi elemento</b> e immettere la parola chiave e il GUID della parola chiave.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Descrizione metadati</td> 
+   <td>Immettere o mappare il testo per il tag <code>meta</code> sulla pagina.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Data pubblicazione</td> 
+   <td>Immetti o mappa la data in cui il post di blog deve essere pubblicato. <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nome</td> 
+   <td>Abilita questa opzione per pubblicare il post di blog subito dopo la creazione. Se questa opzione è impostata su Sì, il campo Data pubblicazione verrà ignorato.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Immettete o mappate il margine per il post. Il tag viene aggiunto alla fine del dominio per formare l'URL del post di blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID argomento</td> 
+   <td>Per ogni argomento da aggiungere al post, fare clic su <b>Aggiungi elemento</b> e immettere l'ID dell'argomento.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Usa immagine in primo piano</td> 
+   <td>Abilita questa opzione per utilizzare l'immagine in primo piano per il post di blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Widget</td> 
+   <td>Immetti o mappa una struttura di dati contenente la data per tutti i moduli per questo post di blog. Questo si riferisce ai moduli del post di blog, non ai moduli di Fusion.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Elimina post di blog**
 
@@ -1823,9 +1830,70 @@ Questo modulo di azione elimina un singolo post di blog.
 
 +++
 
-<!--#### List Blog Posts May need connection
++++ **Elenca post di blog**
 
-This search module retrieves posts from a HubSpot blog.-->
+Questo modulo di ricerca recupera i post da un blog HubSpot.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Limite</td> 
+   <td>Immetti o mappa il numero massimo di post di blog da restituire in un ciclo di esecuzione.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archiviato</td> 
+   <td>Abilita questa opzione per includere i post archiviati nei risultati.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID autore blog</td> 
+   <td>Inserisci o mappa l'ID di un autore per restituire i post associati a tale autore.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID campagna</td> 
+   <td>Immetti o mappa l'ID di una campagna per restituire i post associati a tale campagna.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID gruppo di contenuti</td> 
+   <td>Immetti o mappa l'ID di un blog per restituire i post associati a quel blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nome</td> 
+   <td>Immetti un nome per il post per restituire solo i post con quel nome.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtra per creato</td> 
+   <td>Seleziona Filtro per restituire i post in base al valore di tempo creato.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtra per aggiornato</td> 
+   <td>Seleziona Filtro per restituire i post in base al valore di tempo aggiornato.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtra per eliminato</td> 
+   <td>Seleziona Filtro per restituire i post in base al valore di tempo eliminato.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Inserisci o mappa un tag per restituire i post che corrispondono al tag. Il tag viene aggiunto alla fine del dominio per formare l'URL del post di blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Stato</td> 
+   <td>Seleziona uno stato (Bozza, Pubblicato o Pianificato) per includere solo i risultati in tale stato.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Ordina per data di pubblicazione</td> 
+   <td>Seleziona se ordinare i risultati in ordine crescente o decrescente per data di pubblicazione.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Pubblicare o annullare la pubblicazione di un post di blog**
 
@@ -1852,7 +1920,70 @@ Questo modulo di azione pianifica o annulla la pubblicazione di un post di blog.
 
 +++
 
-<!--#### Watch Blog PostsMay need connection-->
++++ **Guarda post di blog**
+
+Questo modulo trigger avvia uno scenario quando viene creato, aggiornato o eliminato un post di blog che corrisponde ai criteri impostati.
+
+
+
+Questo modulo di ricerca recupera i post da un blog HubSpot.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Limite</td> 
+   <td>Immetti o mappa il numero massimo di post di blog da restituire in un ciclo di esecuzione.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archiviato</td> 
+   <td>Abilita questa opzione per includere i post archiviati nei risultati.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID autore blog</td> 
+   <td>Inserisci o mappa l'ID di un autore per restituire i post associati a tale autore.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID campagna</td> 
+   <td>Immetti o mappa l'ID di una campagna per restituire i post associati a tale campagna.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID gruppo di contenuti</td> 
+   <td>Immetti o mappa l'ID di un blog per restituire i post associati a quel blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nome</td> 
+   <td>Immetti un nome per il post per restituire solo i post con quel nome.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtra per creato</td> 
+   <td>Seleziona Filtro per restituire i post in base al valore di tempo creato.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtra per aggiornato</td> 
+   <td>Seleziona Filtro per restituire i post in base al valore di tempo aggiornato.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtra per eliminato</td> 
+   <td>Seleziona Filtro per restituire i post in base al valore di tempo eliminato.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Inserisci o mappa un tag per restituire i post che corrispondono al tag. Il tag viene aggiunto alla fine del dominio per formare l'URL del post di blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Stato</td> 
+   <td>Seleziona uno stato (Bozza, Pubblicato o Pianificato) per includere solo i risultati in tale stato.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 <!--+++**Workflows**>
 
@@ -1868,9 +1999,6 @@ Questo modulo di azione pianifica o annulla la pubblicazione di un post di blog.
 <!--+++-->
 
 ### Abbonamenti
-
-<!--* [Update Email Subscription](#update-email-subscription)
-* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
 +++ **Aggiorna abbonamento e-mail**
 
