@@ -4,48 +4,48 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
 # Funzioni array
 
-## [!UICONTROL join (array; separator)]
+## [!UICONTROL join (matrice; separatore)]
 
 Concatena tutti gli elementi di un array in una stringa utilizzando il separatore specificato tra ogni elemento.
 
-## [!UICONTROL length (array)]
+## [!UICONTROL lunghezza (array)]
 
 Restituisce il numero di elementi in una matrice.
 
-## [!UICONTROL keys (object)]
+## [!UICONTROL chiavi (oggetto)]
 
 Restituisce una matrice delle proprietà di un determinato oggetto o matrice.
 
-## [!UICONTROL slice (array; start; [end])]
+## [!UICONTROL sezione (matrice; inizio; [fine])]
 
 Restituisce una nuova matrice contenente solo gli elementi selezionati.
 
-## [!UICONTROL merge (array1; array2; ...)]
+## [!UICONTROL unisci (matrice1; matrice2; ...)]
 
 Unisce uno o più array in un unico array.
 
-## [!UICONTROL contains (array; value)]
+## [!UICONTROL contiene (matrice; valore)]
 
 Verifica se un array contiene il valore.
 
-## [!UICONTROL remove (array; value1; value2; ...)]
+## [!UICONTROL rimuovere (matrice; valore1; valore2; ...)]
 
 Rimuove i valori specificati nei parametri di un array. Questa funzione è efficace solo su array primitivi di testo o numeri.
 
-## [!UICONTROL add (array; value1; value2; ...)]
+## [!UICONTROL aggiungi (matrice; valore1; valore2; ...)]
 
 Aggiunge i valori specificati nei parametri a un array e restituisce tale array.
 
-## [!UICONTROL map (complex array; key;[key for filtering];[possible values for filtering])]
+## [!UICONTROL mappa (matrice complessa; chiave;[chiave per filtrare];[valori possibili per filtrare])]
 
 Restituisce una matrice primitiva contenente i valori di una matrice complessa. Questa funzione consente di filtrare i valori. Utilizza nomi di variabili non elaborati per le chiavi.
 
@@ -67,7 +67,7 @@ Per ulteriori informazioni, vedere [Mappare un array o un elemento di array](/he
 
 ## mischiare
 
-## [!UICONTROL sort (array; [order]; [key])]
+## [!UICONTROL ordinamento (matrice; [ordine]; [chiave])]
 
 Ordina i valori di un array. I valori validi del parametro `order` sono:
 
@@ -117,17 +117,17 @@ Il primo elemento di un array è l&#39;indice 1.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL reverse (array)]
+## [!UICONTROL inverso (matrice)]
 
 Il primo elemento dell’array diventa l’ultimo elemento, il secondo diventa il successivo-ultimo e così via.
 
-## [!UICONTROL flatten (array)]
+## [!UICONTROL appiattire (matrice)]
 
 Crea un nuovo array con tutti gli elementi sub-array concatenati in esso, in modo ricorsivo, fino alla profondità specificata.
 
 ## [!UICONTROL distinct (array; [key])]
 
-Rimuove i duplicati all&#39;interno di un array. Utilizzare l&#39;argomento &quot;[!UICONTROL key]&quot; per accedere alle proprietà di oggetti complessi. Per accedere alle proprietà nidificate, utilizza la notazione del punto. Il primo elemento di un array è l&#39;indice 1.
+Rimuove i duplicati all&#39;interno di un array. Utilizza l&#39;argomento &quot;[!UICONTROL key]&quot; per accedere alle proprietà all&#39;interno di oggetti complessi. Per accedere alle proprietà nidificate, utilizza la notazione del punto. Il primo elemento di un array è l&#39;indice 1.
 
 >[!BEGINSHADEBOX]
 
@@ -138,6 +138,39 @@ Rimuove i duplicati in un array di contatti confrontando la proprietà &quot;nam
 >[!ENDSHADEBOX]
 
 ## toCollection
+
+* Questa funzione accetta un array contenente coppie chiave-valore e lo converte in una raccolta. La funzione dispone di 3 argomenti:
+
+* (array) contenente coppie di valori chiave
+* (stringa) nome del campo da utilizzare come chiave
+* (stringa) nome del campo da utilizzare come valore
+
+>[!BEGINSHADEBOX]
+
+Esempio:
+
+Dato un array:
+
+```
+[{"name":"Bob", "age":22}, {"name":"Tim", "age":23}]
+```
+
+argomenti e
+
+```
+{{toCollection(6.array; "name"; "age")}}
+```
+
+la funzione restituisce
+
+```
+{
+    "Bob": 22,
+    "Tim": 23
+}
+```
+
+>[!ENDSHADEBOX]
 
 ## toArray
 
@@ -161,7 +194,7 @@ Restituisce la matrice di coppie chiave-valore
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL arrayDifference [array1, array2, mode]]
+## [!UICONTROL arrayDifference [array1, array2, modalità]]
 
 Restituisce la differenza tra due array.
 

@@ -4,9 +4,9 @@ description: Molti  [!DNL Adobe Workfront Fusion]  connettori non richiedono una
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -68,12 +68,14 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 
 ## Creare una connessione
 
+Per creare una connessione a una determinata applicazione, è necessario essere in un modulo per tale applicazione. Ad esempio, per creare una connessione a Workfront, devi trovarti in un modulo Workfront.
+
 Per creare una connessione all&#39;interno di un modulo [!DNL Workfront Fusion]:
 
-1. Fai clic su **[!UICONTROL Aggiungi]** accanto alla casella [!UICONTROL Connessione] per aprire il pannello **[!UICONTROL Crea connessione]**.
+1. In qualsiasi modulo per l&#39;applicazione specificata, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella [!UICONTROL Connessione] per aprire il pannello **[!UICONTROL Crea connessione]**.
 1. (Facoltativo) Modificare il nome predefinito della connessione ****.
-1. Nel campo Ambiente, seleziona se si tratta di un ambiente di produzione o non di produzione. Queste informazioni vengono visualizzate nell&#39;area Connessioni di Fusion.
-1. Nel campo Tipo selezionare se si tratta di un account di servizio o personale. Queste informazioni vengono visualizzate nell&#39;area Connessioni di Fusion.
+1. Nel campo Ambiente, seleziona se si tratta di un ambiente di produzione o non di produzione.
+1. Nel campo Tipo selezionare se si tratta di un account di servizio o personale.
 1. (Condizionale) Se l&#39;app richiede impostazioni di connessione avanzate, ad esempio un ID, una chiave o un [!UICONTROL segreto], immetti tali informazioni.
 
    Potrebbe essere necessario fare clic su **[!UICONTROL Mostra impostazioni avanzate]** per visualizzare i campi in cui è possibile immettere questo tipo di informazioni.
@@ -84,6 +86,7 @@ Per creare una connessione all&#39;interno di un modulo [!DNL Workfront Fusion]:
 
    >[!NOTE]
    >
-   >Alcune app Microsoft utilizzano la stessa connessione, che è associata alle autorizzazioni dei singoli utenti. Pertanto, durante la creazione di una connessione, nella schermata di consenso delle autorizzazioni vengono visualizzate tutte le autorizzazioni concesse in precedenza alla connessione dell’utente, oltre alle nuove autorizzazioni necessarie per l’applicazione corrente.
+   >* I campi Ambiente e Tipo hanno valore puramente informativo e non modificano la funzionalità della connessione. Queste informazioni vengono visualizzate nell’area Connessioni di Fusion, consentendoti di determinare quale connessione utilizzare per un determinato caso d’uso nell’organizzazione.
+   >* Alcune app Microsoft utilizzano la stessa connessione, che è associata alle autorizzazioni dei singoli utenti. Pertanto, durante la creazione di una connessione, nella schermata di consenso delle autorizzazioni vengono visualizzate tutte le autorizzazioni concesse in precedenza alla connessione dell’utente, oltre alle nuove autorizzazioni necessarie per l’applicazione corrente.
    >
-   >Ad esempio, se un utente dispone delle autorizzazioni &quot;Leggi tabella&quot; concesse tramite il connettore Excel e quindi crea una connessione nel connettore Outlook per leggere le e-mail, nella schermata di consenso delle autorizzazioni verranno visualizzate sia l’autorizzazione &quot;Leggi tabella&quot; già concessa che l’autorizzazione &quot;Scrivi e-mail&quot; appena richiesta.
+   >   Ad esempio, se un utente dispone delle autorizzazioni &quot;Leggi tabella&quot; concesse tramite il connettore Excel e quindi crea una connessione nel connettore Outlook per leggere le e-mail, nella schermata di consenso delle autorizzazioni verranno visualizzate sia l’autorizzazione &quot;Leggi tabella&quot; già concessa che l’autorizzazione &quot;Scrivi e-mail&quot; appena richiesta.
