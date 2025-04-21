@@ -4,9 +4,9 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Ottiene l&#39;ora corrente come marca temporale Unix.
 
 ## Funzioni
 
-### [!UICONTROL addSeconds (date; number)]
+### [!UICONTROL addSeconds (data; numero)]
 
 Restituisce una nuova data in seguito all’aggiunta di un determinato numero di secondi a una data. Per sottrarre i secondi, immettere un numero negativo.
 
@@ -43,7 +43,7 @@ Restituisce una nuova data in seguito all’aggiunta di un determinato numero di
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMinutes (date; number)] {#addminutes-date-number}
+### [!UICONTROL addMinutes (data; numero)] {#addminutes-date-number}
 
 Restituisce una nuova data in seguito all’aggiunta di un determinato numero di minuti a una data. Per sottrarre i minuti, immettere un numero negativo.
 
@@ -79,7 +79,7 @@ Restituisce una nuova data in seguito all’aggiunta di un determinato numero di
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addDays (date; number)] {#adddays-date-number}
+### [!UICONTROL addDays (data; numero)] {#adddays-date-number}
 
 Restituisce una nuova data come risultato dell’aggiunta di un numero specificato di giorni a una data. Per sottrarre i giorni, immettere un numero negativo.
 
@@ -97,7 +97,7 @@ Restituisce una nuova data come risultato dell’aggiunta di un numero specifica
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths (date; number)]
+### [!UICONTROL addMonths (data; numero)]
 
 Restituisce una nuova data in seguito all’aggiunta di un numero specificato di mesi a una data. Per sottrarre i mesi, immettere un numero negativo.
 
@@ -115,7 +115,7 @@ Restituisce una nuova data in seguito all’aggiunta di un numero specificato di
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addYears (date; number)]
+### [!UICONTROL addYears (data; numero)]
 
 Restituisce una nuova data risultante dall&#39;aggiunta di un numero specificato di anni a una data. Per sottrarre gli anni, immettere un numero negativo.
 
@@ -149,13 +149,13 @@ Se devi specificare un numero non compreso nell&#39;intervallo, ti consigliamo d
 
   Restituisce 2015-10-07T11:36:10.138Z
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
   Restituisce 2015-10-07T11:37:01.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMinute (date; number)]
+### [!UICONTROL setMinute (data; numero)]
 
 Questa funzione restituisce una nuova data con i minuti specificati nei parametri.
 
@@ -177,7 +177,7 @@ Se è necessario specificare un numero non compreso nell&#39;intervallo, è cons
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setHour (date; number)]
+### [!UICONTROL setHour (data; numero)]
 
 Questa funzione restituisce una nuova data con l’ora specificata nei parametri.
 
@@ -199,7 +199,7 @@ Se è necessario specificare un numero non compreso nell&#39;intervallo, è cons
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDay (date; number/name of the day in English)]
+### [!UICONTROL setDay (data; numero/nome del giorno in inglese)]
 
 Questa funzione restituisce una nuova data con il giorno specificato nei parametri.
 
@@ -245,7 +245,7 @@ Specifica un numero compreso tra 1 e 31. Se il numero non rientra in questo inte
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMonth (date; number/name of the month in English)]
+### [!UICONTROL setMonth (data; numero/nome del mese in inglese)]
 
 Questa funzione restituisce una nuova data con il mese specificato nei parametri.
 
@@ -269,7 +269,7 @@ Specifica un numero compreso tra 1 e 12. Se il numero non rientra in questo inte
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setYear (date; number)]
+### [!UICONTROL setYear (data; numero)]
 
 Restituisce una nuova data con l’anno specificato nei parametri.
 
@@ -353,7 +353,7 @@ La funzione `formatDate` restituisce una rappresentazione testuale del valore Da
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL parseDate (text; format; [timezone])]
+### [!UICONTROL parseDate (testo; formato; [fuso orario])]
 
 Utilizzare questa funzione quando si dispone di un valore Text che rappresenta una data (ad esempio `12-10-2019 20:30` o `Aug 18, 2019 10:00 AM`) e si desidera convertirlo (analizzarlo) in un valore Date (una rappresentazione leggibile da un computer binario). Per ulteriori informazioni, vedere Date and Text nell&#39;articolo [Tipi di dati elemento](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -419,7 +419,7 @@ Questa funzione converte una stringa di testo in una data, in base al formato e 
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dateDifference (Date1; Date2; Unit)]
+### [!UICONTROL dataDifferenza (Data1; Data2; Unità)]
 
 Restituisce un numero che rappresenta la differenza tra le due date, espresso nell&#39;unità specificata.
 
