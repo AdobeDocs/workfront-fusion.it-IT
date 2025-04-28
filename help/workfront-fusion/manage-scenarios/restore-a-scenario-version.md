@@ -1,19 +1,19 @@
 ---
-title: Ripristinare una versione dello scenario
-description: È possibile ripristinare una versione precedente di uno scenario. Questo consente di apportare modifiche a uno scenario, quindi di ripristinarle facilmente se si preferisce la funzionalità precedente.
+title: Visualizzare e gestire le versioni degli scenari
+description: Puoi visualizzare, ripristinare, rinominare o scaricare i blueprint per le versioni precedenti di uno scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---
 
 # Visualizzare e gestire le versioni degli scenari
 
-È possibile visualizzare, ripristinare o rinominare versioni precedenti di uno scenario.
+Puoi visualizzare, ripristinare, rinominare o scaricare i blueprint per le versioni precedenti di uno scenario.
 
 ## Requisiti di accesso
 
