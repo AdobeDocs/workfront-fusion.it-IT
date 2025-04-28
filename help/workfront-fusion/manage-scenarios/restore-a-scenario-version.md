@@ -4,9 +4,9 @@ description: È possibile ripristinare una versione precedente di uno scenario. 
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '309'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,8 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 1. (Facoltativo) Per rinominare la versione, fare clic sul menu Altro ![Altro menu](assets/more-icon-vertical.png) nella riga relativa a tale versione, selezionare **Modifica** e immettere un nome nel campo. Fai clic su **Salva** per salvare il nuovo nome.
 
    È consigliabile assegnare un nome che descriva le modifiche apportate per questa versione.
-1. (Facoltativo) Per ripristinare la versione, fai clic su ripristina ![altro menu](assets/more-icon-vertical.png) nella riga per quella versione
+1. (Facoltativo) Per scaricare il blueprint per una versione precedente, fai clic sul menu Altro ![Altro menu](assets/more-icon-vertical.png) nella riga per quella versione, quindi seleziona **Scarica**.
+1. (Facoltativo) Per ripristinare la versione, fare clic su **Ripristina** nella riga della versione
 
 
    >[!NOTE]

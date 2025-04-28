@@ -4,9 +4,9 @@ description: Questo articolo descrive il processo di base per l’aggiunta di un
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Nuovo:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>Il piano [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -66,7 +66,7 @@ Il primo modulo di uno scenario è in genere un modulo trigger.
 
 Per ulteriori informazioni sui moduli trigger, vedere [Moduli trigger](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) nell&#39;articolo Panoramica dei moduli.
 
-1. Fare clic sulla scheda **[!UICONTROL Scenarios]** nel pannello a sinistra.
+1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Inizia a creare uno scenario facendo clic su **Crea un nuovo scenario** nell&#39;angolo superiore destro della schermata.
 
    Viene aperto l’editor dello scenario, con un modulo segnaposto (punto interrogativo) e l’elenco dei connettori disponibili.
@@ -84,8 +84,7 @@ Per ulteriori informazioni sui moduli trigger, vedere [Moduli trigger](/help/wor
 
 ## Aggiungere un altro modulo a uno scenario
 
-1. Se non ti trovi nell&#39;editor dello scenario in cui desideri aggiungere un modulo, fai clic sulla scheda **[!UICONTROL Scenarios]** nel pannello a sinistra.
-1. Seleziona lo scenario in cui desideri esportare una blueprint.
+1. Se non ti trovi nell&#39;editor scenari dello scenario in cui desideri aggiungere un modulo, fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
 1. Per aggiungere un modulo a un altro modulo, passa il cursore sull&#39;handle destro del modulo dopo il quale vuoi aggiungere un modulo, quindi fai clic su **Aggiungi un altro modulo** quando viene visualizzato.
 
@@ -98,8 +97,7 @@ Per ulteriori informazioni sui moduli trigger, vedere [Moduli trigger](/help/wor
 
 ## Inserire un modulo tra moduli esistenti in uno scenario
 
-1. Se non ti trovi nell&#39;editor dello scenario in cui desideri aggiungere un modulo, fai clic sulla scheda **[!UICONTROL Scenarios]** nel pannello a sinistra.
-1. Seleziona lo scenario in cui desideri esportare una blueprint.
+1. Se non ti trovi nell&#39;editor scenari dello scenario in cui desideri aggiungere un modulo, fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
 1. Fare clic sul percorso punteggiato tra i moduli in cui si desidera inserire un modulo.
 1. Nel menu visualizzato, selezionare **Aggiungi modulo**.
