@@ -2,10 +2,10 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: a23517da30b4e51ef55bcc13241a03cd1d6153a0
+source-git-commit: 6ebfd07e24f77bd8c162d53554ddf1fcaefafeb8
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 2%
+source-wordcount: '1744'
+ht-degree: 3%
 
 ---
 
@@ -13,9 +13,10 @@ ht-degree: 2%
 # Documentazione di Adobe Workfront Fusion {#using}
 
 * [Documentazione di Adobe Workfront Fusion](home.md)
-* Attività del rilascio di Fusion {#fusion-release-activity}
+* Attività di rilascio di Fusion {#fusion-release-activity}
    * [Attività di rilascio di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versioni di Fusion - 2025 {#fusion-releases-2025}
+      * [Attività di rilascio di Workfront Fusion: settimana del 21 aprile 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 14 aprile 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 31 marzo 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 10 marzo 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
@@ -130,7 +131,7 @@ ht-degree: 2%
       * [Panoramica del modulo](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [Panoramica sulla mappatura](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [Panoramica della funzione](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
-   * Passa a Workfront Fusion {#navigate-workfront-fusion}
+   * Navigare in Workfront Fusion {#navigate-workfront-fusion}
       * [Passa a Workfront Fusion: indice articolo](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
       * [Navigare in Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
       * [Panoramica dell’editor di scenari](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
@@ -139,13 +140,13 @@ ht-degree: 2%
       * [Modifica impostazioni profilo](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
 * Configurazione e gestione di Workfront Fusion {#set-up-and-manage-fusion}
    * [Configurazione e gestione di Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
-   * Cenni preliminari su licenze e operazioni {#licensing-and-operations-overviews}
+   * Panoramica su licenze e operazioni {#licensing-and-operations-overviews}
       * [Panoramica su licenze e operazioni](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Licenze Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [Operazioni](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
-   * Imposta e gestisci organizzazioni e team {#set-up-and-manage-orgs-and-teams}
+   * Configurazione e gestione di organizzazioni e team {#set-up-and-manage-orgs-and-teams}
       * [Impostare e gestire organizzazioni e team: indice articolo](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
-      * Imposta organizzazioni e team {#set-up-orgs-teams-and-users}
+      * Configurare organizzazioni e team {#set-up-orgs-teams-and-users}
          * [Configurare organizzazioni, team e utenti: indice degli articoli](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-and-teams.md)
          * [Panoramica dell’organizzazione e del team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md)
          * [Configurare gli indirizzi IP per Fusion nel inserisco nell&#39;elenco Consentiti di della tua organizzazione](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
@@ -154,7 +155,7 @@ ht-degree: 2%
          * [Aggiungere un utente a un team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
          * [Imposta opzioni di notifica team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
          * [Visualizzare il registro attività di un’organizzazione](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
-      * Gestisci utenti e team {#manage-users-and-teams}
+      * Gestione di utenti e team {#manage-users-and-teams}
          * [Gestione di utenti e team: indice degli articoli](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
          * [Visualizzare o modificare i dettagli utente](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
          * [Visualizzare o modificare i ruoli utente](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
@@ -163,9 +164,9 @@ ht-degree: 2%
       * [Gestire i modelli](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
       * [Approvare o disapprovare i modelli](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
       * [Modifica modelli](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
-* Crea scenari {#create-scenarios}
+* Creare scenari {#create-scenarios}
    * [Creare scenari](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * Pianifica uno scenario {#plan-a-scenario}
+   * Pianificare uno scenario {#plan-a-scenario}
       * [Pianifica uno scenario: indice articolo](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
       * [Domande frequenti sulla pianificazione dello scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [Panoramiche video](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
@@ -198,14 +199,14 @@ ht-degree: 2%
       * [Connettere Adobe Workfront Fusion a Google Services utilizzando un client OAuth personalizzato](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
       * [Chiamare l’API REST di MS Graph](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md)
       * [Gestire le connessioni](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
-   * Configura la gestione degli errori {#configure-error-handling}
+   * Configurare la gestione degli errori {#configure-error-handling}
       * [Configurare la gestione degli errori](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
       * [Aggiungi gestione degli errori](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
       * [Aggiungere filtri e nidificazione alle route di gestione degli errori](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)
       * [Configurare la soluzione alternativa per gli errori di proiezione](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
       * [Configura soluzione alternativa per la gestione degli errori dei tentativi](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
       * [Risolvere gli errori gestiti dalla direttiva Break](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
-   * Configura impostazioni scenario {#configure-scenario-settings}
+   * Configurare le impostazioni dello scenario {#configure-scenario-settings}
       * [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
       * [Pianificare uno scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
       * [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
@@ -225,14 +226,14 @@ ht-degree: 2%
    * [Assistente AI in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [Eseguire l’esperto di punteggio scenario](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [Elimina elementi scenario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
-* Scenari di esercitazione sulla compilazione {#build-practice-scenarios}
+* Genera scenari di esercitazione {#build-practice-scenarios}
    * [Genera scenari di esercitazione](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Creare uno scenario di base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
    * [Aggiungere un modulo trigger a uno scenario di base](/help/workfront-fusion/build-practice-scenarios/add-trigger-to-basic-scenario.md)
    * [Utilizzare una funzione per aggiornare un progetto in uno scenario di base](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
    * [Aggiungere un filtro a uno scenario di base](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
    * [Aggiungere un webhook a uno scenario di base](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
-* Crea e gestisci modelli {#create-and-manage-templates}
+* Creare e gestire i modelli {#create-and-manage-templates}
    * [Creare e gestire i modelli](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Creare nuovi modelli](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Creare scenari con i modelli](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
@@ -259,7 +260,7 @@ ht-degree: 2%
       * [Moduli iteratori](/help/workfront-fusion/references/modules/iterator-module.md)
       * [Metodi di richiesta HTTP](/help/workfront-fusion/references/modules/http-request-methods.md)
       * [Chiavi](/help/workfront-fusion/references/modules/keys.md)
-   * Pannello mappatura {#mapping-panel}
+   * Pannello Mappatura {#mapping-panel}
       * [Pannello Mappatura](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
       * Tipi di dati {#data-types}
          * [Tipi di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
