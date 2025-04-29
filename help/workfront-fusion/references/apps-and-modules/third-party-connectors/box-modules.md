@@ -4,10 +4,10 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: f02c4df01c7fad6bb9cdf4911512eef97e71c82b
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 0%
+source-wordcount: '918'
+ht-degree: 1%
 
 ---
 
@@ -19,6 +19,8 @@ Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare s
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
 <table style="table-layout:auto">
@@ -26,35 +28,37 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisiti
 
@@ -92,12 +96,15 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### Triggers
+* [Trigger](#triggers)
+* [Azioni](#actions)
 
-* [[!UICONTROL New event]](#new-event)
-* [[!UICONTROL Watch files]](#watch-files)
+### Trigger
 
-#### [!UICONTROL New event]
+* [[!UICONTROL Nuovo evento]](#new-event)
+* [[!UICONTROL File di controllo]](#watch-files)
+
+#### [!UICONTROL Nuovo evento]
 
 Questo modulo di attivazione immediata avvia uno scenario quando un file viene aggiunto, spostato, copiato, eliminato, bloccato o sbloccato.
 
@@ -110,13 +117,13 @@ Questo modulo di attivazione immediata avvia uno scenario quando un file viene a
    <td> <p>Seleziona il webhook che desideri utilizzare per guardare i messaggi in uscita. Per aggiungere un webhook, fare clic su <strong>[!UICONTROL Add]</strong> e immettere il nome e la connessione del webhook.</p> <p> Per istruzioni sulla connessione dell'account [!UICONTROL Box] a [!UICONTROL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Connessione a un servizio - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Maximum number of returned events]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Numero massimo di eventi restituiti]</p> </td> 
    <td> <p>Immettere il numero massimo di eventi che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL File di controllo]
 
 Questo modulo di attivazione avvia uno scenario quando viene aggiunto un nuovo file o un file esistente viene aggiornato in una cartella controllata.
 
@@ -125,7 +132,13 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto un nuovo f
  <col> 
  <tbody> 
   <tr> 
+   <td role="rowheader">Connessione</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  <tr> 
+   <td role="rowheader">Cartella</td> 
+   <td> <p>Seleziona la cartella da controllare. Uno scenario può guardare una singola cartella.</p> 
+   </td> 
+  </tr> 
   <tr> 
    <td role="rowheader">Osserva</td> 
    <td> <p>Selezionare il tipo di file che si desidera controllare.</p> 
@@ -143,20 +156,14 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto un nuovo f
 
 ### Azioni
 
-* [[!UICONTROL Upload] un file](#upload-a-file)
-* [[!UICONTROL Update a file]](#update-a-file)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Get a file]](#get-a-file)
+* [[!UICONTROL Eliminare un file]](#delete-a-file)
+* [[!UICONTROL Ottieni un file]](#get-a-file)
+* [[!UICONTROL Aggiorna un file]](#update-a-file)
+* [[!UICONTROL Carica] un file](#upload-a-file)
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Eliminare un file]
 
-Questo modulo di azione carica un file.
-
-Specificare il file. È inoltre possibile specificare un nuovo nome per il file.
-
-Il modulo restituisce l’ID del file e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
-
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Questo modulo di azione elimina un file.
 
 <table style="table-layout:auto">
  <col> 
@@ -165,6 +172,78 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID file]</td> 
+   <td>Immetti o mappa l’ID univoco del file che desideri eliminare dal modulo.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Ottieni un file]
+
+Questo modulo di azione scarica un file.
+
+Specifica l’ID del file.
+
+>[!NOTE]
+>
+>Questo modulo è utile per fornire file ai moduli successivi.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID file]</td> 
+   <td>Immetti o mappa l’ID univoco del file che desideri che il modulo recuperi.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Aggiorna un file]
+
+Questo modulo di azione aggiorna un file.
+
+Specifica l’ID del file.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID file]</td> 
+   <td>Immetti o mappa l’ID univoco del file che desideri aggiornare il modulo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Carica un file]
+
+Questo modulo di azione carica un file.
+
+Specificare il file. È inoltre possibile specificare un nuovo nome per il file.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Seleziona la cartella in cui desideri caricare il file.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -178,104 +257,4 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 >Se questo modulo non ha esito positivo, considera quanto segue:
 >
 >* La dimensione del file potrebbe superare il limite massimo per la dimensione del file per il piano [!DNL Box] oppure è possibile che sia stata utilizzata tutta la quota di archiviazione dell&#39;account [!DNL Box]. Per ottenere più spazio di archiviazione, eliminare i file esistenti da [!DNL Box] o aggiornare l&#39;account [!DNL Box].
->* [!DNL Box] non carica più di un file con lo stesso nome in una singola cartella. Se la cartella di destinazione contiene un file con lo stesso nome di quello in fase di caricamento, l’esecuzione dello scenario termina con un errore. Per evitare questo problema, rinomina il file. Per aggiornare il file, utilizzare il modulo **[!UICONTROL Update a file]**.
-
-#### [!UICONTROL Update a file]
-
-Questo modulo di azione aggiorna un file.
-
-Specifica l’ID del file.
-
-Il modulo restituisce l’ID del file e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
-
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Immetti o mappa l’ID univoco del file che desideri aggiornare il modulo.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a file]
-
-Questo modulo di azione elimina un file.
-
-Specifica l’ID del file.
-
-Il modulo restituisce l’ID del file e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
-
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Immetti o mappa l’ID univoco del file che desideri aggiornare il modulo.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a file]
-
-Questo modulo di azione scarica un file.
-
-Specifica l’ID del file.
-
-Il modulo restituisce l’ID del file e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
-
->[!NOTE]
->
->Questo modulo è utile per fornire file ai moduli successivi.
-
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Immetti o mappa l’ID univoco del file che desideri aggiornare il modulo.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-<!--
-<h2>Possible problems</h2>
-
-<p style="color: #ff1493;">This is drafted out because we don't have a download module for Box yet</p>
-
-
-<h3>Watch files trigger module doesn't download a file contained in the folder.</h3>
-
-<p>There are several situations when downloading a file fails:</p>
-
-
-
-  <li>The current file lock setting does not allow the file to be downloaded or the downloading of the file is disabled. In this case, the file is ignored.</li>
-
-
-
-  <li>When the scenario started, the file was being uploaded to the server and was not ready to be downloaded. The scenario run gets stopped and Workfront Fusion tries downloading the file again during the next execution of the scenario.</li>
-  
--->
+>* [!DNL Box] non carica più di un file con lo stesso nome in una singola cartella. Se la cartella di destinazione contiene un file con lo stesso nome di quello in fase di caricamento, l’esecuzione dello scenario termina con un errore. Per evitare questo problema, rinomina il file. Se si desidera aggiornare il file, utilizzare il modulo **[!UICONTROL Aggiorna file]**.
