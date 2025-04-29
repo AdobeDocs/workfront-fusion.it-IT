@@ -4,9 +4,9 @@ description: Puoi utilizzare il connettore Adobe Workfront Fusion Adobe Workfron
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
+source-git-commit: 6fa7ab493112351d9480b21b23b3b6b7b14f2230
 workflow-type: tm+mt
-source-wordcount: '7795'
+source-wordcount: '7823'
 ht-degree: 2%
 
 ---
@@ -973,7 +973,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>Selezionare i moduli personalizzati da allegare al nuovo record. Dopo aver selezionato il modulo, immettere i dati per i campi del modulo.</td> 
+   <td>Selezionare i moduli personalizzati per i quali si desidera specificare i valori dei campi nel nuovo record. Dopo aver selezionato il modulo, immettere i dati per i campi del modulo.<p> Per fornire i valori dei campi per un modulo che si sta allegando in questo modulo, includere l'ID del modulo personalizzato nella sezione campi da mappare.</td> 
   </tr> 
  </tbody> 
 </table>
