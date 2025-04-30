@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: f02c4df01c7fad6bb9cdf4911512eef97e71c82b
+source-git-commit: 0ed33cbed2b8ed4ab2c89c86b7e8f37b2683ec75
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
@@ -98,15 +98,17 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 * [Trigger](#triggers)
 * [Azioni](#actions)
+* [Ricerche](#searches)
 
 ### Trigger
 
-* [[!UICONTROL Nuovo evento]](#new-event)
+* [[!UICONTROL Evento nuovo file]](#new-file-event)
+* [Evento nuova cartella](#new-folder-event)
 * [[!UICONTROL File di controllo]](#watch-files)
 
-#### [!UICONTROL Nuovo evento]
+#### [!UICONTROL Evento nuovo file]
 
-Questo modulo di attivazione immediata avvia uno scenario quando un file viene aggiunto, spostato, copiato, eliminato, bloccato o sbloccato.
+Questo modulo di attivazione immediata avvia uno scenario in cui l’azione selezionata si verifica su un file.
 
 <table style="table-layout:auto">
  <col> 
@@ -114,11 +116,22 @@ Questo modulo di attivazione immediata avvia uno scenario quando un file viene a
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Seleziona il webhook che desideri utilizzare per guardare i messaggi in uscita. Per aggiungere un webhook, fare clic su <strong>[!UICONTROL Add]</strong> e immettere il nome e la connessione del webhook.</p> <p> Per istruzioni sulla connessione dell'account [!UICONTROL Box] a [!UICONTROL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Connessione a un servizio - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Seleziona il webhook da utilizzare per guardare i messaggi in uscita o aggiungi un webhook. </p><p>Per aggiungere un webhook, fare clic su <strong>[!UICONTROL Add]</strong> e immettere il nome e la connessione del webhook, il file che si desidera controllare e i trigger che si desidera controllare.</p> <p> Per istruzioni sulla connessione dell'account [!UICONTROL Box] a [!UICONTROL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Connessione a un servizio - Istruzioni di base</a>.</p> </td> 
   </tr> 
+ </tbody> 
+</table>
+
+#### Evento nuova cartella
+
+Questo modulo di attivazione immediata avvia uno scenario quando l’azione di selezione si verifica nella cartella.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Numero massimo di eventi restituiti]</p> </td> 
-   <td> <p>Immettere il numero massimo di eventi che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td role="rowheader">[!UICONTROL Webhook]</td> 
+   <td> <p>Seleziona il webhook da utilizzare per guardare i messaggi in uscita o aggiungi un webhook. </p><p>Per aggiungere un webhook, fare clic su <strong>[!UICONTROL Add]</strong> e immettere il nome e la connessione del webhook, la cartella che si desidera controllare e i trigger che si desidera controllare.</p> <p> Per istruzioni sulla connessione dell'account [!UICONTROL Box] a [!UICONTROL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Connessione a un servizio - Istruzioni di base</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -135,7 +148,7 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto un nuovo f
    <td role="rowheader">Connessione</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   <tr> 
-   <td role="rowheader">Cartella</td> 
+   <td role="rowheader">Osserva nella cartella</td> 
    <td> <p>Seleziona la cartella da controllare. Uno scenario può guardare una singola cartella.</p> 
    </td> 
   </tr> 
@@ -156,14 +169,19 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto un nuovo f
 
 ### Azioni
 
-* [[!UICONTROL Eliminare un file]](#delete-a-file)
-* [[!UICONTROL Ottieni un file]](#get-a-file)
-* [[!UICONTROL Aggiorna un file]](#update-a-file)
-* [[!UICONTROL Carica] un file](#upload-a-file)
+<!--* [[!UICONTROL Delete a file]](#delete-a-file)
+* [[!UICONTROL Get a file]](#get-a-file)
+* [[!UICONTROL Update a file]](#update-a-file)
+* [[!UICONTROL Upload] a file](#upload-a-file)-->
+* [Creare una cartella](#create-a-folder)
+* [Ottieni una cartella](#get-a-folder)
+* [Ottieni metadati cartella](#get-folder-metadata)
+* [Effettuare una chiamata API](#make-an-api-call)
+* [Aggiorna metadati cartella](#update-folder-metadata)
 
-#### [!UICONTROL Eliminare un file]
+<!--#### [!UICONTROL Delete a file] 
 
-Questo modulo di azione elimina un file.
+This action module deletes a file.
 
 <table style="table-layout:auto">
  <col> 
@@ -171,23 +189,23 @@ Questo modulo di azione elimina un file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID file]</td> 
-   <td>Immetti o mappa l’ID univoco del file che desideri eliminare dal modulo.</td> 
+   <td role="rowheader">[!UICONTROL File ID]</td> 
+   <td>Enter or map the unique ID of the file that you want the module to delete.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Ottieni un file]
+#### [!UICONTROL Get a file]
 
-Questo modulo di azione scarica un file.
+This action module downloads a file.
 
-Specifica l’ID del file.
+You specify the ID of the file.
 
 >[!NOTE]
 >
->Questo modulo è utile per fornire file ai moduli successivi.
+>This module is useful for providing files to subsequent modules.
 
 <table style="table-layout:auto">
  <col> 
@@ -195,19 +213,19 @@ Specifica l’ID del file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID file]</td> 
-   <td>Immetti o mappa l’ID univoco del file che desideri che il modulo recuperi.</td> 
+   <td role="rowheader">[!UICONTROL File ID]</td> 
+   <td>Enter or map the unique ID of the file that you want the module to retrieve.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Aggiorna un file]
+#### [!UICONTROL Update a file] 
 
-Questo modulo di azione aggiorna un file.
+This action module updates a file.
 
-Specifica l’ID del file.
+You specify the ID of the file.
 
 <table style="table-layout:auto">
  <col> 
@@ -215,23 +233,84 @@ Specifica l’ID del file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID file]</td> 
-   <td>Immetti o mappa l’ID univoco del file che desideri aggiornare il modulo.</td> 
+   <td role="rowheader">[!UICONTROL File ID]</td> 
+   <td>Enter or map the unique ID of the file that you want the module to update.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Carica un file]
+#### [!UICONTROL Upload a file] 
 
-Questo modulo di azione carica un file.
+This action module uploads a file.
 
-Specificare il file. È inoltre possibile specificare un nuovo nome per il file.
+You specify the file. You can also provide a new filename for the file.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Select the folder where you want to upload the file.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+>[!NOTE]
+>
+>If this module is not successful, consider the following:
+>
+>* The size of the file might exceed the maximum file size limit for your [!DNL Box] plan, or you may have used all of your [!DNL Box] account's storage quota. To get more storage space, delete existing files from [!DNL Box] or upgrade your [!DNL Box] account.
+>* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.-->
+
+#### Creare una cartella
+
+Questo modulo di azione crea una nuova cartella vuota all’interno della cartella principale specificata.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Name]</td> 
+   <td> <p>Immettere o mappare un nome per la nuova cartella.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Cartella padre [!UICONTROL]</td> 
+   <td> <p>Selezionare la cartella in cui si desidera creare la nuova cartella.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder Upload Email Access]</td> 
+   <td> <p>Una volta impostato questo parametro, gli utenti possono inviare i file tramite e-mail all'indirizzo e-mail creato automaticamente per la cartella. Le opzioni collaboratori consentono solo le e-mail registrate per i collaboratori.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Stato sincronizzazione]</td> 
+   <td> <p>Specifica se una cartella deve essere sincronizzata con il dispositivo di un utente. Viene utilizzato da Box Sync (discontinuo) e non da Box Drive.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ottieni una cartella
+
+Questo modulo di azione recupera i dettagli di una cartella, incluse le prime 100 voci della cartella.
 
 <table style="table-layout:auto">
  <col> 
@@ -243,18 +322,177 @@ Specificare il file. È inoltre possibile specificare un nuovo nome per il file.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td> <p>Seleziona la cartella in cui desideri caricare il file.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td> <p>Selezionare la cartella per la quale si desidera recuperare i dettagli.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!NOTE]
->
->Se questo modulo non ha esito positivo, considera quanto segue:
->
->* La dimensione del file potrebbe superare il limite massimo per la dimensione del file per il piano [!DNL Box] oppure è possibile che sia stata utilizzata tutta la quota di archiviazione dell&#39;account [!DNL Box]. Per ottenere più spazio di archiviazione, eliminare i file esistenti da [!DNL Box] o aggiornare l&#39;account [!DNL Box].
->* [!DNL Box] non carica più di un file con lo stesso nome in una singola cartella. Se la cartella di destinazione contiene un file con lo stesso nome di quello in fase di caricamento, l’esecuzione dello scenario termina con un errore. Per evitare questo problema, rinomina il file. Se si desidera aggiornare il file, utilizzare il modulo **[!UICONTROL Aggiorna file]**.
+#### Ottieni metadati cartella
+
+Questo modulo di azione recupera i metadati della cartella per ID cartella.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Ambito]</td> 
+   <td> <p>Selezionare l'ambito da utilizzare per il recupero dei metadati.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Seleziona la cartella per la quale desideri recuperare i metadati.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Effettuare una chiamata API
+
+Questo modulo di azione effettua una chiamata personalizzata all’API Box.
+
+
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>Immettere un percorso relativo a <code>https://api.box.com</code>. <p>Esempio: <code>/2.0/users/me</code></p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
+   <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Aggiorna metadati cartella
+
+Questo modulo crea o aggiorna i metadati di una cartella.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Ambito]</td> 
+   <td> <p>Selezionare l'ambito da utilizzare per l'aggiornamento dei metadati.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Seleziona la cartella per la quale desideri aggiornare i metadati.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+### Ricerche
+
+#### Cerca contenuto
+
+Questo modulo di ricerca cerca gli elementi disponibili per l’utente o per l’azienda.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Box] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>Immettere o mappare la stringa da cercare. Questa query viene confrontata con i nomi degli elementi, le descrizioni, il contenuto di testo dei file e vari altri campi dei diversi tipi di elementi.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Ambito]</td> 
+   <td> <p>Specificare se si desidera cercare contenuto associato all'utente le cui credenziali vengono utilizzate per la connessione utilizzata in questo modulo o contenuto associato all'intera organizzazione.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td> <p>Seleziona se stai cercando file, cartelle o collegamenti web.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sort]</td> 
+   <td> <p>Specificare se si desidera ordinare in base alla rilevanza o alla data di modifica.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL - Contenuto cestino]</td> 
+   <td> <p>Seleziona se desideri cercare contenuto eliminato o contenuto che non è stato eliminato.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID cartella padre]</td> 
+   <td> <p>Per eseguire la ricerca in una cartella specifica, per ogni cartella in cui si desidera eseguire la ricerca, fare clic su <b>Aggiungi elemento</b> e immettere l'ID della cartella. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Creato Da]</td> 
+   <td> <p>Per cercare le risorse create in un determinato intervallo di date, immettere la data meno recente nell'intervallo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL creato in]</td> 
+   <td> <p>Per cercare le risorse create in un determinato intervallo di date, inserisci la data più recente nell’intervallo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Aggiornato Da]</td> 
+   <td> <p>Per cercare le risorse aggiornate in un determinato intervallo di date, immettere la data meno recente nell'intervallo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL aggiornato a]</td> 
+   <td> <p>Per cercare le risorse aggiornate in un determinato intervallo di date, inserisci la data più recente nell’intervallo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>Per ogni attributo che si desidera restituire nella risposta del modulo, fare clic su <b>Aggiungi elemento</b> e immettere il campo.</p><p>Può essere utilizzato per richiedere campi che normalmente non vengono restituiti in una risposta standard. Tieni presente che la specifica di questo parametro avrà l’effetto che nessuno dei campi standard viene restituito nella risposta, a meno che non sia specificato esplicitamente. </p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Estensioni file di [!UICONTROL]</td> 
+   <td> <p>Per limitare la ricerca a estensioni di file specifiche, immettere un elenco di estensioni di file separate da virgole.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size From]</td> 
+   <td> <p>Per cercare le risorse in un intervallo di dimensioni specifico, inserisci il limite inferiore dell’intervallo, in byte.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size To]</td> 
+   <td> <p>Per cercare le risorse in un intervallo di dimensioni specifico, inserisci l’estremità più grande dell’intervallo, in byte.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID utente proprietario di [!UICONTROL]</td> 
+   <td> <p>Per cercare le risorse di proprietà di utenti specifici, inserisci un elenco separato da virgole di ID proprietari.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Immettere o mappare il numero massimo di risultati che il modulo deve restituire in ogni ciclo di esecuzione.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
