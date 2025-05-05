@@ -16,7 +16,7 @@ Benvenuto/a nella pagina principale del prodotto Adobe Workfront Fusion e della 
 ## Novità
 
 * [Attività di rilascio](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-* [Problemi noti](https://experienceleague.adobe.com/en/docs/workfront-known-issues/issues/fusion/workfrontfusion)
+* [Problemi noti](https://experienceleague.adobe.com/it/docs/workfront-known-issues/issues/fusion/workfrontfusion)
 
 ## Esplora la documentazione
 
@@ -55,7 +55,7 @@ La ricerca della documentazione può essere più efficiente con alcuni approcci 
 ### Esplora le sezioni di apprendimento e formazione
 
 * **Sessioni di formazione live con istruttore** Adobe offre sessioni di formazione live di tre giorni per Fusion. Per informazioni dettagliate e sessioni disponibili, consulta [Gestire connessioni e flussi di lavoro in Adobe Workfront Fusion](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html).
-* **Materiale per la formazione**: passare alla [Introduzione e strategia tecnologica](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) pagina di formazione di Workfront Fusion per iniziare una serie di lezioni ed esercitazioni progettate per aiutarti a comprendere meglio come utilizzare al meglio Fusion.
+* **Materiale per la formazione**: passare alla [Introduzione e strategia tecnologica](https://experienceleague.adobe.com/it/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) pagina di formazione di Workfront Fusion per iniziare una serie di lezioni ed esercitazioni progettate per aiutarti a comprendere meglio come utilizzare al meglio Fusion.
 
 ### Trova risposte nei forum della community
 

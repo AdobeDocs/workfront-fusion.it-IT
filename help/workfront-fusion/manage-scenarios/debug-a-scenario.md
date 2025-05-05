@@ -22,7 +22,7 @@ Lo strumento di sviluppo [!DNL Adobe Workfront Fusion] consente di comprendere e
 Per un video introduttivo e una descrizione dettagliata dello strumento Fusion Devtool, vedere
 
 * [Strumento di sviluppo Fusion](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Procedura dettagliata per Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
+* [Procedura dettagliata per Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=it)
 
 ## Requisiti di accesso
 

@@ -70,7 +70,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 È possibile rimuovere un utente da Workfront Fusion lasciando intatte le altre autorizzazioni di prodotto di Adobe.
 
-Per istruzioni, vedere &quot;Rimuovere utenti e gruppi di utenti da un prodotto&quot; nell&#39;articolo [Gestire i prodotti nell&#39;Admin Console](https://helpx.adobe.com/enterprise/using/manage-products.html).
+Per istruzioni, vedere &quot;Rimuovere utenti e gruppi di utenti da un prodotto&quot; nell&#39;articolo [Gestire i prodotti nell&#39;Admin Console](https://helpx.adobe.com/it/enterprise/using/manage-products.html).
 
 ## Disattivare un utente in tutti i prodotti in [!DNL Adobe Admin Console]
 
@@ -83,7 +83,7 @@ Un utente viene disattivato da [!DNL Adobe Admin Console] quando si verifica una
 * L’utente viene rimosso da un profilo di prodotto e non viene assegnato a un altro profilo di prodotto.
 * L’utente viene eliminato o disattivato nell’organizzazione che include Workfront Fusion.
 
-  Per istruzioni, vedere la sezione &quot;Rimuovere utenti&quot; in [Gestire gli utenti singolarmente](https://helpx.adobe.com/enterprise/using/manage-users-individually.html).
+  Per istruzioni, vedere la sezione &quot;Rimuovere utenti&quot; in [Gestire gli utenti singolarmente](https://helpx.adobe.com/it/enterprise/using/manage-users-individually.html).
 
 In [!DNL Workfront Fusion], la disattivazione interessa l&#39;utente in uno dei seguenti modi:
 

@@ -75,7 +75,7 @@ Per utilizzare questa funzionalità, la tua organizzazione deve soddisfare i seg
 * L&#39;organizzazione deve aver partecipato al programma Workfront AI Assistant Beta.
 * Adobe deve disporre di un accordo Adobe Gen AI firmato su file per la tua organizzazione.
 
-  Per ulteriori informazioni sulla firma del contratto, consulta [Firmare il contratto di IA per Adobe](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) nell&#39;articolo Panoramica dell&#39;Assistente IA nella documentazione di Workfront.
+  Per ulteriori informazioni sulla firma del contratto, consulta [Firmare il contratto di IA per Adobe](https://experienceleague.adobe.com/it/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) nell&#39;articolo Panoramica dell&#39;Assistente IA nella documentazione di Workfront.
 
 ## Applicazioni del modulo di IA attualmente supportate
 
