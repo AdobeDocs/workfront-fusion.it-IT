@@ -132,8 +132,8 @@ Il processo di connessione varia a seconda che si utilizzi il connettore Frame.i
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[! ID client UICONTROL]</td>
-          <td>Inserisci il tuo [!DNL Adobe] [! ID client UICONTROL]. Questo può essere trovato nel [! Dettagli credenziali UICONTROL] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p></td>
+          <td role="rowheader">[!UICONTROL ID client]</td>
+          <td>Inserisci il tuo [!DNL Adobe] [!UICONTROL ID client]. Questo può essere trovato nel [!UICONTROL Dettagli credenziali] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]</td>
@@ -180,23 +180,23 @@ Questo modulo crea una nuova risorsa.
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connessione [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID account UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
    <td> <p>Selezionare il account o mappare l'ID del account contenente il progetto per il quale si desidera creare un risorsa.</p> </td> 
   </tr> 
  <tr> 
-   <td role="rowheader">[! ID Area di lavoro UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID Area di lavoro] </td> 
    <td> <p>Selezionare l'area di lavoro o mappare l'ID dell'area di lavoro contenente il progetto per il quale si desidera creare un risorsa.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID Progetto UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID Progetto] </td> 
    <td> <p>Seleziona il progetto o mappa l’ID del progetto per il quale desideri creare una risorsa.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Percorso UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Percorso] </td> 
    <td> <p>Seleziona il percorso in cui desideri creare un risorsa.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Nome File UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Nome File] </td> 
    <td> <p>Immettere il nome del file che si desidera utilizzare per il risorsa.</p> </td> 
   </tr>
     <tr> 
@@ -208,7 +208,7 @@ Questo modulo crea una nuova risorsa.
    <td> <p>Durante la creazione di un file, immettete il URL del file da caricare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Tipo di supporto UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Tipo di supporto] </td> 
    <td> <p>Seleziona il tipo di media per questo risorsa.</p> </td> 
   </tr> 
   </tbody> 
@@ -250,11 +250,11 @@ Questo modulo di azione recupera i dettagli della risorsa.
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connessione [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID account UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
    <td> <p>Seleziona il account o mappa l'ID del account che contiene il risorsa che desideri recuperare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID risorsa UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID risorsa] </td> 
    <td> <p>Seleziona o mappa la risorsa da recuperare.</p> </td> 
   </tr> 
  </tbody> 
@@ -279,7 +279,7 @@ Questo modulo di ricerca recupera tutte le risorse nella cartella del progetto s
    <td> <p>Seleziona l’account o esegui il mapping dell’ID dell’account che contiene le risorse da elencare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! UICONTROL Numero massimo di risorse] restituiti </td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di risorse] restituiti </td> 
    <td> <p>Immettere o mappare il numero massimo di risorse che si desidera che il modulo restituisca durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
@@ -314,7 +314,7 @@ Questo modulo di azione aggiunge un nuovo commento o una nuova risposta alla ris
    <td> <p>Seleziona l’account o mappa l’ID dell’area di lavoro che contiene la risorsa a cui desideri aggiungere un commento.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID Progetto UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID Progetto] </td> 
    <td> <p>Seleziona il progetto o mappa l'ID del progetto che contiene il risorsa a cui vuoi aggiungere un commento.</p> </td> 
   </tr> 
   <tr> 
@@ -326,7 +326,7 @@ Questo modulo di azione aggiunge un nuovo commento o una nuova risposta alla ris
    <td> <p> Immettere il contenuto del testo del commento o della risposta.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Timestamp UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Timestamp] </td> 
    <td> <p>Immetti il numero del fotogramma nel video a cui deve essere collegato il commento.</p> </td> 
   </tr> 
   <tr> 
@@ -403,11 +403,11 @@ Questo modulo di ricerca recupera tutti i commenti della risorsa specificata.
    <td> <p>Selezionare o mappare l'area di lavoro contenente il risorsa da cui si desidera recuperare commenti.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID Progetto UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID Progetto] </td> 
    <td> <p>Seleziona il progetto contenente il risorsa da cui desideri recuperare commenti.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Percorso UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL Percorso] </td> 
    <td> <p>Seleziona il percorso da cui si trova la risorsa da cui desideri elencare i commenti.</p> </td> 
   </tr> 
    <tr> 
@@ -430,11 +430,11 @@ Questo modulo modifica un commento esistente.
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connettere [!DNL Frame.io] a [!DNL Adobe Workfront Fusion]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID account UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
    <td> <p>Seleziona o associa il account contenente il progetto contenente il risorsa su cui desideri aggiornare un commento.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! ID Commento UICONTROL] </td> 
+   <td role="rowheader">[!UICONTROL ID Commento] </td> 
    <td> <p>Selezionate il commento da aggiornare.</p> </td> 
   </tr> 
   <tr> 
@@ -674,7 +674,7 @@ Questo modulo elenca tutte le aree di lavoro di un account.
    <td> <p>Seleziona o mappa l’account contenente la risorsa da cui desideri recuperare le aree di lavoro.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[! UICONTROL Numero massimo di aree di lavoro restituite] </td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di aree di lavoro restituite] </td> 
    <td> <p>Inserisci o mappa il numero massimo di aree di lavoro
    desideri che il modulo venga restituito durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
@@ -704,15 +704,15 @@ Questo modulo ti consente di eseguire una chiamata API personalizzata.
    <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">richiesta HTTP metodi</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Intestazioni UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni del richiesta sotto forma di un oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] Aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Stringa di query UICONTROL] </td> 
-   <td> <p>Immettere la richiesta stringa di query. Per ogni parametro che si desidera includere nella stringa di query, fare clic su <b>[! UICONTROL Aggiungi elemento]</b> e immettere il nome del campo e il valore desiderato.</p> </td> 
+   <td role="rowheader">[!UICONTROL Stringa di query] </td> 
+   <td> <p>Immettere la richiesta stringa di query. Per ogni parametro che si desidera includere nella stringa di query, fare clic su <b>[!UICONTROL Aggiungi elemento]</b> e immettere il nome del campo e il valore desiderato.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[! Corpo UICONTROL]</td> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
    <td> <p>Aggiungi il corpo contenuto per la chiamata API sotto forma di un oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel tuo JSON, inserisci le virgolette al di fuori dell'istruzione condizionale.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 

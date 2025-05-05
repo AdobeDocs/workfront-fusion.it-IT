@@ -434,7 +434,7 @@ Questo modulo di ricerca cerca le risorse in base ai criteri specificati.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Bynder] a [!DNL Workfront Fusion], vedere <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Bynder] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Criteri di ricerca di [!UICONTROL]</td> 
+   <td role="rowheader">Criteri di ricerca di </td> 
    <td> <p>Inserire i criteri di ricerca. </p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Campo]</strong> </p> <p>Selezionare il campo da utilizzare nella ricerca</p> </li> 

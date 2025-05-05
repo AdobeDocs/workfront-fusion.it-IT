@@ -240,7 +240,7 @@ Questo modulo crea una nuova risorsa.
    <td> <p>Se crei un file, immetti una breve descrizione della risorsa.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Etichetta [!UICONTROL] </td> 
+   <td role="rowheader">Etichetta  </td> 
    <td> <p>In caso di creazione di un file, selezionare se il file è in corso, se deve essere esaminato o se è approvato.</p> </td> 
   </tr> 
  </tbody> 

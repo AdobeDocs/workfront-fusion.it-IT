@@ -56,7 +56,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 &#42;Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore [!DNL Workfront].
 
-&#42;&#42;Per informazioni sulle licenze [!DNL Adobe Workfront Fusion], vedere [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+&#42;&#42;Per informazioni sulle licenze [!DNL Adobe Workfront Fusion], vedere [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Prerequisiti
 
@@ -459,7 +459,7 @@ Questo modulo di azione recupera la rappresentazione più recente della risorsa 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di rappresentazione [!UICONTROL]</td>
+      <td role="rowheader">Tipo di rappresentazione </td>
       <td>
         <p>Selezionare il tipo di rappresentazione da recuperare.</p>
       </td>
@@ -609,7 +609,7 @@ Questo modulo di azione aggiunge una o più risorse all’album specificato. Puo
         <p></p>
       </td>
     <tr>
-      <td role="rowheader">Metadati di [!UICONTROL]</td>
+      <td role="rowheader">Metadati di </td>
       <td>
         <p>Immetti o mappa i metadati che desideri includere nella risorsa. Deve essere una singola stringa di testo con una lunghezza massima di 1-24 caratteri.</p>
       </td>
@@ -647,7 +647,7 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Sottotipo [!UICONTROL]</td>
+      <td role="rowheader">Sottotipo </td>
       <td>
         <p>Selezionare il sottotipo dell'album.</p>
       </td>

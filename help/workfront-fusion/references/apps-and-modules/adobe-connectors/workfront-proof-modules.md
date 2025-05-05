@@ -124,7 +124,7 @@ Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente d
                 <td><strong>Nota</strong>: i clienti che non utilizzano BYOK devono lasciare vuoto questo campo. <p>Immetti l’ID tenant per questo account. Se hai bisogno di aiuto per trovare l’ID tenant, contatta l’Assistenza clienti Workfront.</p></td>
             </tr>
             <tr>
-                <td role="rowheader">Estensione di dominio [!UICONTROL]</td>
+                <td role="rowheader">Estensione di dominio </td>
                 <td>Immetti l’estensione per l’URL utilizzato per accedere al tuo account. <p>Esempio: <code>com</code> o <code>eu</code></p></td>
             </tr>
             <tr>
@@ -273,8 +273,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Tipo di bozza [!UICONTROL]</td> 
-   <td> <p>Specifica se la bozza creata deve avere un flusso di lavoro di base o un flusso di lavoro automatico [!UICONTROL].</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Flusso di lavoro automatico], compila il campo <strong>[!UICONTROL Fasi del flusso di lavoro]</strong> per configurare le fasi.</p></td> 
+   <td>Tipo di bozza </td> 
+   <td> <p>Specifica se la bozza creata deve avere un flusso di lavoro di base o un flusso di lavoro automatico .</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Flusso di lavoro automatico], compila il campo <strong>[!UICONTROL Fasi del flusso di lavoro]</strong> per configurare le fasi.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Consenti il download del file originale]</td> 
@@ -293,7 +293,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Seleziona questa opzione se desideri che il modulo crei una nuova versione di una bozza esistente. Quindi, nel campo <strong>[!UICONTROL ID bozza esistente]</strong> che visualizza, mappa o immetti l'ID univoco della bozza.</td> 
   </tr> 
   <tr> 
-   <td>Etichetta collegamento personalizzato [!UICONTROL]</td> 
+   <td>Etichetta collegamento personalizzato </td> 
    <td>Inserisci o mappa un’etichetta per il collegamento della bozza personalizzata.</td> 
   </tr> 
   <tr> 
@@ -573,14 +573,14 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul>
      <li> [!UICONTROL Tutti i nuovi commenti e risposte]</li>
      <li>[!UICONTROL Risponde ai miei commenti]</li>
-     <li>Riepilogo giornaliero di [!UICONTROL]</li>
-     <li> Riepilogo orario [!UICONTROL]</li>
+     <li>Riepilogo giornaliero di </li>
+     <li> Riepilogo orario </li>
      <li> [!UICONTROL Decisions only]</li>
      <li> [!UICONTROL Disabilitato]</li>
     </ul></td> 
   </tr> 
   <tr> 
-   <td>Ruolo predefinito di [!UICONTROL]</td> 
+   <td>Ruolo predefinito di </td> 
    <td>Seleziona il ruolo predefinito per la bozza.</td> 
   </tr> 
   <tr> 
@@ -589,7 +589,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td>[!UICONTROL - Abilita sottoscrizioni]</td> 
-   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo Ruolo predefinito di [!UICONTROL].</td> 
+   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo Ruolo predefinito di .</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Abilita convalida sottoscrizioni]</td> 

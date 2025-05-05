@@ -123,7 +123,7 @@ Puoi creare una connessione al tuo account [!DNL Marketo] direttamente da qualsi
       <tr>
         <td role="rowheader">Account [!UICONTROL / ID Munchkin]</td>
         <td>
-          <p>Immetti l'account [!DNL Marketo] o l'ID [!DNL Marketo] di [!UICONTROL Munchkin]. Parte univoca dell'URL di base o dell'endpoint assegnato all'account, utilizzata per accedere a [!DNL Marketo] tramite l'API REST di [!UICONTROL]. Per istruzioni su come individuare questa posizione, vedere [URL di base](https://developers.marketo.com/rest-api/base-url/) nella documentazione di [!DNL Marketo].</p>
+          <p>Immetti l'account [!DNL Marketo] o l'ID [!DNL Marketo] di [!UICONTROL Munchkin]. Parte univoca dell'URL di base o dell'endpoint assegnato all'account, utilizzata per accedere a [!DNL Marketo] tramite l'API REST di . Per istruzioni su come individuare questa posizione, vedere [URL di base](https://developers.marketo.com/rest-api/base-url/) nella documentazione di [!DNL Marketo].</p>
         </td>
       </tr>
       <tr>
@@ -406,7 +406,7 @@ Questo modulo di azione legge le informazioni su un record utilizzando il relati
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
-   <td>Seleziona le informazioni da includere nel bundle di output per questo modulo. I campi sono disponibili in base al tipo di record [!UICONTROL] selezionato.</td> 
+   <td>Seleziona le informazioni da includere nel bundle di output per questo modulo. I campi sono disponibili in base al tipo di record  selezionato.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL &lt;ID Oggetto&gt;]</td> 
@@ -576,7 +576,7 @@ Questo modulo di azione recupera tutti i record di un tipo specifico.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
-   <td>Seleziona le informazioni da includere nel bundle di output per questo modulo. I campi sono disponibili in base al tipo di record [!UICONTROL] selezionato.</td> 
+   <td>Seleziona le informazioni da includere nel bundle di output per questo modulo. I campi sono disponibili in base al tipo di record  selezionato.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 

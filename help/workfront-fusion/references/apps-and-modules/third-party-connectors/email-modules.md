@@ -307,7 +307,7 @@ Questo modulo di azione rimuove un messaggio e-mail o una bozza dalla cartella s
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Immetti l’UID e-mail dell’e-mail da eliminare.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
+   <td> <p>Immetti l’UID e-mail dell’e-mail da eliminare.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Expunge]</td> 
@@ -402,7 +402,7 @@ Questo modulo di azione contrassegna un messaggio e-mail o una bozza in una cart
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
+   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -425,7 +425,7 @@ Contrassegna un messaggio e-mail o una bozza in una cartella selezionata come no
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come non letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
+   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come non letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -452,7 +452,7 @@ Sposta un messaggio e-mail o una bozza selezionati in una cartella selezionata.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Immetti l’UID e-mail dell’e-mail che desideri spostare nella cartella di destinazione.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
+   <td> <p>Immetti l’UID e-mail dell’e-mail che desideri spostare nella cartella di destinazione.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -483,7 +483,7 @@ Invia una nuova e-mail.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Tipo di contenuto]</p> </td> 
-   <td> <p>Seleziona il tipo di contenuto [!UICONTROL] per l'e-mail:</p> 
+   <td> <p>Seleziona il tipo di contenuto  per l'e-mail:</p> 
     <ul> 
      <li>HTML</li> 
      <li>[!UICONTROL Testo normale]</li> 
@@ -527,7 +527,7 @@ Invia una nuova e-mail.
    <td> <p>Immetti gli ID messaggio di tutte le risposte nel thread.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Priorità [!UICONTROL]</p> </td> 
+   <td role="rowheader"> <p>Priorità </p> </td> 
    <td> <p>Seleziona la priorità dell’e-mail:</p> 
     <ul> 
      <li>[!UICONTROL alto]</li> 

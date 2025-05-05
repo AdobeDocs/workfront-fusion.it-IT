@@ -122,7 +122,7 @@ Il connettore Adobe Campaign utilizza quanto segue:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Se si sta creando una connessione server-to-server, immettere l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
+          <td>Se si sta creando una connessione server-to-server, immettere l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]</td>
@@ -417,7 +417,7 @@ Questo modulo di ricerca restituisce record in base ai criteri specificati.
    <td>Selezionare il tipo di record [!DNL Adobe Campaign] da creare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Criteri di ricerca di [!UICONTROL]</td> 
+   <td role="rowheader">Criteri di ricerca di </td> 
    <td>Immettere i campi e i valori da utilizzare per la ricerca. I campi dipendono dalla risorsa selezionata.</td> 
   </tr> 
   <tr> 

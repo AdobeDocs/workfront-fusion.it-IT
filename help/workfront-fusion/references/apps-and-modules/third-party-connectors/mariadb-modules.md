@@ -95,11 +95,11 @@ Puoi creare una connessione al tuo account [!DNL MariaDB] direttamente da un mod
       <td> <p>Immettere l'indirizzo IP o il nome host dell'istanza di database. L'host deve essere accessibile dall'esterno della rete.</p> <p>Esempio: <code>[!DNL mariadb.hwoh2j5h.us-east-1.rds.amazon.com]</code></p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Porta [!UICONTROL]</td> 
+      <td role="rowheader">Porta </td> 
       <td>La porta predefinita è 3306. Se si utilizza una porta non standard, impostare questo numero sulla porta. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Database ]</td> 
+      <td role="rowheader">[!UICONTROL Database &#x200B;]</td> 
       <td>Immettere il nome del database con cui si desidera interagire.</td> 
      </tr> 
      <tr> 
@@ -155,7 +155,7 @@ Questo modulo legge i record dal database.
    <td>Per istruzioni sulla connessione dell'account [!DNL MariaDB] a [!DNL Workfront Fusion], vedere <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL MariaDB] a [!DNL Workfront Fusion]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tabella [!UICONTROL]</td> 
+   <td role="rowheader">Tabella </td> 
    <td> <p>Selezionare la tabella contenente i record che si desidera leggere.</p> </td> 
   </tr> 
   <tr> 

@@ -139,7 +139,7 @@ Questa funzione restituisce una nuova data con i secondi specificati nei paramet
 
 Specificare un numero compreso tra 0 e 59. Se il numero non rientra nell’intervallo, la funzione restituisce un secondo dal minuto precedente (per un numero negativo) o dal minuto successivo (per un numero positivo).
 
-Se devi specificare un numero non compreso nell&#39;intervallo, ti consigliamo di utilizzare [!UICONTROL  addSeconds], come descritto in precedenza nella sezione [addSeconds (date; number)](#addseconds-date-number).
+Se devi specificare un numero non compreso nell&#39;intervallo, ti consigliamo di utilizzare [!UICONTROL &#x200B; addSeconds], come descritto in precedenza nella sezione [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
