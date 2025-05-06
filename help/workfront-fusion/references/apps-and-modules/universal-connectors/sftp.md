@@ -4,9 +4,9 @@ description: I moduli  [!DNL Adobe Workfront Fusion SFTP]  consentono di monitor
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
 workflow-type: tm+mt
-source-wordcount: '2077'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Per connettere l&#39;account SFTP a [!DNL Workfront Fusion] è necessario creare
    <td> <p>Immetti il nome host del server SFTP che desideri connettere.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Porta  </td> 
+   <td role="rowheader">Porta [!UICONTROL] </td> 
    <td> <p>Immetti la porta del server SFTP. Ad esempio, 22.</p> </td> 
   </tr> 
   <tr> 
@@ -304,7 +304,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome del file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento </td> 
+   <td>Ordinamento [!UICONTROL]</td> 
    <td> <p> Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -345,7 +345,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento  </td> 
+   <td>Ordinamento [!UICONTROL] </td> 
    <td> <p>Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -449,6 +449,10 @@ Questo modulo ti consente di caricare un file sul server SFTP.
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
    <td> <p>Impostare le autorizzazioni desiderate per il file o la cartella. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Dimensione buffer (B)]</p> </td> 
+   <td> <p>Imposta la dimensione (in byte) di ciascun blocco durante il caricamento del file. Questo è utile per i file di grandi dimensioni o quando i limiti di memoria del server richiedono caricamenti più piccoli. Se questo valore non è impostato, il file viene scritto con una singola operazione.</p> </td> 
   </tr> 
  </tbody> 
 </table>
