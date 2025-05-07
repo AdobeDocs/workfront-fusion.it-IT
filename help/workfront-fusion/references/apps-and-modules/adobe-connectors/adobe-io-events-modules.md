@@ -4,9 +4,9 @@ description: Con i moduli Adobe I/O Events puoi avviare uno scenario Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '969'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,12 @@ Per creare una connessione per i moduli Adobe I/O Events:
         </td>
       </tr>
       <tr>
+        <td role="rowheader">Ambiente</td>
+        <td>
+          <p>Seleziona se desideri connetterti a un ambiente di produzione o non di produzione.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">Tipo</td>
         <td>
           <p>Specificare se si desidera connettersi a un account di servizio o a un account personale.</p>
@@ -160,6 +166,8 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Ricerche](#searches)
 
 ### Trigger
+
+<!--Becky start here-->
 
 #### Creare una registrazione evento
 
