@@ -5,9 +5,9 @@ description: Puoi configurare impostazioni specifiche per gli scenari nel pannel
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7411649c0d65956552f40a7710315536755dc65
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] Piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Il piano [!DNL Workfront Fusion] è incluso.</li></ul>
+   <p>Nuovo:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Il piano [!DNL Workfront Fusion] è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -77,12 +77,12 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
    ![Impostazioni scenario](assets/scenario-settings-350x221.png)
 
-   Nel pannello [!UICONTROL Scenario settings] visualizzato, è possibile configurare varie impostazioni avanzate per lo scenario.
+   Nel pannello [!UICONTROL Impostazioni scenario] visualizzato, puoi configurare varie impostazioni avanzate per lo scenario.
 1. Attiva o disattiva le impostazioni dello scenario in base alle esigenze. Consulta [Opzioni impostazioni scenario](#scenario-settings-options) di seguito.
 
 ## Opzioni impostazioni scenario
 
-### [!UICONTROL Sequential processing]
+### [!UICONTROL Elaborazione sequenziale]
 
 Questa opzione forza l’ordine delle esecuzioni ed è principalmente rilevante per i webhook e per le esecuzioni incomplete.
 
@@ -111,13 +111,13 @@ Quando l’elaborazione sequenziale è abilitata, le esecuzioni parallele dello 
 
 ### I dati sono riservati
 
-Una volta eseguito uno scenario, per impostazione predefinita puoi visualizzare informazioni sui dati elaborati dai moduli nello scenario. Se non si desidera memorizzare queste informazioni, abilitare l&#39;opzione [!UICONTROL Data is confidential].
+Una volta eseguito uno scenario, per impostazione predefinita puoi visualizzare informazioni sui dati elaborati dai moduli nello scenario. Se non si desidera archiviare queste informazioni, abilitare l&#39;opzione [!UICONTROL Dati riservati].
 
 >[!IMPORTANT]
 >
 >Se abiliti questa opzione, potrebbe essere difficile risolvere gli errori che possono verificarsi durante l’esecuzione di uno scenario.
 
-### [!UICONTROL Allow storing incomplete executions]
+### [!UICONTROL Consenti l&#39;archiviazione di esecuzioni incomplete]
 
 Questa opzione determina il modo in cui [!DNL Adobe Workfront Fusion] procede se si verifica un errore durante l&#39;esecuzione di uno scenario. Se questa opzione è abilitata, lo scenario viene messo in pausa e spostato nella cartella di esecuzione incompleta. Questo consente di risolvere il problema e continuare l’esecuzione dal punto in cui lo scenario è stato interrotto. Se questa opzione è disabilitata, l’esecuzione dello scenario si interrompe e viene avviata una fase di rollback.
 
@@ -127,7 +127,7 @@ Per ulteriori informazioni sulle esecuzioni incomplete, vedere [Visualizzare e r
 
 Questa opzione ha a che fare con l&#39;abilitazione della perdita di dati se [!DNL Workfront Fusion] non riesce a salvare un bundle nella coda di esecuzioni incomplete (ad esempio, a causa di una mancanza di spazio libero). Se questa opzione è abilitata, i dati vengono persi per evitare interruzioni nell’esecuzione complessiva dello scenario. Questo è utile per gli scenari in cui la priorità più alta è l’esecuzione continua e i dati errati in arrivo non sono così importanti.
 
-Inoltre, durante l’esecuzione di uno scenario, a volte un modulo può incontrare un file di dimensioni superiori alla dimensione massima consentita. In questo caso, [!DNL Workfront Fusion] procede in conformità con l&#39;impostazione dell&#39;opzione [!UICONTROL Enable data loss] e viene visualizzato un messaggio di avviso.
+Inoltre, durante l’esecuzione di uno scenario, a volte un modulo può incontrare un file di dimensioni superiori alla dimensione massima consentita. In questo caso, [!DNL Workfront Fusion] procede in conformità con l&#39;impostazione dell&#39;opzione [!UICONTROL Abilita perdita di dati] e viene visualizzato un messaggio di avviso.
 
 Per ulteriori informazioni sulle esecuzioni incomplete, vedere [Visualizzare e risolvere le esecuzioni incomplete](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -135,9 +135,9 @@ Per ulteriori informazioni sulle dimensioni massime dei file, vedere [Guardrail 
 
 Per ulteriori informazioni sugli avvisi, vedere [Tipi di errore](/help/workfront-fusion/references/errors/error-processing.md).
 
-### [!UICONTROL Auto commit]
+### [!UICONTROL Commit automatico]
 
-Le impostazioni [!UICONTROL Auto commit] si applicano alle transazioni e definiscono la modalità di elaborazione di uno scenario. Se l&#39;opzione Auto commit è attiva, la fase di commit su ciascun modulo inizia immediatamente dopo il completamento della fase operativa. Se l&#39;opzione Auto commit è disattivata, non viene eseguito alcun commit finché non vengono eseguite operazioni per tutti i moduli (questa è la modalità predefinita).
+Le impostazioni di [!UICONTROL Auto commit] si applicano alle transazioni e definiscono la modalità di elaborazione di uno scenario. Se l&#39;opzione Auto commit è attiva, la fase di commit su ciascun modulo inizia immediatamente dopo il completamento della fase operativa. Se l&#39;opzione Auto commit è disattivata, non viene eseguito alcun commit finché non vengono eseguite operazioni per tutti i moduli (questa è la modalità predefinita).
 
 ### Numero massimo di cicli
 
@@ -160,11 +160,11 @@ L&#39;impostazione di più cicli può essere utile quando si desidera evitare l&
 
 >[!BEGINSHADEBOX]
 
-**Esempi:** [!DNL Workfront] > [!UICONTROL Watch record] verifica la presenza di nuovi problemi e [!DNL Workfront] >[!UICONTROL Convert object] converte la nuova richiesta in un progetto e le assegna il modello appropriato.
+**Esempi:** [!DNL Workfront] > [!UICONTROL Osserva il record] verifica la presenza di nuovi problemi e [!DNL Workfront] >[!UICONTROL Converti oggetto] converte la nuova richiesta in un progetto e le assegna il modello appropriato.
 
 ![Impostazioni scenario](assets/scenario-settings-ex-1-350x157.png)
 
-L&#39;impostazione [!UICONTROL more cycles] viene applicata solo quando si pianifica l&#39;esecuzione dello scenario. Quando si utilizza il pulsante [!UICONTROL Run once], vengono prese in considerazione le impostazioni del ciclo.
+L&#39;impostazione [!UICONTROL altri cicli] viene applicata solo quando si pianifica l&#39;esecuzione dello scenario. Quando si utilizza il pulsante [!UICONTROL Esegui una volta], vengono prese in considerazione le impostazioni del ciclo.
 
 #### Il numero massimo di cicli è impostato su 1 (impostazione predefinita)
 
@@ -177,7 +177,7 @@ Se vengono inviate 100 richieste a [!DNL Workfront] e il campo Numero massimo di
 
 Il numero massimo di cicli nel modulo Workfront > Osserva record è impostato su `10`.
 
-Se si aggiungono 100 file alla cartella di Dropbox e l&#39;opzione Numero massimo di cicli è impostata su 10, vengono elaborati 10 file durante il primo ciclo, i successivi 10 file nel secondo ciclo, i successivi 10 file nel terzo ciclo e così via, fino all&#39;elaborazione di tutti i file.
+Se vengono aggiunti 100 file alla cartella Dropbox e l&#39;opzione Numero massimo di cicli è impostata su 10, vengono elaborati 10 file durante il primo ciclo, i successivi 10 file nel secondo ciclo, i successivi 10 file nel terzo ciclo e così via, fino a quando tutti i file non vengono elaborati.
 
 Tutti i file vengono elaborati entro 1 esecuzione dello scenario.
 
@@ -198,3 +198,14 @@ Per ulteriori informazioni sugli errori, vedere [Tipi di errore](/help/workfront
 >[!NOTE]
 >
 >Se uno scenario inizia con un trigger immediato, l’impostazione viene ignorata e lo scenario viene disattivato immediatamente dopo il primo errore.
+
+### Pool di lavoro
+
+>[!NOTE]
+>
+>Questa impostazione è visibile solo se sono soddisfatte le due condizioni seguenti:
+>
+>* Sei un amministratore o un proprietario dell’organizzazione
+>* All&#39;organizzazione sono associati più gruppi di lavoro.
+
+Questa impostazione assegna lo scenario a un pool di lavoratori specifico associato all&#39;organizzazione, consentendo di dedicare risorse a scenari ad alta priorità.
