@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , è possibile autom
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: 2ed8e4e956bacc18a43947c4c55482cf32533054
 workflow-type: tm+mt
-source-wordcount: '3203'
+source-wordcount: '3238'
 ht-degree: 0%
 
 ---
@@ -68,9 +68,11 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 >[!IMPORTANT]
 >
->Dropbox deve approvare le applicazioni con più di 50 utenti.
->
->Per ulteriori informazioni, cerca &quot;Approvazione produzione&quot; nella guida per gli sviluppatori di Dropbox.
+>* Per utilizzare il connettore Dropbox, è innanzitutto necessario creare un&#39;applicazione in Dropbox.
+>   Per ulteriori informazioni, consulta la sezione &quot;Creazione di un’applicazione&quot; nella guida per gli sviluppatori di Dropbox.
+>* Durante la creazione dell&#39;applicazione, utilizzare il seguente URI di reindirizzamento: `https://app.workfrontfusion.com/oauth/cb/dropbox`
+>* Dropbox deve approvare le applicazioni con più di 50 utenti.
+>   Per ulteriori informazioni, cerca &quot;Approvazione produzione&quot; nella guida per gli sviluppatori di Dropbox.
 
 ## Informazioni API di Dropbox
 
@@ -131,7 +133,7 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
         <td>Immetti [!DNL Dropbox] [!UICONTROL Client Secret]. </td>
         </tr>
         <tr>
-        <td role="rowheader">Tipo di account </td>
+        <td role="rowheader">Tipo di account [!UICONTROL]</td>
         <td>Seleziona se ti stai connettendo a un account Dropbox personale o a un account aziendale (Dropbox Business).</td>
         </tr>
         <tr>
@@ -459,11 +461,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p style="font-weight: bold;">[!UICONTROL Percorso File]</p> <p>Immettete o mappate il percorso del file di destinazione.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Selezionare il file di destinazione.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Visibilità richiesta </p> </td> 
+   <td> <p>Visibilità richiesta [!UICONTROL]</p> </td> 
    <td> <p>Seleziona se il collegamento è pubblico, per team o con password limitata.</p> <p><b>Nota:</b></p><p> [!UICONTROL Solo team] è disponibile solo per gli account Dropbox Business. [!UICONTROL Access with password] è disponibile solo per [!DNL Dropbox Pro] o account Dropbox Business.</p> </td> 
   </tr> 
   <tr> 
-   <td>Data di scadenza del collegamento </td> 
+   <td>Data di scadenza del collegamento [!UICONTROL]</td> 
    <td> <p> Immetti la data e l’ora in cui il collegamento scadrà e non sarà più accessibile. Se questo campo viene lasciato vuoto, il collegamento non scade. Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Tipo di coercizione</a>.</p>  </td> 
   </tr> 
   <tr> 
