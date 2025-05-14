@@ -381,11 +381,11 @@ Il modulo restituisce l’ID dell’elemento di lavoro aggiornato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure DevOps] a [!DNL Workfront Fusion], vedere <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Azure DevOps] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto [!UICONTROL]</td> 
+   <td role="rowheader">Progetto </td> 
    <td>Selezionare il progetto contenente l'elemento di lavoro che si desidera aggiornare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di elemento di lavoro [!UICONTROL]</td> 
+   <td role="rowheader">Tipo di elemento di lavoro </td> 
    <td> <p>Selezionare il tipo di elemento di lavoro da aggiornare.</p> </td> 
   </tr> 
   <tr> 
@@ -414,7 +414,7 @@ Il modulo restituisce l’ID dell’allegato e un URL di download per l’allega
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure DevOps] a [!DNL Workfront Fusion], vedere <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Azure DevOps] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto [!UICONTROL] </td> 
+   <td role="rowheader">Progetto  </td> 
    <td> <p>Seleziona il progetto in cui desideri caricare un allegato.</p> </td> 
   </tr> 
   <tr> 
@@ -451,7 +451,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure DevOps] a [!DNL Workfront Fusion], vedere <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Azure DevOps] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto [!UICONTROL]</td> 
+   <td role="rowheader">Progetto </td> 
    <td>Selezionare il progetto dal quale si desidera recuperare gli elementi di lavoro.</td> 
   </tr> 
   <tr> 
