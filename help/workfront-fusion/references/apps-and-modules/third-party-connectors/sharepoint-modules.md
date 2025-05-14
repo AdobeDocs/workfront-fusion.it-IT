@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 2bd3a9ba84182307af9349163db284514dd12aca
 workflow-type: tm+mt
-source-wordcount: '3124'
+source-wordcount: '3393'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,7 @@ Il connettore SharePoint utilizza quanto segue:
 
 * [Connetti Microsoft SharePoint Online a  [!DNL Workfront Fusion]  tramite un account  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connetti Microsoft SharePoint Online a  [!DNL Workfront Fusion]  utilizzando le impostazioni avanzate](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
+* [Connetti Microsoft SharePoint Online a  [!DNL Workfront Fusion]  tramite l&#39;autorizzazione del certificato](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
 ### Connetti Microsoft SharePoint Online a [!DNL Workfront Fusion] utilizzando un account [!DNL Microsoft]
 
@@ -100,19 +101,111 @@ Il connettore SharePoint utilizza quanto segue:
 
 ### Connetti Microsoft SharePoint Online a [!DNL Workfront Fusion] utilizzando le impostazioni avanzate
 
-Per connettere Microsoft SharePoint Online a [!DNL Workfront Fusion] senza un account [!DNL Microsoft], è necessario un ID client, un segreto client e un ID tenant.
+Per includere le credenziali nella connessione, abilita l’opzione Mostra impostazioni avanzate. Per questo tipo di connessione sono necessari un ID client, un segreto client e un ID tenant.
 
-1. Fai clic su **[!UICONTROL Aggiungi]** nella parte superiore della casella **Microsoft SharePoint Online** per aprire la casella **[!UICONTROL Crea connessione]**.
-
-1. (Facoltativo) Modificare il nome predefinito della connessione **&#x200B;**.
+1. In qualsiasi modulo di SharePoint, fai clic su **[!UICONTROL Aggiungi]** accanto al campo Connessione per aprire la casella **[!UICONTROL Crea una connessione]**.
 1. Fare clic su **[!UICONTROL Mostra impostazioni avanzate]**.
-1. Immetti **[!UICONTROL ID client]** e **[!UICONTROL Segreto client]** di Microsoft SharePoint Online.
+1. Compila i campi seguenti:
 
-1. Fai clic su **[!UICONTROL Continua]**.
-1. Nella finestra di accesso visualizzata, inserisci le credenziali per accedere all’app, se non lo hai già fatto.
-1. (Condizionale) Se viene visualizzato un pulsante **[!UICONTROL Consenti]**, fare clic sul pulsante per connettere l&#39;app a [!DNL Workfront Fusion].
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Tipo di connessione]</p> </td> 
+      <td>Per utilizzare le credenziali client, selezionare <b>E-mail Microsoft 365</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Nome connessione]</p> </td> 
+      <td>Immettere un nome per la connessione.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL ID client]</p> </td> 
+      <td>Immetti l'ID client per l'app SharePoint a cui ti stai connettendo. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Segreto client]</p> </td> 
+      <td>Immetti il segreto client per l’app SharePoint a cui ti stai connettendo.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL ID tenant]</p> </td> 
+      <td>Immetti l’ID tenant dell’app SharePoint a cui ti stai connettendo.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Instance]</p> </td> 
+      <td> <p>Immettere l'indirizzo dell'account [!DNL ServiceNow] senza <code>https://</code> (in genere <code>&lt;company>.service-now.com</code>).</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-## Moduli SharePoint Online di Microsoft e relativi campi
+1. Fai clic su **Continua** per salvare la connessione e tornare al modulo.
+
+### Connetti Microsoft SharePoint Online a [!DNL Workfront Fusion] tramite l&#39;autorizzazione del certificato
+
+Puoi utilizzare l’autorizzazione del certificato per connetterti a SharePoint.
+
+>[!IMPORTANT]
+>
+>Per utilizzare l’autorizzazione del certificato, devi innanzitutto creare un’app in Microsoft Entra e caricare il certificato da tale app.
+>
+>Per istruzioni, vedere [Come configurare le autorità di certificazione per l&#39;autenticazione basata su certificato Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities) nella documentazione di Microsoft.
+
+1. In qualsiasi modulo di SharePoint, fai clic su **[!UICONTROL Aggiungi]** accanto al campo Connessione per aprire la casella **[!UICONTROL Crea una connessione]**.
+1. Fare clic su **[!UICONTROL Mostra impostazioni avanzate]**.
+1. Compila i campi seguenti:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Tipo di connessione]</p> </td> 
+      <td>Per utilizzare l'autorizzazione del certificato, selezionare <b>Microsoft SharePoint Online (Autenticazione certificato)</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Nome connessione]</p> </td> 
+      <td>Immettere un nome per la connessione.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL ID client]</p> </td> 
+      <td>Immetti l'ID client per l'app SharePoint a cui ti stai connettendo. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Thumbprint]</p> </td> 
+      <td>Immetti l’identificazione personale dell’app SharePoint a cui ti stai connettendo.</td> 
+     </tr> 
+      <tr>
+        <td role="rowheader">[!UICONTROL Chiave privata]</td>
+        <td>
+          <p>Immetti il certificato o la chiave privata generati al momento della creazione delle credenziali in Microsoft. </p>
+          <p>Per estrarre la chiave privata o il certificato:</p>
+          <ol>
+            <li>
+              <p>Fare clic su <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li>
+            <p>Seleziona se stai estraendo un certificato o una chiave privata.</li>
+            <li>
+              <p>Selezionare il tipo di file da estrarre.</p>
+            </li>
+            <li>
+              <p>Seleziona il file che contiene la chiave privata o il certificato.</p>
+            </li>
+            <li>
+              <p>Immettere la password per il file.</p>
+            </li>
+            <li>
+              <p>Fare clic su <b>[!UICONTROL Salva]</b> per estrarre il file e tornare alla configurazione della connessione.</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </tbody> 
+   </table>
+
+1. Fai clic su **Continua** per salvare la connessione e tornare al modulo.
+
+## Moduli SharePoint di Microsoft e relativi campi
 
 Quando si configurano i moduli di Microsoft SharePoint Online, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, possono essere visualizzati campi SharePoint Online aggiuntivi di Microsoft, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
@@ -458,7 +551,7 @@ Questo modulo di attivazione avvia uno scenario quando un elemento viene creato 
    <td role="rowheader">[!UICONTROL Immetti ID sito ed elenco]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito e dell'elenco che si desidera controllare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong> e l'ID elenco <strong></strong> che si desidera controllare.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong> e l'ID elenco <strong>[!UICONTROL]</strong> che si desidera controllare.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco che segui]</strong> </p> <p>Seleziona il sito da monitorare, quindi fai clic sull’elenco. Questi menu a discesa recuperano solo i siti seguiti.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -492,7 +585,7 @@ Questo modulo di azione crea un nuovo elenco in SharePoint.
    <td role="rowheader">[!UICONTROL Immetti un ID sito]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito in cui si desidera creare un elenco.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong> in cui si desidera creare un elenco.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong> in cui si desidera creare un elenco.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare il sito in cui si desidera creare un elenco. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -550,7 +643,7 @@ Questo modulo di azione recupera un elenco di tutti gli elementi in un sito spec
    <td role="rowheader">[!UICONTROL Elenchi]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito da cui si desidera recuperare gli elenchi.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong> contenente gli elenchi che si desidera restituire.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong> contenente gli elenchi che si desidera restituire.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare il sito contenente gli elenchi che si desidera recuperare. Il menu a discesa recupera solo i siti che segui.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -581,7 +674,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o modificato
    <td role="rowheader">[!UICONTROL Immetti ID sito]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito da controllare per gli elenchi.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong></strong> in cui desideri guardare gli elenchi.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong>[!UICONTROL]</strong> in cui desideri guardare gli elenchi.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco che segui]</strong> </p> <p>Seleziona il sito da monitorare. L’elenco a discesa recupera solo il sito che segui.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -614,7 +707,7 @@ Questo modulo di azione restituisce i dati di una pagina specificata.
    <td role="rowheader">[!UICONTROL Ottieni pagina]</td> 
    <td> <p>Seleziona la modalità di identificazione della pagina da recuperare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong></strong>e l'ID pagina <strong></strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong>[!UICONTROL]</strong>e l'ID pagina <strong>[!UICONTROL]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Seleziona il sito contenente la pagina da recuperare, quindi fai clic sulla pagina.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -642,7 +735,7 @@ Questo modulo di azione restituisce i dati di un sito specificato.
    <td role="rowheader">[!UICONTROL Ottieni sito]</td> 
    <td> <p>Seleziona la modalità di identificazione della pagina da recuperare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Seleziona il sito da recuperare.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -694,7 +787,7 @@ Questo modulo recupera le aggiunte, gli aggiornamenti e le eliminazioni effettua
    <td role="rowheader">[!UICONTROL Immetti ID di sito, unità e cartella]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito e dell'unità che contiene l'elemento che si desidera aggiornare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong>, <strong>[!UICONTROL ID unità]</strong> e <strong>[!UICONTROL ID cartella]</strong> nei campi visualizzati.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong>, <strong>[!UICONTROL ID unità]</strong> e <strong>[!UICONTROL ID cartella]</strong> nei campi visualizzati.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare il sito contenente l'elemento che si desidera aggiornare, quindi selezionare l'unità e la cartella. </p> </li> 
     </ul> </td> 
   </tr> 

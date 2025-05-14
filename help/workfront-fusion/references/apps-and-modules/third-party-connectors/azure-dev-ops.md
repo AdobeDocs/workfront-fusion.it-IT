@@ -4,7 +4,7 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 96270cbe7a8ef0b66cde7e8d008ed0360244911c
 workflow-type: tm+mt
 source-wordcount: '1768'
 ht-degree: 0%
@@ -110,6 +110,44 @@ Il connettore DevOps di Azure utilizza quanto segue:
 
 1. Per immettere un ID app o un segreto client di Azure DevOps, fare clic su <b>Mostra impostazioni avanzate</b> e immetterle nei campi aperti.
 1. Fai clic su **[!UICONTROL Continua]** per completare la configurazione della connessione e continuare a creare lo scenario.
+
+<!--## Connect [!DNL Azure DevOps] to [!DNL Workfront Fusion] {#connect-azure-devops-to-workfront-fusion}
+
+1. Add an [!DNL Azure DevOps] module to your scenario.
+1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
+1. In the [!UICONTROL Connection Type] field, select the type of connection that you want to use.
+
+   >[!NOTE]
+   >
+   >The [!UICONTROL [!DNL Azure DevOps] (EntraApp)] allows you to request all scopes for the connection.
+
+1. Fill out the following fields:
+
+   <table style="table-layout:auto">
+        <tr>
+            <td>[!UICONTROL Connection name]</td>
+            <td>Enter a name for the connection that you are creating.</td>
+        </tr>
+      <tr>
+            <td>[!UICONTROL Organization]</td>
+            <td>Enter the name of the organization under which you created your [!DNL Azure DevOps] application.</td>
+        </tr>
+        <tr>
+            <td>[!UICONTROL App ID]</td>
+            <td>Enter the ID of the DevOps application that you are connecting to.</td>
+        </tr>
+      <tr>
+            <td>[!UICONTROL Client Secret]</td>
+            <td>Enter the client secret for the DevOps applications that you are connecting to.</td>
+        </tr>
+      <tr>
+            <td>[!UICONTROL Request All Scopes]</td>
+            <td>If you are using the [!DNL Azure DevOps] (EntraApp) connection type, enable this option to request all scopes for the connection.</td>
+        </tr>
+  </table>
+
+1. To enter an Azure DevOps App ID or Client Secret, click <b>Show advanced settings</b> and enter them in the fields that open.
+1. Click **[!UICONTROL Continue]** to finish setting up the connection and continue creating your scenario.-->
 
 ## [!UICONTROL Moduli DevOps di Azure] e relativi campi
 
@@ -343,11 +381,11 @@ Il modulo restituisce l’ID dell’elemento di lavoro aggiornato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure DevOps] a [!DNL Workfront Fusion], vedere <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Azure DevOps] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto </td> 
+   <td role="rowheader">Progetto [!UICONTROL]</td> 
    <td>Selezionare il progetto contenente l'elemento di lavoro che si desidera aggiornare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di elemento di lavoro </td> 
+   <td role="rowheader">Tipo di elemento di lavoro [!UICONTROL]</td> 
    <td> <p>Selezionare il tipo di elemento di lavoro da aggiornare.</p> </td> 
   </tr> 
   <tr> 
@@ -376,7 +414,7 @@ Il modulo restituisce l’ID dell’allegato e un URL di download per l’allega
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure DevOps] a [!DNL Workfront Fusion], vedere <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Azure DevOps] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto  </td> 
+   <td role="rowheader">Progetto [!UICONTROL] </td> 
    <td> <p>Seleziona il progetto in cui desideri caricare un allegato.</p> </td> 
   </tr> 
   <tr> 
@@ -413,7 +451,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure DevOps] a [!DNL Workfront Fusion], vedere <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Azure DevOps] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto </td> 
+   <td role="rowheader">Progetto [!UICONTROL]</td> 
    <td>Selezionare il progetto dal quale si desidera recuperare gli elementi di lavoro.</td> 
   </tr> 
   <tr> 
