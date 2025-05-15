@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6219cd4406c2ccf22b1e94e5d264722e640fe3e4
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2466'
 ht-degree: 0%
 
 ---
@@ -241,7 +241,7 @@ Questo modulo funziona con Firefly API V3 Async. La versione precedente di quest
 
 Questo modulo è stato dichiarato obsoleto e verrà rimosso a breve. Utilizza invece il modulo Riempi immagine.
 
-## Generare un’immagine
+### Generare un’immagine
 
 Questo modulo di azione genera un’immagine e in base a un prompt fornito. È inoltre possibile fornire un&#39;immagine di riferimento facoltativa. L&#39;immagine generata corrisponderà allo stile dell&#39;immagine di riferimento.
 
@@ -258,6 +258,10 @@ Questo modulo funziona con Firefly API V3 Async. La versione precedente di quest
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
    <td>Immettete o mappate un prompt per l'immagine da generare. Un maggior numero di dettagli nel prompt consente un maggiore controllo su ciò che appare nell'immagine.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model version]</td> 
+   <td>Seleziona la versione del modello Firefly da utilizzare per generare l’immagine.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Numero di varianti]</td> 
@@ -388,6 +392,10 @@ Questo modulo di azione genera immagini simili all’immagine di origine specifi
   <tr> 
    <td role="rowheader">[!UICONTROL Numero di varianti]</td> 
    <td>Immettere un numero compreso tra 1 e 4. Il modulo genera questo numero di varianti di immagine.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model version]</td> 
+   <td>Seleziona la versione del modello Firefly da utilizzare per generare le immagini.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Generated image format]</td> 

@@ -4,9 +4,9 @@ description: Con i moduli di Adobe Photoshop, puoi avviare uno scenario Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: db1d6f5bf29063b069681395c6ff6d3554c67dc3
+source-git-commit: a9e7053c443c9603ab3dc84c094196b7506cc7d0
 workflow-type: tm+mt
-source-wordcount: '4359'
+source-wordcount: '4976'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 &#42;Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore [!DNL Workfront].
 
-&#42;&#42;Per informazioni sulle licenze [!DNL Adobe Workfront Fusion], vedere [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+&#42;&#42;Per informazioni sulle licenze [!DNL Adobe Workfront Fusion], vedere [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -68,7 +68,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 Prima di poter utilizzare il connettore [!DNL Adobe Photoshop], è necessario verificare che siano soddisfatti i seguenti prerequisiti:
 
 * Devi avere un account [!DNL Adobe Photoshop] attivo.
-* È necessario disporre di una licenza di Firefly Services.
+* È necessario disporre di una licenza Firefly Services.
 * È necessario disporre di un ID client e di un segreto client. Puoi acquistarli da Adobe Developer Console.
 
 ## Informazioni API di Adobe Photoshop
@@ -120,11 +120,11 @@ Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID account tecnico]</td>
-        <td>Immetti l'ID account tecnico [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Immetti l'ID account tecnico [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID organizzazione]</td>
-        <td>Immetti l'ID organizzazione [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Chiave privata]</td>
@@ -169,6 +169,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Creare una maschera](#create-a-mask)
 * [Crea un nuovo PSD](#create-a-new-psd)
 * [Modificare i livelli di testo](#edit-text-layers)
+* [Modifica livelli di testo (legacy)](#edit-text-layers-legacy)
 * [Esegui sfocatura profondità](#execute-depth-blur)
 * [Eseguire azioni Photoshop](#execute-photoshop-actions)
 * [Esegui azioni Photoshop (JSON)](#execute-photoshop-actions-json)
@@ -177,6 +178,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Effettuare una chiamata API personalizzata](#make-a-custom-api-call)
 * [Rimuovi sfondo](#remove-background)
 * [Sostituire un oggetto avanzato](#replace-a-smart-object)
+* [Sostituire un oggetto avanzato (legacy)](#replace-a-smart-object-legacy)
 * [Ridimensionare un’immagine](#resize-an-image)
 * [Filigrana di un’immagine](#watermark-an-image)
 
@@ -523,7 +525,7 @@ Per i campi relativi a questo modulo, vedi [Creare un nuovo PSD](https://develop
 
 ### Modificare i livelli di testo
 
-Questo modulo di azione modifica i livelli di testo in un file Photoshop.
+Questo modulo di azione modifica i livelli di testo in un file Photoshop. Potete immettere dettagli di modifica separati per più livelli nello stesso file.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -534,7 +536,7 @@ Questo modulo di azione modifica i livelli di testo in un file Photoshop.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -559,9 +561,9 @@ Questo modulo di azione modifica i livelli di testo in un file Photoshop.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Livelli]</td>
-   <td> <p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/text">Modifica livello testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
+   <td> <p>Per ogni livello di testo che si desidera modificare, fare clic su <b>Aggiungi elemento</b> e immettere le opzioni di livello.<p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Modifica testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di output di </td>
+      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p>
       </td>
@@ -593,6 +595,81 @@ Questo modulo di azione modifica i livelli di testo in un file Photoshop.
   </tbody>
 </table>
 
+
+
+### Modifica livelli di testo (legacy)
+
+Questo modulo di azione modifica un livello di testo su un file Photoshop.
+
+Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#edit-text-layers).
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
+      <td>
+        <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL URL file di input]</p>
+      </td>
+   <td> Immetti o mappa l’URL o il percorso del file da modificare. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Gestisci tipi di carattere mancanti]</td>
+      <td>
+        <p>Selezionare l'azione da eseguire se nel documento mancano uno o più tipi di carattere. Se il font non viene fornito, il modulo utilizza il font predefinito.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Default font]  </td>
+      <td>
+        <p>Immettere il nome postscript completo del tipo di carattere da utilizzare come predefinito globale per il documento. Questo tipo di carattere verrà utilizzato per qualsiasi livello di testo con un tipo di carattere mancante e nessun altro tipo di carattere è stato specificato per tale livello. Se questo tipo di carattere non è presente, verrà applicata l'opzione specificata in Gestione tipi di carattere mancanti.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Livelli]</td>
+   <td> <p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Modifica livello testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
+    <tr>
+      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
+      <td>
+        <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL URL file di output]</p>
+      </td>
+   <td> Inserisci o mappa l’URL o il percorso in cui verrà memorizzato il file modificato. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Tipo di file di output]</p>
+      </td>
+   <td> Selezionare il tipo di file per il file modificato. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td>
+        <p>Seleziona se il file appena modificato sovrascriverà eventuali file di output già esistenti.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Compression]</p>
+      </td>
+   <td> Selezionare il livello di compressione per il file di output. </td> 
+    </tr>
+  </tbody>
+</table>
 
 
 ### Eseguire azioni Photoshop (JSON)
@@ -638,7 +715,7 @@ Questo modulo di azione esegue azioni Photoshop utilizzando comandi JSON.
    <td> Inserisci o mappa l’URL o il percorso del file che desideri utilizzare. </td> 
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di output di </td>
+      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p><p>Selezionando l'archiviazione interna di Fusion, il file diventa disponibile per i moduli successivi, ma non al di fuori dello scenario.</p>
       </td>
@@ -719,7 +796,7 @@ Questo modulo di azione esegue Sfocatura profondità sul file selezionato.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -731,7 +808,7 @@ Questo modulo di azione esegue Sfocatura profondità sul file selezionato.
    <td> Immetti o mappa l’URL o il percorso del file da modificare. </td> 
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di output di </td>
+      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p>
       </td>
@@ -782,7 +859,7 @@ Questo modulo di azione esegue un’azione Photoshop sull’immagine selezionata
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -824,7 +901,7 @@ Questo modulo di azione esegue un’azione Photoshop sull’immagine selezionata
    <td> Inserisci o mappa l’URL o il percorso del file che desideri utilizzare. </td> 
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di output di </td>
+      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p>
       </td>
@@ -869,7 +946,7 @@ Questo modulo di azione esegue il ritaglio prodotto sull’immagine selezionata.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file da ritagliare.</p>
       </td>
@@ -899,7 +976,7 @@ Questo modulo di azione esegue il ritaglio prodotto sull’immagine selezionata.
    <td> Immettete o mappate la quantità di spazio per l'altezza che desiderate aggiungere. </td> 
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di output di </td>
+      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p>
       </td>
@@ -944,7 +1021,7 @@ Questo modulo di azione recupera le informazioni sui livelli dal file PSD specif
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionate il servizio file da cui memorizzare il file da cui desiderate recuperare le informazioni sui livelli.</p>
       </td>
@@ -1097,6 +1174,81 @@ Questo modulo di azione identifica il soggetto principale dell&#39;immagine e ri
 ### Sostituire un oggetto avanzato
 
 Questo modulo di azione sostituisce un oggetto avanzato all’interno di un livello PSD e genera nuove rappresentazioni.
+
+Questo modulo utilizza Smart Object API versione 2.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Archiviazione [!UICONTROL (Input)]</td>
+      <td>
+        <p>Selezionare il servizio file in cui è memorizzato l'oggetto avanzato.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Percorso file [!UICONTROL (Input)]</p>
+      </td>
+   <td> Immettere o mappare l'URL o il percorso dell'oggetto avanzato. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Livelli]</p>
+      </td>
+   <td>Per ogni livello che si desidera aggiungere all'oggetto avanzato, fare clic su Aggiungi elemento e immettere il nome o l'ID dell'oggetto, il servizio file in cui è memorizzato l'oggetto avanzato e l'URL o il percorso del livello.<p>Per le descrizioni delle impostazioni avanzate in quest'area, vedere <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Sostituire un oggetto avanzato</a> nella documentazione dell'API di Photoshop </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output]</td>
+      <td>
+        <p>Per ogni nuova copia trasformata che si desidera venga prodotta dal modulo, fare clic su Aggiungi elemento e compilare i campi seguenti. Puoi avere un massimo di 25 file di output.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">Archiviazione [!UICONTROL (Output)]</td>
+      <td>
+        <p>Selezionare il servizio file in cui si desidera memorizzare il nuovo file.</p><p>Selezionando l'archiviazione interna di Fusion, il file diventa disponibile per i moduli successivi, ma non al di fuori dello scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Percorso file [!UICONTROL (Output)]</p>
+      </td>
+   <td> Inserisci o mappa l’URL o il percorso in cui verrà memorizzato il nuovo file.  Questa operazione è necessaria solo se per l'archiviazione di output non è stata scelta l'archiviazione interna Fusion.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Width]</p>
+      </td>
+   <td> Larghezza in pixel del file di output. Il modulo mantiene le proporzioni originali. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Seleziona se il file appena modificato sovrascriverà eventuali file di output già esistenti. Questo vale solo per i file nell’archiviazione Adobe.</p>
+      </td>
+    </tr>
+        <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Numero massimo di risultati restituiti]</p>
+      </td>
+   <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td> 
+    </tr>
+    </tbody>
+</table>
+
+
+
+### Sostituire un oggetto avanzato (legacy)
+
+Questo modulo di azione sostituisce un oggetto avanzato all’interno di un livello PSD e genera nuove rappresentazioni.
+
+Questo modulo utilizza la versione legacy di Smart Objects.
 
 <table style="table-layout:auto"> 
   <col/>
