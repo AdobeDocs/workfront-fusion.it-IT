@@ -4,9 +4,9 @@ description: Alcuni moduli di attivazione ti consentono di selezionare il primo 
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Nuovo:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>Il piano [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -64,7 +64,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 ## Scegli dove inizia un modulo trigger
 
-1. Fare clic sulla scheda **[!UICONTROL Scenarios]** nel pannello a sinistra.
+1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Seleziona lo scenario in cui desideri scegliere da dove inizia il trigger.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
 1. Configura e salva un modulo trigger.
@@ -75,7 +75,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
    ![Scegli da dove iniziare](assets/choose-where-to-start.png)
 
-1. Selezionare un&#39;opzione nella casella **[!UICONTROL Choose where to start]** visualizzata.
+1. Selezionare un&#39;opzione nella casella **[!UICONTROL Scegli da dove iniziare]** visualizzata.
 
    Le opzioni visualizzate dipendono dalle possibilità di un determinato servizio. Esse possono comprendere quanto segue:
 
@@ -84,39 +84,20 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
     <col> 
     <tbody>
     <tr>
-    <td>[!UICONTROL From now on] (impostazione predefinita)</td>
+    <td>[!UICONTROL Da ora in avanti] (impostazione predefinita)</td>
     <td>Recupera tutti i bundle aggiunti o aggiornati (a seconda delle impostazioni) dopo aver selezionato questa opzione</td>
     </tr>
      <tr>
-    <td>[!UICONTROL Since specific date]</td>
+    <td>[!UICONTROL Da data specifica]</td>
     <td>Recupera tutti i bundle aggiunti o aggiornati (a seconda delle impostazioni) dopo una data e un’ora specificate</td>
       </tr>
       <tr>
-    <td>[!UICONTROL All]</td>
+    <td>[!UICONTROL Tutto]</td>
     <td>Recupera tutti i bundle disponibili</td>
      </tr>
       <tr>
-    <td>[!UICONTROL Choose manually]</td>
+    <td>[!UICONTROL Scegli manualmente]</td>
     <td>Consente di selezionare il primo bundle dal quale deve iniziare il recupero dei bundle</td>
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Immettere un nome per la nuova connessione [!DNL DocuSign]</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>Seleziona se l'account a cui desideri connetterti è un account di produzione o un account demo.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-

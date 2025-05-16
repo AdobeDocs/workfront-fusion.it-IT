@@ -4,7 +4,7 @@ description: Con il connettore  [!DNL Adobe Experience Manager Assets]  per  [!D
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 0%
@@ -67,10 +67,10 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 * Per utilizzare questi moduli è necessario disporre di un account [!DNL Adobe Experience Manager Assets].
 * È necessario configurare il flusso [!UICONTROL Server-to-server] in [!DNL Adobe Developer console].
 
-  Per istruzioni sulla configurazione del flusso [!UICONTROL Server-to-server] in [!DNL Adobe Developer console], vedere [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#the-server-to-server-flow).
+  Per istruzioni sulla configurazione del flusso [!UICONTROL Server-to-server] in [!DNL Adobe Developer console], vedere [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * L&#39;account tecnico Adobe Experience Manager deve disporre di autorizzazioni di scrittura.
 
-  Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
+  Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
 
 ## Informazioni API di Adobe Experience Manager Assets
 
@@ -99,7 +99,7 @@ Per creare una connessione per i moduli [!DNL Adobe Experience Manager Assets]:
 
      Questa configurazione richiede informazioni da [!DNL Adobe Admin Console].
 
-   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
+   * **[!DNL AEM Assets Basic]([!DNL Adobe Managed Services])**
 
      Questa configurazione richiede un nome utente e una password.
 
@@ -118,11 +118,11 @@ Per creare una connessione per i moduli [!DNL Adobe Experience Manager Assets]:
 >
 >* Le informazioni per questi campi vengono generate durante la configurazione del flusso [!UICONTROL Server-to-server] in [!DNL Adobe Developer Console]. Questi valori si trovano nel file JSON delle credenziali del servizio generato come parte di tale configurazione.
 >
->   Per istruzioni sulla configurazione del flusso [!UICONTROL Server-to-server] in [!UICONTROL Adobe Developer Console], vedere [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#the-server-to-server-flow).
+>   Per istruzioni sulla configurazione del flusso [!UICONTROL Server-to-server] in [!UICONTROL Adobe Developer Console], vedere [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* L&#39;account tecnico Adobe Experience Manager deve disporre di autorizzazioni di scrittura.
 >
->   Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
+>   Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
@@ -132,7 +132,7 @@ Per creare una connessione per i moduli [!DNL Adobe Experience Manager Assets]:
               <tr>
                   <td role="rowheader">[!UICONTROL Nome connessione]</td>
                   <td>
-                      <p>Immettere un nome per la connessione</p>
+                      <p>Immettere un nome per la connessione.</p>
                   </td>
               </tr>
               <tr>
@@ -188,7 +188,7 @@ Per creare una connessione per i moduli [!DNL Adobe Experience Manager Assets]:
             <tr>
                 <td role="rowheader">[!UICONTROL Nome connessione]</td>
                 <td>
-                    <p>Immettere un nome per la connessione</p>
+                    <p>Immettere un nome per la connessione.</p>
                 </td>
             </tr>
             <tr>
