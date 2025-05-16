@@ -106,7 +106,7 @@ Per creare una connessione per i moduli [!DNL DocuSign]:
       <td>Specificare se ci si connette a un account di servizio o a un account personale.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Tipo di account [!UICONTROL]</td> 
+      <td role="rowheader">Tipo di account </td> 
       <td>Seleziona se l'account a cui desideri connetterti è un account di produzione o un account demo.</td> 
      </tr> 
     </tbody> 
@@ -140,7 +140,7 @@ Questo modulo di attivazione avvia uno scenario in cui una busta viene inviata, 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL DocuSign] a [!DNL Workfront Fusion], vedere <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connettere Docusign a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Account [!UICONTROL] </td> 
+   <td role="rowheader">Account  </td> 
    <td> <p>Selezionare l'account contenente i record che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
@@ -190,7 +190,7 @@ Questo modulo di azione aggiunge un campo personalizzato al documento
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL DocuSign] a [!DNL Workfront Fusion], vedere <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL DocuSign] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">Account [!UICONTROL] </td> 
+   <td role="rowheader">Account  </td> 
    <td> <p>Selezionare l'account contenente il documento in cui si desidera aggiungere un campo personalizzato.</p> </td> 
   </tr> 
   <tr> 
@@ -210,7 +210,7 @@ Questo modulo di azione aggiunge un campo personalizzato al documento
    <td>Abilita questa opzione se desideri che il campo sia visibile.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Valore [!UICONTROL]</td> 
+   <td role="rowheader">Valore </td> 
    <td>Immettere o mappare il valore (contenuto) del campo aggiunto. </td> 
   </tr> 
  </tbody> 
@@ -229,7 +229,7 @@ Questo modulo di azione aggiunge uno o più destinatari a una busta esistente. S
    <td> <p>Per istruzioni sulla connessione dell'account DocuSign a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions="">
-    <td>Account [!UICONTROL] </td>
+    <td>Account  </td>
    <td> <p>Selezionare l'account contenente la busta in cui si desidera aggiungere i destinatari.</p> </td> 
   </tr> 
   <tr> 
@@ -272,7 +272,7 @@ Questo modulo di azione aggiunge uno o più destinatari a una busta esistente. S
    <td> Se si desidera inviare un messaggio privato al destinatario, immettere o mappare il testo del messaggio. <p>Solo il destinatario selezionato visualizza il messaggio privato e il messaggio generale. Il messaggio privato può contenere un massimo di 1000 caratteri.</p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Autenticazione [!UICONTROL]</td> 
+   <td role="rowheader">Autenticazione </td> 
    <td> <p>Selezionare il metodo di autenticazione da utilizzare per confermare l'identità del destinatario.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Nessuno]</strong> </p> </li> 
@@ -298,12 +298,12 @@ Questo modulo di azione crea un nuovo envelope da un modello. Restituisce l&#39;
 <td> <p>Per istruzioni sulla connessione dell'account DocuSign a Workfront Fusion, vedere gli articoli in <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader">Account [!UICONTROL] </td>
+    <td role="rowheader">Account  </td>
    <td> <p>Seleziona l’account contenente la busta in cui desideri caricare un file.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >Modello [!UICONTROL]</td>
-   <td> <p> Selezionate il modello da cui desiderate creare la nuova busta. I modelli sono disponibili in base all'account [!UICONTROL] selezionato.</p> </td> 
+    <td role="rowheader" >Modello </td>
+   <td> <p> Selezionate il modello da cui desiderate creare la nuova busta. I modelli sono disponibili in base all'account  selezionato.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
@@ -349,7 +349,7 @@ Questo modulo di azione crea un nuovo envelope da un modello. Restituisce l&#39;
   </tr> 
   <tr> 
    <td role="rowheader">
-     Navigazione automatica [!UICONTROL]
+     Navigazione automatica 
    </td> 
    <td> <p>Abilita questa opzione per impostare la navigazione automatica per il destinatario.</p> </td> 
   </tr> 
@@ -399,7 +399,7 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL DocuSign] a [!DNL Workfront Fusion], vedere <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL DocuSign] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>Account [!UICONTROL]</td> 
+   <td>Account </td> 
    <td>Immettere o mappare l'account da utilizzare per accedere all'API [!DNL DocuSign].</td> 
   </tr> 
   <tr> 
@@ -473,7 +473,7 @@ Questo modulo di azione scarica un singolo documento.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL DocuSign] a [!DNL Workfront Fusion], vedere <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL DocuSign] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">Account [!UICONTROL] </td> 
+   <td role="rowheader">Account  </td> 
    <td> <p>Selezionare l'account contenente il documento che si desidera scaricare.</p> </td> 
   </tr> 
   <tr> 
@@ -524,7 +524,7 @@ Questo modulo modifica un campo personalizzato utilizzando il nome del campo.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL DocuSign] a [!DNL Workfront Fusion], vedere <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL DocuSign] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">Account [!UICONTROL] </td> 
+   <td role="rowheader">Account  </td> 
    <td> <p>Selezionare l'account contenente il documento in cui si desidera modificare un campo personalizzato.</p> </td> 
   </tr> 
   <tr> 
@@ -548,7 +548,7 @@ Questo modulo modifica un campo personalizzato utilizzando il nome del campo.
    <td>Abilita questa opzione se desideri che il campo sia visibile.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Valore [!UICONTROL]</td> 
+   <td role="rowheader">Valore </td> 
    <td>Immettere o mappare il valore (contenuto) del campo modificato. </td> 
   </tr> 
  </tbody> 
@@ -567,7 +567,7 @@ Questo modulo di azione legge le informazioni su una busta in [!DNL DocuSign] ut
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL DocuSign] a [!DNL Workfront Fusion], vedere <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL DocuSign] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">Account [!UICONTROL] </td> 
+   <td role="rowheader">Account  </td> 
    <td> <p>Selezionare l'account contenente il documento da cui si desidera leggere le informazioni.</p> </td> 
   </tr> 
   <tr> 
@@ -594,7 +594,7 @@ Questo modulo di azione invia una bozza di busta ai destinatari.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL DocuSign] a [!DNL Workfront Fusion], vedere <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL DocuSign] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">Account [!UICONTROL] </td> 
+   <td role="rowheader">Account  </td> 
    <td> <p>Selezionare l'account contenente la bozza di busta che si desidera inviare ai destinatari.</p> </td> 
   </tr> 
   <tr> 
@@ -617,7 +617,7 @@ Questo modulo carica un file specificato in un envelope esistente in DocuSign.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL DocuSign] a [!DNL Workfront Fusion], vedere <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL DocuSign] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">Account [!UICONTROL] </td> 
+   <td role="rowheader">Account  </td> 
    <td> <p>Seleziona l’account contenente la busta in cui desideri caricare un file.</p> </td> 
   </tr> 
   <tr> 

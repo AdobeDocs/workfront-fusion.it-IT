@@ -99,7 +99,7 @@ Per creare una connessione per i moduli [!DNL Adobe Experience Manager Assets]:
 
      Questa configurazione richiede informazioni da [!DNL Adobe Admin Console].
 
-   * **[!DNL AEM Assets Basic]([!DNL Adobe Managed Services])**
+   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
 
      Questa configurazione richiede un nome utente e una password.
 
