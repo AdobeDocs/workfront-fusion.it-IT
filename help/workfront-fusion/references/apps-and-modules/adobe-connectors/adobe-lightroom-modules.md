@@ -4,9 +4,9 @@ description: Con i moduli di Adobe Lightroom, puoi avviare uno scenario Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
 workflow-type: tm+mt
-source-wordcount: '2376'
+source-wordcount: '2563'
 ht-degree: 0%
 
 ---
@@ -21,48 +21,53 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 ## Requisiti di accesso
 
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
+
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-      <td>
-        <p>[!UICONTROL Pro] o versione successiva</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td>
-      <td >
-        <p>[!UICONTROL Workfront Fusion per l'automazione e l'integrazione del lavoro]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Prodotto</td>
-      <td>La tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</td>
-    </tr>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
+   <p>Oppure</p>
+   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Prodotto</td> 
+   <td>
+   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Oppure</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-&#42;Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore [!DNL Workfront].
+Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-&#42;&#42;Per informazioni sulle licenze [!DNL Adobe Workfront Fusion], vedere [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
++++
 
 ## Prerequisiti
 
 Prima di poter utilizzare il connettore [!DNL Adobe Lightroom], è necessario verificare che siano soddisfatti i seguenti prerequisiti:
 
 * Devi avere un account [!DNL Adobe Lightroom] attivo.
+* In Adobe Admin Console deve essere configurata un&#39;app Web OAuth. Per informazioni dettagliate, vedere [Configurare un&#39;applicazione OAuth in Adobe Admin Console](#configure-an-oauth-application-in-the-adobe-admin-console) in questo articolo.
 
 ## Informazioni API di Adobe Lightroom
 
@@ -87,9 +92,49 @@ Il connettore Adobe Lightroom utilizza quanto segue:
 
 ## Creare una connessione ad Adobe Lightroom
 
+Per connetterti ad Adobe Lightroom, devi prima configurare un’app OAuth in Adobe Admin Console. Dopo aver configurato l&#39;app, puoi creare connessioni da Workfront Fusion.
+
+### Configurare un’applicazione OAuth in Adobe Admin Console
+
+1. Inizia la configurazione di un&#39;app Web OAuth in Adobe Admin Console.
+
+   Per istruzioni, consulta [User Authentication Implementation Guide](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation) nella documentazione per gli sviluppatori di Adobe.
+1. Durante la configurazione dell&#39;app Web OAuth, immetti i seguenti valori:
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+        <td role="rowheader">[!UICONTROL Ambiti]</td>
+        <td>
+          <ul>
+            <li>AdobeID</li>
+            <li>lr_partner_rendition_apis</li>
+            <li>openid</li>
+            <li>offline_access</li>
+            <li>lr_partner_apis</li>
+          </ul>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL URI reindirizzamento]</td>
+        <td><code>https://app.workfrontfusion.com/oauth/cb/adobe-lightroom5</code></td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Schema URI di reindirizzamento]</td>
+        <td><code>https://app\.workfrontfusion\.com/oauth/cb/adobe-lightroom5</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+### Creare una connessione ad Adobe Lightroom da Workfront Fusion
+
 Per creare una connessione per i moduli [!DNL Adobe Lightroom]:
 
-1. In qualsiasi modulo, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
+1. In qualsiasi modulo di Adobe Lightroom, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
 1. Compila i campi seguenti:
 
@@ -127,8 +172,6 @@ Per creare una connessione per i moduli [!DNL Adobe Lightroom]:
 1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
 
 
-
-
 ## Moduli Adobe Lightroom e relativi campi
 
 Quando configuri [!DNL Adobe Lightroom] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Adobe Lightroom], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
@@ -161,13 +204,15 @@ Questo modulo di azione recupera un ID di versione del server Lightroom, verific
     <tr>
       <td role="rowheader">[!UICONTROL Credentials]</td>
       <td>
-        <p>Se si desidera fornire credenziali specifiche per garantire l'esecuzione di un server specifico, fare clic su Aggiungi elemento e immettere le credenziali.</p><p>Le intestazioni di autorizzazione vengono aggiunte automaticamente.</p>
+        <p>Se si desidera fornire credenziali specifiche per garantire l'esecuzione di un server specifico, fare clic su <b>Aggiungi elemento</b> e immettere le credenziali.</p><p>Le intestazioni di autorizzazione vengono aggiunte automaticamente.</p>
       </td>
     </tr>
   </tbody>
 </table>
 
 #### Recuperare i metadati del catalogo utente
+
+Questo modulo di azione recupera i metadati da un catalogo in Adobe Lightroom. Un catalogo contiene risorse, album o altre risorse.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -188,7 +233,7 @@ Questo modulo di azione recupera un ID di versione del server Lightroom, verific
 
 ### Risorse
 
-* [Creare un file originale della risorsa](#create-an-asset-external-xmp-develop-setting-file)
+* [Creare un file originale della risorsa](#create-an-asset-original-file)
 * [Creare una risorsa](#create-an-asset)
 * [Creazione di una risorsa esterna XMP sviluppo file di impostazione](#create-an-asset-external-xmp-develop-setting-file)
 * [Generare copie trasformate per un file originale](#generate-renditions-for-an-original-file)
@@ -201,6 +246,7 @@ Questo modulo di azione recupera un ID di versione del server Lightroom, verific
 
 Questo modulo di azione crea e carica un file originale per una risorsa.
 
+<!--BECKY START HERE-->
 
 <table style="table-layout:auto"> 
   <col/>
@@ -231,7 +277,7 @@ Questo modulo di azione crea e carica un file originale per una risorsa.
     <tr>
       <td role="rowheader">[!UICONTROL Intervallo byte]</td>
       <td>
-        <p>Immettere o mappare l'intervallo di byte per la richiesta, inclusi il primo e l'ultimo byte e la lunghezza dell'entità come definito nella RFC 2616. Deve essere incluso solo quando i dati sono troppo grandi per essere caricati in una singola chiamata.</p>
+        <p>Immettere o mappare l'intervallo di byte per la richiesta, inclusi il primo e l'ultimo byte e la lunghezza dell'entità come definito nella RFC 2616. Queste informazioni devono essere incluse solo quando i dati sono troppo grandi per essere caricati in una singola chiamata.</p>
       </td>
     </tr>
     <tr>
@@ -459,7 +505,7 @@ Questo modulo di azione recupera la rappresentazione più recente della risorsa 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di rappresentazione </td>
+      <td role="rowheader">Tipo di rappresentazione [!UICONTROL]</td>
       <td>
         <p>Selezionare il tipo di rappresentazione da recuperare.</p>
       </td>
@@ -609,7 +655,7 @@ Questo modulo di azione aggiunge una o più risorse all’album specificato. Puo
         <p></p>
       </td>
     <tr>
-      <td role="rowheader">Metadati di </td>
+      <td role="rowheader">Metadati di [!UICONTROL]</td>
       <td>
         <p>Immetti o mappa i metadati che desideri includere nella risorsa. Deve essere una singola stringa di testo con una lunghezza massima di 1-24 caratteri.</p>
       </td>
@@ -647,7 +693,7 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Sottotipo </td>
+      <td role="rowheader">Sottotipo [!UICONTROL]</td>
       <td>
         <p>Selezionare il sottotipo dell'album.</p>
       </td>
