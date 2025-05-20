@@ -4,10 +4,10 @@ description: È possibile visualizzare informazioni sugli eventi o sulle esecuzi
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '894'
+ht-degree: 1%
 
 ---
 
@@ -105,6 +105,8 @@ La scheda [!UICONTROL Cronologia] mostra più dettagli di quelli disponibili nel
    >Nella cronologia degli scenari viene visualizzato un contrassegno **Elaborazione** accanto agli scenari eseguiti di recente, mentre i dettagli di esecuzione vengono scritti nell&#39;archivio. L’elaborazione si verifica immediatamente dopo l’esecuzione dello scenario. e non dovrebbe durare più di qualche minuto. I dettagli dell’esecuzione dello scenario potrebbero non essere visibili durante l’elaborazione dell’esecuzione.
 
 1. Per visualizzare i dettagli di un&#39;esecuzione di uno scenario specifico, fare clic su **Dettagli** all&#39;estrema destra. Il collegamento [!UICONTROL details] è visibile solo se sono disponibili dettagli sull&#39;esecuzione.
+
+   Per ulteriori informazioni sulla visualizzazione dei dettagli di esecuzione dello scenario, vedere [Visualizzare un&#39;esecuzione dello scenario specifica](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md).
 1. Per visualizzare gli eventi, attiva **Mostra eventi**.
 
 
