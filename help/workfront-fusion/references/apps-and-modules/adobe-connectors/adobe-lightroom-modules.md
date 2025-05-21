@@ -4,9 +4,9 @@ description: Con i moduli di Adobe Lightroom, puoi avviare uno scenario Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
+source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -246,8 +246,6 @@ Questo modulo di azione recupera i metadati da un catalogo in Adobe Lightroom. U
 
 Questo modulo di azione crea e carica un file originale per una risorsa.
 
-<!--BECKY START HERE-->
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -293,7 +291,6 @@ Questo modulo di azione crea e carica un file originale per una risorsa.
 
 Questo modulo di azione crea una nuova risorsa con metadati iniziali e informazioni di importazione.
 
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -335,6 +332,30 @@ Questo modulo di azione crea una nuova risorsa con metadati iniziali e informazi
     <tr>
       <td role="rowheader">[!UICONTROL Data acquisita]</td>
       <td>
+        <p>Immetti o mappa la data di acquisizione della risorsa nel formato <code>YYYY-MM-DDT00:00:00-00:00</code>. Questo verrà impostato dal server se la data acquisita è impostata su <code>0000-00-00T00:00:00</code>. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Nome file]</td>
+      <td>
+        <p>Immetti o mappa il nome file della risorsa da importare in Lightroom.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Nome del dispositivo importato su]</td>
+      <td>
+        <p>Inserisci o mappa il nome del dispositivo che importa la risorsa.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ID account dell'utente importato]</td>
+      <td>
+        <p>Inserisci o mappa l’ID dell’utente che importa la risorsa.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Timestamp di importazione]</td>
+      <td>
         <p>Immettere o mappare una data con il formato <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
     </tr>
@@ -343,7 +364,7 @@ Questo modulo di azione crea una nuova risorsa con metadati iniziali e informazi
 
 #### Creazione di una risorsa esterna XMP sviluppo file di impostazione
 
-Questo modulo di azione supporta due flussi di lavoro. Il primo flusso di lavoro consiste nel caricare il file delle impostazioni di sviluppo XMP esterno per la risorsa. Il secondo flusso di lavoro consiste nel creare un file delle impostazioni di sviluppo XMP esterno copiando dal file delle impostazioni di sviluppo xmp esterno di un’altra risorsa.
+Questo modulo di azione supporta due flussi di lavoro: il caricamento del file delle impostazioni di sviluppo XMP esterno per la risorsa o la creazione di un file delle impostazioni di sviluppo XMP esterno tramite la copia dal file delle impostazioni di sviluppo xmp esterno di un’altra risorsa.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -354,7 +375,7 @@ Questo modulo di azione supporta due flussi di lavoro. Il primo flusso di lavoro
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Lightroom], vedere <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Creare una connessione a [!DNL Adobe Lightroom]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Lunghezza del contenuto in byte]</td>
+      <td role="rowheader">[!UICONTROL Lunghezza contenuto in byte]</td>
       <td>
         <p>Immettere o mappare la lunghezza del contenuto in byte.</p>
       </td>
@@ -368,7 +389,7 @@ Questo modulo di azione supporta due flussi di lavoro. Il primo flusso di lavoro
     <tr>
       <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
-        <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
+        <p>Inserisci o mappa l’ID del catalogo in cui desideri creare la risorsa.</p>
       </td>
     </tr>
     <tr>
@@ -413,7 +434,7 @@ Questo modulo di azione genera in modo asincrono le rappresentazioni di un file 
     <tr>
       <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
-        <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
+        <p>Inserisci o mappa l’ID del catalogo in cui desideri generare le rappresentazioni.</p>
       </td>
     </tr>
     <tr>
@@ -468,7 +489,7 @@ Questo modulo di azione recupera il file di impostazione XMP esterno della risor
     <tr>
       <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
-        <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
+        <p>Immetti o mappa l’ID del catalogo che contiene la risorsa associata al file delle impostazioni di sviluppo di XMP.</p>
       </td>
     </tr>
     <tr>
@@ -480,7 +501,7 @@ Questo modulo di azione recupera il file di impostazione XMP esterno della risor
   </tbody>
 </table>
 
-#### Ottieni la rappresentazione più recente delle risorse
+#### Ottieni rappresentazione più recente delle risorse
 
 Questo modulo di azione recupera la rappresentazione più recente della risorsa del tipo specificato.
 
@@ -495,17 +516,17 @@ Questo modulo di azione recupera la rappresentazione più recente della risorsa 
     <tr>
       <td role="rowheader">[!UICONTROL ID catalogo]</td>
       <td>
-        <p>Inserisci o mappa l’ID del catalogo che contiene la risorsa.</p>
+        <p>Immetti o mappa l’ID del catalogo contenente la risorsa per la quale desideri recuperare una rappresentazione.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL ID risorsa]</td>
       <td>
-        <p>Immetti o mappa l’ID della risorsa associata al file delle impostazioni di sviluppo di XMP.</p>
+        <p>Immetti o mappa l’ID della risorsa per la quale desideri recuperare una rappresentazione.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di rappresentazione </td>
+      <td role="rowheader">Tipo di rappresentazione [!UICONTROL]</td>
       <td>
         <p>Selezionare il tipo di rappresentazione da recuperare.</p>
       </td>
@@ -538,9 +559,15 @@ Questo modulo di azione recupera le risorse di proprietà dell’utente le cui c
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Restituisci risorse acquisite in precedenza]</td>
+      <td role="rowheader">[!UICONTROL Restituisce le risorse acquisite prima dell'ora specificata]</td>
       <td>
-        <p>Immettere una data in formato <code>YYYY-MM-DDT00:00:00</code>. Il modulo restituisce i risultati acquisiti prima di questa data.</p><p> Questo campo non può essere utilizzato con il campo <code>Return assets captured after</code>.</p>
+        <p>Immettere una data in formato <code>YYYY-MM-DDT00:00:00</code>. Il modulo restituisce i risultati acquisiti prima di questa data.</p><p> Questo campo non può essere utilizzato con il campo <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Restituisci risorse acquisite dopo il tempo specificato]</td>
+      <td>
+        <p>Immettere una data in formato <code>YYYY-MM-DDT00:00:00</code>. Il modulo restituisce i risultati acquisiti prima di questa data.</p><p> Questo campo non può essere utilizzato con il campo <code>Return assets captured before given time</code>.</p>
       </td>
     </tr>
     <tr>
@@ -552,19 +579,19 @@ Questo modulo di azione recupera le risorse di proprietà dell’utente le cui c
     <tr>
       <td role="rowheader">[!UICONTROL SHA256 Valore hash del file originale]</td>
       <td>
-        <p></p>
+        <p>Immetti o mappa il valore hash del file originale. Viene restituito Assets con un hash corrispondente.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Nascondi le risorse che si trovano all'interno di pile?"]</td>
       <td>
-        <p></p>
+        <p>Selezionate Sì per nascondere le risorse all'interno delle pile (le risorse all'interno delle pile non vengono restituite). Seleziona No per includere nei risultati le risorse all’interno delle pile.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Valori sottotipo risorsa]</td>
       <td>
-        <p></p>
+        <p>Immettere o mappare un elenco separato da punto e virgola dei valori dei sottotipi da restituire.</p>
       </td>
     </tr>
     <tr>
@@ -581,24 +608,26 @@ Questo modulo di azione recupera le risorse di proprietà dell’utente le cui c
     <tr>
       <td role="rowheader">[!UICONTROL Valori gruppo]</td>
       <td>
-        <p></p>
+        <p>Immettere o mappare un elenco di valori di gruppo separati da punto e virgola.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Name values]</td>
       <td>
-        <p></p>
+        <p>Immettere o mappare un elenco di valori nome separati da punto e virgola.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Stato preferito]</td>
       <td>
-        <p></p>
+        <p>Immetti o mappa lo stato preferito per il quale desideri restituire i risultati.</p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
+
+<!--BECKY START HERE-->
 
 ### Album
 
@@ -655,7 +684,7 @@ Questo modulo di azione aggiunge una o più risorse all’album specificato. Puo
         <p></p>
       </td>
     <tr>
-      <td role="rowheader">Metadati di </td>
+      <td role="rowheader">Metadati di [!UICONTROL]</td>
       <td>
         <p>Immetti o mappa i metadati che desideri includere nella risorsa. Deve essere una singola stringa di testo con una lunghezza massima di 1-24 caratteri.</p>
       </td>
@@ -693,7 +722,7 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Sottotipo </td>
+      <td role="rowheader">Sottotipo [!UICONTROL]</td>
       <td>
         <p>Selezionare il sottotipo dell'album.</p>
       </td>
