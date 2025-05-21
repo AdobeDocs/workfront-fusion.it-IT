@@ -526,7 +526,7 @@ Questo modulo di azione recupera la rappresentazione più recente della risorsa 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di rappresentazione [!UICONTROL]</td>
+      <td role="rowheader">Tipo di rappresentazione </td>
       <td>
         <p>Selezionare il tipo di rappresentazione da recuperare.</p>
       </td>
@@ -684,7 +684,7 @@ Questo modulo di azione aggiunge una o più risorse all’album specificato. Puo
         <p></p>
       </td>
     <tr>
-      <td role="rowheader">Metadati di [!UICONTROL]</td>
+      <td role="rowheader">Metadati di </td>
       <td>
         <p>Immetti o mappa i metadati che desideri includere nella risorsa. Deve essere una singola stringa di testo con una lunghezza massima di 1-24 caratteri.</p>
       </td>
@@ -722,7 +722,7 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Sottotipo [!UICONTROL]</td>
+      <td role="rowheader">Sottotipo </td>
       <td>
         <p>Selezionare il sottotipo dell'album.</p>
       </td>
