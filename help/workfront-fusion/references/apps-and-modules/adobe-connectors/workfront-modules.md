@@ -4,9 +4,9 @@ description: Puoi utilizzare il connettore Adobe Workfront Fusion Adobe Workfron
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 6fa7ab493112351d9480b21b23b3b6b7b14f2230
+source-git-commit: 32de8028b8870c9a3b569b87032513318c255171
 workflow-type: tm+mt
-source-wordcount: '7823'
+source-wordcount: '7942'
 ht-degree: 2%
 
 ---
@@ -206,7 +206,7 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
 
 Dopo la creazione del webhook, puoi visualizzare l’indirizzo dell’endpoint a cui vengono inviati gli eventi.
 
-Per ulteriori informazioni, consulta la sezione [Esempi di payload degli eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) nell&#39;articolo API di sottoscrizione eventi nella documentazione di Workfront.
+Per ulteriori informazioni, consulta la sezione [Esempi di payload degli eventi](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) nell&#39;articolo API di sottoscrizione eventi nella documentazione di Workfront.
 
 Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
@@ -351,7 +351,7 @@ Questo modulo di azione effettua una delle seguenti conversioni:
    <td> <p>Immettere l'ID dell'oggetto. </p> <p>Nota: quando si immette l'ID di un oggetto, è possibile iniziare a digitare il nome dell'oggetto, quindi selezionarlo dall'elenco. Il modulo immette quindi l’ID appropriato nel campo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>ID modello </td> 
+   <td>ID modello [!UICONTROL]</td> 
    <td> <p>Per la conversione in progetto, seleziona l’ID modello da utilizzare per il progetto.</p> <p>Nota: quando si immette l'ID di un oggetto, è possibile iniziare a digitare il nome dell'oggetto, quindi selezionarlo dall'elenco. Il modulo immette quindi l’ID appropriato nel campo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -632,7 +632,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Action]</td> 
-   <td> <p>Selezionare l'azione che si desidera venga eseguita dal modulo.</p> <p>Potrebbe essere necessario compilare ulteriori campi, a seconda del tipo di record  e dell'azione  scelti. Alcune combinazioni di queste due impostazioni possono richiedere solo un ID record, mentre altre (come Project per il tipo di record <strong></strong> e [!UICONTROL Allega modello] per l'azione <strong></strong>) richiedono informazioni aggiuntive (ad esempio un ID oggetto e un ID modello).</p><p>Per le opzioni disponibili per alcune azioni, vedere <a href="#misc-action-options" class="MCXref xref">Opzioni di azioni varie</a> in questo articolo.</p> <p>Per informazioni dettagliate sui singoli campi, consulta la <a href="http://developer.workfront.com/">documentazione per gli sviluppatori di Workfront</a>. <p><strong>Nota</strong>: il sito della documentazione per gli sviluppatori include informazioni solo tramite la versione 14 dell'API, ma contiene comunque informazioni importanti per le chiamate API. </p> 
+   <td> <p>Selezionare l'azione che si desidera venga eseguita dal modulo.</p> <p>Potrebbe essere necessario compilare ulteriori campi, a seconda del tipo di record [!UICONTROL] e dell'azione [!UICONTROL] scelti. Alcune combinazioni di queste due impostazioni possono richiedere solo un ID record, mentre altre (come Project per il tipo di record <strong>[!UICONTROL]</strong> e [!UICONTROL Allega modello] per l'azione <strong>[!UICONTROL]</strong>) richiedono informazioni aggiuntive (ad esempio un ID oggetto e un ID modello).</p><p>Per le opzioni disponibili per alcune azioni, vedere <a href="#misc-action-options" class="MCXref xref">Opzioni di azioni varie</a> in questo articolo.</p> <p>Per informazioni dettagliate sui singoli campi, consulta la <a href="http://developer.workfront.com/">documentazione per gli sviluppatori di Workfront</a>. <p><strong>Nota</strong>: il sito della documentazione per gli sviluppatori include informazioni solo tramite la versione 14 dell'API, ma contiene comunque informazioni importanti per le chiamate API. </p> 
     <ol> 
      <li value="1"> <p>Seleziona il tipo di record nella barra di navigazione a sinistra, nella pagina della documentazione per gli sviluppatori di Workfront. I seguenti tipi hanno pagine proprie:</p> 
       <ul> 
@@ -644,7 +644,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
       </ul> <p>Per tutti gli altri tipi di record, selezionare <b>[!UICONTROL Altri oggetti ed endpoint]</b> e individuare il tipo di record nelle pagine ordinate alfabeticamente.</p> </li> 
      <li value="2"> <p>Nella pagina del tipo di record appropriato, cercare l'azione (Ctrl+F o Comando+F).</p> </li> 
      <li value="3"> <p>Visualizza le descrizioni dei campi disponibili nell'azione selezionata.</p> </li> 
-    </ol> <p>Nota:  <p>Durante la creazione di una bozza tramite il modulo [!UICONTROL Misc Action] di Workfront, è consigliabile creare una bozza senza opzioni avanzate, quindi aggiornarla utilizzando l'API SOAP [!DNL Workfront Proof].</p><p>Per ulteriori informazioni sulla creazione di una bozza con l'API Workfront (utilizzata da questo modulo), vedere <a href="https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Aggiungere opzioni di bozza avanzate durante la creazione di una bozza tramite l'API Adobe Workfront</a></p> </p> </td> 
+    </ol> <p>Nota:  <p>Durante la creazione di una bozza tramite il modulo [!UICONTROL Misc Action] di Workfront, è consigliabile creare una bozza senza opzioni avanzate, quindi aggiornarla utilizzando l'API SOAP [!DNL Workfront Proof].</p><p>Per ulteriori informazioni sulla creazione di una bozza con l'API Workfront (utilizzata da questo modulo), vedere <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Aggiungere opzioni di bozza avanzate durante la creazione di una bozza tramite l'API Adobe Workfront</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -838,7 +838,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 <td> <p>Seleziona le informazioni da includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
   <tr> 
-    <td>Modulo personalizzato di output </td>
+    <td>Modulo personalizzato di output [!UICONTROL]</td>
      <td> <p>Seleziona i moduli personalizzati da includere nel bundle di output per questo modulo, quindi seleziona i campi specifici dai moduli personalizzati da includere nell’output.</p> </td> 
   </tr> 
   <tr> 
@@ -918,7 +918,9 @@ Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile ut
 
 Workfront ha recentemente rilasciato una nuova versione del suo servizio di abbonamento agli eventi. La nuova versione non è una modifica all’API Workfront, ma piuttosto una modifica alla funzionalità di abbonamento agli eventi. Questo modulo di azione aggiorna la versione del payload dell’evento utilizzata per questo scenario.
 
-Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;evento, vedere [Controllo delle versioni della sottoscrizione dell&#39;evento](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
+Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;evento, vedere [Controllo delle versioni della sottoscrizione dell&#39;evento](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
+
+Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l&#39;aggiornamento dell&#39;abbonamento agli eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l&#39;aggiornamento V2 degli abbonamenti agli eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -1061,7 +1063,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Immettere l'ID Workfront univoco del record in cui si desidera caricare il documento.</td> 
   </tr> 
   <tr> 
-   <td>Tipo di record correlato a </td> 
+   <td>Tipo di record correlato a [!UICONTROL]</td> 
    <td>Seleziona il tipo di record Workfront in cui vuoi che il modulo carichi il documento.</td> 
   </tr> 
   <tr> 
@@ -1102,7 +1104,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Immettere l'ID Workfront univoco del record in cui si desidera caricare il documento.</td> 
   </tr> 
   <tr> 
-   <td>Tipo di record correlato a </td> 
+   <td>Tipo di record correlato a [!UICONTROL]</td> 
    <td>Seleziona il tipo di record Workfront in cui vuoi che il modulo carichi il documento.</td> 
   </tr> 
   <tr> 
@@ -1201,7 +1203,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Selezionare i campi da utilizzare per i criteri di ricerca. Questi campi saranno quindi disponibili nel menu a discesa Criteri di ricerca.</p></td> 
   </tr> 
   <tr> 
-   <td>Criteri di ricerca di </td> 
+   <td>Criteri di ricerca di [!UICONTROL]</td> 
    <td> <p>Immettere il campo in base al quale si desidera eseguire la ricerca, l'operatore che si desidera utilizzare nella query e il valore ricercato nel campo.</p> <p>Nota: non utilizzare <code>username </code> nei criteri di ricerca. L'inclusione di <code>username </code> in una query API per Workfront comporta l'accesso dell'utente a Workfront e la ricerca non avrà esito positivo.</p> <p>Nota: <code>In</code> e <code>NotIn</code> funzionano con gli array. Gli input devono essere in formato array.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -1259,7 +1261,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Selezionare i campi da utilizzare per i criteri di ricerca. Questi campi saranno quindi disponibili nel menu a discesa Criteri di ricerca.</p></td> 
   </tr> 
   <tr> 
-   <td>Criteri di ricerca di </td> 
+   <td>Criteri di ricerca di [!UICONTROL]</td> 
    <td> <p>Immettere il campo in base al quale si desidera eseguire la ricerca, l'operatore che si desidera utilizzare nella query e il valore ricercato nel campo.</p> <p>Nota: non utilizzare <code>username </code> nei criteri di ricerca. L'inclusione di <code>username </code> in una query API per Workfront comporta l'accesso dell'utente a Workfront e la ricerca non avrà esito positivo.</p> <p>Nota: <code>In</code> e <code>NotIn</code> funzionano con gli array. Gli input devono essere in formato array.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -1627,7 +1629,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <th>[!UICONTROL Elimina record]</th> 
    <th>[!UICONTROL Carica documento]</th> 
    <th>[!UICONTROL Leggi un record]</th> 
-   <th>Chiamata API personalizzata </th> 
+   <th>Chiamata API personalizzata [!UICONTROL]</th> 
    <th>[!UICONTROL Misc Action]</th> 
   </tr> 
  </thead> 
@@ -2232,7 +2234,13 @@ Si consiglia di verificare che questo funzioni come previsto.
 
 >[!NOTE]
 >
->Si consiglia vivamente di utilizzare i filtri di abbonamento agli eventi nei moduli [!UICONTROL Osserva eventi].
+>* Si consiglia vivamente di utilizzare i filtri di abbonamento agli eventi nei moduli [!UICONTROL Osserva eventi].
+>
+>* Workfront ha recentemente rilasciato una nuova versione del suo servizio di abbonamento agli eventi. La nuova versione non è una modifica all’API Workfront, ma piuttosto una modifica alla funzionalità di abbonamento agli eventi. Questo modulo di azione aggiorna la versione del payload dell’evento utilizzata per questo scenario.
+>
+>   Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;evento, vedere [Controllo delle versioni della sottoscrizione dell&#39;evento](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
+>
+>   Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l&#39;aggiornamento dell&#39;abbonamento agli eventi, inclusa la registrazione di un webinar, vedere [Conservazione degli scenari di Fusion durante l&#39;aggiornamento V2 delle sottoscrizioni agli eventi(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Il modulo [!UICONTROL Osserva eventi] di Workfront attiva scenari basati su un webhook che crea una sottoscrizione di eventi nell&#39;API Workfront. L’abbonamento a un evento è un set di dati che determina quali eventi vengono inviati al webhook. Ad esempio, se imposti un modulo [!UICONTROL Osserva eventi] che sta monitorando la presenza di problemi, l&#39;abbonamento all&#39;evento invia solo gli eventi correlati ai problemi.
 
@@ -2282,7 +2290,7 @@ Nel filtro Workfront > Osserva eventi sono disponibili i seguenti operatori:
 >
 >Se vengono creati 100 problemi in un giorno, ma solo due di essi sono assegnati ad Ana, lo scenario verrebbe eseguito 100 volte. 98 esecuzioni si fermerebbero al filtro, ma il modulo trigger consuma ancora dati ed esegue operazioni in tutte le esecuzioni.
 
-Per ulteriori informazioni sulle sottoscrizioni di eventi di Workfront, vedere [Domande frequenti - Sottoscrizioni eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Per ulteriori informazioni sulle sottoscrizioni di eventi di Workfront, vedere [Domande frequenti - Sottoscrizioni eventi](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Per ulteriori informazioni sui webhook, vedi [Trigger istantanei (webhook) in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
