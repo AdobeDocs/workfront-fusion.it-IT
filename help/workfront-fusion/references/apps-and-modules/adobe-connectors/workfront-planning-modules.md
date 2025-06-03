@@ -4,9 +4,9 @@ description: Con i  [!DNL Adobe Workfront Planning] moduli, puoi avviare uno  [!
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 51bb87572f16f6194f6c37bbe52ea7f27050c303
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Puoi creare una connessione al tuo account [!DNL Workfront Planning] direttament
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
-          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
+          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]<p>(Facoltativo)</p></td>
@@ -472,3 +472,20 @@ Questa azione aggiorna un singolo record in Workfront Planning.
      <tr>
   </tbody>
 </table>
+
+
+## Usa JSONata per raggruppamenti di `record-types` leggibili
+
+La seguente espressione JSONata crea un output leggibile della query di Planning che fornisce la suddivisione per tipi di record. In questo modo il nome del tipo di record, i nomi dei campi e i nomi delle opzioni di campo (se applicabile) sono leggibili da un nome e il resto della struttura rimane intatto.
+
+```
+(
+    $s0 := ({"data":$ ~> | fields | {"options":(options){name:$}} |});
+    $s1 := ({"data":$s0.data ~> | **.fields | {"options_name":(options.*){displayName:$}} | });
+    $s2 := $s1 ~> | data | {"fields":(fields){displayName:$}} |; 
+    $s2.data{displayName:$}
+)
+```
+
+Per informazioni sull&#39;utilizzo dei moduli JSONata, vedere [Moduli JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
+
