@@ -4,14 +4,14 @@ description: Il connettore JSONata di Adobe Workfront Fusion fornisce un modulo 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: 2ba6ca5f5a82aea4979ff8f273bdeef1a8d22a06
+source-git-commit: da3bf98f8254228598372fed8c06d6318718721f
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
 
-# [!UICONTROL JSONata] moduli
+# [!UICONTROL Moduli JSONata]
 
 Il connettore [!DNL Adobe Workfront Fusion] [!UICONTROL JSONata] consente di eseguire query sugli oggetti JSON. Questo modulo non richiede una connessione.
 
@@ -44,7 +44,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Nuovo:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>Il piano [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -58,7 +58,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 +++
 
-## Modulo JSONata e relativi campi
+## Moduli JSONata e relativi campi
 
 ### Valuta
 
@@ -77,7 +77,7 @@ Questo modulo di azione esegue una query su un oggetto JSON e restituisce un arr
    <td> Inserisci l’oggetto JSON da valutare.  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringify output] </td> 
+   <td role="rowheader">[!UICONTROL Stringivy output] </td> 
    <td> Abilita questa opzione per convertire l’output in una stringa.  </td> 
   </tr> 
   </tbody>
@@ -105,3 +105,31 @@ L’obiettivo è quello di restituire un array di nomi dal seguente oggetto JSON
 Il modulo restituisce un array di nomi estratti dall’oggetto JSON.
 
 >[!ENDSHADEBOX]
+
+
+
+### MCP JSONata
+
+Questo modulo di azione genera espressioni JSONata analizzando gli schemi di input e output specificati. Vengono forniti gli schemi utilizzati da MCP (Model Context Protocol) per generare l&#39;espressione che trasforma l&#39;input nell&#39;output.
+
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Selezionare la connessione da utilizzare per connettersi al modello di lingua di grandi dimensioni (LLM) che si desidera utilizzare per questo modulo.</p> <p>Attualmente, è supportata solo la chiave API antropica.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Schema di input]</td> 
+   <td> <p>Immetti o mappa lo schema di input da utilizzare per questa espressione.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Schema di output]</td> 
+   <td> <p>Immetti o mappa lo schema di output da utilizzare per questa espressione.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
