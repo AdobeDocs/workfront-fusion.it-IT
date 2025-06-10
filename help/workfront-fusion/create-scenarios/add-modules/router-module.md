@@ -4,9 +4,9 @@ description: Il modulo Router consente di diramare il flusso in più route ed el
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,8 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
    Le route sono disposte nell&#39;ordine in cui vengono eseguite. La route superiore viene eseguita per prima.
 
 1. (Facoltativo) Per modificare l&#39;ordine di instradamento, fare clic con il pulsante destro del mouse sul modulo Router e selezionare **Ordina instradamenti** Trascinare e rilasciare i instradamenti nell&#39;ordine in cui si desidera che vengano eseguiti. Le route sono contrassegnate dal primo modulo che segue il router (il primo modulo della route).
+
+   ![Instradamento ordine](assets/order-routes.png)
 
 1. Continuare con [Aggiungere un filtro a una route](#add-a-filter-to-a-route).
 

@@ -1,23 +1,23 @@
 ---
 title: Visualizzare e risolvere le esecuzioni incomplete
-description: Nella cartella [!UICONTROL Incomplete executions] sono archiviate esecuzioni dello scenario che non sono state completate correttamente a causa di un errore. Ogni esecuzione incompleta archiviata può essere risolta manualmente o automaticamente.
+description: Nella cartella [!UICONTROL Esecuzioni incomplete] sono memorizzate esecuzioni dello scenario non finalizzate correttamente a causa di un errore. Ogni esecuzione incompleta archiviata può essere risolta manualmente o automaticamente.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 6%
+source-wordcount: '649'
+ht-degree: 5%
 
 ---
 
 # Visualizzare e risolvere le esecuzioni incomplete
 
-Nella cartella [!UICONTROL Incomplete executions] sono archiviate esecuzioni dello scenario che non sono state completate correttamente a causa di un errore. Ogni esecuzione incompleta archiviata può essere risolta manualmente o automaticamente.
+Nella cartella [!UICONTROL Esecuzioni incomplete] sono memorizzate esecuzioni dello scenario non finalizzate correttamente a causa di un errore. Ogni esecuzione incompleta archiviata può essere risolta manualmente o automaticamente.
 
 >[!NOTE]
 >
->Per impostazione predefinita, la memorizzazione di esecuzioni incomplete è disabilitata. Per abilitarla, abilitare l&#39;opzione [!UICONTROL Allow storing incomplete executions] nelle impostazioni avanzate dello scenario.
+>Per impostazione predefinita, la memorizzazione di esecuzioni incomplete è disabilitata. Per abilitarla, abilita l&#39;opzione [!UICONTROL Consenti l&#39;archiviazione di esecuzioni incomplete] nelle impostazioni avanzate dello scenario.
 >
 >Per ulteriori informazioni sulle impostazioni dello scenario, vedere [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
@@ -50,7 +50,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Nuovo:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>Il piano [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -75,7 +75,7 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 ## Visualizzare le esecuzioni incomplete
 
-Se un modulo rileva un errore durante l’operazione, viene aggiunta una nuova esecuzione incompleta alla cartella Esecuzioni incomplete. Ogni esecuzione incompleta contiene il blueprint dello scenario e tutti i bundle che possono essere mappati nel modulo non riuscito. Per aprire l&#39;elenco delle esecuzioni incomplete, fare clic sulla scheda [!UICONTROL Incomplete Executions] nella pagina dei dettagli dello scenario.
+Se un modulo rileva un errore durante l’operazione, viene aggiunta una nuova esecuzione incompleta alla cartella Esecuzioni incomplete. Ogni esecuzione incompleta contiene il blueprint dello scenario e tutti i bundle che possono essere mappati nel modulo non riuscito. Per aprire l&#39;elenco delle esecuzioni incomplete, fare clic sulla scheda [!UICONTROL Esecuzioni incomplete] nella pagina dei dettagli dello scenario.
 
 <!--
 
@@ -99,25 +99,30 @@ Per ulteriori informazioni, vedere [Errori risultanti in esecuzioni incomplete](
 Quando viene memorizzata una nuova esecuzione incompleta, è possibile risolverla come segue:
 
 1. Apri lo scenario interessato.
-1. Fare clic sulla scheda **[!UICONTROL Incomplete Executions]**.
-1. Individuare l&#39;esecuzione incompleta da risolvere e fare clic su **[!UICONTROL Details]**.
+1. Fare clic sulla scheda **[!UICONTROL Esecuzioni incomplete]**.
+1. Individuare l&#39;esecuzione incompleta da risolvere e fare clic su **[!UICONTROL Dettagli]**.
+1. Apri il registro del modulo in cui vengono visualizzate tutte le operazioni del modulo.
+1. Individuare l&#39;operazione non riuscita e fare clic su **[!UICONTROL Risolvi]**:
+
+   ![Pulsante Risolvi](assets/resolve-btn-350x188.png)
+
 
 
 ## Risolvere le esecuzioni incomplete dalla scheda Cronologia
 
-Se si desidera visualizzare il registro di tutte le operazioni del modulo prima di tentare di risolvere l&#39;esecuzione incompleta, è possibile risolverla dalla cartella [!UICONTROL History]:
+Se si desidera visualizzare il registro di tutte le operazioni del modulo prima di tentare di risolvere l&#39;esecuzione incompleta, è possibile risolverla dalla cartella [!UICONTROL Cronologia]:
 
 1. Apri lo scenario interessato.
-1. Fare clic sulla scheda **[!UICONTROL History]**.
-1. Individuare l&#39;esecuzione non riuscita dello scenario e fare clic su **[!UICONTROL Details]**.
+1. Fare clic sulla scheda **[!UICONTROL Cronologia]**.
+1. Individuare l&#39;esecuzione non riuscita dello scenario e fare clic su **[!UICONTROL Dettagli]**.
 1. Apri il registro del modulo in cui vengono visualizzate tutte le operazioni del modulo.
-1. Individuare l&#39;operazione non riuscita e fare clic su **[!UICONTROL Resolve]**:
+1. Individuare l&#39;operazione non riuscita e fare clic su **[!UICONTROL Risolvi]**:
 
    ![Pulsante Risolvi](assets/resolve-btn-350x188.png)
 
 ## Opzioni relative alle esecuzioni incomplete
 
-Le opzioni seguenti nel pannello [!UICONTROL Scenario settings] determinano se e come vengono archiviate le esecuzioni incomplete:
+Le seguenti opzioni nel pannello [!UICONTROL Impostazioni scenario] determinano se e come vengono archiviate le esecuzioni incomplete:
 
 * Consenti l’archiviazione di esecuzioni incomplete
 * Elaborazione sequenziale
@@ -136,6 +141,20 @@ Se si verifica un errore nel primo modulo dello scenario, l’esecuzione viene s
 
 Se si verifica un errore in un altro modulo e non è collegata alcuna route del gestore degli errori, si verifica una delle seguenti situazioni:
 
-* Se il tipo di errore è `ConnectionError`, `RateLimitError`, `OutOfSpaceError` o `ModuleTimeoutError`, viene archiviato un record di esecuzione incompleto con un nuovo tentativo automatico.
-* Se il tipo di errore è `DataError`, `InvalidConfigurationError`, `InvalidAccessTokenError`, `UnexpectedError`, `MaxFileSizeExceededError` o `MaxResultsExceededError`, viene archiviato un record di esecuzione incompleto senza tentativi automatici.
+* È stato memorizzato un record di esecuzione incompleto con un nuovo tentativo automatico per i seguenti tipi di errore:
+
+   * `ConnectionError`
+   * `RateLimitError`
+   * `OutOfSpaceError`
+   * `ModuleTimeoutError`
+
+* È stato memorizzato un record di esecuzione incompleto senza tentativi automatici per i seguenti tipi di errore:
+
+   * `DataError`
+   * `InvalidConfigurationError`
+   * `InvalidAccessTokenError`
+   * `UnexpectedError`
+   * `MaxFileSizeExceededError`
+   * `MaxResultsExceededError`
+
 * Se il tipo di errore è diverso da quelli riportati sopra, l’esecuzione non riesce.

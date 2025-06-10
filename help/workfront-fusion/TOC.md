@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: d03c4a68a69ea5302f6898418c3da9edaa404bad
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1797'
 ht-degree: 3%
 
 ---
@@ -173,6 +173,7 @@ ht-degree: 3%
    * [Creare scenari](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
    * Pianificare uno scenario {#plan-a-scenario}
       * [Pianifica uno scenario: indice articolo](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
+      * [Catena più scenari insieme](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)
       * [Domande frequenti sulla pianificazione dello scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [Panoramiche video](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [Flusso di lavoro per la creazione di uno scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
@@ -381,6 +382,7 @@ ht-degree: 3%
          * [Moduli Workday](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * Strumenti e trasformatori {#tools-and-transformers}
          * [Moduli di archiviazione](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+         * [Moduli catena](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
          * [Moduli CSV](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
          * [Moduli archivio dati](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
          * [Moduli Draft.js](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)

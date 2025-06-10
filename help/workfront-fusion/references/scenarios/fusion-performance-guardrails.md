@@ -4,9 +4,9 @@ description: L'automazione del lavoro richiede un'elaborazione rapida, quindi  [
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
+source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ L&#39;automazione del lavoro richiede una rapida elaborazione, quindi [!DNL Adob
 ## Scenari
 
 * Il timeout predefinito per l&#39;esecuzione dello scenario è **40 minuti**. Quando l&#39;esecuzione raggiunge questo timeout, [!DNL Workfront Fusion] interrompe l&#39;esecuzione dello scenario dopo il ciclo o l&#39;operazione successiva, a seconda dello scenario. Questo costringe lo scenario a interrompersi poco dopo il raggiungimento del limite di 40 minuti
+
+  Gli scenari di concatenamento non vengono considerati per il timeout di esecuzione dello scenario. Uno scenario padre non accumula tempo durante l’attesa dell’esecuzione di uno scenario figlio.
 * La dimensione massima di una blueprint dello scenario è **5 MB**, ma è consigliabile mantenere la dimensione dello scenario sotto **3 MB**.
 
   I moduli di app che creano o aggiornano dati con un numero elevato di campi possono causare blueprint molto grandi.
