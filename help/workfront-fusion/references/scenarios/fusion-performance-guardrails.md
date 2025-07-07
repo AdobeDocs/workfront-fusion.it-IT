@@ -4,9 +4,9 @@ description: L'automazione del lavoro richiede un'elaborazione rapida, quindi  [
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
+source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,7 @@ Per quanto riguarda la ricorsione, considera quanto segue:
 * **Quando uno scenario provoca la ricorsione, viene disattivato dal team di progettazione di Fusion per evitare ulteriori problemi di prestazioni.**
 * Poiché la ricorsione è il risultato della progettazione dello scenario, è necessario progettare gli scenari in modo tale che lo scenario non includa azioni che attivino lo scenario.
 
+## TLS
+
+* Per impostazione predefinita, Fusion supporta attualmente la versione 1.2 di TLS.
+* Le organizzazioni possono richiedere che TLS versione 1.3 sia abilitato per la propria istanza di Fusion.
