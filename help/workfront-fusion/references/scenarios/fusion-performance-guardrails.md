@@ -4,9 +4,9 @@ description: L'automazione del lavoro richiede un'elaborazione rapida, quindi  [
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 784516c1282f318a46b32c803064d869cc116790
+source-git-commit: 74324fd5f2f68dfbbd0dfe1286c202c246f29d43
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,7 @@ Per quanto riguarda la ricorsione, considera quanto segue:
 
 * Per impostazione predefinita, Fusion supporta attualmente la versione 1.2 di TLS.
 * Fusion può utilizzare TLS 1.3 per le richieste HTTPS in uscita se TLS 1.3 è abilitato per il servizio di destinazione.
+* Fusion supporta sia TLS 1.2 che TLS 1.3 per le richieste HTTPS in ingresso ai webhook.
 * Le organizzazioni possono richiedere che TLS versione 1.3 sia abilitato per la propria istanza di Fusion.
 
 >[!NOTE]
