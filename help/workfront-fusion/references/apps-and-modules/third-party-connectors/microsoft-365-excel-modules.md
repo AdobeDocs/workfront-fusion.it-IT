@@ -4,7 +4,7 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: d967cb62018fde6a76639a8f25ee5ca23f80cd8b
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 0%
@@ -140,7 +140,8 @@ Questo modulo di azione scarica il contenuto della cartella di lavoro di Excel s
      <li> <p><strong>[!UICONTROL Selezionando dal percorso]</strong> </p> <p>Nel campo [!UICONTROL Cartella di lavoro] selezionare la cartella di lavoro che si desidera scaricare dal modulo, incluso il relativo percorso se non si trova nella cartella principale.</p> </li> 
     </ul> </td> 
   </tr> 
- </tbody>
+ </tbody> 
+</table>
 
 #### [!UICONTROL Cerca cartelle di lavoro]
 
@@ -477,7 +478,7 @@ Questo modulo modifica una tabella esistente.
    <td> <p>Selezionare il foglio di lavoro contenente la tabella in cui si desidera aggiungere una riga.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >Tabella </td>
+    <td role="rowheader" >Tabella [!UICONTROL]</td>
    <td>Selezionare la tabella in cui si desidera aggiungere una riga.</td> 
   </tr> 
   <tr>
@@ -562,7 +563,7 @@ Questo modulo di ricerca recupera un elenco di tutte le righe di tabella in una 
    <td> <p>Selezionare il foglio di lavoro contenente la tabella che include le righe da elencare</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >Tabella  </td>
+    <td role="rowheader" >Tabella [!UICONTROL] </td>
    <td> <p>Selezionare la tabella contenente le righe da elencare.</p> </td> 
   </tr> 
   <tr> 
@@ -665,7 +666,7 @@ Questo trigger avvia uno scenario quando viene aggiunta una nuova riga a una tab
    <td> <p> Selezionare il foglio di lavoro contenente la tabella che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Tabella </p> </td> 
+   <td role="rowheader"> <p>Tabella [!UICONTROL]</p> </td> 
    <td> <p>Selezionare la tabella che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 

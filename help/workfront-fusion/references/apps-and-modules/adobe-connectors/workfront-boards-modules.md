@@ -4,9 +4,9 @@ description: Puoi utilizzare il connettore per schede madri Adobe Workfront per 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2868'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Per creare una connessione alle schede madri Workfront:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
-          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
+          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]<p>(Facoltativo)</p></td>
@@ -321,13 +321,13 @@ Questo modulo di azione aggiorna le informazioni relative a una scheda specifica
    <td>Immettere o mappare una nuova descrizione per la scheda.</p></td> 
   </tr> 
   <tr> 
-   <td>Stima </td> 
+   <td>Stima [!UICONTROL]</td> 
    <td>Immetti o mappa una stima del tempo necessario per completare questa scheda.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Scadenza]</td> 
    <td>Immetti o mappa la data di scadenza per questa scheda.</p>
-   <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</p>
+   <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p>
    </td> 
   </tr> 
   <tr> 
@@ -359,7 +359,7 @@ Questo modulo di azione crea una scheda in Workfront. Puoi specificare il tipo d
    <td>Inserisci o mappa un nome per la nuova bacheca.</td> 
   </tr> 
   <tr> 
-   <td>Modello </td> 
+   <td>Modello [!UICONTROL]</td> 
    <td>Seleziona il modello per il tipo di bacheca che desideri creare.</td> 
   </tr> 
  </tbody> 
@@ -643,7 +643,7 @@ Questo modulo di azione invia una richiesta GraphQL personalizzata all’API del
    <td> <p>Immettere un nome per l'operazione. Questo può semplificare il tracciamento e il debug della chiamata.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Origine dati delle variabili </td> 
+   <td role="rowheader">Origine dati delle variabili [!UICONTROL]</td> 
    <td> <p>Seleziona se le variabili devono provenire da un modulo o da una raccolta.</p> </td> 
   </tr> 
   <tr> 

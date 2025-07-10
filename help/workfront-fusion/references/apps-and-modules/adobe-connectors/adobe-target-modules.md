@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '2261'
+source-wordcount: '2259'
 ht-degree: 0%
 
 ---
@@ -603,7 +603,7 @@ Questo modulo di azione crea un’attività AB o XT, un’offerta o un pubblico.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Priorità </td>
+      <td role="rowheader">Priorità [!UICONTROL]</td>
       <td>Immetti un numero che definisce la priorità dell’attività. I numeri più alti hanno priorità più alta. Questo valore deve essere compreso tra 0 e 999. Il valore predefinito è 5.</td>
     </tr>
     <tr>
@@ -907,14 +907,14 @@ Questo modulo di ricerca recupera un elenco di record del tipo selezionato.
       <td role="rowheader">[!UICONTROL Inizia Da]</td>
       <td>
         <p>Immettere la prima data per la quale si desidera recuperare i record. </p>
-        <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</p>
+        <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Termina A]</td>
       <td>
         <p>Immettere l'ultima data per la quale si desidera recuperare i record. </p>
-        <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</p>
+        <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p>
       </td>
     </tr>
   </tbody>
@@ -941,7 +941,7 @@ Questo modulo di ricerca cerca attività, offerte o tipi di pubblico in base ai 
     <td>Per ogni campo in base al quale si desidera ordinare, fare clic su <b>[!UICONTROL Add item]</b> e selezionare il campo e specificare se i risultati restituiti devono essere crescenti o decrescenti.</td>
   </tr>
   <tr>
-    <td role="rowheader">Criteri di ricerca di </td>
+    <td role="rowheader">Criteri di ricerca di [!UICONTROL]</td>
     <td>Per ogni regola che desideri impostare, seleziona il campo, l’operatore e il valore. Fare clic su <b>[!UICONTROL Add AND rule]</b> per creare regole aggiuntive.</td>
   </tr>
   <tr>

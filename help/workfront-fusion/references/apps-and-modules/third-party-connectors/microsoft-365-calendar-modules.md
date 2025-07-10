@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion]  è possibile automa
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1960'
 ht-degree: 0%
 
 ---
@@ -262,7 +262,7 @@ Questo modulo di ricerca recupera i dettagli di un evento quando viene creato, a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari  che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
+   <td>Selezionare il gruppo di calendari [!UICONTROL] che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar]</td> 
@@ -274,7 +274,7 @@ Questo modulo di ricerca recupera i dettagli di un evento quando viene creato, a
     <ul> 
      <li>[!UICONTROL Subject]</li> 
      <li>[!UICONTROL ID evento]</li> 
-     <li>Data e ora di creazione di </li> 
+     <li>Data e ora di creazione di [!UICONTROL]</li> 
      <li>[!UICONTROL Data e ora ultima modifica]</li> 
      <li>[!UICONTROL Anteprima corpo]</li> 
     </ul> </td> 
@@ -317,11 +317,11 @@ Questo modulo di azione aggiorna un evento esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data di inizio]</td> 
-   <td> Immettere un singolo punto di inizio dell'evento in una rappresentazione combinata data e ora. Utilizza il formato <code>{date}T{time}</code>, ad esempio <code>2017-08-29T04:00:00.0000000</code>. Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td> Immettere un singolo punto di inizio dell'evento in una rappresentazione combinata data e ora. Utilizza il formato <code>{date}T{time}</code>, ad esempio <code>2017-08-29T04:00:00.0000000</code>. Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data di fine]</td> 
-   <td> Immettere un singolo punto di ora in cui l'evento termina con una rappresentazione combinata data e ora. Utilizza il formato <code>({date}T{time}</code>, ad esempio <code>2017-08-29T04:00:00.0000000</code>. Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td> Immettere un singolo punto di ora in cui l'evento termina con una rappresentazione combinata data e ora. Utilizza il formato <code>({date}T{time}</code>, ad esempio <code>2017-08-29T04:00:00.0000000</code>. Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Promemoria attivato]</td> 
@@ -420,7 +420,7 @@ Questo modulo trigger recupera i dettagli di un evento quando viene creato, aggi
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari  che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
+   <td>Selezionare il gruppo di calendari [!UICONTROL] che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar]</td> 
@@ -518,7 +518,7 @@ Questo modulo di ricerca recupera un elenco di tutti i calendari dell’utente a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari  contenente i calendari da elencare.</td> 
+   <td>Selezionare il gruppo di calendari [!UICONTROL] contenente i calendari da elencare.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -541,7 +541,7 @@ Questo modulo di azione modifica un calendario esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID calendario]</td> 
-   <td>Immettere l'ID del calendario  per il calendario che si desidera aggiornare. </td> 
+   <td>Immettere l'ID del calendario [!UICONTROL] per il calendario che si desidera aggiornare. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nome nuovo calendario]</td> 

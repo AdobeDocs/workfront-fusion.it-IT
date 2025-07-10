@@ -4,9 +4,9 @@ description: Con i  [!DNL Adobe Acrobat Sign] moduli, puoi avviare uno  [!DNL Ad
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: 899fc717f5107433d6f1aea31c4d079243a85822
 workflow-type: tm+mt
-source-wordcount: '6666'
+source-wordcount: '6664'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Trova testo]</td> 
-   <td> <p>Immettere i termini che si desidera cercare. Il modulo restituisce record che includono questi termini come valori di campo.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/it/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Ricerca di Adobe Sign - Funzionamento</a>.</p> </td> 
+   <td> <p>Immettere i termini che si desidera cercare. Il modulo restituisce record che includono questi termini come valori di campo.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Ricerca di Adobe Sign - Funzionamento</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Numero massimo di contratti restituiti]</td> 
@@ -159,7 +159,7 @@ Questo modulo di attivazione avvia uno scenario quando si verifica un evento sel
    <td role="rowheader">[!UICONTROL Ambiti]</td> 
    <td> 
     <ul> 
-     <li> <p>Account </p> </li> 
+     <li> <p>Account [!UICONTROL]</p> </li> 
      <li> <p>[!UICONTROL Group]</p> </li> 
      <li> <p>[!UICONTROL Utente]</p> </li> 
      <li> <p>[!UICONTROL Resource]</p> <p>Se si seleziona [!UICONTROL Risorsa], immettere l'ID risorsa e il tipo di risorsa.</p> </li> 
@@ -264,7 +264,7 @@ Questo modulo di azione crea un nuovo record del tipo selezionato.
      <li> <p><b>[!UICONTROL Modalità di condivisione]</b> </p> <p>Specificare gli utenti a cui assegnare l'accesso al documento della raccolta.</p> </li> 
      <li> <p><b>[!UICONTROL Stato documento libreria]</b> </p> <p>Specificare se il documento è in stato di creazione o attivo.</p> </li> 
      <li> <p><b>[!UICONTROL Tipo di modello libreria]</b> </p> <p>Per ogni tipo di modello di libreria che si desidera utilizzare, fare clic su <b>[!UICONTROL Add item]</b> e selezionare il tipo di modello.</p> </li> 
-     <li> <p><b>[!UICONTROL Data ultimo evento]</b> </p> <p>Immettere l'ultima data in cui si è verificato un evento nel documento di libreria.</p> <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+     <li> <p><b>[!UICONTROL Data ultimo evento]</b> </p> <p>Immettere l'ultima data in cui si è verificato un evento nel documento di libreria.</p> <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p> </li> 
      <li> <p><b>[!UICONTROL Stato documento libreria]</b> </p> <p>Selezionare lo stato del documento della raccolta.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -471,7 +471,7 @@ Questo modulo di azione crea un accordo, lo invia per la firma e restituisce l�
    <td role="rowheader">[!UICONTROL Opzione firma post]</td> 
    <td> <p>Selezionare se si desidera che i firmatari vengano indirizzati a una pagina di successo dopo la firma del contratto. Se si seleziona <b>[!UICONTROL Sì]</b>, compilare i campi seguenti:</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Ritardo reindirizzamento]</b> </p> <p>Inserisci o mappa un numero che rappresenta il numero di secondi prima che il firmatario venga reindirizzato alla pagina riuscita. Se questo valore è maggiore di 0, l'utente visualizzerà prima il messaggio di successo standard di [!DNL Adobe Sign] e quindi, dopo un ritardo, verrà reindirizzato alla pagina di successo.</p> </li> 
+     <li> <p><b>[!Ritardo reindirizzamento UICONTROL]</b> </p> <p>Inserisci o mappa un numero che rappresenta il numero di secondi prima che il firmatario venga reindirizzato alla pagina riuscita. Se questo valore è maggiore di 0, l'utente visualizzerà prima il messaggio di successo standard di [!DNL Adobe Sign] e quindi, dopo un ritardo, verrà reindirizzato alla pagina di successo.</p> </li> 
      <li> <p><b>[!UICONTROL URL reindirizzamento]</b> </p> <p>Immetti o mappa un URL accessibile al pubblico a cui l’utente verrà inviato dopo aver completato correttamente il processo di firma.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -529,7 +529,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
        <li> <p><b>[!UICONTROL Avvia contatore promemoria da]</b> </p> <p>Selezionare se il promemoria viene inviato in base alla data di creazione dell'accordo quando diventa disponibile.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Rapporto identità firmatario]</b> </p> <p>Immettere la password utilizzata per proteggere il documento PDF.</p> </li> 
-     <li> <p><b>[!UICONTROL Viste]</b> </p> <p>Immetti i campi seguenti</p> 
+     <li> <p><b>[!Viste UICONTROL]</b> </p> <p>Immetti i campi seguenti</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Selezionate il nome della vista da creare.</p> </li> 
        <li> <p><b>[!UICONTROL Utente di accesso automatico]</b> </p> <p>Selezionare <b>[!UICONTROL Yes]</b> per accedere automaticamente all'URL restituito.</p> </li> 
@@ -584,7 +584,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
    <td role="rowheader">Campi correlati a [!UICONTROL Widget]</td> 
    <td> <p>Selezionare il record correlato da creare.</p> 
     <ul> 
-     <li> <p>Visualizzazioni di </p> <p>Compila i campi seguenti.</p> 
+     <li> <p>Visualizzazioni di [!UICONTROL]</p> <p>Compila i campi seguenti.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Seleziona il nome della visualizzazione del modulo web richiesta</p> </li> 
        <li> <p><b>[!UICONTROL Utente di accesso automatico]</b> </p> <p>Selezionare <b>[!UICONTROL Sì]</b> per accedere automaticamente all'utente. Selezionare <b>[!UICONTROL No]</b> per richiedere le credenziali. Il valore predefinito è [!UICONTROL No].</p> </li> 
@@ -595,7 +595,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
         <ul> 
          <li> <p><b>[!UICONTROL E-Mail]</b> </p> <p>Immetti l’indirizzo e-mail della persona che riceve il modulo web appena creato</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>Inserisci un commento che descrive come il chiamante API ha stabilito l’identità del firmatario. Queste informazioni vengono visualizzate nell'audit trail [!DNL Adobe Acrobat Sign].</p> </li> 
-         <li> <p><b>[!UICONTROL Scadenza]</b> </p> <p>Immetti una data di scadenza per la personalizzazione del modulo web. </p> <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Tipo di coercizione in [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Scadenza]</b> </p> <p>Immetti una data di scadenza per la personalizzazione del modulo web. </p> <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Tipo di coercizione</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Riutilizzabile]</b> </p> <p>Selezionare <b>[!UICONTROL Sì]</b> se si desidera che il firmatario desiderato sia in grado di firmare il modulo più di una volta.</p> </li> 
         </ul> </li> 
       </ul> </li> 
@@ -881,17 +881,17 @@ Questo modulo di azione aggiorna i record relativi a un oggetto specifico.
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Immettere o mappare il nome del gruppo.</p> </li> 
          <li> <p><b>[!UICONTROL Creazione documento libreria visibile]</b> </p> <p>Queste impostazioni determinano se l'utente può creare documenti della libreria</p> 
           <ul> 
-           <li> <p>Valore </p> <p>Consenti</p> </li> 
+           <li> <p>Valore [!UICONTROL]</p> <p>Consenti</p> </li> 
            <li> <p>[!UICONTROL ereditato]</p> <p>Eredita impostazione gruppo da gruppo o account</p> </li> 
           </ul> </li> 
          <li> <p><b>[!UICONTROL Invio limitato a flussi di lavoro]</b> </p> <p>Queste impostazioni determinano se l'utente può creare accordi solo utilizzando flussi di lavoro.</p> 
           <ul> 
-           <li> <p>Valore </p> <p>Consenti</p> </li> 
+           <li> <p>Valore [!UICONTROL]</p> <p>Consenti</p> </li> 
            <li> <p>[!UICONTROL ereditato]</p> <p>Eredita impostazione gruppo da gruppo o account</p> </li> 
           </ul> </li> 
          <li> <p><b>[!UICONTROL Utente può inviare]</b> </p> 
           <ul> 
-           <li> <p>Valore </p> <p>Consenti</p> </li> 
+           <li> <p>Valore [!UICONTROL]</p> <p>Consenti</p> </li> 
            <li> <p>[!UICONTROL ereditato]</p> <p>Eredita impostazione gruppo da gruppo o account</p> </li> 
           </ul> </li> 
         </ul> </li> 
@@ -973,7 +973,7 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
     <ul> 
      <li> <p><b>[!UICONTROL Trova testo]</b> </p> <p>Immettere il testo da trovare nei metadati del contratto. Ogni parola viene trattata come un elemento di testo separato. </p> </li> 
      <li> <p><b></b> Trova testo in </p> <p>Selezionare i campi di metadati in cui si desidera trovare il testo. Se non si seleziona nulla, i moduli eseguiranno la ricerca in tutti i metadati.</p> </li> 
-    </ul> <p>Il modulo restituisce qualsiasi accordo contenente il testo immesso in uno dei campi selezionati. Esempio: inserendo "campagna primaverile" e selezionando le opzioni Titolo e Nota, vengono restituiti tutti i contratti con le parole "Primavera" o "Campagna" in Titolo o Nota.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/it/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Ricerca - Funzionamento</a>.</p> </td> 
+    </ul> <p>Il modulo restituisce qualsiasi accordo contenente il testo immesso in uno dei campi selezionati. Esempio: inserendo "campagna primaverile" e selezionando le opzioni Titolo e Nota, vengono restituiti tutti i contratti con le parole "Primavera" o "Campagna" in Titolo o Nota.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Ricerca - Funzionamento</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data di creazione]</td> 
@@ -1000,7 +1000,7 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
    <td> <p>Questo è l’ID assegnato al contratto specifico. </p> <p>Per ogni ID esterno che desideri aggiungere, fai clic su <b>[!UICONTROL Add]</b> e immetti o mappa l'ID esterno.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID padre </td> 
+   <td role="rowheader">ID padre [!UICONTROL]</td> 
    <td> <p>Questo è l'ID assegnato all'oggetto padre dell'accordo. </p> <p>Per ogni ID esterno che desideri aggiungere, fai clic su <b>[!UICONTROL Add]</b> e immetti o mappa l'ID esterno.</p> </td> 
   </tr> 
   <tr> 
