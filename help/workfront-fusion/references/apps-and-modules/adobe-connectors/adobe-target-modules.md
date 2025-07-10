@@ -603,7 +603,7 @@ Questo modulo di azione crea un’attività AB o XT, un’offerta o un pubblico.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Priorità [!UICONTROL]</td>
+      <td role="rowheader">Priorità </td>
       <td>Immetti un numero che definisce la priorità dell’attività. I numeri più alti hanno priorità più alta. Questo valore deve essere compreso tra 0 e 999. Il valore predefinito è 5.</td>
     </tr>
     <tr>
@@ -941,7 +941,7 @@ Questo modulo di ricerca cerca attività, offerte o tipi di pubblico in base ai 
     <td>Per ogni campo in base al quale si desidera ordinare, fare clic su <b>[!UICONTROL Add item]</b> e selezionare il campo e specificare se i risultati restituiti devono essere crescenti o decrescenti.</td>
   </tr>
   <tr>
-    <td role="rowheader">Criteri di ricerca di [!UICONTROL]</td>
+    <td role="rowheader">Criteri di ricerca di </td>
     <td>Per ogni regola che desideri impostare, seleziona il campo, l’operatore e il valore. Fare clic su <b>[!UICONTROL Add AND rule]</b> per creare regole aggiuntive.</td>
   </tr>
   <tr>

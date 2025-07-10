@@ -188,7 +188,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
    <td> <p>Selezionare il tipo di oggetto che si desidera cercare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà output di [!UICONTROL]</td> 
+   <td role="rowheader">Proprietà output di </td> 
    <td>Selezionare le proprietà che si desidera includere nell'output per questo modulo.</td> 
   </tr> 
   <tr> 
@@ -223,7 +223,7 @@ Questo modulo di azione crea un contatto, una società o un&#39;offerta.
    <td> <p>Selezionare il tipo di record da creare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Gruppi di proprietà [!UICONTROL]</td> 
+   <td role="rowheader">Gruppi di proprietà </td> 
    <td>Per ogni proprietà che si desidera aggiungere durante la creazione del record, selezionare il gruppo in cui si trova la proprietà. Il gruppo di proprietà si aprirà e potrai quindi inserire il valore delle proprietà. I gruppi di proprietà e le proprietà disponibili dipendono dal tipo di record che si desidera creare.</td> 
   </tr> 
  </tbody> 
@@ -248,7 +248,7 @@ Questo modulo di azione crea un contatto, un’azienda o un’offerta.
    <td> <p>Selezionare il tipo di record da creare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà [!UICONTROL]</td> 
+   <td role="rowheader">Proprietà </td> 
    <td>Immettere le proprietà che si desidera impostare per il record. I campi disponibili dipendono dal tipo di record che si desidera creare.</td> 
   </tr> 
  </tbody> 
@@ -303,7 +303,7 @@ Questo modulo di azione ottiene i dettagli di un contatto, un’azienda o un’o
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di ricerca [!UICONTROL]</td> 
+   <td role="rowheader">Tipo di ricerca </td> 
    <td>Se stai ricevendo un contatto, seleziona se desideri identificarlo per ID o per indirizzo e-mail.</td> 
   </tr> 
   <tr> 
@@ -336,7 +336,7 @@ Questo modulo di azione ottiene i metadati per una proprietà record specifica i
    <td>Selezionare il tipo di record con la proprietà per cui si desidera recuperare i metadati.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Nome proprietà [!UICONTROL]</td> 
+   <td role="rowheader">Nome proprietà </td> 
    <td>Seleziona la proprietà per la quale desideri recuperare i metadati.</td> 
   </tr> 
   <tr> 
@@ -365,7 +365,7 @@ Questo modulo di ricerca restituisce un elenco di contatti, aziende o offerte. L
    <td> <p>Selezionare il tipo di record che si desidera restituire.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà output di [!UICONTROL]</td> 
+   <td role="rowheader">Proprietà output di </td> 
    <td>Selezionare le proprietà che si desidera includere nell'output per questo modulo.</td> 
   </tr> 
     <tr> 
@@ -394,7 +394,7 @@ Questo modulo di azione aggiorna un contatto, un’azienda o un’offerta.
    <td>Selezionare il tipo di record da aggiornare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di ricerca [!UICONTROL]</td> 
+   <td role="rowheader">Tipo di ricerca </td> 
    <td> <p>Se si sta ottenendo un contatto, selezionare la modalità di identificazione del record:</p> 
     <ul> 
      <li> <p>[!UICONTROL ID]</p> </li> 
@@ -410,7 +410,7 @@ Questo modulo di azione aggiorna un contatto, un’azienda o un’offerta.
    <td>Immettere l'indirizzo di posta elettronica del contatto di cui si desidera aggiornare i dettagli. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà [!UICONTROL]</td> 
+   <td role="rowheader">Proprietà </td> 
    <td>Immettere le proprietà che si desidera impostare per il record. I campi disponibili dipendono dal tipo di record che si desidera creare.</td> 
   </tr> 
  </tbody> 
@@ -439,7 +439,7 @@ Questo modulo di attivazione avvia uno scenario in cui un contatto, una società
    <td>Specificare se si desidera controllare i record modificati di recente o creati di recente.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà output di [!UICONTROL]</td> 
+   <td role="rowheader">Proprietà output di </td> 
    <td>Selezionare le proprietà da includere nell'output del modulo.</td> 
   </tr> 
   <tr> 
@@ -495,7 +495,7 @@ Questo modulo di azione crea un contatto se non esiste in un portale. Se il cont
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Gruppi di proprietà [!UICONTROL]</td> 
+   <td role="rowheader">Gruppi di proprietà </td> 
    <td>Per ogni proprietà che si desidera aggiungere durante la creazione del contatto, selezionare il gruppo in cui si trova la proprietà. Il gruppo di proprietà si aprirà e sarà quindi possibile inserire i valori delle proprietà.</td> 
   </tr> 
  </tbody> 
@@ -516,7 +516,7 @@ Crea un contatto se non esiste già in un portale, oppure lo aggiorna con i valo
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà [!UICONTROL]</td> 
+   <td role="rowheader">Proprietà </td> 
    <td>Specificare le proprietà che si desidera impostare o aggiornare per il contatto. </td> 
   </tr> 
  </tbody> 
@@ -707,7 +707,7 @@ Questo modulo di attivazione avvia uno scenario quando un nuovo contatto viene a
    <td>Immettere o mappare l'ID dell'elenco contenente i contatti che si desidera controllare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà output di [!UICONTROL]</td> 
+   <td role="rowheader">Proprietà output di </td> 
    <td>Selezionare le proprietà da includere nell'output del modulo.</td> 
   </tr> 
   <tr> 
@@ -734,7 +734,7 @@ Restituisce una pipeline di offerta specifica.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID pipeline di [!UICONTROL] </td> 
+   <td role="rowheader">ID pipeline di  </td> 
    <td>Immetti o mappa l’ID della pipeline per la quale desideri recuperare i dettagli. </td> 
   </tr> 
   <tr> 
@@ -759,7 +759,7 @@ Restituisce tutte le pipeline di offerte e biglietti per un determinato portale.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di oggetto [!UICONTROL] </td> 
+   <td role="rowheader">Tipo di oggetto  </td> 
    <td>Seleziona se desideri elencare offerte o biglietti.</td> 
   </tr> 
  </tbody> 
@@ -2017,7 +2017,7 @@ Questo modulo di azione aggiorna un abbonamento e-mail in HubSpot.
    <td>Inserisci o mappa l’indirizzo e-mail dell’abbonamento che desideri aggiornare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Stati [!UICONTROL]</td> 
+   <td role="rowheader">Stati </td> 
    <td>Per ogni stato per il quale si desidera aggiornare l'abbonamento, fare clic su <b>Aggiungi elemento</b>, immettere l'ID dello stato e specificare se l'indirizzo di posta elettronica sarà abbonato a tale stato.</td> 
   </tr> 
   <tr> 
