@@ -4,9 +4,9 @@ description: L'automazione del lavoro richiede un'elaborazione rapida, quindi  [
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: cf9e7def3ce406b693d22ff31f82571dd5eddd31
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,8 @@ L&#39;automazione del lavoro richiede una rapida elaborazione, quindi [!DNL Adob
 
 * La capacità di elaborazione totale di Fusion per i file è **1 GB**. Il limite si basa sul costo totale della memoria. Ogni operazione contribuisce a tale costo. Se viene scaricato e caricato un singolo file di 400 MB, il costo totale per la capacità del file sarebbe di 800 MB.
 * Le organizzazioni che aderiscono al piano Workfront Ultimate hanno accesso a una maggiore capacità di elaborazione dei file superiore a 1 GB. La piattaforma Fusion può supportare singoli file fino a 15 GB per una singola azione (ad esempio, caricamento di file), ma ci sono altri fattori che influiscono sul trasferimento dei dati. Il limite di dimensione file per una singola azione dipende dal servizio web a cui Fusion si connette. Il trasferimento di dati è l’elaborazione totale per una singola esecuzione. Ciò significa che più azioni in una singola esecuzione contribuiscono al trasferimento totale dei dati. Fusion elaborerà i file fino al raggiungimento del limite di esecuzione di 40 minuti.
+* Se un file viene scaricato utilizzando un modulo che supporta file di grandi dimensioni e quindi trasmesso a un modulo che non supporta file di grandi dimensioni, tale modulo non elabora correttamente il file. I file di grandi dimensioni devono essere gestiti esclusivamente con i moduli supportati in tutto il flusso di lavoro.
+* I moduli che non supportano file di grandi dimensioni possono elaborare file con dimensioni fino a **200 MB**.
 
 Per ulteriori informazioni, vedere [Utilizzo di file di grandi dimensioni](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
