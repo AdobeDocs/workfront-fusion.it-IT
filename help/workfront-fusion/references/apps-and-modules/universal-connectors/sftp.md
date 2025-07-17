@@ -4,16 +4,16 @@ description: I moduli  [!DNL Adobe Workfront Fusion SFTP]  consentono di monitor
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 26c599a9887ad931763b787813153bb7791ce5d1
+source-git-commit: 0e187fb3c31375c4dc12d0f9a8438bcb6f9ea7e8
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2143'
 ht-degree: 0%
 
 ---
 
 # Moduli SFTP
 
-I moduli SFTP di [!DNL Adobe Workfront Fusion] consentono di monitorare le modifiche dei file in una cartella o sottocartella selezionata, caricare nuovi file nella cartella desiderata, modificare o eliminare i file esistenti già presenti in una cartella o modificare le autorizzazioni dei file.
+I moduli SF[!DNL Adobe Workfront Fusion]TP di  consentono di monitorare le modifiche dei file in una cartella o sottocartella selezionata, caricare nuovi file nella cartella desiderata, modificare o eliminare i file esistenti già presenti in una cartella o modificare le autorizzazioni dei file.
 
 ## Requisiti di accesso
 
@@ -87,7 +87,7 @@ Per connettere l&#39;account SFTP a [!DNL Workfront Fusion] è necessario creare
    <td> <p>Immetti il nome host del server SFTP che desideri connettere.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Porta  </td> 
+   <td role="rowheader">Porta [!UICONTROL] </td> 
    <td> <p>Immetti la porta del server SFTP. Ad esempio, 22.</p> </td> 
   </tr> 
   <tr> 
@@ -110,6 +110,46 @@ Per connettere l&#39;account SFTP a [!DNL Workfront Fusion] è necessario creare
 </table>
 
 Dopo aver immesso le informazioni di connessione, fare clic su **[!UICONTROL Continua]** per stabilire una connessione.
+
+### Opzioni di connessione supportate
+
+Il connettore SFTP supporta quanto segue durante la creazione di una connessione:
+
+#### Algoritmi di scambio chiavi (KEX)
+
+* `ecdh-sha2-nistp256`
+* `ecdh-sha2-nistp384`
+* `ecdh-sha2-nistp521`
+* `diffie-hellman-group-exchange-sha256`
+* `diffie-hellman-group14-sha256`
+* `diffie-hellman-group16-sha512`
+* `diffie-hellman-group18-sha512`
+* `diffie-hellman-group14-sha1`
+
+#### Cifre
+
+* `aes256-gcm@openssh.com`
+* `aes256-gcm`
+* `aes128-gcm@openssh.com`
+* `aes128-gcm`
+* `aes256-ctr`
+* `aes192-ctr`
+* `aes128-ctr`
+* `aes256-cbc`
+* `aes192-cbc`
+* `aes128-cbc`
+* `blowfish-cbc`
+
+#### Formati chiave host server
+
+* `ssh-ed25519`
+* `ecdsa-sha2-nistp256`
+* `ecdsa-sha2-nistp384`
+* `ecdsa-sha2-nistp521`
+* `ssh-rsa`
+* `ssh-dss`
+* `rsa-sha2-256`
+* `rsa-sha2-512`
 
 ## [!UICONTROL Moduli SFTP] e relativi campi
 
@@ -304,7 +344,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome del file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento </td> 
+   <td>Ordinamento [!UICONTROL]</td> 
    <td> <p> Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -345,7 +385,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento  </td> 
+   <td>Ordinamento [!UICONTROL] </td> 
    <td> <p>Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
