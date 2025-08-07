@@ -5,9 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 454e06527fe1a624f36be3b7f3682ff49a61d42d
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
+source-git-commit: efab436edce8a5253b147c77b87a005f6efc63d0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -105,6 +106,7 @@ Per configurare il modulo di scenario Call a child
    I campi configurati nel modulo trigger dello scenario figlio vengono visualizzati nel modulo dello scenario Call a child.
 
 1. Immetti o mappa le informazioni da passare allo scenario figlio nel modulo di scenario Call a child.
+1. (Condizionale) Se desideri che lo scenario principale continui la sua esecuzione senza attendere una risposta dallo scenario secondario, abilita l&#39;opzione **Attiva e dimentica**.
 1. Fare clic su **OK** per salvare il modulo.
 
 >[!NOTE]
@@ -128,4 +130,3 @@ Per configurare il modulo Aggiungi risponditore:
    Per istruzioni sulla creazione di una struttura dati, vedere [Strutture dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
 1. Fare clic su **OK** per salvare il modulo.
-
