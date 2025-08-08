@@ -23,7 +23,7 @@ Per visualizzare i modelli disponibili, fai clic sull&#39;icona **Modelli** ![Mo
 
 Questi modelli automatizzano i processi e i flussi di lavoro di Workfront.
 
-### [!BADGE Nuovo! ]{type=Informative} Workfront: regola automaticamente la sequenza temporale del progetto quando le attività vengono completate in anticipo
+### [!BADGE Nuovo! &#x200B;]{type=Informative} Workfront: regola automaticamente la sequenza temporale del progetto quando le attività vengono completate in anticipo
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Se il team ha difficoltà a mantenere lo slancio perché le tempistiche dei prog
 
 Questo modello Fusion automatizza tale processo. Quando un’attività viene completata in anticipo, tutte le attività dipendenti (successori) vengono automaticamente ripianificate per iniziare prima, consentendo al team di spostarsi più rapidamente e rimanere agile.
 
-### [!BADGE Nuovo! ]{type=Informative} HTTP>CSV>WF - Crea un elenco di sottoeventi per dominio e livello ed esportali in CSV
+### [!BADGE Nuovo! &#x200B;]{type=Informative} HTTP>CSV>WF - Crea un elenco di sottoeventi per dominio e livello ed esportali in CSV
 
 Scarica le informazioni di abbonamento all’evento, crea un file CSV e carica il file in Workfront.
 
 <!--New August 8, 2025-->
 
-### [!BADGE Nuovo! ]{type=Informative} bacheche Workfront - Elimina schede archiviate dalla colonna designata (on demand)
+### [!BADGE Nuovo! &#x200B;]{type=Informative} bacheche Workfront - Elimina schede archiviate dalla colonna designata (on demand)
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Una volta al mese, rivedi i modelli di progetto utilizzando il tuo criterio con 
 
 Questi modelli automatizzano i flussi di lavoro che combinano Workfront con Workfront Proof.
 
-### [!BADGE Nuovo! ]{type=Informative} Workfront > Workfront Proof - Cambia il ruolo utente della bozza in Sola lettura e blocca la bozza alla chiusura del progetto
+### [!BADGE Nuovo! &#x200B;]{type=Informative} Workfront > Workfront Proof - Cambia il ruolo utente della bozza in Sola lettura e blocca la bozza alla chiusura del progetto
 
 <!--New March 12, 2025-->
 
