@@ -5,7 +5,7 @@ description: Puoi configurare impostazioni specifiche per gli scenari nel pannel
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: a7411649c0d65956552f40a7710315536755dc65
+source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -191,7 +191,7 @@ Per ulteriori informazioni su questa pagina, vedere [Dettagli scenario](/help/wo
 
 ### Numero di errori consecutivi
 
-Definisce il numero massimo di tentativi di esecuzione consecutivi prima che l&#39;esecuzione di uno scenario venga disattivata (esclusi `DataError`, `DuplicateDataError` e `ConnectionError`).
+Definisce il numero massimo di tentativi di esecuzione consecutivi prima che l&#39;esecuzione di uno scenario venga disattivata (esclusi `DataError`, `DuplicateDataError`, `ModuleTimeoutError` e `ConnectionError`).
 
 Per ulteriori informazioni sugli errori, vedere [Tipi di errore](/help/workfront-fusion/references/errors/error-processing.md).
 
