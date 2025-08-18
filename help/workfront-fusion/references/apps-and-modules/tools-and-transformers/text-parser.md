@@ -4,9 +4,9 @@ description: È possibile utilizzare lo strumento parser di testo per analizzare
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -85,7 +85,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [[!UICONTROL Ottieni elementi dal testo]](#get-elements-from-text)
 * [[!UICONTROL Da HTML a testo]](#html-to-text)
 * [[!UICONTROL Corrispondenza pattern]](#match-pattern)
-* [[!UICONTROL Sostituisci]](#replace)
+* [[!UICONTROL Replace]](#replace)
 
 #### [!UICONTROL Ottieni elementi da HTML]
 
@@ -129,7 +129,7 @@ Analizza gli elementi dal testo in base al pattern specificato.
   </tr> 
   <tr> 
    <td>[!UICONTROL Pattern]</td> 
-   <td> <p>Selezionate il motivo che riflette gli elementi da analizzare dal testo.</p> </td> 
+   <td> <p>Selezionate il motivo che riflette gli elementi da analizzare dal testo.</p> <p>Per immettere un'espressione regolare personalizzata, selezionare Personalizzato dall'elenco, quindi immettere l'espressione personalizzata nel campo Regex personalizzato.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Ignora occorrenze duplicate]</td> 
@@ -206,7 +206,7 @@ Una discussione sulle espressioni regolari va oltre lo scopo di questo articolo.
  </tbody> 
 </table>
 
-#### [!UICONTROL Sostituisci]
+#### [!UICONTROL Replace]
 
 Cerca un valore o un&#39;espressione regolare specificata nel testo immesso e sostituisce il risultato con il nuovo valore.
 

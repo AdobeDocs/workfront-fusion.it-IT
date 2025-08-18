@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 14960edd32497a06620a9a039632a58ebd246c2b
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1837'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 3%
 * Attività di rilascio di Fusion {#fusion-release-activity}
    * [Attività di rilascio di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versioni di Fusion - 2025 {#fusion-releases-2025}
+      * [Attività di rilascio di Workfront Fusion: settimana del 18 agosto 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
+      * [Attività di rilascio di Workfront Fusion: settimana del 31 luglio 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 7 luglio 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 6 giugno 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-9.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 23 giugno 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-23.md)
@@ -257,8 +259,8 @@ ht-degree: 3%
       * [Riferimenti a licenze e ruoli: indice articolo](/help/workfront-fusion/references/licenses-and-roles/licenses-and-roles-index.md)
       * [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
       * [Ruoli di organizzazione e team](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)
-   * Scenari {#scenarios}
-      * [Scenari](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
+   * Situazioni che potrebbero verificarsi con {#scenarios}
+      * [Situazioni che potrebbero verificarsi con](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
       * [Guardrail delle prestazioni di fusione](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
       * [Flusso di esecuzione dello scenario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
       * [Esecuzione, cicli e fasi dello scenario](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)
@@ -284,7 +286,7 @@ ht-degree: 3%
          * [Token per la formattazione di data e ora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
          * [Token per l’analisi di data e ora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
          * [Funzioni stringa](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)
-         * [Funzioni matematica](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)
+         * [Funzioni matematiche](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)
          * [Variabili matematiche](/help/workfront-fusion/references/mapping-panel/functions/math-variables.md)
          * [Funzioni array](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md)
    * Errori {#errors}
