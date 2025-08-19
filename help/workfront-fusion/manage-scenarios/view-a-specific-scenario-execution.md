@@ -3,9 +3,10 @@ title: Visualizzare l’esecuzione di uno scenario specifico
 description: Puoi visualizzare i dettagli di una specifica esecuzione dello scenario, inclusi il filtro e la ricerca di eventi dello scenario.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 5915476de34a883560d207d101a14e5b24abf3da
+exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '430'
 ht-degree: 1%
 
 ---
@@ -41,7 +42,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -85,3 +86,17 @@ Puoi visualizzare un’esecuzione dalla cronologia dello scenario.
 1. Per visualizzare i bundle passati attraverso un filtro, fai clic sul filtro. Il numero accanto al filtro rappresenta il numero di bundle passati attraverso il filtro.
 1. Per cercare un modulo o un evento specifico nel pannello di esecuzione, immettere il termine di ricerca nella casella **Cerca eventi di esecuzione**. I risultati vengono visualizzati durante la digitazione.
 1. Per limitare i risultati della ricerca nel pannello di esecuzione in base allo stato, ad esempio Completato o Avviso, fare clic sul menu a discesa **Filtro stato** e selezionare lo stato.
+
+
+
+
+>[!NOTE]
+>
+>Per creare un collegamento a un modulo specifico, aggiungere `?moduleId=<module-id>` all&#39;URL durante la visualizzazione delle pagine seguenti:
+>
+>* Pagina di modifica scenario (l&#39;URL termina in `/edit`)
+>* Esecuzione di uno scenario specifico (l&#39;URL termina in `/logs/<log-id>`)
+>
+>`<module-id>` fa riferimento al numero accanto all&#39;etichetta del modulo durante la visualizzazione dello scenario.
+>
+>Questo può essere utile quando si eseguono scenari di debug o si copia la configurazione del modulo.

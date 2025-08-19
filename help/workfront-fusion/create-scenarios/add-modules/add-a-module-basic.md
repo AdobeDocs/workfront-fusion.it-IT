@@ -4,9 +4,9 @@ description: Questo articolo descrive il processo di base per l’aggiunta di un
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>Il piano [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] è incluso.</li></ul>
+   <p>Novità:</p> <ul><li>Piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront]: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>Il piano [!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -108,3 +108,14 @@ Viene visualizzato l’elenco dei connettori, con tutti i connettori già utiliz
 1. Configura il modulo.
 
    Per istruzioni sulla configurazione di moduli specifici, vedere l&#39;articolo relativo alle applicazioni selezionate, elencate in [Riferimenti alle applicazioni Fusion e ai relativi moduli: indice articolo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>Per creare un collegamento a un modulo specifico, aggiungere `?moduleId=<module-id>` all&#39;URL durante la visualizzazione delle pagine seguenti:
+>
+>* Pagina di modifica scenario (l&#39;URL termina in `/edit`)
+>* Esecuzione di uno scenario specifico (l&#39;URL termina in `/logs/<log-id>`)
+>
+>`<module-id>` fa riferimento al numero accanto all&#39;etichetta del modulo durante la visualizzazione dello scenario.
+>
+>Questo può essere utile quando si eseguono scenari di debug o si copia la configurazione del modulo.
