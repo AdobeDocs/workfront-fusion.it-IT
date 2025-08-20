@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: f28dd04df0a527a35a9ef82fa92fc07a363a7144
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1840'
 ht-degree: 3%
 
 ---
@@ -360,7 +360,8 @@ ht-degree: 3%
          * [Moduli diapositive di Google](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
          * [Moduli di Google Team Drive](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
          * [Moduli CRM Hubspot](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
-         * [Moduli software Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
+         * [Moduli Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
+         * [Moduli software Jira (legacy)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
          * [Moduli MariaDB](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
          * [Moduli calendario Microsoft 365](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
          * [Moduli e-mail Microsoft 356](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)

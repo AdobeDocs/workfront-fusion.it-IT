@@ -4,14 +4,18 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: 8181cf8c2b2c4e6523cb16df0f91120e775e654b
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2238'
 ht-degree: 1%
 
 ---
 
 # [!DNL Jira Software] moduli
+
+>[!NOTE]
+>
+>Queste istruzioni si applicano ai connettori legacy di Jira Cloud e Jira Server. Per istruzioni sulla nuova versione del connettore Jira, semplicemente etichettato Jira, vedere [Moduli Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md).
 
 In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Jira Software] e collegarlo a più applicazioni e servizi di terze parti.
 
@@ -50,7 +54,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -311,7 +315,7 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto, aggiornat
       <ul> 
        <li>[!UICONTROL Comment] </li> 
        <li>[!UICONTROL Issue]</li> 
-       <li>Progetto  </li> 
+       <li>Progetto [!UICONTROL] </li> 
        <li>[!UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
@@ -377,7 +381,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
@@ -448,7 +452,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
@@ -504,7 +508,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Utente]</li> 
     </ul> </td> 
@@ -544,7 +548,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Problema di transizione]</li> 
     </ul> </td> 
@@ -583,7 +587,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Problema Sprint]</li> 
      <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
@@ -622,7 +626,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul> 
      <li>[!UICONTROL Issues]</li> 
      <li> <p>[!UICONTROL Issues by JQL (Jira Query Language)] </p> <p>Per ulteriori informazioni su JQL, vedere <a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a> nella Guida di Atlassian. </p> </li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Progetto per problema]</li> 
      <li>[!UICONTROL Utente]</li> 
     </ul> </td> 
