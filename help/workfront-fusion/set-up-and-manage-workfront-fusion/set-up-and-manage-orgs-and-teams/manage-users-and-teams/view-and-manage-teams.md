@@ -1,25 +1,30 @@
 ---
-title: Creare un team
-description: I team sono gruppi più piccoli all’interno dell’organizzazione e condividono risorse Fusion come scenari, connessioni e modelli. Puoi creare tutti i team che desideri.
+title: Visualizzare e gestire i team
+description: Puoi visualizzare un elenco dei team della tua organizzazione e modificare i nomi dei team.
 author: Becky
 feature: Workfront Fusion
-exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: ecfba475bdf25cb5d9200246f7d86bfe20700f1c
+source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 1%
+source-wordcount: '301'
+ht-degree: 3%
 
 ---
 
-# Creare un team
+# Visualizzare e gestire i team
 
-I team sono gruppi più piccoli all’interno dell’organizzazione e condividono risorse Fusion come scenari, connessioni e modelli. Puoi creare tutti i team che desideri.
+I team sono gruppi di utenti che condividono l’accesso a risorse specifiche. Tali risorse possono includere:
 
-Le organizzazioni possono disporre di tutti i team necessari e gli utenti possono appartenere a uno o più team.
+* Situazioni che potrebbero verificarsi con
+* Connessioni
+* Webhook
+* Chiavi
+* Archivi di dati
+* Strutture di dati
+* Impostazioni delle notifiche e-mail
 
->[!NOTE]
->
->Poiché i team condividono le risorse, a volte è utile che un team abbia un solo membro. Ad esempio, gli utenti in formazione possono creare connessioni ai loro singoli account [!DNL Workfront]. Tutti i membri del team potranno connettersi al singolo account [!DNL Workfront]. In questo caso, consigliamo che l’utente sia l’unico membro di un team di formazione.
+Puoi visualizzare un elenco dei team della tua organizzazione e modificare i nomi dei team.
+
+Per aggiungere utenti ai team, vedere [Aggiungere un utente a un team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Requisiti di accesso
 
@@ -73,26 +78,17 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 +++
 
+## Visualizzare e gestire i team dall’area Team
+
+1. Nel menu di navigazione a sinistra, fai clic su **Panoramica organizzazione** nell&#39;angolo superiore sinistro della schermata.
+1. Seleziona la scheda **Team**.
+
+   Viene visualizzato l’elenco Team.
+
+1. (Facoltativo) Per ordinare l&#39;elenco Team in base a una colonna, fare clic sull&#39;icona **Ordina** ![Ordina icona](assets/sort-icon.png) per tale colonna.
+1. (Facoltativo) Per nascondere o visualizzare le colonne, fai clic sull&#39;icona **Colonne** ![Icona Colonne](assets/columns-icon.png) nell&#39;angolo superiore destro dell&#39;elenco, quindi attiva o disattiva le colonne.
+1. (Facoltativo) Per filtrare l’elenco, inizia a digitare nella barra di ricerca. L’elenco filtra in modo da includere solo i team che includono il termine di ricerca.
+1. (Facoltativo) Per rinominare un team, fai clic su **Modifica** nella riga del team, quindi immetti il nuovo nome del team e fai clic su **Salva**.
 
 
-## Creare un team
-
-I proprietari e gli amministratori dell’organizzazione possono creare dei team. I team vengono creati aggiungendo un nuovo team a un’organizzazione.
-
-Per creare un team:
-
-1. Nel pannello di navigazione a sinistra, fai clic su **[!UICONTROL Panoramica organizzazione]**
-1. Seleziona la scheda **[!UICONTROL Team]**.
-1. Fare clic su **[!UICONTROL Aggiungi un nuovo team]**.
-   ![Crea un team](assets/create-new-team-button.png)
-1. Immettere un nome per il nuovo team e fare clic su **Aggiungi**.
-
-## Modificare un team
-
-È possibile modificare il nome di un team.
-
-1. Nel pannello di navigazione a sinistra, fai clic su **[!UICONTROL Panoramica organizzazione]**
-1. Seleziona la scheda **[!UICONTROL Team]**.
-1. Individua il team di cui vuoi modificare il nome, quindi fai clic su **Modifica** nella riga per il team.
-1. Immetti un nuovo nome per il team, quindi fai clic su **Salva**.
 

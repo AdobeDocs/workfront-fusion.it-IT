@@ -1,25 +1,18 @@
 ---
-title: Creare un team
-description: I team sono gruppi più piccoli all’interno dell’organizzazione e condividono risorse Fusion come scenari, connessioni e modelli. Puoi creare tutti i team che desideri.
+title: Visualizzare gli utenti di un’organizzazione
+description: Puoi visualizzare un elenco degli utenti della tua organizzazione
 author: Becky
 feature: Workfront Fusion
-exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: ecfba475bdf25cb5d9200246f7d86bfe20700f1c
+source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 1%
+source-wordcount: '233'
+ht-degree: 2%
 
 ---
 
-# Creare un team
+# Visualizzare gli utenti di un’organizzazione
 
-I team sono gruppi più piccoli all’interno dell’organizzazione e condividono risorse Fusion come scenari, connessioni e modelli. Puoi creare tutti i team che desideri.
-
-Le organizzazioni possono disporre di tutti i team necessari e gli utenti possono appartenere a uno o più team.
-
->[!NOTE]
->
->Poiché i team condividono le risorse, a volte è utile che un team abbia un solo membro. Ad esempio, gli utenti in formazione possono creare connessioni ai loro singoli account [!DNL Workfront]. Tutti i membri del team potranno connettersi al singolo account [!DNL Workfront]. In questo caso, consigliamo che l’utente sia l’unico membro di un team di formazione.
+Puoi visualizzare, ordinare e filtrare un elenco di utenti dell’organizzazione.
 
 ## Requisiti di accesso
 
@@ -73,26 +66,15 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 +++
 
+## Visualizza utenti nell&#39;area Utenti
 
+1. Nel menu di navigazione a sinistra, fai clic su **Panoramica organizzazione** nell&#39;angolo superiore sinistro della schermata.
+1. Selezionare la scheda **Utenti**.
 
-## Creare un team
+   Verrà visualizzato l&#39;elenco Utenti.
 
-I proprietari e gli amministratori dell’organizzazione possono creare dei team. I team vengono creati aggiungendo un nuovo team a un’organizzazione.
+1. (Facoltativo) Per ordinare l&#39;elenco Utenti in base a una colonna, fare clic sull&#39;icona **Ordina** ![Ordina icona](assets/sort-icon.png) per tale colonna.
+1. (Facoltativo) Per nascondere o visualizzare le colonne, fai clic sull&#39;icona **Colonne** ![Icona Colonne](assets/columns-icon.png) nell&#39;angolo superiore destro dell&#39;elenco, quindi attiva o disattiva le colonne.
+1. (Facoltativo) Per filtrare l’elenco, inizia a digitare nella barra di ricerca. L’elenco filtra in modo da includere solo i team che includono il termine di ricerca.
 
-Per creare un team:
-
-1. Nel pannello di navigazione a sinistra, fai clic su **[!UICONTROL Panoramica organizzazione]**
-1. Seleziona la scheda **[!UICONTROL Team]**.
-1. Fare clic su **[!UICONTROL Aggiungi un nuovo team]**.
-   ![Crea un team](assets/create-new-team-button.png)
-1. Immettere un nome per il nuovo team e fare clic su **Aggiungi**.
-
-## Modificare un team
-
-È possibile modificare il nome di un team.
-
-1. Nel pannello di navigazione a sinistra, fai clic su **[!UICONTROL Panoramica organizzazione]**
-1. Seleziona la scheda **[!UICONTROL Team]**.
-1. Individua il team di cui vuoi modificare il nome, quindi fai clic su **Modifica** nella riga per il team.
-1. Immetti un nuovo nome per il team, quindi fai clic su **Salva**.
 
