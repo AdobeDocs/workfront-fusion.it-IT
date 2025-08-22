@@ -294,7 +294,7 @@ Questo modulo di azione crea una nuova cartella vuota all’interno della cartel
    <td> <p>Immettere o mappare un nome per la nuova cartella.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Cartella padre [!UICONTROL]</td> 
+   <td role="rowheader">Cartella padre </td> 
    <td> <p>Selezionare la cartella in cui si desidera creare la nuova cartella.</p> </td> 
   </tr> 
   <tr> 
@@ -473,7 +473,7 @@ Questo modulo di ricerca cerca gli elementi disponibili per l’utente o per l�
    <td> <p>Per ogni attributo che si desidera restituire nella risposta del modulo, fare clic su <b>Aggiungi elemento</b> e immettere il campo.</p><p>Può essere utilizzato per richiedere campi che normalmente non vengono restituiti in una risposta standard. Tieni presente che la specifica di questo parametro avrà l’effetto che nessuno dei campi standard viene restituito nella risposta, a meno che non sia specificato esplicitamente. </p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Estensioni file di [!UICONTROL]</td> 
+   <td role="rowheader">Estensioni file di </td> 
    <td> <p>Per limitare la ricerca a estensioni di file specifiche, immettere un elenco di estensioni di file separate da virgole.</p> </td> 
   </tr> 
   <tr> 
@@ -485,7 +485,7 @@ Questo modulo di ricerca cerca gli elementi disponibili per l’utente o per l�
    <td> <p>Per cercare le risorse in un intervallo di dimensioni specifico, inserisci l’estremità più grande dell’intervallo, in byte.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID utente proprietario di [!UICONTROL]</td> 
+   <td role="rowheader">ID utente proprietario di </td> 
    <td> <p>Per cercare le risorse di proprietà di utenti specifici, inserisci un elenco separato da virgole di ID proprietari.</p> </td> 
   </tr> 
   <tr> 

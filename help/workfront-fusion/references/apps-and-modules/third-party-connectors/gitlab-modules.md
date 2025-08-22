@@ -648,7 +648,7 @@ Questo modulo recupera i dettagli del problema.
    <td>Per creare una nuova connessione, vedere <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto [!UICONTROL]</td> 
+   <td role="rowheader">Progetto </td> 
    <td> <p>Seleziona il progetto contenente il problema di cui desideri recuperare i dettagli.</p> </td> 
   </tr> 
   <tr> 

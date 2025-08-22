@@ -119,7 +119,7 @@ Per creare una connessione alle schede madri Workfront:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
-          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
+          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]<p>(Facoltativo)</p></td>
@@ -321,7 +321,7 @@ Questo modulo di azione aggiorna le informazioni relative a una scheda specifica
    <td>Immettere o mappare una nuova descrizione per la scheda.</p></td> 
   </tr> 
   <tr> 
-   <td>Stima [!UICONTROL]</td> 
+   <td>Stima </td> 
    <td>Immetti o mappa una stima del tempo necessario per completare questa scheda.</p></td> 
   </tr> 
   <tr> 
@@ -359,7 +359,7 @@ Questo modulo di azione crea una scheda in Workfront. Puoi specificare il tipo d
    <td>Inserisci o mappa un nome per la nuova bacheca.</td> 
   </tr> 
   <tr> 
-   <td>Modello [!UICONTROL]</td> 
+   <td>Modello </td> 
    <td>Seleziona il modello per il tipo di bacheca che desideri creare.</td> 
   </tr> 
  </tbody> 
@@ -643,7 +643,7 @@ Questo modulo di azione invia una richiesta GraphQL personalizzata all’API del
    <td> <p>Immettere un nome per l'operazione. Questo può semplificare il tracciamento e il debug della chiamata.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Origine dati delle variabili [!UICONTROL]</td> 
+   <td role="rowheader">Origine dati delle variabili </td> 
    <td> <p>Seleziona se le variabili devono provenire da un modulo o da una raccolta.</p> </td> 
   </tr> 
   <tr> 

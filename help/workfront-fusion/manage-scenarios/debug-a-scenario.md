@@ -200,7 +200,7 @@ Consente di cercare i valori dei moduli per un termine specificato. L’output c
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Parola chiave [!UICONTROL]</td> 
+   <td role="rowheader">Parola chiave </td> 
    <td> <p> Immettere il termine che si desidera cercare. </p> </td> 
   </tr> 
   <tr> 
@@ -335,7 +335,7 @@ Consente di codificare i dati immessi in Base64 o di decodificare Base64. Alcune
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Dati Non Elaborati]</p> </td> 
-   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo Operazione [!UICONTROL] precedente.</p> </td> 
+   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo Operazione  precedente.</p> </td> 
   </tr> 
  </tbody> 
 </table>

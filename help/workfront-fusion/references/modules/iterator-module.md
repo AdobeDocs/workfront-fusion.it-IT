@@ -115,7 +115,7 @@ Avvia manualmente lo scenario nell’editor dello scenario.
 >Per evitare che l’intero scenario venga eseguito, puoi:
 >
 >* Scollega i moduli dopo il modulo [!UICONTROL JSON] > [!UICONTROL Analizza JSON] per impedire che il flusso proceda ulteriormente.
->  >   Oppure
+>  &#x200B;>   Oppure
 >* Fai clic con il pulsante destro del mouse sul modulo [!UICONTROL JSON] > [!UICONTROL Analizza JSON] e scegli **[!UICONTROL Esegui questo modulo solo]** dal menu di scelta rapida per eseguire solo il modulo [!UICONTROL JSON] > [!UICONTROL Analizza JSON].
 
 Dopo l&#39;esecuzione di [!UICONTROL JSON] > [!UICONTROL Parse JSON], è possibile fornire informazioni sugli output a tutti i moduli successivi, incluso il modulo Iterator. Il pannello di mappatura nella configurazione dell’iteratore visualizza quindi gli elementi:

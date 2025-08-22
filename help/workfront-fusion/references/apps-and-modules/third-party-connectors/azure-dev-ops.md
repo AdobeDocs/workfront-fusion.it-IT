@@ -190,7 +190,7 @@ Il modulo restituisce l’ID oggetto per il nuovo elemento di lavoro creato oppu
        <li> <p><strong>[!UICONTROL Description]</strong>: immettere o mappare una descrizione per il nuovo progetto. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>: specificare se il progetto deve essere pubblico o privato. Per interagire con un progetto privato, gli utenti devono aver effettuato l’accesso alla tua organizzazione e disporre dell’accesso al progetto. I progetti pubblici sono visibili agli utenti che non hanno effettuato l'accesso all'organizzazione.</p> </li> 
        <li> <p><strong>[!UICONTROL Controllo della versione]</strong>: specificare se si desidera che il progetto utilizzi [!DNL Git] o [!UICONTROL Controllo della versione di Team Foundation (TFCV)] per il controllo della versione.</p> </li> 
-       <li> <p><strong>[!UICONTROL Processo elemento di lavoro]</strong>: selezionare il processo di lavoro da utilizzare per il progetto. Le opzioni sono [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] e [!UICONTROL Agile].</p> <p>Per ulteriori informazioni sui processi [!DNL Azure DevOps], vedere <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Processi predefiniti e modelli di processo</a> nella documentazione di [!DNL Azure DevOps].</p> </li> 
+       <li> <p><strong>[!UICONTROL Processo elemento di lavoro]</strong>: selezionare il processo di lavoro da utilizzare per il progetto. Le opzioni sono [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] e [!UICONTROL Agile].</p> <p>Per ulteriori informazioni sui processi [!DNL Azure DevOps], vedere <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&tabs=basic-process">Processi predefiniti e modelli di processo</a> nella documentazione di [!DNL Azure DevOps].</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Elemento di lavoro]</strong> </p> <p>Compila i campi seguenti:</p> 
       <ul> 
@@ -355,11 +355,11 @@ Il modulo restituisce l’ID dell’elemento di lavoro aggiornato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure DevOps] a Workfront Fusion, vedere <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Azure DevOps] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto [!UICONTROL]</td> 
+   <td role="rowheader">Progetto </td> 
    <td>Selezionare il progetto contenente l'elemento di lavoro che si desidera aggiornare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di elemento di lavoro [!UICONTROL]</td> 
+   <td role="rowheader">Tipo di elemento di lavoro </td> 
    <td> <p>Selezionare il tipo di elemento di lavoro da aggiornare.</p> </td> 
   </tr> 
   <tr> 
@@ -388,7 +388,7 @@ Il modulo restituisce l’ID dell’allegato e un URL di download per l’allega
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure DevOps] a Workfront Fusion, vedere <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Azure DevOps] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto [!UICONTROL] </td> 
+   <td role="rowheader">Progetto  </td> 
    <td> <p>Seleziona il progetto in cui desideri caricare un allegato.</p> </td> 
   </tr> 
   <tr> 
@@ -425,7 +425,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure DevOps] a Workfront Fusion, vedere <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Azure DevOps] a [!UICONTROL Workfront Fusion]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Progetto [!UICONTROL]</td> 
+   <td role="rowheader">Progetto </td> 
    <td>Selezionare il progetto dal quale si desidera recuperare gli elementi di lavoro.</td> 
   </tr> 
   <tr> 

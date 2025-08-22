@@ -70,7 +70,7 @@ Per ulteriori informazioni sugli aggregatori, vedere [Modulo aggregatore](/help/
         <td>Seleziona il modulo che restituisce i campi che desideri utilizzare per creare il file CSV.</td>
     </tr>
     <tr>
-        <td>Campi Aggregati [!UICONTROL]</td>
+        <td>Campi Aggregati </td>
         <td>Selezionare i campi da aggregare dall'elenco dei campi disponibili.</td>
     </tr>
     <tr>

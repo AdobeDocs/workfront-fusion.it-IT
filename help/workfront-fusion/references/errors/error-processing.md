@@ -165,7 +165,7 @@ Per ulteriori informazioni, vedere [Numero di errori consecutivi](/help/workfron
 >[!NOTE]
 >
 >Se uno scenario inizia con un trigger immediato e riscontra questo errore, l&#39;impostazione di [!UICONTROL Numero massimo di errori consecutivi] viene ignorata e lo scenario viene disattivato immediatamente.
->>Per ulteriori informazioni, vedi [Trigger istantanei](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) nell&#39;articolo Panoramica dei moduli.
+>&#x200B;>Per ulteriori informazioni, vedi [Trigger istantanei](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) nell&#39;articolo Panoramica dei moduli.
 
 ## Errore di incoerenza
 

@@ -210,7 +210,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
-   <td> <p>Selezionare i campi da includere nell'output del modulo. I campi disponibili dipendono dal tipo di entità [!UICONTROL] selezionato.</p> </td> 
+   <td> <p>Selezionare i campi da includere nell'output del modulo. I campi disponibili dipendono dal tipo di entità  selezionato.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -350,7 +350,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Criteri di ricerca di [!UICONTROL]</td> 
+   <td role="rowheader">Criteri di ricerca di </td> 
    <td>Selezionare il campo che si desidera cercare, selezionare l'operazione e immettere o mappare il valore che si desidera cercare. Puoi aggiungere [!DNL AND] o [!DNL OR] regole per filtrare ulteriormente la ricerca.</td> 
   </tr> 
   <tr> 

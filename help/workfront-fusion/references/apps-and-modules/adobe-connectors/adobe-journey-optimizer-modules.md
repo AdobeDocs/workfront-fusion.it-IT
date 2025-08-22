@@ -131,7 +131,7 @@ Puoi creare una connessione in qualsiasi modulo di Adobe Journey Optimizer.
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID organizzazione]</td>
-        <td>Immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Immetti l'ID organizzazione [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Nome Sandbox]</td>
@@ -207,7 +207,7 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
    <td>Inserisci o mappa l’ID Adobe IMS dell’organizzazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metodi [!UICONTROL]</td> 
+   <td role="rowheader">Metodi </td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
@@ -247,11 +247,11 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metodi [!UICONTROL]</td> 
+   <td role="rowheader">Metodi </td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Velocità effettiva massima [!UICONTROL]</td> 
+   <td role="rowheader">Velocità effettiva massima </td> 
    <td>Seleziona se utilizzi un’azione o un’origine dati per questa configurazione.</td> 
   </tr> 
   <tr> 
@@ -856,7 +856,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td>Selezionare l'origine del modello.</td>  
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di [!UICONTROL]</td> 
+   <td role="rowheader">Metadati di </td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
@@ -896,7 +896,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td>Seleziona l’origine del frammento.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di [!UICONTROL]</td> 
+   <td role="rowheader">Metadati di </td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
@@ -1240,7 +1240,7 @@ Questo modulo di ricerca elenca i processi di esportazione e importazione corren
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">Parametro query [!UICONTROL]</td> 
+   <td role="rowheader">Parametro query </td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 
@@ -1273,7 +1273,7 @@ Questo modulo di ricerca elenca tutti i pacchetti dell’organizzazione. Puoi ut
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">Parametro query [!UICONTROL]</td> 
+   <td role="rowheader">Parametro query </td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 

@@ -109,7 +109,7 @@ Puoi creare una connessione al tuo account [!DNL Microsoft Dynamics 365] diretta
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
-          <td>Immetti l'ID client [!DNL Microsoft Dynamics] [!UICONTROL].</td>
+          <td>Immetti l'ID client [!DNL Microsoft Dynamics] .</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]<p>(Facoltativo)</p></td>
@@ -247,7 +247,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Selezionare i campi per i quali si desidera includere i valori al momento della creazione del record. I campi disponibili dipendono dal tipo di entità.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Campi proprietà [!UICONTROL]</td> 
+   <td role="rowheader">Campi proprietà </td> 
    <td> Questi sono i campi selezionati. Immettere il valore desiderato per il record per una determinata proprietà. </td> 
   </tr> 
  </tbody> 
@@ -386,7 +386,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Selezionare i campi per i quali si desidera includere i valori al momento della creazione del record. I campi disponibili dipendono dal tipo di entità.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Campi proprietà [!UICONTROL]</td> 
+   <td role="rowheader">Campi proprietà </td> 
    <td>Questi sono i campi selezionati. Immettere il valore desiderato per il record per una determinata proprietà.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
