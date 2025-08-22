@@ -4,10 +4,10 @@ description: Un'operazione in Adobe Workfront Fusion è un'operazione eseguita d
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ Un&#39;operazione in Adobe Workfront Fusion è un&#39;operazione eseguita da un 
 
 ## Limiti operativi
 
-La tua organizzazione potrebbe avere un limite mensile di operazioni. Si basa sul piano [!DNL Workfront] acquistato dalla tua organizzazione. Il piano [!UICONTROL Ultimate] [!DNL Workfront] offre operazioni illimitate.
+La tua organizzazione potrebbe avere un limite mensile di operazioni. Si basa sul piano Workfront acquistato dalla tua organizzazione. Il piano Workfront [!UICONTROL Ultimate] offre operazioni illimitate.
 
-Se la tua organizzazione dispone di un limite mensile, riceverai una notifica quando l’organizzazione si avvicina al limite. Se l&#39;organizzazione supera il limite, [!DNL Workfront] contatterà l&#39;organizzazione per assicurarsi che il piano soddisfi le tue esigenze.
+Se la tua organizzazione dispone di un limite mensile, riceverai una notifica quando l’organizzazione si avvicina al limite. Se l&#39;organizzazione supera il limite, Workfront contatterà l&#39;organizzazione per verificare che il piano soddisfi le tue esigenze.
 
 Workfront Fusion invia una notifica quando l’organizzazione raggiunge le seguenti percentuali del limite mensile:
 

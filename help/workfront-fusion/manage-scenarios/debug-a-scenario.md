@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion Devtool consente di comprendere e risolvere 
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1483'
 ht-degree: 0%
 
 ---
 
 # Debug di uno scenario
 
-Lo strumento di sviluppo [!DNL Adobe Workfront Fusion] consente di comprendere e risolvere gli scenari. Utilizzando Devtool, puoi controllare tutte le esecuzioni manuali dello scenario, esaminare tutte le operazioni eseguite e visualizzare i dettagli di ogni chiamata API eseguita. Puoi vedere quale modulo, operazione o singola risposta ha causato l’errore e sfruttare queste informazioni per perfezionare lo scenario.
+Adobe Workfront Fusion Devtool consente di comprendere e risolvere gli scenari. Utilizzando Devtool, puoi controllare tutte le esecuzioni manuali dello scenario, esaminare tutte le operazioni eseguite e visualizzare i dettagli di ogni chiamata API eseguita. Puoi vedere quale modulo, operazione o singola risposta ha causato l’errore e sfruttare queste informazioni per perfezionare lo scenario.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ Lo strumento di sviluppo [!DNL Adobe Workfront Fusion] consente di comprendere e
 Per un video introduttivo e una descrizione dettagliata dello strumento Fusion Devtool, vedere
 
 * [Strumento di sviluppo Fusion](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Procedura dettagliata per Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=it)
+* [Procedura dettagliata per Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Requisiti di accesso
 
@@ -35,17 +35,17 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacchetto</td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
    <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza</td> 
-   <td> <p>Nuovo: [!UICONTROL Standard]</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -53,16 +53,16 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Novità:</p> <ul><li>Piano Workfront di [!UICONTROL Select] o [!UICONTROL Prime]: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Workfront di [!UICONTROL Ultimate]: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurazioni del livello di accesso*</td> 
    <td> 
-     <p>Devi essere un amministratore [!DNL Workfront Fusion] per la tua organizzazione.</p>
-     <p>Devi essere un amministratore [!DNL Workfront Fusion] per il tuo team.</p>
+     <p>Devi essere un amministratore di Workfront Fusion per la tua organizzazione.</p>
+     <p>Devi essere un amministratore di Workfront Fusion per il tuo team.</p>
    </td> 
   </tr> 
    </td> 
@@ -72,7 +72,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -91,7 +91,7 @@ Oppure:
 1. Fai clic con il pulsante destro del mouse in un’area vuota della pagina (non in un modulo).
 1. Selezionare **Apri Devtool**.
 
-## Utilizza Devtool [!DNL Workfront Fusion]
+## Utilizzare Workfront Fusion Devtool
 
 Workfront Fusion Devtool è suddiviso in 3 sezioni principali. Puoi trovarli nel pannello a sinistra della finestra di Devtool.
 
@@ -103,7 +103,7 @@ Workfront Fusion Devtool è suddiviso in 3 sezioni principali. Puoi trovarli nel
 
 Live Stream mostra cosa accade in background quando fai clic su Esegui una volta nello scenario.
 
-1. Fai clic sull&#39;icona **[!UICONTROL Live Stream]** ![icona Live Stream](assets/live-stream-icon.png) per aprire la sezione Live Stream.
+1. Fai clic sull&#39;icona **[!UICONTROL Live Stream]** ![Live Stream icon](assets/live-stream-icon.png) per aprire la sezione Live Stream.
 1. Effettua una delle seguenti operazioni:
 
    <table style="table-layout:auto"> 
@@ -124,15 +124,15 @@ Live Stream mostra cosa accade in background quando fai clic su Esegui una volta
         <li> <p>Corpo della richiesta</p> </li> 
         <li> <p>Intestazioni di risposta</p> </li> 
         <li> <p>Corpo risposta</p> </li> 
-       </ul> <p>Per visualizzare queste informazioni, fare clic sulla scheda appropriata nel pannello destro dello strumento di sviluppo [!DNL Workfront Fusion].</p> </td> 
+       </ul> <p>Per visualizzare queste informazioni, fate clic sulla scheda appropriata nel pannello destro di Workfront Fusion Devtool.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Cerca eventi per contenuto</p> </td> 
-      <td> <p>Immettere il termine di ricerca nel campo di ricerca nel pannello sinistro dello strumento di sviluppo [!DNL Workfront Fusion] per visualizzare solo le richieste che contengono il termine di ricerca.</p> </td> 
+      <td> <p>Immettere il termine di ricerca nel campo di ricerca nel pannello sinistro di Workfront Fusion Devtool per visualizzare solo le richieste che contengono il termine di ricerca.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Cancella elenco di richieste </p> </td> 
-      <td> <p>Fare clic sull'icona cestino nell'angolo superiore destro del pannello sinistro di Devtool per cancellare l'elenco delle richieste registrate da Devtool [!DNL Workfront Fusion]. </p> </td> 
+      <td> <p>Fai clic sull’icona cestino nell’angolo in alto a destra del pannello di sinistra di Devtool per cancellare l’elenco delle richieste registrate da Workfront Fusion Devtool. </p> </td> 
      </tr> 
      <!--<tr> 
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
@@ -142,8 +142,8 @@ Live Stream mostra cosa accade in background quando fai clic su Esegui una volta
       <td role="rowheader"> <p>Recuperare la richiesta nel formato Raw JSON o in cURL</p> </td> 
       <td> 
        <ul> 
-        <li> <p><strong>JSON non elaborato</strong> </p> <p>Fare clic su <strong>[!UICONTROL Copy RAW]</strong> nell'angolo superiore destro del riquadro destro di Devtool.</p> </li> 
-        <li> <p><strong>cURL</strong> </p> <p>Fare clic su <strong>[!UICONTROL Copy cURL]</strong> nell'angolo superiore destro del riquadro destro di Devtool.</p> </li> 
+        <li> <p><strong>JSON non elaborato</strong> </p> <p>Fare clic su <strong>[!UICONTROL Copy RAW]</strong> nell'angolo superiore destro del riquadro di destra di Devtool.</p> </li> 
+        <li> <p><strong>cURL</strong> </p> <p>Fare clic su <strong>[!UICONTROL Copy cURL]</strong> nell'angolo superiore destro del riquadro di destra di Devtool.</p> </li> 
        </ul> </td> 
      </tr> 
     </tbody> 
@@ -160,12 +160,12 @@ Scenario Debugger è utile per scenari più complessi. Visualizza la cronologia 
 
 ### Strumenti
 
-[!DNL Workfront Fusion] Devtool offre strumenti che semplificano la configurazione dello scenario.
+Workfront Fusion Devtool offre strumenti che semplificano la configurazione dello scenario.
 
-1. Fai clic sull&#39;icona **[!UICONTROL Tools]** ![icona Strumenti console](assets/console-tools-icon.png) per aprire gli strumenti.
+1. Fai clic sull&#39;icona **[!UICONTROL Strumenti]** ![Strumenti console](assets/console-tools-icon.png) per aprire gli Strumenti.
 1. Selezionare lo strumento che si desidera utilizzare
 1. Configura i campi come descritto di seguito.
-1. Fare clic su **[!UICONTROL Run]**.
+1. Fare clic su **[!UICONTROL Esegui]**.
 
 Strumenti e relativi campi:
 
@@ -180,7 +180,7 @@ Strumenti e relativi campi:
 * [Base 64](#base-64)
 * [Nuova mappatura di Source](#remap-source)
 
-#### [!UICONTROL Focus a Module]
+#### [!UICONTROL Attiva modulo]
 
 Apre le impostazioni del modulo specificato in base all&#39;ID.
 
@@ -191,7 +191,7 @@ Apre le impostazioni del modulo specificato in base all&#39;ID.
     </tr>
 </table>
 
-#### [!UICONTROL Find Modules by Mapping]
+#### [!UICONTROL Trova moduli per mappatura]
 
 Consente di cercare i valori dei moduli per un termine specificato. L’output contiene ID di moduli che contengono il termine cercato.
 
@@ -200,28 +200,28 @@ Consente di cercare i valori dei moduli per un termine specificato. L’output c
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Keyword]</td> 
+   <td role="rowheader">Parola chiave [!UICONTROL]</td> 
    <td> <p> Immettere il termine che si desidera cercare. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Use Only Values]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Usa solo valori]</p> </td> 
    <td> <p>Abilita questa opzione per eseguire ricerche solo nei valori dei campi modulo.</p> <p>Disattiva questa opzione per eseguire ricerche anche nei nomi dei campi modulo.</p> <p>La ricerca viene eseguita tramite i parametri name ed label.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get App Metadata]
+#### [!UICONTROL Ottieni metadati app]
 
 Recupera i metadati dell’app in base al nome o all’ID del modulo dell’app. Questa funzione è utile, ad esempio, quando devi conoscere la versione dell’app utilizzata nel tuo scenario.
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Source Module]</td>
+        <td>[!UICONTROL Modulo Source]</td>
         <td>Seleziona il modulo per il quale desideri recuperare i metadati.</td>
     </tr>
 </table>
 
-#### [!UICONTROL Copy Mapping]
+#### [!UICONTROL Copia mapping]
 
 Copia i valori dal modulo di origine al modulo di destinazione.
 
@@ -234,17 +234,17 @@ Copia i valori dal modulo di origine al modulo di destinazione.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Modulo Source]</td> 
    <td> <p> Seleziona il modulo o immetti l’ID del modulo da cui desideri copiare i valori dei campi.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Target Module]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Modulo Di Destinazione]</p> </td> 
    <td> <p>Seleziona il modulo o immetti l’ID del modulo in cui desideri inserire i valori del modulo sorgente.</p> <p>Importante: i valori nel modulo di destinazione verranno sovrascritti.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Copy Filter]
+#### [!UICONTROL Copia Filtro]
 
 Copia le impostazioni del filtro dal modulo di origine al modulo di destinazione.
 
@@ -257,22 +257,22 @@ Copia le impostazioni del filtro dal modulo di origine al modulo di destinazione
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Modulo Source]</td> 
    <td> <p> Seleziona il modulo o immetti l’ID del modulo da cui desideri copiare i valori del filtro.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Target Module]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Modulo Di Destinazione]</p> </td> 
    <td> <p>Seleziona il modulo o immetti l’ID del modulo in cui desideri inserire i valori del filtro dal modulo sorgente.</p> <p>Importante: i valori nel modulo di destinazione verranno sovrascritti.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Preserve Fallback Route setting]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Mantieni route di fallback]</p> </td> 
    <td> <p>Il filtro di origine viene impostato come route di fallback. Abilita questa opzione per impostare anche il filtro di destinazione impostato come route di fallback.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### [!UICONTROL Copy Module Name]
+#### [!UICONTROL Copia nome modulo]
 
 Copia negli Appunti il nome del modulo selezionato.
 
@@ -287,18 +287,18 @@ Copia negli Appunti il nome del modulo selezionato.
  </tbody> 
 </table>
 
-#### [!UICONTROL Swap Connection]
+#### [!UICONTROL Scambia connessione]
 
 Duplica una connessione dal modulo di origine a ogni modulo nello scenario della stessa app.
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Source Module]</td>
+        <td>[!UICONTROL Modulo Source]</td>
         <td>Seleziona il modulo o immetti l’ID del modulo da cui desideri duplicare la connessione.</td>
     </tr>
 </table>
 
-#### [!UICONTROL Swap Variable]
+#### [!UICONTROL Scambia variabile]
 
 Cerca le variabili specificate nello scenario e le sostituisce con una nuova variabile.
 
@@ -307,12 +307,12 @@ Cerca le variabili specificate nello scenario e le sostituisce con una nuova var
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Variable to Find]</td> 
-   <td> <p> Individuare la pillola variabile che si desidera sostituire dal modulo variabile nello scenario e copiarla in questo campo ([!UICONTROL Variable to Find]). Nel campo, viene visualizzato con parentesi graffe doppie. Esempio: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Variabile da trovare]</td> 
+   <td> <p> Individua la pillola di variabili che desideri sostituire dal modulo di variabili nello scenario e copiala in questo campo ([!UICONTROL Variabile da trovare]). Nel campo, viene visualizzato con parentesi graffe doppie. Esempio: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Replace With]</p> </td> 
-   <td> <p>Individuare la pillola di variabili con cui si desidera sostituire la variabile dal modulo delle variabili nello scenario e copiarla in questo campo ([!UICONTROL Variable to Find]). Nel campo, viene visualizzato con parentesi graffe doppie. Esempio: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Sostituisci Con]</p> </td> 
+   <td> <p>Individua la pillola di variabili con cui desideri sostituire la variabile dal modulo delle variabili nello scenario e copiala in questo campo ([!UICONTROL Variabile da trovare]). Nel campo, viene visualizzato con parentesi graffe doppie. Esempio: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Module]</p> </td> 
@@ -331,16 +331,16 @@ Consente di codificare i dati immessi in Base64 o di decodificare Base64. Alcune
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Operation] </td> 
-   <td> <p>Specificare se si desidera codificare i dati dal campo [!UICONTROL Raw Data] in Base64 o decodificare Base64 in Raw Data.</p> </td> 
+   <td> <p>Specificare se si desidera codificare i dati dal campo [!UICONTROL Raw Data] in Base64 o decodificare Base64 in Dati non elaborati.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Raw Data]</p> </td> 
-   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo [!UICONTROL Operation] precedente.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Dati Non Elaborati]</p> </td> 
+   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo Operazione [!UICONTROL] precedente.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Remap Source]
+#### [!UICONTROL Nuova mappatura di Source]
 
 Consente di cambiare l&#39;origine di mappatura da un modulo all&#39;altro.
 
@@ -351,15 +351,15 @@ Consente di cambiare l&#39;origine di mappatura da un modulo all&#39;altro.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module] </td> 
+   <td role="rowheader">[!UICONTROL Modulo Source] </td> 
    <td> <p> Seleziona il modulo da sostituire come origine di mappatura per altri moduli nello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Target Module]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Modulo Di Destinazione]</p> </td> 
    <td> <p>Selezionare il modulo da utilizzare come nuova origine di mappatura.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Module to Edit]</p> </td> 
+   <td role="rowheader"> <p>Modulo [!UICONTROL da modificare]</p> </td> 
    <td> <p>Selezionare il modulo per il quale si desidera modificare il mapping se non si desidera modificare il mapping nell'intero scenario. </p> </td> 
   </tr> 
  </tbody> 

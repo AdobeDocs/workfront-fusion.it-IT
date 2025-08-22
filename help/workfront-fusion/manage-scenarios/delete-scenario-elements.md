@@ -4,16 +4,16 @@ description: Puoi visualizzare e gestire le connessioni dei team nell’area Con
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '227'
+ht-degree: 2%
 
 ---
 
 # Elimina elementi scenario
 
-È possibile archiviare ed eliminare gli elementi dello scenario nelle seguenti aree nell&#39;account [!DNL Adobe Workfront Fusion]:
+Puoi archiviare ed eliminare gli elementi dello scenario nelle seguenti aree nell’account Adobe Workfront Fusion:
 
 * [!UICONTROL Scenario]
 * [!UICONTROL Connessioni]
@@ -53,7 +53,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Selezionare o Prime Workfront Plan: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Ultimate Workfront: Workfront Fusion è incluso.</li></ul>
+   <p>Novità:</p> <ul><li>Selezionare o Prime Workfront Plan: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Ultimate Workfront: Workfront Fusion è incluso.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 

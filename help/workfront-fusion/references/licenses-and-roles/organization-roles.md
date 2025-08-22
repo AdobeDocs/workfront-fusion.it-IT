@@ -4,20 +4,20 @@ description: Questo articolo include informazioni sull'accesso e le autorizzazio
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 2%
+source-wordcount: '396'
+ht-degree: 34%
 
 ---
 
 # Ruoli di organizzazione e team
 
-Questo articolo descrive l&#39;accesso e le funzionalità disponibili per i diversi ruoli team e organizzazione in [!DNL Workfront Fusion].
+Questo articolo descrive l’accesso e le funzionalità disponibili per i diversi ruoli team e organizzazione in Workfront Fusion.
 
 >[!NOTE]
 >
->I ruoli organizzazione sono distinti dai ruoli team in [!DNL Workfront Fusion]. Per ulteriori informazioni sui ruoli organizzazione e team, vedere [Panoramica su organizzazioni e team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
+>I ruoli dell&#39;organizzazione sono distinti dai ruoli del team in Workfront Fusion. Per ulteriori informazioni sui ruoli organizzazione e team, vedere [Panoramica su organizzazioni e team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Ruoli organizzazione
 
@@ -30,10 +30,10 @@ Questo articolo descrive l&#39;accesso e le funzionalità disponibili per i dive
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p>[!UICONTROL Owner]</p> </th> 
+   <th> <p>[!UICONTROL Proprietario]</p> </th> 
    <th> <p>[!UICONTROL Admin]</p> </th> 
    <th> <p>[!UICONTROL Member]</p> </th> 
-   <th> <p>[!UICONTROL Accountant]</p> </th> 
+   <th> <p>[!UICONTROL Contabile]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -78,7 +78,7 @@ Questo articolo descrive l&#39;accesso e le funzionalità disponibili per i dive
 
 ## Ruoli di team
 
-### Scenari
+### Situazioni che potrebbero verificarsi con
 
 <table style="table-layout:auto"> 
  <col> 

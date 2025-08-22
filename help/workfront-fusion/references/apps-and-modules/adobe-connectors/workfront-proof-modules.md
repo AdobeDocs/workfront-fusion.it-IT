@@ -1,21 +1,21 @@
 ---
 title: Moduli Workfront Proof
-description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare i flussi di lavoro che utilizzano  [!DNL Workfront Proof], nonché collegarli a più applicazioni e servizi di terze parti.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano  [!DNL Workfront Proof], nonché collegarli a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3050'
+source-wordcount: '3131'
 ht-degree: 0%
 
 ---
 
 # [!DNL Workfront Proof] moduli
 
-In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Workfront Proof] e collegarlo a più applicazioni e servizi di terze parti.
+In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Workfront Proof] e collegarlo a più applicazioni e servizi di terze parti.
 
-Questa opzione è utile se devi eseguire attività attualmente non supportate nella verifica in [!DNL Workfront] o in [!DNL Workfront Proof], ad esempio l&#39;aggiornamento delle bozze in base a determinati eventi e la ricerca dei destinatari di una bozza.
+Questa opzione è utile se devi eseguire attività attualmente non supportate nella verifica in Workfront o in [!DNL Workfront Proof], ad esempio l&#39;aggiornamento delle bozze in base a determinati eventi e la ricerca dei destinatari di una bozza.
 
 Il connettore [!DNL Workfront Proof] non viene conteggiato rispetto al numero di app attive disponibili per l&#39;organizzazione. Tutti gli scenari, anche se utilizzano solo l&#39;app [!DNL Workfront Proof], vengono conteggiati rispetto al numero totale di scenari dell&#39;organizzazione.
 
@@ -52,7 +52,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -62,7 +62,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -85,11 +85,11 @@ Il connettore Workfront Proof utilizza quanto segue:
  </tbody> 
  </table>
 
-## Connetti [!DNL Workfront Proof] a [!DNL Workfront Fusion]
+## Connetti [!DNL Workfront Proof] a Workfront Fusion
 
-Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente da un modulo [!DNL Workfront Fusion].
+Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente da un modulo Workfront Fusion.
 
-1. In qualsiasi modulo [!DNL Workfront Fusion], fai clic su [!UICONTROL **Aggiungi**] accanto al campo [!UICONTROL Connessione]
+1. In qualsiasi modulo di Workfront Fusion, fai clic su [!UICONTROL **Aggiungi**] accanto al campo [!UICONTROL Connessione]
 
 2. Compila i campi seguenti:
 
@@ -124,7 +124,7 @@ Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente d
                 <td><strong>Nota</strong>: i clienti che non utilizzano BYOK devono lasciare vuoto questo campo. <p>Immetti l’ID tenant per questo account. Se hai bisogno di aiuto per trovare l’ID tenant, contatta l’Assistenza clienti Workfront.</p></td>
             </tr>
             <tr>
-                <td role="rowheader">Estensione di dominio </td>
+                <td role="rowheader">Estensione di dominio [!UICONTROL]</td>
                 <td>Immetti l’estensione per l’URL utilizzato per accedere al tuo account. <p>Esempio: <code>com</code> o <code>eu</code></p></td>
             </tr>
             <tr>
@@ -139,7 +139,7 @@ Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente d
 
 ## [!DNL Workfront Proof] moduli e relativi campi
 
-Quando configuri [!DNL Workfront Proof] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Workfront Proof], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando si configurano [!DNL Workfront Proof] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Workfront Proof], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -175,7 +175,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,7 +194,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di attività]</td> 
@@ -225,7 +225,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo di record</td> 
@@ -270,11 +270,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Tipo di bozza </td> 
-   <td> <p>Specifica se la bozza creata deve avere un flusso di lavoro di base o un flusso di lavoro automatico .</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Flusso di lavoro automatico], compila il campo <strong>[!UICONTROL Fasi del flusso di lavoro]</strong> per configurare le fasi.</p></td> 
+   <td>Tipo di bozza [!UICONTROL]</td> 
+   <td> <p>Specifica se la bozza creata deve avere un flusso di lavoro di base o un flusso di lavoro automatico [!UICONTROL].</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Flusso di lavoro automatico], compila il campo <strong>[!UICONTROL Fasi del flusso di lavoro]</strong> per configurare le fasi.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Consenti il download del file originale]</td> 
@@ -293,7 +293,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Seleziona questa opzione se desideri che il modulo crei una nuova versione di una bozza esistente. Quindi, nel campo <strong>[!UICONTROL ID bozza esistente]</strong> che visualizza, mappa o immetti l'ID univoco della bozza.</td> 
   </tr> 
   <tr> 
-   <td>Etichetta collegamento personalizzato </td> 
+   <td>Etichetta collegamento personalizzato [!UICONTROL]</td> 
    <td>Inserisci o mappa un’etichetta per il collegamento della bozza personalizzata.</td> 
   </tr> 
   <tr> 
@@ -419,7 +419,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Method]</td> 
@@ -459,7 +459,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID bozza]</td> 
@@ -486,7 +486,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record]</td> 
@@ -521,7 +521,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID bozza]</td> 
@@ -557,7 +557,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID bozza]</td> 
@@ -573,14 +573,14 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul>
      <li> [!UICONTROL Tutti i nuovi commenti e risposte]</li>
      <li>[!UICONTROL Risponde ai miei commenti]</li>
-     <li>Riepilogo giornaliero di </li>
-     <li> Riepilogo orario </li>
+     <li>Riepilogo giornaliero di [!UICONTROL]</li>
+     <li> Riepilogo orario [!UICONTROL]</li>
      <li> [!UICONTROL Decisions only]</li>
      <li> [!UICONTROL Disabilitato]</li>
     </ul></td> 
   </tr> 
   <tr> 
-   <td>Ruolo predefinito di </td> 
+   <td>Ruolo predefinito di [!UICONTROL]</td> 
    <td>Seleziona il ruolo predefinito per la bozza.</td> 
   </tr> 
   <tr> 
@@ -589,7 +589,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td>[!UICONTROL - Abilita sottoscrizioni]</td> 
-   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo Ruolo predefinito di .</td> 
+   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo Ruolo predefinito di [!UICONTROL].</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Abilita convalida sottoscrizioni]</td> 
@@ -644,7 +644,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
@@ -668,7 +668,7 @@ Questo modulo di ricerca elenca tutti i modelli di flusso di lavoro disponibili.
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a></p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Output]</td> 
@@ -697,7 +697,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!DNL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a [!DNL Adobe Workfront Fusion] - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Cerca]</td> 

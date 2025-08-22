@@ -1,17 +1,17 @@
 ---
 title: Panoramica di Adobe Workfront Fusion
-description: Il ruolo di  [!DNL Adobe Workfront Fusion]  consiste nell'automatizzare i processi in modo che sia possibile concentrarsi su nuove attività anziché ripetere più volte le stesse attività. Funziona tramite il collegamento di azioni all’interno e tra app e servizi per creare uno scenario che trasferisce e trasforma automaticamente i dati. Lo scenario in cui si creano controlli i dati in un’app o in un servizio ed elabora tali dati in modo da fornire il risultato desiderato.
+description: Il ruolo di Adobe Workfront Fusion è quello di automatizzare i processi in modo da potersi concentrare su nuove attività anziché ripetere più volte le stesse attività. Funziona tramite il collegamento di azioni all’interno e tra app e servizi per creare uno scenario che trasferisce e trasforma automaticamente i dati. Lo scenario in cui si creano controlli i dati in un’app o in un servizio ed elabora tali dati in modo da fornire il risultato desiderato.
 author: Becky
 feature: Workfront Fusion
 exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# Panoramica di [!DNL Adobe Workfront Fusion]
+# Panoramica di Adobe Workfront Fusion
 
 Il ruolo di Adobe Workfront Fusion è quello di automatizzare i processi in modo che gli utenti non debbano dedicare più tempo alle attività di routine. Funziona tramite il collegamento di azioni all’interno e tra app e servizi per creare uno scenario che trasferisce e trasforma automaticamente i dati. Lo scenario in cui si creano controlli i dati in un’app o in un servizio ed elabora tali dati in modo da fornire il risultato desiderato.
 
@@ -31,7 +31,7 @@ Workfront Fusion offre inoltre funzionalità che supportano scenari, ad esempio 
 
 Quando si inizia a lavorare con Workfront Fusion, potrebbero essere utili le risorse seguenti:
 
-* Per le risorse di formazione su Workfront Fusion, vedere [Panoramica sulla formazione su Workfront Fusion](https://experienceleague.adobe.com/it/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
+* Per le risorse di formazione su Workfront Fusion, vedere [Panoramica sulla formazione su Workfront Fusion](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
 
 
 * Per ulteriori informazioni sugli scenari, vedere [Panoramica dello scenario](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).

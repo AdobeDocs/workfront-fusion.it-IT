@@ -5,9 +5,9 @@ description: Questo articolo spiega come viene eseguito uno scenario e come i da
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Se il modulo trigger restituisce eventuali bundle di dati, tali bundle passano a
 
 Se i bundle vengono elaborati correttamente in tutti i moduli, lo scenario viene contrassegnato come riuscito nella pagina dei dettagli dello scenario.
 
-### Esempio: [!UICONTROL [!DNL Workfront Fusion] per l&#39;automazione del lavoro]
+### Esempio: [!UICONTROL Workfront Fusion per l&#39;automazione del lavoro]
 
 >[!BEGINSHADEBOX]
 
-**Esempio:** In questo scenario che controlla le richieste in arrivo in [!DNL Workfront] e le converte in [!DNL Workfront] progetti, i dati scorrono come segue:
+**Esempio:** In questo scenario che controlla le richieste in arrivo in Workfront e le converte in progetti Workfront, i dati scorrono come segue:
 
 Il primo passaggio dello scenario, eseguito dal primo modulo, consiste nel controllare le richieste. Ogni richiesta trovata viene considerata un bundle. Se il modulo viene eseguito senza trovare bundle, lo scenario termina dopo il primo modulo.
 
@@ -42,11 +42,11 @@ Se il primo modulo restituisce un bundle, il bundle passa attraverso il resto de
 
 >[!ENDSHADEBOX]
 
-### Esempio: [!UICONTROL [!DNL Workfront Fusion] per l&#39;automazione e l&#39;integrazione del lavoro]
+### Esempio: [!UICONTROL Workfront Fusion per l&#39;automazione e l&#39;integrazione del lavoro]
 
 >[!BEGINSHADEBOX]
 
-**Esempio:** In questo scenario che scarica documenti da [!DNL Adobe Workfront] e li invia a una cartella in [!DNL Dropbox], i dati scorrono come segue:
+**Esempio:** In questo scenario che scarica documenti da Adobe Workfront e li invia a una cartella in [!DNL Dropbox], i dati scorrono come segue:
 
 Il primo passaggio dello scenario, eseguito dal primo modulo, consiste nel controllare i documenti in Workfront. Ogni documento trovato viene considerato un unico bundle. Se il modulo viene eseguito senza trovare bundle, lo scenario termina dopo il primo modulo.
 

@@ -4,16 +4,16 @@ description: Le funzioni Organizzazione e Team di Adobe Workfront Fusion consent
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '529'
 ht-degree: 1%
 
 ---
 
-# Panoramica di [!DNL Adobe Workfront Fusion] organizzazioni e team
+# Panoramica sulle organizzazioni e sui team di Adobe Workfront Fusion
 
-Le funzionalità Organizzazione e Team di [!DNL Adobe Workfront Fusion] consentono alle aziende di controllare l&#39;accesso a scenari e altre funzionalità in Fusion.
+Le funzioni Organizzazione e Team di Adobe Workfront Fusion consentono alle aziende di controllare l&#39;accesso a scenari e altre funzioni all&#39;interno di Fusion.
 
 Un’organizzazione è l’entità più grande in Adobe Workfront Fusion. Ad esempio, l’organizzazione Fusion potrebbe rappresentare l’account Fusion per l’intera azienda.
 
@@ -21,9 +21,9 @@ I team sono gruppi più piccoli all’interno dell’organizzazione e condividon
 
 Per istruzioni sulla creazione di un team, vedere [Creare un team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md).
 
-## Organismi
+## Organizzazioni
 
-[!DNL Workfront Fusion] utenti appartengono a un&#39;organizzazione.
+Gli utenti di Workfront Fusion appartengono a un’organizzazione.
 
 Gli utenti devono essere aggiunti a un’organizzazione prima di essere aggiunti a un team.
 
@@ -33,7 +33,7 @@ Un utente ha uno dei seguenti ruoli in un’organizzazione:
 
 * **[!UICONTROL Proprietario]**: il proprietario dispone di tutte le autorizzazioni disponibili nell&#39;organizzazione.
 * **[!UICONTROL Amministratore]**: gli amministratori possono creare e gestire team e utenti per l&#39;organizzazione e possono approvare modelli.
-* **[!UICONTROL Membro]**: i membri possono utilizzare [!DNL Workfront Fusion] ma non possono apportare modifiche organizzative.
+* **[!UICONTROL Membro]**: i membri possono utilizzare Workfront Fusion, ma non possono apportare modifiche organizzative.
 * **[!UICONTROL Contabile]**: gli account possono visualizzare le informazioni sulla licenza nel dashboard dell&#39;organizzazione, ma non possono eseguire alcuna azione.
 * **[!UICONTROL Sviluppatore app]**: la funzionalità per questo ruolo non è attualmente disponibile e lo sarà prossimamente. Non è consigliabile assegnare gli utenti a questo ruolo in questo momento.
 
@@ -43,7 +43,7 @@ Per informazioni sulle azioni specifiche disponibili per gli utenti in ogni ruol
 
 I team sono gruppi di utenti che condividono l’accesso a risorse specifiche. Tali risorse possono includere:
 
-* Scenari
+* Situazioni che potrebbero verificarsi con
 * Connessioni
 * Webhook
 * Chiavi
@@ -53,7 +53,7 @@ I team sono gruppi di utenti che condividono l’accesso a risorse specifiche. T
 
 >[!NOTE]
 >
->Poiché i team condividono le risorse, a volte è utile che un team abbia un solo membro. Ad esempio, gli utenti in formazione possono creare connessioni ai loro singoli account [!DNL Workfront]. Tutti i membri del team potranno connettersi al singolo account [!DNL Workfront]. In questo caso, consigliamo che l’utente sia l’unico membro di un team di formazione.
+>Poiché i team condividono le risorse, a volte è utile che un team abbia un solo membro. Ad esempio, gli utenti in formazione possono creare connessioni ai propri account Workfront individuali. Tutti i membri del gruppo possono connettersi al singolo account Workfront. In questo caso, consigliamo che l’utente sia l’unico membro di un team di formazione.
 
 Le organizzazioni possono disporre di tutti i team necessari e gli utenti possono appartenere a uno o più team.
 

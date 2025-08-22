@@ -4,9 +4,9 @@ description: È possibile mappare un array o singoli elementi di array a un camp
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Un array è un elemento bundle che può contenere i seguenti elementi:
 
 **Esempio:**
 
-* **Array complesso**: il modulo [!UICONTROL Watch emails] restituisce un array di allegati per ogni e-mail. Ogni allegato rappresenta una raccolta che può contenere un nome, contenuto, dimensioni e così via.
+* **Array complesso**: il modulo [!UICONTROL Controlla e-mail] restituisce un array di allegati per ogni e-mail. Ogni allegato rappresenta una raccolta che può contenere un nome, contenuto, dimensioni e così via.
 
 >[!ENDSHADEBOX]
 
@@ -37,17 +37,17 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacchetto</td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
    <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza</td> 
-   <td> <p>Nuovo: [!UICONTROL Standard]</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -55,9 +55,9 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Novità:</p> <ul><li>Piano Workfront di [!UICONTROL Select] o [!UICONTROL Prime]: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Workfront di [!UICONTROL Ultimate]: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -65,24 +65,24 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Mappare un intero array
 
-1. Fare clic sulla scheda **[!UICONTROL Scenarios]** nel pannello a sinistra.
+1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Selezionare lo scenario in cui si desidera mappare un array.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
 1. Nel modulo a cui si desidera mappare l’array, fare clic sul campo in cui si desidera mappare l’array. Questo è il campo a cui è mappato l’array.
 
 1. Nella casella visualizzata, mappa l’elemento.
 
-   Il pannello consente di mappare i campi allo stesso modo di qualsiasi altro tipo di elemento. Se non si desidera compilare ogni elemento separatamente, ma si desidera mappare un altro array nel campo di destinazione, utilizzare il pulsante [!UICONTROL Map]. In questo caso, assicurarsi che entrambe le matrici (l&#39;array di origine e l&#39;array di destinazione) abbiano la stessa struttura.
+   Il pannello consente di mappare i campi allo stesso modo di qualsiasi altro tipo di elemento. Se non desideri compilare ogni elemento separatamente, ma vuoi mappare un altro array nel campo di destinazione, utilizza il pulsante [!UICONTROL Mappa]. In questo caso, assicurarsi che entrambe le matrici (l&#39;array di origine e l&#39;array di destinazione) abbiano la stessa struttura.
 
    È possibile aggiungere un numero qualsiasi di elementi a un array.
 
-Potete dividere una matrice in singoli bundle utilizzando un iteratore. Per ulteriori informazioni, vedere il modulo [[!UICONTROL Iterator] in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/iterator-module.md).
+Potete dividere una matrice in singoli bundle utilizzando un iteratore. Per ulteriori informazioni, vedere il modulo [[!UICONTROL Iterator] in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Mappare gli elementi in un nuovo array
 
@@ -96,7 +96,7 @@ Per aggiungere elementi all’array:
 
 1. Fai clic su **Aggiungi elemento**
 1. Nel pannello visualizzato, immetti i dettagli dell’elemento.
-1. Fare clic su **Aggiungi**.
+1. Fai clic su **Aggiungi**.
 1. (Facoltativo) Ripetere i passaggi 1-3 per ogni elemento che si desidera aggiungere all&#39;array .
 
 ## Mappare gli elementi dell’array
@@ -151,7 +151,7 @@ La formula può essere spiegata come segue:
 * `map`
 
    1. Il primo parametro della funzione `map()` è l&#39;intero elemento dell&#39;array.
-   1. Il secondo parametro è il nome non elaborato dell&#39;elemento valore. Per ottenere il nome non elaborato, passa il cursore del mouse sull&#39;elemento nel pannello [!UICONTROL mapping]:
+   1. Il secondo parametro è il nome non elaborato dell&#39;elemento valore. Per ottenere il nome non elaborato, passa il cursore sull&#39;elemento nel pannello [!UICONTROL mapping]:
 
       ![Ottieni nome non elaborato](assets/obtain-raw-name-350x124.png)
 

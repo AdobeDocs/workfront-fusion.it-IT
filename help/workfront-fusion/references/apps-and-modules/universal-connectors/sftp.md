@@ -4,16 +4,16 @@ description: I moduli  [!DNL Adobe Workfront Fusion SFTP]  consentono di monitor
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 358101ee7e4168913976b86fa712ed9aeb979093
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2216'
 ht-degree: 0%
 
 ---
 
 # Moduli SFTP
 
-I moduli SF[!DNL Adobe Workfront Fusion]TP di  consentono di monitorare le modifiche dei file in una cartella o sottocartella selezionata, caricare nuovi file nella cartella desiderata, modificare o eliminare i file esistenti già presenti in una cartella o modificare le autorizzazioni dei file.
+I moduli di Adobe Workfront Fusion SFTP consentono di monitorare le modifiche dei file in una cartella o sottocartella selezionata, caricare nuovi file nella cartella desiderata, modificare o eliminare i file esistenti già presenti in una cartella o modificare le autorizzazioni dei file.
 
 ## Requisiti di accesso
 
@@ -44,7 +44,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -54,17 +54,17 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Prerequisiti
 
-Per utilizzare SFTP con [!DNL Workfront Fusion], è necessario disporre di un account SFTP (ad esempio [!DNL GoDaddy] hosting Web).
+Per utilizzare SFTP con Workfront Fusion, è necessario disporre di un account SFTP (ad esempio [!DNL GoDaddy] hosting web).
 
-## Connetti SFTP a [!DNL Workfront Fusion] {#connect-sftp-to-workfront-fusion}
+## Connettere SFTP a Workfront Fusion {#connect-sftp-to-workfront-fusion}
 
-Per connettere l&#39;account SFTP a [!DNL Workfront Fusion] è necessario creare una connessione che specifichi l&#39;host di destinazione e le credenziali SFTP (nome utente e password o nome utente e chiave).
+Per connettere l’account SFTP a Workfront Fusion è necessario creare una connessione che specifichi l’host di destinazione e le credenziali SFTP (nome utente e password o nome utente e chiave).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -87,7 +87,7 @@ Per connettere l&#39;account SFTP a [!DNL Workfront Fusion] è necessario creare
    <td> <p>Immetti il nome host del server SFTP che desideri connettere.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Porta  </td> 
+   <td role="rowheader">Porta [!UICONTROL] </td> 
    <td> <p>Immetti la porta del server SFTP. Ad esempio, 22.</p> </td> 
   </tr> 
   <tr> 
@@ -95,7 +95,7 @@ Per connettere l&#39;account SFTP a [!DNL Workfront Fusion] è necessario creare
    <td> <p>Seleziona il metodo di autorizzazione da utilizzare per la connessione al server SFTP.</p> 
     <ul> 
      <li><strong>[!UICONTROL Nome utente e password]</strong>: immetti le credenziali.</li> 
-     <li> <p><strong>[!UICONTROL Nome utente e chiave]</strong>: immetti il nome utente e la chiave/certificato privato</p> <p>Carica la chiave privata per utilizzare l’autorizzazione lato client oppure carica il certificato (file P12 o PFX) se desideri utilizzare TLS con il certificato autofirmato. Se utilizzi l’autorizzazione del certificato lato client, puoi immettere qui il certificato CA.</p> <p>[!DNL Workfront Fusion] non conserva né archivia i dati (file, password) forniti in questo documento. File e password vengono utilizzati solo per estrarre una chiave privata o un certificato.</p> </li> 
+     <li> <p><strong>[!UICONTROL Nome utente e chiave]</strong>: immetti il nome utente e la chiave/certificato privato</p> <p>Carica la chiave privata per utilizzare l’autorizzazione lato client oppure carica il certificato (file P12 o PFX) se desideri utilizzare TLS con il certificato autofirmato. Se utilizzi l’autorizzazione del certificato lato client, puoi immettere qui il certificato CA.</p> <p>In Workfront Fusion non vengono conservati né archiviati i dati (file, password) forniti. File e password vengono utilizzati solo per estrarre una chiave privata o un certificato.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -155,7 +155,7 @@ Il connettore SFTP supporta quanto segue durante la creazione di una connessione
 
 ## [!UICONTROL Moduli SFTP] e relativi campi
 
-Quando configuri [!UICONTROL moduli SFTP], [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi [!UICONTROL SFTP], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri [!UICONTROL moduli SFTP], Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi [!UICONTROL SFTP], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -176,7 +176,7 @@ Restituisce i file con i dettagli quando un file viene creato o modificato in un
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -203,7 +203,7 @@ Restituisce le cartelle con i dettagli quando una cartella viene creata o modifi
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -235,7 +235,7 @@ Questo modulo di azione crea una nuova cartella nel percorso specificato.
 
 >[!NOTE]
 >
->Se la cartella esiste già, il modulo genera un errore. Per continuare il flusso senza interruzioni, allegare al modulo una route del gestore degli errori per rilevare l&#39;errore e utilizzare la direttiva [!UICONTROL Riprendi] per continuare il flusso. Per informazioni su come allegare una route del gestore degli errori, vedere [Gestione degli errori in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Per informazioni sulla route del gestore degli errori, vedere [Direttive per la gestione degli errori in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+>Se la cartella esiste già, il modulo genera un errore. Per continuare il flusso senza interruzioni, allegare al modulo una route del gestore degli errori per rilevare l&#39;errore e utilizzare la direttiva [!UICONTROL Riprendi] per continuare il flusso. Per informazioni su come allegare una route del gestore degli errori, vedere [Gestione degli errori in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Per informazioni sulla route del gestore degli errori, vedere [Direttive per la gestione degli errori in Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -243,7 +243,7 @@ Questo modulo di azione crea una nuova cartella nel percorso specificato.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -268,7 +268,7 @@ Questo modulo di azione crea una nuova cartella nel percorso specificato.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Percorso File]</td> 
@@ -285,7 +285,7 @@ Questo modulo di azione crea una nuova cartella nel percorso specificato.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Folder Path]</td> 
@@ -304,7 +304,7 @@ Questo modulo recupera i dettagli del file, inclusi i dati di un file.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Dimensione Buffer [B]]</td> 
@@ -327,7 +327,7 @@ Questo modulo restituisce file da una cartella specificata.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Dimensione Buffer [B]]</td> 
@@ -346,7 +346,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome del file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento </td> 
+   <td>Ordinamento [!UICONTROL]</td> 
    <td> <p> Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -368,7 +368,7 @@ Questo modulo restituisce file da una cartella specificata.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show] </td> 
@@ -387,7 +387,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento  </td> 
+   <td>Ordinamento [!UICONTROL] </td> 
    <td> <p>Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -409,7 +409,7 @@ Questo modulo restituisce file da una cartella specificata.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Percorso File]</td> 
@@ -432,7 +432,7 @@ Rinomina un file.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Percorso File]</td> 
@@ -455,7 +455,7 @@ Consente di modificare le autorizzazioni del file.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Percorso File]</td> 
@@ -478,7 +478,7 @@ Questo modulo ti consente di caricare un file sul server SFTP.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td>
-   <td> <p>Per istruzioni sulla connessione dell'account SFTP a [!DNL Workfront Fusion], consulta <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 

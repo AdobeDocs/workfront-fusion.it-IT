@@ -1,19 +1,19 @@
 ---
 title: Moduli JWT
-description: L'app  [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] fornisce un modulo che crea token JWT in base all'algoritmo specificato.
+description: L'app Adobe Workfront Fusion [!UICONTROL JWT] fornisce un modulo che crea i token JWT in base all'algoritmo fornito.
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
 
 # Modulo [!UICONTROL JWT]
 
-L&#39;app [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] fornisce un modulo che crea token JWT in base all&#39;algoritmo specificato.
+L&#39;app Adobe Workfront Fusion [!UICONTROL JWT] fornisce un modulo che crea i token JWT in base all&#39;algoritmo fornito.
 
 ## Requisiti di accesso
 
@@ -42,7 +42,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -52,7 +52,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -99,7 +99,7 @@ Questo modulo genera un JWT basato sull’algoritmo selezionato.
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Payload  </td> 
+   <td role="rowheader">Payload [!UICONTROL] </td> 
    <td> <p>Per ogni elemento del payload che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore dell'elemento.</p> </td> 
   </tr> 
   <tr> 

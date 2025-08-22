@@ -1,19 +1,19 @@
 ---
 title: Moduli Allocadia
-description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare i flussi di lavoro che utilizzano Allocadia e collegarlo a più applicazioni e servizi di terze parti.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Allocadia, nonché collegarlo a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9a6fccd6-6eee-42dc-a678-c1f34280d139
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
 
 # [!DNL Allocadia] moduli
 
-In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Allocadia] e collegarlo a più applicazioni e servizi di terze parti.
+In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Allocadia] e collegarlo a più applicazioni e servizi di terze parti.
 
 Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -28,35 +28,35 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Piano Adobe Workfront*</td>
+  <td> <p>[!UICONTROL Pro] o versione successiva</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
+   <td role="rowheader">Licenza Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Requisito di licenza corrente: nessun requisito di licenza per Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Requisiti di licenza legacy: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Fabbisogno corrente del prodotto: se disponi del piano Adobe Workfront [!UICONTROL Select] o [!UICONTROL Prime], per utilizzare le funzionalità descritte in questo articolo la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront. Workfront Fusion è incluso nel piano Workfront di [!UICONTROL Ultimate].</p>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Requisiti del prodotto legacy: per utilizzare le funzionalità descritte in questo articolo, la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore Workfront.
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Prerequisiti
 
@@ -81,18 +81,18 @@ Il connettore Allocadia utilizza quanto segue:
  </tbody> 
 </table>
 
-## Connetti [!DNL Allocadia] a [!DNL Workfront Fusion]
+## Connetti [!DNL Allocadia] a Workfront Fusion
 
 Puoi creare una connessione al tuo account [!DNL Allocadia] direttamente dall&#39;interno di un modulo [!DNL Allocadia].
 
-1. In qualsiasi modulo [!DNL Allocadia], fare clic su **[!UICONTROL Add]** accanto al campo [!UICONTROL Connection].
+1. In qualsiasi modulo [!DNL Allocadia], fai clic su **[!UICONTROL Aggiungi]** accanto al campo [!UICONTROL Connessione].
 1. Selezionare se si desidera utilizzare il server Nord America o Europa.
 1. Immettere il nome utente e la password.
-1. Fare clic su **[!UICONTROL Continue]** per creare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continua]** per creare la connessione e tornare al modulo.
 
 ## [!DNL Allocadia] moduli e relativi campi
 
-Quando configuri [!DNL Allocadia] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Allocadia], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando si configurano [!DNL Allocadia] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Allocadia], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -104,7 +104,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ### Trigger
 
-#### [!UICONTROL Watch Record]
+#### [!UICONTROL Osserva record]
 
 Questo modulo trigger esegue uno scenario quando vengono aggiunti, aggiornati o entrambi gli oggetti di un tipo specifico. Il modulo restituisce tutti i campi standard associati al record o ai record, insieme a tutti i campi e i valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
 
@@ -115,11 +115,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Allocadia a [!DNL Workfront Fusion], vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect Allocadia] a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Allocadia a Workfront Fusion, vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect Allocadia] to Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Filtro</td> 
-   <td> <p>Specificare se si desidera che lo scenario controlli Solo nuovi record, [!UICONTROL Updated Records Only] o Record nuovi e aggiornati.</p> </td> 
+   <td> <p>Specificare se si desidera che lo scenario controlli Solo nuovi record, Solo [!UICONTROL Record aggiornati] o Record nuovi e aggiornati.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo di entità</td> 
@@ -144,7 +144,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 * [Elimina record](#delete-record)
 * [Aggiorna record](#update-record)
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Chiamata API personalizzata]
 
 Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all&#39;API [!DNL Allocadia]. In questo modo è possibile creare un&#39;automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Allocadia].
 
@@ -158,7 +158,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a [!DNL Workfront Fusion], vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Allocadia] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a Workfront Fusion, vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Allocadia] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -170,10 +170,10 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] aggiunge le intestazioni di autorizzazione.</p> </td> 
+   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
    <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -186,7 +186,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Read Record]
+#### [!UICONTROL Leggi record]
 
 Questo modulo di azione legge i dati da un singolo record in [!DNL Allocadia].
 
@@ -202,15 +202,15 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a [!DNL Workfront Fusion], vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Allocadia] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a Workfront Fusion, vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Allocadia] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di entità]</td> 
    <td>Selezionare il tipo di record [!DNL Allocadia] che si desidera venga letto dal modulo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Selezionare i campi da includere nell'output del modulo. I campi disponibili dipendono da [!UICONTROL Entity Type] selezionato.</p> </td> 
+   <td role="rowheader">[!UICONTROL Output]</td> 
+   <td> <p>Selezionare i campi da includere nell'output del modulo. I campi disponibili dipendono dal tipo di entità [!UICONTROL] selezionato.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -219,7 +219,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Create Record]
+#### [!UICONTROL Crea record]
 
 Questo modulo di azione crea un record.
 
@@ -233,10 +233,10 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a [!DNL Workfront Fusion], vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Allocadia] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a Workfront Fusion, vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Allocadia] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di entità]</td> 
    <td>Specificare se si desidera creare un nuovo record in base alla voce di riga o alla scelta della colonna.</td> 
   </tr> 
   <tr> 
@@ -254,7 +254,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL Elimina record]
 
 Questo modulo di azione elimina un record specifico.
 
@@ -270,21 +270,21 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a [!DNL Workfront Fusion], vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Allocadia] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a Workfront Fusion, vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Allocadia] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di entità]</td> 
    <td> <p>Selezionate il tipo di entità da eliminare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Line item]</strong> </p> <p>Inserire l'ID della riga</p> </li> 
-     <li> <p><strong>[!UICONTROL Column Choice]</strong> </p> <p>Selezionare il budget dal quale si desidera eliminare un record, quindi immettere l'ID colonna e l'ID scelta.</p> </li> 
-     <li> <p><strong>[!UICONTROL Forecast Tags]</strong> </p> <p>Selezionare il budget dal quale si desidera eliminare un record, quindi immettere l'ID tag.</p> </li> 
+     <li> <p><strong>[!UICONTROL elemento riga]</strong> </p> <p>Inserire l'ID della riga</p> </li> 
+     <li> <p><strong>[!UICONTROL Scelta colonna]</strong> </p> <p>Selezionare il budget dal quale si desidera eliminare un record, quindi immettere l'ID colonna e l'ID scelta.</p> </li> 
+     <li> <p><strong>[!UICONTROL Tag previsioni]</strong> </p> <p>Selezionare il budget dal quale si desidera eliminare un record, quindi immettere l'ID tag.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update Record]
+#### [!UICONTROL Aggiorna record]
 
 Questo modulo di azione aggiorna un record, ad esempio una voce di riga, un utente o una scelta di colonna.
 
@@ -300,10 +300,10 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Allocadia] a [!DNL Workfront Fusion], vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Allocadia] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Allocadia] a Workfront Fusion, vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Allocadia] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di entità]</td> 
    <td>Selezionare il tipo di record [!DNL Allocadia] da aggiornare nel modulo. Gli altri campi vengono visualizzati in base al tipo di entità selezionato.</td> 
   </tr> 
   <tr> 
@@ -315,7 +315,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 ### Ricerche
 
-#### [!UICONTROL Search Record]
+#### [!UICONTROL Cerca record]
 
 Questo modulo di ricerca cerca i record in un oggetto in [!DNL Allocadia] che corrispondono alla query di ricerca specificata.
 
@@ -331,10 +331,10 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a [!DNL Workfront Fusion], vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Allocadia] a [!DNL Workfront Fusion]</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Allocadia] a Workfront Fusion, vedere <a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Allocadia] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo di entità]</td> 
    <td>Selezionare il tipo di record [!DNL Allocadia] da cercare nel modulo. </td> 
   </tr> 
   <tr> 
@@ -342,19 +342,19 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Selezionare il budget che si desidera cercare. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Result set]</td> 
+   <td role="rowheader">[!UICONTROL Set di risultati]</td> 
    <td>Selezionare se si desidera che il modulo restituisca tutti i record corrispondenti o solo il primo record corrispondente.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximal count of records]</td> 
+   <td role="rowheader">[!UICONTROL Conteggio massimo dei record]</td> 
    <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search criteria]</td> 
+   <td role="rowheader">Criteri di ricerca di [!UICONTROL]</td> 
    <td>Selezionare il campo che si desidera cercare, selezionare l'operazione e immettere o mappare il valore che si desidera cercare. Puoi aggiungere [!DNL AND] o [!DNL OR] regole per filtrare ulteriormente la ricerca.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Output]</td> 
    <td> <p>Selezionare i campi da includere nell'output del modulo. I campi disponibili dipendono dal tipo di entità selezionato.</p> </td> 
   </tr> 
  </tbody> 

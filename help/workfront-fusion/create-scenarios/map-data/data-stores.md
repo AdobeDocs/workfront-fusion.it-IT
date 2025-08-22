@@ -1,12 +1,12 @@
 ---
-title: Archivi dati in [!DNL Adobe Workfront Fusion]
+title: Archivi dati in Adobe Workfront Fusion
 description: Un archivio dati, simile a un database o a una semplice tabella, può memorizzare i dati di scenari, rendendo possibile il trasferimento di dati tra scenari singoli o l’esecuzione di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1344'
 ht-degree: 1%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 1%
 
 Un archivio dati, simile a un database o a una semplice tabella, può memorizzare i dati di scenari, rendendo possibile il trasferimento di dati tra scenari singoli o l’esecuzione di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
 
-I moduli dell&#39;archivio dati consentono di eseguire le azioni seguenti sui record dell&#39;archivio dati [!DNL Adobe Workfront Fusion]:
+I moduli dell’archivio dati consentono di eseguire le seguenti azioni sui record nell’archivio dati di Adobe Workfront Fusion:
 
-* Aggiungi
+* Add
 * Sostituisci
-* Aggiorna
+* Aggiornamento
 * Recupera
 * Elimina
 * Ricerca
 * Conteggio
 
-Per informazioni sull&#39;utilizzo dei moduli dell&#39;archivio dati, vedere [[!UICONTROL Data store] moduli](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
+Per informazioni sull&#39;utilizzo dei moduli di archivio dati, vedere [[!UICONTROL Moduli di archivio dati]](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
 
 Per un video introduttivo sugli archivi dati in Workfront Fusion, vedi:
 
@@ -42,17 +42,17 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacchetto</td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
    <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza</td> 
-   <td> <p>Nuovo: [!UICONTROL Standard]</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -60,9 +60,9 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Novità:</p> <ul><li>Piano Workfront di [!UICONTROL Select] o [!UICONTROL Prime]: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Workfront di [!UICONTROL Ultimate]: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -70,7 +70,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -87,7 +87,7 @@ Le istanze di Fusion sul pacchetto Ultimate ricevono:
 
 ### Seleziona piani e Prime
 
-Le istanze di Fusion nei pacchetti Select o Prime ricevono:—>
+Le istanze di fusione nei pacchetti Select o Prime ricevono:-->
 
 * 100 MB per le prime operazioni 500K.
 
@@ -97,34 +97,34 @@ Le istanze di Fusion nei pacchetti Select o Prime ricevono:—>
 
 La tua organizzazione può avere fino a 50 archivi di dati. La dimensione combinata di questi archivi dati non può superare la dimensione totale dell’archivio dati dell’organizzazione.
 
-## Crea un archivio dati in [!DNL Workfront Fusion]
+## Creazione di un archivio dati in Workfront Fusion
 
 * [Configurare l’archivio dati](#set-up-the-data-store)
 * [Impostare la struttura dati](#set-up-the-data-structure)
 
 ### Configurare l’archivio dati
 
-Prima di poter utilizzare un archivio dati in un modulo, è necessario creare l&#39;archivio dati in [!DNL Workfront Fusion].
+Prima di poter utilizzare un archivio dati in un modulo, è necessario creare l&#39;archivio dati in Workfront Fusion.
 
 >[!NOTE]
 >
->La tua organizzazione dispone di un numero limitato di archivi di dati. Se si tenta di creare un numero di archivi dati superiore a quello disponibile, [!DNL Workfront] restituisce un errore [!UICONTROL Maximum stores reached].
+>La tua organizzazione dispone di un numero limitato di archivi di dati. Se si tenta di creare un numero di archivi dati superiore a quello disponibile, Workfront restituisce un errore [!UICONTROL Numero massimo di archivi raggiunti].
 >
 >Per ulteriori informazioni, vedere [Numero massimo di archivi raggiunto l&#39;errore](#maximum-stores-reached-error) in questo articolo.
 
-1. Accedi al tuo account [!DNL Workfront Fusion].
-1. Fare clic su **[!UICONTROL Data stores]** nel pannello di navigazione a sinistra.
-1. Fare clic su **[!UICONTROL Add data store]** nell&#39;angolo superiore destro dello schermo.
+1. Accedi al tuo account Workfront Fusion.
+1. Fai clic su **[!UICONTROL Archivi dati]** nel pannello di navigazione a sinistra.
+1. Fai clic su **[!UICONTROL Aggiungi archivio dati]** nell&#39;angolo superiore destro della schermata.
 1. Immetti le impostazioni per il nuovo archivio dati.
 
-   Un titolo in grassetto in un campo di un modulo [!DNL Workfront Fusion] indica un&#39;impostazione obbligatoria.
+   Un titolo in grassetto in un campo di un modulo di Workfront Fusion indica un’impostazione obbligatoria.
 
    <table style="table-layout:auto">
     <col> 
     <col> 
     <tbody> 
      <tr> 
-      <td>[!UICONTROL Data store name] </td> 
+      <td>[!UICONTROL Nome archivio dati] </td> 
       <td> <p>Immettere un nome per l'archivio dati. </p> </td> 
      </tr> 
      <tr> 
@@ -145,15 +145,15 @@ Prima di poter utilizzare un archivio dati in un modulo, è necessario creare l&
 
 ### Impostare la struttura dati
 
-1. Durante la creazione o la modifica di un archivio dati, fare clic su **[!UICONTROL Add]**.
-1. Nella casella **[!UICONTROL Add data structure]** visualizzata, configura i campi seguenti:
+1. Durante la creazione o la modifica di un archivio dati, fare clic su **[!UICONTROL Aggiungi]**.
+1. Nella casella **[!UICONTROL Aggiungi struttura dati]** visualizzata, configura i campi seguenti:
 
    <table style="table-layout:auto">
     <col> 
     <col> 
     <tbody> 
      <tr> 
-      <td>[!UICONTROL Data structure name]</td> 
+      <td>[!UICONTROL Nome struttura dati]</td> 
       <td> <p> Immettere un nome per la nuova struttura dati.</p> </td> 
      </tr> 
      <tr> 
@@ -175,7 +175,7 @@ Prima di poter utilizzare un archivio dati in un modulo, è necessario creare l&
           <p><code>&rbrace;</code> </p> 
           <p>Le colonne vuote nella vista archivio dati:</p> 
           <p> <img src="assets/empty-columns-350x132.png" style="width: 350;height: 132;"> </p> 
-          <p>È possibile aggiungere valori all'archivio dati manualmente o utilizzando i moduli dell'archivio dati [!DNL Workfront Fusion].</p> 
+          <p>È possibile aggiungere valori all'archivio dati manualmente o utilizzando i moduli dell'archivio dati di Workfront Fusion.</p> 
          </div> </li> 
        </ul> </td> 
      </tr> 
@@ -188,7 +188,7 @@ Prima di poter utilizzare un archivio dati in un modulo, è necessario creare l&
 
 ## Modificare un archivio dati esistente
 
-È possibile modificare le proprietà e il contenuto di un archivio dati esistente nell&#39;area [!UICONTROL Data stores] di [!DNL Workfront Fusion].
+È possibile modificare le proprietà e il contenuto di un archivio dati esistente nell&#39;area [!UICONTROL Archivi dati] di Workfront Fusion.
 
 * [Modificare le proprietà di un archivio dati](#edit-the-properties-of-a-data-store)
 * [Modificare il contenuto di un archivio dati](#edit-the-contents-of-a-data-store)
@@ -197,25 +197,25 @@ Prima di poter utilizzare un archivio dati in un modulo, è necessario creare l&
 
 Le proprietà di un archivio dati includono la struttura dati utilizzata dall’archivio dati e le relative dimensioni.
 
-1. Fare clic su **[!UICONTROL Data stores]** ![Icona archivio dati](assets/data-store-icon.png) nel pannello di navigazione a sinistra per aprire l&#39;area [!UICONTROL Data stores].
-1. Fare clic su **[!UICONTROL Edit]** ![Modifica archivio dati](assets/data-store-edit.png) accanto all&#39;archivio dati che si desidera modificare.
-1. (Facoltativo) Se si desidera modificare la struttura dati utilizzata da questo archivio dati in un&#39;altra struttura dati esistente, selezionarla dal menu a discesa **[!UICONTROL Data structure]**.
+1. Fai clic sull&#39;icona **[!UICONTROL Archivio dati]** ![Archivio dati](assets/data-store-icon.png) nel pannello di navigazione a sinistra per aprire l&#39;area [!UICONTROL Archivi dati].
+1. Fai clic su **[!UICONTROL Modifica]** ![Modifica archivio dati](assets/data-store-edit.png) accanto all&#39;archivio dati che desideri modificare.
+1. (Facoltativo) Se desideri modificare la struttura dati utilizzata da questo archivio dati in un&#39;altra struttura dati esistente, selezionala dal menu a discesa **[!UICONTROL Struttura dati]**.
 
    Oppure
 
    (Facoltativo) Se desideri modificare la struttura dati utilizzata da questo archivio dati in una struttura dati completamente nuova, consulta [Configurare la struttura dati](#set-up-the-data-structure) in questo articolo.
 
-1. (Facoltativo) Modificare le dimensioni dell&#39;archivio dati immettendo la nuova dimensione nel campo **[!UICONTROL Data storage size in MB]**.
-1. Fare clic su **[!UICONTROL Save]**.
+1. (Facoltativo) Modificare le dimensioni dell&#39;archivio dati immettendo le nuove dimensioni nel campo **[!UICONTROL Dimensioni archiviazione dati in MB]**.
+1. Fai clic su **[!UICONTROL Salva]**.
 
 ### Modificare il contenuto di un archivio dati
 
-1. Fai clic sull&#39;icona **[!UICONTROL Data Store]** ![icona archivio dati](assets/data-store-icon.png) nel pannello di navigazione a sinistra per aprire l&#39;area [!UICONTROL Data Store].
-1. Fare clic su **[!UICONTROL Browse]** accanto all&#39;archivio dati che si desidera modificare.
+1. Fai clic sull&#39;icona **[!UICONTROL Archivio dati]** ![Icona Archivio dati](assets/data-store-icon.png) nel pannello di navigazione a sinistra per aprire l&#39;area [!UICONTROL Archivio dati].
+1. Fai clic su **[!UICONTROL Sfoglia]** accanto all&#39;archivio dati che desideri modificare.
 1. (Facoltativo) Riordinare le colonne trascinandole nella posizione desiderata.
-1. (Facoltativo) [!UICONTROL Edit] una singola cella facendo clic sull&#39;icona **[!UICONTROL Edit]** nella cella e immettendo il valore desiderato.
-1. (Facoltativo) Aggiungere un nuovo elemento all&#39;archivio dati facendo clic su **[!UICONTROL Add]** e immettendo le informazioni per il nuovo elemento.
-1. Fare clic su **[!UICONTROL Save]**.
+1. (Facoltativo) [!UICONTROL Modificare] una singola cella facendo clic sull&#39;icona **[!UICONTROL Modifica]** nella cella, quindi immettendo il valore desiderato.
+1. (Facoltativo) Aggiungere un nuovo elemento all&#39;archivio dati facendo clic su **[!UICONTROL Aggiungi]**, quindi immettendo le informazioni per il nuovo elemento.
+1. Fai clic su **[!UICONTROL Salva]**.
 
 ## Risoluzione dei problemi
 
@@ -238,9 +238,9 @@ Attualmente non esiste uno strumento in grado di automatizzare il ripristino dei
 
    Per informazioni sull&#39;inserimento di dati in un archivio dati, vedere [Modificare il contenuto di un archivio dati](#edit-the-contents-of-a-data-store) in questo articolo.
 
-### Errore [!UICONTROL Out of space]
+### [!UICONTROL Spazio insufficiente] errore
 
-Si è verificato un errore [!UICONTROL Out of Space] perché gli archivi dati creati in precedenza sono già stati assegnati all&#39;archivio dati allocato.
+Si è verificato un errore di [!UICONTROL Spazio esaurito] perché gli archivi dati creati in precedenza sono già stati assegnati all&#39;archivio dati allocato.
 
 #### Soluzione alternativa
 
@@ -252,9 +252,9 @@ Si è verificato un errore [!UICONTROL Out of Space] perché gli archivi dati cr
 >
 >È consigliabile non assegnare tutto lo spazio a un singolo archivio dati, a meno che non si sia certi di non richiedere altri archivi dati.
 
-### Errore [!UICONTROL Maximum stores reached]
+### [!UICONTROL Numero massimo di archivi raggiunto] errore
 
-Si è verificato un errore [!UICONTROL Maximum stores reached] perché l&#39;organizzazione ha utilizzato tutti gli archivi dati disponibili.
+Si è verificato un errore di [!UICONTROL numero massimo di archivi raggiunti] perché l&#39;organizzazione ha utilizzato tutti gli archivi dati disponibili.
 
 #### Soluzione alternativa
 

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1890'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 # Moduli aerodinamici
 
 
-Con il connettore [!DNL Airtable] per [!DNL Adobe Workfront Fusion], puoi avviare uno scenario basato sugli eventi nel tuo account [!DNL Airtable], creare, caricare e aggiornare record, cercare record ed effettuare chiamate API personalizzate all&#39;API Airtable.
+Con il connettore [!DNL Airtable] per Adobe Workfront Fusion, puoi avviare uno scenario basato sugli eventi nell&#39;account [!DNL Airtable], creare, caricare e aggiornare record, cercare record ed effettuare chiamate API personalizzate all&#39;API Airtable.
 
 ## Requisiti di accesso
 
@@ -25,27 +25,27 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Piano Adobe Workfront*</td>
+  <td> <p>[!UICONTROL Pro] o versione successiva</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
+   <td role="rowheader">Licenza Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
-   <td> <p>[!UICONTROL [!DNL Workfront Fusion] per l'automazione e l'integrazione del lavoro] </p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td> <p>[!UICONTROL Workfront Fusion per l'automazione e l'integrazione del lavoro] </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
-   <td>La tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</td> 
+   <td>Per utilizzare le funzionalità descritte in questo articolo, la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront.</td> 
   </tr> 
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore Workfront.
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Prerequisiti
 
@@ -127,7 +127,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Selezionare la tabella a cui apparterrà il nuovo record.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Inserimento</p> </td> 
+   <td> <p>Record</p> </td> 
    <td> <p>Immettere i valori per il nuovo record. I campi disponibili dipendono dalla tabella selezionata.</p> <!--<p>For more information on field types, search for "Supported field types" in the Airtable documentation.</p> 
     <ul> 
      <li> <p><strong>Text</strong>: string</p> <p>A single line of text.</p> </li> 
@@ -253,7 +253,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Selezionare la direzione di ordinamento e il campo in base al quale si desidera ordinare i risultati.</p> </td> 
   </tr> 
   <tr> 
-   <td>Visualizza </td> 
+   <td>Visualizzazione </td> 
    <td> <p>Selezionare la visualizzazione in cui si desidera cercare i record.</p> </td> 
   </tr> 
   <tr> 
@@ -294,7 +294,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immettere o mappare l'ID univoco della tabella di volo del record che si desidera aggiornare nel modulo. Puoi recuperare l’ID, ad esempio, utilizzando il modulo Record di ricerca.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Inserimento</p> </td> 
+   <td> <p>Record</p> </td> 
    <td> <p>Immettere i valori per il nuovo record. I campi disponibili dipendono dalla tabella selezionata.</p> <!--<p>In order to delete the content of the field, use the erase function. </p>  <p>Field types (via airtable.com/api):</p> 
     <ul> 
      <li> <p><strong>Text</strong>: string</p> <p>A single line of text.</p> </li> 
@@ -358,7 +358,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Se si sta aggiornando un record, immettere o mappare l'ID univoco della tabella di volo del record che si desidera aggiornare nel modulo. Puoi recuperare l’ID, ad esempio, utilizzando il modulo Record di ricerca.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Inserimento</p> </td> 
+   <td> <p>Record</p> </td> 
    <td> <p>Immettere i valori per il nuovo record. I campi disponibili dipendono dalla tabella selezionata.</p> <!-- <p>In order to delete the content of the field, use the erase function. </p>  <p>Field types (via airtable.com/api):</p> 
     <ul> 
      <li> <p><strong>Text</strong>: string</p> <p>A single line of text.</p> </li> 
@@ -424,7 +424,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
    <td> <p>Immettere o mappare il numero massimo di record che il modulo deve controllare durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td>Visualizza</td> 
+   <td>Visualizzazione</td> 
    <td> <p>Selezionare la visualizzazione che si desidera utilizzare.</p> </td> 
   </tr> 
   <tr> 
@@ -490,7 +490,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td role="rowheader">Intestazioni</td> 
-   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] aggiunge le intestazioni di autorizzazione.</p> </td> 
+   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Stringa di query</td> 

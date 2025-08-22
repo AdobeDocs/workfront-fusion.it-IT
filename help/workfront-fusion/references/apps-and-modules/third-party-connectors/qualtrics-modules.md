@@ -1,19 +1,19 @@
 ---
 title: Moduli Qualtrics
-description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare i flussi di lavoro che utilizzano Qualtrics e collegarli a più applicazioni e servizi di terze parti.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Qualtrics e collegarli a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
 exl-id: 80b441b7-c808-4c4f-b9ff-d614650dbb73
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '380'
 ht-degree: 1%
 
 ---
 
 # Moduli Qualtrics
 
-In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Qualtrics] e collegarlo a più applicazioni e servizi di terze parti.
+In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Qualtrics] e collegarlo a più applicazioni e servizi di terze parti.
 
 Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -28,35 +28,35 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
-  <td> <p>[!UICONTROL Pro] o superiore</p> </td>
+   <td role="rowheader">Piano Adobe Workfront*</td>
+  <td> <p>[!UICONTROL Pro] o versione successiva</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
+   <td role="rowheader">Licenza Adobe Workfront*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Requisito di licenza corrente: nessun requisito di licenza per Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Requisiti di licenza legacy: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], è necessario acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Fabbisogno corrente del prodotto: se disponi del piano Adobe Workfront [!UICONTROL Select] o [!UICONTROL Prime], per utilizzare le funzionalità descritte in questo articolo la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront. Workfront Fusion è incluso nel piano Workfront di [!UICONTROL Ultimate].</p>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Requisiti del prodotto legacy: per utilizzare le funzionalità descritte in questo articolo, la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore Workfront.
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Prerequisiti
 
@@ -85,11 +85,11 @@ Il connettore Qualtrics utilizza quanto segue:
  </tbody> 
  </table>
 
-## Connessione di [!DNL Qualtrics] a [!DNL Workfront Fusion]
+## Connessione di [!DNL Qualtrics] a Workfront Fusion
 
 Puoi creare una connessione al tuo account [!DNL Qualtrics] direttamente da un modulo [!UICONTROL Qualtrics].
 
-1. In qualsiasi modulo [!UICONTROL Qualtrics], fare clic su **[!UICONTROL Add]** accanto al campo [!UICONTROL Connection].
+1. In qualsiasi modulo [!UICONTROL Qualtrics], fai clic su **[!UICONTROL Aggiungi]** accanto al campo [!UICONTROL Connessione].
 1. Immettere le seguenti informazioni:
 
    <table style="table-layout:auto"> 
@@ -97,11 +97,11 @@ Puoi creare una connessione al tuo account [!DNL Qualtrics] direttamente da un m
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Nome connessione]</p> </td> 
       <td> <p>Immettere un nome per la nuova connessione.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Data Center ID] </td> 
+      <td role="rowheader">[!UICONTROL ID datacenter] </td> 
       <td>Utilizza il formato <code>&lt;Data Center ID>.qualtrics.com</code>.</td> 
      </tr> 
      <tr> 
@@ -111,18 +111,18 @@ Puoi creare una connessione al tuo account [!DNL Qualtrics] direttamente da un m
     </tbody> 
    </table>
 
-1. Fare clic su **[!UICONTROL Continue]** per creare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continua]** per creare la connessione e tornare al modulo.
 
 ## [!DNL Qualtrics] moduli e relativi campi
 
 Per il connettore [!DNL Qualtrics] sono disponibili i seguenti moduli:
 
-* [!UICONTROL Watch New Survey Response]
-* [!UICONTROL Create a Directory Contact]
-* [!UICONTROL Delete a Directory Contact]
-* [!UICONTROL Get a Directory Contact]
-* [!UICONTROL Update a Directory Contact]
-* [!UICONTROL Create a New Survey Distribution via SMS]
-* [!UICONTROL Distribute a Survey via Email]
-* [!UICONTROL Make an API call]
-* [!UICONTROL List Directory Contacts]
+* [!UICONTROL Guarda la risposta al nuovo sondaggio]
+* [!UICONTROL Crea un contatto directory]
+* [!UICONTROL Eliminare un contatto directory]
+* [!UICONTROL Ottieni un contatto directory]
+* [!UICONTROL Aggiorna un contatto directory]
+* [!UICONTROL Crea una nuova distribuzione sondaggio tramite SMS]
+* [!UICONTROL Distribuire un sondaggio tramite e-mail]
+* [!UICONTROL Effettuare una chiamata API]
+* [!UICONTROL Elenca contatti directory]

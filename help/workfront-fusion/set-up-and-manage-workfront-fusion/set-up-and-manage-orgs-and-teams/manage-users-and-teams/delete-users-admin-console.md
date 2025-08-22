@@ -6,16 +6,16 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 0%
+source-wordcount: '499'
+ht-degree: 1%
 
 ---
 
 # Elimina utenti tramite [!DNL Adobe Admin Console]
 
-È possibile rimuovere un utente solo da [!DNL Adobe Workfront Fusion], lasciando l&#39;accesso a qualsiasi altro profilo di prodotto [!DNL Adobe], oppure è possibile rimuovere completamente l&#39;utente da [!DNL Adobe Admin Console].
+È possibile rimuovere un utente solo da Adobe Workfront Fusion, lasciando l&#39;accesso a qualsiasi altro profilo di prodotto [!DNL Adobe], oppure è possibile rimuovere completamente l&#39;utente da [!DNL Adobe Admin Console].
 
 ## Requisiti di accesso
 
@@ -28,17 +28,17 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacchetto</td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
    <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza</td> 
-   <td> <p>Nuovo: [!UICONTROL Standard]</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -46,9 +46,9 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Novità:</p> <ul><li>Piano Workfront di [!UICONTROL Select] o [!UICONTROL Prime]: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Workfront di [!UICONTROL Ultimate]: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -62,15 +62,15 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Rimuovi un utente solo da [!DNL Adobe Workfront Fusion]
+## Rimuovere un utente solo da Adobe Workfront Fusion
 
 È possibile rimuovere un utente da Workfront Fusion lasciando intatte le altre autorizzazioni di prodotto di Adobe.
 
-Per istruzioni, vedere &quot;Rimuovere utenti e gruppi di utenti da un prodotto&quot; nell&#39;articolo [Gestire i prodotti nell&#39;Admin Console](https://helpx.adobe.com/it/enterprise/using/manage-products.html).
+Per istruzioni, vedere &quot;Rimuovere utenti e gruppi di utenti da un prodotto&quot; nell&#39;articolo [Gestire prodotti in Admin Console](https://helpx.adobe.com/it/enterprise/using/manage-products.html).
 
 ## Disattivare un utente in tutti i prodotti in [!DNL Adobe Admin Console]
 
@@ -85,7 +85,7 @@ Un utente viene disattivato da [!DNL Adobe Admin Console] quando si verifica una
 
   Per istruzioni, vedere la sezione &quot;Rimuovere utenti&quot; in [Gestire gli utenti singolarmente](https://helpx.adobe.com/it/enterprise/using/manage-users-individually.html).
 
-In [!DNL Workfront Fusion], la disattivazione interessa l&#39;utente in uno dei seguenti modi:
+In Workfront Fusion, la disattivazione influisce sull’utente in uno dei seguenti modi:
 
 * Se l’utente fa parte di una sola organizzazione, viene disattivato.
 * Se l&#39;utente fa parte di più organizzazioni, viene rimosso da quella in cui è stato modificato l&#39;utente in [!DNL Adobe Admin Console].

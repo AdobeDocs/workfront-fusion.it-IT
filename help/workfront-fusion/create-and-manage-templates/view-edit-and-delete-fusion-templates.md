@@ -7,16 +7,16 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
 
 # Visualizzare, modificare ed eliminare i modelli
 
-La funzionalità [!DNL Workfront Fusion] modelli consente di creare e utilizzare modelli esistenti come punto di partenza per gli scenari di Workfront Fusion. I modelli rappresentano casi d’uso comuni che è possibile configurare e modificare per soddisfare le esigenze della tua organizzazione e casi d’uso specifici.
+La funzione dei modelli di Workfront Fusion consente di creare e utilizzare modelli esistenti come punto di partenza per gli scenari di Workfront Fusion. I modelli rappresentano casi d’uso comuni che è possibile configurare e modificare per soddisfare le esigenze della tua organizzazione e casi d’uso specifici.
 
 Per un elenco dei modelli di Fusion attualmente disponibili, vedere [Modelli di Adobe Workfront Fusion attualmente disponibili](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md).
 
@@ -31,17 +31,17 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] pacchetto</td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
    <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza</td> 
-   <td> <p>Nuovo: [!UICONTROL Standard]</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
+   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -49,9 +49,9 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Novità:</p> <ul><li>Piano Workfront di [!UICONTROL Select] o [!UICONTROL Prime]: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Workfront di [!UICONTROL Ultimate]: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
@@ -59,7 +59,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -81,11 +81,11 @@ Nell&#39;area Modelli è possibile visualizzare i modelli disponibili, le applic
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Public templates]</td> 
+      <td role="rowheader">[!UICONTROL Modelli pubblici]</td> 
       <td> <p> Tutti i modelli pubblicati e successivamente approvati dall’amministratore. Nei riquadri del modello è possibile visualizzare il nome del modello, la relativa anteprima e l'icona del socket con un numero che indica quante volte il modello è stato utilizzato finora.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Team templates]</td> 
+      <td role="rowheader">[!UICONTROL Modelli team]</td> 
       <td> <p>Tutti i modelli creati dai membri del gruppo, inclusi quelli già resi pubblici dall’amministratore. Nei riquadri del modello è possibile visualizzare il nome del modello, le icone di stato descritte in dettaglio nella sezione Pubblicazione e condivisione di modelli di questa documentazione e i pulsanti Elimina.</p> <b>Nota:</b>Se nella scheda Modelli team non sono presenti i modelli previsti, controllare la barra di navigazione a sinistra o l'intestazione per verificare che il team visualizzato sia quello corretto.</td> 
      </tr> 
     </tbody> 
@@ -115,24 +115,24 @@ Per istruzioni sulla creazione di uno scenario da un modello, vedere [Creare sce
 
 ## Modificare un modello
 
-È possibile modificare qualsiasi modello disponibile nella scheda [!UICONTROL Team templates].
+Puoi modificare qualsiasi modello disponibile nella scheda [!UICONTROL Modelli team].
 
-1. Fai clic sull&#39;icona **[!UICONTROL Templates]** ![icona Modelli](assets/templates-icon.png) nel menu di navigazione laterale.
-1. Fare clic sulla scheda **[!UICONTROL Team templates]**.
-1. Fare clic sulla scheda **[!UICONTROL Private]**.
+1. Fai clic sull&#39;icona **[!UICONTROL Modelli]** ![Icona Modelli](assets/templates-icon.png) nel menu di navigazione laterale.
+1. Fare clic sulla scheda **[!UICONTROL Modelli team]**.
+1. Fare clic sulla scheda **[!UICONTROL Privato]**.
 1. Fai clic sul modello da modificare.
-1. Fai clic su **[!UICONTROL Edit]** in alto a destra
+1. Fai clic su **[!UICONTROL Modifica]** nell&#39;angolo superiore destro
 
    oppure
 
    Fare clic sul diagramma modello.
 
 1. Apporta le modifiche nel modello. Puoi accedere a tutte le opzioni disponibili durante la creazione del modello. Per visualizzare queste opzioni, vedere [Creare nuovi modelli](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md).
-1. Fai clic sull&#39;icona **[!UICONTROL Save]** ![Icona Salva](assets/save-icon.png).
+1. Fai clic sull&#39;icona **[!UICONTROL Salva]** ![Salva](assets/save-icon.png).
 
 >[!NOTE]
 >
->La scheda [!UICONTROL Team templates] include non solo i modelli pubblicati, ma anche le copie dei modelli già resi pubblici dall&#39;amministratore. Ciò significa che puoi modificare un modello già visibile a tutti. Se modifichi uno di questi modelli, le modifiche non sovrascrivono immediatamente il modello pubblico. Il modello nella scheda [!UICONTROL Public templates] è ancora intatto e rimane pubblico, ma la versione più recente con le modifiche apportate da [!UICONTROL Team templates] inizia il processo di pubblicazione. Quando la versione modificata viene pubblicata e approvata, sovrascrive il modello pubblico originale.
+>La scheda [!UICONTROL Modelli team] include non solo i modelli pubblicati, ma anche le copie dei modelli già resi pubblici dall&#39;amministratore. Ciò significa che puoi modificare un modello già visibile a tutti. Se modifichi uno di questi modelli, le modifiche non sovrascrivono immediatamente il modello pubblico. Il modello nella scheda [!UICONTROL Modelli pubblici] è ancora intatto e rimane pubblico, ma la versione più recente con le modifiche apportate dai [!UICONTROL Modelli team] avvia il processo di pubblicazione. Quando la versione modificata viene pubblicata e approvata, sovrascrive il modello pubblico originale.
 
 ## Eliminare un modello
 
@@ -140,12 +140,12 @@ Puoi eliminare solo i modelli non ancora approvati. Se desideri eliminare un mod
 
 Tieni presente che un modello eliminato non può essere ripristinato. I modelli di team sono disponibili per tutti i membri del team. Prima di eliminare un modello, è quindi consigliabile verificare con i team se il modello non è necessario.
 
-1. Fai clic sull&#39;icona **[!UICONTROL Templates]** ![icona Modelli](assets/templates-icon.png) nel menu di navigazione laterale.
-1. Fare clic sulla scheda **[!UICONTROL Team templates]**.
-1. Fai clic su **[!UICONTROL Delete]** accanto al nome del modello
+1. Fai clic sull&#39;icona **[!UICONTROL Modelli]** ![Icona Modelli](assets/templates-icon.png) nel menu di navigazione laterale.
+1. Fare clic sulla scheda **[!UICONTROL Modelli team]**.
+1. Fai clic su **[!UICONTROL Elimina]** accanto al nome del modello
 
    Oppure
 
-   Fai clic sul nome del modello per passare al modello. Fai clic su **[!UICONTROL Options]** nell&#39;angolo in alto a destra e seleziona **[!UICONTROL Delete]**.
+   Fai clic sul nome del modello per passare al modello. Fai clic su **[!UICONTROL Opzioni]** nell&#39;angolo superiore destro e seleziona **[!UICONTROL Elimina]**.
 
-1. Fare clic su **[!UICONTROL Really?]** per confermare l&#39;eliminazione.
+1. Fare clic su **[!UICONTROL ?]** per confermare l&#39;eliminazione.

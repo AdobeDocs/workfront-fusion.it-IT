@@ -4,16 +4,16 @@ description: Una struttura di dati è un documento che descrive in dettaglio il 
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: 2a81e013845f8a0e2720292984c451501e6011a0
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '242'
 ht-degree: 1%
 
 ---
 
 # Strutture di dati
 
-Una struttura dati è un documento o un modello che descrive in dettaglio il formato dei dati elaborati in [!DNL Adobe Workfront Fusion]. In base a questo documento, l’editor di scenari è in grado di capire quale modulo restituisce o riceve quale tipo di dati. I documenti della struttura dati vengono utilizzati in genere per la serializzazione/analisi dei formati di dati come JSON, XML, CSV e altri.
+Una struttura di dati è un documento o un modello che descrive in dettaglio il formato dei dati elaborati in Adobe Workfront Fusion. In base a questo documento, l’editor di scenari è in grado di capire quale modulo restituisce o riceve quale tipo di dati. I documenti della struttura dati vengono utilizzati in genere per la serializzazione/analisi dei formati di dati come JSON, XML, CSV e altri.
 
 È possibile creare una struttura dati facendo clic sul pulsante [!UICONTROL Crea una nuova struttura dati] nella sezione [!UICONTROL Panoramica sulla struttura dati] o nelle impostazioni del modulo che richiede la specifica della struttura dati.
 

@@ -4,10 +4,10 @@ description: Con i moduli Adobe I/O Events puoi avviare uno scenario Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 1%
+source-wordcount: '1085'
+ht-degree: 2%
 
 ---
 
@@ -44,7 +44,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -54,7 +54,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -155,7 +155,7 @@ Per creare una connessione per i moduli Adobe I/O Events:
 
 ## Moduli Adobe I/O Events e relativi campi
 
-Quando configuri [!DNL Adobe I/O Events] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Adobe I/O Events], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando si configurano [!DNL Adobe I/O Events] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Adobe I/O Events], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -373,7 +373,7 @@ Questo modulo di attivazione avvia uno scenario quando si verifica un evento nel
    <tbody> 
    <tr> 
    <td role="rowheader">Webhook</td> 
-   <td><p>Seleziona il webhook da utilizzare per questo trigger o aggiungi un nuovo webhook. </p><p>Per aggiungere un nuovo webhook: <ol><li>Fai clic su <b>Aggiungi</b> accanto al campo webhook.</li><li>Immetti quanto segue: <ul><li>Nome del webhook</li><li>Connessione da utilizzare per questo webhook</li><li>Origine degli eventi che si desidera visualizzare</li></ul></li><li>Fai clic su <b>Salva</b> per salvare il webhook e tornare al modulo. </td> 
+   <td><p>Seleziona il webhook da utilizzare per questo trigger o aggiungi un nuovo webhook. </p><p>Per aggiungere un nuovo webhook: <ol><li>Fai clic su <b>Aggiungi</b> accanto al campo webhook.</li><li>Immetti il codice seguente: <ul><li>Nome del webhook</li><li>Connessione da utilizzare per questo webhook</li><li>Origine degli eventi che si desidera visualizzare</li></ul></li><li>Fai clic su <b>Salva</b> per salvare il webhook e tornare al modulo. </td> 
    </tr> 
    </tbody> 
 </table>

@@ -1,14 +1,14 @@
 ---
 content-type: reference
 title: Direttive per la gestione degli errori
-description: Questo articolo descrive le direttive che puoi utilizzare per la gestione degli errori nei tuoi  [!DNL Adobe Workfront Fusion]  scenari.
+description: Questo articolo descrive le direttive che puoi utilizzare per la gestione degli errori negli scenari di Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 16%
+source-wordcount: '589'
+ht-degree: 15%
 
 ---
 
@@ -27,17 +27,17 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] pacchetto</td> 
+    <td role="rowheader">Pacchetto Adobe Workfront</td> 
    <td> <p>Qualsiasi</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] licenza</td> 
+   <td role="rowheader">Licenza Adobe Workfront</td> 
    <td> Nuovo: Standard<p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] licenza</td> 
+   <td role="rowheader">Licenza [!UICONTROL Adobe Workfront Fusion]</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
    <p>Oppure</p>
    <p>Legacy: qualsiasi </p>
    </td> 
@@ -45,18 +45,18 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>[!UICONTROL Select] o [!UICONTROL Prime] [!DNL Workfront] piano: l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] piano: [!DNL Workfront Fusion] incluso.</li></ul>
+   <p>Novità:</p> <ul><li>Piano Workfront di [!UICONTROL Select] o [!UICONTROL Prime]: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Workfront di [!UICONTROL Ultimate]: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion].</p>
+   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore Workfront.
 
-Per informazioni su [!DNL Adobe Workfront Fusion] per informazioni sulle licenze di Adobe Workfront Fusion, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni su Adobe Workfront Adobe Workfront Fusion, vedere [Licenze Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -70,7 +70,7 @@ In Workfront Fusion sono disponibili le seguenti direttive per la gestione degli
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Rollback</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>L’esecuzione dello scenario viene interrotta immediatamente.</li><li>Viene avviata una fase di rollback su tutti i moduli, nel tentativo di ripristinarne lo stato iniziale. </li><li>I moduli successivi non vengono elaborati.</p></li><li> <p>Nella maggior parte dei casi, lo scenario viene disattivato dopo il numero di errori consecutivi specificati in Impostazioni scenario. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Numero di errori consecutivi</a>.</p> </li><li><p>Lo stato di esecuzione dello scenario è contrassegnato come "Errore".</p></li></ul> <p><b>Nota</b>: questo è il comportamento predefinito se al modulo non è allegata alcuna route del gestore degli errori e se non è selezionata l'impostazione <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Consenti archiviazione esecuzioni incomplete</a>Consenti archiviazione esecuzioni incomplete in [!UICONTROL Scenario settings].</p> </td> 
+   <td> <ul><li><p>L’esecuzione dello scenario viene interrotta immediatamente.</li><li>Viene avviata una fase di rollback su tutti i moduli, nel tentativo di ripristinarne lo stato iniziale. </li><li>I moduli successivi non vengono elaborati.</p></li><li> <p>Nella maggior parte dei casi, lo scenario viene disattivato dopo il numero di errori consecutivi specificati in Impostazioni scenario. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Numero di errori consecutivi</a>.</p> </li><li><p>Lo stato di esecuzione dello scenario è contrassegnato come "Errore".</p></li></ul> <p><b>Nota</b>: questo è il comportamento predefinito se al modulo non è allegata alcuna route del gestore degli errori e se l'impostazione <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Consenti archiviazione esecuzioni incomplete</a>Consenti archiviazione esecuzioni incomplete in [!UICONTROL Scenario settings] non è selezionata.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Conferma</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -98,7 +98,7 @@ In Workfront Fusion sono disponibili le seguenti direttive per la gestione degli
 >[!NOTE]
 >
 >* Le direttive di gestione degli errori non possono essere utilizzate al di fuori di un percorso di gestione degli errori.
->* [!DNL Workfront Fusion] al momento non offre un modulo Throw che consentirebbe di generare errori in modo semplice e condizionale, anche se è possibile utilizzare una soluzione alternativa per imitare la funzionalità.
+>* Workfront Fusion attualmente non offre un modulo Throw che consentirebbe di generare errori in modo semplice e condizionale, anche se è possibile utilizzare una soluzione alternativa per imitarne la funzionalità.
 >
 >  Per ulteriori informazioni, vedere [Configurazione della soluzione alternativa per l&#39;errore `throw`](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md).
 

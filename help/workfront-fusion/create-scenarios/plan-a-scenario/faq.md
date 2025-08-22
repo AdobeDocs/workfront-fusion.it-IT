@@ -4,9 +4,9 @@ description: Le informazioni contenute in questo articolo possono essere utili q
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '552'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Anche se non esiste un limite al numero di moduli in uno scenario, più di 150 m
 
 Per ulteriori informazioni sui moduli, vedere [Panoramica modulo](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).
 
-## [!DNL Workfront Fusion] può lavorare con i file?
+## Workfront Fusion può funzionare con i file?
 
 ### Risposta
 
@@ -69,7 +69,7 @@ Il trasferimento di dati si riferisce alla quantità di dati trasferiti attraver
 
 ### Risposta
 
-Una connessione è il collegamento tra l&#39;account [!DNL Workfront Fusion] e il servizio di terze parti che si desidera utilizzare. La connessione può essere creata durante la modifica di uno scenario.
+Una connessione è il collegamento tra l’account Workfront Fusion e il servizio di terze parti che desideri utilizzare. La connessione può essere creata durante la modifica di uno scenario.
 
 Per ulteriori informazioni, vedere [Panoramica della connessione](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 
@@ -77,12 +77,12 @@ Per ulteriori informazioni, vedere [Panoramica della connessione](/help/workfron
 
 ### Risposta
 
-[!UICONTROL Aggregator] unisce i dati in un&#39;unica raccolta. Un esempio è dato dai file compressi in un archivio zip e inviati come allegato e-mail.
+Un [!UICONTROL Aggregator] unisce i dati in un&#39;unica raccolta. Un esempio è dato dai file compressi in un archivio zip e inviati come allegato e-mail.
 
 Per ulteriori informazioni, vedere il modulo [[!UICONTROL Aggregator]](/help/workfront-fusion/references/modules/aggregator-module.md).
 
-## Cosa succede se consento a [!DNL Workfront Fusion] di elaborare un&#39;e-mail contenente più di un allegato?
+## Cosa succede se consento a Workfront Fusion di elaborare un’e-mail contenente più di un allegato?
 
 ### Risposta
 
-Se si utilizza il modulo [!UICONTROL Email] [!UICONTROL Retrieve attachments], ogni allegato viene inviato singolarmente tramite gli altri moduli dello scenario. Moduli simili sono disponibili anche in altre app che ricevono più file contemporaneamente.
+Se utilizzi il modulo [!UICONTROL E-mail] [!UICONTROL Recupera allegati], ogni allegato viene inviato singolarmente tramite gli altri moduli dello scenario. Moduli simili sono disponibili anche in altre app che ricevono più file contemporaneamente.

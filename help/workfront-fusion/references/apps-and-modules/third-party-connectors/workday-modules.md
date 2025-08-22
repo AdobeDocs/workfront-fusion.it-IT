@@ -5,16 +5,16 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 1%
+source-wordcount: '1056'
+ht-degree: 2%
 
 ---
 
 # [!DNL Workday] moduli
 
-In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Workday] e collegarlo a più applicazioni e servizi di terze parti.
+In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Workday] e collegarlo a più applicazioni e servizi di terze parti.
 
 Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -49,7 +49,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -59,7 +59,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -90,9 +90,9 @@ Il connettore Workday utilizza quanto segue:
  </tbody> 
  </table>
 
-## Connetti [!DNL Workday] a [!DNL Workfront Fusion]
+## Connetti [!DNL Workday] a Workfront Fusion
 
-1. In qualsiasi modulo [!DNL Workfront Fusion], fai clic su [!UICONTROL Aggiungi] accanto al campo [!UICONTROL Connessione]
+1. In qualsiasi modulo di Workfront Fusion, fai clic su [!UICONTROL Aggiungi] accanto al campo [!UICONTROL Connessione]
 
 2. Compila i campi seguenti:
 
@@ -138,7 +138,7 @@ Il connettore Workday utilizza quanto segue:
 
 ## [!DNL Workday] moduli e relativi campi
 
-Quando configuri [!DNL Workday] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Workday], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando si configurano [!DNL Workday] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Workday], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -170,7 +170,7 @@ Questo modulo di azione crea un singolo record in [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
+            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a Workfront Fusion</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Tipo di record]</td>
@@ -199,7 +199,7 @@ Questo modulo di azione elimina un singolo record in [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a [!DNL Workfront Fusion], vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
+            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a Workfront Fusion</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Tipo di record]</td>
@@ -235,7 +235,7 @@ Il modulo restituisce il codice di stato a, insieme alle intestazioni e al corpo
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!DNL Connection]</p> </td> 
-            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a [!DNL Workfront Fusion], vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a [!DNL Workfront Fusion]</a>.</td>
+            <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a Workfront Fusion</a>.</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -336,7 +336,7 @@ Questo modulo di ricerca recupera un elenco di record del tipo specificato.
       <tbody>
           <tr>
               <td role="rowheader">[!UICONTROL Connection]</td>
-              <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a [!DNL Workfront Fusion], vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a [!DNL Workfront Fusion]</a></td>
+              <td>Per istruzioni sulla connessione dell'account [!DNL Workday] a Workfront Fusion, vedere <a href="#Connect" class="MCXref xref" >Connessione di [!DNL Workday] a Workfront Fusion</a></td>
           </tr>
           <tr>
               <td  role="rowheader">[!UICONTROL Tipo di record]</td>

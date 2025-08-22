@@ -1,19 +1,19 @@
 ---
 title: Parser testo
-description: È possibile utilizzare lo strumento parser di testo per analizzare il testo da utilizzare in altri [!DNL Adobe Workfront Fusion]  moduli scenario. Il parser di testo non richiede una connessione.
+description: È possibile utilizzare lo strumento parser di testo per analizzare il testo da utilizzare in altri moduli dello scenario di Adobe Workfront Fusion. Il parser di testo non richiede una connessione.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Parser di testo]
 
-È possibile utilizzare lo strumento [!UICONTROL parser di testo] per analizzare il testo da utilizzare in altri moduli di scenario [!DNL Adobe Workfront Fusion]. Il parser [!UICONTROL Text] non richiede una connessione.
+È possibile utilizzare lo strumento [!UICONTROL parser di testo] per analizzare il testo da utilizzare in altri moduli di Adobe Workfront Fusion. Il parser [!UICONTROL Text] non richiede una connessione.
 
 ## Requisiti di accesso
 
@@ -52,7 +52,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -73,7 +73,7 @@ Il connettore parser di testo utilizza quanto segue:
 
 ## [!UICONTROL Moduli parser di testo] e relativi campi
 
-Quando configuri i moduli [!UICONTROL Parser di testo], [!DNL Adobe Workfront Fusion] visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri [!UICONTROL moduli parser di testo], Adobe Workfront Fusion visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

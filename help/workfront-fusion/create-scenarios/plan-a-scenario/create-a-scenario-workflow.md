@@ -4,9 +4,9 @@ description: Segui questo flusso di lavoro generale per creare uno scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -34,18 +34,18 @@ Scelte rapide da tastiera
 
 ## Creare e denominare lo scenario
 
-1. Accedi al tuo account [!DNL Workfront Fusion].
-1. Fai clic su **[!UICONTROL Scenarios]** ![Icona Scenari](assets/scenarios-icon.png) nel pannello a sinistra.
+1. Accedi al tuo account Workfront Fusion.
+1. Fai clic su **[!UICONTROL Scenari]** ![Icona Scenari](assets/scenarios-icon.png) nel pannello a sinistra.
 
    >[!NOTE]
    >
    >Se il pannello di navigazione a sinistra o le relative icone non sono visibili, fare clic sull&#39;icona Menu ![Menu](assets/main-menu-icon-left-nav.png).
 
-1. (Facoltativo)Nel pannello [!UICONTROL **Cartelle**], fai clic sull&#39;icona **[!UICONTROL Add folder]** ![Icona Aggiungi cartella](assets/add-folder-icon.png), quindi digita un nome come &quot;Scenari di esercitazione&quot; per la prima cartella.
+1. (Facoltativo)Nel pannello [!UICONTROL **Cartelle**], fai clic sull&#39;icona **[!UICONTROL Aggiungi cartella]** ![Aggiungi cartella](assets/add-folder-icon.png), quindi digita un nome come &quot;Scenari di esercitazione&quot; per la prima cartella.
 
-1. (Facoltativo) Aprire la cartella, quindi fare clic su **[!UICONTROL Create a new scenario]** nell&#39;angolo superiore destro della pagina.
+1. (Facoltativo) Apri la cartella, quindi fai clic su **[!UICONTROL Crea un nuovo scenario]** nell&#39;angolo superiore destro della pagina.
 
-1. Selezionare il nome del segnaposto **[!UICONTROL New scenario]** nell&#39;angolo superiore sinistro, quindi digitare un nome come &quot;Esercitazione scenario 1&quot;.
+1. Seleziona il nome del segnaposto **[!UICONTROL Nuovo scenario]** nell&#39;angolo superiore sinistro, quindi digita un nome come &quot;Esercitazione scenario 1&quot;.
 
    ![Assegna un nome allo scenario](assets/name-the-scenario.png)
 
@@ -101,13 +101,13 @@ Per istruzioni, vedere gli articoli in [Configurare le impostazioni dello scenar
 
 Il test dello scenario consente di determinare se funziona come previsto. È quindi possibile rivedere lo scenario in base ai risultati, quindi ripetere il test.
 
-1. Fare clic su **[!UICONTROL Run once]** nell&#39;angolo inferiore sinistro dell&#39;editor di scenari.
+1. Fai clic su **[!UICONTROL Esegui una volta]** nell&#39;angolo inferiore sinistro dell&#39;editor scenari.
 1. Al termine dell’esecuzione dello scenario, fai clic sulla bolla del controllo di esecuzione sopra ogni modulo per visualizzare l’input delle informazioni e l’output di quel modulo.
 
    * Per informazioni generali sulla lettura delle informazioni di esecuzione dello scenario, vedere [Flusso di esecuzione dello scenario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
-   * Per informazioni sui bundle elaborati, vedere [Esecuzione scenario, cicli e fasi in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+   * Per informazioni sui bundle elaborati, vedere [Esecuzione di scenari, cicli e fasi in Adobe Workfront Fusion](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. In [!DNL Workfront Fusion], fai clic sull&#39;icona **[!UICONTROL Save]** ![Salva](assets/save-icon.png) nell&#39;angolo inferiore sinistro per salvare l&#39;avanzamento dello scenario.
+1. In Workfront Fusion, fai clic su **[!UICONTROL Salva]** ![Icona Salva](assets/save-icon.png) nell&#39;angolo in basso a sinistra per salvare l&#39;avanzamento dello scenario.
 
    >[!IMPORTANT]
    >
@@ -138,22 +138,22 @@ Durante la creazione o la modifica di uno scenario è possibile utilizzare le se
  </thead> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Save] </td> 
+   <td role="rowheader">[!UICONTROL Salva] </td> 
    <td>Ctrl+Maiusc+S</td> 
    <td>Cmd+Maiusc+S</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Run Once]</td> 
+   <td role="rowheader">[!UICONTROL Una Volta]</td> 
    <td>CTRL+MAIUSC+INVIO</td> 
    <td>Cmd+Maiusc+Invio</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td role="rowheader">[!UICONTROL Apri DevTool]</td> 
    <td>F12</td> 
    <td>CTRL+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td role="rowheader">[!UICONTROL Seleziona più moduli]</td> 
    <td>Maiusc+Trascina</td> 
    <td>Maiusc+Trascina</span> </td> 
   </tr> 
@@ -163,7 +163,7 @@ Durante la creazione o la modifica di uno scenario è possibile utilizzare le se
    <td>Cmd+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td role="rowheader">[!UICONTROL Incolla]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
   </tr> 

@@ -5,16 +5,16 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 896597fa4a0689c19eb56d98f447c6a719d90ca2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '4128'
+source-wordcount: '4145'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe PDF Services]
 
-Con [!DNL Adobe Workfront Fusion] [!DNL Adobe PDF Services] è possibile estrarre dati da un file PDF o generare un nuovo file PDF dai dati forniti. Inoltre, è possibile convertire diversi tipi di file in PDF o PDF in altri tipi di file. I servizi PDF consentono inoltre di combinare, comprimere o leggere i metadati di un file PDF e di controllare la protezione tramite password del file.
+Con Adobe Workfront Fusion [!DNL Adobe PDF Services], è possibile estrarre dati da un file PDF o generare un nuovo file PDF dai dati forniti. Inoltre, è possibile convertire diversi tipi di file in PDF o PDF in altri tipi di file. I servizi PDF consentono inoltre di combinare, comprimere o leggere i metadati di un file PDF e di controllare la protezione tramite password del file.
 
 Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -24,7 +24,7 @@ Per informazioni sull&#39;API utilizzata per i servizi PDF, vedere [Adobe Docume
 
 ## Considerazioni sulla sicurezza durante l&#39;utilizzo di [!DNL Adobe PDF Services]
 
-[!DNL Adobe PDF Services] può leggere, convertire o modificare i tuoi file, ma né [!DNL Adobe] né [!DNL Workfront Fusion] memorizzano i tuoi file o dati. Ciò significa che:
+[!DNL Adobe PDF Services] può leggere, convertire o modificare i tuoi file, ma né [!DNL Adobe] né Workfront Fusion memorizzano i tuoi file o dati. Ciò significa che:
 
 * L&#39;utente mantiene il controllo dei file, inclusa la protezione
 * Non è necessario disporre di un account di archiviazione [!UICONTROL Adobe] o di un account di archiviazione cloud per utilizzare i servizi PDF.
@@ -58,7 +58,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -68,7 +68,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -125,7 +125,7 @@ Per creare una connessione per i moduli [!DNL Adobe PDF Services]:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p></td>
+          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]</td>
@@ -133,11 +133,11 @@ Per creare una connessione per i moduli [!DNL Adobe PDF Services]:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Technical account ID] (solo JWT)</td>
-          <td>Immetti l'ID account tecnico [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
+          <td>Immetti l'ID account tecnico [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Organization ID] (solo JWT)</td>
-          <td>Immetti l'ID organizzazione [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
+          <td>Immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Meta ambiti] (solo JWT)</td>
@@ -176,7 +176,7 @@ Per creare una connessione per i moduli [!DNL Adobe PDF Services]:
 
 ## [!DNL Adobe PDF Services] moduli e relativi campi
 
-Quando configuri [!DNL PDF Services], [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi aggiuntivi, a seconda di fattori come il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando si configura [!DNL PDF Services], Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi aggiuntivi, a seconda di fattori come il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -577,7 +577,7 @@ Compila i campi del modulo [!UICONTROL Genera documento] come segue:
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> <p>Il file di origine è il modello [!DNL Microsoft Word] utilizzato dal modulo per generare il nuovo PDF.</p> <p>È consigliabile creare un progetto in [!DNL Workfront] per i modelli [!DNL Microsoft Word] utilizzati in [!DNL Workfront Fusion]. È quindi possibile utilizzare il modulo [!DNL Workfront] &gt; [!UICONTROL Download document] per richiamare il modello appropriato nello scenario.</p> </td> 
+   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> <p>Il file di origine è il modello [!DNL Microsoft Word] utilizzato dal modulo per generare il nuovo PDF.</p> <p>È consigliabile creare un progetto in Workfront per i modelli [!DNL Microsoft Word] utilizzati in Workfront Fusion. Puoi quindi utilizzare il modulo Workfront &gt; [!UICONTROL Download document] per richiamare il modello appropriato nello scenario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Formato Di Output]</td> 
@@ -593,7 +593,7 @@ Compila i campi del modulo [!UICONTROL Genera documento] come segue:
     <ul> 
      <li> <p>[!UICONTROL Key]</p> <p>Immetti una chiave. Nel modello, la chiave è il testo mostrato nel tag valore. Se ad esempio si desidera inserire del testo nel tag valore <code>&#123;&#123;name&#125;&#125;</code>, immettere <code>name </code> nel campo chiave.</p> </li> 
      <li> <p>Tipo di valore</p> <p>Seleziona se i dati nel campo valore sono un valore, un oggetto o un array di oggetti.</p> </li> 
-     <li> <p>Valore </p> <p>Immettere o mappare il testo che si desidera visualizzare nel documento generato al posto del tag value.</p> </li> 
+     <li> <p>Valore [!UICONTROL]</p> <p>Immettere o mappare il testo che si desidera visualizzare nel documento generato al posto del tag value.</p> </li> 
     </ul> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/generate-with-template-350x241.png" style="width: 350;height: 241;"> </p> </td> 
   </tr> 
  </tbody> 
@@ -846,7 +846,7 @@ Questo strumento protegge un documento PDF con una password utente o proprietari
    <td> <p>Abilita questa opzione per utilizzare le password per crittografare il documento PDF di input. Se si abilita questa opzione, è necessario specificare e immettere un valore per uno o entrambi i seguenti elementi: </p> 
     <ul> 
      <li> <p>[!UICONTROL Password Utente]</p> </li> 
-     <li> <p>Password proprietario  </p> </li> 
+     <li> <p>Password proprietario [!UICONTROL] </p> </li> 
     </ul> <p>Ogni password può contenere fino a 128 caratteri.</p> </td> 
   </tr> 
   <tr> 
@@ -868,7 +868,7 @@ Questo strumento protegge un documento PDF con una password utente o proprietari
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>Selezionare le autorizzazioni da includere per consentire la stampa, la modifica o la copia del contenuto.</p> <p>Le impostazioni delle autorizzazioni vengono utilizzate solo se la password del proprietario  è impostata nel campo [!UICONTROL Password Protection Type].</p> </td> 
+   <td> <p>Selezionare le autorizzazioni da includere per consentire la stampa, la modifica o la copia del contenuto.</p> <p>Le impostazioni delle autorizzazioni vengono utilizzate solo se la password del proprietario [!UICONTROL] è impostata nel campo [!UICONTROL Password Protection Type].</p> </td> 
   </tr> 
  </tbody> 
 </table>

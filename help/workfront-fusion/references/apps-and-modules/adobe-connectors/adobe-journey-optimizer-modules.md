@@ -1,19 +1,19 @@
 ---
 title: Moduli Adobe Journey Optimizer
-description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare i flussi di lavoro che utilizzano  [!DNL Adobe Journey Optimizer], nonché collegarli a più applicazioni e servizi di terze parti.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano  [!DNL Adobe Journey Optimizer], nonché collegarli a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '3704'
+source-wordcount: '3747'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Journey Optimizer] moduli
 
-In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Journey Optimizer] e collegarlo a più applicazioni e servizi di terze parti. I moduli [!DNL Adobe Journey Optimizer] consentono di creare, leggere, aggiornare o eliminare record oppure di eseguire una chiamata API personalizzata all&#39;API [!DNL Adobe Journey Optimizer].
+In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Journey Optimizer] e collegarlo a più applicazioni e servizi di terze parti. I moduli [!DNL Adobe Journey Optimizer] consentono di creare, leggere, aggiornare o eliminare record oppure di eseguire una chiamata API personalizzata all&#39;API [!DNL Adobe Journey Optimizer].
 
 
 Se hai bisogno di istruzioni per la creazione di uno scenario, consulta gli articoli in [Creare uno scenario: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
@@ -31,40 +31,40 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] piano*</td>
+      <td role="rowheader">Piano Adobe Workfront*</td>
       <td>
         <p>[!UICONTROL Pro] o versione successiva</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] licenza*</td>
+      <td role="rowheader">Licenza Adobe Workfront*</td>
       <td>
         <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] licenza**</td>
+      <td role="rowheader">Licenza Adobe Workfront Fusion**</td>
       <td>
-   <p>Requisiti di licenza correnti: nessun requisito di licenza [!DNL Workfront Fusion].</p>
+   <p>Requisito di licenza corrente: nessun requisito di licenza per Workfront Fusion.</p>
    <p>Oppure</p>
-   <p>Requisito licenza legacy: [!UICONTROL [!DNL Workfront Fusion] per automazione e integrazione del lavoro] </p>
+   <p>Requisiti di licenza legacy: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">Prodotto</td>
       <td>
-   <p>Fabbisogno prodotto corrente: se si dispone del piano [!UICONTROL Select] o [!UICONTROL Prime] [!DNL Adobe Workfront], l'organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo. [!DNL Workfront Fusion] è incluso nel piano [!UICONTROL Ultimate] [!DNL Workfront].</p>
+   <p>Fabbisogno corrente del prodotto: se disponi del piano Adobe Workfront [!UICONTROL Select] o [!UICONTROL Prime], per utilizzare le funzionalità descritte in questo articolo la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront. Workfront Fusion è incluso nel piano Workfront di [!UICONTROL Ultimate].</p>
    <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: la tua organizzazione deve acquistare [!DNL Adobe Workfront Fusion] e [!DNL Adobe Workfront] per utilizzare le funzionalità descritte in questo articolo.</p>
+   <p>Requisiti del prodotto legacy: per utilizzare le funzionalità descritte in questo articolo, la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront.</p>
    </td>
     </tr>
   </tbody>
 </table>
 
 
-Per conoscere il piano, il tipo di licenza o l&#39;accesso disponibili, contattare l&#39;amministratore [!DNL Workfront].
+Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore Workfront.
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -131,7 +131,7 @@ Puoi creare una connessione in qualsiasi modulo di Adobe Journey Optimizer.
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID organizzazione]</td>
-        <td>Immetti l'ID organizzazione [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Nome Sandbox]</td>
@@ -147,7 +147,7 @@ Puoi creare una connessione in qualsiasi modulo di Adobe Journey Optimizer.
 
 ## [!DNL Adobe Journey Optimizer] moduli e relativi campi
 
-Quando configuri [!DNL Adobe Journey Optimizer] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Adobe Journey Optimizer], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando si configurano [!DNL Adobe Journey Optimizer] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Adobe Journey Optimizer], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -207,7 +207,7 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
    <td>Inserisci o mappa l’ID Adobe IMS dell’organizzazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metodi </td> 
+   <td role="rowheader">Metodi [!UICONTROL]</td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
@@ -247,11 +247,11 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metodi </td> 
+   <td role="rowheader">Metodi [!UICONTROL]</td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Velocità effettiva massima </td> 
+   <td role="rowheader">Velocità effettiva massima [!UICONTROL]</td> 
    <td>Seleziona se utilizzi un’azione o un’origine dati per questa configurazione.</td> 
   </tr> 
   <tr> 
@@ -856,7 +856,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td>Selezionare l'origine del modello.</td>  
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
@@ -896,7 +896,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td>Seleziona l’origine del frammento.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
@@ -1035,7 +1035,7 @@ Questo modulo di azione attiva un messaggio unitario ai destinatari specificati.
    <td role="rowheader">[!UICONTROL Destinatari]</td> 
    <td>Per ogni destinatario che si desidera ricevere questo messaggio, fare clic su <b>Aggiungi destinatario</b> e immettere quanto segue:
    <ul>
-   <li><p><b>Tipo</b></p>Selezionare <code>aep</code>.</li>
+   <li><p><b>Tipo</b></p>Seleziona <code>aep</code>.</li>
    <li><p><b>ID utente</b></p>Immetti o mappa l’identificatore del profilo Adobe Experience Platform del destinatario.</li>
    <li><p><b>Namespace</b></p>Inserisci o mappa il namespace del profilo Adobe Experience Platform del destinatario.</li>
    <li><p><b>Indirizzo e-mail</b></p></li>
@@ -1240,7 +1240,7 @@ Questo modulo di ricerca elenca i processi di esportazione e importazione corren
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">Parametro query </td> 
+   <td role="rowheader">Parametro query [!UICONTROL]</td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 
@@ -1273,7 +1273,7 @@ Questo modulo di ricerca elenca tutti i pacchetti dell’organizzazione. Puoi ut
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">Parametro query </td> 
+   <td role="rowheader">Parametro query [!UICONTROL]</td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 
@@ -1347,7 +1347,7 @@ Questo modulo di azione effettua una chiamata API personalizzata all’API Adobe
       <td>
         <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p>
         <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] aggiunge automaticamente le intestazioni autorizzazione, <code>x-api-key</code> e <code>x-gw-ims-org-id</code>.</p>
+        <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione, <code>x-api-key</code> e <code>x-gw-ims-org-id</code>.</p>
       </td>
     </tr>
     <tr>

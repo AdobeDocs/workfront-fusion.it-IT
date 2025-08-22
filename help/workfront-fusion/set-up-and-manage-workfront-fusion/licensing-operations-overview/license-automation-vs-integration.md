@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion offre due diverse licenze che determinano la
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -40,9 +40,9 @@ Per informazioni sul tipo di licenza di Workfront Fusion di cui dispone la tua o
 
 #### Vantaggi di Workfront Fusion per l&#39;automazione del lavoro
 
-Una licenza di Workfront Fusion for Work Automation consente di automatizzare i workflow [!DNL Workfront]. Utilizzando Workfront Fusion per l’automazione del lavoro, puoi creare scenari per automatizzare i processi di lavoro specifici della tua organizzazione.
+Una licenza di Workfront Fusion for Work Automation consente di automatizzare i flussi di lavoro Workfront. Utilizzando Workfront Fusion per l’automazione del lavoro, puoi creare scenari per automatizzare i processi di lavoro specifici della tua organizzazione.
 
-I vantaggi dell&#39;automazione dei processi [!DNL Workfront] includono:
+I vantaggi dell&#39;automazione dei processi Workfront sono i seguenti:
 
 * L’automazione è più rapida e meno soggetta a errori.
 * I flussi di lavoro che non richiedono decisioni, o che hanno decisioni basate su logica semplice come se/allora, sono buoni candidati per l’automazione.
@@ -98,15 +98,15 @@ Per un elenco dei connettori dedicati disponibili, vedere [Riferimenti alle appl
 
 >[!IMPORTANT]
 >
->Workfront Fusion è in grado di connettersi a quasi tutti i servizi Web. Se l&#39;app che si desidera utilizzare non dispone di un connettore dedicato, è possibile utilizzare i connettori [!UICONTROL HTTP], [!UICONTROL SFTP] o [!UICONTROL JSON] per connettersi direttamente al servizio Web.
+>Workfront Fusion è in grado di connettersi a quasi tutti i servizi Web. Se l&#39;app che desideri utilizzare non dispone di un connettore dedicato, puoi utilizzare i connettori [!UICONTROL HTTP], [!UICONTROL SFTP] o [!UICONTROL JSON] per connettersi direttamente al servizio Web.
 
 #### Esempio di Workfront Fusion per l&#39;automazione e l&#39;integrazione del lavoro
 
 L’esempio seguente mostra un flusso di lavoro che:
 
 1. Guarda un foglio di calcolo per i nuovi utenti
-1. Verifica se l&#39;utente esiste in [!DNL Workfront]
-1. Crea l&#39;utente in [!DNL Workfront] se l&#39;utente non esiste
-1. Carica di nuovo l&#39;ID utente [!DNL Workfront] nel foglio di calcolo.
+1. Verifica se l’utente esiste in Workfront
+1. Crea l&#39;utente in Workfront se non esiste
+1. Carica di nuovo l’ID utente di Workfront nel foglio di calcolo.
 
 ![Esempio di automazione](assets/fusion-integration-example.png)

@@ -4,9 +4,9 @@ description: Molti servizi forniscono webhook per inviare notifiche istantanee o
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Quando configuri un trigger istantaneo, ti viene richiesto di selezionare quando
 
 ![Impostazione pianificazione](assets/schedule-setting.png)
 
-Selezionare `Immediately` per eseguire immediatamente lo scenario quando [!DNL Workfront Fusion] riceve nuovi eventi dal servizio. Questi eventi vengono immediatamente inviati in una coda e quindi elaborati nello scenario uno alla volta, nello stesso ordine in cui vengono ricevuti i dati.
+Selezionare `Immediately` per eseguire immediatamente lo scenario quando Workfront Fusion riceve nuovi eventi dal servizio. Questi eventi vengono immediatamente inviati in una coda e quindi elaborati nello scenario uno alla volta, nello stesso ordine in cui vengono ricevuti i dati.
 
 Quando lo scenario viene eseguito, viene conteggiata la quantità totale di eventi in sospeso in attesa nella coda e lo scenario esegue il numero di cicli corrispondente agli eventi in sospeso, elaborando un evento per ciclo.
 
@@ -60,10 +60,10 @@ Per ulteriori informazioni sui cicli, vedere [Esecuzione dello scenario, cicli e
 >
 
 
-Se si utilizza un&#39;impostazione di pianificazione diversa da [!UICONTROL Immediately], lo scenario viene eseguito agli intervalli specificati. Poiché è possibile raccogliere più webhook nella coda durante l&#39;intervallo, si consiglia di impostare l&#39;opzione [!UICONTROL Maximum number of cycles] su un valore superiore a quello predefinito 1 per elaborare più webhook in un&#39;esecuzione dello scenario:
+Se utilizzi un&#39;impostazione di pianificazione diversa da [!UICONTROL Immediatamente], lo scenario viene eseguito agli intervalli specificati. Poiché è possibile raccogliere più webhook nella coda durante l&#39;intervallo, si consiglia di impostare l&#39;opzione [!UICONTROL Numero massimo di cicli] su un valore maggiore del valore predefinito 1 per elaborare più webhook in un&#39;esecuzione dello scenario:
 
-1. Fai clic sull&#39;icona [!UICONTROL Scenario settings] ![icona Impostazioni scenario](assets/scenario-settings-icon.png) nella parte inferiore dello scenario.
-1. Nel pannello **[!UICONTROL Scenario settings]** visualizzato, immettere un numero nel campo **[!UICONTROL Max number of cycles]** per indicare il numero di eventi dalla coda che si desidera eseguire ogni volta che si esegue lo scenario.
+1. Fai clic sull&#39;icona [!UICONTROL Impostazioni scenario] ![Icona Impostazioni scenario](assets/scenario-settings-icon.png) nella parte inferiore dello scenario.
+1. Nel pannello **[!UICONTROL Impostazioni scenario]** visualizzato, immettere un numero nel campo **[!UICONTROL Numero massimo di cicli]** per indicare il numero di eventi dalla coda che si desidera eseguire ogni volta che si esegue lo scenario.
 
 Gli eventi rimanenti nella coda verranno elaborati alla successiva esecuzione dello scenario, fino al numero impostato nel campo Numero massimo di cicli.
 
@@ -81,20 +81,20 @@ Un webhook che non è stato assegnato ad alcuno scenario per più di 120 ore vie
 
 ### Payload del webhook
 
-[!DNL Workfront Fusion] memorizza i payload del webhook per 30 giorni. Se si accede a un payload del webhook più di 30 giorni dopo la sua creazione, si verifica l&#39;errore [!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion memorizza i payload del webhook per 30 giorni. Se si accede a un payload del webhook più di 30 giorni dopo la sua creazione, si verifica l&#39;errore [!UICONTROL `Failed to read file from storage.`]
 
 ### Gestione degli errori
 
 Quando si verifica un errore nello scenario con un trigger istantaneo, lo scenario:
 
-* Si arresta immediatamente quando lo scenario è impostato per l&#39;esecuzione di [!UICONTROL Immediately].
+* Si arresta immediatamente quando lo scenario è impostato per l&#39;esecuzione [!UICONTROL Immediata].
 * Si interrompe dopo 3 tentativi non riusciti (3 errori) quando lo scenario viene impostato per l’esecuzione come pianificato.
 
 Se si verifica un errore durante l’esecuzione dello scenario, l’evento viene rimesso in coda durante la fase di rollback dell’attivatore istantaneo. In tale situazione, puoi correggere lo scenario ed eseguirlo nuovamente.
 
 Per ulteriori informazioni, vedere [Rollback](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) nell&#39;articolo Esecuzione scenario, cicli e fasi.
 
-Se nello scenario è presente un modulo di risposta Webhook, l’errore viene inviato alla risposta Webhook. Il modulo di risposta Webhook viene sempre eseguito per ultimo (quando l&#39;opzione [!UICONTROL Auto commit] nelle impostazioni Scenario non è abilitata).
+Se nello scenario è presente un modulo di risposta Webhook, l’errore viene inviato alla risposta Webhook. Il modulo di risposta Webhook viene sempre eseguito per ultimo (quando l&#39;opzione [!UICONTROL Conferma automatica] nelle impostazioni dello scenario non è abilitata).
 
 Per ulteriori informazioni, vedere [Risposta ai webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks) nell&#39;articolo Webhook.
 

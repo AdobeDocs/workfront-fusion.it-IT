@@ -4,16 +4,16 @@ description: L’app JSON per Adobe Workfront Fusion fornisce moduli per elabora
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 0%
+source-wordcount: '1254'
+ht-degree: 1%
 
 ---
 
 # [!UICONTROL Moduli JSON]
 
-L&#39;app [!DNL Adobe Workfront Fusion] [!UICONTROL JSON] fornisce moduli per elaborare i dati in formato JSON in modo che [!DNL Adobe Workfront Fusion] possa lavorare ulteriormente con il contenuto dei dati o creare nuovo contenuto JSON.
+L&#39;app Adobe Workfront Fusion [!UICONTROL JSON] fornisce moduli per elaborare i dati in formato JSON in modo che Adobe Workfront Fusion possa lavorare ulteriormente con il contenuto dei dati o creare nuovi contenuti JSON.
 
 ## Requisiti di accesso
 
@@ -44,7 +44,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -54,7 +54,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -65,11 +65,11 @@ Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adob
 
 ### Struttura dei dati
 
-La struttura dati descrive come sono organizzati i dati JSON e consente la mappatura di singoli elementi JSON ad altri moduli nello scenario. Se non fornisci la struttura dati, puoi eseguire manualmente il modulo e [!DNL Workfront Fusion] creerà la struttura dal JSON fornito:
+La struttura dati descrive come sono organizzati i dati JSON e consente la mappatura di singoli elementi JSON ad altri moduli nello scenario. Se non fornisci la struttura Dati, puoi eseguire manualmente il modulo e Workfront Fusion ne creerà la struttura dal JSON fornito:
 
 1. Aggiungi il modulo [!UICONTROL Analizza JSON] a uno scenario.
 1. Nel campo **[!UICONTROL Stringa JSON]**, immetti il JSON da cui desideri creare una struttura di dati.
-1. Non connettere altri moduli al modulo [!UICONTROL Analizza JSON]. Poiché [!DNL Workfront Fusion] non conosce ancora la struttura dei dati JSON, non è ancora possibile mappare i dati dal modulo [!UICONTROL Parse JSON] ad altri moduli nello scenario.
+1. Non connettere altri moduli al modulo [!UICONTROL Analizza JSON]. Poiché Workfront Fusion non conosce ancora la struttura dei dati JSON, non è ancora possibile mappare i dati dal modulo [!UICONTROL Parse JSON] ad altri moduli nello scenario.
 1. Esegui manualmente lo scenario. Questo consente al modulo [!UICONTROL Analizza JSON] di identificare la struttura JSON dal JSON fornito.
 1. È ora possibile collegare i seguenti moduli. Gli elementi del modulo JSON di analisi sono ora disponibili per la mappatura.
 
@@ -121,7 +121,7 @@ Se il campo stringa JSON contiene un array `[ ... ]`, l&#39;output è una serie 
 
 ## Moduli [!UICONTROL JSON] e relativi campi
 
-Quando configuri [!DNL JSON] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi JSON aggiuntivi, a seconda di fattori come il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando si configurano [!DNL JSON] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi JSON aggiuntivi, a seconda di fattori come il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -277,7 +277,7 @@ Questo modulo di azione trasforma un oggetto in una stringa json.
 
 1. Fai clic su **[!UICONTROL OK]** per chiudere la configurazione del modulo [!UICONTROL JSON].
 
-1. Aprire la configurazione del modulo [!UICONTROL Array Aggregator]. Cambia la struttura di destinazione **&#x200B;**&#x200B;da [!UICONTROL Personalizzato] al campo del modulo [!UICONTROL JSON] corrispondente all&#39;attributo dell&#39;array principale. Mappare gli elementi dal modulo [!DNL Google Sheets] ai campi appropriati.
+1. Aprire la configurazione del modulo [!UICONTROL Array Aggregator]. Cambia la struttura di destinazione **** da [!UICONTROL Personalizzato] al campo del modulo [!UICONTROL JSON] corrispondente all&#39;attributo dell&#39;array principale. Mappare gli elementi dal modulo [!DNL Google Sheets] ai campi appropriati.
 
 1. Fare clic su **[!UICONTROL OK]** per chiudere la configurazione del modulo [!UICONTROL Aggregator].
 

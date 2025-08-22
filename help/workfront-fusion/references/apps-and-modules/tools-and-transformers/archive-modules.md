@@ -1,25 +1,25 @@
 ---
 title: Moduli di archiviazione
-description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi collegare un archivio, ad esempio un file compresso, a più applicazioni e servizi di terze parti. Ad esempio, puoi configurare uno scenario che
+description: In uno scenario Adobe Workfront Fusion, è possibile collegare un archivio, ad esempio un file compresso, a più applicazioni e servizi di terze parti. Ad esempio, puoi configurare uno scenario che
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Archivia] moduli
 
-In uno scenario [!DNL Adobe Workfront Fusion], è possibile utilizzare un archivio, ad esempio un file compresso, nel proprio scenario, per utilizzarlo nelle automazioni o nelle integrazioni.
+In uno scenario Adobe Workfront Fusion, puoi utilizzare un archivio, ad esempio un file compresso, per utilizzarlo nelle automazioni o nelle integrazioni.
 
 Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## [!UICONTROL Archivia] moduli e relativi campi
 
-Quando configuri i moduli [!UICONTROL Archivio], [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!UICONTROL Archivio], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli [!UICONTROL Archivio], Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!UICONTROL Archivio], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Uno scenario è costituito da elementi diversi. Comprendere la terminologia di t
 * [Modulo](#module)
 * [Percorso](#route)
 * [Segmento scenario](#scenario-segment)
-* [Connettore](#connector)
+* [Connettore ](#connector)
 
 ### Scenario
 
@@ -38,7 +38,7 @@ Uno **scenario** è una serie di passaggi automatizzati creati dall&#39;utente p
 
 Uno scenario inizia con un **trigger**. Il trigger controlla i dati nuovi e aggiornati e avvia lo scenario quando si applicano determinate condizioni configurate nel modulo. Gli attivatori possono essere configurati per avviare uno scenario secondo una pianificazione (polling) o ogni volta che si verificano modifiche ai dati (istantanei).
 
-![Trigger](assets/scenario-trigger.png)
+![Attivatore](assets/scenario-trigger.png)
 
 ### Modulo
 
@@ -58,7 +58,7 @@ Un segmento di scenario è una sezione di uno scenario costituita da una serie d
 
 ![Segmento scenario](assets/scenario-segment.png)
 
-### Connettore
+### Connettore 
 
 Un connettore è il set di moduli per una determinata applicazione. Workfront Fusion offre connettori per molte applicazioni di lavoro comuni, come Workfront, Salesforce e Jira, nonché connettori generici che possono essere utilizzati per qualsiasi servizio web.
 
@@ -72,7 +72,7 @@ Espandi le sezioni seguenti per visualizzare scenari di esempio e le relative sp
 
 Workfront Fusion consente di automatizzare flussi di lavoro semplici o complessi all’interno di Workfront, risparmiando tempo e garantendo un’esecuzione coerente del processo.
 
-In questo esempio, lo scenario si attiva quando un campo specificato cambia in un&#39;attività o in un problema in [!DNL Workfront]. Quando viene attivato, lo scenario ottiene informazioni nel progetto correlato e crea un aggiornamento personalizzato per una persona assegnata a un ruolo specifico nel progetto.
+In questo esempio, lo scenario si attiva quando un campo specificato cambia in un’attività o in un problema in Workfront. Quando viene attivato, lo scenario ottiene informazioni nel progetto correlato e crea un aggiornamento personalizzato per una persona assegnata a un ruolo specifico nel progetto.
 
 ![Esempio di modello](assets/fusion-template-example.png)
 
@@ -86,9 +86,9 @@ In questo esempio, lo scenario si attiva quando un campo specificato cambia in u
 
 Workfront Fusion è in grado di connettersi ad altre applicazioni e servizi Web. È possibile accedere, importare, manipolare o esportare dati da altre applicazioni, integrandoli con Workfront o tra loro.
 
-Molte applicazioni dispongono di connettori [!DNL Workfront Fusion] dedicati. Se non è disponibile un connettore dedicato per l&#39;applicazione a cui si desidera accedere, è possibile utilizzare i moduli HTTP o SOAP di Workfront Fusion per connettersi all&#39;applicazione tramite la relativa API.
+Molte applicazioni dispongono di connettori Workfront Fusion dedicati. Se non è disponibile un connettore dedicato per l&#39;applicazione a cui si desidera accedere, è possibile utilizzare i moduli HTTP o SOAP di Workfront Fusion per connettersi all&#39;applicazione tramite la relativa API.
 
-In questo esempio, lo scenario viene attivato quando un utente viene aggiunto a un foglio di calcolo [!DNL Excel]. Lo scenario controlla se l&#39;utente si trova in [!DNL Workfront]. In caso contrario, l&#39;utente verrà creato in [!DNL Workfront] e il relativo ID utente Workfront verrà nuovamente aggiunto al foglio di calcolo.
+In questo esempio, lo scenario viene attivato quando un utente viene aggiunto a un foglio di calcolo [!DNL Excel]. Lo scenario controlla se l’utente si trova in Workfront. In caso contrario, l’utente verrà creato in Workfront e il relativo ID utente Workfront verrà nuovamente aggiunto al foglio di calcolo.
 
 ![Esempio di integrazione](assets/fusion-integration-example.png)
 
@@ -97,7 +97,7 @@ Per un elenco dei connettori dedicati, vedere [Riferimenti alle applicazioni Fus
 
 >[!IMPORTANT]
 >
->[!DNL Adobe Workfront Fusion] può connettersi a quasi tutti i servizi Web. Se l&#39;app che si desidera utilizzare non dispone di un connettore [!DNL Workfront Fusion] dedicato, utilizzare i connettori universali per connettersi all&#39;app o al servizio.
+>Adobe Workfront Fusion è in grado di connettersi a quasi tutti i servizi web. Se l’app con cui desideri lavorare non dispone di un connettore Workfront Fusion dedicato, puoi utilizzare connettori universali per connettersi all’app o al servizio.
 >
 >Per un elenco dei connettori universali, vedere [Connettori universali](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 

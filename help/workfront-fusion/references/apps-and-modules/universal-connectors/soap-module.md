@@ -4,10 +4,10 @@ description: Puoi utilizzare il modulo SOAP per connettersi alle API SOAP in Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 0%
+source-wordcount: '681'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -64,13 +64,13 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Modulo SOAP e relativi campi
 
-Quando si configurano i moduli di SOAP, [!DNL Workfront Fusion] visualizza i campi elencati di seguito.  Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli di SOAP, Workfront Fusion visualizza i campi elencati di seguito.  Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -145,7 +145,7 @@ Questo esempio include i riferimenti `soapenc:Array`, `soapenc:arrayType` e `wsd
 
 Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari errori nella configurazione del modulo, è possibile provare a utilizzare il modulo universale **[!UICONTROL HTTP] > [!UICONTROL Richiedi]**:
 
-1. In [!DNL Workfront Fusion] creare un nuovo scenario.
+1. In Workfront Fusion, crea un nuovo scenario.
 1. Inserisci il modulo **[!UICONTROL HTTP] > [!UICONTROL Invia una richiesta]** nello scenario.
 1. Apri la configurazione del modulo e compila i campi seguenti:
 
@@ -185,7 +185,7 @@ Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari e
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Una volta individuato, copiare l&#39;URL dall&#39;attributo `location`.
-1. In [!DNL Workfront Fusion], incollare l&#39;URL nel campo URL del modulo HTTP.
+1. In Workfront Fusion, incolla l’URL nel campo URL del modulo HTTP.
 1. Apri il [client [!UICONTROL SOAP] in linea](https://wsdlbrowser.com/) in una nuova finestra/scheda del browser Web.
 1. Incollare l&#39;URL WSDL nel campo URL WSDL.
 1. Fare clic su **[!UICONTROL Sfoglia]**.

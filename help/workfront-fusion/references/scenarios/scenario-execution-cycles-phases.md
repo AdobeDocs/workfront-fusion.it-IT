@@ -1,12 +1,12 @@
 ---
 title: Esecuzione scenario, cicli e fasi
-description: In questo articolo vengono descritti gli eventi che si verificano durante l'esecuzione di uno scenario  [!DNL Adobe Workfront Fusion] , ad esempio l'inizializzazione, le operazioni, i commit e i rollback.
+description: Questo articolo descrive gli eventi che si verificano durante l’esecuzione di uno scenario Adobe Workfront Fusion, ad esempio inizializzazione, operazioni, commit e rollback.
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Durante la fase di inizializzazione, vengono create e verificate tutte le connes
 
 Ogni ciclo rappresenta un&#39;unità di lavoro indivisibile composta da una serie di operazioni, ciascuna con un commit o un rollback.
 
-È possibile impostare il numero massimo di cicli nel pannello [!UICONTROL scenario settings]. Il numero predefinito è 1.
+Puoi impostare il numero massimo di cicli nel pannello [!UICONTROL impostazioni scenario]. Il numero predefinito è 1.
 
 * [Operazione](#operation)
 * [Conferma](#commit)
@@ -52,12 +52,12 @@ Ogni ciclo rappresenta un&#39;unità di lavoro indivisibile composta da una seri
 
 Durante la fase operativa viene eseguita un&#39;operazione di lettura o scrittura:
 
-* Un’operazione di lettura consiste nell’ottenere dati da un servizio che viene quindi elaborato da altri moduli in base a uno scenario predefinito. Ad esempio, il modulo [!UICONTROL Workfront] >[!UICONTROL Watch records] restituisce nuovi bundle (record) creati dall&#39;ultima esecuzione dello scenario.
-* Un’operazione di scrittura consiste nell’inviare dati a un determinato servizio per un’ulteriore elaborazione. Il modulo [!DNL Workfront] >[!UICONTROL Upload Document] carica ad esempio un file in Workfront.
+* Un’operazione di lettura consiste nell’ottenere dati da un servizio che viene quindi elaborato da altri moduli in base a uno scenario predefinito. Ad esempio, il modulo [!UICONTROL Workfront] >[!UICONTROL Osserva record] restituisce nuovi bundle (record) creati dall&#39;ultima esecuzione dello scenario.
+* Un’operazione di scrittura consiste nell’inviare dati a un determinato servizio per un’ulteriore elaborazione. Ad esempio, il modulo Workfront >[!UICONTROL Carica documento] carica un file in Workfront.
 
 #### Conferma
 
-Se la fase operativa ha esito positivo, inizia la fase di commit durante la quale vengono eseguite tutte le operazioni eseguite dai moduli. [!DNL Workfront Fusion] invia quindi informazioni sul completamento a tutti i servizi coinvolti nella fase operativa.
+Se la fase operativa ha esito positivo, inizia la fase di commit durante la quale vengono eseguite tutte le operazioni eseguite dai moduli. Ciò significa che Workfront Fusion invia informazioni relative al successo a tutti i servizi coinvolti nella fase operativa.
 
 ### Rollback
 
@@ -65,11 +65,11 @@ Se si verifica un errore durante la fase di operazione o commit di un modulo, la
 
 >[!IMPORTANT]
 >
->Tutti i moduli [!DNL Workfront Fusion] che supportano il rollback (noto anche come transazionale) sono contrassegnati con il tag ACID.
+>Tutti i moduli di Workfront Fusion che supportano il rollback (noto anche come transazionale) sono contrassegnati con il tag ACID.
 >
 >![Moduli acidi](assets/acid-modules.png)
 >
->I moduli non contrassegnati con questo tag non possono essere ripristinati allo stato iniziale quando si verificano errori in altri moduli. Un esempio tipico di modulo non-ACID è l&#39;azione [!UICONTROL Email] >[!UICONTROL Send an Email]. Una volta inviata l’e-mail, non puoi annullare l’invio.
+>I moduli non contrassegnati con questo tag non possono essere ripristinati allo stato iniziale quando si verificano errori in altri moduli. Un esempio tipico di modulo non-ACID è l&#39;azione [!UICONTROL E-mail] >[!UICONTROL Invia e-mail]. Una volta inviata l’e-mail, non puoi annullare l’invio.
 
 ### Finalizzazione
 

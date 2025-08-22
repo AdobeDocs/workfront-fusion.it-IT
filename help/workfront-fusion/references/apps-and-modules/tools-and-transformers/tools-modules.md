@@ -4,9 +4,9 @@ description: La sezione  [!DNL Adobe Workfront Fusion Tools]  include diversi mo
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2292'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -54,7 +54,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -254,7 +254,7 @@ Questa funzione può essere utile, ad esempio, se si desidera ridurre il carico 
 >
 >Il primo scenario si concluderebbe con l’archiviazione di tutte le informazioni necessarie in un archivio dati insieme alla marca temporale corrente. Il secondo scenario controlla periodicamente l’archivio dati per individuare i record con una marca temporale precedente al ritardo previsto, recupera i record, finalizza l’elaborazione dei dati e rimuove i record dall’archivio dati.
 >
-><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
+><!--For more information on data stores, see [Data Stores in Adobe Workfront Fusion]().-->
 >
 >Per ulteriori informazioni su moduli di archivio dati specifici, vedere [[!UICONTROL Moduli di archivio dati]](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
 
@@ -277,7 +277,7 @@ Questo modulo consente di recuperare i valori numerici, applicare una delle funz
    <td> <p>Seleziona il modulo da cui desideri aggregare i campi.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Funzione di aggregazione </p> </td> 
+   <td> <p>Funzione di aggregazione [!UICONTROL]</p> </td> 
    <td> <p>Selezionare la funzione da utilizzare per aggregare i valori.</p> </td> 
   </tr> 
   <tr> 
@@ -289,7 +289,7 @@ Questo modulo consente di recuperare i valori numerici, applicare una delle funz
    <td>Abilita questa opzione per interrompere lo scenario quando non ci sono risultati.</td> 
   </tr> 
   <tr> 
-   <td> <p>Valore </p> </td> 
+   <td> <p>Valore [!UICONTROL]</p> </td> 
    <td> <p>Immettere o mappare il valore da aggregare.</p> </td> 
   </tr> 
  </tbody> 

@@ -4,18 +4,18 @@ description: I  [!DNL Adobe Workfront Fusion Google Forms] moduli ti consentono 
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
 
 # [!DNL Google Forms] moduli
 
-I moduli [!DNL Adobe Workfront Fusion] [!DNL Google Forms] ti consentono di monitorare, selezionare, aggiungere, aggiornare o eliminare le risposte sul tuo [!DNL Google Forms].
+I moduli di Adobe Workfront Fusion [!DNL Google Forms] ti consentono di monitorare, selezionare, aggiungere, aggiornare o eliminare le risposte su [!DNL Google Forms].
 
-Per utilizzare [!DNL Google Docs] con [!DNL Adobe Workfront Fusion], è necessario disporre di un account [!DNL Google]. Se non si dispone ancora di un account [!DNL Google], è possibile crearne uno nella pagina della guida dell&#39;account [!DNL Google].
+Per utilizzare [!DNL Google Docs] con Adobe Workfront Fusion, è necessario disporre di un account [!DNL Google]. Se non si dispone ancora di un account [!DNL Google], è possibile crearne uno nella pagina della guida dell&#39;account [!DNL Google].
 
 Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -50,7 +50,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -60,7 +60,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -96,7 +96,7 @@ Per utilizzare le risposte del modulo, è innanzitutto necessario creare il fogl
 
 ## [!DNL Google Forms] moduli e relativi campi
 
-Quando configuri [!DNL Google Forms] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Google Forms], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando si configurano [!DNL Google Forms] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Google Forms], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -118,10 +118,10 @@ Controlla il modulo per individuare nuove risposte.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Foglio di calcolo di </td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
    <td> <p>Selezionare il foglio di calcolo contenente le risposte del modulo che si desidera controllare per individuare le nuove risposte.</p> </td> 
   </tr> 
   <tr> 
@@ -133,7 +133,7 @@ Controlla il modulo per individuare nuove risposte.
    <td>Specifica la riga di intestazione della tabella. La riga predefinita è <code>A1:Z1</code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Opzione di rendering del valore </td> 
+   <td role="rowheader">Opzione di rendering del valore [!UICONTROL]</td> 
    <td> <p>Specifica come eseguire il rendering dei valori nell’output.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Valore formattato]</strong> </p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>$1. 23</code>.</p> </li> 
@@ -147,7 +147,7 @@ Controlla il modulo per individuare nuove risposte.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p> Impostare il numero massimo di risposte con cui [!DNL Workfront Fusion] funziona durante un ciclo.</p> </td> 
+   <td> <p> Impostare il numero massimo di risposte utilizzate da Workfront Fusion durante un ciclo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -170,10 +170,10 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Foglio di calcolo di </td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio in cui si desidera aggiungere una risposta.</p> </td> 
   </tr> 
   <tr> 
@@ -185,7 +185,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immetti i valori desiderati nelle colonne del foglio. Le colonne sono disponibili in base al foglio.</p> <p>Per la colonna [!UICONTROL Timestamp], utilizza il valore seguente:</p><pre>formatDate(now;GG/MM/AAAA HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Opzione di input del valore </td> 
+   <td role="rowheader">Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> I valori immessi dall’utente non vengono analizzati e vengono memorizzati così come sono. </p> </li> 
@@ -213,10 +213,10 @@ Questo modulo elimina una risposta selezionata.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Foglio di calcolo di </td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio in cui si desidera eliminare una risposta.</p> </td> 
   </tr> 
   <tr> 
@@ -242,10 +242,10 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Foglio di calcolo di </td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio in cui si desidera aggiornare una risposta.</p> </td> 
   </tr> 
   <tr> 
@@ -261,7 +261,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immetti i nuovi valori per le colonne desiderate. Le colonne sono disponibili in base al foglio.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Opzione di input del valore </td> 
+   <td role="rowheader">Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> I valori immessi dall’utente non vengono analizzati e vengono memorizzati così come sono. </p> </li> 
@@ -285,10 +285,10 @@ Questo modulo restituisce le risposte che corrispondono ai criteri specificati.
  <col data-mc-conditions=""> 
  <tbody> 
     <td>Connessione</td>
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-    <td>Foglio di calcolo di </td>
+    <td>Foglio di calcolo di [!UICONTROL]</td>
    <td> <p>Selezionare il modulo in cui eseguire la ricerca.</p> </td> 
   </tr> 
   <tr data-mc-conditions="">
@@ -304,7 +304,7 @@ Questo modulo restituisce le risposte che corrispondono ai criteri specificati.
    <td> <p>Definisci il filtro in base al quale desideri cercare le risposte.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-    <td>Ordinamento  </td>
+    <td>Ordinamento [!UICONTROL] </td>
    <td> <p>Seleziona se ordinare le risposte restituite in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -312,7 +312,7 @@ Questo modulo restituisce le risposte che corrispondono ai criteri specificati.
    <td> <p> Selezionare la colonna in base alla quale ordinare le risposte restituite.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Opzione di rendering del valore </td> 
+   <td role="rowheader">Opzione di rendering del valore [!UICONTROL]</td> 
    <td> <p>Specifica come eseguire il rendering dei valori nell’output.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Valore formattato]</strong></p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>$1. 23</code>.</p> </li> 
@@ -326,7 +326,7 @@ Questo modulo restituisce le risposte che corrispondono ai criteri specificati.
   </tr> 
   <tr>
     <td role="rowheader">[!UICONTROL Numero massimo di risposte restituite]</td>
-   <td> <p> Impostare il numero massimo di risposte restituite da [!DNL Workfront Fusion] durante un ciclo.</p> </td> 
+   <td> <p> Impostare il numero massimo di risposte restituite da Workfront Fusion durante un ciclo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -341,10 +341,10 @@ Questo modulo esegue una ricerca utilizzando [[!DNL Google Charts Query Language
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a [!DNL Workfront Fusion], vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr>
-    <td>Foglio di calcolo di </td>
+    <td>Foglio di calcolo di [!UICONTROL]</td>
    <td> <p>Selezionare il foglio di calcolo contenente il foglio che si desidera cercare.</p> </td> 
   </tr> 
   <tr>
@@ -357,7 +357,7 @@ Questo modulo esegue una ricerca utilizzando [[!DNL Google Charts Query Language
   </tr> 
   <tr>
     <td>[!UICONTROL Numero massimo di righe restituite]</td>
-   <td> <p> Impostare il numero massimo di risposte restituite da [!DNL Workfront Fusion] durante un ciclo.</p> </td> 
+   <td> <p> Impostare il numero massimo di risposte restituite da Workfront Fusion durante un ciclo.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,9 +4,9 @@ description: Fusion utilizza indirizzi IP e domini specifici per la comunicazion
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: 59d739093c88238af7a7e97499fd0c7d7cf6053a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -35,13 +35,13 @@ In genere, un amministratore di rete configura un inserisco nell&#39;elenco Cons
 Aggiungi i seguenti indirizzi IP al tuo inserisco nell&#39;elenco Consentiti di:
 
 * 52.30.133.50
-* 54 220 93 204
-* 34 254 76 122
-* 54 244 142 219
+* 54.220.93.204
+* 34.254.76.122
+* 54.244.142.219
 * 52.39.217.230
-* 44 241 82 96
+* 44.241.82.96
 * 100.20.126.137
-* 34 223 32,4
+* 34.223.32.4
 * 52.39.176.220
 * 20.36.133.48/28
 * 20.81.156.240/28
@@ -82,7 +82,7 @@ Se si accede a Fusion tramite `experience.adobe.com`, è possibile controllare l
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Datacenter UE</td> 
+   <td role="rowheader">Centro dati Adobe Workfront EU</td> 
    <td> 
     <ul> 
      <li>52.30.133.50</li> 
@@ -91,7 +91,7 @@ Se si accede a Fusion tramite `experience.adobe.com`, è possibile controllare l
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] Datacenter USA</p> </td> 
+   <td role="rowheader"> <p>Centro dati Adobe Workfront USA</p> </td> 
    <td> 
     <ul> 
      <li>54 244 142 219</li> 
@@ -103,7 +103,7 @@ Se si accede a Fusion tramite `experience.adobe.com`, è possibile controllare l
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] nel cluster di Microsoft Azure</td> 
+   <td role="rowheader">Adobe Workfront Fusion nel cluster di Microsoft Azure</td> 
    <td> 
     <ul> 
      <li>20.36.133.48/28</li> 
@@ -121,15 +121,15 @@ Inoltre, se l’organizzazione utilizza il filtro di rete in uscita, aggiungi il
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Datacenter UE</td> 
+   <td role="rowheader">Centro dati Adobe Workfront EU</td> 
    <td> <p> hook.app-eu.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] Datacenter USA</p> </td> 
+   <td role="rowheader"> <p>Centro dati Adobe Workfront USA</p> </td> 
    <td> <p>hook.app.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront Fusion] nel cluster di Microsoft Azure</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront Fusion nel cluster di Microsoft Azure</p> </td> 
    <td> <p>hook.app-az.workfrontfusion.com </p> </td> 
   </tr> 
  </tbody> 

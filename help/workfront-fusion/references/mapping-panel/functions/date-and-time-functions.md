@@ -4,9 +4,9 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1879'
 ht-degree: 1%
 
 ---
@@ -139,7 +139,7 @@ Questa funzione restituisce una nuova data con i secondi specificati nei paramet
 
 Specificare un numero compreso tra 0 e 59. Se il numero non rientra nell’intervallo, la funzione restituisce un secondo dal minuto precedente (per un numero negativo) o dal minuto successivo (per un numero positivo).
 
-Se devi specificare un numero non compreso nell&#39;intervallo, ti consigliamo di utilizzare [!UICONTROL &#x200B; addSeconds], come descritto in precedenza nella sezione [addSeconds (date; number)](#addseconds-date-number).
+Se devi specificare un numero non compreso nell&#39;intervallo, ti consigliamo di utilizzare [!UICONTROL  addSeconds], come descritto in precedenza nella sezione [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -459,7 +459,7 @@ Se non viene specificata alcuna unità, la funzione restituisce la differenza in
 
 #### Come calcolare l’n-esimo giorno della settimana nel mese
 
-Questa sezione è stata adattata per [!DNL Workfront Fusion] dalla pagina Web [!DNL Exceljet] che spiega come ottenere l&#39;nono giorno della settimana in un mese.
+Questa sezione è stata adattata per Workfront Fusion dalla pagina Web [!DNL Exceljet] che spiega come ottenere l&#39;ennesimo giorno della settimana in un mese.
 
 Per calcolare una data corrispondente all&#39;ennesimo giorno della settimana del mese, ad esempio primo martedì, terzo venerdì e così via, è possibile utilizzare la formula seguente:
 

@@ -1,20 +1,20 @@
 ---
 title: Amplia moduli
-description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare i flussi di lavoro che utilizzano [!UICONTROL Amplia], nonché collegarlo a più applicazioni e servizi di terze parti.
+description: In uno scenario di Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!UICONTROL Widen], nonché collegarli a più applicazioni e servizi di terze parti.
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
-source-git-commit: b5387e4ba84d67d6ea2472282c212e396ba93d4f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1657'
 ht-degree: 0%
 
 ---
 
 # [!DNL Widen] moduli
 
-In uno scenario [!DNL Adobe Workfront Fusion], è possibile automatizzare i flussi di lavoro che utilizzano [!UICONTROL Amplia], nonché collegarlo a più applicazioni e servizi di terze parti.
+In uno scenario di Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!UICONTROL Widen], nonché collegarli a più applicazioni e servizi di terze parti.
 
 Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -49,7 +49,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -59,7 +59,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,7 +86,7 @@ Il connettore Widen utilizza quanto segue:
  </tbody> 
  </table>
 
-## Connetti [!DNL Widen] a [!DNL Workfront Fusion]  {#connect-widen-to-workfront-fusion}
+## Connetti [!DNL Widen] a Workfront Fusion  {#connect-widen-to-workfront-fusion}
 
 Puoi creare una connessione al tuo account [!DNL Widen] direttamente da un modulo [!DNL Widen].
 
@@ -98,7 +98,7 @@ Puoi creare una connessione al tuo account [!DNL Widen] direttamente da un modul
 
 ## [!DNL Widen] moduli e relativi campi
 
-Quando configuri [!DNL Widen] moduli, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Widen], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando si configurano [!DNL Widen] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Widen], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -120,7 +120,7 @@ Questo modulo di attivazione avvia uno scenario quando una risorsa viene creata 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo evento]</td> 
@@ -161,11 +161,11 @@ Questo modulo di azione aggiunge una o più risorse alle raccolte.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID Raccolte]</td> 
-   <td>Per ogni raccolta a cui si desidera aggiungere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta .</li> 
+   <td>Per ogni raccolta a cui si desidera aggiungere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta [!UICONTROL].</li> 
    </td> 
   </tr> 
   <tr> 
@@ -192,7 +192,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL versione API]</td> 
@@ -234,7 +234,7 @@ Questo modulo di azione scarica una risorsa dal tuo account [!DNL Widen].
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID risorsa]</td> 
@@ -253,7 +253,7 @@ Questo modulo di azione recupera una singola risorsa in base al suo ID univoco.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID risorsa]</td> 
@@ -280,12 +280,12 @@ Questo modulo di azione rimuove una o più risorse dalle raccolte.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID Raccolte]</td> 
-   <td>Per ogni raccolta da cui si desidera rimuovere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta .</li> 
+   <td>Per ogni raccolta da cui si desidera rimuovere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta [!UICONTROL].</li> 
    </td> 
   </tr> 
   <tr> 
@@ -310,7 +310,7 @@ Questo modulo di azione aggiorna i campi di metadati di una risorsa.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID risorsa]</td> 
@@ -321,7 +321,7 @@ Questo modulo di azione aggiorna i campi di metadati di una risorsa.
    <td> <p>Seleziona il tipo di metadati per i metadati da aggiornare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Seleziona i campi di metadati da aggiornare. Immettere il nuovo valore per ogni campo.</td> 
   </tr> 
   <tr> 
@@ -341,7 +341,7 @@ Questo modulo di azione carica un file nel tuo account [!DNL Widen].
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Carica profilo]</td> 
@@ -364,8 +364,8 @@ Questo modulo di azione carica un file nel tuo account [!DNL Widen].
    <td>Seleziona il tipo di metadati per il file da caricare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
-   <td>Seleziona i campi di metadati da includere nel caricamento del file. Per ogni campo, immettere il valore  per il campo.</td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
+   <td>Seleziona i campi di metadati da includere nel caricamento del file. Per ogni campo, immettere il valore [!UICONTROL] per il campo.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -385,7 +385,7 @@ Questo modulo di azione recupera un elenco di risorse all’interno di una racco
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID raccolta]</td> 
@@ -424,10 +424,10 @@ Questo modulo di ricerca recupera un elenco di risorse che corrispondono ai crit
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a [!DNL Workfront Fusion], vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connessione di [!DNL Widen] a [!DNL Workfront Fusion] </a> in questo articolo.</p> </td> 
+  <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Query di ricerca </td> 
+   <td role="rowheader">Query di ricerca [!UICONTROL]</td> 
    <td> <p>Inserire i criteri in base ai quali si desidera cercare le risorse.</p> </td> 
   </tr> 
   <tr> 

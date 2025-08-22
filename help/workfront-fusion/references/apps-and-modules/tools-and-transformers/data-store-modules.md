@@ -1,23 +1,23 @@
 ---
 title: Moduli archivio dati
-description: Un archivio dati  [!DNL Adobe Workfront Fusion] , simile a un database o a una semplice tabella, può memorizzare i dati di scenari, consentendo il trasferimento di dati tra scenari singoli o l'esecuzione di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
+description: Un archivio dati di Adobe Workfront Fusion, simile a un database o a una semplice tabella, può memorizzare i dati di scenari, rendendo possibile il trasferimento di dati tra scenari singoli o tra esecuzioni di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Moduli archivio dati]
 
-Un archivio dati [!DNL Adobe Workfront Fusion], simile a un database o a una semplice tabella, può memorizzare i dati di scenari, consentendo il trasferimento dei dati tra scenari singoli o l&#39;esecuzione di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
+Un archivio dati di Adobe Workfront Fusion, simile a un database o a una semplice tabella, può memorizzare i dati di scenari, rendendo possibile il trasferimento di dati tra scenari singoli o tra esecuzioni di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
 
-I moduli dell&#39;archivio dati consentono di aggiungere, sostituire, aggiornare, recuperare, eliminare, cercare o contare i record nell&#39;archivio dati [!DNL Adobe Workfront Fusion].
+I moduli dell’archivio dati consentono di aggiungere, sostituire, aggiornare, recuperare, eliminare, cercare o contare i record nell’archivio dati di Adobe Workfront Fusion.
 
-<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/)-->
+<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
 Per un video introduttivo sugli archivi dati in Workfront Fusion, vedi:
 
@@ -50,7 +50,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -60,7 +60,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle [!DNL Adobe Workfront Fusion] licenze, vedere [[!DNL Adobe Workfront Fusion] licenze](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -72,7 +72,7 @@ Per informazioni sulla creazione di archivi dati, vedere [Creare e gestire archi
 
 ## [!UICONTROL Moduli dell&#39;archivio dati] e relativi campi
 
-Quando si configurano i moduli Archivio dati, [!DNL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi aggiuntivi del Data Store, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli Archivio dati, Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi aggiuntivi del Data Store, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Non è necessario creare una connessione per utilizzare gli archivi dati.
 
@@ -109,7 +109,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 
@@ -138,7 +138,7 @@ Specificare l&#39;archivio dati e la chiave del record.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -161,7 +161,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati contenente i record che si desidera conteggiare.</p> </td> 
   </tr> 
  </tbody> 
@@ -180,7 +180,7 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -201,7 +201,7 @@ Specifica l’archivio dati.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati da cui si desidera eliminare tutti i record.</p> </td> 
   </tr> 
  </tbody> 
@@ -220,7 +220,7 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare l'archivio dati da cui si desidera recuperare un record</p> </td> 
   </tr> 
   <tr> 
@@ -243,7 +243,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Seleziona l’archivio dati in cui desideri eseguire la ricerca.</p> </td> 
   </tr> 
   <tr> 
@@ -256,7 +256,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
-   <td> <p> Impostare il numero massimo di risultati di ricerca [!DNL Workfront Fusion] restituiti durante un ciclo di esecuzione.</p> </td> 
+   <td> <p> Imposta il numero massimo di risultati di ricerca restituiti da Workfront Fusion durante un ciclo di esecuzione.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continua l'esecuzione della route anche se il modulo non restituisce alcun risultato]</td> 
@@ -280,7 +280,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 

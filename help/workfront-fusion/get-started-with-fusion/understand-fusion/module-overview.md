@@ -4,10 +4,10 @@ description: 'Adobe Workfront Fusion distingue cinque tipi di moduli: moduli di 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 0%
+source-wordcount: '917'
+ht-degree: 1%
 
 ---
 
@@ -35,16 +35,16 @@ Gli scenari possono contenere un numero illimitato di moduli di azione, anche se
 
 **Esempi:**
 
-* **[!DNL Workfront]>[!UICONTROL Upload a file]** invia un file a [!DNL Workfront] e restituisce il relativo identificatore.
-* **[!UICONTROL Image]>[!UICONTROL Resize]** riceve un&#39;immagine, la ridimensiona alle dimensioni specificate e la trasmette all&#39;azione successiva.
+* **Workfront > [!UICONTROL Carica un file]** invia un file a Workfront e restituisce il relativo identificatore.
+* **[!UICONTROL Immagine] > [!UICONTROL Ridimensiona]** riceve un&#39;immagine, la ridimensiona in base alle dimensioni specificate e la trasmette all&#39;azione successiva.
 
 >[!ENDSHADEBOX]
 
 Il tipo di azione è costituito da quattro sottotipi:
 
-* Crea
+* Creare
 * Letto
-* Aggiorna
+* Aggiornamento
 * Elimina
 
 Il sottotipo Update include le tre operazioni seguenti:
@@ -80,7 +80,7 @@ Gli scenari possono contenere un numero illimitato di moduli di ricerca, anche s
 
 **Esempio:**
 
-**[!DNL Workfront]>[!UICONTROL Read Related Records]** legge i record corrispondenti alla query di ricerca specificata, in un particolare oggetto padre.
+**Workfront > [!UICONTROL Leggi record correlati]** legge i record che corrispondono alla query di ricerca specificata, in un particolare oggetto padre.
 
 >[!ENDSHADEBOX]
 
@@ -94,7 +94,7 @@ Poiché i trigger determinano l’inizio dell’esecuzione degli scenari, è pos
 
 Ogni scenario può contenere un solo trigger.
 
-[!DNL Workfront Fusion] utilizza due tipi di trigger: Polling triggers e Instant triggers.
+Workfront Fusion utilizza due tipi di trigger: Polling triggers e Instant triggers.
 
 ### Trigger di polling
 
@@ -110,15 +110,15 @@ Per ulteriori informazioni, vedere [Scegliere la posizione di inizio di un modul
 
 **Esempi:**
 
-* **[!DNL Workfront]>[!UICONTROL Watch records]** restituisce i record appena aggiunti dopo l&#39;ultima esecuzione dello scenario.
+* **Workfront > [!UICONTROL Osserva i record]** restituisce i record appena aggiunti dopo l&#39;ultima esecuzione dello scenario.
 
-* **[!DNL Google Sheets]>[!UICONTROL Watch Rows]** restituisce nuove righe aggiunte dopo l&#39;ultima esecuzione dello scenario.
+* **[!DNL Google Sheets]> [!UICONTROL Righe di controllo]** restituisce nuove righe aggiunte dopo l&#39;ultima esecuzione dello scenario.
 
 >[!ENDSHADEBOX]
 
 ### Trigger istantanei
 
-I trigger istantanei consentono a un servizio di notificare a [!DNL Workfront Fusion] una modifica subito dopo che si è verificata. È consigliabile pianificare uno scenario contenente un trigger istantaneo da eseguire immediatamente.
+I trigger istantanei consentono a un servizio di notificare a Workfront Fusion una modifica subito dopo che si è verificata. È consigliabile pianificare uno scenario contenente un trigger istantaneo da eseguire immediatamente.
 
 Per istruzioni, consulta [Pianificare uno scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -128,8 +128,8 @@ Per informazioni dettagliate sulla gestione dei dati in arrivo tramite un trigge
 
 **Esempi:**
 
-* **[!DNL Workfront]>[!UICONTROL Watch Events]** restituisce informazioni quando si verifica un determinato tipo di evento in Workfront, ad esempio la creazione di un&#39;attività.
-* **[!DNL Google Sheets]>[!UICONTROL Watch Changes]** restituisce informazioni ogni volta che una cella viene aggiornata.
+* **Workfront > [!UICONTROL Osserva eventi]** restituisce informazioni quando si verifica un determinato tipo di evento in Workfront, ad esempio la creazione di un&#39;attività.
+* **[!DNL Google Sheets]> [!UICONTROL Osserva modifiche]** restituisce informazioni ogni volta che una cella viene aggiornata.
 
 >[!ENDSHADEBOX]
 
@@ -147,9 +147,9 @@ Gli scenari possono contenere un numero illimitato di aggregatori, anche se un n
 
 **Esempi:**
 
-* **[!UICONTROL Archive]>[!UICONTROL Create an archive]** comprime più file in un archivio zip.
-* **[!UICONTROL CSV]>[!UICONTROL Aggregate to CSV]** unisce più stringhe da un file CSV in un&#39;unica riga.
-* **[!UICONTROL Tools]>[!UICONTROL Text aggregator]** combina più stringhe in un&#39;unica stringa.
+* **[!UICONTROL Archivia] > [!UICONTROL Crea un archivio]** comprime più file in un archivio zip.
+* **[!UICONTROL CSV] > [!UICONTROL Aggrega in CSV]** unisce più stringhe da un file CSV in un&#39;unica riga.
+* **[!UICONTROL Strumenti] > [!UICONTROL Aggregatore di testo]** combina più stringhe in un&#39;unica stringa.
 
 >[!ENDSHADEBOX]
 
@@ -169,7 +169,7 @@ Gli scenari possono contenere un numero illimitato di iteratori, anche se un num
 
 **Esempio:**
 
-**[!UICONTROL Email]>[!UICONTROL Retrieve attachments]** suddivide un array di allegati in bundle separati.
+**[!UICONTROL E-mail] > [!UICONTROL Recupera allegati]** suddivide un array di allegati in bundle separati.
 
 >[!ENDSHADEBOX]
 
