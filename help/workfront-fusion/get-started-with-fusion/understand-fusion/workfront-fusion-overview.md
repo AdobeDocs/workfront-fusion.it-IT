@@ -31,7 +31,7 @@ Workfront Fusion offre inoltre funzionalità che supportano scenari, ad esempio 
 
 Quando si inizia a lavorare con Workfront Fusion, potrebbero essere utili le risorse seguenti:
 
-* Per le risorse di formazione su Workfront Fusion, vedere [Panoramica sulla formazione su Workfront Fusion](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
+* Per le risorse di formazione su Workfront Fusion, vedere [Panoramica sulla formazione su Workfront Fusion](https://experienceleague.adobe.com/it/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
 
 
 * Per ulteriori informazioni sugli scenari, vedere [Panoramica dello scenario](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
