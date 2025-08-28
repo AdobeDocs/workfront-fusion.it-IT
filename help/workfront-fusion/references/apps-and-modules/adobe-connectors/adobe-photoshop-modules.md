@@ -4,7 +4,7 @@ description: Con i moduli di Adobe Photoshop, puoi avviare uno scenario Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
 source-wordcount: '5392'
 ht-degree: 0%
@@ -126,11 +126,11 @@ Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID account tecnico]</td>
-        <td>Se utilizzi una connessione JWT, immetti l’ID dell’account tecnico [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Se utilizzi una connessione JWT, immetti l’ID dell’account tecnico [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID organizzazione]</td>
-        <td>Se utilizzi una connessione JWT, immetti l'ID organizzazione [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Se utilizzi una connessione JWT, immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Chiave privata]</td>
@@ -276,7 +276,7 @@ Questo modulo di azione applica una serie di modifiche a livello di documento e 
       <td role="rowheader">
         <p>[!UICONTROL (Opzioni) Livelli]</p>
       </td>
-   <td> Per ogni livello che desiderate aggiungere, fate clic su Aggiungi elemento (Add item) e inserite i dettagli del livello. <p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_applyPsdEdits/">Applica modifiche PSD</a> nella documentazione di Adobe Photoshop.  </td> 
+   <td> Per ogni livello che desiderate aggiungere, fate clic su Aggiungi elemento (Add item) e inserite i dettagli del livello. <p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Applica modifiche PSD</a> nella documentazione di Adobe Photoshop.  </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Output]</td>
@@ -552,7 +552,7 @@ Questo modulo di azione crea un nuovo PSD con livelli opzionali e genera rappres
       <td role="rowheader">
         <p>[!UICONTROL (Opzioni) Livelli]</p>
       </td>
-   <td> Per ogni livello che desiderate aggiungere, fate clic su Aggiungi elemento (Add item) e inserite i dettagli del livello. <p>Per informazioni dettagliate sulle opzioni dei livelli, vedi <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Creare PSD</a> nella documentazione di Adobe Photoshop.  </td> 
+   <td> Per ogni livello che desiderate aggiungere, fate clic su Aggiungi elemento (Add item) e inserite i dettagli del livello. <p>Per informazioni dettagliate sulle opzioni dei livelli, vedi <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Creare PSD</a> nella documentazione di Adobe Photoshop.  </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -599,7 +599,7 @@ Questo modulo di azione crea un nuovo PSD con livelli opzionali e genera rappres
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Altri campi]</td>
       <td>
-        <p><p>Per informazioni dettagliate sulle opzioni di output, vedere <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Creare PSD</a> nella documentazione di Adobe Photoshop.  </p>
+        <p><p>Per informazioni dettagliate sulle opzioni di output, vedere <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Creare PSD</a> nella documentazione di Adobe Photoshop.  </p>
       </td>
     </tr>
     </tbody>
@@ -618,7 +618,7 @@ Questo modulo di azione modifica i livelli di testo in un file Photoshop. Potete
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -649,7 +649,7 @@ Questo modulo di azione modifica i livelli di testo in un file Photoshop. Potete
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Livelli]</td>
-   <td> <p>Per ogni livello di testo che si desidera modificare, fare clic su <b>Aggiungi elemento</b> e immettere le opzioni di livello.<p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Modifica testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
+   <td> <p>Per ogni livello di testo che si desidera modificare, fare clic su <b>Aggiungi elemento</b> e immettere le opzioni di livello.<p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifica testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Output)]</td>
       <td>
@@ -692,7 +692,7 @@ Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#e
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -723,9 +723,9 @@ Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#e
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Livelli]</td>
-   <td> <p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Modifica livello testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
+   <td> <p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifica livello testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di output di </td>
+      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p>
       </td>
@@ -847,7 +847,7 @@ Questo modulo di azione esegue Sfocatura profondità sul file selezionato.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -885,7 +885,7 @@ Questo modulo di azione esegue Sfocatura profondità sul file selezionato.
    <tr>
       <td role="rowheader">[!UICONTROL Altri campi]</td>
       <td>
-        <p>Per informazioni dettagliate su altre opzioni di Sfocatura profondità, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Eseguire Sfocatura profondità </a> nella documentazione dell'API di Adobe Photoshop.</p>
+        <p>Per informazioni dettagliate su altre opzioni di Sfocatura profondità, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Eseguire Sfocatura profondità </a> nella documentazione dell'API di Adobe Photoshop.</p>
       </td>
     </tr>
   </tbody>
@@ -904,7 +904,7 @@ Questo modulo di azione esegue un’azione Photoshop sull’immagine selezionata
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -972,7 +972,7 @@ Questo modulo di azione esegue un’azione Photoshop sull’immagine selezionata
    <tr>
       <td role="rowheader">[!UICONTROL Altri campi]</td>
       <td>
-        <p>Per informazioni dettagliate su altre opzioni di Sfocatura profondità, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Eseguire Sfocatura profondità </a> nella documentazione dell'API di Adobe Photoshop.</p>
+        <p>Per informazioni dettagliate su altre opzioni di Sfocatura profondità, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Eseguire Sfocatura profondità </a> nella documentazione dell'API di Adobe Photoshop.</p>
       </td>
     </tr>
   </tbody>
@@ -991,7 +991,7 @@ Questo modulo di azione esegue il ritaglio prodotto sull’immagine selezionata.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file da ritagliare.</p>
       </td>
@@ -1047,7 +1047,7 @@ Questo modulo di azione esegue il ritaglio prodotto sull’immagine selezionata.
    <tr>
       <td role="rowheader">[!UICONTROL Altri campi]</td>
       <td>
-        <p>Per informazioni dettagliate su altre opzioni di Sfocatura profondità, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Eseguire Sfocatura profondità </a> nella documentazione dell'API di Adobe Photoshop.</p>
+        <p>Per informazioni dettagliate su altre opzioni di Sfocatura profondità, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Eseguire Sfocatura profondità </a> nella documentazione dell'API di Adobe Photoshop.</p>
       </td>
     </tr>
   </tbody>
@@ -1066,7 +1066,7 @@ Questo modulo di azione recupera le informazioni sui livelli dal file PSD specif
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionate il servizio file da cui memorizzare il file da cui desiderate recuperare le informazioni sui livelli.</p>
       </td>
@@ -1238,7 +1238,7 @@ Questo modulo utilizza Smart Object API versione 2.
       <td role="rowheader">
         <p>[!UICONTROL Livelli]</p>
       </td>
-   <td>Per ogni livello che si desidera aggiungere all'oggetto avanzato, fare clic su Aggiungi elemento e immettere il nome o l'ID dell'oggetto, il servizio file in cui è memorizzato l'oggetto avanzato e l'URL o il percorso del livello.<p>Per le descrizioni delle impostazioni avanzate in quest'area, vedere <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Sostituire un oggetto avanzato</a> nella documentazione dell'API di Photoshop </td> 
+   <td>Per ogni livello che si desidera aggiungere all'oggetto avanzato, fare clic su Aggiungi elemento e immettere il nome o l'ID dell'oggetto, il servizio file in cui è memorizzato l'oggetto avanzato e l'URL o il percorso del livello.<p>Per le descrizioni delle impostazioni avanzate in quest'area, vedere <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Sostituire un oggetto avanzato</a> nella documentazione dell'API di Photoshop </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1303,7 +1303,7 @@ Questo modulo utilizza la versione legacy di Smart Objects.
       <td role="rowheader">
         <p>[!UICONTROL Livelli]</p>
       </td>
-   <td>Per ogni livello che si desidera aggiungere all'oggetto avanzato, fare clic su Aggiungi elemento e immettere il nome o l'ID dell'oggetto, il servizio file in cui è memorizzato l'oggetto avanzato e l'URL o il percorso del livello.<p>Per le descrizioni delle impostazioni avanzate in quest'area, vedere <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Sostituire un oggetto avanzato</a> nella documentazione dell'API di Photoshop </td> 
+   <td>Per ogni livello che si desidera aggiungere all'oggetto avanzato, fare clic su Aggiungi elemento e immettere il nome o l'ID dell'oggetto, il servizio file in cui è memorizzato l'oggetto avanzato e l'URL o il percorso del livello.<p>Per le descrizioni delle impostazioni avanzate in quest'area, vedere <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Sostituire un oggetto avanzato</a> nella documentazione dell'API di Photoshop </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Output]</td>

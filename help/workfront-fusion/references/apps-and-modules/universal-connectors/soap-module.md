@@ -4,9 +4,9 @@ description: Puoi utilizzare il modulo SOAP per connettersi alle API SOAP in Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -186,13 +186,11 @@ Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari e
 
 1. Una volta individuato, copiare l&#39;URL dall&#39;attributo `location`.
 1. In Workfront Fusion, incolla l’URL nel campo URL del modulo HTTP.
-1. Apri il [client [!UICONTROL SOAP] in linea](https://wsdlbrowser.com/) in una nuova finestra/scheda del browser Web.
-1. Incollare l&#39;URL WSDL nel campo URL WSDL.
-1. Fare clic su **[!UICONTROL Sfoglia]**.
-1. Selezionare dall&#39;elenco di funzioni a sinistra, ad esempio `getLanguages`.
-1. Copia il contenuto dell&#39;area di testo [!UICONTROL Richiedi XML].
-1. In [!UICONTROL Workfront Fusion], incolla il contenuto copiato nel campo URL del modulo.
-1. Fornire i valori per i parametri selezionati sostituendo i punti interrogativi con i valori effettivi:
+1. Fornire i valori per i parametri selezionati sostituendo i punti interrogativi con i valori effettivi.
+
+   >[!NOTE]
+   >
+   > Per ottenere valori specifici dal file WSDL, utilizzare un visualizzatore WSDL online.
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
