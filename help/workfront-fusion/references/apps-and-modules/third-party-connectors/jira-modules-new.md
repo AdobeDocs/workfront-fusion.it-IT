@@ -4,10 +4,10 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: 9865101fe57c2668ecb5ad743b3d6963833feb4a
+source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 6%
+source-wordcount: '1744'
+ht-degree: 5%
 
 ---
 
@@ -450,6 +450,24 @@ Questo modulo aggiorna un record esistente, ad esempio un problema o un progetto
 </table>
 
 ### Ricerche
+
+>[!IMPORTANT]
+>
+>Il modulo di ricerca utilizzato dal connettore Jira legacy può causare il seguente errore:
+>
+>`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
+>
+>Ciò è dovuto a una deprecazione da parte di Jira.
+>
+>Se si verifica questo errore, è possibile sostituire il modulo di ricerca del connettore Jira legacy con il modulo di ricerca del nuovo connettore. Il nuovo connettore consente di selezionare la versione API utilizzata. Assicurati di selezionare V3 durante la creazione della connessione.
+>
+> ![Opzione di versione API nel nuovo connettore Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+>
+>Tieni presente che:
+>
+>* È interessato solo il modulo di ricerca. Al momento, altri endpoint API Jira utilizzati dal connettore Fusion non sono interessati da questa rimozione.
+>
+>* Il rollout geografico può causare incongruenze. Atlassian sta implementando questa modifica a livello regionale, il che significa che alcune istanze di Jira Cloud potrebbero ancora supportare temporaneamente gli endpoint precedenti. Questo può causare comportamenti non coerenti tra gli ambienti.
 
 #### Cerca record
 

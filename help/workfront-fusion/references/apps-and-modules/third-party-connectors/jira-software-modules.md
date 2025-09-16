@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2460'
 ht-degree: 1%
 
 ---
@@ -315,7 +315,7 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto, aggiornat
       <ul> 
        <li>[!UICONTROL Comment] </li> 
        <li>[!UICONTROL Issue]</li> 
-       <li>Progetto  </li> 
+       <li>Progetto [!UICONTROL] </li> 
        <li>[!UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
@@ -381,7 +381,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
@@ -452,7 +452,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
@@ -508,7 +508,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Utente]</li> 
     </ul> </td> 
@@ -548,7 +548,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Problema di transizione]</li> 
     </ul> </td> 
@@ -564,6 +564,24 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 * [[!UICONTROL Elenca record]](#list-records)
 * [[!UICONTROL Cerca record]](#search-for-records)
+
+>[!IMPORTANT]
+>
+>Il modulo di ricerca utilizzato dal connettore Jira legacy può causare il seguente errore:
+>
+>`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
+>
+>Ciò è dovuto a una deprecazione da parte di Jira.
+>
+>Se si verifica questo errore, è possibile sostituire il modulo di ricerca del connettore Jira legacy con il modulo di ricerca del nuovo connettore. Il nuovo connettore consente di selezionare la versione API utilizzata. Assicurati di selezionare V3 durante la creazione della connessione.
+>
+> ![Opzione di versione API nel nuovo connettore Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+>
+>Tieni presente che:
+>
+>* È interessato solo il modulo di ricerca. Al momento, altri endpoint API Jira utilizzati dal connettore Fusion non sono interessati da questa rimozione.
+>
+>* Il rollout geografico può causare incongruenze. Atlassian sta implementando questa modifica a livello regionale, il che significa che alcune istanze di Jira Cloud potrebbero ancora supportare temporaneamente gli endpoint precedenti. Questo può causare comportamenti non coerenti tra gli ambienti.
 
 #### [!UICONTROL Elenca record]
 
@@ -587,7 +605,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Problema Sprint]</li> 
      <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
@@ -626,7 +644,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul> 
      <li>[!UICONTROL Issues]</li> 
      <li> <p>[!UICONTROL Issues by JQL (Jira Query Language)] </p> <p>Per ulteriori informazioni su JQL, vedere <a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a> nella Guida di Atlassian. </p> </li> 
-     <li>Progetto </li> 
+     <li>Progetto [!UICONTROL]</li> 
      <li>[!UICONTROL Progetto per problema]</li> 
      <li>[!UICONTROL Utente]</li> 
     </ul> </td> 
