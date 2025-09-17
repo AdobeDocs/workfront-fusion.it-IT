@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Devtool consente di comprendere e risolvere 
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe Workfront Fusion Devtool consente di comprendere e risolvere gli scenari. 
 Per un video introduttivo e una descrizione dettagliata dello strumento Fusion Devtool, vedere
 
 * [Strumento di sviluppo Fusion](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Procedura dettagliata per Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=it)
+* [Procedura dettagliata per Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Requisiti di accesso
 
@@ -151,6 +151,12 @@ Live Stream mostra cosa accade in background quando fai clic su Esegui una volta
 
 ### Scenario Debugger
 
+>[!NOTE]
+>
+>Per passare rapidamente al debugger da uno scenario che ha generato un errore, è possibile fare clic su **Ottieni dettagli** nel messaggio di errore nell&#39;output del modulo.
+>
+>![Ottieni dettagli nell&#39;output del modulo](assets/go-to-debugger.png)
+
 Scenario Debugger è utile per scenari più complessi. Visualizza la cronologia dello scenario eseguito e consente di cercare i moduli in base al nome o all’ID.
 
 1. Fai clic sull&#39;icona **[!UICONTROL Scenario Debugger]** ![icona Debugger](assets/scenario-debugger-icon.png) per aprire Scenario Debugger.
@@ -200,7 +206,7 @@ Consente di cercare i valori dei moduli per un termine specificato. L’output c
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Parola chiave </td> 
+   <td role="rowheader">Parola chiave [!UICONTROL]</td> 
    <td> <p> Immettere il termine che si desidera cercare. </p> </td> 
   </tr> 
   <tr> 
@@ -335,7 +341,7 @@ Consente di codificare i dati immessi in Base64 o di decodificare Base64. Alcune
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Dati Non Elaborati]</p> </td> 
-   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo Operazione  precedente.</p> </td> 
+   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo Operazione [!UICONTROL] precedente.</p> </td> 
   </tr> 
  </tbody> 
 </table>
