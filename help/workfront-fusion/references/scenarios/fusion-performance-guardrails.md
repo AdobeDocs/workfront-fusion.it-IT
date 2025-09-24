@@ -4,9 +4,9 @@ description: L'automazione del lavoro richiede un'elaborazione rapida, pertanto 
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ L&#39;automazione del lavoro richiede un&#39;elaborazione rapida, pertanto Adobe
 ## File
 
 * La capacità di elaborazione totale di Fusion per i file è **1 GB**. Il limite si basa sul costo totale della memoria. Ogni operazione contribuisce a tale costo. Se viene scaricato e caricato un singolo file di 400 MB, il costo totale per la capacità del file sarebbe di 800 MB.
-* Le organizzazioni che aderiscono al piano Workfront Ultimate hanno accesso a una maggiore capacità di elaborazione dei file superiore a 1 GB. La piattaforma Fusion può supportare singoli file fino a 15 GB per una singola azione (ad esempio, caricamento di file), ma ci sono altri fattori che influiscono sul trasferimento dei dati. Il limite di dimensione file per una singola azione dipende dal servizio web a cui Fusion si connette. Il trasferimento di dati è l’elaborazione totale per una singola esecuzione. Ciò significa che più azioni in una singola esecuzione contribuiscono al trasferimento totale dei dati. Fusion elaborerà i file fino al raggiungimento del limite di esecuzione di 40 minuti.
+* Le organizzazioni che aderiscono al piano Workfront Ultimate hanno accesso a una maggiore capacità di elaborazione dei file superiore a 1 GB. Tuttavia, ci sono altri fattori che influiscono sul trasferimento dei dati. Il servizio a cui si connette Fusion può limitare le dimensioni dei file, con conseguenze sui file elaborati da tale servizio. Inoltre, i file di grandi dimensioni possono influire sul tempo di esecuzione dello scenario. Fusion elaborerà i file fino al raggiungimento del limite di esecuzione di 40 minuti, che impedisce l’esecuzione.
 * Se un file viene scaricato utilizzando un modulo che supporta file di grandi dimensioni e quindi trasmesso a un modulo che non supporta file di grandi dimensioni, tale modulo non elabora correttamente il file. I file di grandi dimensioni devono essere gestiti esclusivamente con i moduli supportati in tutto il flusso di lavoro.
 * I moduli che non supportano file di grandi dimensioni possono elaborare file con dimensioni fino a **200 MB**.
 
@@ -71,7 +71,7 @@ Per ulteriori informazioni, vedere [Utilizzo di file di grandi dimensioni](/help
 ## Cronologia di esecuzione
 
 * I registri della cronologia di esecuzione sono limitati a **100 MB**. Se la cronologia di esecuzione supera queste dimensioni, verranno visualizzati solo i primi 100 MB.
-* Se uno scenario ha più esecuzioni simultanee. nell’area Esecuzioni della pagina dei dettagli dello scenario vengono visualizzate solo 5 esecuzioni. Questo vale anche quando sono in esecuzione più di 5 esecuzioni.
+* Se uno scenario ha più esecuzioni simultanee, nell’area Esecuzioni della pagina dei dettagli dello scenario vengono visualizzate solo 5 esecuzioni. Questo vale anche quando sono in esecuzione più di 5 esecuzioni.
 
 ## Esecuzioni incomplete
 

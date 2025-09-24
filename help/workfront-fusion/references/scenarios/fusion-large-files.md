@@ -4,10 +4,10 @@ description: Il supporto per file di grandi dimensioni è attualmente disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 1%
+source-wordcount: '1043'
+ht-degree: 2%
 
 ---
 
@@ -64,9 +64,15 @@ Se prevedi di lavorare con file di dimensioni maggiori, ti consigliamo di sostit
 
 ### Qual è il nuovo limite di dimensione file?
 
-Gli utenti possono ora elaborare file che superano il precedente limite di 1 GB, migliorando l&#39;efficienza e la produttività.  Anche se la piattaforma può supportare singoli file fino a 15 GB per una singola azione (ad esempio il caricamento di un file), ci sono altri fattori che influiscono sul trasferimento dei dati. Il limite di dimensione del file per una singola azione dipende in ultima analisi dal servizio Web a cui Fusion si connette. Il trasferimento di dati è l’elaborazione totale per una singola esecuzione. Ciò significa che più azioni in una singola esecuzione contribuiscono al trasferimento totale dei dati.
+Gli utenti possono ora elaborare file che superano il precedente limite di 1 GB, migliorando l&#39;efficienza e la produttività.  Anche se non esiste un limite di dimensione definito per la piattaforma Workfront Fusion, l’utilizzo di file di grandi dimensioni può essere influenzato da altri fattori:
 
-Fusion elabora i file fino al raggiungimento del limite di esecuzione di 40 minuti. Il caricamento, il download o l&#39;elaborazione di file di grandi dimensioni nello scenario Fusion potrebbe richiedere del tempo. Anche se non esiste un limite alle dimensioni dei singoli file, il tempo di esecuzione dello scenario è limitato a 40 minuti. Pertanto, se i file di grandi dimensioni fanno durare l’esecuzione più di 40 minuti, lo scenario non riesce. Il tempo di esecuzione di uno scenario può essere influenzato anche dalle dimensioni dello scenario, dalla complessità del modulo e dalla velocità di rete. Pertanto, si consiglia di considerare questi aspetti degli scenari quando si utilizzano file di grandi dimensioni.
+* **Limitazioni relative alle dimensioni dei file del servizio a cui Fusion si connette**: se il servizio limita le dimensioni dei file, Workfront Fusion non supera tali limitazioni. I limiti di dimensione dei file dipendono in ultima analisi dal servizio Web a cui Fusion si connette.
+
+* **Tempo di esecuzione scenario**: Fusion elabora i file di qualsiasi dimensione fino al raggiungimento del limite di esecuzione di 40 minuti. Il caricamento, il download o l&#39;elaborazione di file di grandi dimensioni nello scenario Fusion potrebbe richiedere del tempo. Se i file di grandi dimensioni fanno durare l’esecuzione più di 40 minuti, lo scenario non riesce. Il tempo di esecuzione di uno scenario può essere influenzato anche dalle dimensioni dello scenario, dalla complessità del modulo e dalla velocità di rete. Pertanto, si consiglia di considerare questi aspetti degli scenari quando si utilizzano file di grandi dimensioni.
+
+>[!NOTE]
+>
+>Come best practice, consigliamo di limitare le dimensioni del file a 15 GB.
 
 ### Come funziona il nuovo trasferimento di file di Fusion?
 
@@ -92,7 +98,7 @@ Questa funzione è già stata completata e implementata in produzione.
 
 Progettare uno scenario che funzioni entro il limite di esecuzione di 40 minuti può sembrare complicato. Durante la progettazione di uno scenario, è consigliabile tenere presente quanto segue:
 
-* **Comprendere i requisiti aziendali per il tempo di esecuzione**: il limite della piattaforma Fusion per il tempo di esecuzione è di 40 minuti, ma si prevede che la maggior parte delle automazioni dei processi aziendali venga eseguita molto più rapidamente. Ad esempio, le automazioni avviate dall’utente con continuazione dipendente dai risultati dovrebbero essere completate al di sotto del limite di 40 minuti.
+* **Comprendere i requisiti aziendali per il tempo di esecuzione**: il limite della piattaforma Fusion per il tempo di esecuzione è di 40 minuti, ma si prevede che la maggior parte delle automazioni dei processi aziendali venga eseguita molto più rapidamente. Ad esempio, le automazioni avviate dall’utente con continuazione dipendente dai risultati dovrebbero essere completate ben al di sotto del limite di 40 minuti.
 * **Considera il tempo di esecuzione durante la progettazione**: durante la progettazione dello scenario, è essenziale comprendere il tempo di esecuzione del modulo per le singole azioni sui file, ad esempio caricamenti e download. Questa conoscenza consente di pianificare scenari che richiedono più azioni sui file.  Per garantire la precisione del progetto, si consiglia di arrotondare il tempo di esecuzione del modulo per includere un buffer.
 Ad esempio, se Fusion scarica un documento in 144 secondi (2,4 minuti), è possibile prevedere che una singola esecuzione possa eseguire più volte azioni simili. In questo esempio, l’esecuzione del modulo richiede 144 secondi ed è necessario pianificare un tempo di esecuzione di 3 minuti per il download. Se i tuoi requisiti includono sia un caricamento che un download, il tempo di esecuzione previsto sarebbe di circa 6 minuti. I tempi di esecuzione di Fusion sono limitati a 40 minuti.
 
