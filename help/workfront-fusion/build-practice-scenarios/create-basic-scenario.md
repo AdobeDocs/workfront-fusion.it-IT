@@ -7,9 +7,9 @@ description: Scopri come creare uno scenario di automazione semplice con Adobe W
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1426'
 ht-degree: 1%
 
 ---
@@ -191,9 +191,9 @@ In questo caso, se il test ha esito positivo, la richiesta viene individuata e c
 >
 >1. Chiudi l&#39;area **[!UICONTROL Note]**.
 >
->     Dopo aver aggiunto una nota a uno scenario, un punto arancione viene visualizzato sull&#39;icona **[!UICONTROL Note]** ![Note con punto](assets/notes-icon-w-dot.png) nella parte inferiore dell&#39;editor dello scenario.
+>     Dopo aver aggiunto una nota a uno scenario, un punto viene visualizzato sull&#39;icona **[!UICONTROL Note]** ![Note con punto](assets/notes-icon-w-dot.png) nella parte inferiore dell&#39;editor dello scenario.
 >
->1. Fai clic sull&#39;icona **[!UICONTROL Note]** ![Note con punto](assets/notes-icon-w-dot.png) per visualizzare le note.
+>1. Fai clic sull&#39;icona **[!UICONTROL Note]** ![Note con punto](assets/notes-icon-w-dot.png) per visualizzare le note. Quando le note sono aperte, viene visualizzato un cerchio attorno all&#39;icona Note.
 >
 
 ## Attiva lo scenario

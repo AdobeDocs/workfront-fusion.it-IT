@@ -5,9 +5,9 @@ description: È consigliabile aggiungere note su ciascun modulo in modo facoltat
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,7 @@ Consigliamo di aggiungere note allo scenario in modo facoltativo ma utile. Le no
    Dopo aver aggiunto una nota a uno scenario, un punto blu viene visualizzato sull&#39;icona **[!UICONTROL Notes]** ![Notes icon con punto](assets/notes-icon-w-dot.png) nella parte inferiore dell&#39;editor dello scenario.
 
 1. Per visualizzare o nascondere tutte le note, fai clic sull&#39;icona **[!UICONTROL Note]** ![Note con punto](assets/notes-icon-w-dot.png).
+
+   Quando le note sono aperte, viene visualizzato un cerchio attorno all&#39;icona Note.
+
+   ![Icona note con cerchio](assets/notes-icon-with-circle.png)
