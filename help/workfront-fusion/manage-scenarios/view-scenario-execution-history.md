@@ -4,9 +4,9 @@ description: È possibile visualizzare informazioni sugli eventi o sulle esecuzi
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c0a4e563657871f856b7d449432d563c6caa27a1
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Un evento scenario è una modifica allo scenario, ad esempio la modifica, l’at
 
 >[!NOTE]
 >
->La cronologia di uno scenario visualizza tutti gli eventi e le esecuzioni dello scenario per gli ultimi 30 giorni.
+>La cronologia di uno scenario visualizza tutte le esecuzioni dello scenario negli ultimi 30 giorni.
 
 ## Requisiti di accesso
 
