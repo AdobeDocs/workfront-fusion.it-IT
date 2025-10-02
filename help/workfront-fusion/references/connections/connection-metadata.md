@@ -4,9 +4,9 @@ description: Fusion utilizza i metadati per identificare gli attributi important
 author: Becky
 feature: Workfront Fusion
 exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,11 @@ Fusion utilizza i metadati per identificare gli attributi importanti di una conn
 
 ![Metadati di connessione](assets/connection-metadata-setup.png)
 
-Gli utenti di Fusion possono visualizzare e modificare le connessioni dall&#39;area Connessioni.
+Gli utenti di Fusion possono visualizzare e modificare le connessioni dall&#39;area Connessioni. Per accedere all’area Connessioni, fai clic su Connessioni nel menu di navigazione a sinistra.
 
-![Metadati di connessione nell&#39;area Connessioni](assets/connections-area-metadata.png)
+![Area Connessioni nel pannello di navigazione a sinistra](assets/connections-in-left-nav.png)
+
+<!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
 ## Tipo di ambiente
 

@@ -7,10 +7,10 @@ description: Per la maggior parte delle app, è necessario creare una connession
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 2%
+source-wordcount: '561'
+ht-degree: 1%
 
 ---
 
@@ -80,9 +80,10 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 1. (Facoltativo) Assegna un ambiente e un tipo di connessione facendo clic sui menu a discesa **Ambiente** e **Tipo** e selezionando un&#39;opzione.
 1. (Facoltativo) Per visualizzare le autorizzazioni assegnate a Workfront Fusion per la connessione, fare clic sull&#39;icona Visualizza ![Visualizza autorizzazioni di connessione](assets/view-connection-permissions.png) per la connessione.
 1. (Facoltativo) Per rinominare una connessione, evidenziarne il nome e digitare il nuovo nome.
-1. (Facoltativo) Per autorizzare nuovamente una connessione, fare clic su **Riautorizza**.
-1. (Facoltativo) Per eliminare una connessione, fare clic su **Elimina**, quindi su **Effettivamente?**.
-1. (Facoltativo) Per verificare che la connessione al servizio sia stata stabilita correttamente, fare clic su **Verifica**.
+1. (Facoltativo) Per autorizzare nuovamente una connessione, seleziona la casella di controllo accanto alla connessione, quindi fai clic su **Riautorizza** nella parte inferiore della schermata.
+1. (Facoltativo) Per eliminare una connessione, seleziona la casella di controllo accanto alla connessione, fai clic su **Elimina** nella parte inferiore dello schermo, quindi fai clic su **Davvero?**.
+1. (Facoltativo) Per verificare che la connessione al servizio sia stata stabilita correttamente, seleziona la casella di controllo accanto alla connessione, quindi fai clic su **Verifica** nella parte inferiore della schermata.
+1. Per visualizzare gli scenari attivi che utilizzano questa connessione, selezionare la casella di controllo accanto alla connessione, quindi fare clic su **Recupera scenari attivi**. È quindi possibile fare clic su uno scenario nell&#39;elenco Scenari attivi per passare a tale scenario.
 
 ## Rinnovare una connessione
 
@@ -92,7 +93,7 @@ Per rinnovare una connessione:
 
 1. Per aprire l&#39;area Connessioni, fare clic su **Connessioni** ![Icona Connessioni](assets/connections-icon.png) nell&#39;area di navigazione a sinistra.
 1. Individuare la connessione da rinnovare.
-1. Nella riga della connessione fare clic sul pulsante **[!UICONTROL Riautorizza]** nell&#39;area **[!UICONTROL Connessioni]**.
+1. Nella riga della connessione, seleziona la casella di controllo accanto alla connessione, quindi fai clic su **Riautorizza** nella parte inferiore dello schermo.
 
 ## Risorse
 
