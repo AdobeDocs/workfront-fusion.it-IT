@@ -7,9 +7,9 @@ description: Per la maggior parte delle app, è necessario creare una connession
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
+source-git-commit: bc1b025af534addf032519142148f6285f481784
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 1. (Facoltativo) Per autorizzare nuovamente una connessione, seleziona la casella di controllo accanto alla connessione, quindi fai clic su **Riautorizza** nella parte inferiore della schermata.
 1. (Facoltativo) Per eliminare una connessione, seleziona la casella di controllo accanto alla connessione, fai clic su **Elimina** nella parte inferiore dello schermo, quindi fai clic su **Davvero?**.
 1. (Facoltativo) Per verificare che la connessione al servizio sia stata stabilita correttamente, seleziona la casella di controllo accanto alla connessione, quindi fai clic su **Verifica** nella parte inferiore della schermata.
-1. Per visualizzare gli scenari attivi che utilizzano questa connessione, selezionare la casella di controllo accanto alla connessione, quindi fare clic su **Recupera scenari attivi**. È quindi possibile fare clic su uno scenario nell&#39;elenco Scenari attivi per passare a tale scenario.
+1. (Facoltativo) Per visualizzare gli scenari attivi che utilizzano questa connessione, selezionare la casella di controllo accanto alla connessione, quindi fare clic su **Recupera scenari attivi**. È quindi possibile fare clic su uno scenario nell&#39;elenco Scenari attivi per passare a tale scenario.
 
 ## Rinnovare una connessione
 
