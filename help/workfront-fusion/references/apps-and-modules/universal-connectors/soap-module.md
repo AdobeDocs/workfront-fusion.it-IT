@@ -4,9 +4,9 @@ description: Puoi utilizzare il modulo SOAP per connettersi alle API SOAP in Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
+source-git-commit: 29f9595d063e89e9cd393fecba07194d2e9008aa
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ Se il modulo [!UICONTROL SOAP] rifiuta di elaborare il file WSDL o genera vari e
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Una volta individuato, copiare l&#39;URL dall&#39;attributo `location`.
-1. In Workfront Fusion, incolla l’URL nel campo URL del modulo HTTP.
+1. In Workfront Fusion, incolla l&#39;URL nel campo **Request content** del modulo HTTP.
 1. Fornire i valori per i parametri selezionati sostituendo i punti interrogativi con i valori effettivi.
 
    >[!NOTE]
