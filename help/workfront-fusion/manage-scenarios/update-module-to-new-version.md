@@ -4,10 +4,10 @@ description: Poiché le applicazioni a cui Workfront Fusion si connette possono 
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d0d9d7cdad993ecceaa0abf0ac69e9a9abd78b69
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 1%
+source-wordcount: '417'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ Poiché le applicazioni a cui Workfront Fusion si connette possono aggiornare o 
 
 Se in uno scenario viene visualizzata l&#39;icona verde del modulo Aggiornamento, Workfront Fusion ha rilasciato una nuova versione di tale modulo.
 
-![Icona aggiornamento](assets/update-indicator.png)
+![Icona aggiornamento](assets/update-indicator-workfront.png)
 
 Puoi aggiornare il modulo senza creare un nuovo scenario.
 
@@ -73,12 +73,29 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 
 +++
 
-## Aggiornare un modulo a una nuova versione
+## Aggiornare un modulo Workfront a una nuova versione
+
+1. Fai clic sull&#39;icona **Aggiorna modulo** ![Icona Aggiorna](assets/upgrade-icon.png) nel modulo che desideri aggiornare a una nuova versione.
+   ![Icona aggiornamento](assets/update-indicator-workfront.png)
+1. Scegliere una delle opzioni seguenti:
+
+   * Per selezionare un nuovo modulo da sostituire (anziché aggiornare il modulo), fare clic su **Scegli nuovo**, quindi procedere come descritto in [Aggiornare un modulo non Workfront a una nuova versione](#upgrade-a-non-workfront-module-to-a-new-version).
+   * Per aggiornare solo questo modulo, mantenendo la configurazione del modulo, fai clic su **Aggiorna**.
+   * Per aggiornare tutti i moduli Workfront nello scenario, fare clic su **Aggiorna tutti**.
+
+1. Salva lo scenario.
+
+>[!NOTE]
+>
+>Se hai aggiornato i moduli Workfront, ti consigliamo di aprirli e di controllare la configurazione del modulo.
+
+## Aggiornare un modulo non Workfront a una nuova versione
 
 1. Fai clic sull&#39;icona **Aggiorna modulo** ![Icona Aggiorna](assets/upgrade-icon.png) nel modulo che desideri aggiornare a una nuova versione.
    ![Icona aggiornamento](assets/update-indicator.png)
-1. Fai clic su **Mostra nuovi moduli**.
-1. Seleziona il nuovo modulo che corrisponde al modulo esistente.
+1. Fare clic su **Scegli nuovo**.
+1. Selezionare il modulo che si desidera sostituire al modulo precedente.
 1. Configura il modulo con le stesse impostazioni del modulo esistente.
 1. Connetti il nuovo modulo allo scenario nello stesso punto del modulo esistente.
 1. Elimina il modulo precedente.
+1. Salva lo scenario.
