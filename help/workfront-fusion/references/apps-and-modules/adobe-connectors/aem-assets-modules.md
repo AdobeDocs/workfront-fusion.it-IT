@@ -4,7 +4,7 @@ description: Con il connettore Adobe Experience Manager Assets per Adobe Workfro
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d62a8bd4675c034581f6cf5f3a1e61c177de5ebc
+source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
 workflow-type: tm+mt
 source-wordcount: '3727'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
+   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
    <p>Oppure</p>
    <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
    </td> 
@@ -67,10 +67,10 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 * Per utilizzare questi moduli è necessario disporre di un account Adobe Experience Manager Assets.
 * Devi impostare il flusso server-to-server nella console Adobe Developer.
 
-  Per istruzioni sulla configurazione del flusso server-to-server nella console Adobe Developer, vedi [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#the-server-to-server-flow).
+  Per istruzioni sulla configurazione del flusso server-to-server nella console Adobe Developer, vedi [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * L&#39;account tecnico Adobe Experience Manager deve disporre di autorizzazioni di scrittura.
 
-  Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
+  Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
 
 ## Informazioni API di Adobe Experience Manager Assets
 
@@ -118,11 +118,11 @@ Per creare una connessione per i moduli Adobe Experience Manager Assets:
 >
 >* Le informazioni per questi campi vengono generate durante la configurazione del flusso server-to-server in Adobe Developer Console. Questi valori si trovano nel file JSON delle credenziali del servizio generato come parte di tale configurazione.
 >
->   Per istruzioni sulla configurazione del flusso server-to-server in Adobe Developer Console, vedere [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#the-server-to-server-flow).
+>   Per istruzioni sulla configurazione del flusso server-to-server in Adobe Developer Console, vedere [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* L&#39;account tecnico Adobe Experience Manager deve disporre di autorizzazioni di scrittura.
 >
->   Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
+>   Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
@@ -164,8 +164,8 @@ Per creare una connessione per i moduli Adobe Experience Manager Assets:
                   <td class="">Se inserisci i dettagli manualmente, inserisci l’ID della tua organizzazione. Questo è il campo "org" nel file JSON delle credenziali client.</td>
               </tr>
               <tr>
-                  <td role="rowheader">Meta ambiti</td>
-                  <td>Immettere i metadati generati nella configurazione server-to-server.</td>
+                  <td role="rowheader">Ambiti Meta</td>
+                  <td>Immettere gli ambiti Meta generati nella configurazione server-to-server.</td>
               </tr>
               <tr>
                   <td role="rowheader">Chiave privata</td>
@@ -408,7 +408,7 @@ Questo modulo di azione crea una cartella o un commento alla risorsa.
    <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo oggetto</td> 
+   <td role="rowheader">Tipo di oggetto</td> 
    <td> <p>Seleziona se desideri creare una cartella o un commento su una risorsa.</p> 
     <ul> 
      <li> <p>Cartella</p> <p>Compila i campi seguenti:</p> 
@@ -773,7 +773,7 @@ Questo modulo di azione carica una nuova risorsa importando file dagli URL speci
   </tr> 
   <tr> 
    <td role="rowheader">Data di scadenza</td> 
-   <td> <p>Immetti o mappa la data di esecuzione della risorsa.</p><p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p> </td> 
+   <td> <p>Immetti o mappa la data di scadenza della risorsa.</p><p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Metadati personalizzati</td> 
