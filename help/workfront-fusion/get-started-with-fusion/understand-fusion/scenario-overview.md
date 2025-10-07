@@ -26,7 +26,7 @@ Uno scenario è costituito da elementi diversi. Comprendere la terminologia di t
 * [Modulo](#module)
 * [Percorso](#route)
 * [Segmento scenario](#scenario-segment)
-* [Connettore ](#connector)
+* [Connettore &#x200B;](#connector)
 
 ### Scenario
 
