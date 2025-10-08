@@ -3,7 +3,7 @@ title: Panoramica API
 description: Le interfacce API (Application Programming Interface) consentono alle applicazioni e ai servizi di comunicare tra loro. Fusion utilizza le API per comunicare con l’applicazione a cui ti stai connettendo. Ogni applicazione ha un’API separata.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: f5dcb5207581fb68d0f3048d23214d08a28f2f22
+source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Il fatto che le API siano definite dai rispettivi proprietari e non da Fusion po
 
 * **È possibile utilizzare Fusion per connettersi a qualsiasi app o servizio che dispone di un&#39;API pubblica**, indipendentemente dal fatto che Fusion offra o meno un connettore dedicato all&#39;app o al servizio. Puoi utilizzare i connettori universali di Fusion per inserire queste app o servizi negli scenari.
 
-  Per un elenco dei connettori universali, vedere [Connettori universali](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
+  Per un elenco dei connettori universali, vedere [Connettori universali](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
 * **Le modifiche apportate dal proprietario all&#39;API di un&#39;applicazione possono influire sulla funzionalità di Fusion.** Se le modifiche sono sufficientemente severe, Fusion potrebbe dover aggiornare i moduli o i tipi di connessione oppure, in casi estremi, potrebbe creare un nuovo connettore per l&#39;applicazione.
 

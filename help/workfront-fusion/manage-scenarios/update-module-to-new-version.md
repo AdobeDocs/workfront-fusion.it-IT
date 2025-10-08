@@ -4,7 +4,7 @@ description: Poiché le applicazioni a cui Workfront Fusion si connette possono 
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: d0d9d7cdad993ecceaa0abf0ac69e9a9abd78b69
+source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Aggiornare un modulo a una nuova versione
 
-Poiché le applicazioni a cui Workfront Fusion si connette possono aggiornare o rilasciare una nuova versione, è talvolta necessario che Fusion rilasci moduli aggiornati per tali applicazioni.
+Poiché le applicazioni a cui Workfront Fusion si connette possono aggiornare o rilasciare nuove versioni, è talvolta necessario che Fusion rilasci moduli aggiornati per tali applicazioni.
 
 Se in uno scenario viene visualizzata l&#39;icona verde del modulo Aggiornamento, Workfront Fusion ha rilasciato una nuova versione di tale modulo.
 
