@@ -4,7 +4,7 @@ description: La funzione Adobe Workfront FusionTemplates consente di creare e ut
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
@@ -76,6 +76,6 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 
 1. Dopo aver configurato tutte le impostazioni richieste per il modello, viene visualizzato un messaggio che informa che il modello è pronto per essere utilizzato e che le opzioni dello scenario standard sono visualizzate nella parte inferiore dello schermo. Ora puoi continuare a creare il tuo scenario.
 
-   Per informazioni sulla creazione di uno scenario, vedere [flusso di lavoro per la creazione di uno scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
+   Per informazioni sulla creazione di uno scenario, vedere [Flusso di lavoro per la creazione di uno scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
 1. Fai clic sull&#39;icona **[!UICONTROL Salva]** ![Salva icona](assets/save-icon.png) per salvare lo scenario. Lo scenario viene salvato nell&#39;area Scenario di Workfront Fusion.

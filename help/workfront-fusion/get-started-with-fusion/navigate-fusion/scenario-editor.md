@@ -4,9 +4,9 @@ description: L’editor degli scenari consente di creare e modificare scenari in
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 3%
 
 ---
@@ -100,7 +100,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 | Impostazioni scenario | Il pannello delle impostazioni dello scenario contiene le impostazioni avanzate per lo scenario. Per ulteriori informazioni sulle impostazioni disponibili, vedere [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Note | Prendi nota dello scenario. Altri utenti possono visualizzare queste note quando si trovano nello scenario. |
 | Allineamento automatico | Allinea automaticamente i moduli nello scenario. |
-| Spiega flusso | Visualizza un’animazione che mostra il flusso dei dati nello scenario. |
+| Spiega flusso | Visualizza un’animazione in cui i punti in movimento mostrano il modo in cui i dati scorrono nello scenario. |
 | Strumenti di sviluppo | Utilizzando Devtool, puoi controllare tutte le esecuzioni manuali dello scenario, esaminare tutte le operazioni eseguite e visualizzare i dettagli di ogni chiamata API eseguita. Puoi vedere quale modulo, operazione o singola risposta ha causato l’errore e sfruttare queste informazioni per perfezionare lo scenario. Per ulteriori informazioni, vedere [Eseguire il debug di uno scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
 | Altro | Nel menu Altro, puoi importare o esportare i blueprint e ripristinare lo scenario alle versioni precedenti. |
 
