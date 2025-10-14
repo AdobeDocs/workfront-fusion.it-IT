@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: f827b299fa8ffd3b0bf3393d5e22b7eb94be78f2
+source-git-commit: 64968094229b71b8dd3f159deac5989c056c1bc5
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1898'
 ht-degree: 3%
 
 ---
@@ -16,9 +16,10 @@ ht-degree: 3%
 * Attività di rilascio di Fusion {#fusion-release-activity}
    * [Attività di rilascio di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versioni di Fusion - 2025 {#fusion-releases-2025}
-      * [Attività di rilascio di Workfront Fusion: settimana del 22 settembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-29.md)
+      * [Attività di rilascio di Workfront Fusion: settimana del 13 ottobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 6 ottobre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-6.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 29 settembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-22.md)
+      * [Attività di rilascio di Workfront Fusion: settimana del 22 settembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-29.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 15 settembre 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-15.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 18 agosto 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 31 luglio 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
