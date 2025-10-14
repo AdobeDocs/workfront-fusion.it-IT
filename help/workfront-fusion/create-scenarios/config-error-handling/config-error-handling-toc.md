@@ -17,6 +17,6 @@ ht-degree: 4%
 
 * [Aggiungi gestione degli errori](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
 * [Aggiungere filtri e nidificazione alle route di gestione degli errori](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)
-* [Configura ](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
-* [Configura ](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
+* [Configura &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
+* [Configura &#x200B;](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
 * [Risolvere gli errori gestiti dalla direttiva Break](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
