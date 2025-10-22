@@ -289,27 +289,27 @@ Il timeout per l’invio di una risposta è di 5 minuti. Se la risposta non è d
 >Configura il modulo [!UICONTROL Risposta webhook] come segue:
 >
 ><table style="table-layout:auto"> 
-&gt; <col> 
-&gt; <col> 
-&gt; <tbody> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
-&gt;   <td> <p>Codice di stato HTTP 2xx, ad esempio 200</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
-&gt;   <td> <p>Codice HTML</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
-&gt;   <td> 
-&gt;    <ul> 
-&gt;     <li><strong>Chiave</strong>: tipo di contenuto</li> 
-&gt;     <li><strong>Valore</strong>: text/html</li> 
-&gt;    </ul> </td> 
-&gt;  </tr> 
-&gt; </tbody> 
-&gt;</table>
+>&gt; <col> 
+>&gt; <col> 
+>&gt; <tbody> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
+>&gt;   <td> <p>Codice di stato HTTP 2xx, ad esempio 200</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+>&gt;   <td> <p>Codice HTML</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
+>&gt;   <td> 
+>&gt;    <ul> 
+>&gt;     <li><strong>Chiave</strong>: tipo di contenuto</li> 
+>&gt;     <li><strong>Valore</strong>: text/html</li> 
+>&gt;    </ul> </td> 
+>&gt;  </tr> 
+>&gt; </tbody> 
+>&gt;</table>
 >
 >![Intestazioni personalizzate](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +324,23 @@ Il timeout per l’invio di una risposta è di 5 minuti. Se la risposta non è d
 >**Esempio:** Configura il modulo [!UICONTROL Risposta webhook] come segue:
 >
 ><table style="table-layout:auto"> 
-&gt; <col> 
-&gt; <col> 
-&gt; <tbody> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
-&gt;   <td> <p>Codice di stato HTTP del reindirizzamento 3xx, ad esempio 303</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
-&gt;   <td> 
-&gt;    <ul> 
-&gt;     <li><strong>[!UICONTROL Key]</strong>: Location</li> 
-&gt;     <li><strong>[!UICONTROL Value]</strong>: l'URL a cui si desidera reindirizzare.</li> 
-&gt;    </ul> </td> 
-&gt;  </tr> 
-&gt; </tbody> 
-&gt;</table>
+>&gt; <col> 
+>&gt; <col> 
+>&gt; <tbody> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
+>&gt;   <td> <p>Codice di stato HTTP del reindirizzamento 3xx, ad esempio 303</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
+>&gt;   <td> 
+>&gt;    <ul> 
+>&gt;     <li><strong>[!UICONTROL Key]</strong>: Location</li> 
+>&gt;     <li><strong>[!UICONTROL Value]</strong>: l'URL a cui si desidera reindirizzare.</li> 
+>&gt;    </ul> </td> 
+>&gt;  </tr> 
+>&gt; </tbody> 
+>&gt;</table>
 >
 >![Risposta webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
