@@ -4,9 +4,9 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
+source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -57,9 +57,9 @@ Restituisce una matrice primitiva contenente i valori di una matrice complessa. 
 
   Restituisce un array primitivo con le e-mail
 
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
 
-  Restituisce un array primitivo con e-mail aventi un’etichetta uguale a lavoro o casa
+  Restituisce un array primitivo con e-mail aventi un’etichetta uguale al lavoro
 
 >[!ENDSHADEBOX]
 
