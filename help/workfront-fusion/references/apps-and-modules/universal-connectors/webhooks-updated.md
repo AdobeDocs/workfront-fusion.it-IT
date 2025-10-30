@@ -4,9 +4,9 @@ description: Un webhook è una chiamata HTTP attivata da un evento. Puoi utilizz
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
+source-git-commit: 1fce6f9db83aa700538a29d7a15c61f60d522e58
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1522'
 ht-degree: 0%
 
 ---
@@ -70,18 +70,23 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 
 Per utilizzare un webhook per collegare un&#39;app a Workfront Fusion:
 
-1. Aggiungi il modulo di attivazione immediata **[!UICONTROL Webhook]** >**[!UICONTROL Webhook personalizzato]** allo scenario.
+1. Aggiungi il modulo di trigger istantaneo **[!UICONTROL Webhook]** > **[!UICONTROL Webhook personalizzato]** allo scenario.
 
 1. Fai clic su **[!UICONTROL Aggiungi]** accanto al campo Webhook e immetti un nome per il nuovo webhook.
 1. (Facoltativo) Fai clic su **[!UICONTROL Impostazioni avanzate]**.
 1. Nel campo **[!UICONTROL Restrizioni IP]**, inserisci un elenco separato da virgole degli indirizzi IP da cui il modulo può accettare i dati.
+1. Per convalidare i dati in arrivo, nel campo **Struttura dati** selezionare o aggiungere la struttura dati che si desidera utilizzare.
+
+   Per informazioni sulle strutture dati, vedere [Strutture dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. Nel campo **Credenziali** è possibile immettere le credenziali da utilizzare per l&#39;autorizzazione. Per immettere le credenziali, fare clic su **Aggiungi** e immettere le informazioni sulle credenziali.
+1. Se necessario, abilita altre impostazioni.
 1. Fai clic su **[!UICONTROL Salva]**
 
 Dopo aver creato un webhook, viene visualizzato un URL univoco. Questo è l’indirizzo a cui il webhook invia i dati. Workfront Fusion convalida i dati inviati a questo indirizzo, quindi li trasmette per l’elaborazione nello scenario.
 
 >[!NOTE]
 >
->Una volta creato un webhook, puoi utilizzarlo in più scenari alla volta.
+>Dopo aver creato un webhook, puoi utilizzarlo in più scenari alla volta.
 
 ### Configurare la struttura dati del webhook {#configure-the-webhook-s-data-structure}
 
@@ -289,27 +294,27 @@ Il timeout per l’invio di una risposta è di 5 minuti. Se la risposta non è d
 >Configura il modulo [!UICONTROL Risposta webhook] come segue:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
->&gt;   <td> <p>Codice di stato HTTP 2xx, ad esempio 200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>Codice HTML</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Chiave</strong>: tipo di contenuto</li> 
->&gt;     <li><strong>Valore</strong>: text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
+&gt;   <td> <p>Codice di stato HTTP 2xx, ad esempio 200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td> <p>Codice HTML</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Chiave</strong>: tipo di contenuto</li> 
+&gt;     <li><strong>Valore</strong>: text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Intestazioni personalizzate](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +329,23 @@ Il timeout per l’invio di una risposta è di 5 minuti. Se la risposta non è d
 >**Esempio:** Configura il modulo [!UICONTROL Risposta webhook] come segue:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
->&gt;   <td> <p>Codice di stato HTTP del reindirizzamento 3xx, ad esempio 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Key]</strong>: Location</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>: l'URL a cui si desidera reindirizzare.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
+&gt;   <td> <p>Codice di stato HTTP del reindirizzamento 3xx, ad esempio 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Key]</strong>: Location</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>: l'URL a cui si desidera reindirizzare.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Risposta webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
