@@ -4,9 +4,9 @@ description: È possibile mappare un array o singoli elementi di array a un camp
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -30,42 +30,28 @@ Un array è un elemento bundle che può contenere i seguenti elementi:
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
-   <p>Oppure</p>
-   <p>Legacy: qualsiasi </p>
-   </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Piano Workfront di [!UICONTROL Select] o [!UICONTROL Prime]: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Workfront di [!UICONTROL Ultimate]: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

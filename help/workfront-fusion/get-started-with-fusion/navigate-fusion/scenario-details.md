@@ -4,9 +4,9 @@ description: Dettagli dello scenario in Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '574'
 ht-degree: 1%
 
 ---
@@ -23,51 +23,28 @@ Per informazioni sull&#39;editor scenario, vedere [Editor scenario](/help/workfr
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
-   <p>Oppure</p>
-   <p>Legacy: qualsiasi </p>
-   </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Piano Workfront di [!UICONTROL Select] o [!UICONTROL Prime]: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Workfront di [!UICONTROL Ultimate]: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Configurazioni del livello di accesso*</td> 
-   <td> 
-     <p>Devi essere un amministratore di Workfront Fusion per la tua organizzazione.</p>
-     <p>Devi essere un amministratore di Workfront Fusion per il tuo team.</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -92,11 +69,11 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
       <td>Questa scheda visualizza la rappresentazione visiva dello scenario. Il diagramma è lo stesso visualizzato nell’editor di scenari.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Scheda Rapporti di  </td> 
+      <td role="rowheader">Scheda Rapporti di [!UICONTROL] </td> 
       <td> <p>Apri questa scheda per visualizzare un grafico del numero di operazioni eseguite da questo scenario per gli ultimi 30 giorni.</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Scheda Cronologia di  </td> 
+      <td role="rowheader">Scheda Cronologia di [!UICONTROL] </td> 
       <td> <p>Apri questa scheda per visualizzare una cronologia dello scenario, incluse le modifiche apportate allo scenario. </p> <p>La scheda [!UICONTROL Cronologia] fornisce inoltre la cronologia di esecuzione di ogni esecuzione, che include quanto segue:</p> 
        <ul> 
         <li>Stato di ciascuna esecuzione (riuscita o errore)</li> 
@@ -140,7 +117,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
       <td>Questa area mostra informazioni relative all’esecuzione attualmente in esecuzione.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>Pannello Cronologia di </p> <p> </p> </td> 
+      <td role="rowheader"> <p>Pannello Cronologia di [!UICONTROL]</p> <p> </p> </td> 
       <td> <p>In quest'area vengono visualizzate informazioni relative alle ultime esecuzioni dello scenario. Per ogni esecuzione viene visualizzato:</p> 
        <ul> 
         <li>Data di esecuzione</li> 

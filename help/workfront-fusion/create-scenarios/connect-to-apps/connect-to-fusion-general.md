@@ -4,10 +4,10 @@ description: Molti connettori Adobe Workfront Fusion non richiedono una configur
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 1%
+source-wordcount: '571'
+ht-degree: 0%
 
 ---
 
@@ -27,34 +27,29 @@ Molti connettori Adobe Workfront Fusion non richiedono una configurazione person
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Pacchetto Adobe Workfront 
-   <td> <p>Qualsiasi</p> </td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: qualsiasi </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): per connettersi ad applicazioni esterne alla famiglia di prodotti Workfront, è necessario disporre di Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Selezionare o Prime Workfront Plan: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Ultimate Workfront: Workfront Fusion è incluso.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -73,7 +68,7 @@ Per creare una connessione a una determinata applicazione, è necessario essere 
 Per creare una connessione all&#39;interno di un modulo Workfront Fusion:
 
 1. In qualsiasi modulo per l&#39;applicazione specificata, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella [!UICONTROL Connessione] per aprire il pannello **[!UICONTROL Crea connessione]**.
-1. (Facoltativo) Modificare il nome predefinito della connessione **&#x200B;**.
+1. (Facoltativo) Modificare il nome predefinito della connessione ****.
 1. Nel campo Ambiente, seleziona se si tratta di un ambiente di produzione o non di produzione.
 1. Nel campo Tipo selezionare se si tratta di un account di servizio o personale.
 1. (Condizionale) Se l&#39;app richiede impostazioni di connessione avanzate, ad esempio un ID, una chiave o un [!UICONTROL segreto], immetti tali informazioni.

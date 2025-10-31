@@ -4,9 +4,9 @@ description: Puoi visualizzare un registro delle attività dell’organizzazione
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -19,48 +19,31 @@ Puoi visualizzare un registro delle attività, ad esempio la creazione di uno sc
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">piano Adobe Workfront</td>
-   <td> <p>Nuovo: Ultimate</p> <p>Oppure</p> <p>Corrente: non disponibile</p></td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Flusso di lavoro di Adobe Workfront Ultimate e Adobe Workfront Automazione e integrazione Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: non disponibile</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p></td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
-   <p>Oppure</p>
-   <p>Legacy: qualsiasi </p>
-   </td> 
-  </tr> 
-   <tr> 
+  <tr data-mc-conditions=""> 
    <td role="rowheader">Configurazioni del livello di accesso</td> 
-   <td> <p>Per utilizzare il registro attività è necessario essere un amministratore di Fusion.</p></td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Prodotto</td> 
-   <td>
-   <p>Questa funzionalità è disponibile solo per le organizzazioni che utilizzano il piano Ultimate Workfront, che include Workfront Fusion. Non è necessario alcun ulteriore acquisto di prodotti.</p>
+   <td> 
+     <p>Devi essere un amministratore di Workfront Fusion per la tua organizzazione.</p>
+     <p>Devi essere un amministratore di Workfront Fusion per il tuo team.</p>
    </td> 
-  </tr>
+  </tr> 
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione di Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
-
-
 
 ## Visualizzare i registri attività
 

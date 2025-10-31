@@ -8,10 +8,10 @@ description: È possibile aggiungere un utente a Adobe Admin Console e assegnarl
 author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 2%
+source-wordcount: '605'
+ht-degree: 1%
 
 ---
 
@@ -21,56 +21,9 @@ ht-degree: 2%
 
 Per un video che descrive Workfront Fusion in [!DNL Adobe Admin Console] e spiega come aggiungere utenti, vedi [[!DNL Fusion] su Adobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank}.
 
-
-
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">Piano Adobe Workfront*</td> 
-   <td> <p>[!UICONTROL Pro] o versione successiva</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Requisito di licenza corrente: nessun requisito di licenza per Workfront Fusion.</p>
-   <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Prodotto</td> 
-   <td>
-   <p>Fabbisogno corrente del prodotto: se disponi del piano Adobe Workfront [!UICONTROL Select] o [!UICONTROL Prime], per utilizzare le funzionalità descritte in questo articolo la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront. Workfront Fusion è incluso nel piano Workfront di [!UICONTROL Ultimate].</p>
-   <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: per utilizzare le funzionalità descritte in questo articolo, la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront.</p>
-   </td> 
-  </tr>
-   <tr> 
-   <td role="rowheader">[!DNL Adobe] diritti di amministratore</td> 
-   <td>Devi essere un [!UICONTROL Product Configuration Administrator] di [!DNL Adobe] prodotti per la tua organizzazione.</td> 
-  </tr>
-  </tbody> 
-</table>
-
-&#42;Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore di Workfront.
-
-&#42;&#42;Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-
-
 ## Requisiti di accesso
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
-
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
 <table style="table-layout:auto">
  <col> 
@@ -78,45 +31,37 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion.</p>
-   <p>Oppure</p>
-   <p>Legacy: qualsiasi </p>
-   </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Piano Workfront di [!UICONTROL Select] o [!UICONTROL Prime]: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Workfront di [!UICONTROL Ultimate]: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Configurazioni del livello di accesso*</td> 
+   <td role="rowheader">Configurazioni del livello di accesso</td> 
    <td> 
      <p>Devi essere un amministratore di Workfront Fusion per la tua organizzazione.</p>
      <p>Devi essere un amministratore di Workfront Fusion per il tuo team.</p>
    </td> 
   </tr> 
-   </td> 
-  </tr> 
+  </tr>
+   <tr> 
+   <td role="rowheader">Configurazioni del livello di accesso</td> 
+   <td>Devi essere amministratore della configurazione del prodotto dei prodotti Adobe per la tua organizzazione.</td> 
+  </tr>
  </tbody> 
 </table>
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
+
 
 
 ## Prerequisiti

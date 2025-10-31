@@ -4,10 +4,10 @@ description: Chiamare l’API REST di MS Graph tramite Adobe Workfront Fusion HT
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 2%
+source-wordcount: '691'
+ht-degree: 3%
 
 ---
 
@@ -19,34 +19,29 @@ Molti servizi web di Microsoft sono accessibili tramite l’API di Microsoft Gra
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Pacchetto Adobe Workfront 
-   <td> <p>Qualsiasi</p> </td> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: qualsiasi </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Selezionare o Prime Workfront Plan: l'organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Piano Ultimate Workfront: Workfront Fusion è incluso.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -101,7 +96,7 @@ Per creare una connessione all’API REST di Microsoft Graph, devi prima registr
     <tbody> 
      <tr> 
       <td role="rowheader">Che tipo di autorizzazioni richiede l’applicazione?</td> 
-      <td>Selezionare <code>Delegated permissions</code>.</td> 
+      <td>Seleziona <code>Delegated permissions</code>.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">Seleziona autorizzazioni</td> 
@@ -143,7 +138,7 @@ Dopo aver registrato Workfront Fusion come descritto in [Registrare Workfront Fu
      </tr> 
      <tr> 
       <td role="rowheader"> <p role="rowheader">Tipo di flusso</p> </td> 
-      <td>Selezionare <code>Authorization Code</code>. </td> 
+      <td>Seleziona <code>Authorization Code</code>. </td> 
      </tr> 
      <tr> 
       <td role="rowheader">Autorizza URI</td> 
@@ -159,7 +154,7 @@ Dopo aver registrato Workfront Fusion come descritto in [Registrare Workfront Fu
      </tr> 
      <tr> 
       <td role="rowheader">Separatore ambito</td> 
-      <td>Selezionare <code>SPACE</code>. </td> 
+      <td>Seleziona <code>SPACE</code>. </td> 
      </tr> 
      <tr> 
       <td role="rowheader">ID client</td> 
