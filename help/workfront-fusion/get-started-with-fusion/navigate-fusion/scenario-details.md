@@ -69,11 +69,11 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
       <td>Questa scheda visualizza la rappresentazione visiva dello scenario. Il diagramma è lo stesso visualizzato nell’editor di scenari.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Scheda Rapporti di [!UICONTROL] </td> 
+      <td role="rowheader">Scheda Rapporti di  </td> 
       <td> <p>Apri questa scheda per visualizzare un grafico del numero di operazioni eseguite da questo scenario per gli ultimi 30 giorni.</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Scheda Cronologia di [!UICONTROL] </td> 
+      <td role="rowheader">Scheda Cronologia di  </td> 
       <td> <p>Apri questa scheda per visualizzare una cronologia dello scenario, incluse le modifiche apportate allo scenario. </p> <p>La scheda [!UICONTROL Cronologia] fornisce inoltre la cronologia di esecuzione di ogni esecuzione, che include quanto segue:</p> 
        <ul> 
         <li>Stato di ciascuna esecuzione (riuscita o errore)</li> 
@@ -117,7 +117,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
       <td>Questa area mostra informazioni relative all’esecuzione attualmente in esecuzione.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>Pannello Cronologia di [!UICONTROL]</p> <p> </p> </td> 
+      <td role="rowheader"> <p>Pannello Cronologia di </p> <p> </p> </td> 
       <td> <p>In quest'area vengono visualizzate informazioni relative alle ultime esecuzioni dello scenario. Per ogni esecuzione viene visualizzato:</p> 
        <ul> 
         <li>Data di esecuzione</li> 
