@@ -409,7 +409,7 @@ Questo modulo di azione effettua una delle seguenti conversioni:
    <td> <p>Immettere l'ID dell'oggetto. </p> <p>Nota: quando si immette l'ID di un oggetto, è possibile iniziare a digitare il nome dell'oggetto, quindi selezionarlo dall'elenco. Il modulo immette quindi l’ID appropriato nel campo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>ID modello [!UICONTROL]</td> 
+   <td>ID modello </td> 
    <td> <p>Per la conversione in progetto, seleziona l’ID modello da utilizzare per il progetto.</p> <p>Nota: quando si immette l'ID di un oggetto, è possibile iniziare a digitare il nome dell'oggetto, quindi selezionarlo dall'elenco. Il modulo immette quindi l’ID appropriato nel campo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -738,7 +738,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Action]</td> 
-   <td> <p>Selezionare l'azione che si desidera venga eseguita dal modulo.</p> <p>Potrebbe essere necessario compilare ulteriori campi, a seconda del tipo di record [!UICONTROL] e dell'azione [!UICONTROL] scelti. Alcune combinazioni di queste due impostazioni possono richiedere solo un ID record, mentre altre (come Project per il tipo di record <strong>[!UICONTROL]</strong> e [!UICONTROL Allega modello] per l'azione <strong>[!UICONTROL]</strong>) richiedono informazioni aggiuntive (ad esempio un ID oggetto e un ID modello).</p><p>Per le opzioni disponibili per alcune azioni, vedere <a href="#misc-action-options" class="MCXref xref">Opzioni di azioni varie</a> in questo articolo.</p> <p>Per informazioni dettagliate sui singoli campi, consulta la <a href="http://developer.workfront.com/">documentazione per gli sviluppatori di Workfront</a>. <p><strong>Nota</strong>: il sito della documentazione per gli sviluppatori include informazioni solo tramite la versione 14 dell'API, ma contiene comunque informazioni importanti per le chiamate API. </p> 
+   <td> <p>Selezionare l'azione che si desidera venga eseguita dal modulo.</p> <p>Potrebbe essere necessario compilare ulteriori campi, a seconda del tipo di record  e dell'azione  scelti. Alcune combinazioni di queste due impostazioni possono richiedere solo un ID record, mentre altre (come Project per il tipo di record <strong></strong> e [!UICONTROL Allega modello] per l'azione <strong></strong>) richiedono informazioni aggiuntive (ad esempio un ID oggetto e un ID modello).</p><p>Per le opzioni disponibili per alcune azioni, vedere <a href="#misc-action-options" class="MCXref xref">Opzioni di azioni varie</a> in questo articolo.</p> <p>Per informazioni dettagliate sui singoli campi, consulta la <a href="http://developer.workfront.com/">documentazione per gli sviluppatori di Workfront</a>. <p><strong>Nota</strong>: il sito della documentazione per gli sviluppatori include informazioni solo tramite la versione 14 dell'API, ma contiene comunque informazioni importanti per le chiamate API. </p> 
     <ol> 
      <li value="1"> <p>Seleziona il tipo di record nella barra di navigazione a sinistra, nella pagina della documentazione per gli sviluppatori di Workfront. I seguenti tipi hanno pagine proprie:</p> 
       <ul> 
@@ -944,7 +944,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 <td> <p>Seleziona le informazioni da includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
   <tr> 
-    <td>Modulo personalizzato di output [!UICONTROL]</td>
+    <td>Modulo personalizzato di output </td>
      <td> <p>Seleziona i moduli personalizzati da includere nel bundle di output per questo modulo, quindi seleziona i campi specifici dai moduli personalizzati da includere nell’output.</p> </td> 
   </tr> 
   <tr> 
@@ -1177,7 +1177,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Immettere l'ID Workfront univoco del record in cui si desidera caricare il documento.</td> 
   </tr> 
   <tr> 
-   <td>Tipo di record correlato a [!UICONTROL]</td> 
+   <td>Tipo di record correlato a </td> 
    <td>Seleziona il tipo di record Workfront in cui vuoi che il modulo carichi il documento.</td> 
   </tr> 
   <tr> 
@@ -1321,7 +1321,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Selezionare i campi da utilizzare per i criteri di ricerca. Questi campi saranno quindi disponibili nel menu a discesa Criteri di ricerca.</p></td> 
   </tr> 
   <tr> 
-   <td>Criteri di ricerca di [!UICONTROL]</td> 
+   <td>Criteri di ricerca di </td> 
    <td> <p>Immettere il campo in base al quale si desidera eseguire la ricerca, l'operatore che si desidera utilizzare nella query e il valore ricercato nel campo.</p> <p>Nota: non utilizzare <code>username </code> nei criteri di ricerca. L'inclusione di <code>username </code> in una query API per Workfront comporta l'accesso dell'utente a Workfront e la ricerca non avrà esito positivo.</p> <p>Nota: <code>In</code> e <code>NotIn</code> funzionano con gli array. Gli input devono essere in formato array.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -1346,7 +1346,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 >[!IMPORTANT]
 >
 >Questo modulo è stato sostituito con il modulo Record di ricerca. È consigliabile utilizzare tale modulo in nuovi scenari.
->>Gli scenari esistenti che utilizzano questo modulo continueranno a funzionare come previsto. Questo modulo verrà rimosso dal selettore dei moduli a maggio 2025.
+>&#x200B;>Gli scenari esistenti che utilizzano questo modulo continueranno a funzionare come previsto. Questo modulo verrà rimosso dal selettore dei moduli a maggio 2025.
 
 Questo modulo di ricerca cerca i record in un oggetto in Workfront che corrispondono alla query di ricerca specificata.
 
@@ -1379,7 +1379,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Selezionare i campi da utilizzare per i criteri di ricerca. Questi campi saranno quindi disponibili nel menu a discesa Criteri di ricerca.</p></td> 
   </tr> 
   <tr> 
-   <td>Criteri di ricerca di [!UICONTROL]</td> 
+   <td>Criteri di ricerca di </td> 
    <td> <p>Immettere il campo in base al quale si desidera eseguire la ricerca, l'operatore che si desidera utilizzare nella query e il valore ricercato nel campo.</p> <p>Nota: non utilizzare <code>username </code> nei criteri di ricerca. L'inclusione di <code>username </code> in una query API per Workfront comporta l'accesso dell'utente a Workfront e la ricerca non avrà esito positivo.</p> <p>Nota: <code>In</code> e <code>NotIn</code> funzionano con gli array. Gli input devono essere in formato array.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -1747,7 +1747,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <th>[!UICONTROL Elimina record]</th> 
    <th>[!UICONTROL Carica documento]</th> 
    <th>[!UICONTROL Leggi un record]</th> 
-   <th>Chiamata API personalizzata [!UICONTROL]</th> 
+   <th>Chiamata API personalizzata </th> 
    <th>[!UICONTROL Misc Action]</th> 
   </tr> 
  </thead> 
