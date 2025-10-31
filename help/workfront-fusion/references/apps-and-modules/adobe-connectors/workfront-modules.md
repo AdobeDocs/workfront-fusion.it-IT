@@ -264,7 +264,7 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
 
 Dopo la creazione del webhook, puoi visualizzare l’indirizzo dell’endpoint a cui vengono inviati gli eventi.
 
-Per ulteriori informazioni, consulta la sezione [Esempi di payload degli eventi](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) nell&#39;articolo API di sottoscrizione eventi nella documentazione di Workfront.
+Per ulteriori informazioni, consulta la sezione [Esempi di payload degli eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) nell&#39;articolo API di sottoscrizione eventi nella documentazione di Workfront.
 
 Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
@@ -497,7 +497,7 @@ Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile ut
 >
 >   Per risolvere gli utenti che sono stati aggiunti in un batch di grandi dimensioni, puoi aggiungere direttamente il batch di utenti a Adobe Admin Console.
 >
->   Per istruzioni, vedere [Gestione di più utenti | Caricamento CSV in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) nella documentazione di Adobe.
+>   Per istruzioni, vedere [Gestione di più utenti | Caricamento CSV in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html) nella documentazione di Adobe.
 
 +++
 
@@ -750,7 +750,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
       </ul> <p>Per tutti gli altri tipi di record, selezionare <b>[!UICONTROL Altri oggetti ed endpoint]</b> e individuare il tipo di record nelle pagine ordinate alfabeticamente.</p> </li> 
      <li value="2"> <p>Nella pagina del tipo di record appropriato, cercare l'azione (Ctrl+F o Comando+F).</p> </li> 
      <li value="3"> <p>Visualizza le descrizioni dei campi disponibili nell'azione selezionata.</p> </li> 
-    </ol> <p>Nota:  <p>Durante la creazione di una bozza tramite il modulo [!UICONTROL Misc Action] di Workfront, è consigliabile creare una bozza senza opzioni avanzate, quindi aggiornarla utilizzando l'API SOAP [!DNL Workfront Proof].</p><p>Per ulteriori informazioni sulla creazione di una bozza con l'API Workfront (utilizzata da questo modulo), vedere <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Aggiungere opzioni di bozza avanzate durante la creazione di una bozza tramite l'API Adobe Workfront</a></p> </p> </td> 
+    </ol> <p>Nota:  <p>Durante la creazione di una bozza tramite il modulo [!UICONTROL Misc Action] di Workfront, è consigliabile creare una bozza senza opzioni avanzate, quindi aggiornarla utilizzando l'API SOAP [!DNL Workfront Proof].</p><p>Per ulteriori informazioni sulla creazione di una bozza con l'API Workfront (utilizzata da questo modulo), vedere <a href="https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Aggiungere opzioni di bozza avanzate durante la creazione di una bozza tramite l'API Adobe Workfront</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -1028,7 +1028,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 Workfront ha recentemente rilasciato una nuova versione del suo servizio di abbonamento agli eventi. La nuova versione non è una modifica all’API Workfront, ma piuttosto una modifica alla funzionalità di abbonamento agli eventi. Questo modulo di azione aggiorna la versione del payload dell’evento utilizzata per questo scenario.
 
-Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;evento, vedere [Controllo delle versioni della sottoscrizione dell&#39;evento](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
+Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;evento, vedere [Controllo delle versioni della sottoscrizione dell&#39;evento](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 
 Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l&#39;aggiornamento dell&#39;abbonamento agli eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l&#39;aggiornamento V2 degli abbonamenti agli eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
@@ -2356,7 +2356,7 @@ Si consiglia di verificare che questo funzioni come previsto.
 >
 >* Workfront ha recentemente rilasciato una nuova versione del suo servizio di abbonamento agli eventi. La nuova versione non è una modifica all’API Workfront, ma piuttosto una modifica alla funzionalità di abbonamento agli eventi. Questo modulo di azione aggiorna la versione del payload dell’evento utilizzata per questo scenario.
 >
->   Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;evento, vedere [Controllo delle versioni della sottoscrizione dell&#39;evento](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
+>   Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;evento, vedere [Controllo delle versioni della sottoscrizione dell&#39;evento](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 >
 >   Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l&#39;aggiornamento dell&#39;abbonamento agli eventi, inclusa la registrazione di un webinar, vedere [Conservazione degli scenari di Fusion durante l&#39;aggiornamento V2 delle sottoscrizioni agli eventi(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
@@ -2408,7 +2408,7 @@ Nel filtro Workfront > Osserva eventi sono disponibili i seguenti operatori:
 >
 >Se vengono creati 100 problemi in un giorno, ma solo due di essi sono assegnati ad Ana, lo scenario verrebbe eseguito 100 volte. 98 esecuzioni si fermerebbero al filtro, ma il modulo trigger consuma ancora dati ed esegue operazioni in tutte le esecuzioni.
 
-Per ulteriori informazioni sulle sottoscrizioni di eventi di Workfront, vedere [Domande frequenti - Sottoscrizioni eventi](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Per ulteriori informazioni sulle sottoscrizioni di eventi di Workfront, vedere [Domande frequenti - Sottoscrizioni eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Per ulteriori informazioni sui webhook, vedi [Trigger istantanei (webhook) in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
