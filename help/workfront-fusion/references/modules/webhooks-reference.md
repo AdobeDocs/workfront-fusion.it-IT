@@ -4,9 +4,9 @@ description: Molti servizi forniscono webhook per inviare notifiche istantanee o
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
+source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ Per un video introduttivo ai webhook in Workfront Fusion, vedi:
 1. Per disabilitare o abilitare un webhook, disabilitare o abilitare l&#39;interruttore nella colonna Stato nella riga di tale webhook.
 1. Per verificare se una coda dei webhook è piena, selezionare la colonna Coda completa. Il numero in questa colonna è il numero di elementi attualmente in coda.
 1. Per visualizzare le operazioni gestite da un webhook, fare clic su **Operazioni** nella colonna Coda completa del webhook.
+1. Per verificare se un webhook è scaduto, seleziona la colonna Scaduto. I webhook scaduti non sono allegati ad alcuno scenario o non hanno ricevuto eventi per 120 ore.
 1. Per visualizzare lo scenario in cui viene utilizzato un webhook, fare clic sul pulsante **Scenario** nella colonna Scenario per tale webhook.
 1. Per visualizzare la connessione utilizzata per questo webhook, fare clic sul pulsante **Connessione** nella colonna Connessione relativa a tale webhook.
 1. Per nascondere le colonne o mostrare le colonne precedentemente nascoste, fare clic sull&#39;icona **Colonne** ![Icona Colonne](assets/glist-column.png) e selezionare o deselezionare i nomi delle colonne.
