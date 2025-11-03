@@ -120,7 +120,7 @@ Per creare una connessione per i moduli [!DNL Adobe PDF Services]:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p></td>
+          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]</td>
@@ -128,11 +128,11 @@ Per creare una connessione per i moduli [!DNL Adobe PDF Services]:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Technical account ID] (solo JWT)</td>
-          <td>Immetti l'ID account tecnico [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
+          <td>Immetti l'ID account tecnico [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Organization ID] (solo JWT)</td>
-          <td>Immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
+          <td>Immetti l'ID organizzazione [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ambiti Meta] (solo JWT)</td>
@@ -588,7 +588,7 @@ Compila i campi del modulo [!UICONTROL Genera documento] come segue:
     <ul> 
      <li> <p>[!UICONTROL Key]</p> <p>Immetti una chiave. Nel modello, la chiave è il testo mostrato nel tag valore. Se ad esempio si desidera inserire del testo nel tag valore <code>&#123;&#123;name&#125;&#125;</code>, immettere <code>name </code> nel campo chiave.</p> </li> 
      <li> <p>Tipo di valore</p> <p>Seleziona se i dati nel campo valore sono un valore, un oggetto o un array di oggetti.</p> </li> 
-     <li> <p>Valore [!UICONTROL]</p> <p>Immettere o mappare il testo che si desidera visualizzare nel documento generato al posto del tag value.</p> </li> 
+     <li> <p>Valore </p> <p>Immettere o mappare il testo che si desidera visualizzare nel documento generato al posto del tag value.</p> </li> 
     </ul> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/generate-with-template-350x241.png" style="width: 350;height: 241;"> </p> </td> 
   </tr> 
  </tbody> 
@@ -841,7 +841,7 @@ Questo strumento protegge un documento PDF con una password utente o proprietari
    <td> <p>Abilita questa opzione per utilizzare le password per crittografare il documento PDF di input. Se si abilita questa opzione, è necessario specificare e immettere un valore per uno o entrambi i seguenti elementi: </p> 
     <ul> 
      <li> <p>[!UICONTROL Password Utente]</p> </li> 
-     <li> <p>Password proprietario [!UICONTROL] </p> </li> 
+     <li> <p>Password proprietario  </p> </li> 
     </ul> <p>Ogni password può contenere fino a 128 caratteri.</p> </td> 
   </tr> 
   <tr> 
@@ -863,7 +863,7 @@ Questo strumento protegge un documento PDF con una password utente o proprietari
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>Selezionare le autorizzazioni da includere per consentire la stampa, la modifica o la copia del contenuto.</p> <p>Le impostazioni delle autorizzazioni vengono utilizzate solo se la password del proprietario [!UICONTROL] è impostata nel campo [!UICONTROL Password Protection Type].</p> </td> 
+   <td> <p>Selezionare le autorizzazioni da includere per consentire la stampa, la modifica o la copia del contenuto.</p> <p>Le impostazioni delle autorizzazioni vengono utilizzate solo se la password del proprietario  è impostata nel campo [!UICONTROL Password Protection Type].</p> </td> 
   </tr> 
  </tbody> 
 </table>

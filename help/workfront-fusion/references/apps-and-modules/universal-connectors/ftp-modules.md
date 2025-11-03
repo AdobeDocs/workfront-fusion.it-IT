@@ -84,7 +84,7 @@ Per utilizzare i moduli FTP, è necessario disporre di un account con un servizi
       <td> <p>Immetti il nome host del server FTP. Esempio: <code>myftp123.server.com</code></p> </td> 
      </tr> 
      <tr> 
-      <td>Porta [!UICONTROL] </td> 
+      <td>Porta  </td> 
       <td> <p>Immettere il numero di porta del server FTP. Esempio: <code>21</code></p> </td> 
      </tr> 
      <tr> 

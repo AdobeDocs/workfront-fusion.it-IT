@@ -110,7 +110,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 * [[!UICONTROL Carica un elemento]](#upload-an-element)
 
-* [!UICONTROL [Guarda il nuovo elemento nella libreria]](#watch-new-element-in-library)
+* [[!UICONTROL [Guarda il nuovo elemento nella libreria]]](#watch-new-element-in-library)
 
 * [[!UICONTROL Guarda gli elementi aggiornati]](#watch-updated-elements)
 
@@ -412,7 +412,7 @@ Questo modulo di azione carica una risorsa di file di piccole dimensioni in una 
       <td >Seleziona la libreria in cui desideri caricare una risorsa.</td>
     </tr>
     <tr>
-      <td role="rowheader">Modalità chiamata [!UICONTROL]</td>
+      <td role="rowheader">Modalità chiamata </td>
       <td>
         <p>Seleziona la modalità di elaborazione con cui richiamare il processo di richiesta.</p>
         <ul>
@@ -438,7 +438,7 @@ Questo modulo di azione carica una risorsa di file di piccole dimensioni in una 
       <td >Seleziona il tipo di elemento da caricare</td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di file [!UICONTROL]</td>
+      <td role="rowheader">Tipo di file </td>
       <td >Immetti o mappa il tipo MIME del file caricato.</td>
     </tr>
     <tr>

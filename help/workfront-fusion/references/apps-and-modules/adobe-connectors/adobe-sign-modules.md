@@ -158,7 +158,7 @@ Questo modulo di attivazione avvia uno scenario quando si verifica un evento sel
    <td role="rowheader">[!UICONTROL Ambiti]</td> 
    <td> 
     <ul> 
-     <li> <p>Account [!UICONTROL]</p> </li> 
+     <li> <p>Account </p> </li> 
      <li> <p>[!UICONTROL Group]</p> </li> 
      <li> <p>[!UICONTROL Utente]</p> </li> 
      <li> <p>[!UICONTROL Resource]</p> <p>Se si seleziona [!UICONTROL Risorsa], immettere l'ID risorsa e il tipo di risorsa.</p> </li> 
@@ -470,7 +470,7 @@ Questo modulo di azione crea un accordo, lo invia per la firma e restituisce l�
    <td role="rowheader">[!UICONTROL Opzione firma post]</td> 
    <td> <p>Selezionare se si desidera che i firmatari vengano indirizzati a una pagina di successo dopo la firma del contratto. Se si seleziona <b>[!UICONTROL Sì]</b>, compilare i campi seguenti:</p> 
     <ul> 
-     <li> <p><b>[!Ritardo reindirizzamento UICONTROL]</b> </p> <p>Inserisci o mappa un numero che rappresenta il numero di secondi prima che il firmatario venga reindirizzato alla pagina riuscita. Se questo valore è maggiore di 0, l'utente visualizzerà prima il messaggio di successo standard di [!DNL Adobe Sign] e quindi, dopo un ritardo, verrà reindirizzato alla pagina di successo.</p> </li> 
+     <li> <p><b>[!UICONTROL Ritardo reindirizzamento]</b> </p> <p>Inserisci o mappa un numero che rappresenta il numero di secondi prima che il firmatario venga reindirizzato alla pagina riuscita. Se questo valore è maggiore di 0, l'utente visualizzerà prima il messaggio di successo standard di [!DNL Adobe Sign] e quindi, dopo un ritardo, verrà reindirizzato alla pagina di successo.</p> </li> 
      <li> <p><b>[!UICONTROL URL reindirizzamento]</b> </p> <p>Immetti o mappa un URL accessibile al pubblico a cui l’utente verrà inviato dopo aver completato correttamente il processo di firma.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -528,7 +528,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
        <li> <p><b>[!UICONTROL Avvia contatore promemoria da]</b> </p> <p>Selezionare se il promemoria viene inviato in base alla data di creazione dell'accordo quando diventa disponibile.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Rapporto identità firmatario]</b> </p> <p>Immettere la password utilizzata per proteggere il documento PDF.</p> </li> 
-     <li> <p><b>[!Viste UICONTROL]</b> </p> <p>Immetti i campi seguenti</p> 
+     <li> <p><b>[!UICONTROL Viste]</b> </p> <p>Immetti i campi seguenti</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Selezionate il nome della vista da creare.</p> </li> 
        <li> <p><b>[!UICONTROL Utente di accesso automatico]</b> </p> <p>Selezionare <b>[!UICONTROL Yes]</b> per accedere automaticamente all'URL restituito.</p> </li> 
@@ -583,7 +583,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
    <td role="rowheader">Campi correlati a [!UICONTROL Widget]</td> 
    <td> <p>Selezionare il record correlato da creare.</p> 
     <ul> 
-     <li> <p>Visualizzazioni di [!UICONTROL]</p> <p>Compila i campi seguenti.</p> 
+     <li> <p>Visualizzazioni di </p> <p>Compila i campi seguenti.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Seleziona il nome della visualizzazione del modulo web richiesta</p> </li> 
        <li> <p><b>[!UICONTROL Utente di accesso automatico]</b> </p> <p>Selezionare <b>[!UICONTROL Sì]</b> per accedere automaticamente all'utente. Selezionare <b>[!UICONTROL No]</b> per richiedere le credenziali. Il valore predefinito è [!UICONTROL No].</p> </li> 
@@ -880,17 +880,17 @@ Questo modulo di azione aggiorna i record relativi a un oggetto specifico.
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Immettere o mappare il nome del gruppo.</p> </li> 
          <li> <p><b>[!UICONTROL Creazione documento libreria visibile]</b> </p> <p>Queste impostazioni determinano se l'utente può creare documenti della libreria</p> 
           <ul> 
-           <li> <p>Valore [!UICONTROL]</p> <p>Consenti</p> </li> 
+           <li> <p>Valore </p> <p>Consenti</p> </li> 
            <li> <p>[!UICONTROL ereditato]</p> <p>Eredita impostazione gruppo da gruppo o account</p> </li> 
           </ul> </li> 
          <li> <p><b>[!UICONTROL Invio limitato a flussi di lavoro]</b> </p> <p>Queste impostazioni determinano se l'utente può creare accordi solo utilizzando flussi di lavoro.</p> 
           <ul> 
-           <li> <p>Valore [!UICONTROL]</p> <p>Consenti</p> </li> 
+           <li> <p>Valore </p> <p>Consenti</p> </li> 
            <li> <p>[!UICONTROL ereditato]</p> <p>Eredita impostazione gruppo da gruppo o account</p> </li> 
           </ul> </li> 
          <li> <p><b>[!UICONTROL Utente può inviare]</b> </p> 
           <ul> 
-           <li> <p>Valore [!UICONTROL]</p> <p>Consenti</p> </li> 
+           <li> <p>Valore </p> <p>Consenti</p> </li> 
            <li> <p>[!UICONTROL ereditato]</p> <p>Eredita impostazione gruppo da gruppo o account</p> </li> 
           </ul> </li> 
         </ul> </li> 
@@ -999,7 +999,7 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
    <td> <p>Questo è l’ID assegnato al contratto specifico. </p> <p>Per ogni ID esterno che desideri aggiungere, fai clic su <b>[!UICONTROL Add]</b> e immetti o mappa l'ID esterno.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID padre [!UICONTROL]</td> 
+   <td role="rowheader">ID padre </td> 
    <td> <p>Questo è l'ID assegnato all'oggetto padre dell'accordo. </p> <p>Per ogni ID esterno che desideri aggiungere, fai clic su <b>[!UICONTROL Add]</b> e immetti o mappa l'ID esterno.</p> </td> 
   </tr> 
   <tr> 

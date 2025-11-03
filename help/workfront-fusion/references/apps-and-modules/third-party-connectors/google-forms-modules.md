@@ -116,7 +116,7 @@ Controlla il modulo per individuare nuove risposte.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
+   <td role="rowheader">Foglio di calcolo di </td> 
    <td> <p>Selezionare il foglio di calcolo contenente le risposte del modulo che si desidera controllare per individuare le nuove risposte.</p> </td> 
   </tr> 
   <tr> 
@@ -128,7 +128,7 @@ Controlla il modulo per individuare nuove risposte.
    <td>Specifica la riga di intestazione della tabella. La riga predefinita è <code>A1:Z1</code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Opzione di rendering del valore [!UICONTROL]</td> 
+   <td role="rowheader">Opzione di rendering del valore </td> 
    <td> <p>Specifica come eseguire il rendering dei valori nell’output.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Valore formattato]</strong> </p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>$1. 23</code>.</p> </li> 
@@ -168,7 +168,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
+   <td role="rowheader">Foglio di calcolo di </td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio in cui si desidera aggiungere una risposta.</p> </td> 
   </tr> 
   <tr> 
@@ -180,7 +180,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immetti i valori desiderati nelle colonne del foglio. Le colonne sono disponibili in base al foglio.</p> <p>Per la colonna [!UICONTROL Timestamp], utilizza il valore seguente:</p><pre>formatDate(now;GG/MM/AAAA HH:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Opzione di input del valore [!UICONTROL]</td> 
+   <td role="rowheader">Opzione di input del valore </td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> I valori immessi dall’utente non vengono analizzati e vengono memorizzati così come sono. </p> </li> 
@@ -211,7 +211,7 @@ Questo modulo elimina una risposta selezionata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
+   <td role="rowheader">Foglio di calcolo di </td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio in cui si desidera eliminare una risposta.</p> </td> 
   </tr> 
   <tr> 
@@ -240,7 +240,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Foglio di calcolo di [!UICONTROL]</td> 
+   <td role="rowheader">Foglio di calcolo di </td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio in cui si desidera aggiornare una risposta.</p> </td> 
   </tr> 
   <tr> 
@@ -256,7 +256,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immetti i nuovi valori per le colonne desiderate. Le colonne sono disponibili in base al foglio.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Opzione di input del valore [!UICONTROL]</td> 
+   <td role="rowheader">Opzione di input del valore </td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> I valori immessi dall’utente non vengono analizzati e vengono memorizzati così come sono. </p> </li> 
@@ -283,7 +283,7 @@ Questo modulo restituisce le risposte che corrispondono ai criteri specificati.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-    <td>Foglio di calcolo di [!UICONTROL]</td>
+    <td>Foglio di calcolo di </td>
    <td> <p>Selezionare il modulo in cui eseguire la ricerca.</p> </td> 
   </tr> 
   <tr data-mc-conditions="">
@@ -299,7 +299,7 @@ Questo modulo restituisce le risposte che corrispondono ai criteri specificati.
    <td> <p>Definisci il filtro in base al quale desideri cercare le risposte.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-    <td>Ordinamento [!UICONTROL] </td>
+    <td>Ordinamento  </td>
    <td> <p>Seleziona se ordinare le risposte restituite in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -307,7 +307,7 @@ Questo modulo restituisce le risposte che corrispondono ai criteri specificati.
    <td> <p> Selezionare la colonna in base alla quale ordinare le risposte restituite.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Opzione di rendering del valore [!UICONTROL]</td> 
+   <td role="rowheader">Opzione di rendering del valore </td> 
    <td> <p>Specifica come eseguire il rendering dei valori nell’output.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Valore formattato]</strong></p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1. 23</code> e <code>A2 </code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituisce <code>$1. 23</code>.</p> </li> 
@@ -339,7 +339,7 @@ Questo modulo esegue una ricerca utilizzando [[!DNL Google Charts Query Language
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr>
-    <td>Foglio di calcolo di [!UICONTROL]</td>
+    <td>Foglio di calcolo di </td>
    <td> <p>Selezionare il foglio di calcolo contenente il foglio che si desidera cercare.</p> </td> 
   </tr> 
   <tr>

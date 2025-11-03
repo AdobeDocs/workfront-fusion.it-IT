@@ -267,7 +267,7 @@ Questo modulo consente di recuperare i valori numerici, applicare una delle funz
    <td> <p>Seleziona il modulo da cui desideri aggregare i campi.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Funzione di aggregazione [!UICONTROL]</p> </td> 
+   <td> <p>Funzione di aggregazione </p> </td> 
    <td> <p>Selezionare la funzione da utilizzare per aggregare i valori.</p> </td> 
   </tr> 
   <tr> 
@@ -279,7 +279,7 @@ Questo modulo consente di recuperare i valori numerici, applicare una delle funz
    <td>Abilita questa opzione per interrompere lo scenario quando non ci sono risultati.</td> 
   </tr> 
   <tr> 
-   <td> <p>Valore [!UICONTROL]</p> </td> 
+   <td> <p>Valore </p> </td> 
    <td> <p>Immettere o mappare il valore da aggregare.</p> </td> 
   </tr> 
  </tbody> 

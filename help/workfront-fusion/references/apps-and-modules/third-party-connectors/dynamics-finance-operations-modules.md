@@ -95,7 +95,7 @@ Per creare una connessione per i moduli Finanza e Operazioni di Microsoft Dynami
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID client]</td>
-        <td>Immettere l'ID client di Dynamics Finance and Operations [!UICONTROL].</td>
+        <td>Immettere l'ID client di Dynamics Finance and Operations .</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Segreto client]</td>
@@ -281,7 +281,7 @@ Questo modulo di ricerca restituisce i risultati in base ai criteri specificati.
    <td>Immettere o mappare il tipo di entità Dynamics Finance and Operations che si desidera cercare.</td> 
   </tr> 
   <tr> 
-   <td>Criteri di ricerca di [!UICONTROL]</td> 
+   <td>Criteri di ricerca di </td> 
    <td> <p>Immettere il campo in base al quale si desidera eseguire la ricerca, l'operatore che si desidera utilizzare nella query e il valore ricercato nel campo.</p> </td> 
   </tr> 
   <tr> 

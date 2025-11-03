@@ -196,7 +196,7 @@ Questo modulo di azione restituisce una versione modificata di un prompt fornito
    <td> Immettere o mappare il testo da modificare. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Istruzione [!UICONTROL]</td> 
+   <td role="rowheader">Istruzione </td> 
    <td> Immetti o mappa le istruzioni per la modifica. Esempio: "Correggi gli errori di ortografia". </td> 
   </tr> 
   <tr> 

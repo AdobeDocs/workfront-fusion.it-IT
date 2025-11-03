@@ -206,7 +206,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Token placement]</p> </td> 
-      <td> <p>Seleziona se inviare il token nell'intestazione [!UICONTROL], nella stringa di query [!UICONTROL] o in entrambe durante la connessione all'URL specificato.</p> <p>I token vengono generalmente inviati nell’intestazione della richiesta.</p> </td> 
+      <td> <p>Seleziona se inviare il token nell'intestazione , nella stringa di query  o in entrambe durante la connessione all'URL specificato.</p> <p>I token vengono generalmente inviati nell’intestazione della richiesta.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Nome token intestazione] </td> 

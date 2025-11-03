@@ -99,7 +99,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL]</td> 
+   <td>Archivio dati </td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 
@@ -128,7 +128,7 @@ Specificare l&#39;archivio dati e la chiave del record.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL] </td> 
+   <td>Archivio dati  </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -151,7 +151,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL] </td> 
+   <td>Archivio dati  </td> 
    <td> <p>Selezionare l'archivio dati contenente i record che si desidera conteggiare.</p> </td> 
   </tr> 
  </tbody> 
@@ -170,7 +170,7 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL] </td> 
+   <td>Archivio dati  </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -191,7 +191,7 @@ Specifica l’archivio dati.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL] </td> 
+   <td>Archivio dati  </td> 
    <td> <p>Selezionare l'archivio dati da cui si desidera eliminare tutti i record.</p> </td> 
   </tr> 
  </tbody> 
@@ -210,7 +210,7 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL]</td> 
+   <td>Archivio dati </td> 
    <td> <p> Selezionare l'archivio dati da cui si desidera recuperare un record</p> </td> 
   </tr> 
   <tr> 
@@ -233,7 +233,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL]</td> 
+   <td>Archivio dati </td> 
    <td> <p> Seleziona l’archivio dati in cui desideri eseguire la ricerca.</p> </td> 
   </tr> 
   <tr> 
@@ -270,7 +270,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL]</td> 
+   <td>Archivio dati </td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 

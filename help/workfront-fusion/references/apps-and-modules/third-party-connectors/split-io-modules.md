@@ -164,7 +164,7 @@ Questo modulo di azione aggiunge tag all’oggetto specificato.
    <td>Immettere o mappare il nome dell'oggetto a cui si desidera aggiungere i tag.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di oggetto [!UICONTROL]</td> 
+   <td role="rowheader">Tipo di oggetto </td> 
    <td> <p>Immettere o mappare il tipo di oggetto a cui si desidera aggiungere i tag.</p> </td> 
   </tr> 
   <tr> 
@@ -458,7 +458,7 @@ Questo modulo di azione aggiunge tag all’oggetto specificato.
    <td>Immettere o mappare il nome dell'oggetto a cui si desidera aggiungere i tag,</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di oggetto [!UICONTROL]</td> 
+   <td role="rowheader">Tipo di oggetto </td> 
    <td> <p>Immettere o mappare il tipo di oggetto a cui si desidera aggiungere i tag.</p> </td> 
   </tr> 
   <tr> 

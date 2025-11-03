@@ -119,7 +119,7 @@ Puoi creare una connessione al tuo account [!DNL Datadog] direttamente da un mod
       <td> <p>Seleziona il dominio a cui desideri connetterti (USA o UE).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Posizione chiave API [!UICONTROL] </td> 
+      <td role="rowheader">Posizione chiave API  </td> 
       <td> <p>Seleziona se includere la chiave API nell’intestazione o nella stringa di query.</p> </td> 
      </tr> 
      <tr> 

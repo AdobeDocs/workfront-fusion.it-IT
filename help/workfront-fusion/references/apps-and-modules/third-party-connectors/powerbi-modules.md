@@ -471,7 +471,7 @@ Questo modulo di azione aggiunge o elimina righe di una tabella di set di dati p
             </ul>
           </li>
           <li>
-            <p>Valore [!UICONTROL]</p>
+            <p>Valore </p>
             <p>Immetti o mappa il valore chiave.</p>
           </li>
         </ul>
@@ -501,7 +501,7 @@ Questo modulo di azione crea un nuovo set di dati.
       <td>Seleziona o mappa l’ID del gruppo proprietario del nuovo set di dati.</td>
     </tr>
     <tr>
-      <td role="rowheader">Modalità predefinita [!UICONTROL]</td>
+      <td role="rowheader">Modalità predefinita </td>
       <td>
         <p>Seleziona o mappa la modalità predefinita per il set di dati:</p>
         <ul>
@@ -615,7 +615,7 @@ Questo modulo di azione crea un nuovo set di dati.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Database [!UICONTROL]  </td>
+      <td role="rowheader">Database   </td>
       <td>
         <p>Immettere o mappare il database che si desidera utilizzare.</p>
       </td>
@@ -639,7 +639,7 @@ Questo modulo di azione crea un nuovo set di dati.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di origine dati [!UICONTROL]  </td>
+      <td role="rowheader">Tipo di origine dati   </td>
       <td>
         <p>Selezionare o mappare il tipo di origine dati. Esempio: SQL.</p>
       </td>

@@ -444,16 +444,16 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
    <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di ricerca [!UICONTROL]</td> 
+   <td role="rowheader">Tipo di ricerca </td> 
    <td> <p>Seleziona il tipo di ricerca da eseguire nel modulo</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Query avanzata]</strong> </p> 
       <ul> 
-       <li> <p>Query di ricerca [!UICONTROL]</p> <p>Immettere la query di ricerca personalizzata. Per informazioni su [!DNL ServiceNow] query di ricerca personalizzate, consulta la <a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">documentazione sulle query ServiceNow</a>.</p> </li> 
+       <li> <p>Query di ricerca </p> <p>Immettere la query di ricerca personalizzata. Per informazioni su [!DNL ServiceNow] query di ricerca personalizzate, consulta la <a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">documentazione sulle query ServiceNow</a>.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Semplice]</strong> </p> 
       <ul> 
-       <li> <p>Criteri di ricerca di [!UICONTROL]</p> <p>Immettere i criteri in base ai quali si desidera eseguire la ricerca nel modulo. </li> 
+       <li> <p>Criteri di ricerca di </p> <p>Immettere i criteri in base ai quali si desidera eseguire la ricerca nel modulo. </li> 
        <li> <p>[!UICONTROL Ordina per]</p> <p>Indica per quale campo desideri che il modulo ordini i risultati e se devono essere ordinati in ordine crescente o decrescente.</p> </li> 
       </ul> </li> 
     </ul> <p> </p> </td> 
