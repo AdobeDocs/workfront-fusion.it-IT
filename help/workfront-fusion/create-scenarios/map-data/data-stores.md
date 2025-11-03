@@ -4,9 +4,9 @@ description: Un archivio dati, simile a un database o a una semplice tabella, pu
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1324'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Le istanze di fusione nei pacchetti Select o Prime ricevono:-->
 
   Ad esempio, un’organizzazione con 600.000 operazioni riceve 110 MB.
 
-La tua organizzazione può avere fino a 50 archivi di dati. La dimensione combinata di questi archivi dati non può superare la dimensione totale dell’archivio dati dell’organizzazione.
+Ogni team dell’organizzazione può disporre di un massimo di 50 archivi di dati. La dimensione combinata di questi archivi dati non può superare la dimensione totale dell’archivio dati dell’organizzazione.
 
 ## Creazione di un archivio dati in Workfront Fusion
 
