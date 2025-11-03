@@ -4,9 +4,9 @@ description: Per utilizzare  [!DNL Google Sheets] con Adobe Workfront Fusion, è
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '4040'
+source-wordcount: '4046'
 ht-degree: 0%
 
 ---
@@ -21,34 +21,29 @@ Per istruzioni sulla connessione dell&#39;account [!DNL Google Sheets] a Workfro
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -116,7 +111,7 @@ Il modulo recupera solo le nuove righe che non sono state compilate in precedenz
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Foglio di calcolo di  </td> 
+   <td role="rowheader">Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo contenente il foglio che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
@@ -140,7 +135,7 @@ Il modulo recupera solo le nuove righe che non sono state compilate in precedenz
    <td> <p>Immettere l'intervallo della prima riga della tabella. Ad esempio, <code>A1:F1</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Opzione di rendering del valore </p> </td> 
+   <td role="rowheader"> <p>Opzione di rendering del valore [!UICONTROL]</p> </td> 
    <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Valore formattato]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Valore non formattato]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
   </tr> 
   <tr> 
@@ -191,7 +186,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
    <td> <p>Specificare se si desidera selezionare il foglio di calcolo e il foglio manualmente o mediante mapping.</p> <p>Nota: la mappatura manuale è utile, ad esempio, quando si crea un nuovo foglio di calcolo in uno scenario Workfront Fusion e si desidera aggiungere dati nel nuovo foglio di calcolo direttamente nello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
@@ -215,7 +210,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
    <td> <p>Immetti o mappa le celle desiderate della riga da aggiungere.</p> </td> 
   </tr> 
   <tr> 
-   <td>Opzione di input del valore </td> 
+   <td>Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>I valori vengono analizzati come se l’utente li avesse digitati nell’interfaccia utente. I numeri rimangono numeri, ma le stringhe possono essere convertite in numeri, date o altri formati seguendo le stesse regole applicate quando si immette testo in una cella tramite l'interfaccia utente [!DNL Google Sheets].</p> </li> 
@@ -246,11 +241,11 @@ Crea un nuovo foglio in un foglio di calcolo selezionato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo Google in cui si desidera aggiungere un foglio.</p> </td> 
   </tr> 
   <tr> 
-   <td>Proprietà </td> 
+   <td>Proprietà [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p style="font-weight: bold;">[!UICONTROL Title]</p> <p>Immettere il nome del nuovo foglio.</p> </li> 
@@ -273,7 +268,7 @@ Elimina un valore da una cella specificata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo di Google contenente il foglio da cui si desidera cancellare una cella.</p> </td> 
   </tr> 
   <tr> 
@@ -300,7 +295,7 @@ Elimina i valori da una riga specificata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google] contenente il foglio da cui si desidera cancellare una riga.</p> </td> 
   </tr> 
   <tr> 
@@ -369,7 +364,7 @@ Elimina una riga specificata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo di Google contenente il foglio da cui si desidera eliminare una riga.</p> </td> 
   </tr> 
   <tr> 
@@ -396,7 +391,7 @@ Elimina un foglio specifico.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
@@ -419,7 +414,7 @@ Recupera un valore da una cella selezionata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
@@ -431,7 +426,7 @@ Recupera un valore da una cella selezionata.
    <td> <p>Immettere l'ID della cella da cui si desidera recuperare i dati. Esempio: <code>A6</code></p> </td> 
   </tr> 
   <tr> 
-   <td>Opzione di rendering del valore </td> 
+   <td>Opzione di rendering del valore [!UICONTROL]</td> 
    <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Valore formattato]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Valore non formattato]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
   </tr> 
   <tr> 
@@ -490,7 +485,7 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
@@ -502,11 +497,11 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
    <td> <p>Immettere l'ID della cella da aggiornare. Esempio: <code>A5</code></p> </td> 
   </tr> 
   <tr> 
-   <td>Valore </td> 
+   <td>Valore [!UICONTROL]</td> 
    <td> <p>Immettere il nuovo valore per la cella.</p> </td> 
   </tr> 
   <tr> 
-   <td>Opzione di input del valore </td> 
+   <td>Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>I valori vengono analizzati come se l’utente li avesse digitati nell’interfaccia utente. I numeri rimangono numeri, ma le stringhe possono essere convertite in numeri, date o altri formati seguendo le stesse regole applicate quando si immette testo in una cella tramite l'interfaccia utente [!DNL Google Sheets].</p> </li> 
@@ -533,7 +528,7 @@ Questo modulo consente di modificare il contenuto della cella in una riga selezi
    <td> <p>Specificare se si desidera selezionare il foglio di calcolo e il foglio manualmente o mediante mapping.</p> <p>Nota: la mappatura manuale è utile, ad esempio, quando si crea un nuovo foglio di calcolo nello scenario [!UICONTROL Workfront Fusion] e si desidera aggiungere dati al nuovo foglio di calcolo direttamente nello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
@@ -557,7 +552,7 @@ Questo modulo consente di modificare il contenuto della cella in una riga selezi
    <td> <p>Immettere o mappare i valori alle celle desiderate della riga che si desidera modificare (aggiornare).</p> </td> 
   </tr> 
   <tr> 
-   <td>Opzione di input del valore </td> 
+   <td>Opzione di input del valore [!UICONTROL]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>I valori vengono analizzati come se l’utente li avesse digitati nell’interfaccia utente. I numeri rimangono numeri, ma le stringhe possono essere convertite in numeri, date o altri formati seguendo le stesse regole applicate quando si immette testo in una cella tramite l'interfaccia utente [!DNL Google Sheets].</p> </li> 
@@ -585,7 +580,7 @@ Questo modulo consente di modificare il contenuto della cella in una riga selezi
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
@@ -605,7 +600,7 @@ Questo modulo consente di modificare il contenuto della cella in una riga selezi
    <td>Immetti l’intervallo delle intestazioni della tabella. Esempio <code>A1:F1</code>. Se si lascia vuoto il campo, Workfront Fusion considera la prima riga dell'intervallo specificato come intestazione.</td> 
   </tr> 
   <tr> 
-   <td>Opzione di rendering del valore </td> 
+   <td>Opzione di rendering del valore [!UICONTROL]</td> 
    <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Valore formattato]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Valore non formattato]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
   </tr> 
   <tr> 
@@ -628,7 +623,7 @@ Questo modulo restituisce un elenco di tutti i fogli di un foglio di calcolo.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google] contenente i fogli che si desidera elencare.</p> </td> 
   </tr> 
  </tbody> 
@@ -647,7 +642,7 @@ Cerca le righe utilizzando le opzioni di filtro.
    <td> <p>Per istruzioni sulla connessione dell'account Google Sheets a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo [!DNL Google].</p> </td> 
   </tr> 
   <tr> 
@@ -667,7 +662,7 @@ Cerca le righe utilizzando le opzioni di filtro.
    <td> <p>Imposta il filtro da utilizzare per cercare le righe.</p> <!--<p>For more information about filters, see <a href="/help/workfront-fusion/create-scenarios/add-modules/" class="MCXref xref">Add a filter to a scenario in [!UICONTROL Adobe Workfront Fusion]</a>.</p>--> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento </td> 
+   <td>Ordinamento [!UICONTROL]</td> 
    <td>Seleziona se desideri ordinare in modo crescente o decrescente.</td> 
   </tr> 
   <tr> 
@@ -675,7 +670,7 @@ Cerca le righe utilizzando le opzioni di filtro.
    <td>Scegliere la colonna in base alla quale si desidera eseguire l'ordinamento.</td> 
   </tr> 
   <tr> 
-   <td>Opzione di rendering del valore </td> 
+   <td>Opzione di rendering del valore [!UICONTROL]</td> 
    <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Valore formattato]</p> <p>I valori vengono calcolati e formattati nella risposta in base alla formattazione della cella. La formattazione si basa sulle impostazioni locali del foglio di calcolo, non sulle impostazioni locali dell'utente richiedente. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"$1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Valore non formattato]</p> <p>I valori vengono calcolati, ma non formattati nella risposta. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirà il numero <code>"1.23"</code>.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>I valori non vengono calcolati. La risposta include le formule. Ad esempio, se <code>A1</code> è <code>1.23</code> e <code>A2</code> è <code>=A1</code> e formattato come valuta, <code>A2</code> restituirebbe <code>"=A1"</code>.</p> </li><ul></td> 
   </tr> 
   <tr> 
@@ -702,7 +697,7 @@ Restituisce risultati che corrispondono ai criteri specificati.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google Sheets] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Foglio di calcolo di  </td> 
+   <td>Foglio di calcolo di [!UICONTROL] </td> 
    <td> <p>Selezionare il foglio di calcolo di Google contenente il foglio che si desidera cercare.</p> </td> 
   </tr> 
   <tr> 

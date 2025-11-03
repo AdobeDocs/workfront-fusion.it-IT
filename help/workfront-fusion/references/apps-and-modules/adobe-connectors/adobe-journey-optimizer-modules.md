@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '3747'
+source-wordcount: '3709'
 ht-degree: 0%
 
 ---
@@ -24,45 +24,35 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
-<table>
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Piano Adobe Workfront*</td>
-      <td>
-        <p>[!UICONTROL Pro] o versione successiva</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Licenza Adobe Workfront*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Licenza Adobe Workfront Fusion**</td>
-      <td>
-   <p>Requisito di licenza corrente: nessun requisito di licenza per Workfront Fusion.</p>
-   <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Prodotto</td>
-      <td>
-   <p>Fabbisogno corrente del prodotto: se disponi del piano Adobe Workfront [!UICONTROL Select] o [!UICONTROL Prime], per utilizzare le funzionalità descritte in questo articolo la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront. Workfront Fusion è incluso nel piano Workfront di [!UICONTROL Ultimate].</p>
-   <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: per utilizzare le funzionalità descritte in questo articolo, la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront.</p>
-   </td>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Prodotto</td> 
+   <td>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
-
-Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore Workfront.
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -131,7 +121,7 @@ Puoi creare una connessione in qualsiasi modulo di Adobe Journey Optimizer.
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID organizzazione]</td>
-        <td>Immetti l'ID organizzazione [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Nome Sandbox]</td>
@@ -207,7 +197,7 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
    <td>Inserisci o mappa l’ID Adobe IMS dell’organizzazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metodi </td> 
+   <td role="rowheader">Metodi [!UICONTROL]</td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
@@ -247,11 +237,11 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metodi </td> 
+   <td role="rowheader">Metodi [!UICONTROL]</td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Velocità effettiva massima </td> 
+   <td role="rowheader">Velocità effettiva massima [!UICONTROL]</td> 
    <td>Seleziona se utilizzi un’azione o un’origine dati per questa configurazione.</td> 
   </tr> 
   <tr> 
@@ -856,7 +846,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td>Selezionare l'origine del modello.</td>  
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
@@ -896,7 +886,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td>Seleziona l’origine del frammento.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
@@ -1240,7 +1230,7 @@ Questo modulo di ricerca elenca i processi di esportazione e importazione corren
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">Parametro query </td> 
+   <td role="rowheader">Parametro query [!UICONTROL]</td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 
@@ -1273,7 +1263,7 @@ Questo modulo di ricerca elenca tutti i pacchetti dell’organizzazione. Puoi ut
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">Parametro query </td> 
+   <td role="rowheader">Parametro query [!UICONTROL]</td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 

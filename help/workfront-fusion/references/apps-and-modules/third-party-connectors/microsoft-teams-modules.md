@@ -3,9 +3,10 @@ title: Moduli Microsoft Teams
 description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano i team e collegarli a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: f5b49cca308fad01167aed27e4716a3d630cb026
+exl-id: d3a37c06-8f92-4065-bc00-c35f84b03f82
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '3642'
+source-wordcount: '3648'
 ht-degree: 2%
 
 ---
@@ -24,34 +25,29 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Nuovo:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -527,7 +523,7 @@ Questo modulo di azione crea una risposta a un messaggio nel canale specificato.
    <td>Inserisci o mappa l’ID del messaggio a cui desideri rispondere.</td> 
   </tr> 
   <tr> 
-   <td>Tipo di contenuto</td> 
+   <td>Content type (Tipo di contenuto)</td> 
    <td>Seleziona se desideri inviare il messaggio in formato testo normale o HTML.</td> 
   </tr> 
   <tr> 
@@ -572,7 +568,7 @@ Questo modulo di azione invia un messaggio al canale di un team o a una chat.
    <td>Inserisci o mappa il corpo del messaggio che desideri inviare.</td> 
   </tr> 
   <tr> 
-   <td>Tipo di contenuto</td> 
+   <td>Content type (Tipo di contenuto)</td> 
    <td>Seleziona se desideri inviare il messaggio in formato testo normale o HTML.</td> 
   </tr> 
  </tbody> 
@@ -993,6 +989,3 @@ Questo modulo cerca gli utenti utilizzando i criteri specificati.
   </tr> 
  </tbody> 
 </table>
-
-
-

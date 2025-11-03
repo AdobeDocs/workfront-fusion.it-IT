@@ -4,9 +4,9 @@ description: Puoi utilizzare il connettore per schede madri Adobe Workfront per 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '2929'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
@@ -27,34 +27,22 @@ Puoi utilizzare i moduli Schede Adobe Workfront per leggere o aggiornare i recor
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
-   </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -62,11 +50,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Prerequisiti
++++## Prerequisiti
 
 È necessario aver configurato una bacheca in Adobe Workfront prima di potersi connettere ad essa.
 
@@ -119,7 +103,7 @@ Per creare una connessione alle schede madri Workfront:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
-          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
+          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]<p>(Facoltativo)</p></td>
@@ -321,7 +305,7 @@ Questo modulo di azione aggiorna le informazioni relative a una scheda specifica
    <td>Immettere o mappare una nuova descrizione per la scheda.</p></td> 
   </tr> 
   <tr> 
-   <td>Stima </td> 
+   <td>Stima [!UICONTROL]</td> 
    <td>Immetti o mappa una stima del tempo necessario per completare questa scheda.</p></td> 
   </tr> 
   <tr> 
@@ -359,7 +343,7 @@ Questo modulo di azione crea una scheda in Workfront. Puoi specificare il tipo d
    <td>Inserisci o mappa un nome per la nuova bacheca.</td> 
   </tr> 
   <tr> 
-   <td>Modello </td> 
+   <td>Modello [!UICONTROL]</td> 
    <td>Seleziona il modello per il tipo di bacheca che desideri creare.</td> 
   </tr> 
  </tbody> 
@@ -643,7 +627,7 @@ Questo modulo di azione invia una richiesta GraphQL personalizzata all’API del
    <td> <p>Immettere un nome per l'operazione. Questo può semplificare il tracciamento e il debug della chiamata.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Origine dati delle variabili </td> 
+   <td role="rowheader">Origine dati delle variabili [!UICONTROL]</td> 
    <td> <p>Seleziona se le variabili devono provenire da un modulo o da una raccolta.</p> </td> 
   </tr> 
   <tr> 

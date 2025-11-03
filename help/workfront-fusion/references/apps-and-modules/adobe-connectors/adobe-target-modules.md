@@ -4,9 +4,9 @@ description: In uno scenario di Adobe Workfront Fusion, puoi automatizzare i flu
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -22,48 +22,41 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 ## Requisiti di accesso
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Piano Adobe Workfront*</td>
-      <td>
-        <p>[!UICONTROL Pro] o versione successiva</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Licenza Adobe Workfront*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Licenza Adobe Workfront Fusion**</td>
-      <td>
-   <p>Requisito di licenza corrente: nessun requisito di licenza per Workfront Fusion.</p>
-   <p>Oppure</p>
-   <p>Requisiti di licenza legacy: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Prodotto</td>
-      <td>
-   <p>Fabbisogno corrente del prodotto: se disponi del piano Adobe Workfront [!UICONTROL Select] o [!UICONTROL Prime], per utilizzare le funzionalità descritte in questo articolo la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront. Workfront Fusion è incluso nel piano Workfront di [!UICONTROL Ultimate].</p>
-   <p>Oppure</p>
-   <p>Requisiti del prodotto legacy: per utilizzare le funzionalità descritte in questo articolo, la tua organizzazione deve acquistare Adobe Workfront Fusion e Adobe Workfront.</p>
-   </td>
-    </tr>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Pacchetto Adobe Workfront</td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Prodotto</td> 
+   <td>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
-
-Per conoscere il piano, il tipo di licenza o l&#39;accesso di cui si dispone, contattare l&#39;amministratore Workfront.
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisiti
 
@@ -152,7 +145,7 @@ Per creare una connessione per i moduli [!DNL Adobe Target]:
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Meta Ambiti]</td>
+        <td role="rowheader">[!UICONTROL Ambiti Meta]</td>
         <td>Immetti <code>ent_marketing_sdk</code>       </td>
       </tr>
       <tr>
@@ -603,7 +596,7 @@ Questo modulo di azione crea un’attività AB o XT, un’offerta o un pubblico.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Priorità </td>
+      <td role="rowheader">Priorità [!UICONTROL]</td>
       <td>Immetti un numero che definisce la priorità dell’attività. I numeri più alti hanno priorità più alta. Questo valore deve essere compreso tra 0 e 999. Il valore predefinito è 5.</td>
     </tr>
     <tr>
@@ -941,7 +934,7 @@ Questo modulo di ricerca cerca attività, offerte o tipi di pubblico in base ai 
     <td>Per ogni campo in base al quale si desidera ordinare, fare clic su <b>[!UICONTROL Add item]</b> e selezionare il campo e specificare se i risultati restituiti devono essere crescenti o decrescenti.</td>
   </tr>
   <tr>
-    <td role="rowheader">Criteri di ricerca di </td>
+    <td role="rowheader">Criteri di ricerca di [!UICONTROL]</td>
     <td>Per ogni regola che desideri impostare, seleziona il campo, l’operatore e il valore. Fare clic su <b>[!UICONTROL Add AND rule]</b> per creare regole aggiuntive.</td>
   </tr>
   <tr>

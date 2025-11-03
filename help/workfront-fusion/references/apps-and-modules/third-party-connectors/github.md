@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1959'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro ch
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -98,7 +93,7 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto un nuovo c
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Seleziona l’archivio che desideri monitorare.</td> 
   </tr> 
   <tr> 
@@ -129,7 +124,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato un nuovo for
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Seleziona l’archivio da controllare per i fork.</td> 
   </tr> 
   <tr> 
@@ -156,7 +151,7 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto un nuovo p
    <td>Seleziona se desideri controllare tutti gli archivi associati a questo account o un solo archivio.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Se hai scelto di monitorare i problemi in un solo archivio, seleziona l’archivio che desideri monitorare.</td> 
   </tr> 
   <tr> 
@@ -202,7 +197,7 @@ Questo modulo si attiva quando viene aggiunta una nuova richiesta di pull o vien
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Seleziona l’archivio che desideri monitorare.</td> 
   </tr> 
   <tr> 
@@ -269,7 +264,7 @@ Questo modulo aggiunge gli assegnatari al problema specificato
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Seleziona l’archivio contenente il problema a cui desideri aggiungere gli assegnatari.</td> 
   </tr> 
   <tr> 
@@ -296,7 +291,7 @@ Questo modulo aggiunge etichette a un problema. Le etichette sono definite a liv
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Seleziona l’archivio contenente il problema a cui desideri aggiungere le etichette.</td> 
   </tr> 
   <tr> 
@@ -323,7 +318,7 @@ Questo modulo crea un commento sul problema specificato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Selezionare l'archivio contenente il problema per il quale si desidera creare un commento.</td> 
   </tr> 
   <tr> 
@@ -350,7 +345,7 @@ Questo modulo crea un nuovo problema nell’archivio selezionato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Seleziona l’archivio in cui desideri creare un problema.</td> 
   </tr> 
   <tr> 
@@ -389,7 +384,7 @@ Questo modulo recupera i dettagli del problema specificato
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Seleziona l’archivio contenente il problema di cui desideri recuperare i dettagli.</td> 
   </tr> 
   <tr> 
@@ -412,7 +407,7 @@ In questo modulo sono elencati tutti i commenti relativi al problema specificato
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Seleziona l’archivio contenente il problema da cui desideri elencare i commenti.</td> 
   </tr> 
   <tr> 
@@ -443,7 +438,7 @@ Questo modulo rimuove una singola etichetta da un problema.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Selezionare l'archivio contenente il problema da cui si desidera rimuovere un'etichetta.</td> 
   </tr> 
   <tr> 
@@ -470,7 +465,7 @@ Questo modulo rimuove gli assegnatari dal problema specificato.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Selezionare l'archivio contenente il problema da cui si desidera rimuovere gli assegnatari.</td> 
   </tr> 
   <tr> 
@@ -534,7 +529,7 @@ Questo modulo aggiorna un problema [!DNL GitHub] esistente.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL GitHub] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Archivio </td> 
+   <td role="rowheader">Archivio [!UICONTROL]</td> 
    <td>Seleziona l’archivio in cui desideri aggiornare un problema.</td> 
   </tr> 
   <tr> 

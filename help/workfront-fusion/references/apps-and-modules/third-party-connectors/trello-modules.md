@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '5380'
+source-wordcount: '5386'
 ht-degree: 0%
 
 ---
@@ -23,34 +23,29 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -255,7 +250,7 @@ Questo modulo di azione crea una nuova bacheca con le impostazioni selezionate.
    <td> <p>Scegli tra due modalità di aging della carta. </p> 
     <ul> 
      <li><strong>[!UICONTROL Modalità pirata]</strong>: le carte si lacerano, ingialliscono e si rompono come una vecchia mappa pirata quando invecchiano.</li> 
-     <li><strong>[!UICONTROL Modalità regolare &#x200B;]</strong>: le schede diventano progressivamente più trasparenti con l'invecchiamento. </li> 
+     <li><strong>[!UICONTROL Modalità regolare ]</strong>: le schede diventano progressivamente più trasparenti con l'invecchiamento. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -270,95 +265,95 @@ Questo modulo di azione modifica le impostazioni di una scheda esistente.
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-><col> 
-> <col> 
-> <tbody> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Connection] </td> 
->   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL ID bacheca]</p> </td> 
->   <td> <p>Immettere o mappare l'ID [!UICONTROL Trello] univoco della bacheca che si desidera creare con il modulo. Puoi recuperare l’ID della bacheca utilizzando un altro modulo, ad esempio il modulo Bacheche di controllo</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Nuovo nome]</td> 
->   <td> <p> Immetti o mappa un nuovo nome per la bacheca.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Nuova descrizione]</td> 
->   <td> <p> Inserisci o mappa una nuova descrizione della bacheca.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL ID organizzazione]</p> </td> 
->   <td> <p>Immettere o mappare l'ID [!UICONTROL Trello] univoco della bacheca che si desidera modificare con il modulo.  </p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Subscribe] </td> 
->   <td> <p>Seleziona un’opzione per specificare se l’utente proprietario della connessione utilizzata da questo modulo è abbonato alla bacheca.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Livello di autorizzazione]</p> </td> 
->   <td> <p>Le bacheche hanno regole di voto e commento diverse per ogni livello di autorizzazione. Ad esempio: se la tua bacheca è [!UICONTROL Private] e imposti le regole di voto e commento come [!UICONTROL All], viene visualizzato un errore. </p> <p>Le votazioni e i commenti sono limitati ai seguenti gruppi per ogni livello di autorizzazione:</p> 
->    <ul> 
->     <li><strong>[!UICONTROL Privato]</strong>: 
->      Membri, membri e osservatori</li> 
->     <li><strong>[!UICONTROL Per Organizzazione]</strong>: 
->      Membri, membri e osservatori, membri dell’organizzazione</li> 
->     <li><strong>[!UICONTROL Public]</strong>: 
->      Membri, membri e osservatori, membri dell'organizzazione, tutti</li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
->   <td> <p>Seleziona un’opzione per specificare chi può votare su questa bacheca. Per informazioni sulle limitazioni di voto nei livelli di autorizzazione, vedere il campo [!UICONTROL Livello di autorizzazione].</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Commenti]</p> </td> 
->   <td> <p>Seleziona un’opzione per specificare chi può commentare le schede per questa bacheca. Per informazioni sulle limitazioni relative ai livelli di autorizzazione, vedere il campo [!UICONTROL Livello di autorizzazione].</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL inviti] </td> 
->   <td> <p>Seleziona chi può invitare le persone su questa bacheca.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Self-join]</td> 
->   <td> <p> Seleziona se i membri del team possono unirsi alla bacheca autonomamente o se devono essere invitati.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Copertine per schede]</td> 
->   <td> <p> Seleziona se i coperchi della scheda devono essere visualizzati su questa bacheca.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Sfondo] </td> 
->   <td> <p>Seleziona il colore dello sfondo o dello sfondo personalizzato.</p> <p>Nota: gli sfondi personalizzati sono disponibili solo per gli abbonati a [!UICONTROL Trello Gold and Business Class].</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL ID sfondo]</td> 
->   <td> <p> Se si è selezionato di utilizzare uno sfondo personalizzato nel campo [!UICONTROL Background], immettere o mappare l'ID dello sfondo che si desidera utilizzare.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
->   <td> <p>Scegli tra due modalità di aging della carta. </p> 
->    <ul> 
->     <li><strong>[!UICONTROL Modalità pirata]</strong>: le carte si lacerano, ingialliscono e si rompono come una vecchia mappa pirata quando invecchiano.</li> 
->     <li><strong>[!UICONTROL Modalità regolare]</strong>: le schede diventano progressivamente più trasparenti con l'invecchiamento. </li> 
->    </ul> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Feed calendario abilitato]</td> 
->   <td> <p> Seleziona se il feed del calendario è abilitato o meno.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL &lt;Colore&gt; nome etichetta]</td> 
->   <td> <p> Assegna un nome all’etichetta colore desiderata.</p> </td> 
->  </tr> 
->  <tr> 
->   <td role="rowheader">[!UICONTROL Archive] </td> 
->   <td> <p>Seleziona un’opzione per indicare se desideri archiviare (chiudere) la bacheca. </p> </td> 
->  </tr> 
-> </tbody> 
-></table>
+<col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account [!UICONTROL Trello] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL ID bacheca]</p> </td> 
+   <td> <p>Immettere o mappare l'ID [!UICONTROL Trello] univoco della bacheca che si desidera creare con il modulo. Puoi recuperare l’ID della bacheca utilizzando un altro modulo, ad esempio il modulo Bacheche di controllo</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nuovo nome]</td> 
+   <td> <p> Immetti o mappa un nuovo nome per la bacheca.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nuova descrizione]</td> 
+   <td> <p> Inserisci o mappa una nuova descrizione della bacheca.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL ID organizzazione]</p> </td> 
+   <td> <p>Immettere o mappare l'ID [!UICONTROL Trello] univoco della bacheca che si desidera modificare con il modulo.  </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subscribe] </td> 
+   <td> <p>Seleziona un’opzione per specificare se l’utente proprietario della connessione utilizzata da questo modulo è abbonato alla bacheca.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Livello di autorizzazione]</p> </td> 
+   <td> <p>Le bacheche hanno regole di voto e commento diverse per ogni livello di autorizzazione. Ad esempio: se la tua bacheca è [!UICONTROL Private] e imposti le regole di voto e commento come [!UICONTROL All], viene visualizzato un errore. </p> <p>Le votazioni e i commenti sono limitati ai seguenti gruppi per ogni livello di autorizzazione:</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Privato]</strong>: 
+      Membri, membri e osservatori</li> 
+     <li><strong>[!UICONTROL Per Organizzazione]</strong>: 
+      Membri, membri e osservatori, membri dell’organizzazione</li> 
+     <li><strong>[!UICONTROL Public]</strong>: 
+      Membri, membri e osservatori, membri dell'organizzazione, tutti</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+   <td> <p>Seleziona un’opzione per specificare chi può votare su questa bacheca. Per informazioni sulle limitazioni di voto nei livelli di autorizzazione, vedere il campo [!UICONTROL Livello di autorizzazione].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Commenti]</p> </td> 
+   <td> <p>Seleziona un’opzione per specificare chi può commentare le schede per questa bacheca. Per informazioni sulle limitazioni relative ai livelli di autorizzazione, vedere il campo [!UICONTROL Livello di autorizzazione].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL inviti] </td> 
+   <td> <p>Seleziona chi può invitare le persone su questa bacheca.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Self-join]</td> 
+   <td> <p> Seleziona se i membri del team possono unirsi alla bacheca autonomamente o se devono essere invitati.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copertine per schede]</td> 
+   <td> <p> Seleziona se i coperchi della scheda devono essere visualizzati su questa bacheca.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sfondo] </td> 
+   <td> <p>Seleziona il colore dello sfondo o dello sfondo personalizzato.</p> <p>Nota: gli sfondi personalizzati sono disponibili solo per gli abbonati a [!UICONTROL Trello Gold and Business Class].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID sfondo]</td> 
+   <td> <p> Se si è selezionato di utilizzare uno sfondo personalizzato nel campo [!UICONTROL Background], immettere o mappare l'ID dello sfondo che si desidera utilizzare.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
+   <td> <p>Scegli tra due modalità di aging della carta. </p> 
+    <ul> 
+     <li><strong>[!UICONTROL Modalità pirata]</strong>: le carte si lacerano, ingialliscono e si rompono come una vecchia mappa pirata quando invecchiano.</li> 
+     <li><strong>[!UICONTROL Modalità regolare]</strong>: le schede diventano progressivamente più trasparenti con l'invecchiamento. </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Feed calendario abilitato]</td> 
+   <td> <p> Seleziona se il feed del calendario è abilitato o meno.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL &lt;Colore&gt; nome etichetta]</td> 
+   <td> <p> Assegna un nome all’etichetta colore desiderata.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive] </td> 
+   <td> <p>Seleziona un’opzione per indicare se desideri archiviare (chiudere) la bacheca. </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 +++
@@ -918,7 +913,7 @@ Questo modulo di azione aggiunge il membro specificato alla scheda specificata.
    <td role="rowheader"> <p>[!UICONTROL Immetti l'ID della scheda e l'ID del membro]</p> </td> 
    <td> <p>Scegli come inserire l'ID carta e l'ID membro.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID <strong>[!UICONTROL Card]</strong> e l'ID membro <strong></strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID <strong>[!UICONTROL Card]</strong> e l'ID membro <strong>[!UICONTROL]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona]</strong> </p> <p>Selezionare la bacheca contenente la scheda a cui si desidera aggiungere un membro, quindi selezionare l'elenco contenente la scheda, la scheda stessa e il membro che si desidera aggiungere alla scheda.</p> </li> 
     </ul> </td> 
   </tr> 

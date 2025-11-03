@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '2231'
+source-wordcount: '2237'
 ht-degree: 0%
 
 ---
@@ -27,34 +27,29 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -123,7 +118,7 @@ Puoi creare una connessione al tuo account [!DNL Marketo] direttamente da qualsi
       <tr>
         <td role="rowheader">Account [!UICONTROL / ID Munchkin]</td>
         <td>
-          <p>Immetti l'account [!DNL Marketo] o l'ID [!DNL Marketo] di [!UICONTROL Munchkin]. Parte univoca dell'URL di base o dell'endpoint assegnato all'account, utilizzata per accedere a [!DNL Marketo] tramite l'API REST di . Per istruzioni su come individuare questa posizione, vedere [URL di base](https://developers.marketo.com/rest-api/base-url/) nella documentazione di [!DNL Marketo].</p>
+          <p>Immetti l'account [!DNL Marketo] o l'ID [!DNL Marketo] di [!UICONTROL Munchkin]. Parte univoca dell'URL di base o dell'endpoint assegnato all'account, utilizzata per accedere a [!DNL Marketo] tramite l'API REST di [!UICONTROL]. Per istruzioni su come individuare questa posizione, vedere [URL di base](https://developers.marketo.com/rest-api/base-url/) nella documentazione di [!DNL Marketo].</p>
         </td>
       </tr>
       <tr>
@@ -406,7 +401,7 @@ Questo modulo di azione legge le informazioni su un record utilizzando il relati
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
-   <td>Seleziona le informazioni da includere nel bundle di output per questo modulo. I campi sono disponibili in base al tipo di record  selezionato.</td> 
+   <td>Seleziona le informazioni da includere nel bundle di output per questo modulo. I campi sono disponibili in base al tipo di record [!UICONTROL] selezionato.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL &lt;ID Oggetto&gt;]</td> 
@@ -576,7 +571,7 @@ Questo modulo di azione recupera tutti i record di un tipo specifico.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
-   <td>Seleziona le informazioni da includere nel bundle di output per questo modulo. I campi sono disponibili in base al tipo di record  selezionato.</td> 
+   <td>Seleziona le informazioni da includere nel bundle di output per questo modulo. I campi sono disponibili in base al tipo di record [!UICONTROL] selezionato.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 

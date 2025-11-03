@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1548'
 ht-degree: 1%
 
 ---
@@ -21,34 +21,29 @@ Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare s
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -294,7 +289,7 @@ Questo modulo di azione crea una nuova cartella vuota all’interno della cartel
    <td> <p>Immettere o mappare un nome per la nuova cartella.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Cartella padre </td> 
+   <td role="rowheader">Cartella padre [!UICONTROL]</td> 
    <td> <p>Selezionare la cartella in cui si desidera creare la nuova cartella.</p> </td> 
   </tr> 
   <tr> 
@@ -473,7 +468,7 @@ Questo modulo di ricerca cerca gli elementi disponibili per l’utente o per l�
    <td> <p>Per ogni attributo che si desidera restituire nella risposta del modulo, fare clic su <b>Aggiungi elemento</b> e immettere il campo.</p><p>Può essere utilizzato per richiedere campi che normalmente non vengono restituiti in una risposta standard. Tieni presente che la specifica di questo parametro avrà l’effetto che nessuno dei campi standard viene restituito nella risposta, a meno che non sia specificato esplicitamente. </p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Estensioni file di </td> 
+   <td role="rowheader">Estensioni file di [!UICONTROL]</td> 
    <td> <p>Per limitare la ricerca a estensioni di file specifiche, immettere un elenco di estensioni di file separate da virgole.</p> </td> 
   </tr> 
   <tr> 
@@ -485,7 +480,7 @@ Questo modulo di ricerca cerca gli elementi disponibili per l’utente o per l�
    <td> <p>Per cercare le risorse in un intervallo di dimensioni specifico, inserisci l’estremità più grande dell’intervallo, in byte.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID utente proprietario di </td> 
+   <td role="rowheader">ID utente proprietario di [!UICONTROL]</td> 
    <td> <p>Per cercare le risorse di proprietà di utenti specifici, inserisci un elenco separato da virgole di ID proprietari.</p> </td> 
   </tr> 
   <tr> 

@@ -4,9 +4,9 @@ description: I moduli  [!DNL Adobe Workfront Fusion SFTP]  consentono di monitor
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2222'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ I moduli di Adobe Workfront Fusion SFTP consentono di monitorare le modifiche de
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -87,7 +82,7 @@ Per connettere l’account SFTP a Workfront Fusion è necessario creare una conn
    <td> <p>Immetti il nome host del server SFTP che desideri connettere.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Porta  </td> 
+   <td role="rowheader">Porta [!UICONTROL] </td> 
    <td> <p>Immetti la porta del server SFTP. Ad esempio, 22.</p> </td> 
   </tr> 
   <tr> 
@@ -346,7 +341,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome del file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento </td> 
+   <td>Ordinamento [!UICONTROL]</td> 
    <td> <p> Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -387,7 +382,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento  </td> 
+   <td>Ordinamento [!UICONTROL] </td> 
    <td> <p>Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 

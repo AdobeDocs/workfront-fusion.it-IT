@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3106'
 ht-degree: 0%
 
 ---
@@ -27,34 +27,22 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
-   </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -62,11 +50,7 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Informazioni su Workfront Proof
++++## informazioni su Workfront Proof
 
 Il connettore Workfront Proof utilizza quanto segue:
 
@@ -124,7 +108,7 @@ Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente d
                 <td><strong>Nota</strong>: i clienti che non utilizzano BYOK devono lasciare vuoto questo campo. <p>Immetti l’ID tenant per questo account. Se hai bisogno di aiuto per trovare l’ID tenant, contatta l’Assistenza clienti Workfront.</p></td>
             </tr>
             <tr>
-                <td role="rowheader">Estensione di dominio </td>
+                <td role="rowheader">Estensione di dominio [!UICONTROL]</td>
                 <td>Immetti l’estensione per l’URL utilizzato per accedere al tuo account. <p>Esempio: <code>com</code> o <code>eu</code></p></td>
             </tr>
             <tr>
@@ -273,8 +257,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Tipo di bozza </td> 
-   <td> <p>Specifica se la bozza creata deve avere un flusso di lavoro di base o un flusso di lavoro automatico .</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Flusso di lavoro automatico], compila il campo <strong>[!UICONTROL Fasi del flusso di lavoro]</strong> per configurare le fasi.</p></td> 
+   <td>Tipo di bozza [!UICONTROL]</td> 
+   <td> <p>Specifica se la bozza creata deve avere un flusso di lavoro di base o un flusso di lavoro automatico [!UICONTROL].</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Flusso di lavoro automatico], compila il campo <strong>[!UICONTROL Fasi del flusso di lavoro]</strong> per configurare le fasi.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Consenti il download del file originale]</td> 
@@ -293,7 +277,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Seleziona questa opzione se desideri che il modulo crei una nuova versione di una bozza esistente. Quindi, nel campo <strong>[!UICONTROL ID bozza esistente]</strong> che visualizza, mappa o immetti l'ID univoco della bozza.</td> 
   </tr> 
   <tr> 
-   <td>Etichetta collegamento personalizzato </td> 
+   <td>Etichetta collegamento personalizzato [!UICONTROL]</td> 
    <td>Inserisci o mappa un’etichetta per il collegamento della bozza personalizzata.</td> 
   </tr> 
   <tr> 
@@ -573,14 +557,14 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
     <ul>
      <li> [!UICONTROL Tutti i nuovi commenti e risposte]</li>
      <li>[!UICONTROL Risponde ai miei commenti]</li>
-     <li>Riepilogo giornaliero di </li>
-     <li> Riepilogo orario </li>
+     <li>Riepilogo giornaliero di [!UICONTROL]</li>
+     <li> Riepilogo orario [!UICONTROL]</li>
      <li> [!UICONTROL Decisions only]</li>
      <li> [!UICONTROL Disabilitato]</li>
     </ul></td> 
   </tr> 
   <tr> 
-   <td>Ruolo predefinito di </td> 
+   <td>Ruolo predefinito di [!UICONTROL]</td> 
    <td>Seleziona il ruolo predefinito per la bozza.</td> 
   </tr> 
   <tr> 
@@ -589,7 +573,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td>[!UICONTROL - Abilita sottoscrizioni]</td> 
-   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo Ruolo predefinito di .</td> 
+   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo Ruolo predefinito di [!UICONTROL].</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Abilita convalida sottoscrizioni]</td> 

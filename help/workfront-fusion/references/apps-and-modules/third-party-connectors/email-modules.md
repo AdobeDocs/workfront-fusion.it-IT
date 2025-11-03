@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, puoi collegare il tuo accou
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2491'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ In uno scenario Adobe Workfront Fusion, puoi collegare il tuo account e-mail a p
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -307,7 +302,7 @@ Questo modulo di azione rimuove un messaggio e-mail o una bozza dalla cartella s
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Immetti l’UID e-mail dell’e-mail da eliminare.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
+   <td> <p>Immetti l’UID e-mail dell’e-mail da eliminare.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Expunge]</td> 
@@ -402,7 +397,7 @@ Questo modulo di azione contrassegna un messaggio e-mail o una bozza in una cart
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
+   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -425,7 +420,7 @@ Contrassegna un messaggio e-mail o una bozza in una cartella selezionata come no
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come non letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
+   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come non letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -452,7 +447,7 @@ Sposta un messaggio e-mail o una bozza selezionati in una cartella selezionata.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Immetti l’UID e-mail dell’e-mail che desideri spostare nella cartella di destinazione.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
+   <td> <p>Immetti l’UID e-mail dell’e-mail che desideri spostare nella cartella di destinazione.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -483,7 +478,7 @@ Invia una nuova e-mail.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Tipo di contenuto]</p> </td> 
-   <td> <p>Seleziona il tipo di contenuto  per l'e-mail:</p> 
+   <td> <p>Seleziona il tipo di contenuto [!UICONTROL] per l'e-mail:</p> 
     <ul> 
      <li>HTML</li> 
      <li>[!UICONTROL Testo normale]</li> 
@@ -527,7 +522,7 @@ Invia una nuova e-mail.
    <td> <p>Immetti gli ID messaggio di tutte le risposte nel thread.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Priorità </p> </td> 
+   <td role="rowheader"> <p>Priorità [!UICONTROL]</p> </td> 
    <td> <p>Seleziona la priorità dell’e-mail:</p> 
     <ul> 
      <li>[!UICONTROL alto]</li> 

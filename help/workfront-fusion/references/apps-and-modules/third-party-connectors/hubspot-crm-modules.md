@@ -4,9 +4,9 @@ description: I moduli CRM HubSpot di Adobe Workfront Fusion ti consentono di mon
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '7317'
+source-wordcount: '7323'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ I moduli di Adobe Workfront Fusion [!DNL HubSpot CRM] consentono di monitorare e
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -188,7 +183,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
    <td> <p>Selezionare il tipo di oggetto che si desidera cercare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà output di </td> 
+   <td role="rowheader">Proprietà output di [!UICONTROL]</td> 
    <td>Selezionare le proprietà che si desidera includere nell'output per questo modulo.</td> 
   </tr> 
   <tr> 
@@ -223,7 +218,7 @@ Questo modulo di azione crea un contatto, una società o un&#39;offerta.
    <td> <p>Selezionare il tipo di record da creare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Gruppi di proprietà </td> 
+   <td role="rowheader">Gruppi di proprietà [!UICONTROL]</td> 
    <td>Per ogni proprietà che si desidera aggiungere durante la creazione del record, selezionare il gruppo in cui si trova la proprietà. Il gruppo di proprietà si aprirà e potrai quindi inserire il valore delle proprietà. I gruppi di proprietà e le proprietà disponibili dipendono dal tipo di record che si desidera creare.</td> 
   </tr> 
  </tbody> 
@@ -248,7 +243,7 @@ Questo modulo di azione crea un contatto, un’azienda o un’offerta.
    <td> <p>Selezionare il tipo di record da creare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà </td> 
+   <td role="rowheader">Proprietà [!UICONTROL]</td> 
    <td>Immettere le proprietà che si desidera impostare per il record. I campi disponibili dipendono dal tipo di record che si desidera creare.</td> 
   </tr> 
  </tbody> 
@@ -303,7 +298,7 @@ Questo modulo di azione ottiene i dettagli di un contatto, un’azienda o un’o
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di ricerca </td> 
+   <td role="rowheader">Tipo di ricerca [!UICONTROL]</td> 
    <td>Se stai ricevendo un contatto, seleziona se desideri identificarlo per ID o per indirizzo e-mail.</td> 
   </tr> 
   <tr> 
@@ -336,7 +331,7 @@ Questo modulo di azione ottiene i metadati per una proprietà record specifica i
    <td>Selezionare il tipo di record con la proprietà per cui si desidera recuperare i metadati.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Nome proprietà </td> 
+   <td role="rowheader">Nome proprietà [!UICONTROL]</td> 
    <td>Seleziona la proprietà per la quale desideri recuperare i metadati.</td> 
   </tr> 
   <tr> 
@@ -365,7 +360,7 @@ Questo modulo di ricerca restituisce un elenco di contatti, aziende o offerte. L
    <td> <p>Selezionare il tipo di record che si desidera restituire.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà output di </td> 
+   <td role="rowheader">Proprietà output di [!UICONTROL]</td> 
    <td>Selezionare le proprietà che si desidera includere nell'output per questo modulo.</td> 
   </tr> 
     <tr> 
@@ -394,7 +389,7 @@ Questo modulo di azione aggiorna un contatto, un’azienda o un’offerta.
    <td>Selezionare il tipo di record da aggiornare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di ricerca </td> 
+   <td role="rowheader">Tipo di ricerca [!UICONTROL]</td> 
    <td> <p>Se si sta ottenendo un contatto, selezionare la modalità di identificazione del record:</p> 
     <ul> 
      <li> <p>[!UICONTROL ID]</p> </li> 
@@ -410,7 +405,7 @@ Questo modulo di azione aggiorna un contatto, un’azienda o un’offerta.
    <td>Immettere l'indirizzo di posta elettronica del contatto di cui si desidera aggiornare i dettagli. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà </td> 
+   <td role="rowheader">Proprietà [!UICONTROL]</td> 
    <td>Immettere le proprietà che si desidera impostare per il record. I campi disponibili dipendono dal tipo di record che si desidera creare.</td> 
   </tr> 
  </tbody> 
@@ -439,7 +434,7 @@ Questo modulo di attivazione avvia uno scenario in cui un contatto, una società
    <td>Specificare se si desidera controllare i record modificati di recente o creati di recente.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà output di </td> 
+   <td role="rowheader">Proprietà output di [!UICONTROL]</td> 
    <td>Selezionare le proprietà da includere nell'output del modulo.</td> 
   </tr> 
   <tr> 
@@ -495,7 +490,7 @@ Questo modulo di azione crea un contatto se non esiste in un portale. Se il cont
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Gruppi di proprietà </td> 
+   <td role="rowheader">Gruppi di proprietà [!UICONTROL]</td> 
    <td>Per ogni proprietà che si desidera aggiungere durante la creazione del contatto, selezionare il gruppo in cui si trova la proprietà. Il gruppo di proprietà si aprirà e sarà quindi possibile inserire i valori delle proprietà.</td> 
   </tr> 
  </tbody> 
@@ -516,7 +511,7 @@ Crea un contatto se non esiste già in un portale, oppure lo aggiorna con i valo
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà </td> 
+   <td role="rowheader">Proprietà [!UICONTROL]</td> 
    <td>Specificare le proprietà che si desidera impostare o aggiornare per il contatto. </td> 
   </tr> 
  </tbody> 
@@ -707,7 +702,7 @@ Questo modulo di attivazione avvia uno scenario quando un nuovo contatto viene a
    <td>Immettere o mappare l'ID dell'elenco contenente i contatti che si desidera controllare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Proprietà output di </td> 
+   <td role="rowheader">Proprietà output di [!UICONTROL]</td> 
    <td>Selezionare le proprietà da includere nell'output del modulo.</td> 
   </tr> 
   <tr> 
@@ -734,7 +729,7 @@ Restituisce una pipeline di offerta specifica.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID pipeline di  </td> 
+   <td role="rowheader">ID pipeline di [!UICONTROL] </td> 
    <td>Immetti o mappa l’ID della pipeline per la quale desideri recuperare i dettagli. </td> 
   </tr> 
   <tr> 
@@ -759,7 +754,7 @@ Restituisce tutte le pipeline di offerte e biglietti per un determinato portale.
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL HubSpot CRM] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di oggetto  </td> 
+   <td role="rowheader">Tipo di oggetto [!UICONTROL] </td> 
    <td>Seleziona se desideri elencare offerte o biglietti.</td> 
   </tr> 
  </tbody> 
@@ -858,7 +853,7 @@ Questo modulo di azione crea un coinvolgimento (ad esempio una nota, un’attivi
   </td> 
    </tr> 
   <tr> 
-   <td role="rowheader">Data/ora</td> 
+   <td role="rowheader">Marca temporale</td> 
    <td>Immetti o mappa un timestamp per il coinvolgimento.</td> 
   </tr> 
   <tr> 
@@ -1777,7 +1772,7 @@ Questo modulo di azione crea un nuovo post di blog.
    <td>Per ogni parola chiave da aggiungere al post, fare clic su <b>Aggiungi elemento</b> e immettere la parola chiave e il GUID della parola chiave.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Descrizione metadati</td> 
+   <td role="rowheader">Descrizione Meta</td> 
    <td>Immettere o mappare il testo per il tag <code>meta</code> sulla pagina.</td> 
   </tr> 
   <tr> 
@@ -2017,7 +2012,7 @@ Questo modulo di azione aggiorna un abbonamento e-mail in HubSpot.
    <td>Inserisci o mappa l’indirizzo e-mail dell’abbonamento che desideri aggiornare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Stati </td> 
+   <td role="rowheader">Stati [!UICONTROL]</td> 
    <td>Per ogni stato per il quale si desidera aggiornare l'abbonamento, fare clic su <b>Aggiungi elemento</b>, immettere l'ID dello stato e specificare se l'indirizzo di posta elettronica sarà abbonato a tale stato.</td> 
   </tr> 
   <tr> 

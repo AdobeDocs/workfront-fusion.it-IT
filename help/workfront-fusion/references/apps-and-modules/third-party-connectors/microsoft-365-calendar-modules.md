@@ -4,9 +4,9 @@ description: In uno scenario Adobe Workfront Fusion, è possibile automatizzare 
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2050'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di l
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
 
-Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi</p> </td> 
+   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenza Adobe Workfront</td> 
-   <td> <p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: Lavoro o versione successiva</p> </td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
    <td>
-   <p>Corrente: nessun requisito di licenza Workfront Fusion</p>
-   <p>Oppure</p>
-   <p>Legacy: Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
+   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Novità:</p> <ul><li>Seleziona o crea un pacchetto Prime Workfront: la tua organizzazione deve acquistare Adobe Workfront Fusion.</li><li>Pacchetto Ultimate Workfront: è incluso Workfront Fusion.</li></ul>
-   <p>Oppure</p>
-   <p>Corrente: la tua organizzazione deve acquistare Adobe Workfront Fusion.</p>
+   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -262,7 +257,7 @@ Questo modulo di ricerca recupera i dettagli di un evento quando viene creato, a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari  che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
+   <td>Selezionare il gruppo di calendari [!UICONTROL] che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar]</td> 
@@ -274,7 +269,7 @@ Questo modulo di ricerca recupera i dettagli di un evento quando viene creato, a
     <ul> 
      <li>[!UICONTROL Subject]</li> 
      <li>[!UICONTROL ID evento]</li> 
-     <li>Data e ora di creazione di </li> 
+     <li>Data e ora di creazione di [!UICONTROL]</li> 
      <li>[!UICONTROL Data e ora ultima modifica]</li> 
      <li>[!UICONTROL Anteprima corpo]</li> 
     </ul> </td> 
@@ -420,7 +415,7 @@ Questo modulo trigger recupera i dettagli di un evento quando viene creato, aggi
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari  che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
+   <td>Selezionare il gruppo di calendari [!UICONTROL] che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar]</td> 
@@ -518,7 +513,7 @@ Questo modulo di ricerca recupera un elenco di tutti i calendari dell’utente a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari  contenente i calendari da elencare.</td> 
+   <td>Selezionare il gruppo di calendari [!UICONTROL] contenente i calendari da elencare.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -541,7 +536,7 @@ Questo modulo di azione modifica un calendario esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID calendario]</td> 
-   <td>Immettere l'ID del calendario  per il calendario che si desidera aggiornare. </td> 
+   <td>Immettere l'ID del calendario [!UICONTROL] per il calendario che si desidera aggiornare. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nome nuovo calendario]</td> 
