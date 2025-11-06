@@ -4,9 +4,9 @@ description: Account  [!DNL Adobe Workfront Fusion Frame].io modules enable you 
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Questo articolo descrive la versione legacy del connettore Frame.io. Questo connettore viene utilizzato per connettersi alla versione 3 di Frame.io.
 >
->Per istruzioni sulla nuova versione (beta) del connettore Frame.io, vedere [Connettore Beta Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
+>Per istruzioni sulla nuova versione (beta) del connettore Frame.io, vedere [Connettore Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 I moduli di Adobe Workfront Fusion [!DNL Frame.io] consentono di monitorare, creare, aggiornare, recuperare o eliminare risorse e commenti nell&#39;account [!DNL Frame.io].
 
@@ -25,10 +25,10 @@ Workfront offre due connettori Frame.io, in base alla versione di Frame.io a cui
 
 | Connettore  | Versione Frame.io |
 |---|---|
-| Frame.io (Beta) | V4 |
+| Frame.io | V4 |
 | Frame.io (legacy) | V3 |
 
-Per istruzioni sulla nuova versione del connettore Frame.io, vedere [Connettore Beta Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
+Per istruzioni sulla nuova versione del connettore Frame.io, vedere [Connettore Frame.io](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Per un video introduttivo sul connettore Frame.io, vedi:
 
@@ -235,7 +235,7 @@ Questo modulo crea una nuova risorsa.
    <td> <p>Se crei un file, immetti una breve descrizione della risorsa.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Etichetta  </td> 
+   <td role="rowheader">Etichetta [!UICONTROL] </td> 
    <td> <p>In caso di creazione di un file, selezionare se il file è in corso, se deve essere esaminato o se è approvato.</p> </td> 
   </tr> 
  </tbody> 

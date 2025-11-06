@@ -1,12 +1,12 @@
 ---
-title: Moduli Frame.io (Beta)
+title: Moduli Frame.io
 description: Account  [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] .
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
 workflow-type: tm+mt
-source-wordcount: '3559'
+source-wordcount: '3555'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Il connettore Frame.io utilizza quanto segue:
 
 Questo metodo crea automaticamente una connessione se si è connessi a Frame.io o alla pagina di accesso a Frame.io per consentire l&#39;accesso.
 
-1. In qualsiasi modulo di Beta Frame.io, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
+1. In qualsiasi modulo Frame.io, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 1. Immettere un nome per la connessione.
 1. Fai clic su **Continua**.
 1. Se viene richiesto di accedere all&#39;account Frame.io, eseguire questa operazione.
@@ -177,7 +177,7 @@ Se non si dispone già di credenziali server-to-server in un progetto Adobe Deve
 
 #### Configurare una connessione di autenticazione utente
 
-1. In qualsiasi modulo di Beta Frame.io, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
+1. In qualsiasi modulo Frame.io, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 1. Nella casella Crea connessione fare clic su **Mostra impostazioni avanzate**.
 
 1. Compila i campi seguenti:
@@ -202,7 +202,7 @@ Se non si dispone già di credenziali server-to-server in un progetto Adobe Deve
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni sulla creazione delle credenziali, vedere <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Creare le credenziali utente in Adobe Developer Console</a> in questo articolo.</p></td>
+          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni sulla creazione delle credenziali, vedere <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Creare le credenziali utente in Adobe Developer Console</a> in questo articolo.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]</td>
@@ -252,7 +252,7 @@ Se non si dispone già di credenziali server-to-server in un progetto Adobe Deve
 
 #### Configurare una connessione server-to-server
 
-1. In qualsiasi modulo di Beta Frame.io, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
+1. In qualsiasi modulo Frame.io, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
 1. Compila i campi seguenti:
 
@@ -276,7 +276,7 @@ Se non si dispone già di credenziali server-to-server in un progetto Adobe Deve
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni sulla creazione delle credenziali, vedere <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Creare credenziali da server a server in Adobe Developer Console</a> in questo articolo.</p></td>
+          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni sulla creazione delle credenziali, vedere <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Creare credenziali da server a server in Adobe Developer Console</a> in questo articolo.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]</td>
