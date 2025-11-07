@@ -4,9 +4,9 @@ description: Account  [!DNL Adobe Workfront Fusion Frame].io modules enable you 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: b23255cb9585c58f025a0b2c99b824ecbf2c6879
+source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
 workflow-type: tm+mt
-source-wordcount: '3555'
+source-wordcount: '4399'
 ht-degree: 1%
 
 ---
@@ -202,7 +202,7 @@ Se non si dispone già di credenziali server-to-server in un progetto Adobe Deve
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni sulla creazione delle credenziali, vedere <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Creare le credenziali utente in Adobe Developer Console</a> in questo articolo.</p></td>
+          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni sulla creazione delle credenziali, vedere <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Creare le credenziali utente in Adobe Developer Console</a> in questo articolo.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]</td>
@@ -276,7 +276,7 @@ Se non si dispone già di credenziali server-to-server in un progetto Adobe Deve
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni sulla creazione delle credenziali, vedere <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Creare credenziali da server a server in Adobe Developer Console</a> in questo articolo.</p></td>
+          <td>Immetti l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].<p>Per istruzioni sulla creazione delle credenziali, vedere <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Creare credenziali da server a server in Adobe Developer Console</a> in questo articolo.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Segreto client]</td>
@@ -303,6 +303,7 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Progetti](#projects)
 * [Condivisioni](#shares)
 * [Aree di lavoro](#workspaces)
+* [Metadati](#metadata)
 * [Altro](#other)
 
 ### Risorse
@@ -315,6 +316,61 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 * [Guarda nuova risorsa](#watch-new-asset)
 
 #### [!UICONTROL Crea una risorsa] <!--different for v4-->
+
+Questo modulo crea una nuova risorsa. Puoi caricare un file locale o fornire l’URL da cui creare la risorsa in un file remoto.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connettere [!DNL Frame.io] ad Adobe Workfront Fusion</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
+   <td> <p>Seleziona l’account o esegui il mapping dell’ID dell’account contenente il progetto per il quale desideri creare una risorsa.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Seleziona l’area di lavoro o mappa l’ID dell’area di lavoro che contiene il progetto per il quale desideri creare una risorsa.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID progetto] </td> 
+   <td> <p>Seleziona il progetto o mappa l’ID del progetto per il quale desideri creare una risorsa.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Path] </td> 
+   <td> <p>Seleziona il percorso in cui desideri creare una risorsa.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
+  </tr> -->
+    <tr> 
+    <td role="rowheader">Tipo di caricamento </td> 
+    <td> <p>Seleziona se creare una risorsa da un file locale o da una vita remota.</p> </td> 
+   </tr>
+    <tr> 
+    <td role="rowheader">Dimensioni file </td> 
+    <td> <p>Se si sta caricando un file locale, immettere o mappare la dimensione del file in byte.</p> </td> 
+   </tr>
+  <tr> 
+   <td role="rowheader">[!UICONTROL URL Source] </td> 
+   <td> <p>Se crei la risorsa da un file remoto, immetti l’URL del file da caricare.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source file]</td> 
+   <td> <p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di origine.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL Media type] </td> 
+   <td> <p>Select the media type for this asset.</p> </td> 
+  </tr> -->
+  </tbody> 
+</table>
+
+#### [!UICONTROL Crea una risorsa (legacy)] <!--different for v4-->
 
 Questo modulo crea una nuova risorsa.
 
@@ -967,6 +1023,183 @@ Questo modulo elenca tutte le aree di lavoro di un account.
    <td role="rowheader">[!UICONTROL Numero massimo di aree di lavoro restituite] </td> 
    <td> <p>Inserisci o mappa il numero massimo di aree di lavoro
    desideri che il modulo venga restituito durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Metadati
+
+* [Creare un campo a livello di account](#create-an-account-level-field)
+* [Eliminare un campo a livello di account](#delete-an-account-level-field)
+* [Ottieni metadati](#get-metadata)
+* [Elencare i campi a livello di account](#list-account-level-fields)
+* [Aggiornare la definizione di un campo a livello di conto](#update-an-account-level-field-definition)
+* [Aggiornare i metadati in più file](#update-metadata-across-multiple-files)
+
+#### Creare un campo a livello di account
+
+Questo modulo di azione crea e configura un nuovo campo di metadati a livello di account.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connettere [!DNL Frame.io] ad Adobe Workfront Fusion</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
+   <td> <p>Seleziona o mappa l’account in cui desideri creare i metadati.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Tipo di campo </td> 
+   <td> <p>Seleziona il tipo di campo di metadati che desideri creare, quindi configura le opzioni per tale campo.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Nome </td> 
+   <td> <p>Immettere o mappare un nome per il nuovo campo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Eliminare un campo a livello di account
+
+Questo modulo di azione elimina un singolo campo di metadati a livello di account.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connettere [!DNL Frame.io] ad Adobe Workfront Fusion</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
+   <td> <p>Seleziona o esegui il mapping dell’account contenente il campo di metadati da eliminare.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID definizione campo </td> 
+   <td> <p>Immetti o mappa l’ID del campo da eliminare. Puoi trovare gli ID campo con il modulo Elenca campi a livello di account.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ottieni metadati
+
+Questo modulo recupera i metadati di un file in Frame.io.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connettere [!DNL Frame.io] ad Adobe Workfront Fusion</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
+   <td> <p>Selezionare o mappare l'account contenente il file per il quale si desidera recuperare i metadati.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID file </td> 
+   <td> <p>Immetti o mappa l’ID del file per il quale desideri recuperare i metadati.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Mostra nulle </td> 
+   <td> <p>Abilita questa opzione per includere nell’output campi con valore null.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Elencare i campi a livello di account
+
+Questo modulo recupera un elenco di campi di metadati a livello di account per l’account specificato.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connettere [!DNL Frame.io] ad Adobe Workfront Fusion</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
+   <td> <p>Seleziona o esegui il mapping dell’account da cui desideri elencare i campi.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Numero massimo di contratti restituiti]</td> 
+   <td> <p>Immettere o mappare il numero massimo di campi che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Aggiornare la definizione di un campo a livello di conto
+
+Questo modulo aggiorna la definizione di un singolo campo di metadati esistente.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connettere [!DNL Frame.io] ad Adobe Workfront Fusion</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
+   <td> <p>Seleziona o mappa l’account in cui desideri creare i metadati.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">ID definizione campo </td> 
+   <td> <p>Immetti o mappa l’ID del campo da aggiornare. Puoi trovare gli ID campo con il modulo Elenca campi a livello di account.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Tipo di campo </td> 
+   <td> <p>Se si desidera modificare il tipo di campo del campo, selezionare il tipo di campo di metadati che si desidera creare, quindi configurare le opzioni per tale campo.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Nome </td> 
+   <td> <p>Immettere o mappare un nuovo nome per il campo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Aggiornare i metadati in più file
+
+Questo modulo aggiorna i campi di metadati su uno o più file con i valori specificati.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>Per istruzioni sulla creazione di una connessione a [!DNL Frame.io], vedere <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connettere [!DNL Frame.io] ad Adobe Workfront Fusion</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID account] </td> 
+   <td> <p>Seleziona o mappa l’account contenente i file per i quali desideri aggiornare i metadati.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Seleziona l’area di lavoro o mappa l’ID dell’area di lavoro che contiene il progetto per il quale desideri creare una risorsa.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID progetto] </td> 
+   <td> <p>Seleziona il progetto o mappa l’ID del progetto per il quale desideri creare una risorsa.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID file] </td> 
+   <td> <p>Per ogni file per il quale si desidera aggiornare i metadati, fare clic su <b>Aggiungi elemento</b> e immettere o mappare l'ID del file.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Values] </td> 
+   <td> <p>Per ogni campo per cui si desidera aggiornare i metadati, fare clic su <b>Aggiungi elemento</b> e immettere o mappare l'ID della definizione del campo e il valore che si desidera inserire in tale campo. Tutti i file specificati nel campo ID file vengono aggiornati con questo valore di campo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
