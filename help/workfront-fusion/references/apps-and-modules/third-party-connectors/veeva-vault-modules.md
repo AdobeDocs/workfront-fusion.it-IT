@@ -3,10 +3,10 @@ title: Moduli Veeva Vault
 description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Veeva Vault e collegarlo a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
+source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 3%
+source-wordcount: '2325'
+ht-degree: 2%
 
 ---
 
@@ -118,18 +118,23 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
 
 ![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Documento](#document)
+* [Oggetto](#object)
+* [Altro](#other)
+
 ### Documento
 
 * [Creare un singolo documento](#create-a-single-document)
 * [Creazione di più documenti](#create-multiple-documents)
 * [Eliminare un singolo documento](#delete-a-single-document)
+* [Scaricare un file](#download-file)
 * [Esporta documenti](#export-documents)
 * [Ottieni un singolo documento](#get-a-single-document)
 * [Avvia azione utente](#initiate-user-action)
 * [Elencare documenti](#list-documents)
 * [Recuperare i risultati di esportazione del documento](#retrieve-document-export-results)
-* [Aggiornare più documenti](#update-multiple-documents)
 * [Aggiornare un singolo documento](#update-a-single-document)
+* [Aggiornare più documenti](#update-multiple-documents)
 
 #### Creare un singolo documento
 
@@ -196,6 +201,41 @@ Questo modulo elimina un singolo documento, raccoglitore o modello.
   <tr> 
    <td role="rowheader"><p>ID documento / ID raccoglitore / Nome modello</p> </td> 
    <td> <p>Selezionare i campi da eliminare.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Scarica file
+
+Questo modulo scarica un documento, una versione del documento o un modello da Veeva Vault.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo</p> </td> 
+   <td> <p>Specificare se si desidera scaricare un documento o un modello.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo di download</p> </td> 
+   <td> <p>Specificare se si desidera scaricare un documento o una versione del documento.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>ID documento / Nome modello</p> </td> 
+   <td> <p>Immettere o mappare l'ID del documento o il nome del modello da scaricare.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Estrai documento</p> </td> 
+   <td> <p>Se si scarica un documento, attivare questa opzione per estrarre il documento prima di scaricarlo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Versione</p> </td> 
+   <td> <p>Se si sta scaricando una versione del documento, selezionare la versione da scaricare.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -387,9 +427,106 @@ Questo modulo aggiorna un singolo documento, raccoglitore o modello.
 
 ### Oggetto
 
+* [Creare un singolo record di oggetto](#create-a-single-object-record)
+* [Eliminare un singolo record di oggetto](#delete-a-single-object-record)
+* [Ottieni un singolo oggetto](#get-a-single-object)
+* [Elencare i record di oggetti](#list-objects-records)
+* [Aggiornare un singolo record di oggetto](#update-a-single-object-record)
 
+#### Creare un singolo record di oggetto
 
-#### Elencare oggetti
+Questo modulo crea, copia o copia in profondità un singolo record oggetto.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo</p> </td> 
+   <td> <p>Specificare se si desidera creare o copiare un record o se si desidera copiare un record in modo approfondito.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Modalità di migrazione</td> 
+   <td>Se si crea o si copia un record, abilitare questa opzione per creare o aggiornare record oggetto in uno stato non iniziale e con una convalida minima, creare record inattivi e impostare campi standard e gestiti dal sistema come <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nessun trigger</td> 
+   <td>Se è impostato su true e la modalità di migrazione è abilitata, il modulo ignora tutti i trigger di sistema, standard e personalizzati di SDK e i trigger di azione.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nome oggetto</td> 
+   <td>Immettere o mappare il valore del campo nome__v dell'oggetto, ad esempio <code>product__v</code>, <code>country__v</code> o <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID record</td> 
+   <td>Se si sta copiando un record, selezionare il record da copiare.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campi record</td> 
+   <td>Se si sta copiando un record in modo approfondito, selezionare i campi per i quali si desidera fornire i valori, quindi fornire tali valori.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Eliminare un singolo record di oggetto
+
+Questo modulo elimina o sovrappone un singolo record oggetto. L&#39;eliminazione a cascata di un record comporta l&#39;eliminazione del record e di tutti i relativi oggetti figlio.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo</p> </td> 
+   <td> <p>Scegliere se eliminare un record o se eliminare un record in serie.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nome oggetto</td> 
+   <td>Selezionare l'oggetto che si desidera eliminare.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID record</td> 
+   <td>Selezionare l'ID del record che si desidera eliminare.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID esterno</td> 
+   <td>Anziché ID record, è possibile utilizzare questo ID esterno documento definito dall'utente.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ottieni un singolo oggetto
+
+Questo modulo recupera i metadati configurati su un record oggetto specifico nell’insieme di credenziali.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nome oggetto</td> 
+   <td>Seleziona l’oggetto per il quale desideri recuperare i metadati.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID record</td> 
+   <td>Selezionare l'ID del record per il quale si desidera recuperare i metadati.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Elencare i record di oggetti
 
 Questo modulo recupera tutti gli oggetti Vault nel Vault autenticato.
 
@@ -408,6 +545,55 @@ Questo modulo recupera tutti gli oggetti Vault nel Vault autenticato.
   <tr> 
    <td role="rowheader">Numero massimo di risultati restituiti</td> 
    <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Update a single object record-->
+
+Questo modulo aggiorna i campi in un record oggetto esistente.
+
+Questo modulo crea, copia o copia in profondità un singolo record oggetto.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo</p> </td> 
+   <td> <p>Specificare se si desidera creare o copiare un record o se si desidera copiare un record in modo approfondito.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Modalità di migrazione</td> 
+   <td>Abilitare questa opzione per creare o aggiornare record oggetto in uno stato non iniziale e con una convalida minima, creare record inattivi e impostare campi standard e gestiti dal sistema come <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nessun trigger</td> 
+   <td>Se la modalità di migrazione è abilitata, puoi abilitare questa opzione per ignorare tutti i trigger di sistema, standard, personalizzati di SDK e i trigger di azione.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nome oggetto</td> 
+   <td>Immettere o mappare il valore del campo nome__v dell'oggetto, ad esempio <code>product__v</code>, <code>country__v</code> o <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID record</td> 
+   <td>Seleziona l’ID del record da aggiornare.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Stato</td> 
+   <td>Specificare lo stato del ciclo di vita del record quando <code>X-VaultAPI-MigrationMode</code> è impostato su true.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Etichetta stato</td> 
+   <td>Specificare il tipo di stato del ciclo di vita del record quando <code>X-VaultAPI-MigrationMode</code> è impostato su true. Utilizzare il formato <code>base:object_lifecycle:</code> seguito dal tipo di stato dell'oggetto.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campi record</td> 
+   <td>Se si sta copiando un record in modo approfondito, selezionare i campi per i quali si desidera fornire i valori, quindi fornire tali valori.</td> 
   </tr> 
  </tbody> 
 </table>
