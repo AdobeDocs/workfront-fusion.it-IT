@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 43b4c261859074c01759c0a0f924233c18401072
+source-git-commit: 4648fd66281e3771bd1859969f7aa7627b1d3434
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1929'
 ht-degree: 3%
 
 ---
@@ -394,7 +394,8 @@ ht-degree: 3%
          * [Moduli Salesforce](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
          * [Moduli SDL Managed Translation](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
          * [Moduli ServiceNow](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-         * [Moduli Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+         * [Moduli Slack](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules-new.md)
+         * [Moduli Slack (legacy)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
          * [Moduli Split.io](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [Moduli Trello](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [Amplia moduli](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
