@@ -4,10 +4,10 @@ description: Puoi visualizzare un registro delle attività dell’organizzazione
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 0%
+source-wordcount: '500'
+ht-degree: 7%
 
 ---
 
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 Puoi visualizzare un registro delle attività, ad esempio la creazione di uno scenario o l’invito di un utente, per la tua organizzazione.
 
+I registri attività mostrano tre mesi di dati. È possibile esportare i dati di oltre 3 mesi.
+
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -28,7 +30,7 @@ Puoi visualizzare un registro delle attività, ad esempio la creazione di uno sc
    <td> <p>Flusso di lavoro di Adobe Workfront Ultimate e Adobe Workfront Automazione e integrazione Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze Adobe Workfront</td> 
+   <td role="rowheader">Licenze di Adobe Workfront</td> 
    <td> <p>Standard</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -41,7 +43,7 @@ Puoi visualizzare un registro delle attività, ad esempio la creazione di uno sc
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
