@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 1a3865325fed3ebb0862f05641cdeb28d9e6c9f3
+source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 7%
+source-wordcount: '534'
+ht-degree: 6%
 
 ---
 
@@ -46,6 +46,10 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 +++
 
 ## Componenti del dashboard prestazioni
+
+>[!NOTE]
+>
+>Le metriche vengono visualizzate per pool di lavoro. Per visualizzare un pool di lavoro diverso, fare clic sul campo Pool nell&#39;angolo superiore sinistro del dashboard, quindi selezionare il pool per il quale si desidera visualizzare le metriche.
 
 Nel dashboard delle prestazioni di Fusion sono disponibili le metriche seguenti.
 
