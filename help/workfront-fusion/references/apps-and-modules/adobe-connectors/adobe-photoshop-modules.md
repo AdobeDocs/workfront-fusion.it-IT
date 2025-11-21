@@ -121,11 +121,11 @@ Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID account tecnico]</td>
-        <td>Se utilizzi una connessione JWT, immetti l’ID dell’account tecnico [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Se utilizzi una connessione JWT, immetti l’ID dell’account tecnico [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID organizzazione]</td>
-        <td>Se utilizzi una connessione JWT, immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Se utilizzi una connessione JWT, immetti l'ID organizzazione [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Chiave privata]</td>
@@ -615,7 +615,7 @@ Questo modulo di azione modifica i livelli di testo in un file Photoshop. Potete
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
+      <td role="rowheader">Archiviazione file di input </td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -689,7 +689,7 @@ Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#e
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
+      <td role="rowheader">Archiviazione file di input </td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -722,7 +722,7 @@ Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#e
       <td role="rowheader">[!UICONTROL Livelli]</td>
    <td> <p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifica livello testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
+      <td role="rowheader">Archiviazione file di output di </td>
       <td>
         <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p>
       </td>
@@ -844,7 +844,7 @@ Questo modulo di azione esegue Sfocatura profondità sul file selezionato.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
+      <td role="rowheader">Archiviazione file di input </td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -901,7 +901,7 @@ Questo modulo di azione esegue un’azione Photoshop sull’immagine selezionata
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
+      <td role="rowheader">Archiviazione file di input </td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -988,7 +988,7 @@ Questo modulo di azione esegue il ritaglio prodotto sull’immagine selezionata.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
+      <td role="rowheader">Archiviazione file di input </td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file da ritagliare.</p>
       </td>
@@ -1063,7 +1063,7 @@ Questo modulo di azione recupera le informazioni sui livelli dal file PSD specif
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
+      <td role="rowheader">Archiviazione file di input </td>
       <td>
         <p>Selezionate il servizio file da cui memorizzare il file da cui desiderate recuperare le informazioni sui livelli.</p>
       </td>
