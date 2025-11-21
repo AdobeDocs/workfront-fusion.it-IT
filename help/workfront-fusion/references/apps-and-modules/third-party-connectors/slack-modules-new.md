@@ -3,9 +3,9 @@ title: Moduli Slack
 description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare i flussi di lavoro che utilizzano Slack e collegarlo a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 9c5a73e284026cea03296e9a536958f4630fd81c
+source-git-commit: 0dbe23c5eb7a0d890b7b543f2f310b163baa3793
 workflow-type: tm+mt
-source-wordcount: '4560'
+source-wordcount: '4580'
 ht-degree: 8%
 
 ---
@@ -64,7 +64,10 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 
 ## Prerequisiti
 
-Per utilizzare i moduli [!DNL Slack], è necessario disporre di un account [!DNL Slack].
+* Per utilizzare i moduli [!DNL Slack], è necessario disporre di un account [!DNL Slack].
+* Se stai creando connessioni OAuth@, devi aggiungere i seguenti URL al inserisco nell&#39;elenco Consentiti di della tua organizzazione:
+   * token bot: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
+   * token utente:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
 
 ## Informazioni API di Slack
 
@@ -1462,7 +1465,7 @@ Questo modulo aggiorna lo stato corrente di un utente.
    <td> <p>Inserisci o mappa le emoji che desideri utilizzare per rappresentare il tuo stato. Utilizza il formato <code>:emojiname:</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Scadenza stato </td> 
+   <td role="rowheader">Scadenza stato [!UICONTROL]</td> 
    <td>Immettere o mappare la data e l'ora di scadenza dello stato. Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Tipo di coercizione</a>.</td> 
   </tr> 
  </tbody> 
