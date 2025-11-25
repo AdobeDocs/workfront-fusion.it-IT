@@ -244,7 +244,7 @@ Questo modulo di azione aggiunge un nuovo elemento a un elenco in Anaplan.
         <td>Immettere il nome dell'elemento padre in cui si desidera creare il nuovo elemento.</td>
     </tr>
     <tr>
-        <td>Proprietà [!UICONTROL]</td>
+        <td>Proprietà </td>
         <td>Se nell'elenco a cui si desidera aggiungere un elemento sono presenti proprietà personalizzate, selezionare le proprietà per le quali si desidera aggiungere i valori, quindi aggiungere i valori.</td>
     </tr>
     <tr>
@@ -563,7 +563,7 @@ Questo modulo di ricerca restituisce tutti i record accessibili del tipo selezio
        <li> <p><b>[!UICONTROL Versioni modello]</b> </p> </li> 
        <li> <p>Selezionate o mappate l'ID del modello contenente le versioni del modello che desiderate recuperare.</p> </li> 
        <li> <p><b>[!UICONTROL Utenti]</b> </p> </li> 
-       <li> <p><b>[!Viste UICONTROL]</b> </p> <p>Seleziona se desideri scegliere la vista per modulo o per modello, quindi seleziona o mappa l’ID del modulo o del modello che contiene la vista da recuperare.</p> </li> 
+       <li> <p><b>[!UICONTROL Viste]</b> </p> <p>Seleziona se desideri scegliere la vista per modulo o per modello, quindi seleziona o mappa l’ID del modulo o del modello che contiene la vista da recuperare.</p> </li> 
       </ul> 
    </td> 
   </tr> 
