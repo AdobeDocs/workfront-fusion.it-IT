@@ -3,10 +3,10 @@ title: Moduli Veeva Vault
 description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Veeva Vault e collegarlo a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
+source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
 workflow-type: tm+mt
-source-wordcount: '2325'
-ht-degree: 2%
+source-wordcount: '2485'
+ht-degree: 13%
 
 ---
 
@@ -20,7 +20,7 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -28,31 +28,31 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza di Workfront Fusion</p>
+   <p>Basata sul connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -64,7 +64,12 @@ Per utilizzare i moduli Veeva Vault, è necessario disporre di un account Veeva 
 
 È possibile creare una connessione all&#39;account Veeva Vault direttamente dall&#39;interno di un modulo Veeva Vault.
 
+Quando crei una connessione, puoi scegliere se utilizzare una password o l’autenticazione OAuth2.
+
+### Connessione a Veeva Vault tramite nome utente e password
+
 1. In qualsiasi modulo Veeva Vault, fai clic su **Aggiungi** accanto al campo Connessione.
+1. Nel campo **Tipo di connessione**, selezionare `Veeva Username Password`.
 1. Compila i campi seguenti.
 
    <table style="table-layout:auto"> 
@@ -73,20 +78,8 @@ Per utilizzare i moduli Veeva Vault, è necessario disporre di un account Veeva 
      <tbody> 
       <tr> 
        <td role="rowheader">Nome connessione</td> 
-       <td> <p>Immettere un nome per la connessione.</p> </td> 
+       <td> <p>Specifica un nome per la connessione.</p> </td> 
       </tr> 
-      <tr>
-        <td role="rowheader">Ambiente</td>
-        <td>
-          <p>Seleziona se ti connetti a un ambiente di produzione o non di produzione.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Tipo</td>
-        <td>
-          <p>Specificare se ci si connette a un account di servizio o a un account personale.</p>
-        </td>
-      </tr>
       <tr>
         <td role="rowheader">Nome utente</td>
         <td>
@@ -108,15 +101,67 @@ Per utilizzare i moduli Veeva Vault, è necessario disporre di un account Veeva 
 
 1. Fai clic su **[!UICONTROL Continua]** per creare la connessione e tornare al modulo.
 
+### Connessione a Veeva Vault con autenticazione OAuth2
+
+1. In qualsiasi modulo Veeva Vault, fai clic su **Aggiungi** accanto al campo Connessione.
+1. Nel campo **Tipo di connessione**, selezionare `Veeva Oauth 2`.
+1. Compila i campi seguenti.
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Nome connessione</td> 
+       <td> <p>Specifica un nome per la connessione.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">ID client</td>
+        <td>
+          <p>Immettere l'ID client per l'applicazione Veeva Vault utilizzata da questa connessione.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Segreto client</td>
+        <td>
+          <p>Immettere il segreto client per l'applicazione Veeva Vault che verrà utilizzata da questa connessione.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Limite</td>
+        <td>
+          <p>Immettere l'ambito della connessione.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID tenant</td>
+        <td>
+          <p>Immetti l’ID tenant per questa connessione.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID profilo</td>
+        <td>
+          <p>Immetti l’ID del profilo OAuth2/Copen ID Connect.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">DNS Vault</td> 
+       <td>Immetti il DNS Veeva Vault (nome di dominio).</p><p>Per individuare il DNS di Veeva Vault, esaminare l'URL utilizzato per accedere a Veeva Vault.</p>Nell'URL <code>https://my-dns.veevavault.com</code>, ad esempio, il DNS è <code>my-dns</code>. Non è necessario immettere l’intero URL.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. Fai clic su **[!UICONTROL Continua]** per creare la connessione e tornare al modulo.
 
 
 ## Moduli Veeva Vault e relativi campi
 
 Quando si configurano i moduli Veeva Vault, Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati altri campi di Veeva Vault, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione mappatura](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Documento](#document)
 * [Oggetto](#object)
@@ -600,11 +645,11 @@ Questo modulo crea, copia o copia in profondità un singolo record oggetto.
 
 ### Altro
 
-* [Effettuare una chiamata API personalizzata](#make-a-custom-api-call)
+* [Effettua chiamata API personalizzata](#make-a-custom-api-call)
 * [Creare una query VQL](#make-a-vql-query)
 * [Leggi registri](#read-logs)
 
-#### Effettuare una chiamata API personalizzata
+#### Effettua chiamata API personalizzata
 
 Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vault.
 
@@ -622,7 +667,7 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vau
   </tr> 
   <tr> 
    <td role="rowheader">Metodo</td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Intestazioni</td> 
@@ -634,7 +679,7 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vau
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, inserisci le virgolette al di fuori dell’istruzione condizionale.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
