@@ -4,10 +4,10 @@ description: L’editor degli scenari consente di creare e modificare scenari in
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 3%
+source-wordcount: '623'
+ht-degree: 16%
 
 ---
 
@@ -19,7 +19,7 @@ L’editor degli scenari consente di creare e modificare scenari in un’interfa
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +27,22 @@ L’editor degli scenari consente di creare e modificare scenari in un’interfa
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -71,15 +71,20 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
 
 ### Controlli
 
+Per visualizzare alcuni di questi controlli, potrebbe essere necessario fare clic sull&#39;icona dei tre punti nell&#39;area Controlli.
+
 | Azione | Dettagli |
 |----------|----------|
-| Salva | Dopo aver salvato lo scenario, sarà disponibile una nuova versione nel menu con tre punti, qualora tu debba accedervi in futuro. Le versioni degli scenari salvate in precedenza sono disponibili solo per 60 giorni. |
-| Impostazioni scenario | Il pannello delle impostazioni dello scenario contiene le impostazioni avanzate per lo scenario. Per ulteriori informazioni sulle impostazioni disponibili, vedere [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
-| Note | Prendi nota dello scenario. Altri utenti possono visualizzare queste note quando si trovano nello scenario. |
-| Allineamento automatico | Allinea automaticamente i moduli nello scenario. |
-| Spiega flusso | Visualizza un’animazione in cui i punti in movimento mostrano il modo in cui i dati scorrono nello scenario. |
-| Strumenti di sviluppo | Utilizzando Devtool, puoi controllare tutte le esecuzioni manuali dello scenario, esaminare tutte le operazioni eseguite e visualizzare i dettagli di ogni chiamata API eseguita. Puoi vedere quale modulo, operazione o singola risposta ha causato l’errore e sfruttare queste informazioni per perfezionare lo scenario. Per ulteriori informazioni, vedere [Eseguire il debug di uno scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
-| Altro | Nel menu Altro, puoi importare o esportare i blueprint e ripristinare lo scenario alle versioni precedenti. |
+| Salva <p>![Icona Salva](assets/save-icon.png)</p> | Dopo aver salvato lo scenario, sarà disponibile una nuova versione nel menu con tre punti, qualora tu debba accedervi in futuro. Le versioni degli scenari salvate in precedenza sono disponibili solo per 60 giorni. |
+| Impostazioni scenario <p>![Icona impostazioni scenario](assets/scenario-settings-icon.png)</p> | Il pannello delle impostazioni dello scenario contiene le impostazioni avanzate per lo scenario. Per ulteriori informazioni sulle impostazioni disponibili, vedere [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
+| Note  <p>![Icona note](assets/notes-icon.png)</p> | Prendi nota dello scenario. Altri utenti possono visualizzare queste note quando si trovano nello scenario. |
+| Allineamento automatico <p>![Icona Allineamento automatico](assets/auto-align-icon.png)</p> | Allinea automaticamente i moduli nello scenario. |
+| Moduli di ricerca ![Moduli di ricerca](assets/search-modules-icon.png)  </p> | Immetti un termine di ricerca per individuare un modulo, quindi fai clic sui risultati della ricerca da portare al modulo. Puoi eseguire ricerche per nome del modulo, ID, tipo o applicazione. |
+| Spiega flusso  <p>![Icona Spiega flusso](assets/explain-flow-icon.png) </p> | Visualizza un’animazione in cui i punti in movimento mostrano il modo in cui i dati scorrono nello scenario. |
+| DevTool <p>![Icona DevTool](assets/devtool-icon.png)</p> | Utilizzando DevTool, puoi controllare tutte le esecuzioni manuali dello scenario, esaminare tutte le operazioni eseguite e visualizzare i dettagli di ogni chiamata API eseguita. Puoi vedere quale modulo, operazione o singola risposta ha causato l’errore e sfruttare queste informazioni per perfezionare lo scenario. Per ulteriori informazioni, vedere [Eseguire il debug di uno scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
+| Esporta blueprint  <p>![Icona Esporta blueprint](assets/export-blueprint-icon.png) </p> | Esporta una blueprint dello scenario corrente. |
+| Importa blueprint  <p>![Icona Importa blueprint](assets/import-blueprint-icon.png) </p> | Importa una blueprint dello scenario esportato in precedenza. |
+| Versione precedente  <p>![Icona versione precedente](assets//previous-version-icon.png) </p> | Visualizza le versioni precedenti di questo scenario. |
 
 ![pannello controlli](assets/controls-editor-scenario.png)
 

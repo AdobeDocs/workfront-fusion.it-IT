@@ -4,10 +4,10 @@ description: Molti servizi forniscono webhook per inviare notifiche istantanee o
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 0%
+source-wordcount: '1232'
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ Per un video introduttivo ai webhook in Workfront Fusion, vedi:
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -45,22 +45,22 @@ Per un video introduttivo ai webhook in Workfront Fusion, vedi:
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -83,6 +83,11 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
 1. Per visualizzare lo scenario in cui viene utilizzato un webhook, fare clic sul pulsante **Scenario** nella colonna Scenario per tale webhook.
 1. Per visualizzare la connessione utilizzata per questo webhook, fare clic sul pulsante **Connessione** nella colonna Connessione relativa a tale webhook.
 1. Per nascondere le colonne o mostrare le colonne precedentemente nascoste, fare clic sull&#39;icona **Colonne** ![Icona Colonne](assets/glist-column.png) e selezionare o deselezionare i nomi delle colonne.
+1. Per visualizzare gli abbonamenti agli eventi associati a un webhook di Workfront, seleziona la casella accanto al webhook e seleziona **Mostra dettagli** nella parte inferiore della pagina.
+
+   >[!NOTE]
+   >
+   > I dettagli dell’abbonamento agli eventi sono disponibili solo per i webhook Workfront creati nel nuovo connettore Workfront. I dettagli del webhook non sono attualmente disponibili per altri connettori.
 
 
 ## Pianificazione dei trigger istantanei
