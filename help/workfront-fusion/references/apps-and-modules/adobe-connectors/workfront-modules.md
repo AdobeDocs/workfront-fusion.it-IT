@@ -1,13 +1,13 @@
 ---
 title: Moduli Adobe Workfront
-description: Puoi utilizzare il connettore Adobe Workfront Fusion Adobe Workfront per automatizzare i processi all’interno di Workfront. Se disponi di una licenza di Workfront Fusion for Work Automation and Integration, puoi utilizzarla anche per connettersi ad app e servizi di terze parti.
+description: Per automatizzare i processi all’interno di Workfront, puoi utilizzare il connettore Adobe Workfront Fusion. Se disponi di una licenza di Workfront Fusion for Work Automation and Integration, puoi utilizzarla anche per connetterti ad app e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
 source-wordcount: '7366'
-ht-degree: 10%
+ht-degree: 99%
 
 ---
 
@@ -15,24 +15,24 @@ ht-degree: 10%
 
 >[!IMPORTANT]
 >
->Questo articolo contiene istruzioni per la nuova versione del connettore Workfront, rilasciata il 22 ottobre 2025. Questo nuovo connettore riflette le modifiche apportate all’API Workfront.
+>Questo articolo contiene istruzioni per la nuova versione del connettore Workfront, rilasciata il 22 ottobre 2025. Questo nuovo connettore rispecchia le modifiche apportate all’API Workfront.
 >
->Il nuovo connettore è etichettato come &quot;Workfront&quot; e il connettore precedentemente disponibile è etichettato come &quot;Workfront (Legacy)&quot;.
+>Il nuovo connettore è etichettato come “Workfront”, quello precedentemente disponibile come “Workfront (legacy)”.
 >
->Si consiglia di:
+>È consigliabile:
 >
->* Utilizzo del nuovo connettore durante la creazione o l’aggiornamento di uno scenario.
->* Aggiornamento dei moduli esistenti al nuovo connettore.
+>* Utilizzare il nuovo connettore durante la creazione o l’aggiornamento di uno scenario.
+>* Aggiornare i moduli esistenti al nuovo connettore.
 >
 >Il connettore Workfront legacy utilizza la versione 20 dell’API Workfront, che diventerà obsoleta con la versione 28.4 (aprile 2028). I moduli nel connettore legacy continueranno a funzionare fino a quel momento.
 >
->Per istruzioni sull&#39;aggiornamento dei moduli esistenti, vedere [Aggiornare un modulo di Workfront a una nuova versione](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md) nell&#39;articolo Aggiornare un modulo a una nuova versione.
+>Per istruzioni sull’aggiornamento dei moduli esistenti, consulta [Aggiornare un modulo di Workfront a una nuova versione](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md) nell’articolo Aggiornare un modulo a una nuova versione.
 >
->Per informazioni sul motivo per cui un nuovo connettore è talvolta necessario, vedere [Panoramica delle API in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
+>Per informazioni sui motivi per cui talvolta è necessario un nuovo connettore, consulta [Panoramica delle API in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
 
-Puoi utilizzare il connettore Adobe Workfront Fusion Adobe Workfront per automatizzare i processi all’interno di Workfront. È inoltre possibile collegare Workfront ad altre applicazioni e servizi.
+Per automatizzare i processi all’interno di Workfront, puoi utilizzare il connettore Adobe Workfront Fusion. È inoltre possibile collegare Workfront ad altre applicazioni e servizi.
 
-Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per istruzioni su come creare uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
@@ -44,10 +44,10 @@ Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare s
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
    <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
@@ -61,19 +61,19 @@ Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare s
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Connessione di Workfront a Workfront Fusion 
++++## Connettere Workfront a Workfront Fusion 
 
 Il connettore Workfront utilizza OAuth 2.0 per connettersi a Workfront.
 
 Puoi creare una connessione al tuo account Workfront direttamente dall’interno di un modulo Workfront Fusion.
 
-* [Connettersi a Workfront utilizzando l’ID client e il segreto client](#connect-to-workfront-using-client-id-and-client-secret)
-* [Connettersi a Workfront utilizzando una connessione server-to-server](#connect-to-workfront-using-a-server-to-server-connection)
+* [Connettersi a Workfront utilizzando l’ID client e il Segreto client](#connect-to-workfront-using-client-id-and-client-secret)
+* [Connettersi a Workfront utilizzando una connessione da server a server](#connect-to-workfront-using-a-server-to-server-connection)
 
-### Connettersi a Workfront utilizzando l’ID client e il segreto client
+### Connettersi a Workfront utilizzando l’ID client e il Segreto client
 
 1. In qualsiasi modulo di Adobe Workfront, fai clic su **Aggiungi** accanto al campo Connessione.
-1. Compila i campi obbligatori:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
     <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -90,20 +90,20 @@ Puoi creare una connessione al tuo account Workfront direttamente dall’interno
       <tr>
         <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td>
         <td>
-          <p>Immettere un nome per la nuova connessione.</p>
+          <p>Inserisci un nome per la nuova connessione.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Immetti l'ID client di Workfront. È disponibile nell’area Applicazioni OAuth2 dell’area Configura di Workfront. Apri l’applicazione specifica a cui ti stai connettendo per visualizzare l’ID client.</td>
+        <td role="rowheader">[!UICONTROL ID client]</td>
+        <td>Inserisci il tuo ID client. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Apri l’applicazione specifica a cui ti stai connettendo per visualizzare l’ID client.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
-        <td>Immetti il segreto del client Workfront. È disponibile nell’area Applicazioni OAuth2 dell’area Configura di Workfront. Se non disponi di un segreto client per l’applicazione OAuth2 in Workfront, puoi generarne un altro. Per istruzioni, consulta la documentazione di Workfront.</td>
+        <td>Inserisci il Segreto client di Workfront. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Se non disponi di un Segreto client per l’applicazione OAuth2 in Workfront, puoi generarne un altro. Per istruzioni, consulta la documentazione di Workfront.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL URL autenticazione]</td>
-        <td>Questo può rimanere il valore predefinito, oppure puoi immettere l'URL dell'istanza Workfront, seguito da <code>/integrations/oauth2</code>. <p>Esempio: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+        <td role="rowheader">[!UICONTROL URL di autenticazione]</td>
+        <td>Questo può rimanere il valore predefinito, oppure puoi inserire l’URL dell’istanza Workfront, seguito da <code>/integrations/oauth2</code>. <p>Esempio: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Prefisso host]</td>
@@ -112,19 +112,19 @@ Puoi creare una connessione al tuo account Workfront direttamente dall’interno
     </tbody>
     </table>
 
-1. Fai clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
 
-   Se non hai effettuato l’accesso a Workfront, vieni indirizzato a una schermata di accesso. Dopo aver effettuato l’accesso, puoi consentire la connessione.
+   Se non hai effettuato l’accesso a Workfront, verrà aperta una schermata di accesso. Dopo aver effettuato l’accesso, puoi autorizzare la connessione.
 
 >[!NOTE]
 >
->* Le connessioni OAuth 2.0 all’API Workfront non si basano più sulle chiavi API.
->* Per creare una connessione a un ambiente Sandbox Workfront, è necessario creare un&#39;applicazione OAuth2 in tale ambiente e quindi utilizzare l&#39;ID client e il segreto client generati da tale applicazione nella connessione.
+>* Le connessioni OAuth 2.0 all’API Workfront non sono più basate sulle chiavi API.
+>* Per creare una connessione a un ambiente sandbox di Workfront, è necessario creare un’applicazione OAuth2 in tale ambiente e quindi utilizzare l’ID client e il Segreto client generati da tale applicazione nella connessione.
 
-### Connettersi a Workfront utilizzando una connessione server-to-server
+### Connettersi a Workfront utilizzando una connessione da server a server
 
 1. In qualsiasi modulo di Adobe Workfront, fai clic su **Aggiungi** accanto al campo Connessione.
-1. Compila i campi obbligatori:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
     <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -135,38 +135,38 @@ Puoi creare una connessione al tuo account Workfront direttamente dall’interno
       <tr>
         <td role="rowheader">[!UICONTROL Connection type] (Tipo di connessione)</td>
         <td>
-          <p>Seleziona <b>Connessione server-to-server Adobe Workfront</b>.</p>
+          <p>Seleziona <b>Connessione da server a server Adobe Workfront</b>.</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td>
         <td>
-          <p>Immettere un nome per la nuova connessione.</p>
+          <p>Inserisci un nome per la nuova connessione.</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Nome istanza]</td>
         <td>
-          <p>Immetti il nome dell’istanza, nota anche come dominio.</p><p>Esempio: se l'URL è <code>https://example.my.workfront.com</code>, immettere <code>example</code>.</p>
+          <p>Inserisci i il nome dell’istanza, noto anche come dominio.</p><p>Esempio: se l’URL è <code>https://example.my.workfront.com</code>, inserisci <code>example</code>.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Instance Lane]</td>
+        <td role="rowheader">[!UICONTROL Percorso dell’istanza]</td>
         <td>
-          <p>Immetti il tipo di ambiente a cui si connetterà questa connessione.</p><p>Esempio: se l'URL è <code>https://example.my.workfront.com</code>, immettere <code>my</code>.</p>
+          <p>Inserisci il tipo di ambiente della connessione.</p><p>Esempio: se l’URL è <code>https://example.my.workfront.com</code>, inserisci <code>my</code>.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Immetti l'ID client di Workfront. È disponibile nell’area Applicazioni OAuth2 dell’area Configura di Workfront. Apri l’applicazione specifica a cui ti stai connettendo per visualizzare l’ID client.</td>
+        <td role="rowheader">[!UICONTROL ID client]</td>
+        <td>Inserisci il tuo ID client. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Apri l’applicazione specifica a cui ti stai connettendo per visualizzare l’ID client.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
-        <td>Immetti il segreto del client Workfront. È disponibile nell’area Applicazioni OAuth2 dell’area Configura di Workfront. Se non disponi di un segreto client per l’applicazione OAuth2 in Workfront, puoi generarne un altro. Per istruzioni, consulta la documentazione di Workfront.</td>
+        <td>Inserisci il Segreto client di Workfront. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Se non disponi di un Segreto client per l’applicazione OAuth2 in Workfront, puoi generarne un altro. Per istruzioni, consulta la documentazione di Workfront.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Ambiti]</td>
-        <td>Immettere gli ambiti applicabili per la connessione.</td>
+        <td>Inserisci gli ambiti applicabili per questa connessione.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Prefisso host]</td>
@@ -175,30 +175,30 @@ Puoi creare una connessione al tuo account Workfront direttamente dall’interno
     </tbody>
     </table>
 
-1. Fai clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
 
-   Se non hai effettuato l’accesso a Workfront, vieni indirizzato a una schermata di accesso. Dopo aver effettuato l’accesso, puoi consentire la connessione.
+   Se non hai effettuato l’accesso a Workfront, verrà aperta una schermata di accesso. Dopo aver effettuato l’accesso, puoi autorizzare la connessione.
 
 >[!NOTE]
 >
->* Le connessioni OAuth 2.0 all’API Workfront non si basano più sulle chiavi API.
->* Per creare una connessione a un ambiente Sandbox Workfront, è necessario creare un&#39;applicazione OAuth2 in tale ambiente e quindi utilizzare l&#39;ID client e il segreto client generati da tale applicazione nella connessione.
+>* Le connessioni OAuth 2.0 all’API Workfront non sono più basate sulle chiavi API.
+>* Per creare una connessione a un ambiente sandbox di Workfront, è necessario creare un’applicazione OAuth2 in tale ambiente e quindi utilizzare l’ID client e il Segreto client generati da tale applicazione nella connessione.
 
 ## Moduli Workfront e relativi campi
 
-Quando configuri i moduli di Workfront, Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi Workfront aggiuntivi, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli di Workfront, Workfront Fusion mostra i campi elencati di seguito. Oltre a questi campi potrebbero essere mostrati campi di Workfront aggiuntivi, in base a fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 
-![Pulsante di attivazione/disattivazione mappatura](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 >[!NOTE]
 >
->* Se non trovi i campi più aggiornati in un modulo Workfront, potrebbe trattarsi di un problema di caching. Attendi un’ora e riprova.
->* I codici di stato HTTP 429 di Adobe Workfront non dovrebbero causare disattivazioni, ma attivare invece una breve pausa di esecuzione nello scenario.
+>* Se non visualizzi i campi più aggiornati in un modulo Workfront, potrebbe dipendere da un problema di caching. Attendi un’ora e riprova.
+>* I codici di stato HTTP 429 di Adobe Workfront non dovrebbero causare disattivazioni, ma piuttosto attivare una breve pausa di esecuzione nello scenario.
 
-* [Triggers](#triggers)
+* [Trigger](#triggers)
 * [Azioni](#actions)
 * [Ricerche](#searches)
 
@@ -210,17 +210,17 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 * [Watch Field](#watch-field)
 -->
 
-+++ **[!UICONTROL Guarda gli eventi]**
++++ **[!UICONTROL Osserva eventi]**
 
 Questo modulo trigger esegue uno scenario in tempo reale quando in Workfront vengono aggiunti, aggiornati o eliminati oggetti di un tipo specifico.
 
 Il modulo visualizza tutte le sottoscrizioni di eventi relative al webhook. Sono incluse le sottoscrizioni di eventi create tramite Fusion e le sottoscrizioni di eventi create direttamente tramite l’API. Questa vista di abbonamento all’evento non è disponibile nella versione legacy del modulo Osserva eventi.
 
-Il modulo restituisce tutti i campi standard associati al record, insieme a tutti i campi e i valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce tutti i campi standard associati al record, insieme a tutti i campi e i valori personalizzati a cui accede la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 1. Fai clic su **[!UICONTROL Aggiungi]** a destra della casella **Webhook**.
 
-1. Configura il webhook nella casella **[!UICONTROL Aggiungi un hook]** visualizzato.
+1. Configura il webhook nella casella **[!UICONTROL Aggiungi un webhook]** visualizzata.
 
    <table style="table-layout:auto"> 
     <col> 
@@ -228,33 +228,33 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
     <tbody> 
      <tr> 
       <td>[!UICONTROL Nome webhook]</td> 
-      <td>Immetti un nome per il webhook</td> 
+      <td>Specifica un nome per il webhook.</td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Connessione]</td> 
-      <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+      <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Tipo di record]</td> 
-      <td>Selezionare il tipo di record Workfront che si desidera controllare nel modulo.</td> 
+      <td>Seleziona il tipo di record Workfront che il modulo deve controllare.</td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL State]</td> 
-      <td>Seleziona se desideri controllare lo stato precedente o quello nuovo.<ul><li><p><b>[!UICONTROL Nuovo stato]</b></p><p>Attiva uno scenario quando il record cambia <b>in</b> un valore specificato.</p><p>Ad esempio, se lo stato è impostato su [!UICONTROL Nuovo stato] e il filtro è impostato su [!UICONTROL Stato] [!UICONTROL È uguale a] [!UICONTROL In corso], il webhook attiva uno scenario quando lo stato [!UICONTROL Stato] diventa [!UICONTROL In corso], indipendentemente dallo stato precedente. </p></li><li><p><b>[!UICONTROL Old State]</b></p><p>Attiva uno scenario quando il record cambia <b> da</b> a un determinato valore.</p><p>Ad esempio, se lo stato è impostato su [!UICONTROL Old State] e il filtro è impostato su [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In corso], il webhook attiva uno scenario quando uno stato [!UICONTROL Status] attualmente [!UICONTROL In corso] passa a un altro stato. </p></li></ul></td> 
+      <td>[!UICONTROL Stato]</td> 
+      <td>Seleziona se desideri controllare lo stato precedente o quello nuovo.<ul><li><p><b>[!UICONTROL Nuovo stato]</b></p><p>Attiva uno scenario quando il record cambia <b>in</b> un valore specificato.</p><p>Se ad esempio lo stato è [!UICONTROL Nuovo stato] e il filtro è impostato su [!UICONTROL Stato] [!UICONTROL Uguale a] [!UICONTROL In corso], il webhook attiva uno scenario quando [!UICONTROL Stato] diventa [!UICONTROL In corso], indipendentemente dal valore precedente dello stato. </p></li><li><p><b>[!UICONTROL Stato precedente]</b></p><p>Attiva uno scenario quando il record cambia <b> da</b> un determinato valore.</p><p>Se ad esempio lo stato è [!UICONTROL Stato precedente] e il filtro è impostato su [!UICONTROL Stato] [!UICONTROL Uguale a] [!UICONTROL In corso], il webhook attiva uno scenario quando [!UICONTROL Stato] attualmente impostato su [!UICONTROL In corso] passa a uno stato diverso. </p></li></ul></td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>È possibile impostare i filtri per controllare solo i record che soddisfano i criteri selezionati.</p> <p>Per ogni filtro, immetti il campo che desideri che il filtro valuti, l’operatore e il valore che desideri che il filtro consenta. Puoi utilizzare più di un filtro aggiungendo regole AND.</p> <p><b>NOTA</b>: non è possibile modificare i filtri nei webhook di Workfront esistenti. Per impostare filtri diversi per le sottoscrizioni di eventi Workfront, rimuovi il webhook corrente e creane uno nuovo.</p> <p>Per ulteriori informazioni sui filtri eventi, vedere <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtri di sottoscrizione eventi nei moduli Workfront &gt; [!UICONTROL Watch Events]</a> in questo articolo.</p> </td> 
+      <td> <p>[!UICONTROL Filtri eventi]</p> </td> 
+      <td> <p>Puoi impostare filtri per controllare solo i record che soddisfano i criteri da te selezionati.</p> <p>Per ogni filtro, inserisci il campo che desideri venga valutato dal filtro, l’operatore e il valore che desideri sia consentito dal filtro. Puoi utilizzare più di un filtro aggiungendo regole di tipo AND.</p> <p><b>NOTA</b>: non puoi modificare filtri nei webhook di Workfront esistenti. Per impostare filtri diversi per le sottoscrizioni eventi Workfront, rimuovi il webhook corrente e creane uno nuovo.</p> <p>Per ulteriori informazioni sui filtri degli eventi, consulta <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Filtri per le sottoscrizioni eventi nei moduli Workfront &gt; [!UICONTROL Osserva eventi]</a> in questo articolo.</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
       <td>Escludi eventi creati da questa connessione</td> 
-      <td>Abilita questa opzione per escludere gli eventi creati o aggiornati utilizzando lo stesso connettore utilizzato dal modulo di attivazione. Questo può evitare situazioni in cui uno scenario potrebbe attivarsi da solo, causandone la ripetizione in un ciclo infinito.<p><b>NOTA</b>: il tipo di record Assegnazione non include questa opzione.</p></td> 
+      <td>Abilita questa opzione per escludere gli eventi creati o aggiornati con lo stesso connettore utilizzato da questo modulo trigger. Questo può evitare situazioni in cui uno scenario potrebbe attivarsi da solo e ripetersi in un ciclo infinito.<p><b>NOTA</b>: il tipo di record Assegnazione non include questa opzione.</p></td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Origine record]</td> 
       <td>
-       <p>Scegliere se si desidera che lo scenario controlli [!UICONTROL Solo nuovi record], [!UICONTROL Solo record aggiornati], [!UICONTROL Record nuovi e aggiornati] o [!DNL Deleted Records Only].</p>
-       <p><b>NOTA</b>: se si sceglie [!UICONTROL Record nuovi e aggiornati], la creazione del webhook crea 2 sottoscrizioni di eventi (per lo stesso indirizzo del webhook).</p>
+       <p>Scegli se desideri che lo scenario controlli [!UICONTROL Solo i record nuovi], [!UICONTROL Solo i record aggiornati], [!UICONTROL Record nuovi e aggiornati] oppure [!DNL Deleted Records Only].</p>
+       <p><b>NOTA</b>: se scegli [!UICONTROL Record nuovi e aggiornati], la creazione del webhook crea due sottoscrizioni eventi (per lo stesso indirizzo del webhook).</p>
        </td> 
      </tr> 
     </tbody> 
@@ -264,19 +264,19 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
 
    <!--Markdown 0032 placeholder-->
 
-Dopo la creazione del webhook, puoi visualizzare l’indirizzo dell’endpoint a cui vengono inviati gli eventi.
+Dopo la creazione del webhook puoi visualizzare l’indirizzo dell’endpoint al quale vengono inviati gli eventi.
 
-Per ulteriori informazioni, consulta la sezione [Esempi di payload degli eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) nell&#39;articolo API di sottoscrizione eventi nella documentazione di Workfront.
+Per ulteriori informazioni, consulta la sezione [Esempi di payload di eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) nell’articolo API sottoscrizione eventi della documentazione di Workfront.
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
-+++ **[!UICONTROL Campo di controllo]**
++++ **[!UICONTROL Osserva campo]**
 
-Questo modulo trigger esegue uno scenario quando viene aggiornato un campo specificato. Il modulo restituisce sia il vecchio che il nuovo valore del campo specificato. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Questo modulo trigger esegue uno scenario quando viene aggiornato un campo che hai specificato. Il modulo restituisce sia il valore precedente sia il nuovo valore del campo specificato. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
@@ -284,40 +284,40 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record]</td> 
-   <td> <p>Selezionare il tipo di record Workfront che si desidera controllare nel modulo.</p> <p>Selezionare ad esempio [!UICONTROL Attività] se si desidera avviare l'esecuzione dello scenario ogni volta che viene aggiornato un campo record in un'attività.</p> </td> 
+   <td> <p>Seleziona il tipo di record Workfront che il modulo deve controllare.</p> <p>Seleziona ad esempio [!UICONTROL Attività] se desideri avviare l’esecuzione dello scenario ogni volta che un campo record viene aggiornato in un’attività.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Field]</td> 
-   <td>Seleziona il campo che desideri che il modulo controlli per gli aggiornamenti. Questi campi riflettono i campi impostati dall’amministratore di Workfront per il tracciamento.</td> 
+   <td>[!UICONTROL Campo]</td> 
+   <td>Seleziona il campo che il modulo deve controllare per gli aggiornamenti. Questi campi riflettono i campi impostati per il tracciamento dall’amministratore di Workfront.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Output]</td> 
    <td>Seleziona i campi oggetto da includere nel bundle di output per questo modulo.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td>[!UICONTROL Limite]</td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
 +++ **[!UICONTROL Osserva record]**
 
-Questo modulo trigger esegue uno scenario quando vengono aggiunti, aggiornati o entrambi gli oggetti di un tipo specifico. Il modulo restituisce tutti i campi standard associati al record o ai record, insieme a tutti i campi e i valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Questo modulo trigger esegue uno scenario quando gli oggetti di un tipo specifico vengono aggiunti, aggiornati o entrambi. Il modulo restituisce tutti i campi standard associati al record oppure ai record, insieme a tutti i campi e i valori personalizzati a cui accede la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Nell’output, il modulo indica se ogni record è nuovo o aggiornato.
+Nell’output, il modulo indica se ciascun record è nuovo o aggiornato.
 
-I record aggiunti e aggiornati dall&#39;ultima esecuzione dello scenario vengono restituiti come nuovi record.
+I record aggiunti o aggiornati dall’ultima esecuzione dello scenario vengono restituiti come record nuovi.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -325,40 +325,40 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filtro]</td> 
-   <td> <p>Scegliere se si desidera che lo scenario controlli [!UICONTROL Solo nuovi record], [!UICONTROL Solo record aggiornati] o [!UICONTROL Record nuovi e aggiornati].</p> </td> 
+   <td> <p>Scegli se desideri che lo scenario controlli [!UICONTROL Solo i record nuovi], [!UICONTROL Solo i record aggiornati], [!UICONTROL Record nuovi e aggiornati].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo di record]</td> 
-   <td> <p>Selezionare il tipo di record Workfront che si desidera controllare nel modulo.</p> <p>Ad esempio, se si desidera avviare lo scenario ogni volta che viene creato un nuovo progetto, selezionare [!UICONTROL Progetto]</p> </td> 
+   <td> <p>Seleziona il tipo di record Workfront che il modulo deve controllare.</p> <p>Se ad esempio desideri avviare lo scenario ogni volta che viene creato un nuovo progetto, seleziona [!UICONTROL Progetto]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
    <td> <p>Seleziona i campi da includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Reference]</td> 
+   <td role="rowheader">[!UICONTROL Riferimento]</td> 
    <td> <p>Seleziona i campi di riferimento da includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
-   <td> <p>Seleziona i campi della raccolta da includere nel bundle di output per questo modulo.</p> </td> 
+   <td> <p>Seleziona i campi raccolta da includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filtro facoltativo]</td> 
-   <td> <p>(Avanzata) Digita una stringa di codice API per definire eventuali parametri o codice aggiuntivi che definiranno meglio i criteri. </p> </td> 
+   <td role="rowheader">[!UICONTROL Filtro opzionale]</td> 
+   <td> <p>(Avanzato) Digita una stringa di codice API per definire eventuali parametri o codice aggiuntivo che definiranno ulteriormente i criteri. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
@@ -396,31 +396,31 @@ Questo modulo di azione effettua una delle seguenti conversioni:
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Tipo di oggetto]</td> 
-   <td> <p>Selezionare il tipo di oggetto da convertire. Questo è il tipo di oggetto prima della conversione.</p> </td> 
+   <td> <p>Seleziona il tipo di oggetto da convertire. Questo è il tipo dell’oggetto prima della conversione.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Converti in]</td> 
-   <td>Selezionare l'oggetto in cui si desidera convertirlo. Questo è il tipo di oggetto dopo la conversione.</td> 
+   <td>Seleziona l’oggetto che desideri convertire. Questo è il tipo dell’oggetto dopo la conversione.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL &lt;ID Oggetto&gt;]</td> 
-   <td> <p>Immettere l'ID dell'oggetto. </p> <p>Nota: quando si immette l'ID di un oggetto, è possibile iniziare a digitare il nome dell'oggetto, quindi selezionarlo dall'elenco. Il modulo immette quindi l’ID appropriato nel campo.</p> </td> 
+   <td>[!UICONTROL ID &lt;Object&gt;]</td> 
+   <td> <p>Inserisci l’ID dell’oggetto. </p> <p>Nota: quando inserisci l’ID di un oggetto, puoi iniziare a digitare il nome dell’oggetto, quindi selezionarlo dall’elenco. Il modulo inserisce quindi l’ID appropriato nel campo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>ID modello </td> 
-   <td> <p>Per la conversione in progetto, seleziona l’ID modello da utilizzare per il progetto.</p> <p>Nota: quando si immette l'ID di un oggetto, è possibile iniziare a digitare il nome dell'oggetto, quindi selezionarlo dall'elenco. Il modulo immette quindi l’ID appropriato nel campo.</p> </td> 
+   <td>[!UICONTROL ID modello]</td> 
+   <td> <p>Se stai eseguendo la conversione a un progetto, seleziona l’ID modello da utilizzare per il progetto.</p> <p>Nota: quando inserisci l’ID di un oggetto, puoi iniziare a digitare il nome dell’oggetto, quindi selezionarlo dall’elenco. Il modulo inserisce quindi l’ID appropriato nel campo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Moduli personalizzati]</td> 
-   <td>Seleziona i moduli personalizzati da aggiungere all’oggetto appena convertito, quindi immetti i valori per i campi del modulo personalizzato.</td> 
+   <td>Seleziona i moduli personalizzati da aggiungere all’oggetto appena convertito, quindi inserisci i valori per i campi del modulo personalizzato.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Options]</td> 
-   <td> <p>Abilitare le opzioni desiderate durante la conversione dell'oggetto. Sono disponibili opzioni a seconda dell’oggetto da o verso il quale si sta eseguendo la conversione.</p> </td> 
+   <td>[!UICONTROL Opzioni]</td> 
+   <td> <p>Abilita le opzioni desiderate per la conversione dell’oggetto. Le opzioni disponibili dipendono dall’oggetto da o verso il quale stai eseguendo la conversione.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Copia campi nativi]</td> 
@@ -437,15 +437,15 @@ Questo modulo di azione effettua una delle seguenti conversioni:
 
 +++ **[!UICONTROL Crea un record]** 
 
-Questo modulo di azione crea un oggetto, ad esempio un progetto, un’attività o un problema in Workfront, e consente di aggiungere un modulo personalizzato al nuovo oggetto. Il modulo consente di selezionare quale dei campi dell’oggetto è disponibile nel modulo.
+Questo modulo di azione crea un oggetto, tra cui un progetto, un’attività o un problema in Workfront, e ti consente di aggiungere un modulo personalizzato al nuovo oggetto. Il modulo ti consente di selezionare i campi dell’oggetto disponibili nel modulo.
 
 Specifica l’ID del record.
 
-Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui ha accesso la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Assicurati di fornire il numero minimo di campi di input. Ad esempio, se desideri creare un problema, devi fornire un ID progetto principale valido nel campo ID progetto per indicare dove il problema dovrebbe risiedere in Workfront. Puoi utilizzare il pannello di mappatura per mappare queste informazioni da un altro modulo dello scenario, oppure puoi immetterle manualmente digitando il nome e selezionandolo dall’elenco.
+Assicurati di fornire il numero minimo di campi di input. Se ad esempio desideri creare un problema, devi fornire un ID progetto principale valido nel campo ID progetto per indicare la posizione del problema in Workfront. Per mappare queste informazioni da un altro modulo allo scenario puoi utilizzare il pannello di mappatura, oppure puoi inserirle manualmente digitando il nome e selezionandolo nell’elenco.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
@@ -455,51 +455,51 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record]</td> 
-   <td> <p>Selezionare il tipo di record Workfront che si desidera venga creato dal modulo.</p> <p>Se ad esempio si desidera creare un progetto, selezionare [!UICONTROL Project] dall'elenco a discesa.</p> </td> 
+   <td> <p>Seleziona il tipo di record di Workfront che il modulo deve creare.</p> <p>Se ad esempio desideri creare un progetto, seleziona [!UICONTROL Progetto] dall’elenco a discesa.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Seleziona campi da mappare]</td> 
-   <td> <p>Selezionare i campi che si desidera rendere disponibili per l'immissione dei dati. Questo consente di utilizzare questi campi senza dover scorrere quelli non necessari. È quindi possibile immettere o mappare i dati in questi campi.</p> <p>Per i campi nei moduli personalizzati, utilizza il campo <b>[!UICONTROL Allega modulo personalizzato]</b>.</p> </td> 
+   <td>[!UICONTROL Seleziona i campi da mappare]</td> 
+   <td> <p>Seleziona i campi che desideri rendere disponibili per l’input di dati. Questo ti consente di utilizzare tali campi senza dover scorrere quelli non necessari. Quindi puoi inserire o mappare i dati in questi campi.</p> <p>Per i campi nei moduli personalizzati, utilizza il campo <b>[!UICONTROL Allega modulo personalizzato]</b>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Allega Modulo Personalizzato]</td> 
-   <td>Selezionare i moduli personalizzati da aggiungere al nuovo oggetto, selezionare i campi per i quali si desidera immettere i valori, quindi immettere o mappare i valori per tali campi.</td> 
+   <td>[!UICONTROL Allega modulo personalizzato]</td> 
+   <td>Seleziona i moduli personalizzati da aggiungere al nuovo oggetto, seleziona i campi per i quali inserire i valori, quindi inserisci oppure mappa i valori per tali campi.</td> 
   </tr> 
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
->* Quando si immette l&#39;ID di un oggetto, è possibile iniziare a digitare il nome dell&#39;oggetto, quindi selezionarlo dall&#39;elenco. Il modulo immette quindi l’ID appropriato nel campo.
->* Quando immetti il testo per un campo personalizzato o un oggetto [!UICONTROL Note] (Commento o risposta), puoi utilizzare i tag di HTML nel campo [!UICONTROL Testo nota] per creare testo RTF, ad esempio testo in grassetto o corsivo.
+>* Quando inserisci l’ID di un oggetto, puoi iniziare a digitare il nome dell’oggetto, quindi selezionarlo dall’elenco. Il modulo inserisce quindi l’ID appropriato nel campo.
+>* Quando inserisci il testo per un campo personalizzato o un oggetto [!UICONTROL Nota] (commento o risposta), puoi utilizzare tag HTML nel campo [!UICONTROL Testo nota] per creare testo formattato, ad esempio testo in grassetto o corsivo.
 >
 
 
 
 >[!NOTE]
 >
->Gli utenti vengono creati con lo stato Disattivato e In attesa di approvazione. Se la tua organizzazione è stata migrata al Adobe Admin Console e il badge In attesa di approvazione non viene rimosso in pochi minuti, puoi approvare l’utente.
+>Gli utenti vengono creati con gli stati Disattivato e In attesa di approvazione. Se la tua organizzazione ha effettuato la migrazione ad Adobe Admin Console e il badge In attesa di approvazione non viene rimosso entro pochi minuti, puoi approvare l’utente.
 >
 >* **Risolvi singoli utenti**
 >
->      È possibile risolvere singoli utenti nell&#39;elenco Utenti.
+>      Puoi risolvere singoli utenti nell’elenco Utenti.
 >
->      1. Selezionare uno o più utenti nell&#39;elenco Utenti.
->      1. Fai clic sul menu a tre punti nell’intestazione dell’elenco.
+>      1. Seleziona uno o più utenti nell’elenco Utenti.
+>      1. Fai clic sul menu con i tre punti nell’intestazione dell’elenco.
 >      1. Seleziona **Approva**.
 >      1. Dopo alcuni minuti, aggiorna la pagina.
 >
->* **Risolvi utenti aggiunti in un batch di grandi dimensioni**
+>* **Risolvi utenti aggiunti in un batch grande**
 >
->   Per risolvere gli utenti che sono stati aggiunti in un batch di grandi dimensioni, puoi aggiungere direttamente il batch di utenti a Adobe Admin Console.
+>   Per risolvere gli utenti aggiunti in un batch di grandi dimensioni, puoi aggiungere direttamente il batch di utenti ad Adobe Admin Console.
 >
->   Per istruzioni, vedere [Gestione di più utenti | Caricamento CSV in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html) nella documentazione di Adobe.
+>   Per istruzioni, consulta [Gestire più utenti   Caricamento in blocco di CSV](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html) nella documentazione di Adobe.
 
 +++
 
@@ -558,20 +558,20 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++ **[!UICONTROL Chiamata API personalizzata]**
 
-Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all’API Workfront. In questo modo, puoi creare un’automazione del flusso di dati che non può essere eseguita dagli altri moduli di Workfront.
+Questo modulo di azione ti consente di effettuare una chiamata autenticata personalizzata all’API Workfront. In questo modo puoi creare un’automazione del flusso di dati che non è possibile ottenere con gli altri moduli di Workfront.
 
-Il modulo restituisce le seguenti informazioni:
+Il modulo restituisce le informazioni seguenti:
 
-* **[!UICONTROL Codice di stato]** (numero): indica il completamento o l&#39;errore della richiesta HTTP. Si tratta di codici standard che puoi cercare su Internet.
-* **[!UICONTROL Intestazioni]** (oggetto): contesto più dettagliato per il codice di risposta/stato che non è correlato al corpo dell&#39;output. Non tutte le intestazioni visualizzate in un’intestazione di risposta sono intestazioni di risposta, quindi alcune potrebbero non essere utili.
+* **[!UICONTROL Codice di stato]** (numero): indica il completamento o il mancato completamento della richiesta HTTP. I valori restituiti sono codici standard che puoi cercare su Internet.
+* **[!UICONTROL Intestazioni]** (oggetto): un contesto più dettagliato per il codice di risposta/stato non correlato al corpo dell’output. Non tutte le intestazioni visualizzate in una risposta sono intestazioni di risposta, pertanto alcune potrebbero non risultarti utili.
 
-  Le intestazioni di risposta dipendono dalla richiesta HTTP scelta durante la configurazione del modulo.
+  Le intestazioni di risposta dipendono dalla richiesta HTTP che hai scelto durante la configurazione del modulo.
 
-* **[!UICONTROL Corpo]** (oggetto): a seconda della richiesta HTTP scelta durante la configurazione del modulo, è possibile che alcuni dati vengano restituiti. Tali dati, ad esempio i dati di una richiesta GET, sono contenuti in questo oggetto.
+* **[!UICONTROL Corpo]** (oggetto): a seconda della richiesta HTTP che hai scelto al momento della configurazione del modulo, potresti ricevere alcuni dati. Tali dati, ad esempio i dati di una richiesta GET, sono contenuti in questo oggetto.
 
-Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -579,31 +579,31 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td> <p>Immettere un percorso relativo a <code> https://&lt;WORKFRONT_DOMAIN&gt;/attask/api/&lt;API_VERSION&gt;/</code>.</p> </td> 
+   <td> <p>Inserisci un percorso relativo a <code> https://&lt;WORKFRONT_DOMAIN&gt;/attask/api/&lt;API_VERSION&gt;/</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL versione API]</td> 
-   <td>Seleziona la versione dell’API Workfront che desideri venga utilizzata dal modulo.</td> 
+   <td role="rowheader">[!UICONTROL Versione API]</td> 
+   <td>Seleziona la versione dell’API Workfront che il modulo deve utilizzare.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Metodo]</td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP in Adobe Workfront Fusion</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP in Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Intestazioni]</td> 
-   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Determina il tipo di contenuto della richiesta.</p> <p>Ad esempio:<code> {"Content-type":"application/json"}</code></p> <p>Nota: se ricevi errori ed è difficile determinarne l’origine, puoi modificare le intestazioni in base alla documentazione di Workfront. Se la chiamata API personalizzata restituisce un errore di richiesta HTTP 422, provare a utilizzare un'intestazione <code>"Content-Type":"text/plain"</code>.</p> </td> 
+   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Questo determina il tipo di contenuto della richiesta.</p> <p>Ad esempio:<code> {"Content-type":"application/json"}</code></p> <p>Nota: se vengono restituiti errori ed è difficile determinarne l’origine, prendi in considerazione la modifica delle intestazioni in base alla documentazione di Workfront. Se la chiamata API personalizzata restituisce un errore di richiesta HTTP 422, prova a utilizzare un’intestazione <code>"Content-Type":"text/plain"</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
-   <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> <p>Suggerimento: è consigliabile inviare informazioni tramite il corpo JSON anziché come parametri di query.</p> </td> 
+   <td role="rowheader">[!UICONTROL Stringa di query]</td> 
+   <td> <p>Aggiungi la query per la chiamata API come oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> <p>Suggerimento: è consigliabile inviare informazioni tramite il corpo JSON anziché come parametri di query.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, inserisci le virgolette al di fuori dell’istruzione condizionale.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -611,7 +611,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
@@ -621,9 +621,9 @@ Questo modulo di azione elimina un oggetto, ad esempio un progetto, un’attivit
 
 Specifica l’ID del record.
 
-Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui ha accesso la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
@@ -631,35 +631,35 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Forza eliminazione]</td> 
-   <td>Abilita questa opzione per garantire che il record venga eliminato, anche se l’interfaccia utente di Workfront richiede la conferma dell’eliminazione.</td> 
+   <td>Abilita questa opzione per garantire che il record venga eliminato, anche nel caso in cui l’interfaccia utente di Workfront richieda conferma dell’eliminazione.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL eliminazione asincrona]</td> 
-   <td>Abilita questa opzione per consentire al modulo di eliminarlo in modo asincrono.</td> 
+   <td>[!UICONTROL Eliminazione asincrona]</td> 
+   <td>Abilita questa opzione per consentire al modulo l’eliminazione in modo asincrono.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>ID</td> 
-   <td> <p>Immettere l'ID Workfront univoco del record che si desidera eliminare dal modulo.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL dopo "ID=". Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Inserisci l’ID Workfront univoco del record che il modulo deve eliminare.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL, dopo “ID=”. Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record]</td> 
-   <td>Selezionare il tipo di record Workfront da eliminare dal modulo.</td> 
+   <td>Seleziona il tipo di record Workfront che il modulo deve eliminare.</td> 
   </tr> 
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
->Per evitare che i record vengano eliminati a causa di operazioni asincrone, è consigliabile effettuare la configurazione dello scenario seguente.
+>Per evitare che i record non vengano eliminati a causa di operazioni asincrone, consigliamo la configurazione dello scenario seguente.
 >
->1. Eliminare il record in modo sincrono.
->1. Aggiungi la gestione degli errori al modulo Elimina record per ignorare l’errore causato dal timeout di 40 secondi.
+>1. Elimina il record in modo sincrono.
+>1. Aggiungi la gestione errori al modulo Elimina record in modo da ignorare l’errore causato dal timeout di 40 secondi.
 
 
 +++
@@ -670,9 +670,9 @@ Questo modulo di azione scarica un documento da Workfront.
 
 Specifica l’ID del record.
 
-Il modulo restituisce il contenuto, il nome, l&#39;estensione e la dimensione del file del documento. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce il contenuto, il nome, l’estensione e la dimensione del file del documento. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
@@ -680,22 +680,22 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID documento]</td> 
-   <td> <p>Mappa o immetti manualmente l’ID Workfront univoco del documento che desideri scaricare dal modulo.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL dopo "ID=". Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Mappa oppure inserisci manualmente l’ID Workfront univoco del documento che il modulo deve scaricare.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL, dopo “ID=”. Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
-### **Ottieni un URL file prefirmato**
+### **Ottieni un URL prefirmato del file**
 
-Questo modulo di azione ottiene URL di file prefirmati che possono essere successivamente utilizzati da altre API.
+Questo modulo di azione ottiene URL prefirmati di file che possono essere utilizzati successivamente da altre API.
 
 <table style="table-layout:auto">
  <col> 
@@ -703,28 +703,28 @@ Questo modulo di azione ottiene URL di file prefirmati che possono essere succes
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID documento]</td> 
-   <td> <p>Mappa o immetti manualmente l’ID Workfront univoco del documento per il quale desideri ottenere un URL prefirmato.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL dopo "ID=". Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Mappa oppure inserisci manualmente l’ID Workfront univoco del documento per il quale desideri ottenere un URL prefirmato.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL, dopo “ID=”. Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Time to URL expiration]</td> 
-   <td> <p>Immetti o mappa il numero di minuti prima della scadenza dell'URL. Il valore predefinito è 1 minuto.</p><p>Per modificare questo valore, è necessario che il team di Workfront Fusion abbia abilitato questo parametro. Se non è attivato, il valore rimarrà 1 minuto indipendentemente dal numero immesso.</p> </td> 
+   <td>[!UICONTROL Tempo alla scadenza dell’URL]</td> 
+   <td> <p>Inserisci oppure mappa il numero di minuti di esistenza dell’URL prima della scadenza. Il valore predefinito è 1 minuto.</p><p>Per cambiare questo valore, è necessario che il team di Workfront Fusion abiliti questo parametro. Se non è abilitato, il valore rimarrà 1 minuto indipendentemente dal numero che inserisci.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-+++ **[!UICONTROL Azione Varia]**
++++ **[!UICONTROL Azioni varie]**
 
 Questo modulo di azione consente di eseguire azioni sull’API.
 
 >[!NOTE]
 >
->A luglio 2024, l&#39;azione `convertToProject` include il campo `copyCategories`. Se è impostato su `TRUE`, tutti i moduli personalizzati verranno inclusi nel progetto in cui viene convertito il problema.
+>A partire da luglio 2024, l’azione `convertToProject` include il campo `copyCategories`. Se è impostata su `TRUE`, tutti i moduli personalizzati verranno inclusi nel progetto in cui viene convertito il problema.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -732,38 +732,38 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Tipo di record]</td> 
-   <td> <p>Selezionare il tipo di record Workfront con cui si desidera interagire il modulo.</p> </td> 
+   <td> <p>Seleziona il tipo di record Workfront con cui il modulo deve interagire.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Action]</td> 
-   <td> <p>Selezionare l'azione che si desidera venga eseguita dal modulo.</p> <p>Potrebbe essere necessario compilare ulteriori campi, a seconda del tipo di record  e dell'azione  scelti. Alcune combinazioni di queste due impostazioni possono richiedere solo un ID record, mentre altre (come Project per il tipo di record <strong></strong> e [!UICONTROL Allega modello] per l'azione <strong></strong>) richiedono informazioni aggiuntive (ad esempio un ID oggetto e un ID modello).</p><p>Per le opzioni disponibili per alcune azioni, vedere <a href="#misc-action-options" class="MCXref xref">Opzioni di azioni varie</a> in questo articolo.</p> <p>Per informazioni dettagliate sui singoli campi, consulta la <a href="http://developer.workfront.com/">documentazione per gli sviluppatori di Workfront</a>. <p><strong>Nota</strong>: il sito della documentazione per gli sviluppatori include informazioni solo tramite la versione 14 dell'API, ma contiene comunque informazioni importanti per le chiamate API. </p> 
+   <td>[!UICONTROL Azione]</td> 
+   <td> <p>Seleziona l’azione che il modulo deve eseguire.</p> <p>Potresti dover compilare altri campi, a seconda di [!UICONTROL Tipo di record] e [!UICONTROL Azione] che hai scelto. Alcune combinazioni di queste due impostazioni possono richiedere solo un ID record, mentre altre (come Progetto per <strong>[!UICONTROL Tipo di record]</strong> e [!UICONTROL Allega modello] per <strong>[!UICONTROL Azione]</strong>) richiedono informazioni aggiuntive quali un ID oggetto e un ID modello.</p><p>Per le opzioni disponibili per alcune azioni, consulta <a href="#misc-action-options" class="MCXref xref">Opzioni per azioni varie</a> in questo articolo.</p> <p>Per informazioni dettagliate sui singoli campi, consulta la <a href="http://developer.workfront.com/">documentazione per gli sviluppatori di Workfront</a>. <p><strong>Nota</strong>: il sito della documentazione per gli sviluppatori include informazioni solo fino alla versione 14 dell’API, ma contiene comunque informazioni importanti sulle chiamate API. </p> 
     <ol> 
-     <li value="1"> <p>Seleziona il tipo di record nella barra di navigazione a sinistra, nella pagina della documentazione per gli sviluppatori di Workfront. I seguenti tipi hanno pagine proprie:</p> 
+     <li value="1"> <p>Seleziona il tipo di record nella barra di navigazione a sinistra della pagina di documentazione per sviluppatori di Workfront. Per i seguenti tipi esistono pagine specifiche:</p> 
       <ul> 
        <li> <p>[!UICONTROL Progetti]</p> </li> 
        <li> <p>[!UICONTROL Attività]</p> </li> 
-       <li> <p>[!UICONTROL Issues]</p> </li> 
+       <li> <p>[!UICONTROL Problemi]</p> </li> 
        <li> <p>[!UICONTROL Utenti]</p> </li> 
        <li> <p>[!UICONTROL Documenti]</p> </li> 
-      </ul> <p>Per tutti gli altri tipi di record, selezionare <b>[!UICONTROL Altri oggetti ed endpoint]</b> e individuare il tipo di record nelle pagine ordinate alfabeticamente.</p> </li> 
-     <li value="2"> <p>Nella pagina del tipo di record appropriato, cercare l'azione (Ctrl+F o Comando+F).</p> </li> 
-     <li value="3"> <p>Visualizza le descrizioni dei campi disponibili nell'azione selezionata.</p> </li> 
-    </ol> <p>Nota:  <p>Durante la creazione di una bozza tramite il modulo [!UICONTROL Misc Action] di Workfront, è consigliabile creare una bozza senza opzioni avanzate, quindi aggiornarla utilizzando l'API SOAP [!DNL Workfront Proof].</p><p>Per ulteriori informazioni sulla creazione di una bozza con l'API Workfront (utilizzata da questo modulo), vedere <a href="https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Aggiungere opzioni di bozza avanzate durante la creazione di una bozza tramite l'API Adobe Workfront</a></p> </p> </td> 
+      </ul> <p>Per tutti gli altri tipi di record, seleziona <b>[!UICONTROL Altri oggetti e endpoint]</b> e individua il tipo di record nelle pagine organizzate in ordine alfabetico.</p> </li> 
+     <li value="2"> <p>Nella pagina del tipo di record appropriato, cerca l’azione (Ctrl + F o Comando + F).</p> </li> 
+     <li value="3"> <p>Visualizza le descrizioni dei campi disponibili nell’azione selezionata.</p> </li> 
+    </ol> <p>Nota:  <p>Quando crei una bozza tramite il modulo [!UICONTROL Azioni varie] di Workfront, la best practice prevede di creare una bozza senza opzioni avanzate, quindi di aggiornarla utilizzando l’API SOAP [!DNL Workfront Proof].</p><p>Per ulteriori informazioni sulla creazione di una bozza con l’API Workfront (utilizzata da questo modulo), consulta <a href="https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Aggiungere opzioni di bozza avanzate durante la creazione di una bozza con l’API Adobe Workfront</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td>Immetti o mappa l’ID Workfront univoco del record con cui desideri interagire il modulo.<p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL dopo "ID=". Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p></td> 
+   <td>Inserisci oppure mappa l’ID Workfront univoco del record con cui il modulo deve interagire.<p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL, dopo “ID=”. Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p></td> 
   </tr> 
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
-#### Opzioni di azione varie
+#### Opzioni per azioni varie
 
 ##### Attività
 
@@ -785,11 +785,11 @@ Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile ut
    <li>clearCustomData</li>
    <li>clearDocuments</li>
    <li>clearExpenses</li>
-   <li>clearFinancials<p>Cancella i dati finanziari</p></li>
+   <li>clearFinancials<p>Cancella dati finanziari</p></li>
    <li>clearPermissions</li>
    <li>clearPredecessors</li>
    <li>clearProgress</li>
-   <li>clearTimedNotifications<p>Cancella le notifiche promemoria</p></li>
+   <li>clearTimedNotifications<p>Cancella notifiche di promemoria</p></li>
    </ul>
    </td> 
   </tr> 
@@ -802,11 +802,11 @@ Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile ut
    <li>clearDocuments</li>
    <li>clearConstraints</li>
    <li>clearExpenses</li>
-   <li>clearFinancials<p>Cancella i dati finanziari</p></li>
+   <li>clearFinancials<p>Cancella dati finanziari</p></li>
    <li>clearPermissions</li>
    <li>clearPredecessors</li>
    <li>clearProgress</li>
-   <li>clearTimedNotifications<p>Cancella le notifiche promemoria</p></li>
+   <li>clearTimedNotifications<p>Cancella notifiche di promemoria</p></li>
    </ul>
    </td> 
   </tr> 
@@ -879,11 +879,11 @@ Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile ut
    <li>clearCustomData</li>
    <li>clearDocuments</li>
    <li>clearExpenses</li>
-   <li>clearFinancials<p>Cancella i dati finanziari</p></li>
+   <li>clearFinancials<p>Cancella dati finanziari</p></li>
    <li>clearPermissions</li>
    <li>clearPredecessors</li>
    <li>clearProgress</li>
-   <li>clearTimedNotifications<p>Cancella le notifiche promemoria</p></li>
+   <li>clearTimedNotifications<p>Cancella notifiche di promemoria</p></li>
    </ul>
    </td> 
   </tr> 
@@ -895,16 +895,16 @@ Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile ut
    <li>clearAssignments</li>
    <li>clearBillingRates</li>
    <li>clearConstraints</li>
-   <li>clearDeliverables<p>Cancella gli obiettivi</p></li>
+   <li>clearDeliverables<p>Cancella obiettivi</p></li>
    <li>clearDocuments</li>
    <li>clearExpenses</li>
-   <li>clearFinancials<p>Cancella i dati finanziari</p></li>
+   <li>clearFinancials<p>Cancella dati finanziari</p></li>
    <li>clearHourTypes</li>
-   <li>clearIssueSetup<p>Cancella la configurazione delle proprietà e dei problemi della coda</p></li>
+   <li>clearIssueSetup<p>Cancella la configurazione dei problemi e le proprietà della coda</p></li>
    <li>clearPredecessors</li>
    <li>clearRisks</li>
    <li>clearSharingOptions</li>
-   <li>clearTimedNotifications<p>Cancella le notifiche promemoria</p></li>
+   <li>clearTimedNotifications<p>Cancella notifiche di promemoria</p></li>
    </ul>
    </td> 
   </tr> 
@@ -919,13 +919,13 @@ Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile ut
 
 Questo modulo di azione recupera i dati da un singolo record.
 
-Specifica l’ID del record. È inoltre possibile specificare quali record correlati si desidera che vengano letti dal modulo.
+Specifica l’ID del record. Puoi anche specificare quali record correlati deve leggere il modulo.
 
-Ad esempio, se il record che il modulo sta leggendo è un progetto, è possibile specificare che si desidera che le attività del progetto vengano lette.
+Ad esempio, se il record che il modulo sta leggendo è un progetto, puoi specificare che ne vengano lette le attività.
 
 Il modulo restituisce un array di dati dai campi di output specificati.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
@@ -933,38 +933,38 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connessione]</td>
-    <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+    <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Tipo di record]</td>
 
-<td>Scegliere il tipo di oggetto Workfront che si desidera venga letto dal modulo.</td> 
+<td>Scegli il tipo di oggetto Workfront che il modulo deve leggere.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Output]</td>
 
-<td> <p>Seleziona le informazioni da includere nel bundle di output per questo modulo.</p> </td> 
+<td> <p>Seleziona le informazioni che desideri includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
   <tr> 
-    <td>Modulo personalizzato di output </td>
-     <td> <p>Seleziona i moduli personalizzati da includere nel bundle di output per questo modulo, quindi seleziona i campi specifici dai moduli personalizzati da includere nell’output.</p> </td> 
+    <td>[!UICONTROL Modulo di output personalizzato]</td>
+     <td> <p>Seleziona i moduli personalizzati che desideri includere nel bundle di output per questo modulo, quindi i campi specifici dei moduli personalizzati da includere nell’output.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Riferimenti]</td>
-   <td>Selezionare i campi di riferimento da includere nell'output.</td> 
+   <td>Seleziona i campi di riferimento che desideri includere nell’output.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Raccolte]</td>
-   <td>Selezionare i campi di riferimento da includere nell'output.</td> 
+   <td>Seleziona i campi di riferimento che desideri includere nell’output.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL ID]</td>
-   <td> <p>Immettere l'ID Workfront univoco del record che si desidera venga letto dal modulo.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL dopo "ID=". Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Inserisci l’ID Workfront univoco del record che il modulo deve leggere.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL, dopo “ID=”. Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
@@ -1026,13 +1026,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **Aggiorna versione payload eventi**
++++ **Aggiornamento alla versione del payload degli eventi**
 
-Workfront ha recentemente rilasciato una nuova versione del suo servizio di abbonamento agli eventi. La nuova versione non è una modifica all’API Workfront, ma piuttosto una modifica alla funzionalità di abbonamento agli eventi. Questo modulo di azione aggiorna la versione del payload dell’evento utilizzata per questo scenario.
+Workfront ha recentemente rilasciato una nuova versione del servizio di sottoscrizione eventi. Questa nuova versione non cambia l’API Workfront, ma la funzionalità di sottoscrizione eventi. Questo modulo di azione aggiorna la versione del payload dell’evento utilizzata per questo scenario.
 
-Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;evento, vedere [Controllo delle versioni della sottoscrizione dell&#39;evento](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
+Per ulteriori informazioni sulla nuova versione di sottoscrizione eventi, consulta [Controllo delle versioni per sottoscrizione eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 
-Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l&#39;aggiornamento dell&#39;abbonamento agli eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l&#39;aggiornamento V2 degli abbonamenti agli eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
+Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -1040,11 +1040,11 @@ Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l&#
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL versione]</td> 
-   <td> Seleziona la versione della sottoscrizione evento da utilizzare per questo payload. </td> 
+   <td>[!UICONTROL Versione]</td> 
+   <td> Seleziona la versione di sottoscrizione evento che desideri utilizzare per questo payload. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1055,13 +1055,13 @@ Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l&#
 +++ **Aggiorna un record**
 
 
-Questo modulo di azione aggiorna un oggetto, ad esempio un progetto, un’attività o un problema. Il modulo consente di selezionare quale dei campi dell’oggetto è disponibile nel modulo.
+Questo modulo di azione aggiorna un oggetto, ad esempio un progetto, un’attività o un problema. Il modulo ti consente di selezionare i campi dell’oggetto disponibili nel modulo.
 
 Specifica l’ID del record.
 
-Il modulo restituisce l’ID dell’oggetto ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID dell’oggetto ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui ha accesso la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
@@ -1071,32 +1071,32 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td> <p>Immettere l'ID Workfront univoco del record che si desidera aggiornare nel modulo.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL dopo "ID=". Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Inserisci l’ID Workfront univoco del record che deve aggiornare il modulo.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL, dopo “ID=”. Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Record Type]</td> 
-   <td> <p>Selezionare il tipo di record Workfront che si desidera aggiornare nel modulo.</p> </td> 
+   <td> <p>Seleziona il tipo di record Workfront che il modulo deve aggiornare.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Select fields to map]</td> 
-   <td>Selezionare i campi che si desidera rendere disponibili per l'immissione dei dati. Questo consente di utilizzare questi campi senza dover scorrere quelli non necessari. È quindi possibile immettere o mappare i dati in questi campi.</td> 
+   <td>Seleziona i campi che desideri rendere disponibili per l’input di dati. Questo ti consente di utilizzare tali campi senza dover scorrere quelli non necessari. Quindi puoi inserire o mappare i dati in questi campi.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>Selezionare i moduli personalizzati per i quali si desidera specificare i valori dei campi nel nuovo record. Dopo aver selezionato il modulo, immettere i dati per i campi del modulo.<p> Per fornire i valori dei campi per un modulo che si sta allegando in questo modulo, includere l'ID del modulo personalizzato nella sezione campi da mappare.</td> 
+   <td>Seleziona i moduli personalizzati per i quali desideri specificare i valori dei campi nel nuovo record. Dopo aver selezionato il modulo, inserisci i dati per i campi del modulo.<p> Per fornire i valori dei campi di un modulo che stai allegando in questo modulo, includi l’ID del modulo personalizzato nella sezione dei campi da mappare.</td> 
   </tr> 
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
-> Quando immetti il testo per un campo personalizzato o un oggetto [!UICONTROL Note] (Commento o risposta), puoi utilizzare i tag di HTML nel campo [!UICONTROL Testo nota] per creare testo RTF, ad esempio testo in grassetto o corsivo.
+> Quando inserisci il testo per un campo personalizzato o un oggetto [!UICONTROL Nota] (Commento o risposta), puoi utilizzare i tag di HTML nel campo [!UICONTROL Testo nota] per creare testo formattato, ad esempio in grassetto o in corsivo.
 
 
 +++
@@ -1156,15 +1156,15 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++ **[!UICONTROL Carica documento]**
 
-Questo modulo di azione carica un documento in un oggetto Workfront, ad esempio un progetto, un’attività o un problema. Questo modulo carica il documento in blocchi, rendendo il processo di caricamento più semplice per Workfront.
+Questo modulo di azione carica un documento in un oggetto Workfront, ad esempio un progetto, un’attività o un problema. Questo modulo carica il documento suddiviso in blocchi, rendendo il processo di caricamento più semplice per Workfront.
 
-Questo modulo può gestire file di dimensioni maggiori rispetto al modulo legacy e fa parte di un rollout graduale per le organizzazioni con un pacchetto Ultimate Workfront.
+Questo modulo può gestire file di dimensioni maggiori rispetto al modulo legacy e fa parte di un rollout graduale per le organizzazioni che dispongono di un pacchetto Workfront Ultimate.
 
-È possibile specificare la posizione del documento, il file da caricare e un nuovo nome facoltativo per il file.
+Puoi specificare la posizione del documento, il file che desideri caricare e un nuovo nome facoltativo per il file.
 
-Il modulo restituisce l’ID del documento e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del documento e dei campi associati, insieme a eventuali campi e valori personalizzati a cui ha accesso la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1172,28 +1172,28 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID record correlato]</td> 
-   <td>Immettere l'ID Workfront univoco del record in cui si desidera caricare il documento.</td> 
+   <td>Inserisci l’ID Workfront univoco del record su cui desideri caricare il documento.</td> 
   </tr> 
   <tr> 
-   <td>Tipo di record correlato a </td> 
-   <td>Seleziona il tipo di record Workfront in cui vuoi che il modulo carichi il documento.</td> 
+   <td>[!UICONTROL Tipo di record correlato]</td> 
+   <td>Seleziona il tipo di record Workfront su cui il modulo deve caricare il documento.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID cartella]</td> 
-   <td>A seconda del tipo di record correlato, potrebbe essere necessario immettere o mappare un ID cartella.</td> 
+   <td>A seconda del tipo di record correlato, potrebbe essere necessario inserire oppure mappare un ID cartella.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td>[!UICONTROL File di origine]</td> 
+   <td> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Visualizzare un elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in [tipi di oggetto Workfront disponibili per ogni modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
@@ -1251,11 +1251,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++ **[!UICONTROL Leggi record correlati]**
 
-Questo modulo di ricerca legge i record corrispondenti alla query di ricerca specificata, in un particolare oggetto padre.
+Questo modulo di ricerca legge i record che corrispondono alla query di ricerca specificata, in un determinato oggetto principale.
 
-È possibile specificare quali campi includere nell&#39;output. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Puoi specificare quali campi includere nell’output. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
@@ -1263,23 +1263,23 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Tipo di record]</td> 
-   <td> <p>Selezionare il tipo di record padre (oggetto Workfront) di cui si desidera leggere i record associati.</p> <p>Vedere l'elenco dei tipi di oggetto Workfront per i quali è possibile utilizzare questo modulo in <a href="#object-types-available-for-each-workfront-search-module" class="MCXref xref">tipi di oggetto Workfront disponibili per ogni modulo Workfront</a> in questo articolo.</p> </td> 
+   <td> <p>Seleziona il tipo di record principale (oggetto Workfront) di cui desideri leggere i record associati.</p> <p>Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta <a href="#object-types-available-for-each-workfront-search-module" class="MCXref xref">Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL ID record padre]</td> 
-   <td> <p>Immettere o mappare l'ID del record padre di cui si desidera leggere i record associati.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL dopo "ID=". Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td>[!UICONTROL ID record principale]</td> 
+   <td> <p>Inserisci oppure mappa l’ID del record principale di cui desideri leggere i record associati.</p> <p>Per ottenere l’ID, apri l’oggetto Workfront nel browser e copia il testo alla fine dell’URL, dopo “ID=”. Ad esempio: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Raccolte]</td> 
-   <td>Selezionare o mappare il tipo di record figlio che si desidera leggere nel modulo.</td> 
+   <td>Seleziona o mappa il tipo di record secondario che il modulo deve leggere.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Output]</td> 
-   <td> <p>Seleziona le informazioni da includere nel bundle di output per questo modulo.</p> </td> 
+   <td> <p>Seleziona le informazioni che desideri includere nel bundle di output per questo modulo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1290,9 +1290,9 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 Questo modulo di ricerca cerca i record in un oggetto in Workfront che corrispondono alla query di ricerca specificata.
 
-Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
@@ -1300,39 +1300,39 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record]</td> 
-   <td> <p>Selezionare il tipo di record Workfront che si desidera cercare nel modulo.</p> </td> 
+   <td> <p>Seleziona il tipo di record Workfront che deve ricercare il modulo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Elenco moduli personalizzati]</td> 
    <td> <p>Seleziona almeno un modulo personalizzato. I campi di questi moduli personalizzati saranno disponibili per la query di ricerca.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Result Set]</td> 
-   <td>Selezionare un'opzione per specificare se si desidera che il modulo ottenga il primo risultato corrispondente ai criteri di ricerca o tutti i risultati corrispondenti.</td> 
+   <td>[!UICONTROL Set di risultati]</td> 
+   <td>Seleziona un’opzione per specificare se il modulo deve ottenere il primo risultato che corrisponde ai criteri di ricerca o tutti i risultati corrispondenti.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL max]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td>[!UICONTROL Massimo]</td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Campi criteri di ricerca]</td> 
-   <td> <p>Selezionare i campi da utilizzare per i criteri di ricerca. Questi campi saranno quindi disponibili nel menu a discesa Criteri di ricerca.</p></td> 
+   <td>[!UICONTROL Campi dei criteri di ricerca]</td> 
+   <td> <p>Seleziona i campi che desideri utilizzare per i criteri di ricerca. Questi campi saranno quindi disponibili nel menu a discesa Criteri di ricerca.</p></td> 
   </tr> 
   <tr> 
-   <td>Criteri di ricerca di </td> 
-   <td> <p>Immettere il campo in base al quale si desidera eseguire la ricerca, l'operatore che si desidera utilizzare nella query e il valore ricercato nel campo.</p> <p>Nota: non utilizzare <code>username </code> nei criteri di ricerca. L'inclusione di <code>username </code> in una query API per Workfront comporta l'accesso dell'utente a Workfront e la ricerca non avrà esito positivo.</p> <p>Nota: <code>In</code> e <code>NotIn</code> funzionano con gli array. Gli input devono essere in formato array.</p></td> 
+   <td>[!UICONTROL Criteri di ricerca]</td> 
+   <td> <p>Inserisci il campo in base al quale desideri eseguire la ricerca, l’operatore da utilizzare nella query e il valore ricercato nel campo.</p> <p>Nota: non utilizzare <code>username </code> nei criteri di ricerca. L’inclusione di <code>username </code> in una query API per Workfront effettua l’accesso dell’utente a Workfront e la ricerca non avrà esito positivo.</p> <p>Nota: <code>In</code> e <code>NotIn</code> utilizzano gli array. Gli input devono essere in formato array.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Output]</td> 
-   <td> <p>Selezionare i campi da includere nell'output per questo modulo.</p> </td> 
+   <td> <p>Seleziona i campi che desideri includere nell’output per questo modulo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Riferimenti]</td> 
-   <td>Selezionare i campi di riferimento da includere nella ricerca.</td> 
+   <td>Seleziona i campi di riferimento che desideri includere nella ricerca.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Raccolte]</td> 
@@ -1347,14 +1347,14 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 >[!IMPORTANT]
 >
->Questo modulo è stato sostituito con il modulo Record di ricerca. È consigliabile utilizzare tale modulo in nuovi scenari.
->Gli scenari esistenti che utilizzano questo modulo continueranno a funzionare come previsto. Questo modulo verrà rimosso dal selettore dei moduli a maggio 2025.
+>Questo modulo è stato sostituito con il modulo Cerca record. È consigliato utilizzare tale modulo nei nuovi scenari.
+>Gli scenari esistenti che utilizzano questo modulo continueranno a funzionare come previsto. Questo modulo verrà rimosso dal selettore di moduli a maggio 2025.
 
 Questo modulo di ricerca cerca i record in un oggetto in Workfront che corrispondono alla query di ricerca specificata.
 
-Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
@@ -1362,35 +1362,35 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connessione]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record]</td> 
-   <td> <p>Selezionare il tipo di record Workfront che si desidera cercare nel modulo.</p> </td> 
+   <td> <p>Seleziona il tipo di record Workfront che deve ricercare il modulo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Result Set]</td> 
-   <td>Selezionare un'opzione per specificare se si desidera che il modulo ottenga il primo risultato corrispondente ai criteri di ricerca o tutti i risultati corrispondenti.</td> 
+   <td>[!UICONTROL Set di risultati]</td> 
+   <td>Seleziona un’opzione per specificare se il modulo deve ottenere il primo risultato che corrisponde ai criteri di ricerca o tutti i risultati corrispondenti.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL max]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td>[!UICONTROL Massimo]</td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Campi criteri di ricerca]</td> 
-   <td> <p>Selezionare i campi da utilizzare per i criteri di ricerca. Questi campi saranno quindi disponibili nel menu a discesa Criteri di ricerca.</p></td> 
+   <td>[!UICONTROL Campi dei criteri di ricerca]</td> 
+   <td> <p>Seleziona i campi che desideri utilizzare per i criteri di ricerca. Questi campi saranno quindi disponibili nel menu a discesa Criteri di ricerca.</p></td> 
   </tr> 
   <tr> 
-   <td>Criteri di ricerca di </td> 
-   <td> <p>Immettere il campo in base al quale si desidera eseguire la ricerca, l'operatore che si desidera utilizzare nella query e il valore ricercato nel campo.</p> <p>Nota: non utilizzare <code>username </code> nei criteri di ricerca. L'inclusione di <code>username </code> in una query API per Workfront comporta l'accesso dell'utente a Workfront e la ricerca non avrà esito positivo.</p> <p>Nota: <code>In</code> e <code>NotIn</code> funzionano con gli array. Gli input devono essere in formato array.</p></td> 
+   <td>[!UICONTROL Criteri di ricerca]</td> 
+   <td> <p>Inserisci il campo in base al quale desideri eseguire la ricerca, l’operatore da utilizzare nella query e il valore ricercato nel campo.</p> <p>Nota: non utilizzare <code>username </code> nei criteri di ricerca. L’inclusione di <code>username </code> in una query API per Workfront effettua l’accesso dell’utente a Workfront e la ricerca non avrà esito positivo.</p> <p>Nota: <code>In</code> e <code>NotIn</code> utilizzano gli array. Gli input devono essere in formato array.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Output]</td> 
-   <td> <p>Selezionare i campi da includere nell'output per questo modulo.</p> </td> 
+   <td> <p>Seleziona i campi che desideri includere nell’output per questo modulo.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Riferimenti]</td> 
-   <td>Selezionare i campi di riferimento da includere nella ricerca.</td> 
+   <td>Seleziona i campi di riferimento che desideri includere nella ricerca.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Raccolte]</td> 
@@ -1454,13 +1454,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++-->
 
-## Tipi di oggetto Workfront disponibili per ogni modulo Workfront
+## Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront
 
 <!-- [Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module) 
 * [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
 * [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)-->
 
-+++**Tipi di oggetto disponibili per ogni modulo trigger di Workfront**
++++**Tipi di oggetto disponibili per ciascun modulo trigger di Workfront**
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1469,9 +1469,9 @@ See a list of the Workfront object types for which you can use this module in [W
  <thead> 
   <tr> 
    <th> </th> 
-   <th>[!UICONTROL Osserva Record]</th> 
-   <th>[!UICONTROL Watch Field]</th> 
-   <th>[!UICONTROL Osserva Eventi]</th> 
+   <th>[!UICONTROL Osserva record]</th> 
+   <th>[!UICONTROL Osserva campo]</th> 
+   <th>[!UICONTROL Osserva eventi]</th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -1494,7 +1494,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Fatturazione </td> 
+   <td> Record della fatturazione </td> 
    <td>✓</td> 
    <td> </td> 
    <td> </td> 
@@ -1512,7 +1512,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Dashboard di</td> 
+   <td>Dashboard</td> 
    <td> </td> 
    <td> </td> 
    <td>✓</td> 
@@ -1560,7 +1560,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Hour</td> 
+   <td>Ora</td> 
    <td> </td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1584,7 +1584,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Ruolo</td> 
+   <td>Mansione</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td> </td> 
@@ -1638,7 +1638,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Utente Progetto</td> 
+   <td>Utente progetto</td> 
    <td> </td> 
    <td>✓</td> 
    <td> </td> 
@@ -1668,7 +1668,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Tipo Rischio</td> 
+   <td>Tipo di rischio</td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
@@ -1716,7 +1716,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Aggiornamento</td> 
+   <td>Aggiorna</td> 
    <td> </td> 
    <td> </td> 
    <td> </td> 
@@ -1726,11 +1726,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-+++**Tipi di oggetto disponibili per ogni modulo azione di Workfront**
++++**Tipi di oggetto disponibili per ogni modulo di azione di Workfront**
 
 >[!NOTE]
 >
->Il modulo [!UICONTROL Scarica documento] non è incluso in questa tabella perché i tipi di oggetto Workfront non fanno parte della relativa configurazione.
+>Il modulo [!UICONTROL Scarica documento] non è incluso in questa tabella perché i tipi di oggetto Workfront non fanno parte della sua configurazione.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1744,13 +1744,13 @@ See a list of the Workfront object types for which you can use this module in [W
  <thead> 
   <tr> 
    <th> </th> 
-   <th>[!UICONTROL Crea record]</th> 
+   <th>[!UICONTROL Crea un record]</th> 
    <th>[!UICONTROL Aggiorna un record]</th> 
-   <th>[!UICONTROL Elimina record]</th> 
+   <th>[!UICONTROL Elimina un record]</th> 
    <th>[!UICONTROL Carica documento]</th> 
    <th>[!UICONTROL Leggi un record]</th> 
-   <th>Chiamata API personalizzata </th> 
-   <th>[!UICONTROL Misc Action]</th> 
+   <th>[!UICONTROL Chiamata API personalizzata]</th> 
+   <th>[!UICONTROL Azioni varie]</th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -1785,7 +1785,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
    <tr> 
-   <td>Fatturazione</td> 
+   <td>Record della fatturazione</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1895,7 +1895,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Hour</td> 
+   <td>Ora</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1935,7 +1935,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Ruolo</td> 
+   <td>Mansione</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -2025,7 +2025,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Utente Progetto</td> 
+   <td>Utente progetto</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -2055,7 +2055,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Tipo Rischio</td> 
+   <td>Tipo di rischio</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -2135,7 +2135,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Aggiornamento</td> 
+   <td>Aggiorna</td> 
    <td> </td> 
    <td>✓</td> 
    <td> </td> 
@@ -2158,7 +2158,7 @@ See a list of the Workfront object types for which you can use this module in [W
  <thead> 
   <tr> 
    <th> </th> 
-   <th>[!UICONTROL - Ricerca]</th> 
+   <th>[!UICONTROL Ricerca]</th> 
    <th>[!UICONTROL Leggi record correlati]</th> 
   </tr> 
  </thead> 
@@ -2174,7 +2174,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Fatturazione</td> 
+   <td>Record della fatturazione</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2219,7 +2219,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Hour</td> 
+   <td>Ora</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2239,7 +2239,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Ruolo</td> 
+   <td>Mansione</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2284,7 +2284,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Utente Progetto</td> 
+   <td>Utente progetto</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2299,7 +2299,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Tipo Rischio</td> 
+   <td>Tipo di rischio</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2346,36 +2346,36 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-Si consiglia di verificare che questo funzioni come previsto.
+È consigliabile verificare che questo funzioni come previsto.
 
 +++
 
-## Filtri di abbonamento agli eventi nei moduli Workfront > [!UICONTROL Guarda gli eventi]
+## Filtri per sottoscrizione a eventi nei moduli Workfront > [!UICONTROL Osserva eventi]
 
 >[!NOTE]
 >
->* Si consiglia vivamente di utilizzare i filtri di abbonamento agli eventi nei moduli [!UICONTROL Osserva eventi].
+>* È fortemente consigliato utilizzare i filtri di sottoscrizione a eventi nei moduli [!UICONTROL Osserva eventi].
 >
->* Workfront ha recentemente rilasciato una nuova versione del suo servizio di abbonamento agli eventi. La nuova versione non è una modifica all’API Workfront, ma piuttosto una modifica alla funzionalità di abbonamento agli eventi. Questo modulo di azione aggiorna la versione del payload dell’evento utilizzata per questo scenario.
+>* Workfront ha recentemente rilasciato una nuova versione del servizio di sottoscrizione eventi. Questa nuova versione non cambia l’API Workfront, ma la funzionalità di sottoscrizione eventi. Questo modulo di azione aggiorna la versione del payload dell’evento utilizzata per questo scenario.
 >
->   Per ulteriori informazioni sulla nuova versione della sottoscrizione dell&#39;evento, vedere [Controllo delle versioni della sottoscrizione dell&#39;evento](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
+>   Per ulteriori informazioni sulla nuova versione di sottoscrizione a eventi, consulta [Controllo delle versioni per sottoscrizioni a eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 >
->   Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l&#39;aggiornamento dell&#39;abbonamento agli eventi, inclusa la registrazione di un webinar, vedere [Conservazione degli scenari di Fusion durante l&#39;aggiornamento V2 delle sottoscrizioni agli eventi(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
+>   Per le risorse si come conservare gli scenari di Workfront Fusion durante l’aggiornamento della sottoscrizione a eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento V2 delle sottoscrizioni a eventi(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
-Il modulo [!UICONTROL Osserva eventi] di Workfront attiva scenari basati su un webhook che crea una sottoscrizione di eventi nell&#39;API Workfront. L’abbonamento a un evento è un set di dati che determina quali eventi vengono inviati al webhook. Ad esempio, se imposti un modulo [!UICONTROL Osserva eventi] che sta monitorando la presenza di problemi, l&#39;abbonamento all&#39;evento invia solo gli eventi correlati ai problemi.
+Il modulo [!UICONTROL Osserva eventi] di Workfront attiva scenari basati su un webhook che crea una sottoscrizione a eventi nell’API Workfront. La sottoscrizione a eventi consiste in un set di dati che determina quali eventi vengono inviati al webhook. Ad esempio, se imposti un modulo [!UICONTROL Osserva eventi] per rilevare eventuali problemi, la sottoscrizione a eventi invia solo eventi relativi ai problemi.
 
-Utilizzando i filtri di abbonamento agli eventi, gli utenti di Fusion possono creare sottoscrizioni agli eventi più adatte ai loro casi d’uso. Ad esempio, puoi impostare una sottoscrizione di evento nell&#39;API di Workfront per inviare al webhook solo i problemi che si trovano in un progetto specifico, assicurandoti che il modulo [!UICONTROL Osserva eventi] venga attivato solo per i problemi di quel progetto. La possibilità di creare trigger più piccoli migliora la progettazione dello scenario riducendo il numero di trigger irrilevanti.
+Utilizzando i filtri per le sottoscrizioni a eventi, gli utenti di Fusion possono creare sottoscrizioni a eventi più specifiche per i propri casi d’uso. Ad esempio, puoi impostare una sottoscrizione a eventi nell’API di Workfront per inviare al webhook solo i problemi che si verificano in un progetto specifico, assicurandoti che il modulo [!UICONTROL Osserva eventi] venga attivato solo per i problemi di quel progetto. La possibilità di creare trigger più limitati migliora la progettazione degli scenari riducendo il numero di trigger irrilevanti.
 
-Questa operazione è diversa dalla configurazione di un filtro nello scenario Workfront Fusion. Senza un filtro di abbonamento agli eventi, il webhook riceve tutti gli eventi relativi al tipo di oggetto selezionato. La maggior parte di questi eventi sarebbe irrilevante per lo scenario e deve essere filtrata prima che lo scenario possa continuare.
+Questa operazione è diversa dalla configurazione di un filtro nello scenario Workfront Fusion. Senza un filtro per la sottoscrizione a eventi, il webhook riceverebbe tutti gli eventi relativi al tipo di oggetto selezionato. La maggior parte di questi eventi sarebbe irrilevante per lo scenario in question e deve quindi essere filtrata prima che lo scenario possa continuare.
 
 Nel filtro Workfront > Osserva eventi sono disponibili i seguenti operatori:
 
 * Uguale a
-* Non è uguale a
+* Non uguale a
 * Maggiore di
 * Minore di
-* Maggiore o uguale a
-* Minore o uguale a
+* È maggiore di o uguale a
+* È minore di o uguale a
 * Contiene
 * Esiste
    * Questo operatore non richiede un valore e il campo del valore è assente.
@@ -2388,30 +2388,30 @@ Nel filtro Workfront > Osserva eventi sono disponibili i seguenti operatori:
 
 >[!IMPORTANT]
 >
->Non è possibile modificare i filtri nei webhook Workfront esistenti. Per impostare filtri diversi per le sottoscrizioni di eventi Workfront, rimuovi il webhook corrente e creane uno nuovo.
+>Non è possibile modificare i filtri nei webhook Workfront esistenti. Per impostare filtri diversi per le sottoscrizioni eventi Workfront, rimuovi il webhook corrente e creane uno nuovo.
 
 >[!INFO]
 >
 >**Esempio:** considera uno scenario che elabora nuovi problemi assegnati a un utente specifico, Ana.
 >
->### Filtrare gli eventi utilizzando un filtro di abbonamento agli eventi (scelta consigliata)
+>### Filtrare gli eventi utilizzando un filtro per la sottoscrizione a eventi (consigliato)
 >
->Utilizzando il filtro eventi, puoi impostare il webhook per attivare lo scenario quando un problema viene assegnato ad Ana al momento della creazione. Ana ha l’ID utente b378489d8f7cd3cee0539260720a84b7.
+>Utilizzando il filtro eventi, puoi configurare il webhook per attivare lo scenario quando, al momento della creazione di un problema, questo viene assegnato ad Ana. Ana ha l’ID utente b378489d8f7cd3cee0539260720a84b7.
 >
 >![Filtro eventi](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
 >Se vengono creati 100 problemi in un giorno, ma solo due di essi sono assegnati ad Ana, lo scenario verrebbe eseguito due volte.
 >
->### Filtra gli eventi all’interno dello scenario (scelta non consigliata)
+>### Filtrare gli eventi all’interno dello scenario (non consigliato)
 >
 >Per filtrare gli eventi in modo che vengano elaborati solo i problemi assegnati ad Ana, puoi creare un filtro dopo il modulo [!UICONTROL Osserva eventi].
 >
 >![Senza filtro eventi](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
->Se vengono creati 100 problemi in un giorno, ma solo due di essi sono assegnati ad Ana, lo scenario verrebbe eseguito 100 volte. 98 esecuzioni si fermerebbero al filtro, ma il modulo trigger consuma ancora dati ed esegue operazioni in tutte le esecuzioni.
+>Se in un giorno vengono creati 100 problemi, ma solo due di questi sono assegnati ad Ana, lo scenario verrebbe eseguito 100 volte. 98 esecuzioni si interromperebbero al filtro, ma il modulo trigger continuerebbe comunque a consumare dati e ad eseguire operazioni in tutte le esecuzioni.
 
-Per ulteriori informazioni sulle sottoscrizioni di eventi di Workfront, vedere [Domande frequenti - Sottoscrizioni eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Per ulteriori informazioni sulle sottoscrizioni a eventi di Workfront, consulta [Domande frequenti: sottoscrizioni a eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
-Per ulteriori informazioni sui webhook, vedi [Trigger istantanei (webhook) in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
+Per ulteriori informazioni sui webhook, consulta [Trigger istantanei (webhook) in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
-Per ulteriori informazioni sui filtri negli scenari, vedere [Aggiungere un filtro a uno scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+Per ulteriori informazioni sui filtri negli scenari, consulta [Aggiungere un filtro a uno scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
