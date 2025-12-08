@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
 source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3734'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 2%
 
 Con il connettore Adobe Experience Manager Assets per Adobe Workfront Fusion, puoi creare, caricare e aggiornare risorse e copiare o spostare cartelle e risorse.
 
-Per un video introduttivo sul connettore Adobe Experience Manager Assets, vedi:
+Per un video introduttivo sul connettore Adobe Experience Manager Assets, consulta:
 
 * [Adobe Experience Manager Assets](https://video.tv.adobe.com/v/3427034/){target=_blank}
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,45 +29,45 @@ Per un video introduttivo sul connettore Adobe Experience Manager Assets, vedi:
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Prerequisiti
 
 * Per utilizzare questi moduli è necessario disporre di un account Adobe Experience Manager Assets.
-* Devi impostare il flusso server-to-server nella console Adobe Developer.
+* È necessario configurare il flusso da server a server in Adobe Developer Console.
 
-  Per istruzioni sulla configurazione del flusso server-to-server nella console Adobe Developer, vedi [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#the-server-to-server-flow).
-* L&#39;account tecnico Adobe Experience Manager deve disporre di autorizzazioni di scrittura.
+  Per istruzioni sulla configurazione del flusso da server a server in Adobe Developer Console, consulta [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow).
+* L’account tecnico Adobe Experience Manager deve disporre di autorizzazioni di scrittura.
 
-  Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
+  Per istruzioni su come aggiungere le autorizzazioni di scrittura all’account tecnico Adobe Experience Manager, consulta [Credenziali del servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
 
-## Informazioni API di Adobe Experience Manager Assets
+## Informazioni sulle API di Adobe Experience Manager Assets
 
 Il connettore Adobe Experience Manager Assets utilizza quanto segue:
 
@@ -86,9 +86,9 @@ Il connettore Adobe Experience Manager Assets utilizza quanto segue:
 
 Per creare una connessione per i moduli Adobe Experience Manager Assets:
 
-1. Fare clic su Aggiungi accanto alla casella Connessione.
+1. Fai clic su Aggiungi accanto alla casella Connessione.
 
-2. Selezionare il tipo di connessione che si sta creando:
+2. Seleziona il tipo di connessione che vuoi creare:
 
    * **AEM Assets as a Cloud Service**
 
@@ -98,11 +98,11 @@ Per creare una connessione per i moduli Adobe Experience Manager Assets:
 
      Questa configurazione richiede un nome utente e una password.
 
-3. Compila i campi per il tipo di connessione che stai creando.
+3. Compila i campi per il tipo di connessione che vuoi creare.
 
-   Per AEM Assets as a Cloud Service, vedi [Configurare la connessione per AEM Assets as a Cloud Service](#configure-the-connection-for-aem-assets-as-a-cloud-service).
+   Per AEM Assets as a Cloud Service, consulta [Configurare la connessione per AEM Assets as a Cloud Service](#configure-the-connection-for-aem-assets-as-a-cloud-service).
 
-   Per AEM Assets Basic (Adobe Managed Services), vedi [Configurare la connessione per AEM Assets Basic](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
+   Per AEM Assets Basic (Adobe Managed Services), consulta [Configurare la connessione per AEM Assets Basic](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
 
 4. Fai clic su **Continua** per salvare la connessione e tornare al modulo.
 
@@ -111,13 +111,13 @@ Per creare una connessione per i moduli Adobe Experience Manager Assets:
 
 >[!NOTE]
 >
->* Le informazioni per questi campi vengono generate durante la configurazione del flusso server-to-server in Adobe Developer Console. Questi valori si trovano nel file JSON delle credenziali del servizio generato come parte di tale configurazione.
+>* Le informazioni per questi campi vengono generate durante la configurazione del flusso da server a server in Adobe Developer Console. Questi valori si trovano nel file JSON delle credenziali del servizio generato nel contesto di tale configurazione.
 >
->   Per istruzioni sulla configurazione del flusso server-to-server in Adobe Developer Console, vedere [Generazione dei token di accesso per le API lato server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=it#the-server-to-server-flow).
+>   Per istruzioni sulla configurazione del flusso da server a server in Adobe Developer Console, consulta [Generare i token di accesso per le API lato server](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow).
 >
->* L&#39;account tecnico Adobe Experience Manager deve disporre di autorizzazioni di scrittura.
+>* L’account tecnico Adobe Experience Manager deve disporre di autorizzazioni di scrittura.
 >
->   Per istruzioni sull&#39;aggiunta di autorizzazioni di scrittura all&#39;account tecnico Adobe Experience Manager, vedere [Credenziali di servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
+>   Per istruzioni su come aggiungere le autorizzazioni di scrittura all’account tecnico Adobe Experience Manager, consulta [Credenziali del servizio](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) nella documentazione di Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
@@ -127,48 +127,48 @@ Per creare una connessione per i moduli Adobe Experience Manager Assets:
               <tr>
                   <td role="rowheader">Nome connessione</td>
                   <td>
-                      <p>Immettere un nome per la connessione.</p>
+                      <p>Specifica un nome per questa connessione.</p>
                   </td>
               </tr>
               <tr>
                   <td role="rowheader">URL dell’istanza senza barra finale</td>
-                  <td>Immetti l’URL per l’istanza di Adobe Experience Manager. Non includere una barra <code>/</code> alla fine dell'URL.</td>
+                  <td>Inserisci l’URL per l’istanza di Adobe Experience Manager. Non includere una barra <code>/</code> alla fine dell’URL.</td>
               </tr>
               <tr>
-                  <td role="rowheader">Opzioni di compilazione dettagli account</td>
-                  <td>Seleziona se desideri fornire il codice JSON che descriva i dettagli dell’account o se desideri immettere i dettagli manualmente.</td>
+                  <td role="rowheader">Opzioni di compilazione dei dettagli dell’account</td>
+                  <td>Seleziona se desideri fornire il codice JSON che descriva i dettagli dell’account o se preferisci inserire i dettagli manualmente.</td>
               </tr>
               <tr>
                   <td role="rowheader">Dettagli dell’account tecnico in formato JSON</td>
-                  <td>Se fornisci JSON, immetti o incolla il JSON che descrive i dettagli dell’account.</td>
+                  <td>Se hai scelto di fornire il codice JSON, inserisci o incolla il codice JSON che descrive i dettagli dell’account.</td>
               </tr>
               <tr>
                   <td role="rowheader">ID client</td>
-                  <td>Se immetti i dettagli manualmente, immetti l’ID client generato nella configurazione server-to-server.</td>
+                  <td>Se hai scelto di inserire i dettagli manualmente, inserisci l’ID client generato nella configurazione da server a server.</td>
               </tr>
               <tr>
                   <td role="rowheader">Segreto client</td>
-                  <td>Se immetti i dettagli manualmente, immetti il segreto client generato nella configurazione server-to-server.</td>
+                  <td>Se hai scelto di inserire i dettagli manualmente, inserisci il segreto client generato nella configurazione da server a server.</td>
               </tr>
               <tr>
                   <td role="rowheader">ID account tecnico</td>
-                  <td>Se inserisci i dettagli manualmente, immetti l’ID dell’account tecnico. Questo è il campo "id" nel file JSON delle credenziali client.</td>
+                  <td>Se hai scelto di inserire i dettagli manualmente, inserisci l’ID dell’account tecnico. Questo è il campo “id” nel file JSON delle credenziali client.</td>
               </tr>
               <tr>
                   <td role="rowheader">ID organizzazione</td>
-                  <td class="">Se inserisci i dettagli manualmente, inserisci l’ID della tua organizzazione. Questo è il campo "org" nel file JSON delle credenziali client.</td>
+                  <td class="">Se hai scelto di inserire i dettagli manualmente, inserisci l’ID della tua organizzazione. Questo è il campo “org” nel file JSON delle credenziali client.</td>
               </tr>
               <tr>
                   <td role="rowheader">Ambiti Meta</td>
-                  <td>Immettere gli ambiti Meta generati nella configurazione server-to-server.</td>
+                  <td>Inserisci gli ambiti Meta generati nella configurazione da server a server.</td>
               </tr>
               <tr>
                   <td role="rowheader">Chiave privata</td>
-                  <td>Immetti la chiave privata generata e vinci la configurazione server-to-server. Per estrarre la chiave privata, fai clic su Estrai, quindi immetti il file da estrarre e la password per il file.</td>
+                  <td>Inserisci la chiave privata generata con la configurazione da server a server. Per estrarre la chiave privata, fai clic su Estrai, quindi inserisci il file dell’estrazione e la password per il file.</td>
               </tr>
               <tr>
                   <td role="rowheader">URL autenticazione</td>
-                  <td>Immetti l’URL di autenticazione per questo account.</td>
+                  <td>inserisci l’URL di autenticazione per l’account corrente.</td>
               </tr>
           </tbody>
       </table>
@@ -183,20 +183,20 @@ Per creare una connessione per i moduli Adobe Experience Manager Assets:
             <tr>
                 <td role="rowheader">Nome connessione</td>
                 <td>
-                    <p>Immettere un nome per la connessione.</p>
+                    <p>Specifica un nome per questa connessione.</p>
                 </td>
             </tr>
             <tr>
                 <td role="rowheader">URL dell’istanza senza barra finale</td>
-                <td>Immetti l’URL per l’istanza di Adobe Experience Manager. Non includere una barra <code>/</code> alla fine dell'URL.</td>
+                <td>Inserisci l’URL per l’istanza di Adobe Experience Manager. Non includere una barra <code>/</code> alla fine dell’URL.</td>
             </tr>
             <tr>
                 <td role="rowheader">Nome utente</td>
-                <td>Immetti il nome utente per l’account AEM Assets utilizzato da questa connessione.</td>
+                <td>Inserisci il nome utente per l’account AEM Assets utilizzato da questa connessione.</td>
             </tr>
             <tr>
                 <td role="rowheader">Password</td>
-                <td>Immetti la password per l’account AEM Assets utilizzato da questa connessione.</td>
+                <td>Inserisci la password per l’account AEM Assets utilizzato da questa connessione.</td>
             </tr>
         </tbody>
     </table>
@@ -204,29 +204,29 @@ Per creare una connessione per i moduli Adobe Experience Manager Assets:
 
 ## Moduli Adobe Experience Manager Assets e relativi campi
 
-Quando configuri i moduli di Adobe Experience Manager Assets, Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati altri campi di Adobe Experience Manager Assets, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli di Adobe Experience Manager Assets, Workfront Fusion visualizza i campi elencati di seguito. Oltre a questi campi, è possibile che vengano visualizzati altri campi Adobe Experience Manager Assets, a seconda di fattori quali il tuo livello di accesso all’app o al servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Operazioni sui file](#files-operations)
 * [Altro](#other)
-* [Assets (API di authoring)](#assets-author-api)
+* [Risorse (API di authoring)](#assets-author-api)
 * [Eventi (API di authoring)](#events-author-api)
 * [Metadati (API di authoring)](#metadata-author-api)
-* [Importa (API di authoring)](#import-author-api)
+* [Importazione (API di authoring)](#import-author-api)
 * [Relazioni (API di authoring)](#relations-author-api)
-* [Cartelle (API Cartelle)](#folders-folders-api)
+* [Cartelle (API cartelle)](#folders-folders-api)
 
 ### Operazioni sui file
 
-* [Caricamento completo](#complete-upload)
-* [Ottieni archivio prefirmato](#get-presigned-storage)
-* [Avvia caricamento](#initiate-upload)
+* [Completare il caricamento](#complete-upload)
+* [Ottenere l’archiviazione prefirmata](#get-presigned-storage)
+* [Avviare il caricamento](#initiate-upload)
 * [Caricare una risorsa](#upload-an-asset)
 
-#### Caricamento completo
+#### Completare il caricamento
 
 Questo modulo di azione completa un caricamento avviato dopo che tutte le parti del file sono state caricate.
 
@@ -236,31 +236,31 @@ Questo modulo di azione completa un caricamento avviato dopo che tutte le parti 
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome file</td> 
    <td> <p>Inserisci o mappa un nome per il file caricato.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Carica token</td> 
-   <td>Immetti o mappa il token di caricamento per il file binario, come fornito dall’avvio.</td> 
+   <td role="rowheader">Token di caricamento</td> 
+   <td>Inserisci o mappa il token di caricamento per il file binario, come fornito dall’avvio.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo MIME</td> 
-   <td>Immetti o mappa il tipo MIME per il file completato.</td> 
+   <td>Inserisci o mappa il tipo MIME per il file completato.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">URI completo</td> 
-   <td>Immettere o mappare l'URI completo per il file.</td> 
+   <td>Inserisci o mappa l’URI completo per il file.</td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### Ottieni archivio prefirmato
+#### Ottenere l’archiviazione prefirmata
 
-Questo modulo di azione crea un URL preceduto temporaneo per caricare o scaricare in modo sicuro i file da AEM senza richiedere credenziali dirette.
+Questo modulo di azione crea un URL prefirmato temporaneo per caricare o scaricare in modo sicuro i file da AEM senza richiedere credenziali dirette.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -268,11 +268,11 @@ Questo modulo di azione crea un URL preceduto temporaneo per caricare o scaricar
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account  Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo di ricerca</td> 
-   <td> <p>Seleziona se desideri cercare la risorsa in base al suo percorso o ID.</p> </td> 
+   <td> <p>Seleziona se cercare la risorsa in base al suo percorso o al suo ID.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Risorsa</td> 
@@ -280,12 +280,12 @@ Questo modulo di azione crea un URL preceduto temporaneo per caricare o scaricar
   </tr> 
   <tr> 
    <td role="rowheader">UDID</td> 
-   <td>Immetti o mappa il codice UDID della risorsa.</td> 
+   <td>Inserisci o mappa l’UDID della risorsa.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Avvia caricamento
+#### Avviare il caricamento
 
 Questo modulo di azione avvia un caricamento.
 
@@ -295,7 +295,7 @@ Questo modulo di azione avvia un caricamento.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Destinazione</td> 
@@ -303,11 +303,11 @@ Questo modulo di azione avvia un caricamento.
   </tr> 
   <tr> 
    <td role="rowheader">Nome file</td> 
-   <td> <p>Inserisci o mappa un nome per il file caricato</p> </td> 
+   <td> <p>Inserisci o mappa un nome per il file caricato.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Dimensioni max file</td> 
-   <td>Immetti o mappa la dimensione in byte del file caricato.</td> 
+   <td>Inserisci o mappa la dimensione in byte del file caricato.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -315,7 +315,7 @@ Questo modulo di azione avvia un caricamento.
 
 #### Caricare una risorsa
 
-Questo modulo di azione carica una risorsa sul tuo account Adobe Experience Manager Assets.
+Questo modulo di azione carica una risorsa nel tuo account Adobe Experience Manager Assets.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -323,15 +323,15 @@ Questo modulo di azione carica una risorsa sul tuo account Adobe Experience Mana
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Destinazione</td> 
    <td> <p>Seleziona la cartella in cui desideri caricare una risorsa.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">File Source</td> 
-   <td>Immettere o mappare il nome e i dati del file di origine.</td> 
+   <td role="rowheader">File di origine</td> 
+   <td>Inserisci o mappa il nome e i dati del file di origine.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -342,8 +342,8 @@ Questo modulo di azione carica una risorsa sul tuo account Adobe Experience Mana
 * [Copiare una cartella o una risorsa](#copy-a-folder-or-asset)
 * [Creare un record](#create-a-record)
 * [Eliminare una cartella, una risorsa o una rappresentazione](#delete-a-folder-asset-or-rendition)
-* [Ottieni un elenco di cartelle](#get-a-folder-listing)
-* [Effettuare una chiamata API personalizzata](#make-a-custom-api-call)
+* [Ottenere l’elenco di una cartella](#get-a-folder-listing)
+* [Effettua chiamata API personalizzata](#make-a-custom-api-call)
 * [Spostare una cartella o una risorsa](#move-a-folder-or-asset)
 * [Aggiornare un record](#update-a-record)
 
@@ -359,7 +359,7 @@ Questo modulo di azione copia una cartella o una risorsa in un’altra posizione
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo di record</td> 
@@ -375,11 +375,11 @@ Questo modulo di azione copia una cartella o una risorsa in un’altra posizione
   </tr> 
   <tr> 
    <td role="rowheader">Nome della cartella/risorsa copiata</td> 
-   <td>Immetti un nome per la nuova cartella o risorsa. Il nome della cartella visualizzato in Adobe Experience Manager Assets è uguale al nome originale. Il nome immesso viene visualizzato nell’URL della nuova cartella o risorsa.</td> 
+   <td>Inserisci un nome per la nuova cartella o risorsa. Il nome della cartella visualizzato in Adobe Experience Manager Assets è uguale al nome originale. Il nome inserito qui viene visualizzato nell’URL della nuova cartella o risorsa.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Copia elementi figlio</td> 
-   <td>Se copi una cartella, abilita questa opzione per copiare eventuali sottocartelle o risorse all’interno della cartella.</td> 
+   <td role="rowheader">Copia elementi figli</td> 
+   <td>Se copi una cartella, abilita questa opzione per copiare eventuali sottocartelle incluse nella cartella.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Sovrascrivi</td> 
@@ -392,7 +392,7 @@ Questo modulo di azione copia una cartella o una risorsa in un’altra posizione
 
 #### Creare un record
 
-Questo modulo di azione crea una cartella o un commento alla risorsa.
+Questo modulo di azione crea una cartella o un commento a una risorsa.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -400,21 +400,21 @@ Questo modulo di azione crea una cartella o un commento alla risorsa.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo di oggetto</td> 
-   <td> <p>Seleziona se desideri creare una cartella o un commento su una risorsa.</p> 
+   <td> <p>Seleziona se desideri creare una cartella o un commento a una risorsa.</p> 
     <ul> 
-     <li> <p>Cartella</p> <p>Compila i campi seguenti:</p> 
+     <li> <p>Cartella</p> <p>Compila i seguenti campi:</p> 
       <ul> 
-       <li> <p>Nome</p> <p>Immettere un nome per la cartella. Questo nome verrà visualizzato nel percorso del file, pertanto non deve includere spazi o altri caratteri. </p> </li> 
-       <li> <p>Titolo</p> <p>Immetti un titolo per la cartella, che può essere visualizzato al posto del nome.</p> </li> 
+       <li> <p>Nome</p> <p>Inserisci un nome per la cartella. Questo nome verrà visualizzato nel percorso del file, pertanto non deve includere spazi o altri caratteri. </p> </li> 
+       <li> <p>Titolo</p> <p>Inserisci un titolo per la cartella, che può essere visualizzato al posto del nome.</p> </li> 
       </ul> </li> 
-     <li> <p>Commento risorsa</p> <p>Compila i campi seguenti:</p> 
+     <li> <p>Commento risorsa</p> <p>Compila i seguenti campi:</p> 
       <ul> 
-       <li> <p>Selezione risorsa</p> <p>Seleziona o mappa l’ID della risorsa a cui desideri aggiungere un commento.</p> </li> 
-       <li> <p>Commento</p> <p>Immettere il testo del commento.</p> </li> 
+       <li> <p>Seleziona risorsa</p> <p>Seleziona o mappa l’ID della risorsa alla quale vuoi aggiungere un commento.</p> </li> 
+       <li> <p>Commento</p> <p>Digita il testo del commento.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -423,7 +423,7 @@ Questo modulo di azione crea una cartella o un commento alla risorsa.
 
 #### Eliminare una cartella, una risorsa o una rappresentazione
 
-Questo modulo di azione elimina una cartella, una risorsa o un rendering.
+Questo modulo di azione elimina una cartella, una risorsa o una rappresentazione.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -431,23 +431,23 @@ Questo modulo di azione elimina una cartella, una risorsa o un rendering.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo di record</td> 
    <td> <p>Seleziona se desideri eliminare una cartella, una risorsa o una rappresentazione.</p> 
     <ul> 
-     <li> <p>Cartella</p> <p>Seleziona la cartella da eliminare selezionando le cartelle nel relativo percorso.</p> </li> 
-     <li> <p>Risorsa</p> <p>Seleziona la risorsa selezionando le cartelle nel suo percorso, quindi la risorsa da eliminare.</p> </li> 
-     <li> <p>Rappresentazione</p> <p>Seleziona la rappresentazione selezionando le cartelle nel relativo percorso.</p> <p>Immettere o mappare il nome della rappresentazione.</p> </li> 
+     <li> <p>Cartella</p> <p>Seleziona la cartella da eliminare selezionando le cartelle nel percorso corrispondente.</p> </li> 
+     <li> <p>Risorsa</p> <p>Seleziona la risorsa selezionando le cartelle nel relativo percorso, quindi la risorsa da eliminare.</p> </li> 
+     <li> <p>Rappresentazione</p> <p>Seleziona la rappresentazione selezionando le cartelle nel relativo percorso.</p> <p>Inserisci o mappa il nome della rappresentazione.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Ottieni un elenco di cartelle
+#### Ottenere l’elenco di una cartella
 
-Questo modulo di azione recupera una rappresentazione di una cartella esistente e delle relative entità secondarie (cartelle o risorse).
+Questo modulo di azione recupera una rappresentazione di una cartella esistente e delle relative entità figlio (cartelle o risorse).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -455,16 +455,16 @@ Questo modulo di azione recupera una rappresentazione di una cartella esistente 
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Cartella</td> 
-   <td>Seleziona o mappa la cartella da recuperare. Per aggiungere sottocartelle al percorso, fare clic sull'icona più e selezionare la sottocartella.</td> 
+   <td>Seleziona o mappa la cartella da recuperare. Per aggiungere sottocartelle al percorso, fai clic sull’icona con il segno più e seleziona la sottocartella.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Effettuare una chiamata API personalizzata
+#### Effettua chiamata API personalizzata
 
 Questo modulo di azione effettua una chiamata API personalizzata all’API Adobe Experience Manager Assets.
 
@@ -474,27 +474,27 @@ Questo modulo di azione effettua una chiamata API personalizzata all’API Adobe
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>URL</p> </td> 
-   <td> <p>Immetti un percorso relativo all’URL di base di Adobe Experience Manager.</p> </td> 
+   <td> <p>Inserisci un percorso relativo all’URL di base di Adobe Experience Manager.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Metodo</p> </td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTPS</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Intestazioni</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Stringa di query</td> 
-   <td> <p>Immettere la stringa di query richiesta. Per ogni coppia chiave/valore, fare clic su <b>Aggiungi elemento</b> e immettere chiave e valore.</p> </td> 
+   <td role="rowheader">Stringa query</td> 
+   <td> <p>Inserisci la stringa di query della richiesta. Per ogni coppia chiave/valore, fai clic su <b>Aggiungi elemento</b> e immetti la chiave e il valore.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -504,7 +504,7 @@ Questo modulo di azione effettua una chiamata API personalizzata all’API Adobe
 
 #### Spostare una cartella o una risorsa
 
-Questo modulo di azione sposta la risorsa o la cartella nel percorso specificato in una nuova posizione.
+Questo modulo di azione sposta la risorsa o la cartella dal percorso specificato a una nuova posizione.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -512,11 +512,11 @@ Questo modulo di azione sposta la risorsa o la cartella nel percorso specificato
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo di record</td> 
-   <td> <p>Seleziona se desideri spostare una cartella o una risorsa.</p> </td> 
+   <td> <p>Seleziona se spostare una cartella o una risorsa.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Cartella/Risorsa</td> 
@@ -524,15 +524,15 @@ Questo modulo di azione sposta la risorsa o la cartella nel percorso specificato
   </tr> 
   <tr> 
    <td role="rowheader">Percorso di destinazione</td> 
-   <td>Seleziona o mappa il percorso del percorso in cui desideri spostare la cartella o la risorsa.</td> 
+   <td>Seleziona o mappa il percorso in cui spostare la cartella o la risorsa.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome della cartella/risorsa spostata</td> 
-   <td>Immetti un nuovo nome per la cartella o la risorsa spostata. Il nome della cartella visualizzato in Adobe Experience Manager Assets è uguale al nome originale. Il nome immesso viene visualizzato nell’URL della cartella o della risorsa spostata.</td> 
+   <td>Inserisci un nuovo nome per la cartella o la risorsa spostata. Il nome della cartella visualizzato in Adobe Experience Manager Assets è uguale al nome originale. Il nome inserito viene visualizzato nell’URL della cartella o della risorsa spostata.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Sovrascrivi</td> 
-   <td>Abilita questa opzione per sovrascrivere eventuali cartelle o risorse nella posizione di destinazione con lo stesso nome della cartella o risorsa da spostare.</td> 
+   <td>Abilita questa opzione per sovrascrivere nella posizione di destinazione eventuali cartelle o risorse che hanno lo stesso nome della cartella o risorsa che viene spostata.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -547,35 +547,35 @@ Questo modulo di azione aggiorna un record esistente.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione del tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo di record</td> 
-   <td> <p>Seleziona se desideri eliminare i metadati di una risorsa o il rendering di una risorsa.</p> 
+   <td> <p>Seleziona se desideri eliminare i metadati o la rappresentazione di una risorsa.</p> 
     <ul> 
-     <li> <p>Metadati risorsa</p> 
+     <li> <p>Metadati risorsa </p> 
       <ul> 
-       <li> <p>Seleziona la risorsa per la quale desideri aggiornare i metadati.</p> </li> 
-       <li> <p>Immetti il nuovo titolo della risorsa.</p> </li> 
+       <li> <p>Seleziona la risorsa per la quale vuoi aggiornare i metadati.</p> </li> 
+       <li> <p>Inserisci il nuovo titolo della risorsa.</p> </li> 
       </ul> </li> 
-     <li> <p>Rappresentazione delle risorse</p> 
+     <li> <p>Rappresentazione risorsa</p> 
       <ul> 
-       <li> <p>Seleziona la risorsa per la quale desideri aggiornare la rappresentazione.</p> </li> 
-       <li> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </li> 
+       <li> <p>Seleziona la risorsa per la quale vuoi aggiornare la rappresentazione.</p> </li> 
+       <li> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Assets (API di authoring)
+### Risorse (API di authoring)
 
-* [Elimina risorsa](#delete-asset)
-* [Ottieni stato processo](#get-job-status)
+* [Eliminare una risorsa](#delete-asset)
+* [Ottenere lo stato di un processo](#get-job-status)
 
-#### Elimina risorsa
+#### Eliminare una risorsa
 
-Questo modulo di azione elimina una singola risorsa in base al suo ID.
+Questo modulo di azione elimina una singola risorsa in base all’ID.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -583,20 +583,20 @@ Questo modulo di azione elimina una singola risorsa in base al suo ID.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID risorsa</td> 
-   <td> <p>Immetti o mappa l’ID della risorsa da eliminare.</p> </td> 
+   <td> <p>Inserisci o mappa l’ID della risorsa da eliminare.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Forza</td> 
-   <td>Abilita questa opzione per forzare l’eliminazione della risorsa, anche se vi si fa riferimento.</td> 
+   <td>Abilita questa opzione per forzare l’eliminazione della risorsa, anche se vi fanno riferimento altri elementi.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Ottieni stato processo
+#### Ottenere lo stato di un processo
 
 Questo modulo ottiene lo stato corrente di un processo asincrono.
 
@@ -606,27 +606,27 @@ Questo modulo ottiene lo stato corrente di un processo asincrono.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account  Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID processo</td> 
-   <td> <p>Immetti o mappa l’ID del processo per il quale desideri ottenere lo stato.</p> </td> 
+   <td> <p>Immetti o mappa l’ID del processo del quale desideri ottenere lo stato.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Eventi (API di authoring)
 
-#### Guarda gli eventi
+#### Osserva eventi
 
-Questo modulo di attivazione avvia uno scenario quando si verifica un evento in AEM Assets.
+Questo modulo tigger avvia uno scenario quando si verifica un evento in AEM Assets.
 
 Il modulo contiene un singolo campo: Webhook. Seleziona un webhook esistente da utilizzare per questi eventi o creane uno nuovo.
 
 Per creare un nuovo webhook:
 
 1. Fai clic su **Aggiungi** accanto al campo Webhook.
-1. Compila i campi seguenti:
+1. Compila i seguenti campi:
 
    <table>
      <col/>
@@ -634,11 +634,11 @@ Per creare un nuovo webhook:
      <tbody>
        <tr>
          <td role="rowheader">Nome webhook</td>
-        <td>Immettere un nome per il webhook.</td>
+        <td>Specifica un nome per il webhook.</td>
        </tr>
        <tr>
          <td role="rowheader">Connessione</td>
-        <td>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</td>
+        <td>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</td>
        </tr>
      </tbody>
    </table>
@@ -648,10 +648,10 @@ Per creare un nuovo webhook:
 
 ### Metadati (API di authoring)
 
-* [Ottieni metadati risorsa](#get-asset-metadata)
+* [Ottenere i metadati delle risorse](#get-asset-metadata)
 * [Aggiornare i metadati delle risorse](#update-asset-metadata)
 
-#### Ottieni metadati risorsa
+#### Ottenere i metadati delle risorse
 
 Questo modulo di azione recupera i metadati relativi alla risorsa specificata.
 
@@ -661,11 +661,11 @@ Questo modulo di azione recupera i metadati relativi alla risorsa specificata.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID risorsa</td> 
-   <td> <p>Immetti o mappa l’ID della risorsa per la quale desideri ottenere i metadati.</p> </td> 
+   <td> <p>Inserisci o mappa l’ID della risorsa per la quale desideri ottenere i metadati.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -680,27 +680,27 @@ Questo modulo di azione aggiorna i metadati per la risorsa specificata.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID risorsa</td> 
-   <td> <p>Immetti o mappa l’ID della risorsa per la quale desideri aggiornare i metadati.</p> </td> 
+   <td> <p>Inserisci o mappa l’ID della risorsa per la quale desideri aggiornare i metadati.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Aggiornamenti</td> 
-   <td> <p>Per ogni elemento di metadati che si desidera aggiornare, fare clic su <b>Aggiungi elemento</b> e selezionare l'operazione. Gli altri campi della casella Aggiungi elemento dipendono dall'operazione selezionata.</p> </td> 
+   <td> <p>Per ogni elemento di metadati che desideri aggiornare, fai clic su <b>Aggiungi elemento</b> e seleziona l’operazione. Gli altri campi della casella Aggiungi elemento dipendono dall’operazione selezionata.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
-### Importa (API di authoring)
+### Importazione (API di authoring)
 
-* [Ottieni risultati processo di importazione](#get-import-job-results)
-* [Ottieni stato processo di importazione](#get-import-job-status)
+* [Ottenere i risultati del processo di importazione](#get-import-job-results)
+* [Ottenere lo stato del processo di importazione](#get-import-job-status)
 * [Caricare una risorsa da un URL](#upload-an-asset-from-a-url)
 
-#### Ottieni risultati processo di importazione
+#### Ottenere i risultati del processo di importazione
 
 Questo modulo di azione recupera i risultati per il processo di importazione specificato.
 
@@ -710,16 +710,16 @@ Questo modulo di azione recupera i risultati per il processo di importazione spe
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID processo di importazione</td> 
-   <td> <p>Immetti o mappa l’ID del processo per il quale desideri recuperare i risultati.</p> </td> 
+   <td> <p>Inserisci o mappa l’ID del processo per il quale desideri recuperare i risultati.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Ottieni stato processo di importazione
+#### Ottenere lo stato del processo di importazione
 
 Questo modulo di azione recupera lo stato del processo di importazione specificato.
 
@@ -729,11 +729,11 @@ Questo modulo di azione recupera lo stato del processo di importazione specifica
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID processo di importazione</td> 
-   <td> <p>Immetti o mappa l’ID del processo di cui desideri recuperare lo stato.</p> </td> 
+   <td> <p>Inserisci o mappa l’ID del processo di cui desideri recuperare lo stato.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -748,7 +748,7 @@ Questo modulo di azione carica una nuova risorsa importando file dagli URL speci
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Titolo</td> 
@@ -756,11 +756,11 @@ Questo modulo di azione carica una nuova risorsa importando file dagli URL speci
   </tr> 
   <tr> 
    <td role="rowheader">Descrizione</td> 
-   <td> <p>Immetti o mappa una descrizione per la risorsa.</p> </td> 
+   <td> <p>Inserisci o mappa una descrizione per la risorsa.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Oggetto</td> 
-   <td> <p>Inserisci o mappa un oggetto per la risorsa.</p> </td> 
+   <td role="rowheader">Soggetto</td> 
+   <td> <p>Inserisci o mappa il oggetto della risorsa.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Creatore</td> 
@@ -768,19 +768,19 @@ Questo modulo di azione carica una nuova risorsa importando file dagli URL speci
   </tr> 
   <tr> 
    <td role="rowheader">Data di scadenza</td> 
-   <td> <p>Immetti o mappa la data di scadenza della risorsa.</p><p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p> </td> 
+   <td> <p>Inserisci o mappa la data di scadenza della risorsa.</p><p>Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Metadati personalizzati</td> 
-   <td> <p>Per ogni elemento di metadati personalizzati che desideri aggiungere alla risorsa, fai clic su <b>Aggiungi elemento</b> e immetti il nome e il valore dei metadati.</p> </td> 
+   <td> <p>Per ogni elemento di metadati personalizzati che desideri aggiungere alla risorsa, fai clic su <b>Aggiungi elemento</b> e inserisci il nome e il valore dei metadati.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Percorso o ID cartella</td> 
-   <td> <p>Seleziona se desideri specificare la cartella di destinazione in base al suo percorso o ID, quindi seleziona il percorso o immetti l’ID.</p> </td> 
+   <td> <p>Seleziona se specificare la cartella di destinazione in base al percorso o all’ID, quindi seleziona il percorso o inserisci l’ID.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">File da importare</td> 
-   <td> <p>Per ogni file da importare, fare clic su <b>Aggiungi elemento&lt;/&gt; e inserire i dettagli del file. <code>Title</code> </p> </td> 
+   <td> <p>Per ogni file da importare, fai clic su <b>Aggiungi elemento&lt;/&gt; e inserisci i dettagli del file. <code>Title</code> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"></td> 
@@ -792,9 +792,9 @@ Questo modulo di azione carica una nuova risorsa importando file dagli URL speci
 ### Relazioni (API di authoring)
 
 * [Creare relazioni tra risorse](#create-asset-relations)
-* [Elimina relazione tra risorse](#create-asset-relations)
-* [Ottieni tipi di relazione risorse](#get-asset-relation-types)
-* [Ottieni relazioni risorse](#get-asset-relations)
+* [Eliminare una relazione tra risorse](#create-asset-relations)
+* [Ottenere tipi di relazione tra risorse](#get-asset-relation-types)
+* [Ottenere relazioni tra risorse](#get-asset-relations)
 
 #### Creare relazioni tra risorse
 
@@ -806,22 +806,22 @@ Questo modulo di azione crea nuove relazioni tra risorse per la risorsa selezion
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID risorsa</td> 
-   <td> <p>Inserisci o mappa la risorsa ID a cui vuoi correlare altre risorse.</p> </td> 
+   <td> <p>Inserisci o mappa l’ID della risorsa alla quale vuoi correlare altre risorse.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Risorse correlate</td> 
-   <td> <p>Per ogni risorsa che desideri correlare alla risorsa selezionata, fai clic su <b>Aggiungi elemento</b> e immetti o mappa l'ID della risorsa e il tipo di relazione.</p> </td> 
+   <td> <p>Per ogni risorsa che vuoi correlare alla risorsa selezionata, fai clic su <b>Aggiungi elemento</b> e inserisci o mappa l’ID della risorsa e il tipo di relazione.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Elimina relazione tra risorse
+#### Eliminare una relazione tra risorse
 
-Questo modulo di azione elimina una relazione di risorsa per una risorsa.
+Questo modulo di azione elimina una relazione per una risorsa.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -829,29 +829,29 @@ Questo modulo di azione elimina una relazione di risorsa per una risorsa.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID risorsa</td> 
-   <td> <p>Inserisci o mappa la risorsa ID da cui desideri eliminare una relazione.</p> </td> 
+   <td> <p>Inserisci o mappa l’ID della risorsa dalla quale vuoi eliminare una relazione.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Risorse correlate</td> 
-   <td> <p>Immettere o mappare il tipo di relazione che si desidera eliminare.</p> </td> 
+   <td> <p>Immetti o mappa il tipo di relazione da eliminare.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Specifica l’ID della risorsa correlata da eliminare</td> 
-   <td> <p>Selezionare questa casella per eliminare una relazione specifica. Se questa casella non è selezionata, vengono eliminate tutte le relazioni del tipo selezionato.</p> </td> 
+   <td> <p>Seleziona questa casella per eliminare una relazione specifica. Se questa casella non è selezionata, vengono eliminate tutte le relazioni del tipo selezionato.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID risorsa correlata</td> 
-   <td> <p>Se stai eliminando una relazione specifica, immetti o mappi l’ID della relazione che desideri eliminare.</p> </td> 
+   <td> <p>Se vuoi eliminare una relazione specifica, inserisci o mappa l’ID della relazione da eliminare.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### Ottieni tipi di relazione risorse
+#### Ottenere tipi di relazione tra risorse
 
 Questo modulo elenca i tipi di relazione esistenti per la risorsa specificata.
 
@@ -861,18 +861,18 @@ Questo modulo elenca i tipi di relazione esistenti per la risorsa specificata.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID risorsa</td> 
-   <td> <p>Inserisci o mappa la risorsa ID per la quale desideri elencare i tipi di relazione.</p> </td> 
+   <td> <p>Inserisci o mappa l’ID della risorsa per la quale desideri elencare i tipi di relazione.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Ottieni relazioni risorse
+#### Ottenere relazioni tra risorse
 
-Questo modulo elenca le relazioni tra le risorse per la risorsa specificata.
+Questo modulo elenca le relazioni tra risorse esistenti per la risorsa specificata.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -880,29 +880,29 @@ Questo modulo elenca le relazioni tra le risorse per la risorsa specificata.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID risorsa</td> 
-   <td> <p>Inserisci o mappa la risorsa ID per la quale desideri elencare le relazioni.</p> </td> 
+   <td> <p>Inserisci o mappa l’ID della risorsa per la quale desideri elencare le relazioni.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipi di relazione</td> 
-   <td> <p>Immettere o mappare un elenco separato da virgole dei tipi di relazione per i quali si desidera elencare le relazioni.</p> </td> 
+   <td> <p>Inserisci o mappa un elenco separato da virgole dei tipi di relazione per i quali vuoi elencare le relazioni.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 
 
-### Cartelle (API Cartelle)
+### Cartelle (API cartelle)
 
 * [Creare cartelle](#create-folders)
-* [Eliminare una cartella per ID](#delete-a-folder-by-id)
-* [Elimina cartelle per percorso](#delete-folders-by-path)
-* [Ottieni risultati processo cartelle](#get-folders-job-results)
-* [Ottieni stato processo cartelle](#get-folders-job-status)
-* [Elencare cartelle](#list-folders)
+* [Eliminare una cartella in base all’ID](#delete-a-folder-by-id)
+* [Eliminare cartelle in base al percorso](#delete-folders-by-path)
+* [Ottenere i risultati di un processo cartelle](#get-folders-job-results)
+* [Ottenere lo stato di un processo cartelle](#get-folders-job-status)
+* [Elencare le cartelle](#list-folders)
 
 #### Creare cartelle
 
@@ -916,21 +916,21 @@ Questo modulo di azione crea una nuova cartella in Adobe Experience Manager Asse
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Cartelle da creare</td> 
-   <td> <p>Per ogni cartella che si desidera creare, fare clic su <b>Aggiungi elemento</b> e immettere le informazioni seguenti:</p>
+   <td> <p>Per ogni cartella da creare, fai clic su <b>Aggiungi elemento</b> e inserisci le informazioni seguenti:</p>
    <ul>
-   <li><b>Percorso nuova cartella</b><p>Seleziona il percorso in cui desideri creare la nuova cartella.</p></li>
-       <li> <b>Nome</b> <p>Immettere un nome per la cartella. Questo nome verrà visualizzato nel percorso del file, pertanto non deve includere spazi o altri caratteri. </p> </li> 
-       <li> <b>Titolo</b> <p>Immetti un titolo per la cartella, che può essere visualizzato al posto del nome.</p> </li> 
+   <li><b>Percorso nuova cartella</b><p>Seleziona il percorso per la nuova cartella.</p></li>
+       <li> <b>Nome</b> <p>Inserisci un nome per la cartella. Questo nome verrà visualizzato nel percorso del file, pertanto non deve includere spazi o altri caratteri. </p> </li> 
+       <li> <b>Titolo</b> <p>Inserisci un titolo per la cartella, che può essere visualizzato al posto del nome.</p> </li> 
    </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Eliminare una cartella per ID
+#### Eliminare una cartella in base all’ID
 
 Questo modulo di azione elimina la cartella Adobe Experience Manager Assets con l’ID specificato.
 
@@ -940,11 +940,11 @@ Questo modulo di azione elimina la cartella Adobe Experience Manager Assets con 
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID Cartella</td> 
-   <td> Immetti o mappa l’ID della cartella da eliminare.</td>
+   <td role="rowheader">ID cartella</td> 
+   <td> Inserisci o mappa l’ID della cartella da eliminare.</td>
   </tr> 
  <tr> 
    <td role="rowheader">Elimina sottocartelle</td> 
@@ -952,14 +952,14 @@ Questo modulo di azione elimina la cartella Adobe Experience Manager Assets con 
   </tr> 
  <tr> 
    <td role="rowheader">Forza</td> 
-   <td> Abilita questa opzione per forzare l’eliminazione delle cartelle, anche se vi si fa riferimento.</td>
+   <td> Abilita questa opzione per forzare l’eliminazione delle cartelle, anche se altri elementi vi fanno riferimento.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### Elimina cartelle per percorso
+#### Eliminare cartelle in base al percorso
 
-Questo modulo di azione elimina le cartelle di Adobe Experience Manager Assets nei percorsi specificati.
+Questo modulo di azione elimina le cartelle di Adobe Experience Manager Assets dai percorsi specificati.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -967,11 +967,11 @@ Questo modulo di azione elimina le cartelle di Adobe Experience Manager Assets n
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione del tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Percorsi cartelle</td> 
-   <td>Per ogni cartella da eliminare, fare clic su <b>Aggiungi elemento</b> e selezionare il percorso della cartella.</td>
+   <td>Per ogni cartella da eliminare, fai clic su <b>Aggiungi elemento</b> e seleziona il percorso della cartella.</td>
   </tr> 
  <tr> 
    <td role="rowheader">Elimina sottocartelle</td> 
@@ -979,14 +979,14 @@ Questo modulo di azione elimina le cartelle di Adobe Experience Manager Assets n
   </tr> 
  <tr> 
    <td role="rowheader">Forza</td> 
-   <td> Abilita questa opzione per forzare l’eliminazione della risorsa, anche se vi si fa riferimento.</td>
+   <td> Abilita questa opzione per forzare l’eliminazione della risorsa, anche se vi fanno riferimento altri elementi.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### Ottieni risultati processo cartelle
+#### Ottenere i risultati di un processo cartelle
 
-Questo modulo recupera i risultati di un processo asincrono creato dall’API della cartella di Adobe Experience Manager Assets.
+Questo modulo recupera i risultati di un processo asincrono creato dall’API per cartelle di Adobe Experience Manager Assets.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -994,18 +994,18 @@ Questo modulo recupera i risultati di un processo asincrono creato dall’API de
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID processo</td> 
-   <td> Immetti o mappa l’ID del processo per il quale desideri recuperare i risultati.</td>
+   <td> Inserisci o mappa l’ID del processo per il quale desideri recuperare i risultati.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### Ottieni stato processo cartelle
+#### Ottenere lo stato di un processo cartelle
 
-Questo modulo recupera lo stato di un processo asincrono creato dall’API della cartella di Adobe Experience Manager Assets.
+Questo modulo recupera i risultati di un processo asincrono creato dall’API per cartelle di Adobe Experience Manager Assets.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1013,17 +1013,17 @@ Questo modulo recupera lo stato di un processo asincrono creato dall’API della
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID processo</td> 
-   <td> Immetti o mappa l’ID del processo per il quale desideri recuperare lo stato.</td>
+   <td> Inserisci o mappa l’ID del processo del quale vuoi recuperare lo stato.</td>
   </tr> 
  </tbody> 
 </table>
 
 
-#### Elencare cartelle
+#### Elencare le cartelle
 
 Questo modulo elenca le sottocartelle della cartella specificata.
 
@@ -1033,11 +1033,11 @@ Questo modulo elenca le sottocartelle della cartella specificata.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Adobe Experience Manager Assets a Workfront Fusion, vedere <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connessione di Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
    </tr> 
    <tr> 
    <td role="rowheader">Percorso o ID cartella</td> 
-   <td> <p>Seleziona se desideri specificare la cartella di destinazione in base al suo percorso o ID, quindi seleziona il percorso o immetti l’ID.</p> </td> 
+   <td> <p>Seleziona se specificare la cartella di destinazione in base al percorso o all’ID, quindi seleziona il percorso o inserisci l’ID.</p> </td> 
   </tr> 
  </tbody> 
 </table>

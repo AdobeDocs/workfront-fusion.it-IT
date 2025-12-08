@@ -1,25 +1,25 @@
 ---
-title: Panoramica sulla mappatura
+title: Panoramica della mappatura
 description: La mappatura è il processo di assegnazione degli output di un modulo, strutturati in elementi, ai campi di input di un altro modulo.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
 source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '435'
+ht-degree: 100%
 
 ---
 
-# Panoramica sulla mappatura
+# Panoramica della mappatura
 
 La mappatura è il processo di assegnazione degli output di un modulo ai campi di input di un altro modulo.
 
-Il funzionamento di un modulo produce zero, uno o più bundle come output. Un bundle è costituito da uno o più elementi.
+Il funzionamento di un modulo produce come output zero, uno o più bundle. Un bundle è costituito da uno o più elementi.
 
 Puoi mappare questi elementi ai campi nei moduli successivi.
 
-Quando fai clic su un campo in cui puoi inserire un valore generato da un modulo precedente in uno scenario, viene visualizzato il pannello di mappatura. Qui puoi selezionare l’elemento da mappare. Una mappatura può includere uno o più dei seguenti elementi:
+Quando fai clic su un campo in cui puoi inserire un valore generato da un modulo precedente in uno scenario, viene visualizzato il pannello di mappatura. Qui puoi selezionare l’elemento che desideri mappare. Una mappatura può includere uno o più dei seguenti elementi:
 
 * Un singolo elemento
 * Più elementi
@@ -32,7 +32,7 @@ Quando fai clic su un campo in cui puoi inserire un valore generato da un modulo
 
 Elemento singolo
 
-![Mappa elemento singolo](assets/map-single.png)
+![Mappa singolo elemento](assets/map-single.png)
 
 Più elementi con testo
 
@@ -40,59 +40,59 @@ Più elementi con testo
 
 Funzione con più elementi e testo
 
-![Mappa formula con testo](assets/map-formula-with-text.png)
+![Mappa una formula con testo](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
 
 
-Per istruzioni sulla mappatura, vedere gli articoli in [Dati mappa: indice articolo](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md).
+Per istruzioni sulla mappatura, consulta gli articoli in [Mappatura dati: indice degli articoli](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md).
 
 >[!NOTE]
 >
->Gli output dei moduli racchiusi tra un [!UICONTROL Iterator] e un [!UICONTROL Aggregator] non sono accessibili oltre il modulo [!UICONTROL Aggregator].
+>Gli output dei moduli compresi tra un [!UICONTROL iteratore] e un [!UICONTROL aggregatore] non sono accessibili al di fuori del modulo [!UICONTROL aggregatore].
 
 ## Pannello di mappatura
 
 Quando fai clic su un campo in cui puoi mappare i dati, viene aperto il pannello di mappatura.
 
-Nella prima scheda ![Mappa da altri moduli](assets/toolbar-icon-functions-you-map-from-other-modules.png) vengono visualizzati gli elementi che è possibile mappare da altri moduli.
+La prima scheda ![Mappa da altri moduli](assets/toolbar-icon-functions-you-map-from-other-modules.png) mostra gli elementi che puoi mappare da altri moduli.
 
-Le altre schede includono funzioni, operatori e parole chiave che è possibile utilizzare per creare formule. Questi vengono ordinati in schede diverse in base al tipo di dati che gestiscono.
+Le altre schede includono funzioni, operatori e parole chiave che puoi utilizzare per creare formule. Le formule vengono ordinate in schede diverse in base al tipo di dati che gestiscono.
 
-![Pannello mappature](assets/mapping-panel-blank.png)
+![Pannello di mappatura](assets/mapping-panel-blank.png)
 
 
-Per ulteriori informazioni sulle schede delle funzioni, vedere [Panoramica delle funzioni](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
+Per ulteriori informazioni sulle schede delle funzioni, consulta [Panoramica delle funzioni](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Per ulteriori informazioni sulla mappatura degli elementi tramite le funzioni, vedere [Mappare gli elementi utilizzando le funzioni](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Per ulteriori informazioni sulla mappatura degli elementi tramite le funzioni, consulta [Mappare gli elementi utilizzando le funzioni](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Raccolte
 
-Gli elementi possono contenere più valori di vari tipi. Si tratta di elementi di tipo raccolta.
+Gli elementi possono contenere più valori di tipi diversi. Questi sono elementi di tipo raccolta.
 
-I bundle di tipo raccolta vengono visualizzati `(Collection)` accanto all&#39;etichetta del bundle nell&#39;output del modulo.
+I bundle di tipo raccolta mostrano `(Collection)` accanto all’etichetta del bundle nell’output del modulo.
 
 ![Raccolta](assets/collection.png)
 
-Nella maggior parte dei casi, è possibile mappare gli elementi della raccolta anziché l&#39;elemento che rappresenta l&#39;intera raccolta.
+Nella maggior parte dei casi vengono mappati gli elementi della raccolta anziché l’elemento che rappresenta l’intera raccolta.
 
-Per individuare l&#39;elemento di una raccolta nel pannello di mappatura, fate clic sulla freccia accanto alla raccolta.
+Per individuare l’elemento di una raccolta nel pannello di mappatura, fai clic sulla freccia accanto alla raccolta.
 
-![Elenco a discesa della raccolta](assets/collection-dropdown.png)
+![Menu a discesa della raccolta](assets/collection-dropdown.png)
 
-Per ulteriori informazioni sulle raccolte, vedere [Tipi di dati elemento](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
+Per ulteriori informazioni sulle raccolte, consulta [Tipi di dati degli elementi](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
-Per istruzioni sulla mappatura delle raccolte, vedere [Mappare un elemento](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#map-an-item) nell&#39;articolo Mappare le informazioni da un modulo all&#39;altro.
+Per istruzioni sulla mappatura delle raccolte, consulta [Mappare un elemento](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#map-an-item) nell’articolo Mappare le informazioni da un modulo all’altro.
 
 ## Array
 
-Gli elementi possono contenere più valori dello stesso tipo. Si tratta di elementi di tipo array.
+Gli elementi possono contenere più valori dello stesso tipo. Questi elementi sono di tipo array.
 
-I bundle di tipo array vengono visualizzati `(Array)` accanto all&#39;etichetta del bundle nell&#39;output del modulo.
+I bundle di tipo array mostrano `(Array)` accanto all’etichetta del bundle nell’output del modulo.
 
-Nel pannello di mappatura, gli array vengono visualizzati con parentesi quadre. È possibile identificare un elemento di tipo matrice tramite le parentesi quadre alla fine dell&#39;etichetta dell&#39;elemento. Per individuare un elemento di array specifico nel pannello di mappatura, fate clic sulla freccia accanto all&#39;array.
+Nel pannello di mappatura, gli array vengono mostrati con parentesi quadre. Puoi identificare un elemento di tipo array tramite le parentesi quadre alla fine dell’etichetta dell’elemento. Per individuare un elemento array specifico nel pannello di mappatura, fai clic sulla freccia accanto all’array.
 
 ![Array](assets/array.png)
 
-Per informazioni e istruzioni sulla mappatura di array ed elementi di array, vedere [Mappare array ed elementi di array](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).
+Per informazioni e istruzioni sulla mappatura di array ed elementi di array, consulta [Mappare array ed elementi array](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

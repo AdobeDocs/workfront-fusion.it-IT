@@ -1,41 +1,41 @@
 ---
-title: Guardrail delle prestazioni di fusione
-description: L'automazione del lavoro richiede un'elaborazione rapida, pertanto Adobe Workfront Fusion è progettato per offrire prestazioni elevate. Poiché gli scenari con tempi di esecuzione lunghi possono rallentare il ritmo del lavoro, Workfront Fusion è stato progettato con guardrail per il mantenimento delle prestazioni che limitano il tempo di esecuzione, la dimensione dei dati e altri parametri degli scenari. I progettisti di Workfront Fusion devono essere consapevoli di questi guardrail e incorporarli nelle loro pratiche di progettazione.
+title: Guardrail delle prestazioni di Fusion
+description: Poiché l’automazione del lavoro richiede un’elaborazione rapida, Workfront Fusion è progettato per prestazioni elevate. Gli scenari con esecuzioni prolungate possono rallentare il ritmo del tuo lavoro; pertanto Workfront Fusion è stato progettato con guardrail per il mantenimento delle prestazioni che limitano il tempo di esecuzione, le dimensioni dei dati e altri parametri dello scenario. Chi progetta gli scenari in Workfront Fusion deve essere consapevole di questi guardrail e incorporarli nelle attività di progettazione.
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Guardrail delle prestazioni di fusione
+# Guardrail delle prestazioni di Fusion
 
-L&#39;automazione del lavoro richiede un&#39;elaborazione rapida, pertanto Adobe Workfront Fusion è progettato per offrire prestazioni elevate. Poiché gli scenari con tempi di esecuzione lunghi possono rallentare il ritmo del lavoro, Workfront Fusion è stato progettato con guardrail per il mantenimento delle prestazioni che limitano il tempo di esecuzione, la dimensione dei dati e altri parametri degli scenari. I progettisti di Workfront Fusion devono essere consapevoli di questi guardrail e incorporarli nelle loro pratiche di progettazione.
+Poiché l’automazione del lavoro richiede un’elaborazione rapida, Workfront Fusion è progettato per prestazioni elevate. Gli scenari con esecuzioni prolungate possono rallentare il ritmo del tuo lavoro; pertanto Workfront Fusion è stato progettato con guardrail per il mantenimento delle prestazioni che limitano il tempo di esecuzione, le dimensioni dei dati e altri parametri dello scenario. Chi progetta gli scenari in Workfront Fusion deve essere consapevole di questi guardrail e incorporarli nelle attività di progettazione.
 
 ## Browser
 
 * Workfront Fusion supporta solo browser basati su Chrome.
 
-## Situazioni che potrebbero verificarsi con
+## Scenari
 
-* Il timeout predefinito per l&#39;esecuzione dello scenario è **40 minuti**. Quando l’esecuzione raggiunge questo timeout, Workfront Fusion interrompe l’esecuzione dello scenario dopo il ciclo o l’operazione successiva, a seconda dello scenario. Questo costringe lo scenario a interrompersi poco dopo il raggiungimento del limite di 40 minuti
+* Il timeout predefinito per l’esecuzione di uno scenario è di **40 minuti**. Quando il tempo di esecuzione raggiunge questo timeout, Workfront Fusion interrompe l’esecuzione dello scenario dopo il ciclo o l’operazione successiva, a seconda dello scenario. Di conseguenza lo scenario si interrompe poco dopo il raggiungimento del limite di 40 minuti
 
-  Gli scenari di concatenamento non vengono considerati per il timeout di esecuzione dello scenario. Uno scenario padre non accumula tempo durante l’attesa dell’esecuzione di uno scenario figlio.
-* La dimensione massima di una blueprint dello scenario è **5 MB**, ma è consigliabile mantenere la dimensione dello scenario sotto **3 MB**.
+  La concatenazione di scenari non viene considerata per il timeout di esecuzione dello scenario. Uno scenario principale non accumula tempo durante l’attesa dell’esecuzione di uno scenario secondario.
+* La dimensione massima della blueprint di uno scenario è di **5 MB**, ma ti consigliamo di mantenere la dimensione dello scenario al di sotto di **3 MB**.
 
-  I moduli di app che creano o aggiornano dati con un numero elevato di campi possono causare blueprint molto grandi.
+  I moduli di app che creano o aggiornano dati con un numero elevato di campi possono determinare blueprint molto grandi.
 
    * Quando utilizzi l’app Workfront, accertati di selezionare solo i campi necessari per i casi d’uso relativi alla creazione o all’aggiornamento.
-   * Quando utilizzi altre app, utilizza moduli API personalizzati per interagire con qualsiasi tipo di record con un numero elevato di campi.
+   * Quando lavori con altre app, utilizza moduli API personalizzati per interagire con i tipi di record con un numero elevato di campi.
 
-* Anche se non esiste un limite per il numero di moduli in uno scenario, gli scenari con più di 150 moduli influiscono negativamente sulle prestazioni del sistema Workfront Fusion. Per questo motivo, si sconsiglia di creare scenari con oltre 150 moduli.
+* Anche se non esiste un limite per il numero di moduli in uno scenario, gli scenari con più di 150 moduli limitano le prestazioni del sistema Workfront Fusion. Per questo motivo non è consigliato creare scenari con più di 150 moduli.
 
 ## Operazioni
 
-* Il timeout predefinito dell&#39;operazione è in genere di **40 secondi**.
+* Il timeout predefinito per un’operazione è in genere di **40 secondi**.
 
 <!--
 * The operation timeout for calls to Adobe Workfront is **120 seconds**.
@@ -43,36 +43,36 @@ L&#39;automazione del lavoro richiede un&#39;elaborazione rapida, pertanto Adobe
 
 ## File
 
-* La capacità di elaborazione totale di Fusion per i file è **1 GB**. Il limite si basa sul costo totale della memoria. Ogni operazione contribuisce a tale costo. Se viene scaricato e caricato un singolo file di 400 MB, il costo totale per la capacità del file sarebbe di 800 MB.
-* Le organizzazioni che aderiscono al piano Workfront Ultimate hanno accesso a una maggiore capacità di elaborazione dei file superiore a 1 GB. Tuttavia, ci sono altri fattori che influiscono sul trasferimento dei dati. Il servizio a cui si connette Fusion può limitare le dimensioni dei file, con conseguenze sui file elaborati da tale servizio. Inoltre, i file di grandi dimensioni possono influire sul tempo di esecuzione dello scenario. Fusion elaborerà i file fino al raggiungimento del limite di esecuzione di 40 minuti, che impedisce l’esecuzione.
-* Se un file viene scaricato utilizzando un modulo che supporta file di grandi dimensioni e quindi trasmesso a un modulo che non supporta file di grandi dimensioni, tale modulo non elabora correttamente il file. I file di grandi dimensioni devono essere gestiti esclusivamente con i moduli supportati in tutto il flusso di lavoro.
-* I moduli che non supportano file di grandi dimensioni possono elaborare file con dimensioni fino a **200 MB**.
+* La capacità di elaborazione totale di Fusion per i file è di **1 GB**. Il limite si basa sul costo totale in termini di memoria. Ogni operazione contribuisce a tale costo. Se viene scaricato e quindi ricaricato un singolo file di 400 MB, il costo totale in termini di capacità di file sarà di 800 MB.
+* Le organizzazioni con il piano Workfront Ultimate dispongono di una capacità di elaborazione file superiore a 1 GB. Tuttavia esistono altri fattori che influiscono sul trasferimento dei dati. Il servizio a cui si connette Fusion può limitare le dimensioni dei file, con conseguenze sui file elaborati da tale servizio. Inoltre, i file di grandi dimensioni possono influire sul tempo di esecuzione dello scenario. Fusion elaborerà i file fino al raggiungimento del limite del tempo di esecuzione di 40 minuti, dopodiché l’esecuzione verrà interrotta.
+* Se un file viene scaricato utilizzando un modulo che supporta i file di grandi dimensioni e quindi trasferito a un modulo che non supporta tali file, il modulo di destinazione non elabora correttamente il file. I file di grandi dimensioni devono essere gestiti esclusivamente con moduli che supportano tali file nell’intero flusso di lavoro.
+* I moduli che non supportano file di grandi dimensioni possono elaborare file con dimensioni massime di **200 MB**.
 
-Per ulteriori informazioni, vedere [Utilizzo di file di grandi dimensioni](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
+Per ulteriori informazioni, consulta [Utilizzare file di grandi dimensioni](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
-## Utilizzo memoria server
+## Utilizzo della memoria del server
 
-* L&#39;utilizzo della memoria del server per una singola esecuzione è limitato a **1 GB**.
+* L’utilizzo della memoria del server per una singola esecuzione è limitato a **1 GB**.
 
-  Molti fattori, ad esempio file di grandi dimensioni o moduli complessi, possono influire sull&#39;utilizzo della memoria del server in modi difficili da prevedere o controllare. Per questo motivo, l’esecuzione dello scenario potrebbe superare il limite di 1 GB di memoria, anche se lo scenario segue tutti gli altri guardrail delle prestazioni. Se si supera il limite di memoria, l’esecuzione non riesce.
+  Molti fattori, ad esempio file di grandi dimensioni o moduli complessi, possono influire sull’utilizzo della memoria del server in modi difficili da prevedere o controllare. Per questo motivo, l’esecuzione del tuo scenario può superare il limite di memoria di 1 GB anche se lo scenario è conforme a tutti gli altri guardrail sulle prestazioni. Se il limite di memoria viene superato, l’esecuzione non riesce.
 
 ## Webhook
 
-* La dimensione massima predefinita di un payload è **5 MB**.
-* I webhook sono limitati a **100 richieste al secondo**. Al raggiungimento di questo limite, Workfront Fusion invia uno stato 429 ([!UICONTROL Troppe richieste]).
-* Workfront Fusion memorizza i payload del webhook per 30 giorni. L&#39;accesso a un payload del webhook dopo più di 30 giorni dalla ricezione genera l&#39;errore &quot;[!UICONTROL Impossibile leggere il file dall&#39;archivio.]&quot;
-* I webhook vengono disattivati automaticamente se si applica una delle seguenti condizioni:
+* La dimensione massima predefinita di un payload è di **5 MB**.
+* I webhook sono limitati a **100 richieste al secondo**. Al raggiungimento di questo limite, Workfront Fusion restituisce uno stato 429 ([!UICONTROL Troppe richieste]).
+* Workfront Fusion archivia i payload dei webhook per 30 giorni. L’accesso a un payload del webhook dopo più di 30 giorni dalla ricezione genera un errore di tipo “[!UICONTROL Impossibile leggere il file dall’archivio.]”
+* I webhook vengono disattivati automaticamente se è una delle seguenti condizioni è vera:
 
-   * Il webhook non è stato connesso ad alcuno scenario per più di 5 giorni
-   * Il webhook viene utilizzato solo in scenari inattivi, che sono stati inattivi per più di 30 giorni.
+   * Il webhook non è stato collegato a nessuno scenario da più di 5 giorni
+   * Il webhook viene utilizzato solo in scenari che rimangono inattivi per più di 30 giorni.
 
-* I webhook disattivati vengono eliminati e annullati automaticamente se non sono connessi ad alcun scenario e se sono in stato disattivato da oltre 30 giorni.
+* I webhook disattivati vengono eliminati e ne viene automaticamente annullata la registrazione se non connessi ad alcun scenario e se in stato di disattivazione da oltre 30 giorni.
 * Il timeout per una risposta del webhook è di 5 minuti.
 
 ## Cronologia di esecuzione
 
 * I registri della cronologia di esecuzione sono limitati a **100 MB**. Se la cronologia di esecuzione supera queste dimensioni, verranno visualizzati solo i primi 100 MB.
-* Se uno scenario ha più esecuzioni simultanee, nell’area Esecuzioni della pagina dei dettagli dello scenario vengono visualizzate solo 5 esecuzioni. Questo vale anche quando sono in esecuzione più di 5 esecuzioni.
+* Se uno scenario presenta più esecuzioni simultanee, nell’area Esecuzioni della pagina dei dettagli dello scenario vengono visualizzate solo 5 esecuzioni. Questo vale anche quando sono in esecuzione più di 5 esecuzioni.
 
 ## Esecuzioni incomplete
 
@@ -82,28 +82,28 @@ Per ulteriori informazioni, vedere [Utilizzo di file di grandi dimensioni](/help
 
 ## Nuovi tentativi
 
-* Quando si utilizza il modulo Interrompi e si specifica la direttiva Riprova, se uno scenario si interrompe consecutivamente 10 volte in un arco temporale di 2 minuti, viene disattivato automaticamente.
+* Quando viene utilizzato il modulo Break specificando la direttiva Retry, se uno scenario non riesce consecutivamente 10 volte in un arco temporale di 2 minuti, viene disattivato automaticamente.
 
 ## Ricorsione
 
-La ricorsione si verifica quando uno scenario attiva una nuova esecuzione di se stesso, che attiva una nuova esecuzione e così via in un ciclo infinito.
+La ricorsione si verifica quando uno scenario attiva una nuova esecuzione di se stesso, attivando una nuova esecuzione e così via in un ciclo infinito.
 
-Ad esempio, uno scenario viene attivato quando viene creata un&#39;attività e tale scenario crea due attività. Le nuove attività create attivano entrambe di nuovo lo scenario, che crea quattro nuove attività. Ogni volta che viene creata un&#39;attività, lo scenario viene attivato e ogni volta che lo scenario viene eseguito, il numero di attività raddoppia. Il numero di attività aumenta in modo esponenziale.
+Ad esempio, uno scenario viene attivato quando viene creata un’attività e tale scenario crea due attività. Le attività appena create attivano nuovamente lo scenario, creando quattro nuove attività. Ogni volta che viene creata un’attività, lo scenario viene attivato e ogni volta che lo scenario viene eseguito, il numero di attività raddoppia. Il numero di attività aumenta in modo esponenziale.
 
 La ricorsione può causare problemi di prestazioni sia per l’organizzazione proprietaria dello scenario ricorsivo che per altre organizzazioni.
 
-Per quanto riguarda la ricorsione, considera quanto segue:
+Per quanto riguarda la ricorsione, prendi in considerazione quanto segue:
 
-* **Quando uno scenario provoca la ricorsione, viene disattivato dal team di progettazione di Fusion per evitare ulteriori problemi di prestazioni.**
-* Poiché la ricorsione è il risultato della progettazione dello scenario, è necessario progettare gli scenari in modo tale che lo scenario non includa azioni che attivino lo scenario.
+* **Quando uno scenario sta causando la ricorsione, viene disattivato dal team di progettazione di Fusion per evitare ulteriori problemi di prestazioni.**
+* Poiché la ricorsione è il risultato della progettazione dello scenario, è necessario progettare gli scenari in modo tale che lo scenario non includa azioni che lo attivino.
 
 ## TLS
 
 * Per impostazione predefinita, Fusion supporta attualmente la versione 1.2 di TLS.
 * Fusion può utilizzare TLS 1.3 per le richieste HTTPS in uscita se TLS 1.3 è abilitato per il servizio di destinazione.
-* Fusion supporta sia TLS 1.2 che TLS 1.3 per le richieste HTTPS in ingresso ai webhook.
+* Fusion supporta sia TLS 1.2 che TLS 1.3 per le richieste HTTPS in entrata ai webhook.
 * Le organizzazioni possono richiedere che TLS versione 1.3 sia abilitato per la propria istanza di Fusion.
 
 >[!NOTE]
 >
-> Se ti connetti a Workfront, tieni presente che questa funzionalità TLS è abilitata in Workfront per le chiamate a domini con formato `https://<domain>.my.workfront.com`.
+> Se ti connetti a Workfront, tieni presente che questa funzionalità TLS è abilitata in Workfront per le chiamate a domini che hanno il formato `https://<domain>.my.workfront.com`.
