@@ -4,10 +4,10 @@ description: Molti servizi forniscono webhook per inviare notifiche istantanee o
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: 45efeecd1758e302f57498bab842594800a84c1d
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 7%
+source-wordcount: '1272'
+ht-degree: 10%
 
 ---
 
@@ -45,10 +45,10 @@ Per un video introduttivo ai webhook in Workfront Fusion, vedi:
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
    <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
@@ -76,6 +76,9 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 1. Per cercare un webhook specifico, immettere il termine di ricerca nella casella Cerca.
 1. Per copiare un webhook, fare clic sull&#39;icona Copia ![icona Copia webhook](assets/copy-webhook-icon.png) accanto all&#39;URL nella riga del webhook.
+1. Per impostare la priorità per un webhook, fai clic sul menu a discesa nella colonna Priorità e seleziona la nuova priorità.
+
+   I webhook con priorità più elevata verranno gestiti per primi, il che può essere utile se un pool di lavoratori dispone di molte automazioni in concorrenza per le risorse.
 1. Per disabilitare o abilitare un webhook, disabilitare o abilitare l&#39;interruttore nella colonna Stato nella riga di tale webhook.
 1. Per verificare se una coda dei webhook è piena, selezionare la colonna Coda completa. Il numero in questa colonna è il numero di elementi attualmente in coda.
 1. Per visualizzare le operazioni gestite da un webhook, fare clic su **Operazioni** nella colonna Coda completa del webhook.
@@ -136,7 +139,7 @@ Un webhook che non è stato assegnato ad alcuno scenario per più di 120 ore vie
 
 ### Payload del webhook
 
-Workfront Fusion memorizza i payload del webhook per 30 giorni. Se si accede a un payload del webhook più di 30 giorni dopo la sua creazione, si verifica l&#39;errore [!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion archivia i payload dei webhook per 30 giorni. Se si accede a un payload del webhook più di 30 giorni dopo la sua creazione, si verifica l&#39;errore [!UICONTROL `Failed to read file from storage.`]
 
 ### Gestione degli errori
 
@@ -155,10 +158,10 @@ Per ulteriori informazioni, vedere [Risposta ai webhook](/help/workfront-fusion/
 
 ### Disattivazione webhook
 
-I webhook vengono disattivati automaticamente se si applica una delle seguenti condizioni:
+I webhook vengono disattivati automaticamente se è una delle seguenti condizioni è vera:
 
 * Il webhook non è stato connesso ad alcuno scenario per più di 5 giorni.
-* Il webhook viene utilizzato solo in scenari inattivi, che sono stati inattivi per più di 30 giorni.
+* Il webhook viene utilizzato solo in scenari che rimangono inattivi per più di 30 giorni.
 
 I webhook disattivati vengono eliminati e annullati automaticamente se non sono connessi ad alcun scenario e se sono in stato disattivato da oltre 30 giorni.
 

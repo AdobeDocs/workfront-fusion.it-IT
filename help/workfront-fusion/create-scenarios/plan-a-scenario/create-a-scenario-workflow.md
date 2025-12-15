@@ -1,17 +1,17 @@
 ---
-title: Flusso di lavoro per la creazione di uno scenario
+title: Flusso di lavoro per creare uno scenario
 description: Segui questo flusso di lavoro generale per creare uno scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '816'
+ht-degree: 3%
 
 ---
 
-# Flusso di lavoro per la creazione di uno scenario
+# Flusso di lavoro per creare uno scenario
 
 Gli scenari sono progettati per soddisfare le esigenze della tua organizzazione, con applicazioni e moduli che soddisfano i tuoi casi d’uso. Tuttavia, la creazione di uno scenario segue lo stesso flusso di lavoro di base indipendentemente dal caso d’uso. Questo articolo descrive il processo di base per la creazione di uno scenario.
 
@@ -23,7 +23,7 @@ Gli scenari sono progettati per soddisfare le esigenze della tua organizzazione,
 * [Mappare i dati tra i moduli](#map-data-between-modules)
 * [Configurare l’indirizzamento](#configure-routing)
 * [Configurare la gestione degli errori](#configure-error-handling)
-* [Configurare le impostazioni dello scenario](#onfigure-scenario-settings)
+* [Configurare le impostazioni di uno scenario](#onfigure-scenario-settings)
 * [Test e revisione](#test-and-revise)
 * [Attiva lo scenario](#activate-the-scenario)
 * [Scelte rapide da tastiera per lo scenario Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
@@ -91,7 +91,7 @@ La gestione degli errori consente il recupero dello scenario dagli errori. È po
 
 Per istruzioni, vedere [Gestione degli errori](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
 
-## Configurare le impostazioni dello scenario
+## Configurare le impostazioni di uno scenario
 
 Puoi configurare le impostazioni per lo scenario nel suo complesso, ad esempio pianificare uno scenario, creare note o determinare come vengono memorizzati i dati.
 
@@ -166,6 +166,11 @@ Durante la creazione o la modifica di uno scenario è possibile utilizzare le se
    <td role="rowheader">[!UICONTROL Incolla]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Cerca moduli]</td> 
+   <td>CTRL+K</td> 
+   <td>Cmd+K</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Incolla cURL nello scenario per creare il modulo HTTP</td> 
