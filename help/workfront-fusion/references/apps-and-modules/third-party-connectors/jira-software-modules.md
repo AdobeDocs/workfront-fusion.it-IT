@@ -141,7 +141,7 @@ Per connettere [!DNL Jira Software] a Workfront Fusion, è necessario creare un 
 
 Per autorizzare una connessione tra Workfront Fusion e [!DNL Jira Server], sono necessari la chiave consumer, la chiave privata e l&#39;URL del servizio. Potrebbe essere necessario contattare l&#39;amministratore [!DNL Jira] per ottenere queste informazioni.
 
-* [Genera chiavi pubbliche e private per la connessione  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
+* [Genera chiavi pubbliche e private per la connessione  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configura l&#39;app client come consumer in [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Crea una connessione al server  [!DNL Jira] o al centro dati Jira in Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
@@ -310,7 +310,7 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto, aggiornat
       <ul> 
        <li>[!UICONTROL Comment] </li> 
        <li>[!UICONTROL Issue]</li> 
-       <li>Progetto [!UICONTROL] </li> 
+       <li>Progetto  </li> 
        <li>[!UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
@@ -376,7 +376,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto [!UICONTROL]</li> 
+     <li>Progetto </li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
@@ -447,7 +447,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto [!UICONTROL]</li> 
+     <li>Progetto </li> 
      <li>[!UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
@@ -503,7 +503,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto [!UICONTROL]</li> 
+     <li>Progetto </li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Utente]</li> 
     </ul> </td> 
@@ -543,7 +543,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
     <ul> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto [!UICONTROL]</li> 
+     <li>Progetto </li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Problema di transizione]</li> 
     </ul> </td> 
@@ -600,7 +600,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
     <ul> 
      <li>[!UICONTROL Comment]</li> 
      <li>[!UICONTROL Issue]</li> 
-     <li>Progetto [!UICONTROL]</li> 
+     <li>Progetto </li> 
      <li>[!UICONTROL Problema Sprint]</li> 
      <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
@@ -639,7 +639,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
     <ul> 
      <li>[!UICONTROL Problemi]</li> 
      <li> <p>[!UICONTROL Issues by JQL (Jira Query Language)] </p> <p>Per ulteriori informazioni su JQL, vedere <a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a> nella Guida di Atlassian. </p> </li> 
-     <li>Progetto [!UICONTROL]</li> 
+     <li>Progetto </li> 
      <li>[!UICONTROL Progetto per problema]</li> 
      <li>[!UICONTROL Utente]</li> 
     </ul> </td> 
