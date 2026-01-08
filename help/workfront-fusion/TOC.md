@@ -2,10 +2,10 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 99%
+source-wordcount: '1979'
+ht-degree: 98%
 
 ---
 
@@ -269,6 +269,7 @@ ht-degree: 99%
    * [Visualizzare, modificare ed eliminare i modelli](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [Pubblicare e condividere i modelli](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Modelli di Adobe Workfront Fusion attualmente disponibili](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
+   * [Utilizzare i modelli per collegare Adobe Workfront Fusion e Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Domande frequenti sui modelli di Adobe Workfront Fusion](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Riferimenti {#references}
    * [Riferimenti](/help/workfront-fusion/references/references-toc.md)
@@ -293,7 +294,7 @@ ht-degree: 99%
       * [Pannello di mappatura](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
       * Tipi di dati {#data-types}
          * [Tipi di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
-         * [Tipi di dati elemento &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
+         * [Tipi di dati elemento ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
          * [Coercizione del tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Strutture di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funzioni {#functions}
