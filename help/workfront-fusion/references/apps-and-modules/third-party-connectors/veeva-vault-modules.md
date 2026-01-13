@@ -3,10 +3,10 @@ title: Moduli Veeva Vault
 description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Veeva Vault e collegarlo a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
+source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 13%
+source-wordcount: '2539'
+ht-degree: 19%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 13%
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Veeva Vault e collegarlo a più applicazioni e servizi di terze parti.
 
-Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
@@ -28,17 +28,17 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
    <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza di Workfront Fusion</p>
-   <p>Basata sul connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -115,6 +115,26 @@ Quando crei una connessione, puoi scegliere se utilizzare una password o l’aut
        <td role="rowheader">Nome connessione</td> 
        <td> <p>Specifica un nome per la connessione.</p> </td> 
       </tr> 
+      <tr> 
+       <td role="rowheader">Provider server autorizzazioni</td> 
+       <td> <p>Selezionare il provider che si desidera utilizzare per l'autenticazione.</p> </td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">Ping host</td> 
+       <td> <p>Se si utilizza PingFederate, immettere l'host ping.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Limite</td>
+        <td>
+          <p>Immettere l'ambito della connessione.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">ID tenant</td>
+        <td>
+          <p>Se si utilizza Azure AD/Microsoft Entra ID per il provider del server autorizzazioni, immettere l'ID tenant per questa connessione.</p>
+        </td>
+      </tr>
       <tr>
         <td role="rowheader">ID client</td>
         <td>
@@ -128,18 +148,6 @@ Quando crei una connessione, puoi scegliere se utilizzare una password o l’aut
         </td>
       </tr>
       <tr>
-        <td role="rowheader">Limite</td>
-        <td>
-          <p>Immettere l'ambito della connessione.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">ID tenant</td>
-        <td>
-          <p>Immetti l’ID tenant per questa connessione.</p>
-        </td>
-      </tr>
-      <tr>
         <td role="rowheader">ID profilo</td>
         <td>
           <p>Immetti l’ID del profilo OAuth2/Copen ID Connect.</p>
@@ -149,6 +157,12 @@ Quando crei una connessione, puoi scegliere se utilizzare una password o l’aut
        <td role="rowheader">DNS Vault</td> 
        <td>Immetti il DNS Veeva Vault (nome di dominio).</p><p>Per individuare il DNS di Veeva Vault, esaminare l'URL utilizzato per accedere a Veeva Vault.</p>Nell'URL <code>https://my-dns.veevavault.com</code>, ad esempio, il DNS è <code>my-dns</code>. Non è necessario immettere l’intero URL.</td> 
       </tr> 
+      <tr>
+        <td role="rowheader">Tempo di scadenza della sessione in minuti</td>
+        <td>
+          <p>Immetti l’ora di scadenza della sessione, in minuti.</p>
+        </td>
+      </tr>
      </tbody> 
     </table>
 
@@ -161,7 +175,7 @@ Quando si configurano i moduli Veeva Vault, Workfront Fusion visualizza i campi 
 
 Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Pulsante di attivazione/disattivazione mappatura](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Documento](#document)
 * [Oggetto](#object)
@@ -392,7 +406,7 @@ Questo modulo elenca tutti i documenti del tipo selezionato.
   </tr> 
   <tr> 
    <td role="rowheader">Numero massimo di risultati restituiti</td> 
-   <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td> 
+   <td>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -589,7 +603,7 @@ Questo modulo recupera tutti gli oggetti Vault nel Vault autenticato.
   </tr> 
   <tr> 
    <td role="rowheader">Numero massimo di risultati restituiti</td> 
-   <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td> 
+   <td>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -667,19 +681,19 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vau
   </tr> 
   <tr> 
    <td role="rowheader">Metodo</td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTPS</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Intestazioni</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Stringa di query</td> 
-   <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">Stringa query</td> 
+   <td> <p>Aggiungi la query per la chiamata API come oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, inserisci le virgolette al di fuori dell’istruzione condizionale.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -728,11 +742,11 @@ Questo modulo restituisce i dati dagli audit trail.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data di inizio</p> </td> 
-   <td> <p>Immetti o mappa la data di inizio per i controlli di audit che desideri recuperare.</p><p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p> </td> 
+   <td> <p>Immetti o mappa la data di inizio per i controlli di audit che desideri recuperare.</p><p>Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data di fine</p> </td> 
-   <td> <p>Immetti o mappa la data di fine per i controlli di audit che desideri recuperare.</p><p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p> </td> 
+   <td> <p>Immetti o mappa la data di fine per i controlli di audit che desideri recuperare.</p><p>Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>URL risultato </p> </td> 
@@ -740,7 +754,7 @@ Questo modulo restituisce i dati dagli audit trail.
   </tr> 
   <tr> 
    <td role="rowheader">Numero massimo di risultati restituiti</td> 
-   <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td> 
+   <td>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</td> 
   </tr> 
  </tbody> 
 </table>
