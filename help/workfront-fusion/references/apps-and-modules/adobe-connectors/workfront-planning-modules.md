@@ -4,10 +4,10 @@ description: Con i moduli  [!DNL Adobe Workfront Planning] , puoi avviare uno sc
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 44%
+source-wordcount: '1993'
+ht-degree: 52%
 
 ---
 
@@ -71,54 +71,129 @@ Il connettore Adobe Workfront Planning utilizza quanto segue:
  </tbody> 
  </table>
 
-## Creare una connessione ad [!DNL Adobe Workfront Planning] {#create-a-connection-to-adobe-workfront-planning}
+## Connessione di Workfront Planning a Workfront Fusion
 
-Puoi creare una connessione al tuo account [!DNL Workfront Planning] direttamente da un modulo Workfront Fusion.
+Il connettore Workfront Planning utilizza OAuth 2.0 per connettersi a Workfront Planning.
 
-1. In qualsiasi modulo di [!DNL Adobe Workfront Planning], fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
+È possibile creare una connessione all&#39;account Workfront Planning direttamente da un modulo Workfront Planning Fusion.
 
+* [Connessione a Workfront Planning tramite ID client e segreto client](#connect-to-workfront-planning-using-client-id-and-client-secret)
+* [Connettersi a Workfront Planning utilizzando una connessione server-to-server](#connect-to-workfront--planning-using-a-server-to-server-connection)
+
+### Connessione a Workfront Planning tramite ID client e segreto client
+
+1. In qualsiasi modulo di Adobe Workfront Planning, fare clic su **Aggiungi** accanto al campo Connessione.
 1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
-      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
-      </col>
-      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
-      </col>
-      <tbody>
-        <tr>
-          <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td>
-          <td>
-            <p>Specifica un nome per questa connessione.</p>
-          </td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Ambiente]</td>
-          <td>Seleziona se ti connetti a un ambiente di produzione o non di produzione.</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Tipo]</td>
-          <td>Seleziona se ti interessa la connessione a un account di servizio o a un account personale.</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
-          <td>Inserisci il tuo [!UICONTROL Client ID] [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)<p>(Facoltativo)</p></td>
-          <td>Inserisci il tuo [!UICONTROL Client Secret] (Segreto client) [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL URL di autenticazione]</td>
-          <td>Immetti l’URL che verrà utilizzato dall’istanza di Workfront per autenticare questa connessione. <p>Il valore predefinito è <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Prefisso host]</td>
-          <td>Immetti il prefisso host.<p>Il valore predefinito è <code>origin-</code>.</p>
-        </tr>
-      </tbody>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type] (Tipo di connessione)</td>
+        <td>
+          <p>Seleziona <b>Connessione di autenticazione Adobe Workfront</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td>
+        <td>
+          <p>Inserisci un nome per la nuova connessione.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL ID client]</td>
+        <td>Inserisci il tuo ID client. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Apri l’applicazione specifica a cui ti stai connettendo per visualizzare l’ID client.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
+        <td>Inserisci il Segreto client di Workfront. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Se non disponi di un Segreto client per l’applicazione OAuth2 in Workfront, puoi generarne un altro. Per istruzioni, consulta la documentazione di Workfront.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL URL di autenticazione]</td>
+        <td>Questo può rimanere il valore predefinito, oppure puoi inserire l’URL dell’istanza Workfront, seguito da <code>/integrations/oauth2</code>. <p>Esempio: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Prefisso host]</td>
+        <td>Nella maggior parte dei casi, questo valore deve essere <code>origin</code>.
+      </tr>
+    </tbody>
     </table>
 
-1. Fai clic su **[!UICONTROL Continue]** (Continua) per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
+
+   Se non si è connessi a Workfront Planning, viene visualizzata una schermata di accesso. Dopo aver effettuato l’accesso, puoi autorizzare la connessione.
+
+>[!NOTE]
+>
+>* Le connessioni OAuth 2.0 all’API Workfront non sono più basate sulle chiavi API.
+>* Per creare una connessione a un ambiente sandbox di Workfront, è necessario creare un’applicazione OAuth2 in tale ambiente e quindi utilizzare l’ID client e il Segreto client generati da tale applicazione nella connessione.
+
+### Connettersi a Workfront Planning utilizzando una connessione server-to-server
+
+1. In qualsiasi modulo di Adobe Workfront Planning, fare clic su **Aggiungi** accanto al campo Connessione.
+1. Compila i seguenti campi:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type] (Tipo di connessione)</td>
+        <td>
+          <p>Seleziona <b>Connessione da server a server Adobe Workfront</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td>
+        <td>
+          <p>Inserisci un nome per la nuova connessione.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Nome istanza]</td>
+        <td>
+          <p>Inserisci i il nome dell’istanza, noto anche come dominio.</p><p>Esempio: se l’URL è <code>https://example.my.workfront.com</code>, inserisci <code>example</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Percorso dell’istanza]</td>
+        <td>
+          <p>Inserisci il tipo di ambiente della connessione.</p><p>Esempio: se l’URL è <code>https://example.my.workfront.com</code>, inserisci <code>my</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL ID client]</td>
+        <td>Inserisci il tuo ID client. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Apri l’applicazione specifica a cui ti stai connettendo per visualizzare l’ID client.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
+        <td>Inserisci il Segreto client di Workfront. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Se non disponi di un Segreto client per l’applicazione OAuth2 in Workfront, puoi generarne un altro. Per istruzioni, consulta la documentazione di Workfront.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Ambiti]</td>
+        <td>Inserisci gli ambiti applicabili per questa connessione.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Prefisso host]</td>
+        <td>Nella maggior parte dei casi, questo valore deve essere <code>origin</code>.
+      </tr>
+    </tbody>
+    </table>
+
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
+
+   Se non si è connessi a Workfront Planning, viene visualizzata una schermata di accesso. Dopo aver effettuato l’accesso, puoi autorizzare la connessione.
+
+>[!NOTE]
+>
+>* Le connessioni OAuth 2.0 all’API Workfront non sono più basate sulle chiavi API.
+>* Per creare una connessione a un ambiente sandbox di Workfront, è necessario creare un’applicazione OAuth2 in tale ambiente e quindi utilizzare l’ID client e il Segreto client generati da tale applicazione nella connessione.
+
 
 ## Moduli [!DNL Adobe Workfront Planning] e relativi campi
 
