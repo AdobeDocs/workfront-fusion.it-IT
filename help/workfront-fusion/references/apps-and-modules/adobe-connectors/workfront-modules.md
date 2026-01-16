@@ -4,7 +4,7 @@ description: Per automatizzare i processi all’interno di Workfront, puoi utili
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
 workflow-type: tm+mt
 source-wordcount: '7366'
 ht-degree: 99%
@@ -61,7 +61,9 @@ Per istruzioni su come creare uno scenario, consulta gli articoli in [Creare sce
 
 Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Connettere Workfront a Workfront Fusion 
++++
+
+## Connessione di Workfront a Workfront Fusion
 
 Il connettore Workfront utilizza OAuth 2.0 per connettersi a Workfront.
 
