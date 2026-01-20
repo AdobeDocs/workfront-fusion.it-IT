@@ -216,7 +216,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 
 Questo modulo trigger esegue uno scenario in tempo reale quando in Workfront vengono aggiunti, aggiornati o eliminati oggetti di un tipo specifico.
 
-Il modulo visualizza tutte le sottoscrizioni di eventi relative al webhook. Sono incluse le sottoscrizioni di eventi create tramite Fusion e le sottoscrizioni di eventi create direttamente tramite l’API. Questa vista di abbonamento all’evento non è disponibile nella versione legacy del modulo Osserva eventi.
+Il modulo visualizza tutte le sottoscrizioni a eventi correlate al webhook. Sono incluse le sottoscrizioni a eventi create tramite Fusion e quelle create direttamente tramite l’API. Questa vista di sottoscrizione a eventi non è disponibile nella versione legacy del modulo Osserva eventi.
 
 Il modulo restituisce tutti i campi standard associati al record, insieme a tutti i campi e i valori personalizzati a cui accede la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
