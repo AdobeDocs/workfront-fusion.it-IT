@@ -7,9 +7,9 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
 source-git-commit: b5c41aea9f259e309a769a66eaa627b0e1f136db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '480'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Fusion offre connettori per diversi prodotti e servizi Adobe.
 * [Moduli Adobe PDF Services](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Moduli Adobe Photoshop](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
 * [Moduli Adobe Storage](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
-* [Moduli di Adobe Substance](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
+* [Moduli Adobe Substance](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
 * [Moduli Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
 * [Moduli Adobe User Management](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Moduli Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)

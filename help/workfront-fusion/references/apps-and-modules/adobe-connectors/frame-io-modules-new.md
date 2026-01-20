@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4539'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -317,7 +317,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 
 #### [!UICONTROL Crea una risorsa] <!--different for v4-->
 
-Questo modulo crea una nuova risorsa. Puoi caricare un file locale o fornire l’URL da cui creare la risorsa in un file remoto.
+Questo modulo di azione crea una nuova risorsa. Puoi caricare un file locale o fornire l’URL da cui creare la risorsa in un file remoto.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -349,19 +349,19 @@ Questo modulo crea una nuova risorsa. Puoi caricare un file locale o fornire l�
   </tr> -->
     <tr> 
     <td role="rowheader">Tipo di caricamento </td> 
-    <td> <p>Seleziona se creare una risorsa da un file locale o da una vita remota.</p> </td> 
+    <td> <p>Seleziona se creare una risorsa da un file locale o da un file remoto.</p> </td> 
    </tr>
     <tr> 
     <td role="rowheader">Dimensione file </td> 
-    <td> <p>Se si sta caricando un file locale, immettere o mappare la dimensione del file in byte.</p> </td> 
+    <td> <p>Se stai caricando un file locale, inserisci o mappa la dimensione del file in byte.</p> </td> 
    </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL URL di origine] </td> 
-   <td> <p>Se crei la risorsa da un file remoto, immetti l’URL del file da caricare.</p> </td> 
+   <td> <p>Se stai creando la risorsa da un file remoto, inserisci l’URL del file da caricare.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File di origine]</td> 
-   <td> <p>Selezionate un file di origine da un modulo precedente o mappate il nome del file di origine.</p> </td> 
+   <td> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome del file di origine.</p> </td> 
   </tr> 
 <!--  <tr> 
    <td role="rowheader">[!UICONTROL Media type] </td> 
@@ -1027,14 +1027,14 @@ Questo modulo elenca tutte le aree di lavoro di un account.
 
 ### Metadati
 
-* [Creare un campo a livello di account](#create-an-account-level-field)
-* [Eliminare un campo a livello di account](#delete-an-account-level-field)
+* [Crea un campo a livello di account](#create-an-account-level-field)
+* [Elimina un campo a livello di account](#delete-an-account-level-field)
 * [Ottieni metadati](#get-metadata)
-* [Elencare i campi a livello di account](#list-account-level-fields)
-* [Aggiornare la definizione di un campo a livello di conto](#update-an-account-level-field-definition)
-* [Aggiornare i metadati in più file](#update-metadata-across-multiple-files)
+* [Elenca campi a livello di account](#list-account-level-fields)
+* [Aggiorna la definizione di un campo a livello di account](#update-an-account-level-field-definition)
+* [Aggiorna i metadati in più file](#update-metadata-across-multiple-files)
 
-#### Creare un campo a livello di account
+#### Crea un campo a livello di account
 
 Questo modulo di azione crea e configura un nuovo campo di metadati a livello di account.
 
@@ -1048,7 +1048,7 @@ Questo modulo di azione crea e configura un nuovo campo di metadati a livello di
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID account] </td> 
-   <td> <p>Seleziona o mappa l’account in cui desideri creare i metadati.</p> </td> 
+   <td> <p>Seleziona oppure mappa l’account in cui creare i metadati.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Tipo di campo </td> 
@@ -1057,12 +1057,12 @@ Questo modulo di azione crea e configura un nuovo campo di metadati a livello di
   </tr> 
    <tr> 
    <td role="rowheader">Nome </td> 
-   <td> <p>Immettere o mappare un nome per il nuovo campo.</p> </td> 
+   <td> <p>Inserisci oppure mappa un nome per il nuovo campo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Eliminare un campo a livello di account
+#### Elimina un campo a livello di account
 
 Questo modulo di azione elimina un singolo campo di metadati a livello di account.
 
@@ -1076,18 +1076,18 @@ Questo modulo di azione elimina un singolo campo di metadati a livello di accoun
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID account] </td> 
-   <td> <p>Seleziona o esegui il mapping dell’account contenente il campo di metadati da eliminare.</p> </td> 
+   <td> <p>Seleziona oppure mappa l’account contenente il campo di metadati da eliminare.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">ID definizione campo </td> 
-   <td> <p>Immetti o mappa l’ID del campo da eliminare. Puoi trovare gli ID campo con il modulo Elenca campi a livello di account.</p> </td> 
+   <td> <p>Inserisci oppure mappa l’ID del campo da eliminare. Per trovare gli ID dei campi, puoi usare il modulo Elenca campi a livello di account.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Ottieni metadati
 
-Questo modulo recupera i metadati di un file in Frame.io.
+Questo modulo di azione recupera i metadati di un file in Frame.io.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1099,20 +1099,20 @@ Questo modulo recupera i metadati di un file in Frame.io.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID account] </td> 
-   <td> <p>Selezionare o mappare l'account contenente il file per il quale si desidera recuperare i metadati.</p> </td> 
+   <td> <p>Seleziona oppure mappa l’account contenente il file per il quale vuoi recuperare i metadati.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">ID file </td> 
-   <td> <p>Immetti o mappa l’ID del file per il quale desideri recuperare i metadati.</p> </td> 
+   <td> <p>Inserisci oppure mappa l’ID del file per il quale vuoi recuperare i metadati.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">Mostra nulle </td> 
-   <td> <p>Abilita questa opzione per includere nell’output campi con valore null.</p> </td> 
+   <td role="rowheader">Mostra nullo </td> 
+   <td> <p>Abilita questa opzione per includere nell’output anche i campi con valore nullo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Elencare i campi a livello di account
+#### Elenca campi a livello di account
 
 Questo modulo recupera un elenco di campi di metadati a livello di account per l’account specificato.
 
@@ -1126,16 +1126,16 @@ Questo modulo recupera un elenco di campi di metadati a livello di account per l
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID account] </td> 
-   <td> <p>Seleziona o esegui il mapping dell’account da cui desideri elencare i campi.</p> </td> 
+   <td> <p>Seleziona oppure mappa l’account da cui elencare i campi.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Numero massimo di contratti restituiti]</td> 
-   <td> <p>Immettere o mappare il numero massimo di campi che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di accordi restituiti]</td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di campi che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Aggiornare la definizione di un campo a livello di conto
+#### Aggiorna la definizione di un campo a livello di account
 
 Questo modulo aggiorna la definizione di un singolo campo di metadati esistente.
 
@@ -1149,27 +1149,27 @@ Questo modulo aggiorna la definizione di un singolo campo di metadati esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID account] </td> 
-   <td> <p>Seleziona o mappa l’account in cui desideri creare i metadati.</p> </td> 
+   <td> <p>Seleziona oppure mappa l’account in cui creare i metadati.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">ID definizione campo </td> 
-   <td> <p>Immetti o mappa l’ID del campo da aggiornare. Puoi trovare gli ID campo con il modulo Elenca campi a livello di account.</p> </td> 
+   <td> <p>Inserisci oppure mappa l’ID del campo da aggiornare. Per trovare gli ID dei campi, puoi usare il modulo Elenca campi a livello di account.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Tipo di campo </td> 
-   <td> <p>Se si desidera modificare il tipo di campo del campo, selezionare il tipo di campo di metadati che si desidera creare, quindi configurare le opzioni per tale campo.</p> </td> 
+   <td> <p>Se desideri cambiare il tipo di campo, seleziona il tipo di campo di metadati da creare, quindi configura le opzioni per tale campo.</p> </td> 
   </tr> 
   </tr> 
    <tr> 
    <td role="rowheader">Nome </td> 
-   <td> <p>Immettere o mappare un nuovo nome per il campo.</p> </td> 
+   <td> <p>Inserisci oppure mappa un nuovo nome per il campo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Aggiornare i metadati in più file
+#### Aggiorna i metadati in più file
 
-Questo modulo aggiorna i campi di metadati su uno o più file con i valori specificati.
+Questo modulo aggiorna i campi di metadati in uno o più file con i valori specificati.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1181,7 +1181,7 @@ Questo modulo aggiorna i campi di metadati su uno o più file con i valori speci
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID account] </td> 
-   <td> <p>Seleziona o mappa l’account contenente i file per i quali desideri aggiornare i metadati.</p> </td> 
+   <td> <p>Seleziona oppure mappa l’account contenente i file per i quali vuoi aggiornare i metadati.</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL ID area di lavoro] </td> 
@@ -1193,11 +1193,11 @@ Questo modulo aggiorna i campi di metadati su uno o più file con i valori speci
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID file] </td> 
-   <td> <p>Per ogni file per il quale si desidera aggiornare i metadati, fare clic su <b>Aggiungi elemento</b> e immettere o mappare l'ID del file.</p> </td> 
+   <td> <p>Per ogni file per cui desideri aggiornare i metadati, fai clic su <b>Aggiungi elemento</b> e inserisci o mappa l’ID file.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values] </td> 
-   <td> <p>Per ogni campo per cui si desidera aggiornare i metadati, fare clic su <b>Aggiungi elemento</b> e immettere o mappare l'ID della definizione del campo e il valore che si desidera inserire in tale campo. Tutti i file specificati nel campo ID file vengono aggiornati con questo valore di campo.</p> </td> 
+   <td role="rowheader">[!UICONTROL Valori] </td> 
+   <td> <p>Per ogni campo per cui desideri aggiornare i metadati, fai clic su <b>Aggiungi elemento</b> e immetti o mappa l’ID definizione campo e il valore da inserire in tale campo. Tutti i file specificati nel campo ID file vengono aggiornati con questo valore di campo.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1205,7 +1205,7 @@ Questo modulo aggiorna i campi di metadati su uno o più file con i valori speci
 ### Altro
 
 * [Effettua chiamata API personalizzata](#make-a-custom-api-call)
-* [Guarda gli eventi](#watch-events)
+* [Osserva eventi](#watch-events)
 * [Controlla valore metadati aggiornato](#watch-metadata-value-updated)
 
 
@@ -1247,9 +1247,9 @@ Questo modulo ti consente di effettuare una chiamata API personalizzata.
  </tbody> 
 </table>
 
-#### Guarda gli eventi
+#### Osserva eventi
 
-Questo modulo di attivazione immediata avvia uno scenario quando l&#39;evento selezionato si verifica in Frame.io.
+Questo modulo di trigger istantaneo avvia uno scenario quando l’evento selezionato si verifica in Frame.io.
 
 Puoi utilizzare un webhook esistente o crearne uno nuovo.
 
@@ -1272,21 +1272,21 @@ Per creare un nuovo webhook:
      </tr> 
      <tr> 
      <td role="rowheader">[!UICONTROL ID account] </td> 
-      <td> <p>Seleziona o mappa l’account contenente l’area di lavoro in cui desideri guardare gli eventi.</p> </td> 
+      <td> <p>Seleziona oppure mappa l’account contenente l’area di lavoro da cui osservare gli eventi.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL ID area di lavoro]</td> 
-      <td> <p>Immetti l’ID dell’area di lavoro in cui desideri guardare gli eventi.</p> </td> 
+      <td> <p>Inserisci l’ID dell’area di lavoro in cui osservare gli eventi.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Eventi]</td> 
-      <td> <p>Seleziona gli eventi che desideri attivare questo modulo</p> </td> 
+      <td> <p>Seleziona gli eventi da attivare in questo modulo</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
 1. Fai clic su **Salva** per salvare il webhook e tornare al modulo.
-1. Fare clic su **OK** nel modulo Osserva eventi per salvare la configurazione.
+1. Fai clic su **OK** nel modulo Osserva eventi per salvare la configurazione.
 
 
 #### Controlla valore metadati aggiornato
