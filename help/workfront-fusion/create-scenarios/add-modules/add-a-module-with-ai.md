@@ -1,17 +1,17 @@
 ---
-title: Generare un segmento di scenario utilizzando IA
+title: Generare un segmento di scenario utilizzando l’IA
 description: Puoi utilizzare l’intelligenza artificiale per immettere un prompt di testo che descriva ciò che occorre fare per un segmento dello scenario. Fusion genera quindi uno o più moduli che eseguono tali azioni, che è possibile utilizzare nello scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: 2bec2607d55e4ba2ffd6ddcae6daa51071b204c4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 1%
+ht-degree: 19%
 
 ---
 
-# Generare un segmento di scenario utilizzando IA
+# Generare un segmento di scenario utilizzando l’IA
 
 <!--DO NOT DELETE - linked through CSH-->
 
@@ -27,7 +27,7 @@ Come per tutto ciò che viene generato dall’intelligenza artificiale, ti consi
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -35,31 +35,33 @@ Come per tutto ciò che viene generato dall’intelligenza artificiale, ti consi
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Prerequisiti
++++
+
+## Prerequisiti
 
 Per utilizzare questa funzionalità, la tua organizzazione deve soddisfare i seguenti prerequisiti:
 
 * L&#39;organizzazione deve aver partecipato al programma Workfront AI Assistant Beta.
 * Adobe deve disporre di un contratto Adobe Gen AI firmato per la tua organizzazione.
 
-  Per ulteriori informazioni sulla firma del contratto, consulta [Firmare il contratto di Adobe Gen AI](https://experienceleague.adobe.com/it/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) nell&#39;articolo Panoramica dell&#39;Assistente IA nella documentazione di Workfront.
+  Per ulteriori informazioni sulla firma del contratto, consulta [Firmare il contratto di Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) nell&#39;articolo Panoramica dell&#39;Assistente IA nella documentazione di Workfront.
 
 ## Applicazioni del modulo di IA attualmente supportate
 
@@ -70,7 +72,7 @@ Fusion AI può attualmente generare moduli che si connettono alle seguenti appli
 * Grafico Microsoft
 * Adobe Workfront Planning
 * Adobe Analytics
-* Servizi Adobe PDF
+* Adobe PDF Services
 * Adobe Marketo
 * Adobe Frame.io
 * Dropbox
