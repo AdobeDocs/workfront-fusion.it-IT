@@ -59,4 +59,4 @@ La ricerca della documentazione può essere più efficiente con alcuni approcci 
 
 ### Trovare risposte nei forum della community
 
-* **Poni domande**: se non trovi risposte alle domande nella documentazione, prova a pubblicarle nei [forum della community Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2) dove altri utenti ed esperti potranno offrirti assistenza.
+* **Poni domande**: se non trovi risposte alle domande nella documentazione, prova a pubblicarle nei [forum della community Workfront Fusion](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=it) dove altri utenti ed esperti potranno offrirti assistenza.
