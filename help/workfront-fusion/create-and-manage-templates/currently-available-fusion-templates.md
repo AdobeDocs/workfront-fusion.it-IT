@@ -33,7 +33,7 @@ Se il team ha difficoltà a mantenere lo slancio perché le tempistiche dei prog
 
 Questo modello Fusion automatizza tale processo. Quando un’attività viene completata in anticipo, tutte le attività dipendenti (successori) vengono automaticamente ripianificate per iniziare prima, consentendo al team di spostarsi più rapidamente e rimanere agile.
 
-### [!BADGE Nuovo! ]{type=Informative} HTTP>CSV>WF - Crea un elenco di sottoeventi per dominio e livello ed esportali in CSV
+### [!BADGE Nuovo! &#x200B;]{type=Informative} HTTP>CSV>WF - Crea un elenco di sottoeventi per dominio e livello ed esportali in CSV
 
 Scarica le informazioni di abbonamento all’evento, crea un file CSV e carica il file in Workfront.
 
