@@ -1,18 +1,18 @@
 ---
-title: Visualizzare il dashboard delle prestazioni per un'organizzazione
+title: Visualizzare la dashboard delle prestazioni per un’organizzazione
 description: Gli amministratori di Fusion possono visualizzare un dashboard che mostra le metriche di esecuzione per un’organizzazione.
 author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 6%
+source-wordcount: '548'
+ht-degree: 9%
 
 ---
 
-# Visualizzare il dashboard delle prestazioni per un&#39;organizzazione
+# Visualizzare la dashboard delle prestazioni per un’organizzazione
 
 Il dashboard delle prestazioni di Fusion consente di vedere rapidamente quali scenari sono più in esecuzione, dove si verificano ritardi e con quale efficacia funzionano i pool di lavoro. Questo fornisce visibilità in tempo reale sui volumi di esecuzione, sulla profondità della coda, sull’utilizzo del pool e sulle prestazioni a livello di scenario.
 
@@ -29,7 +29,7 @@ Il dashboard delle prestazioni di Fusion consente di vedere rapidamente quali sc
    <td> <p>Flusso di lavoro di Adobe Workfront Ultimate e Adobe Workfront Automazione e integrazione Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
    <td> <p>Standard</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -50,6 +50,10 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 >[!NOTE]
 >
 >Le metriche vengono visualizzate per pool di lavoro. Per visualizzare un pool di lavoro diverso, fare clic sul campo Pool nell&#39;angolo superiore sinistro del dashboard, quindi selezionare il pool per il quale si desidera visualizzare le metriche.
+
+>[!NOTE]
+>
+>Le organizzazioni possono richiedere il provisioning per un pool di lavoro aggiuntivo (per un totale di 2).
 
 Nel dashboard delle prestazioni di Fusion sono disponibili le metriche seguenti.
 
