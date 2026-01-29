@@ -3,10 +3,10 @@ title: Panoramica delle API
 description: Le interfacce API (Application Programming Interface) consentono le comunicazioni tra le applicazioni e i servizi. Fusion utilizza le API per comunicare con l’applicazione a cui ti connetti. Ciascuna applicazione dispone di un’API separata.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 95cdc14b313a3f76d6feebabb59f72b4277ae9e4
+source-git-commit: 74308a6a43418296b29739f03683f23357d545bc
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 91%
+source-wordcount: '490'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +20,8 @@ Le API vengono create e controllate dai proprietari dell’applicazione. Ad esem
 
 >[!NOTE]
 >
->Workfront Fusion dispone di una propria API che è possibile utilizzare per automatizzare azioni in Fusion, ad esempio la gestione di connessioni, hook, scenari, esecuzioni, registri e altre risorse di automazione di base.
+>Workfront Fusion dispone di una propria API che è possibile utilizzare per automatizzare le azioni in Fusion.
+>Le API vengono rilasciate in modo incrementale e sono attualmente contrassegnate come sperimentali. Il team di Fusion sta sviluppando ed espandendo attivamente le API, e verranno pubblicati aggiornamenti non appena saranno disponibili nuove funzionalità.
 >Per la documentazione sull&#39;API di Workfront Fusion, vedere [API di Workfront Fusion](https://developer.adobe.com/workfront-fusion-apis/).
 
 ## Considerazioni
