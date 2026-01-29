@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
+source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '534'
 ht-degree: 9%
 
 ---
@@ -51,9 +51,13 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 >
 >Le metriche vengono visualizzate per pool di lavoro. Per visualizzare un pool di lavoro diverso, fare clic sul campo Pool nell&#39;angolo superiore sinistro del dashboard, quindi selezionare il pool per il quale si desidera visualizzare le metriche.
 
+<!--
+
 >[!NOTE]
 >
->Le organizzazioni possono richiedere il provisioning per un pool di lavoro aggiuntivo (per un totale di 2).
+>Organizations can request provisioning for one additional worker pool (for a total of 2).
+
+-->
 
 Nel dashboard delle prestazioni di Fusion sono disponibili le metriche seguenti.
 
