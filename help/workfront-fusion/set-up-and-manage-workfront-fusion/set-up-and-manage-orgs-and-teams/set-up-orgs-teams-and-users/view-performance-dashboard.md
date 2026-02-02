@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 9%
+source-wordcount: '686'
+ht-degree: 7%
 
 ---
 
@@ -61,14 +61,22 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 Nel dashboard delle prestazioni di Fusion sono disponibili le metriche seguenti.
 
-* Esecuzioni in attesa di elaborazione
-Questo grafico mostra il numero di esecuzioni in attesa di essere elaborate in un determinato momento.
-* Utilizzo pool
+* **Esecuzioni in attesa di elaborazione**
+Questo grafico mostra il numero di esecuzioni in attesa di elaborazione (note anche come backlog di esecuzione) in un determinato momento.
+
+  Un numero elevato di esecuzioni in attesa di elaborazione può influire sulle prestazioni dell’istanza di Fusion. Riceverai una notifica se il backlog di esecuzione raggiunge le 5000 esecuzioni. È consigliabile identificare gli scenari responsabili e modificarli o disattivarli. Se il backlog di esecuzione elevato persiste, il team Fusion proteggerà le prestazioni dell’istanza Fusion disabilitando gli scenari responsabili.
+* **Utilizzo pool**
 Questo grafico mostra l&#39;utilizzo del pool di lavoratori nel tempo. Se in questo grafico viene visualizzato di routine l&#39;utilizzo del pool di lavoratori, è possibile assegnare alcuni scenari a un altro pool.
-* Esecuzioni per scenario
+
+  Se un pool si avvicina al 100% dell&#39;utilizzo, altre risorse che utilizzano lo stesso pool potrebbero subire ritardi o interruzioni. In questo caso, è consigliabile riassegnare uno scenario di utilizzo elevato a un altro pool di lavoro o modificare gli scenari esistenti in modo che richiedano meno risorse.
+* **Esecuzioni per scenario**
 Questo grafico mostra le esecuzioni per scenario. Colori diversi rappresentano scenari diversi. Quando passi il cursore del mouse sul grafico, viene visualizzata una finestra che mostra quale colore rappresenta lo scenario.
-* Durata delle esecuzioni
+
+  È possibile utilizzare questo grafico per identificare gli scenari che potrebbero causare un backlog di esecuzione o un utilizzo elevato del pool di lavoro.
+* **Durata delle esecuzioni**
 Questo grafico mostra le esecuzioni per scenario. Colori diversi rappresentano scenari diversi. Quando passi il cursore del mouse sul grafico, viene visualizzata una finestra che mostra quale colore rappresenta lo scenario.
+
+  Puoi utilizzare questo grafico per identificare scenari che richiedono più tempo del solito, inclusi quelli interessati da problemi con un’app o un servizio connesso.
 
 ## Visualizzare il dashboard delle prestazioni di Fusion
 
