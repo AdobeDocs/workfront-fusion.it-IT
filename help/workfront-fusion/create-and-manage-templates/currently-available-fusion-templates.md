@@ -4,9 +4,9 @@ description: In Adobe Workfront Fusion sono attualmente disponibili i seguenti m
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
+source-git-commit: 08c0e6d779cea5ebb2b6ebbdb1dfd7fd659b18b0
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '2278'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,11 @@ Se il team ha difficoltà a mantenere lo slancio perché le tempistiche dei prog
 
 Questo modello Fusion automatizza tale processo. Quando un’attività viene completata in anticipo, tutte le attività dipendenti (successori) vengono automaticamente ripianificate per iniziare prima, consentendo al team di spostarsi più rapidamente e rimanere agile.
 
-### [!BADGE Nuovo! &#x200B;]{type=Informative} HTTP>CSV>WF - Crea un elenco di sottoeventi per dominio e livello ed esportali in CSV
+### HTTP>CSV>WF - Crea un elenco di sottoeventi per dominio e livello ed esportali in CSV
 
 Scarica le informazioni di abbonamento all’evento, crea un file CSV e carica il file in Workfront.
 
-<!--New August 8, 2025-->
-
 ### Bacheche Workfront - Elimina schede archiviate dalla colonna designata (on demand)
-
-<!--New March 12, 2025-->
 
 Elimina le schede archiviate da una colonna designata su una bacheca designata su richiesta.
 
@@ -113,6 +109,52 @@ Questo modello acquisisce una previsione del progetto su base settimanale ogni l
 
 Una volta al mese, rivedi i modelli di progetto utilizzando il tuo criterio con questo modello facile da gestire che notifica agli utenti appropriati i modelli che violano il criterio.
 
+### Workfront: copia le modifiche al modulo personalizzato dal problema/richiesta di origine alla risoluzione del progetto o dell’attività
+
+Utilizza questo modello per copiare le modifiche ai moduli personalizzati da problemi/richieste ai relativi progetti e/o attività di risoluzione.
+
+### Workfront - Aggiorna in batch i dati dei campi personalizzati per progetto, attività o problema
+
+Questo modello utilizza un file CSV che prepari e fornisci in Workfront per aggiornare i dati di progetto, attività o problema dei campi personalizzati. Per considerazioni e limitazioni, consulta le note nei moduli 1 e 2.
+
+### Workfront - Cambia lo stato del progetto da Pianificazione a Corrente se un task è pari al 100% completato
+
+Questa automazione aggiorna lo stato del progetto da Pianificazione a Corrente se un task è completato al 100%. Inizia con una ricerca e consigliata per l&#39;esecuzione una volta al giorno in modo che gli utenti possano comunque aggiornare i progetti in uno stato Planning, se necessario.
+
+### Workfront - Trova modelli di progetto non utilizzati in tempo per la policy e invia una notifica
+
+Una volta al mese, rivedi i modelli di progetto utilizzando il tuo criterio con questo modello facile da gestire che notifica agli utenti appropriati i modelli che violano il criterio.
+
+### Workfront - All’aggiunta di un nuovo documento - Ottieni un URL prefirmato restituito al proprietario del documento
+
+Recupera un URL pre-firmato per ogni nuovo documento come aggiornamento utente
+
+### Monitoraggio abbonamento a eventi Workfront (giornaliero) - Imposta variabili
+
+Questo modello di scenario si attiva ogni giorno per eseguire un controllo dello stato della sottoscrizione di eventi nel mio ambiente Workfront. Identificherà qualsiasi abbonamento a un evento disattivato nelle ultime 24 ore. Quando viene trovata una sottoscrizione di evento disattivato idonea, lo scenario genera un problema in una coda di richieste di Workfront che il cliente identifica durante l’installazione dello scenario. Possono inoltre identificare una regola di instradamento o una risorsa team/utente da assegnare al problema. Per generare la notifica, ci affidiamo a un’e-mail interna per Nuovo problema da inviare ai destinatari. Questo approccio dovrebbe tradursi in un singolo elemento di lavoro per ogni disattivazione.
+
+### Workfront - Serie numerazione sequenziale
+
+#### Workfront - Serie numerazione sequenziale: modulo personalizzato e campo per la creazione dell&#39;oggetto
+
+Questo modello consente di creare un modulo e un campo personalizzati da utilizzare per i modelli Serie numerazione sequenziale di Workfront.
+
+#### Workfront - Serie numerazione sequenziale: portfolio
+
+Questo modello numera i portfolio in modo sequenziale. Si presuppone che sia stato creato un modulo e un campo personalizzato utilizzando il modello Campo e modulo personalizzato Workfront - Serie numerazione sequenziale, ma che sia possibile utilizzare un modulo e un campo esistenti.
+
+#### Workfront - Serie numerazione sequenziale: programmi
+
+Questo modello numererà i programmi in sequenza. Si presuppone che sia stato creato un modulo e un campo personalizzato utilizzando il modello Campo e modulo personalizzato Workfront - Serie numerazione sequenziale, ma che sia possibile utilizzare un modulo e un campo esistenti.
+
+#### Workfront - Serie numerazione sequenziale: progetti
+
+Questo modello numera i progetti in sequenza. Si presuppone che sia stato creato un modulo e un campo personalizzato utilizzando il modello Campo e modulo personalizzato Workfront - Serie numerazione sequenziale, ma che sia possibile utilizzare un modulo e un campo esistenti.
+
+#### Workfront - Serie numerazione sequenziale: problemi
+
+Questo modello numererà i problemi in sequenza. Si presuppone che sia stato creato un modulo e un campo personalizzato utilizzando il modello Campo e modulo personalizzato Workfront - Serie numerazione sequenziale, ma che sia possibile utilizzare un modulo e un campo esistenti.
+
 ## Workfront - Modelli Workfront Proof
 
 Questi modelli automatizzano i flussi di lavoro che combinano Workfront con Workfront Proof.
@@ -130,6 +172,14 @@ Quando si prende una decisione su una bozza aggiunta direttamente a un progetto,
 ### Workfront Proof > Workfront - Aggiornamento e completamento attività (se approvato) sulla decisione della bozza
 
 Se le singole bozze sono associate a singole attività, questo scenario chiude l’attività associata quando viene presa una decisione di approvazione sulla bozza. Se approvato, completa l’attività e aggiorna il progetto.
+
+### Workfront > Workfront Proof - Nuova bozza - Notifica se l’approvatore della bozza ha un’indisponibilità durante la scadenza
+
+Questa automazione verifica la presenza di nuove versioni di documenti (all’interno di un portfolio specificato) con una bozza. Se un approvatore ha un&#39;indisponibilità personale nel suo profilo alla data di scadenza, invia una notifica al proprietario della bozza e al proprietario del progetto.
+
+### Workfront > Workfront Proof - Rimuovi (se possibile) l’approvatore della bozza specificato e aggiungi un nuovo approvatore
+
+Questa automazione consente di trovare le bozze di un approvatore e di aggiungere un nuovo approvatore. Se possibile, l&#39;approvatore originale viene rimosso dalla bozza. Ulteriori azioni si verificano se l&#39;approvatore originale è il creatore o il proprietario. Per ulteriori informazioni, consulta le note nel modulo 1.
 
 ## HTTP - Modelli Workfront
 
@@ -184,7 +234,7 @@ Questo modello consente di verificare se è stata apportata una modifica a una c
 
 Questi modelli supportano l’integrazione Workfront-Anaplan e prevedono una configurazione specifica sia in Anaplan che in Workfront. Per informazioni su questi modelli e sulle relative configurazioni richieste, consulta gli articoli relativi ai singoli modelli.
 
-Per ulteriori informazioni sull&#39;integrazione Workfront-Anaplan, vedere [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) nella documentazione di Workfront.
+Per ulteriori informazioni sull&#39;integrazione Workfront-Anaplan, vedere [Adobe Workfront con Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) nella documentazione di Workfront.
 
 >[!NOTE]
 >
@@ -192,19 +242,19 @@ Per ulteriori informazioni sull&#39;integrazione Workfront-Anaplan, vedere [Adob
 
 ### Flussi di lavoro di ottimizzazione della spesa
 
-* [Invia aggiornamenti progetto Adobe Workfront a una [!DNL Anaplan] voce elenco](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Invia le spese di Adobe Workfront a una [!DNL Anaplan] voce di elenco](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Inviare aggiornamenti delle ore effettive di Adobe Workfront a una [!DNL Anaplan] voce di elenco](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Invia aggiornamenti progetto Adobe Workfront a una [!DNL Anaplan] voce elenco](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Invia le spese di Adobe Workfront a una [!DNL Anaplan] voce di elenco](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Inviare aggiornamenti delle ore effettive di Adobe Workfront a una [!DNL Anaplan] voce di elenco](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Flussi di lavoro per collegare le richieste di budget
 
-* [Creazione di una voce di elenco [!DNL Anaplan] da una richiesta budget Adobe Workfront](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Applica un&#39;allocazione di budget [!DNL Anaplan] a un progetto Adobe Workfront](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Creazione di una voce di elenco [!DNL Anaplan] da una richiesta budget Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Applica un&#39;allocazione di budget [!DNL Anaplan] a un progetto Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Flussi di lavoro per collegare le richieste delle campagne
 
-* [Creazione di un elemento di elenco [!DNL Anaplan] da una richiesta di Adobe Workfront campaign](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Applica un&#39;allocazione di budget [!DNL Anaplan] a una richiesta di Adobe Workfront Campaign o a un progetto di campagna](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Creazione di un elemento di elenco [!DNL Anaplan] da una richiesta di Adobe Workfront campaign](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Applica un&#39;allocazione di budget [!DNL Anaplan] a una richiesta di Adobe Workfront Campaign o a un progetto di campagna](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 ## Workfront - Modelli Jira
 
