@@ -34,7 +34,7 @@ Alcune righe contengono informazioni etichettate come &quot;Nuovo&quot; e &quot;
    <td role="rowheader">Pacchetto Adobe Workfront 
    <td> I pacchetti Adobe Workfront si riferiscono al set di funzioni acquistate dalla tua organizzazione. La maggior parte delle funzionalità di Fusion è disponibile in tutti i piani, ma esistono alcune eccezioni che sono disponibili solo per le organizzazioni con un pacchetto Ultimate Workfront. 
    <ul><li>Per informazioni sul pacchetto Adobe Workfront utilizzato dalla tua organizzazione, compreso se l’organizzazione si trova nel modello di pacchetto nuovo o corrente, contatta l’amministratore Workfront.</li>
-   <li>Per istruzioni su come un amministratore di Workfront può individuare il pacchetto Workfront della tua organizzazione, consulta <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">Visualizzare il cluster e il piano Workfront della tua organizzazione</a> nella documentazione di Workfront.</li><li>Per ulteriori informazioni sui nuovi pacchetti Workfront, consulta <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront pricing and package</a>.</li></ul> </td> 
+   <li>Per istruzioni su come un amministratore di Workfront può individuare il pacchetto Workfront della tua organizzazione, consulta <a href="https://experienceleague.adobe.com/it/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">Visualizzare il cluster e il piano Workfront della tua organizzazione</a> nella documentazione di Workfront.</li><li>Per ulteriori informazioni sui nuovi pacchetti Workfront, consulta <a href="https://business.adobe.com/it/products/workfront/pricing.html">Adobe Workfront pricing and package</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licenza Adobe Workfront</td> 
@@ -43,9 +43,9 @@ Alcune righe contengono informazioni etichettate come &quot;Nuovo&quot; e &quot;
    <li>Per individuare la licenza assegnata, contattare l'amministratore di Workfront.</li>
    <li>Adobe Workfront sta passando a un nuovo modello di prezzi e packaging. Per informazioni sulle licenze, consulta:
    <ul>
-   <li>Nuovo: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Panoramica nuove licenze</a></li>
-   <li>Corrente: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Panoramica licenze</a></li></ul></li>
-   <li>Se disponi del livello di accesso corretto e non disponi ancora dell’accesso, chiedi all’amministratore di Workfront se ha impostato restrizioni aggiuntive nel livello di accesso. Per informazioni su come un amministratore di Workfront può modificare il tuo livello di accesso, consulta <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Creare o modificare livelli di accesso personalizzati</a>.
+   <li>Nuovo: <a href="https://experienceleague.adobe.com/it/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Panoramica nuove licenze</a></li>
+   <li>Corrente: <a href="https://experienceleague.adobe.com/it/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Panoramica licenze</a></li></ul></li>
+   <li>Se disponi del livello di accesso corretto e non disponi ancora dell’accesso, chiedi all’amministratore di Workfront se ha impostato restrizioni aggiuntive nel livello di accesso. Per informazioni su come un amministratore di Workfront può modificare il tuo livello di accesso, consulta <a href="https://experienceleague.adobe.com/it/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Creare o modificare livelli di accesso personalizzati</a>.
    </ul>
       </p> </td> 
   </tr> 
