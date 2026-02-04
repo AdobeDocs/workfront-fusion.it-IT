@@ -4,8 +4,8 @@ description: Quando apri Fusion vengono visualizzate molte opzioni per l’esecu
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
-workflow-type: ht
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Puoi accedere alle diverse aree di Adobe Workfront Fusion dal pannello di naviga
 Questo articolo presenta le aree e fornisce collegamenti a ulteriori informazioni su ciascuna area.
 
 | Area | Descrizione | Per ulteriori informazioni, consulta   |
-|---|---|---|
+| --- | --- | --- |
 | Panoramica dell’organizzazione <br> ![Icona dell’organizzazione](assets/org-icon.png) | Qui trovi informazioni sulla tua organizzazione Fusion. Puoi visualizzare il numero di operazioni eseguite dagli scenari in questa organizzazione e un elenco degli scenari attivi. Puoi anche visualizzare elenchi dei team, degli utenti e degli ambienti di questa organizzazione.<br>L’organizzazione attualmente selezionata è riportata sopra questa icona. | [Organizzazioni e team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Panoramica dei team  <br> ![Icona team](assets/team-icon.png) | Qui trovi informazioni sui team di Fusion, ad esempio quante operazioni sono state eseguite dagli scenari in un team e un elenco degli scenari attivi. Puoi anche visualizzare e gestire gli utenti di un team. Quando visualizzi un team, puoi selezionare un team diverso da un elenco a discesa nella parte superiore della pagina.<br>Il team attualmente selezionato viene visualizzato sopra questa icona.<br>Prima di visualizzare la panoramica dei team o una delle sezioni elencate in questo articolo, potresti dover creare un team. | [Organizzazioni e team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Scenari  <br> ![Icona scenari](assets/scenarios-icon.png) | In Fusion uno scenario è un flusso di lavoro automatizzato. Ad esempio uno scenario può controllare le richieste Workfront in arrivo e convertirle in progetti; un altro scenario può generare immagini, caricarle in un provider di documenti e aggiungere attività di approvazione a Workfront. La maggior parte del lavoro che svolgi in Fusion consiste nel configurare e gestire gli scenari. Nell’area Scenari puoi visualizzare e organizzare un elenco degli scenari del tuo team, selezionare singoli scenari da visualizzare o modificare, oppure iniziare a creare un nuovo scenario. | [Panoramica degli scenari](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
