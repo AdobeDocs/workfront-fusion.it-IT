@@ -1,17 +1,17 @@
 ---
-title: Utilizzo di Mutual TLS nei moduli HTTP in Adobe Workfront Fusion
+title: Utilizzare l’autenticazione Mutual TLS nei moduli HTTP in Adobe Workfront Fusion
 description: Puoi utilizzare Mutual TLS nei moduli HTTP di Adobe Workfront Fusion, consentendo a entrambi i lati della transazione di informazioni di verificare l’identità dell’altro.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+source-git-commit: b48b7ad0954208ae80e99501e9297a3adaede228
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 0%
+source-wordcount: '841'
+ht-degree: 16%
 
 ---
 
-# Utilizzo di Mutual TLS nei moduli HTTP in Adobe Workfront Fusion
+# Utilizzare l’autenticazione Mutual TLS nei moduli HTTP in Adobe Workfront Fusion
 
 ## Panoramica di Mutual TLS
 
@@ -31,7 +31,7 @@ Il TLS reciproco consente di confermare l’identità in entrambi i modi. Quando
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -39,31 +39,31 @@ Il TLS reciproco consente di confermare l’identità in entrambi i modi. Quando
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -83,6 +83,25 @@ Per istruzioni sul caricamento del certificato pubblico di Adobe Workfront Fusio
 
 >[!IMPORTANT]
 >
+>* Questi certificati pubblici di Workfront Fusion scadono il **2 marzo 2027** (Stati Uniti e UE) o il **8 marzo 2027** (Azure). Dopo la scadenza, dovrai caricare un nuovo certificato nel servizio web. Si consiglia di:
+>
+>   * Prendi nota della data di scadenza e imposta un promemoria per te stesso per caricare il certificato nel servizio web.
+>   * Aggiungi ai segnalibri questa pagina per trovare facilmente i nuovi certificati.
+>
+>* Si tratta di certificati mTLS non jolly.
+
+| Datacenter | Collegamento di download | Date valide |
+| --- | --- | --- |
+| Datacenter USA | [Scarica il certificato Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | Dal 29 gennaio 2026 al 2 marzo 2027 |
+| Datacenter UE | [Scarica Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | Dal 29 gennaio 2026 al 2 marzo 2027 |
+| Cluster Azure | [Scarica il certificato di Workfront Fusion Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | Dal 4 febbraio 2026 all’8 marzo 2027 |
+
+
+### Certificati per il 2025
+
+>[!IMPORTANT]
+>
+>* È consigliabile installare i certificati per il 2026, disponibili in precedenza.
 >* Questi certificati pubblici di Workfront Fusion scadono il **4 aprile 2026** (Stati Uniti e UE) o il **25 novembre 2025** (Azure). Dopo la scadenza, dovrai caricare un nuovo certificato nel servizio web. Si consiglia di:
 >
 >   * Prendi nota della data di scadenza e imposta un promemoria per te stesso per caricare il certificato nel servizio web.
@@ -91,7 +110,7 @@ Per istruzioni sul caricamento del certificato pubblico di Adobe Workfront Fusio
 >* Si tratta di certificati mTLS non jolly.
 
 | Datacenter | Collegamento di download | Date valide |
-|---|---|---|
+| --- | --- | --- |
 | Datacenter USA | [Scarica il certificato Workfront Fusion US 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | Dal 3 marzo 2025 al 4 aprile 2026 |
 | Datacenter UE | [Scarica Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | Dal 3 marzo 2025 al 4 aprile 2026 |
 | Cluster Azure | [Scarica il certificato di Workfront Fusion Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | dal 24 ottobre 2024 al 25 novembre 2025 |
