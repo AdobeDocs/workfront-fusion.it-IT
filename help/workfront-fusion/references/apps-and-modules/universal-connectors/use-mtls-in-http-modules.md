@@ -4,7 +4,7 @@ description: Puoi utilizzare Mutual TLS nei moduli HTTP di Adobe Workfront Fusio
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 6a4bf090e7804f0b2b9ca6eefbb7490d1c35b6ce
+source-git-commit: 47600e6e07ea07336557338cbb3037c3bffe9321
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 16%
@@ -96,7 +96,6 @@ Per istruzioni sul caricamento del certificato pubblico di Adobe Workfront Fusio
 | Cluster di Azure USA | [Scarica il certificato di Workfront Fusion US Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Dal 21 settembre 2025 al 23 ottobre 2026 |
 | Datacenter AWS UE | [Scarica Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | Dal 29 gennaio 2026 al 2 marzo 2027 |
 | Cluster Azure UE | [Scarica il certificato Workfront Fusion EU Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | Dal 4 febbraio 2026 all’8 marzo 2027 |
-
 
 ### Certificati per il 2025
 
