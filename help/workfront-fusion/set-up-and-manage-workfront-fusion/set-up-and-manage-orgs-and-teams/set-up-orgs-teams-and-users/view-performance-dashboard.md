@@ -3,9 +3,8 @@ title: Visualizzare la dashboard delle prestazioni per un’organizzazione
 description: Gli amministratori di Fusion possono visualizzare un dashboard che mostra le metriche di esecuzione per un’organizzazione.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
+exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
+source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 7%
@@ -93,6 +92,3 @@ Questo grafico mostra le esecuzioni per scenario. Colori diversi rappresentano s
 1. Per modificare l&#39;intervallo di tempo del dashboard, selezionare il campo Intervallo di tempo nell&#39;angolo superiore destro del dashboard, quindi selezionare un nuovo intervallo di tempo. L’intervallo di tempo disponibile più lungo è di 24 ore e il più breve è di 15 minuti.
 1. Per aggiornare i grafici, fare clic sull&#39;icona Aggiorna nell&#39;angolo superiore destro del dashboard.
 1. Per visualizzare un pool di lavoro diverso, fare clic sul campo Pool nell&#39;angolo superiore sinistro del dashboard, quindi selezionare il pool da visualizzare.
-
-
-
