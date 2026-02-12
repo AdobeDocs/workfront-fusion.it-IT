@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: b6822db8c177beade3e70616ef4282bc9ed02c08
+source-git-commit: 0c91cd108c7350a9e2d790ca71e6d4edbd4a461b
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2015'
 ht-degree: 99%
 
 ---
@@ -172,6 +172,7 @@ ht-degree: 99%
       * [Panoramica su licenze e operazioni](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [Operazioni](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+        [Pool di lavoro](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * Configurare e gestire organizzazioni e team {#set-up-and-manage-orgs-and-teams}
       * [Configurare e gestire organizzazioni e team: indice degli articoli](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * Configurare organizzazioni e team {#set-up-orgs-teams-and-users}
@@ -299,7 +300,7 @@ ht-degree: 99%
       * [Pannello di mappatura](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
       * Tipi di dati {#data-types}
          * [Tipi di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
-         * [Tipi di dati elemento &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
+         * [Tipi di dati elemento ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
          * [Coercizione del tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Strutture di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funzioni {#functions}
