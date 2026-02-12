@@ -4,10 +4,10 @@ description: Il glossario seguente spiega il significato di alcuni termini comun
 author: Becky
 feature: Workfront Fusion
 exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
-workflow-type: ht
+source-git-commit: c89536b6d3e6ca5f7e5048b8487a2d86bda3b213
+workflow-type: tm+mt
 source-wordcount: '924'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Il glossario seguente spiega il significato di alcuni termini comuni in Adobe Wo
   </tr> 
   <tr>
    <td role="rowheader"> <p>Connessione</p> </td> 
-   <td> <p>Una connessione è un insieme di credenziali per il collegamento a un determinato servizio. Puoi configurare le connessioni all’interno di qualsiasi modulo e quindi utilizzarle in qualsiasi altro modulo. Una connessione deve essere selezionata in ciascun modulo, in modo che Fusion possa utilizzare le credenziali corrispondenti per accedere alle informazioni richieste dal modulo. </p><p>Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">Panoramica delle connessioni</a>.</p> </td> 
+   <td> <p>Una connessione rappresenta un insieme di credenziali per la connessione a un determinato servizio. Puoi configurare le connessioni all’interno di qualsiasi modulo e quindi utilizzarle in qualsiasi altro modulo. Una connessione deve essere selezionata in ciascun modulo, in modo che Fusion possa utilizzare le credenziali corrispondenti per accedere alle informazioni richieste dal modulo. </p><p>Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">Panoramica delle connessioni</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Connettore</td> 
