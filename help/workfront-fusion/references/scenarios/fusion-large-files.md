@@ -1,17 +1,17 @@
 ---
-title: Utilizzo di file di grandi dimensioni
+title: Lavorare con file di grandi dimensioni
 description: Il supporto per file di grandi dimensioni è attualmente disponibile per i connettori Workfront e HTTP.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 2%
+source-wordcount: '1052'
+ht-degree: 6%
 
 ---
 
-# Utilizzo di file di grandi dimensioni
+# Lavorare con file di grandi dimensioni
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Attualmente, i seguenti connettori supportano file di grandi dimensioni.
 
 >[!NOTE]
 >
->* Se un file viene scaricato utilizzando un modulo che supporta file di grandi dimensioni e quindi trasmesso a un modulo che non supporta file di grandi dimensioni, tale modulo non elabora correttamente il file. I file di grandi dimensioni devono essere gestiti esclusivamente con i moduli supportati in tutto il flusso di lavoro.
+>* Se un file viene scaricato utilizzando un modulo che supporta i file di grandi dimensioni e quindi trasferito a un modulo che non supporta tali file, il modulo di destinazione non elabora correttamente il file. I file di grandi dimensioni devono essere gestiti esclusivamente con moduli che supportano tali file nell’intero flusso di lavoro.
 >* I moduli che non supportano file di grandi dimensioni possono elaborare file fino a 200 MB.
 
 * Workfront
@@ -44,8 +44,9 @@ Attualmente, i seguenti connettori supportano file di grandi dimensioni.
    * Applica modifiche PSD
 * SharePoint
    * Creare un file
+   * Crea un file (legacy)
    * Ottieni un file
-* Forza vendita
+* Salesforce
    * Carica file
 * AWS S3
    * Carica file
@@ -78,7 +79,7 @@ Gli utenti possono ora elaborare file che superano il precedente limite di 1 GB,
 
 ### Come funziona il nuovo trasferimento di file di Fusion?
 
-Quando Fusion elabora i file, i file più grandi vengono aggiunti all’archiviazione persistente (Bucket S3 o Archiviazione BLOB di Azure). Quando un modulo Fusion esegue un’azione sul file, come il caricamento o il download, Fusion utilizza il file nell’archiviazione persistente come origine invece che come memoria attiva.
+Quando Fusion elabora i file, i file più grandi vengono aggiunti all’archiviazione persistente (archiviazione S3 Bucket o Azure Blob). Quando un modulo Fusion esegue un’azione sul file, come il caricamento o il download, Fusion utilizza il file nell’archiviazione persistente come origine invece che come memoria attiva.
 
 ### È possibile utilizzare file di grandi dimensioni con esecuzioni incomplete?
 

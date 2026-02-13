@@ -2,10 +2,10 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 0c91cd108c7350a9e2d790ca71e6d4edbd4a461b
+source-git-commit: 84deef6c58e18d526788727611932d7fe10d3210
 workflow-type: tm+mt
-source-wordcount: '2015'
-ht-degree: 99%
+source-wordcount: '2032'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 99%
 * Attività sulla versione di Fusion {#fusion-release-activity}
    * [Attività sulla versione di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versioni di Fusion - 2025 {#fusion-releases-2025}
+      * [Attività sulla versione di Workfront Fusion: settimana del martedì 9 febbraio 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
       * [Attività sulla versione di Workfront Fusion: settimana del martedì 2 febbraio 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Attività sulla versione di Workfront Fusion: settimana del martedì 26 gennaio 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Attività sulla versione di Workfront Fusion: settimana del martedì 19 gennaio 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
@@ -219,7 +220,8 @@ ht-degree: 99%
    * Mappare i dati {#map-data}
       * [Mappare i dati](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [Mappare le informazioni da un modulo all’altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
-      * [Mappare gli elementi utilizzando le funzioni](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [Mappare gli elementi utilizzando le funzioni incorporate](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [Mappare i dati utilizzando funzioni personalizzate](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
       * [Mappare array ed elementi array](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [Mappare un file tra moduli](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [Archivi di dati](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
@@ -300,7 +302,7 @@ ht-degree: 99%
       * [Pannello di mappatura](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
       * Tipi di dati {#data-types}
          * [Tipi di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
-         * [Tipi di dati elemento &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
+         * [Tipi di dati elemento ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
          * [Coercizione del tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Strutture di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funzioni {#functions}
@@ -335,6 +337,7 @@ ht-degree: 99%
          * [Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [Utilizzare l’autenticazione Mutual TLS nei moduli HTTP in Adobe Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
       * Connettori Adobe {#adobe-connectors}
+         * [Modulo Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
          * [Moduli Adobe Acrobat Sign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Modulo Adobe Authenticator](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Moduli Adobe Campaign](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
