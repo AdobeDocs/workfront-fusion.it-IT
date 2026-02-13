@@ -4,10 +4,10 @@ description: Un modulo Iterator è un tipo speciale di modulo che converte un ar
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ Un [!UICONTROL Iterator] è un tipo di modulo che converte un array in una serie
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,24 +25,26 @@ Un [!UICONTROL Iterator] è un tipo di modulo che converte un array in una serie
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## configurazione del modulo [!UICONTROL Iterator]
++++
+
+## Configurazione del modulo [!UICONTROL Iterator]
 
 Il modulo Iterator generale ha un solo campo, il campo [!UICONTROL Array]. Questo campo contiene l’array da convertire o dividere in bundle separati.
 
@@ -98,7 +100,7 @@ Avvia manualmente lo scenario nell’editor dello scenario.
 >Per evitare che l’intero scenario venga eseguito, puoi:
 >
 >* Scollega i moduli dopo il modulo [!UICONTROL JSON] > [!UICONTROL Analizza JSON] per impedire che il flusso proceda ulteriormente.
->  &#x200B;>   Oppure
+>   Oppure
 >* Fai clic con il pulsante destro del mouse sul modulo [!UICONTROL JSON] > [!UICONTROL Analizza JSON] e scegli **[!UICONTROL Esegui questo modulo solo]** dal menu di scelta rapida per eseguire solo il modulo [!UICONTROL JSON] > [!UICONTROL Analizza JSON].
 
 Dopo l&#39;esecuzione di [!UICONTROL JSON] > [!UICONTROL Parse JSON], è possibile fornire informazioni sugli output a tutti i moduli successivi, incluso il modulo Iterator. Il pannello di mappatura nella configurazione dell’iteratore visualizza quindi gli elementi:

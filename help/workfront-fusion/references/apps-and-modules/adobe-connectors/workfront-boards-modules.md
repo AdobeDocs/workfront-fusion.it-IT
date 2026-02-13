@@ -4,10 +4,10 @@ description: Puoi utilizzare il connettore per schede madri Adobe Workfront per 
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '2904'
-ht-degree: 1%
+ht-degree: 15%
 
 ---
 
@@ -25,7 +25,7 @@ Puoi utilizzare i moduli Schede Adobe Workfront per leggere o aggiornare i recor
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -33,24 +33,26 @@ Puoi utilizzare i moduli Schede Adobe Workfront per leggere o aggiornare i recor
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Prerequisiti
++++
+
+## Prerequisiti
 
 È necessario aver configurato una bacheca in Adobe Workfront prima di potersi connettere ad essa.
 
@@ -77,9 +79,9 @@ Il connettore delle schede madri Adobe Workfront utilizza quanto segue:
 
 Per creare una connessione alle schede madri Workfront:
 
-1. In qualsiasi modulo di [!DNL Adobe Workfront Boards], fare clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
+1. In qualsiasi modulo di [!DNL Adobe Workfront Boards], fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
-1. Compila i campi seguenti:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -88,29 +90,29 @@ Per creare una connessione alle schede madri Workfront:
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Nome connessione]</td>
+          <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td>
           <td>
-            <p>Immettere un nome per la connessione.</p>
+            <p>Specifica un nome per questa connessione.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td role="rowheader">[!UICONTROL Ambiente]</td>
           <td>Seleziona se ti connetti a un ambiente di produzione o non di produzione.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
+          <td role="rowheader">[!UICONTROL Tipo]</td>
           <td>Seleziona se ti interessa la connessione a un account di servizio o a un account personale.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
-          <td>Immetti l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].</td>
+          <td>Inserisci il tuo [!UICONTROL Client ID] [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Segreto client]<p>(Facoltativo)</p></td>
-          <td>Immetti [!DNL Adobe] [!UICONTROL Client Secret]. È disponibile nella sezione [!UICONTROL Credentials details] di [!DNL Adobe Developer Console].
+          <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)<p>(Facoltativo)</p></td>
+          <td>Inserisci il tuo [!UICONTROL Client Secret] (Segreto client) [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL URL autenticazione]<p>(Facoltativo)</p></td>
+          <td role="rowheader">[!UICONTROL URL di autenticazione]<p>(Facoltativo)</p></td>
           <td>Immetti l’URL che verrà utilizzato dall’istanza di Workfront per autenticare questa connessione. <p>Il valore predefinito è <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
@@ -125,9 +127,9 @@ Per creare una connessione alle schede madri Workfront:
 
 Quando si configurano i moduli delle schede madri Workfront, Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, possono essere visualizzati campi aggiuntivi per le Schede Workfront, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Schede](#cards)
 * [Bacheche](#boards)
@@ -154,7 +156,7 @@ Questo modulo di azione aggiunge una voce dell’elenco di controllo alla scheda
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -177,7 +179,7 @@ Questo modulo di azione aggiunge una sottoattività a una scheda in Bacheche. La
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -189,7 +191,7 @@ Questo modulo di azione aggiunge una sottoattività a una scheda in Bacheche. La
    <td>Inserisci o mappa l’ID della bacheca contenente la scheda a cui desideri aggiungere un’attività secondaria.<p>Puoi trovare l’ID della bacheca nell’URL quando visualizzi la bacheca in Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Name]</td> 
+   <td>[!UICONTROL Nome]</td> 
    <td>Immettere o associare un nome per la nuova sottoattività.</p></td> 
   </tr> 
  </tbody> 
@@ -204,7 +206,7 @@ Questo modulo di azione crea una nuova scheda su una scheda Workfront.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -216,7 +218,7 @@ Questo modulo di azione crea una nuova scheda su una scheda Workfront.
    <td>Immettere o mappare l'ID della colonna a cui si desidera aggiungere una sottoattività.<p>Puoi trovare l’ID di colonna nelle informazioni restituite dal modulo Read a board.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Name]</td> 
+   <td>[!UICONTROL Nome]</td> 
    <td>Immettere o mappare un nome per la nuova scheda.</p></td> 
   </tr> 
  </tbody> 
@@ -231,7 +233,7 @@ Questo modulo di azione sposta una scheda in una colonna diversa sulla stessa ba
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -262,7 +264,7 @@ Questo modulo di azione recupera informazioni su una scheda specifica.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -285,7 +287,7 @@ Questo modulo di azione aggiorna le informazioni relative a una scheda specifica
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -297,7 +299,7 @@ Questo modulo di azione aggiorna le informazioni relative a una scheda specifica
    <td>Inserisci o mappa l’ID della bacheca che contiene la scheda da aggiornare.<p>Puoi trovare l’ID della bacheca nell’URL quando visualizzi la bacheca in Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Name]</td> 
+   <td>[!UICONTROL Nome]</td> 
    <td>Immetti o mappa un nuovo nome per la scheda.</p></td> 
   </tr> 
   <tr> 
@@ -305,13 +307,13 @@ Questo modulo di azione aggiorna le informazioni relative a una scheda specifica
    <td>Immettere o mappare una nuova descrizione per la scheda.</p></td> 
   </tr> 
   <tr> 
-   <td>Stima </td> 
+   <td>Stima [!UICONTROL]</td> 
    <td>Immetti o mappa una stima del tempo necessario per completare questa scheda.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Scadenza]</td> 
    <td>Immetti o mappa la data di scadenza per questa scheda.</p>
-   <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p>
+   <p>Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</p>
    </td> 
   </tr> 
   <tr> 
@@ -335,7 +337,7 @@ Questo modulo di azione crea una scheda in Workfront. Puoi specificare il tipo d
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -343,7 +345,7 @@ Questo modulo di azione crea una scheda in Workfront. Puoi specificare il tipo d
    <td>Inserisci o mappa un nome per la nuova bacheca.</td> 
   </tr> 
   <tr> 
-   <td>Modello </td> 
+   <td>Modello [!UICONTROL]</td> 
    <td>Seleziona il modello per il tipo di bacheca che desideri creare.</td> 
   </tr> 
  </tbody> 
@@ -358,7 +360,7 @@ Questo modulo di azione restituisce informazioni su una singola bacheca, ad esem
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -383,7 +385,7 @@ Questo modulo di azione crea una nuova colonna sulla bacheca specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -410,7 +412,7 @@ Questo modulo di ricerca restituisce informazioni sulla colonna con il nome spec
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -433,7 +435,7 @@ Questo modulo di azione aggiorna il nome o il limite WIP della colonna specifica
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -465,7 +467,7 @@ Questo modulo di azione aggiunge un tag a una scheda.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -492,7 +494,7 @@ Questo modulo di azione crea un nuovo tag e gli assegna un colore.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -524,7 +526,7 @@ Questo modulo di azione ha creato un commento sulla scheda specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -547,7 +549,7 @@ Questo modulo di azione recupera i commenti dalla scheda specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
+   <td>[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -555,7 +557,7 @@ Questo modulo di azione recupera i commenti dalla scheda specificata.
    <td>Inserisci o mappa l’ID della carta per la quale desideri recuperare i commenti.<p>Puoi trovare l’ID della scheda nell’URL quando la visualizzi in Workfront.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL Limite]</td> 
    <td>Immettere il numero massimo di commenti che il modulo deve restituire in un ciclo di esecuzione.</p></td> 
   </tr> 
  </tbody> 
@@ -563,7 +565,7 @@ Questo modulo di azione recupera i commenti dalla scheda specificata.
 
 ### Altro
 
-#### Effettuare una chiamata API personalizzata
+#### Effettua chiamata API personalizzata
 
 Questo modulo di azione effettua una chiamata personalizzata all’API delle schede madri Workfront.
 
@@ -572,28 +574,28 @@ Questo modulo di azione effettua una chiamata personalizzata all’API delle sch
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td> <p>Immettere un percorso relativo a <code> https://&lt;WORKFRONT_DOMAIN&gt;/boards-service/graphql?</code>.</p> </td> 
+   <td> <p>Inserisci un percorso relativo a <code> https://&lt;WORKFRONT_DOMAIN&gt;/boards-service/graphql?</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p><p>Per la maggior parte delle chiamate alle bacheche il metodo è POST. </td> 
+   <td role="rowheader">[!UICONTROL Metodo]</td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p><p>Per la maggior parte delle chiamate alle bacheche il metodo è POST. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Determina il tipo di contenuto della richiesta.</p> <p>Ad esempio:<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
+   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Questo determina il tipo di contenuto della richiesta.</p> <p>Ad esempio:<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
-   <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Per le bacheche Workfront, in genere questa sezione viene lasciata vuota.</p>  </td> 
+   <td role="rowheader">[!UICONTROL Stringa di query]</td> 
+   <td> <p>Aggiungi la query per la chiamata API come oggetto JSON standard.</p> <p>Per le bacheche Workfront, in genere questa sezione viene lasciata vuota.</p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Aggiungi il contenuto del corpo per la chiamata API sotto forma di Graphql incorporato JSON </p> <p>Esempio:</p><p>In questo esempio viene aggiornato il nome di una colonna. È possibile includere <code>boardId</code> e <code>columnId</code> come GUID codificati o mappati da un modulo precedente.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
+   <td> <p>Aggiungi il contenuto del corpo per la chiamata API sotto forma di Graphql incorporato JSON </p> <p>Esempio:</p><p>In questo esempio viene aggiornato il nome di una colonna. È possibile includere <code>boardId</code> e <code>columnId</code> come GUID codificati o mappati da un modulo precedente.<p><pre>{<br> "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -611,23 +613,23 @@ Questo modulo di azione invia una richiesta GraphQL personalizzata all’API del
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
       <td> <p>È possibile utilizzare una connessione Workfront esistente per connettersi alle schede madri Workfront oppure una connessione specifica alle schede madri Workfront. </p><p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Creare una connessione alle schede madri Workfront</a> in questo articolo.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL Metodo]</td> 
    <td> <p>Seleziona il metodo per questa chiamata. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query]</td> 
-   <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> </td> 
+   <td> <p>Aggiungi la query per la chiamata API come oggetto JSON standard.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nome operazione]</td> 
    <td> <p>Immettere un nome per l'operazione. Questo può semplificare il tracciamento e il debug della chiamata.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Origine dati delle variabili </td> 
+   <td role="rowheader">Origine dati delle variabili [!UICONTROL]</td> 
    <td> <p>Seleziona se le variabili devono provenire da un modulo o da una raccolta.</p> </td> 
   </tr> 
   <tr> 
@@ -635,8 +637,8 @@ Questo modulo di azione invia una richiesta GraphQL personalizzata all’API del
    <td> <p>Per ogni variabile da aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore della variabile.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</td> 
    </tr> 
  </tbody> 
 </table>

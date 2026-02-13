@@ -4,10 +4,10 @@ description: Un modulo aggregatore è un tipo di modulo progettato per unire div
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ Un modulo aggregatore è un modulo che unisce diversi bundle di dati in un singo
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,24 +25,26 @@ Un modulo aggregatore è un modulo che unisce diversi bundle di dati in un singo
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Panoramica del modulo [!UICONTROL Aggregator]
++++
+
+## Panoramica del modulo [!UICONTROL Aggregator]
 
 Durante l&#39;esecuzione di un modulo [!UICONTROL Aggregator], vengono eseguite le seguenti operazioni:
 
@@ -65,7 +67,7 @@ Nell&#39;immagine seguente viene illustrata una configurazione tipica del modulo
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Tipo di struttura di destinazione]</p><p>(Applicabile solo per il modulo [!UICONTROL Array aggregator].)</p> </td> 
-   <td> <p> Struttura di destinazione in cui vengono aggregati i dati. L'opzione predefinita, [!UICONTROL Custom], consente di scegliere gli elementi da aggregare nell'elemento <code>Array </code> del bundle di output dell'aggregatore di array :</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>Dopo aver connesso altri moduli dopo il modulo [!UICONTROL Array aggregator] e essere tornato alla configurazione del modulo aggregatore, il menu a discesa del tipo di struttura [!UICONTROL Target] contiene tutti i moduli seguenti e i relativi campi che sono di tipo "Array of Collections". <p>In questo esempio, il campo [!UICONTROL Attachments] del modulo [!DNL Slack] &gt;[!UICONTROL Create a Message] viene visualizzato nel campo Array aggregator &gt; Target structure type. </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
+   <td> <p> Struttura di destinazione in cui vengono aggregati i dati. L'opzione predefinita, [!UICONTROL Custom], consente di scegliere gli elementi da aggregare nell'elemento <code>Array </code> del bundle di output dell'aggregatore di array [!UICONTROL]:</p> <p> <img src="assets/output-bundle-array-item.png"> </p> <p>Dopo aver connesso altri moduli dopo il modulo [!UICONTROL Array aggregator] e essere tornato alla configurazione del modulo aggregatore, il menu a discesa del tipo di struttura [!UICONTROL Target] contiene tutti i moduli seguenti e i relativi campi che sono di tipo "Array of Collections". <p>In questo esempio, il campo [!UICONTROL Attachments] del modulo [!DNL Slack] &gt;[!UICONTROL Create a Message] viene visualizzato nel campo Array aggregator &gt; Target structure type. </p> <p> <img src="assets/array-aggregator-slack.png"> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Campi aggregati]</td> 
