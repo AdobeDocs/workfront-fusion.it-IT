@@ -30,10 +30,10 @@ Il pannello di mappatura include le seguenti schede. Ciascuna scheda include fun
 
 | Tipo di funzioni | Per ulteriori informazioni, consulta: |
 | --- | --- |
-| **Mappare da altri moduli**<br>![ Mappare da altri moduli](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **Funzioni generali**<br>![ Funzioni generali](assets/toolbar-icon-general-function.png) | [Funzioni generali](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
-| **Funzioni matematiche**<br>![ Funzioni matematiche](assets/toolbar-icon-math-functions.png) | [Funzioni matematiche](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
-| **Funzioni testuali e binarie**<br>![ Funzioni stringa](assets/toolbar-icon-text&binary-functions.png) | [Funzioni stringa](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
+| **Mappare da altri moduli**<br>![&#x200B; Mappare da altri moduli](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **Funzioni generali**<br>![&#x200B; Funzioni generali](assets/toolbar-icon-general-function.png) | [Funzioni generali](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **Funzioni matematiche**<br>![&#x200B; Funzioni matematiche](assets/toolbar-icon-math-functions.png) | [Funzioni matematiche](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
+| **Funzioni testuali e binarie**<br>![&#x200B; Funzioni stringa](assets/toolbar-icon-text&binary-functions.png) | [Funzioni stringa](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
 | **Data e ora** <br> ![Funzioni data e ora](assets/toolbar-icon-date&time-functions.png) | <ul><li>[Funzioni data e ora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Token per la formattazione di data e ora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Token per l’analisi di data e ora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **Funzioni per l’utilizzo degli array**<br> ![Funzioni array](assets/toolbar-icon-functions-for-arrays.png) | [Funzioni array](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
