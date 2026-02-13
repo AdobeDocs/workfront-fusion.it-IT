@@ -4,10 +4,10 @@ description: La mappatura è il processo di assegnazione degli output di un modu
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ Le altre schede includono funzioni, operatori e parole chiave che puoi utilizzar
 
 Per ulteriori informazioni sulle schede delle funzioni, consulta [Panoramica delle funzioni](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Per ulteriori informazioni sulla mappatura degli elementi tramite le funzioni, consulta [Mappare gli elementi utilizzando le funzioni](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Per ulteriori informazioni sulla mappatura degli elementi tramite le funzioni, vedere [Mappare gli elementi utilizzando le funzioni incorporate](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Raccolte
 

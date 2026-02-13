@@ -4,10 +4,10 @@ description: Quando apri Fusion vengono visualizzate molte opzioni per l’esecu
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -28,6 +28,7 @@ Questo articolo presenta le aree e fornisce collegamenti a ulteriori informazion
 | Chiavi <br> ![Icona delle chiavi](assets/keys-icon.png) | Le chiavi pubbliche e private vengono utilizzate per crittografare e decrittografare i dati. La chiave pubblica può essere distribuita e chiunque disponga della chiave pubblica può crittografare i dati, ma solo la chiave privata può decrittografarli. Analogamente, un utente che dispone di una chiave privata può crittografare dati che chiunque è in possesso della chiave pubblica può decrittografare. Nell’area Chiavi puoi visualizzare e gestire le chiavi di proprietà del tuo team. | [Chiavi](/help/workfront-fusion/references/modules/keys.md) |
 | Archivi dati  <br> ![Icona degli archivi dati](assets/data-store-icon.png) | Gli archivi dati sono piccoli database che esistono al di fuori degli scenari. Gli archivi dati ti consentono di trasferire dati tra gli scenari o tra esecuzioni distinte di uno scenario. Nell’area Archivi dati puoi visualizzare e gestire gli archivi dati di proprietà del tuo team. | [Archivi dati](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | Strutture di dati <br> ![Icona delle strutture di dati](assets/data-structure-icon.png) | Le strutture di dati descrivono il formato dei dati trasferiti a Fusion e vengono comunemente utilizzate per la serializzazione o l’analisi di formati come JSON, XML e CSV. In Strutture di dati puoi visualizzare e gestire le strutture di dati di proprietà del tuo team. | [Strutture di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
+| Funzioni <br> ![Icona funzioni](assets/functions-icon.png) | Le funzioni personalizzate sono funzioni di JavaScript che possono essere aggiunte a scenari per manipolare e trasformare i dati. <br>La tua organizzazione deve disporre di una licenza per Adobe App Builder per creare e utilizzare funzioni personalizzate. | [Mappare i dati utilizzando funzioni personalizzate](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
 
 >[!NOTE]
 >
