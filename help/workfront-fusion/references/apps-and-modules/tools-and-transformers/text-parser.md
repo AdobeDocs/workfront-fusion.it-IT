@@ -4,10 +4,10 @@ description: È possibile utilizzare lo strumento parser di testo per analizzare
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +25,22 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -65,9 +65,9 @@ Il connettore parser di testo utilizza quanto segue:
 
 Quando configuri [!UICONTROL moduli parser di testo], Adobe Workfront Fusion visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Trasformatori
 
@@ -190,7 +190,7 @@ Una discussione sulle espressioni regolari va oltre lo scopo di questo articolo.
    <td> <p>Abilita questa opzione per garantire che il modulo non interrompa lo scenario se non restituisce alcun risultato.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[!UICONTROL Testo] </td> 
    <td> <p>Immettere o mappare il testo che si desidera associare al motivo.</p> </td> 
   </tr> 
  </tbody> 
@@ -229,7 +229,7 @@ Cerca un valore o un&#39;espressione regolare specificata nel testo immesso e so
    <td>Abilitare questa opzione per assicurarsi che il punto (.) corrisponda ai caratteri di nuova riga (<code>\n</code>).</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[!UICONTROL Testo] </td> 
    <td> <p>Immettere il testo in cui eseguire la ricerca.</p> </td> 
   </tr> 
  </tbody> 
