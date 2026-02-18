@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 5e7a879ee69bea03aed5a936fe0962acdd3a3014
+source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2046'
 ht-degree: 98%
 
 ---
@@ -210,6 +210,7 @@ ht-degree: 98%
       * [Aggiungere moduli](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [Aggiungere un modulo a uno scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [Configurare un modulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+      * [Aggiungi un prompt di IA allo scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
       * [Generare un segmento di scenario utilizzando l’IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
       * [Copiare moduli o scenari](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
       * [Creare scenari con i modelli di Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
@@ -303,7 +304,7 @@ ht-degree: 98%
       * [Pannello di mappatura](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
       * Tipi di dati {#data-types}
          * [Tipi di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
-         * [Tipi di dati elemento &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
+         * [Tipi di dati elemento ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
          * [Coercizione del tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Strutture di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funzioni {#functions}

@@ -6,14 +6,14 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
+source-git-commit: 97abe6bf0ff7b10a139268f02f8a1a24f3e31b47
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 23%
+source-wordcount: '488'
+ht-degree: 18%
 
 ---
 
-# Modulo MCP (Model Context Protocol)
+# Modulo agente MCP
 
 <!--SET UP REDIRECTS-->
 
@@ -22,6 +22,8 @@ Model Context Protocol (MCP) è un modo per collegare in modo sicuro i modelli d
 Ad esempio, puoi configurare un server MCP per collegare un modello di IA con Gmail. Quando invii il messaggio &quot;Dammi le mie ultime 5 e-mail da Gmail&quot;, l’utente può accedere a Gmail e restituire le e-mail.
 
 Il modulo MCP (Model Context Protocol) consente di elaborare un prompt utente utilizzando un modello del linguaggio e server MCP.
+
+Per ulteriori informazioni su MCP in scenari Fusion, consulta [Aggiungere un prompt di IA allo scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
 ## Requisiti di accesso
 
@@ -52,17 +54,20 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 +++
 
+## Prerequisiti
 
-
-
+* Devi aver configurato tutti i server MCP a cui intendi connetterti.
+* È necessario disporre di una chiave LLM per il modello di lingua di grandi dimensioni selezionato.
 
 ## Modulo Model Context Protocol e relativi campi
-
-Quando configuri il modulo MCP, Adobe Workfront Fusion visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 ### Prompt utente processo
 
 Questo modulo di azione elabora un prompt utilizzando il modello di linguaggio e i server MCP specificati.
+
+>[!NOTE]
+>
+>Questo modulo deve restituire un oggetto. Non restituisce output come stringhe o numeri.
 
 <table style="table-layout:auto"> 
  <col> 
