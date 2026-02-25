@@ -3,10 +3,11 @@ title: Moduli Veeva Vault
 description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Veeva Vault e collegarlo a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
+exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
+source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
 workflow-type: tm+mt
-source-wordcount: '2539'
-ht-degree: 19%
+source-wordcount: '3683'
+ht-degree: 14%
 
 ---
 
@@ -117,7 +118,9 @@ Quando crei una connessione, puoi scegliere se utilizzare una password o l’aut
       </tr> 
       <tr> 
        <td role="rowheader">Provider server autorizzazioni</td> 
-       <td> <p>Selezionare il provider che si desidera utilizzare per l'autenticazione.</p> </td> 
+       <td> <p>Selezionare il provider che si desidera utilizzare per l'autenticazione.</p> 
+       <p><b>NOTA:</b> Veeva Vault utilizza le credenziali client di Azure AD quando Azure è selezionato come provider del server di autorizzazione.</p>
+       </td> 
       </tr> 
       <tr> 
        <td role="rowheader">Ping host</td> 
@@ -126,13 +129,13 @@ Quando crei una connessione, puoi scegliere se utilizzare una password o l’aut
       <tr>
         <td role="rowheader">Limite</td>
         <td>
-          <p>Immettere l'ambito della connessione.</p>
+          <p>Immettere l'ambito della connessione. Formattare l'ambito come <code>{Application ID URI}/.default</code>. L'URI dell'ID applicazione deve appartenere alla risorsa o all'app che espone le autorizzazioni.</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">ID tenant</td>
         <td>
-          <p>Se si utilizza Azure AD/Microsoft Entra ID per il provider del server autorizzazioni, immettere l'ID tenant per questa connessione.</p>
+          <p>Se si utilizza Azure AD/Microsoft Entra ID per il provider del server di autorizzazione, immettere l'ID tenant per questa connessione.</p>
         </td>
       </tr>
       <tr>
@@ -150,12 +153,12 @@ Quando crei una connessione, puoi scegliere se utilizzare una password o l’aut
       <tr>
         <td role="rowheader">ID profilo</td>
         <td>
-          <p>Immetti l’ID del profilo OAuth2/Copen ID Connect.</p>
+          <p>Immetti l'ID del profilo OAuth2/Open ID Connect.</p>
         </td>
       </tr>
       <tr> 
        <td role="rowheader">DNS Vault</td> 
-       <td>Immetti il DNS Veeva Vault (nome di dominio).</p><p>Per individuare il DNS di Veeva Vault, esaminare l'URL utilizzato per accedere a Veeva Vault.</p>Nell'URL <code>https://my-dns.veevavault.com</code>, ad esempio, il DNS è <code>my-dns</code>. Non è necessario immettere l’intero URL.</td> 
+       <td>Immetti il DNS Veeva Vault (nome di dominio).</p><p>Per individuare il DNS di Veeva Vault, esaminare l'URL utilizzato per accedere a Veeva Vault.</p>Nell'URL <code>https://my-dns.veevavault.com</code>, ad esempio, il DNS è <code>my-dns.veevavault.com</code>. </td> 
       </tr> 
       <tr>
         <td role="rowheader">Tempo di scadenza della sessione in minuti</td>
@@ -184,15 +187,24 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 ### Documento
 
 * [Creare un singolo documento](#create-a-single-document)
+* [Creare una relazione di documento singolo](#create-a-single-document-relationship)
+* [Creare più annotazioni](#create-multiple-annotations)
 * [Creazione di più documenti](#create-multiple-documents)
+* [Creare più relazioni tra documenti](#create-multiple-document-relationships)
 * [Eliminare un singolo documento](#delete-a-single-document)
+* [Eliminare una relazione di documento singolo](#delete-a-single-document-relationship)
+* [Eliminare più annotazioni](#delete-multiple-annotations)
+* [Eliminare più relazioni tra documenti](#delete-multiple-document-relationships)
 * [Scaricare un file](#download-file)
 * [Esporta documenti](#export-documents)
 * [Ottieni un singolo documento](#get-a-single-document)
+* [Ottieni annotazioni documento](#get-document-annotations)
+* [Ottieni relazioni documento](#get-document-relationships)
 * [Avvia azione utente](#initiate-user-action)
 * [Elencare documenti](#list-documents)
 * [Recuperare i risultati di esportazione del documento](#retrieve-document-export-results)
 * [Aggiornare un singolo documento](#update-a-single-document)
+* [Aggiornare più annotazioni](#update-multiple-annotations)
 * [Aggiornare più documenti](#update-multiple-documents)
 
 #### Creare un singolo documento
@@ -205,7 +217,7 @@ Questo modulo crea un singolo documento, raccoglitore o modello.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -218,6 +230,114 @@ Questo modulo crea un singolo documento, raccoglitore o modello.
  </tbody> 
 </table>
 
+#### Creare una relazione di documento singolo
+
+Questo modulo di azione crea una relazione tra due documenti
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID Documento</p> </td> 
+   <td> <p>Immettere o mappare l'ID del documento in cui si desidera creare la relazione.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Versione</p> </td> 
+   <td> <p>Seleziona o mappa l’ID della versione per cui desideri creare una relazione.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID documento di destinazione</p> </td> 
+   <td> <p>Immettere l'ID del documento a cui punta la relazione.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Versione principale di destinazione</p> </td> 
+   <td> <p>Immettere la versione principale del documento di destinazione. Questo è il numero che precede il punto.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Versione secondaria di destinazione</p> </td> 
+   <td> <p>Immettere la versione principale del documento di destinazione. Questo è il numero dopo il punto.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Tipo di relazione</p> </td> 
+   <td> <p>Immettere o mappare il tipo di relazione da creare.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Creare più annotazioni
+
+Questo modulo consente di creare fino a 500 annotazioni.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Annotazioni</p> </td> 
+   <td> <p>Per ogni annotazione che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e inserire i dati descritti in <a href="#annotation-fields" class="MCXref xref">Campi annotazione</a> in questo articolo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### Campi di annotazione
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Tipo di annotazione </td> 
+   <td> <p>Seleziona il tipo di annotazione da creare.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo</p> </td> 
+   <td> <p>Immettere o mappare il tipo di contrassegno che si desidera utilizzare per l'annotazione.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Numero di pagina</p> </td> 
+   <td> <p>Immettere o mappare il numero di pagina in cui si desidera visualizzare l'annotazione.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Coordinata X</p> </td> 
+   <td> <p>Immettete o mappate la coordinata X del segnaposto.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Coordinata Y</p> </td> 
+   <td> <p>Immettete o mappate la coordinata Y del segnaposto.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>larghezza</p> </td> 
+   <td> <p>Immettete o mappate la larghezza del segnaposto.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Height</p> </td> 
+   <td> <p>Immettete o mappate l'altezza del segnaposto.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Stile</p> </td> 
+   <td> <p>Immettete o mappate lo stile del segnaposto.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Riferimenti</p> </td> 
+   <td> <p>Un riferimento consente all’annotazione di fare riferimento a un’origine esterna. Per ogni riferimento che si desidera aggiungere all'annotazione, fare clic su <b>Aggiungi elemento</b> e immettere il tipo di riferimento, l'ID versione del documento e un'annotazione.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Seleziona campi</p> </td> 
+   <td> <p>Selezionare i campi per i quali si desidera fornire valori, quindi immettere i valori in ciascun campo. I campi disponibili dipendono dal tipo di annotazione.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
 #### Creazione di più documenti
 
 Questo modulo crea più documenti o modelli utilizzando un file CSV.
@@ -228,15 +348,79 @@ Questo modulo crea più documenti o modelli utilizzando un file CSV.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
-   <td> <p>Specificare se si desidera creare modelli o documenti</p> </td> 
+   <td> <p>Specificare se si desidera creare modelli o documenti.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">  <p>Dati dei file</p> </td> 
    <td> <p>Mappa il file CSV che verrà utilizzato per creare i documenti.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Creare più relazioni tra documenti
+
+Questo modulo di azione configura più relazioni tra documenti.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo di input</p> </td> 
+   <td> <p>Seleziona il tipo di input fornito per creare queste relazioni.</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Dati dei file</p> </td> 
+   <td> <p>Se utilizzi un file CSV, immetti o mappa i dati del file CSV.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Dati delle relazioni</p> </td> 
+   <td> <p>Se si utilizza JSON, per ogni relazione che si desidera aggiungere fare clic su <b>Aggiungi elemento</b> e compilare i dati descritti in <a href="#relationship-fields" class="MCXref xref">Campi di relazione</a> in questo articolo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### Campi di relazione
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">ID documento Source </td> 
+   <td> <p>Immettere o mappare l'ID del documento in cui si desidera creare la relazione.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Versione principale di Source</p> </td> 
+   <td> <p>Immettere la versione principale del documento di origine. Questo è il numero che precede il punto.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Versione secondaria Source</p> </td> 
+   <td> <p>Immettere la versione principale del documento di origine. Questo è il numero dopo il punto.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID documento di destinazione</p> </td> 
+   <td> <p>Immettere l'ID del documento a cui punta la relazione.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Versione principale di destinazione</p> </td> 
+   <td> <p>Immettere la versione principale del documento di destinazione. Questo è il numero che precede il punto.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Versione secondaria di destinazione</p> </td> 
+   <td> <p>Immettere la versione principale del documento di destinazione. Questo è il numero dopo il punto.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Tipo di relazione</p> </td> 
+   <td> <p>Immettere o mappare il tipo di relazione da creare.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +435,7 @@ Questo modulo elimina un singolo documento, raccoglitore o modello.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -259,7 +443,88 @@ Questo modulo elimina un singolo documento, raccoglitore o modello.
   </tr> 
   <tr> 
    <td role="rowheader"><p>ID documento / ID raccoglitore / Nome modello</p> </td> 
-   <td> <p>Selezionare i campi da eliminare.</td> 
+   <td> <p>Selezionare l'elemento da eliminare.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Eliminare una relazione di documento singolo
+
+Questo modulo di azione elimina una relazione da un documento
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID Documento</p> </td> 
+   <td> <p>Immettere o mappare l'ID del documento di origine per la relazione che si desidera eliminare.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Versione</p> </td> 
+   <td> <p>Seleziona o mappa l’ID della versione per la quale desideri eliminare una relazione.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>ID relazione</p> </td> 
+   <td> <p>Immetti o mappa l’ID della relazione da eliminare.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Eliminare più annotazioni
+
+Questo modulo di azione elimina le annotazioni. L’utente deve disporre delle autorizzazioni necessarie per eliminare le annotazioni in Veeva Vault. Puoi eliminare fino a 500 annotazioni.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Annotazioni</p> </td> 
+   <td> <p>Per ogni annotazione che si desidera eliminare, fare clic su <b>Aggiungi elemento</b> e immettere i campi seguenti.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID</p> </td> 
+   <td> <p>Inserisci o mappa l’ID dell’annotazione da eliminare.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>ID versione documento</p> </td> 
+   <td> <p>Immettere o mappare il numero di versione del documento contenente l'annotazione che si desidera eliminare.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Eliminare più relazioni tra documenti
+
+Questo modulo di azione elimina relazioni da più documenti
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Tipo di input</p> </td> 
+   <td> <p>Seleziona il tipo di input fornito per eliminare queste relazioni.</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Dati dei file</p> </td> 
+   <td> <p>Se utilizzi un file CSV, immetti o mappa i dati del file CSV.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Dati delle relazioni</p> </td> 
+   <td> <p>Se si utilizza JSON, per ogni relazione che si desidera aggiungere fare clic su <b>Aggiungi elemento</b> e immettere l'ID relazione.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -274,7 +539,7 @@ Questo modulo scarica un documento, una versione del documento o un modello da V
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -309,7 +574,7 @@ Questo modulo esporta i documenti specificati, incluse le origini, le rappresent
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -344,7 +609,7 @@ Questo modulo recupera i metadati per un singolo documento, raccoglitore o model
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -353,6 +618,60 @@ Questo modulo recupera i metadati per un singolo documento, raccoglitore o model
   <tr> 
    <td role="rowheader"><p>ID documento / ID raccoglitore / Nome modello</p> </td> 
    <td> <p>Selezionare i campi per i quali si desidera recuperare i dati.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ottieni annotazioni documento
+
+Questo modulo recupera le annotazioni da una versione specifica del documento. Puoi recuperare tutte le annotazioni o scegliere di recuperare solo alcuni tipi di annotazione.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID Documento</p> </td> 
+   <td> <p>Selezionare o mappare il documento per il quale si desidera recuperare le annotazioni. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Versione</p> </td> 
+   <td> <p>Seleziona o mappa l’ID della versione per cui desideri recuperare le annotazioni.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Numero massimo di annotazioni restituite</td> 
+   <td>Immetti o mappa il numero massimo di annotazioni che il modulo deve restituire durante ciascun ciclo di esecuzione dello scenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Ottieni relazioni documento
+
+Questo modulo recupera tutte le relazioni per un documento.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID Documento</p> </td> 
+   <td> <p>Selezionare o mappare il documento per il quale si desidera recuperare le relazioni. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Versione</p> </td> 
+   <td> <p>Seleziona o mappa l’ID della versione per cui desideri recuperare le relazioni.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Numero massimo di relazioni restituite</td> 
+   <td>Immettere o mappare il numero massimo di relazioni che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -367,7 +686,7 @@ Questo modulo avvia azioni su documenti e raccoglitori, ad esempio l&#39;invio d
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -398,7 +717,7 @@ Questo modulo elenca tutti i documenti del tipo selezionato.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -421,11 +740,30 @@ Questo modulo restituisce i risultati di un’esportazione di documenti richiest
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID processo</p> </td> 
    <td> <p>Immetti o mappa l’ID del processo per il quale desideri restituire i risultati. </p> </td> 
+  </tr> 
+  </tbody> 
+</table>
+
+#### Aggiornare più annotazioni
+
+Questo modulo aggiorna fino a 500 annotazioni.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Annotazioni</p> </td> 
+   <td> <p>Per ogni annotazione che si desidera aggiornare, fare clic su <b>Aggiungi elemento</b> e inserire i dati descritti in <a href="#annotation-fields" class="MCXref xref">Campi annotazione</a> in questo articolo.</p> </td> 
   </tr> 
   </tbody> 
 </table>
@@ -440,7 +778,7 @@ Questo modulo aggiorna più documenti o modelli utilizzando un file CSV.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -463,7 +801,7 @@ Questo modulo aggiorna un singolo documento, raccoglitore o modello.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -502,7 +840,7 @@ Questo modulo crea, copia o copia in profondità un singolo record oggetto.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -541,7 +879,7 @@ Questo modulo elimina o sovrappone un singolo record oggetto. L&#39;eliminazione
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -572,11 +910,11 @@ Questo modulo recupera i metadati configurati su un record oggetto specifico nel
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome oggetto</td> 
-   <td>Seleziona l’oggetto per il quale desideri recuperare i metadati.</td> 
+   <td>Selezionare l'oggetto per il quale si desidera recuperare i metadati.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID record</td> 
@@ -595,7 +933,7 @@ Questo modulo recupera tutti gli oggetti Vault nel Vault autenticato.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Recupera etichette localizzate</p> </td> 
@@ -620,7 +958,7 @@ Questo modulo crea, copia o copia in profondità un singolo record oggetto.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -673,15 +1011,15 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vau
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Immettere un percorso relativo a <code>baseurl/api/v</code>.  Esempio: <code>/objects/documents</code>. Non includere <code>baseurl/api/v/</code>, poiché è già incluso.</td> 
+   <td>Immettere un percorso relativo a <code>baseurl/api/v</code>.  Ad esempio: <code>/objects/documents</code>. Non includere <code>baseurl/api/v/</code>, poiché è già incluso.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Metodo</td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTPS</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Intestazioni</td> 
@@ -693,7 +1031,7 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vau
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -711,7 +1049,7 @@ Questo modulo effettua una query utilizzando Vault Query Language (VQL).
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo</p> </td> 
@@ -734,7 +1072,7 @@ Questo modulo restituisce i dati dagli audit trail.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Tipo di controllo</p> </td> 
@@ -758,5 +1096,3 @@ Questo modulo restituisce i dati dagli audit trail.
   </tr> 
  </tbody> 
 </table>
-
-
