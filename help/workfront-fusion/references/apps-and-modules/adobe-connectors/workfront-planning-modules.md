@@ -4,9 +4,9 @@ description: Con i moduli  [!DNL Adobe Workfront Planning] , puoi avviare uno sc
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
+source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1992'
 ht-degree: 52%
 
 ---
@@ -44,7 +44,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 +++
 
-s## Prerequisiti
+## Prerequisiti
 
 Per accedere a Workfront Planning, è necessario disporre dei seguenti elementi:
 
@@ -211,7 +211,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 
 ### Trigger
 
-#### Guarda gli eventi
+#### Osserva eventi
 
 Questo modulo di attivazione avvia uno scenario quando un record, un tipo di record o un&#39;area di lavoro viene creata, aggiornata o eliminata in Workfront Planning.
 
@@ -235,7 +235,7 @@ Questo modulo di attivazione avvia uno scenario quando un record, un tipo di rec
       <td role="rowheader">[!UICONTROL Stato]</td>
       <td>Seleziona se desideri controllare lo stato precedente o quello nuovo.<ul><li><p><b>[!UICONTROL Nuovo stato]</b></p><p>Attiva uno scenario quando il record cambia <b>in</b> un valore specificato.</p></li><li><p><b>[!UICONTROL Stato precedente]</b></p><p>Attiva uno scenario quando il record cambia <b> da</b> un determinato valore.</p></li></ul></td> 
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Area di lavoro]</td>
       <td>Se si desidera controllare i record, selezionare il Workspace che si desidera controllare.</td>
     </tr>
     <tr>
@@ -332,7 +332,7 @@ Questo modulo effettua una chiamata API personalizzata all&#39;API [!DNL Adobe W
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Corpo]</td>
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -356,7 +356,7 @@ Questo modulo di azione recupera un elenco di record in base ai criteri specific
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[!UICONTROL Area di lavoro]</p>
       </td>
       <td>Immettere o mappare il Workspace contenente i record che si desidera cercare.</td> 
       </tr>
@@ -391,7 +391,7 @@ Questo modulo di azione recupera un elenco di record in base ai criteri specific
 ### Non categorizzato
 
 
-#### Creare un record
+#### Crea un record
 
 Questa azione consente di creare un singolo record in Workfront Planning.
 
@@ -419,7 +419,7 @@ Questa azione consente di creare un singolo record in Workfront Planning.
   </tbody>
 </table>
 
-### Eliminare un record
+### Elimina una decisione
 
 Questo modulo di azione elimina il record specificato in Workfront Planning.
 
@@ -472,7 +472,7 @@ Questo modulo di azione recupera tutti i record del tipo specificato.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Workfront Planning], consulta <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Creare una connessione a [!DNL Adobe Workfront Planning]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Area di lavoro]</td>
       <td>Selezionare o mappare l'area di lavoro contenente i record da recuperare.</td>
     </tr>
     <tr>
@@ -500,7 +500,7 @@ Questo modulo di azione recupera un elenco di tipi di record in un account [!DNL
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Workfront Planning], consulta <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Creare una connessione a [!DNL Adobe Workfront Planning]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Area di lavoro]</td>
       <td>Selezionare o mappare l'area di lavoro contenente i tipi di record che si desidera recuperare.</td>
     </tr>
   </tbody>
