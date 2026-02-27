@@ -4,9 +4,9 @@ description: Un'operazione in Adobe Workfront Fusion è un'operazione eseguita d
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d630251ec01f5e11bad0305a2f49fb447bf1dd1e
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '412'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,17 @@ Un&#39;operazione in Adobe Workfront Fusion è un&#39;operazione eseguita da un 
 * In generale, qualsiasi esecuzione di un’azione eseguita con successo viene considerata un’operazione.
 * Il primo modulo di uno scenario viene eseguito una sola volta e viene sempre conteggiato come un’unica operazione, anche se non restituisce un bundle.
 * Il numero di volte in cui gli altri moduli vengono eseguiti dipende dal numero di bundle che devono elaborare.  Un’esecuzione di un modulo per un bundle è un’unica operazione. Un’eccezione è il modulo aggregatore, conteggiato come un’unica operazione per set di bundle in fase di elaborazione.
+* Le operazioni possono avere un valore diverso. Alcune saranno operazioni più piccole e più semplici, mentre altre saranno più complesse. Le operazioni contano per il totale, indipendentemente da quanto siano semplici o complesse.
 * Le operazioni vengono conteggiate nella fase [!UICONTROL Finalizzazione] dell&#39;esecuzione di uno scenario.
 * **non** sono conteggiati come operazioni:
    * Qualsiasi passaggio di filtro.
    * Qualsiasi azione che si verifichi un errore o si arresti.
    * Qualsiasi route non eseguita perché non sono state soddisfatte le regole della route, ad esempio route di fallback o disabilitate.
    * Qualsiasi azione non eseguita, perché un filtro non ha consentito il passaggio dei dati o perché lo scenario è stato interrotto a causa di un errore.
+
+>[!NOTE]
+>
+>Se l’organizzazione tenta regolarmente di utilizzare più operazioni di quelle consentite dal pacchetto Workfront Fusion, si consiglia di valutare l’opportunità di effettuare l’aggiornamento al pacchetto Ultimate di automazione e integrazione.
 
 ## Limiti operativi
 
