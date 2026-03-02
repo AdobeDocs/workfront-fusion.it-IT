@@ -4,10 +4,10 @@ description: Le funzioni Organizzazione e Team di Adobe Workfront Fusion consent
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+source-git-commit: 9cb630b713f5fac90acff54fa2034e9d65dd1611
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 2%
 
 ---
 
@@ -27,6 +27,18 @@ Gli utenti di Workfront Fusion appartengono a un’organizzazione.
 
 Gli utenti devono essere aggiunti a un’organizzazione prima di essere aggiunti a un team.
 
+### Risorse dell’organizzazione
+
+Le risorse seguenti interessano l&#39;intera organizzazione di Fusion e sono pertanto di proprietà e gestite a livello di organizzazione:
+
+* **Pool di lavoro:**: un pool di lavoro è una quantità di risorse di elaborazione di Workfront Fusion dedicate a un&#39;organizzazione specifica.
+
+  Per ulteriori informazioni, vedere [Pool di lavoro](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md).
+
+* **Operazioni**: un&#39;operazione in Adobe Workfront Fusion è un&#39;attività eseguita da un modulo.
+
+  Per ulteriori informazioni, consulta [Operazioni](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
+
 ### Ruoli organizzazione
 
 Un utente ha uno dei seguenti ruoli in un’organizzazione:
@@ -43,7 +55,7 @@ Per informazioni sulle azioni specifiche disponibili per gli utenti in ogni ruol
 
 I team sono gruppi di utenti che condividono l’accesso a risorse specifiche. Tali risorse possono includere:
 
-* Situazioni che potrebbero verificarsi con
+* Scenari
 * Connessioni
 * Webhook
 * Chiavi
