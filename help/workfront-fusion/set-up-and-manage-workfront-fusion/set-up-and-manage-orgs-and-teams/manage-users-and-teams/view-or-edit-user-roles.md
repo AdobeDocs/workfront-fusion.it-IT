@@ -4,14 +4,14 @@ description: Gestire gli utenti di Adobe Workfront Fusion all’interno dell’o
 author: Becky
 feature: Workfront Fusion
 exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 88d7a92a4b117d10ab114e32ab5e61f03bc5a846
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 0%
+ht-degree: 25%
 
 ---
 
-# Visualizzare o modificare i ruoli utente
+# Visualizzare o modificare i ruoli degli utenti
 
 Gli amministratori di Adobe Workfront Fusion possono gestire i ruoli utente all’interno di Workfront Fusion.
 
@@ -22,7 +22,7 @@ Gli amministratori di Adobe Workfront Fusion possono gestire i ruoli utente all�
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -30,16 +30,16 @@ Gli amministratori di Adobe Workfront Fusion possono gestire i ruoli utente all�
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -52,7 +52,7 @@ Gli amministratori di Adobe Workfront Fusion possono gestire i ruoli utente all�
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -63,6 +63,24 @@ Gli amministratori di Adobe Workfront Fusion possono visualizzare e aggiornare i
 1. Dopo aver effettuato l&#39;accesso come amministratore di Workfront Fusion, selezionare **[!UICONTROL Tutti gli utenti]** nell&#39;area di navigazione a sinistra.
 1. Fare clic su **[!UICONTROL Dettagli]** nella riga dell&#39;utente che si desidera visualizzare.
 1. (Facoltativo) Per aggiornare il ruolo dell&#39;utente in un&#39;organizzazione, fare clic sul menu a discesa nella colonna **[!DNL Role]** nella riga dell&#39;organizzazione in cui si desidera modificare il ruolo dell&#39;utente, quindi selezionare il nuovo ruolo.
+
+<!--
+
+### Considerations when adding or changing organization Owners
+
+Your organization can have more than one Owner. 
+
+When assigning a user to or from an Owner role, consider the following. 
+
+* Only an Owner can assign the Owner role, or assign another role to a current Owner.
+* Only Admins can be upgraded to Owner.
+* If there is only one Owner, that Owner role cannot be changed or removed.
+* If there is only one Owner, that Owner cannot be deleted if there are other users in the organization.
+* When an Admin is assigned an Owner role, they automatically become Admin in all teams within the org.
+* When an Owner is assigned to another role, that user automatically becomes a Team Member in all teams.
+* When a new team is created, all Owners are automatically assigned as Team Admins.
+
+-->
 
 ## Visualizzare o modificare i ruoli utente per un team
 

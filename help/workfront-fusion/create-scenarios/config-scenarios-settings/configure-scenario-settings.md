@@ -5,7 +5,7 @@ description: Puoi configurare impostazioni specifiche per gli scenari nel pannel
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
 workflow-type: tm+mt
 source-wordcount: '1279'
 ht-degree: 7%
@@ -183,7 +183,7 @@ Per ulteriori informazioni sugli errori, vedere [Tipi di errore](/help/workfront
 >Questa impostazione è visibile solo se sono soddisfatte le due condizioni seguenti:
 >
 >* Sei un amministratore o un proprietario dell’organizzazione
->* All&#39;organizzazione sono associati più gruppi di lavoro.
+>* All&#39;organizzazione sono associati più gruppi di lavoro
 
 Questa impostazione assegna lo scenario a un pool di lavoratori specifico associato all&#39;organizzazione, consentendo di dedicare risorse a scenari ad alta priorità.
 
