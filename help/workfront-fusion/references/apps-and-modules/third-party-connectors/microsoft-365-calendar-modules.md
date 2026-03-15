@@ -257,7 +257,7 @@ Questo modulo di ricerca recupera i dettagli di un evento quando viene creato, a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari [!UICONTROL] che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
+   <td>Selezionare il gruppo di calendari  che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendario]</td> 
@@ -269,7 +269,7 @@ Questo modulo di ricerca recupera i dettagli di un evento quando viene creato, a
     <ul> 
      <li>[!UICONTROL Subject]</li> 
      <li>[!UICONTROL ID evento]</li> 
-     <li>Data e ora di creazione di [!UICONTROL]</li> 
+     <li>Data e ora di creazione di </li> 
      <li>[!UICONTROL Data e ora ultima modifica]</li> 
      <li>[!UICONTROL Anteprima corpo]</li> 
     </ul> </td> 
@@ -319,7 +319,7 @@ Questo modulo di azione aggiorna un evento esistente.
    <td> Immettere un singolo punto dell'ora in cui l'evento termina in una rappresentazione combinata di data e ora. Utilizza il formato <code>({date}T{time}</code>, ad esempio <code>2017-08-29T04:00:00.0000000</code>. Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!Promemoria UICONTROL attivato]</td> 
+   <td role="rowheader">[!UICONTROL Promemoria attivato]</td> 
    <td>Seleziona se attivare un promemoria per questo evento.</td> 
   </tr> 
   <tr> 
@@ -415,7 +415,7 @@ Questo modulo trigger recupera i dettagli di un evento quando viene creato, aggi
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari [!UICONTROL] che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
+   <td>Selezionare il gruppo di calendari  che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendario]</td> 
@@ -513,7 +513,7 @@ Questo modulo di ricerca recupera un elenco di tutti i calendari dell’utente a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari [!UICONTROL] contenente i calendari da elencare.</td> 
+   <td>Selezionare il gruppo di calendari  contenente i calendari da elencare.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limite]</td> 
@@ -536,7 +536,7 @@ Questo modulo di azione modifica un calendario esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID calendario]</td> 
-   <td>Immettere l'ID del calendario [!UICONTROL] per il calendario che si desidera aggiornare. </td> 
+   <td>Immettere l'ID del calendario  per il calendario che si desidera aggiornare. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nome nuovo calendario]</td> 
