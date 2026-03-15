@@ -1,17 +1,17 @@
 ---
-title: Aggiungere un modulo router e configurare le route
+title: Aggiungere un modulo router e configurare i percorsi
 description: Il modulo Router consente di diramare il flusso in più route ed elaborare i dati all'interno di ciascuna route in modo diverso. Una volta che un modulo Router riceve un bundle, lo inoltra a ogni route connessa nell'ordine in cui le route sono state collegate al modulo Router.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 0%
+source-wordcount: '891'
+ht-degree: 13%
 
 ---
 
-# Aggiungere un modulo router e configurare le route
+# Aggiungere un modulo router e configurare i percorsi
 
 Il modulo Router consente di suddividere lo scenario in più route ed elaborare i dati all&#39;interno di ciascuna route in modo diverso. Quando un modulo Router riceve un bundle, lo inoltra a ogni route connessa nell&#39;ordine in cui le route sono state collegate al modulo Router.
 
@@ -20,7 +20,7 @@ Le route vengono elaborate in sequenza, non in parallelo. Un bundle viene inviat
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -28,22 +28,22 @@ Le route vengono elaborate in sequenza, non in parallelo. Un bundle viene inviat
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -54,8 +54,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
 1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Selezionare lo scenario in cui aggiungere un router.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
-1. Nell’editor dello scenario, fai clic sull’handle destro del modulo dopo il quale desideri aggiungere il router.
-1. Selezionare **[!UICONTROL Controllo flusso]** > **Router** nell&#39;elenco dei moduli visualizzati.
+1. Nell&#39;editor scenario fare clic sull&#39;handle destro del modulo dopo il quale si desidera aggiungere il router, quindi selezionare **[!UICONTROL Controllo flusso]** > **Router** nell&#39;elenco dei moduli visualizzati.
 
    ![Connetti la route](assets/connect-the-router-350x108.png)
 
@@ -69,7 +68,11 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
 
    È possibile aggiungere tutte le route desiderate.
 
-1. Per verificare l&#39;ordine delle route, fare clic sull&#39;icona Allineamento automatico ![Icona Allineamento automatico](assets/auto-align.png).
+1. Per verificare l&#39;ordine delle route, controllare l&#39;etichetta di ciascuna route. La route 1 viene eseguita per prima, quindi la route 2 e così via.
+
+   Oppure
+
+   Fare clic sull&#39;icona Allineamento automatico ![Icona Allineamento automatico](assets/auto-align.png).
 
    Le route sono disposte nell&#39;ordine in cui vengono eseguite. La route superiore viene eseguita per prima.
 
@@ -85,6 +88,8 @@ Puoi inserire un filtro su un percorso dopo il modulo Router per filtrare i bund
 
 Se i dati passano il filtro di più route, i dati vengono gestiti da entrambe le route. La route superiore gestisce prima i dati.
 
+I router con filtri visualizzano l&#39;icona del filtro ![Icona del filtro](assets/fusion-scenario-filter-icon.png) sull&#39;etichetta della route.
+
 1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Seleziona lo scenario in cui desideri aggiungere un filtro.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
@@ -93,7 +98,7 @@ Se i dati passano il filtro di più route, i dati vengono gestiti da entrambe le
 1. Nel campo etichetta del pannello visualizzato, aggiungi un’etichetta. Questa etichetta viene visualizzata nello scenario.
 1. Configurare le condizioni del filtro.
 
-   Per ulteriori informazioni, vedere [Aggiungere un filtro a uno scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+   Per ulteriori informazioni, consulta [Aggiungere un filtro a uno scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Fare clic su **[!UICONTROL OK]** per salvare la configurazione del filtro.
 
@@ -102,6 +107,8 @@ Se i dati passano il filtro di più route, i dati vengono gestiti da entrambe le
 ## Configurare una route di fallback
 
 La route di fallback è la route che viene eseguita su tutti i bundle che non passano alcun filtro a un&#39;altra route.
+
+I percorsi di fallback visualizzano &quot;Fallback&quot; sull’etichetta.
 
 Puoi abilitare una route di fallback nel pannello dei filtri.
 

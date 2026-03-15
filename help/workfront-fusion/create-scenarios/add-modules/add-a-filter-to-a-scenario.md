@@ -4,10 +4,10 @@ description: In alcuni scenari, devi lavorare solo con bundle che soddisfano cri
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 17%
+source-wordcount: '525'
+ht-degree: 19%
 
 ---
 
@@ -79,28 +79,46 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ## Copiare un filtro
 
-Attualmente, l’editor dello scenario include una funzione per copiare un filtro.
-
->[!NOTE]
->
->Se copi i moduli su entrambi i lati del filtro, viene copiato anche il filtro.
->
->Per ulteriori informazioni sulla copia dei moduli, vedere [Copiare moduli o scenari in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md).
-
-Per copiare un filtro senza copiare i moduli, potete utilizzare Fusion DevTool
+Puoi copiare un filtro esistente e incollarlo altrove nello scenario.
 
 1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Seleziona lo scenario in cui desideri aggiungere un filtro.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
-1. Aprire Fusion DevTool facendo clic sull&#39;icona DevTool ![icona DevTool](assets/debugger-icon.png) nella parte inferiore dello schermo.
+1. Fai clic con il pulsante destro del mouse sui punti di connessione tra i moduli in cui si trova il filtro.
+1. Seleziona **Copia filtro**.
+1. Fai clic con il pulsante destro del mouse sui punti di connessione tra i moduli in cui desideri incollare il filtro.
+1. Seleziona **Incolla filtro
+1. (Facoltativo) Per modificare il filtro, fare clic sull&#39;icona o sull&#39;etichetta del filtro e immettere i valori come descritto in [Aggiungere un filtro tra due moduli](#add-a-filter-between-two-modules) in questo articolo.
 
-   Se l&#39;icona DevTool non è visibile, vedere [Eseguire il debug di uno scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) per istruzioni sull&#39;apertura di DevTool.
 
-1. Fai clic sull&#39;icona **[!UICONTROL Strumenti]** ![Strumenti di sviluppo](assets/devtools-tools-icon.png) nella barra laterale sinistra.
 
-1. Fai clic su **[!UICONTROL Copia filtro]**, quindi configura lo strumento **[!UICONTROL Copia filtro]** nel pannello a destra:
 
-   1. Imposta il **[!UICONTROL modulo Source]** come modulo direttamente dopo il filtro che desideri copiare.
-   1. Imposta il **[!UICONTROL modulo di destinazione]** come modulo dopo il quale vuoi inserire il filtro.
+<!--
 
-1. Fare clic su **[!UICONTROL Esegui]**.
+Currently, the scenario editor does include a feature for copying a filter.
+
+>[!NOTE]
+>
+>If you copy the modules on either side of the filter, the filter is also copied.
+>
+>For more information on copying modules, see [Copy modules or scenarios in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md).
+
+To copy a filter without copying modules, you can use the Fusion DevTool
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Open the Fusion DevTool by clicking on the DevTool icon ![DevTool icon](assets/debugger-icon.png) near the bottom of the screen.
+   
+   If you do not see the DevTool icon, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) for instructions on opening the DevTool.
+   
+1. Click the **[!UICONTROL Tools]** icon ![DevTool tools](assets/devtools-tools-icon.png) in the left side bar.
+
+1. Click **[!UICONTROL Copy Filter]**, then configure the **[!UICONTROL Copy Filter]** tool in the right side panel:
+
+   1. Set the **[!UICONTROL Source Module]** as the module directly after the filter you want to copy.
+   1. Set the **[!UICONTROL Target Module]** as the module that you want to place the filter directly after.
+
+1. Click **[!UICONTROL Run]**.
+
+-->
