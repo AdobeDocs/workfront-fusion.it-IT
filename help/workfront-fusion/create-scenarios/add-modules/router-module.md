@@ -4,10 +4,10 @@ description: Il modulo Router consente di diramare il flusso in più route ed el
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: c93a342c2300c5a008a95f180dfebd3abaeb95d0
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 13%
+source-wordcount: '984'
+ht-degree: 11%
 
 ---
 
@@ -80,6 +80,11 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
    ![Instradamento ordine](assets/order-routes.png)
 
+1. (Facoltativo) Per disabilitare una route, fare clic con il pulsante destro del mouse sui punti che conducono dal router a tale route e selezionare **Disabilita route**.
+
+   Le route disattivate visualizzano punti grigi che conducono dal router al primo modulo della route e mostrano sull&#39;etichetta l&#39;icona della route disattivata ![Icona della route disattivata](assets/disabled-route-icon.png).
+
+1. (Facoltativo e condizionale) Per abilitare una route disabilitata, fare clic sull&#39;icona della route disabilitata ![Icona della route disabilitata](assets/disabled-route-icon.png) sull&#39;etichetta della route.
 1. Continuare con [Aggiungere un filtro a una route](#add-a-filter-to-a-route).
 
 ## Aggiungere un filtro a un ciclo di lavorazione
@@ -101,6 +106,7 @@ I router con filtri visualizzano l&#39;icona del filtro ![Icona del filtro](asse
    Per ulteriori informazioni, consulta [Aggiungere un filtro a uno scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Fare clic su **[!UICONTROL OK]** per salvare la configurazione del filtro.
+1. (Condizionale) Se il nome del filtro è troppo lungo per poter essere inserito nell’etichetta, passa il puntatore del mouse sull’etichetta per visualizzare l’intero nome.
 
 1. Continua con [Configurare una route di fallback](#configure-a-fallback-route).
 
