@@ -5,10 +5,10 @@ description: Questo articolo descrive le direttive che puoi utilizzare per la ge
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bf2e689f7015b08a0cf773e990077a53144263b6
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 32%
+source-wordcount: '583'
+ht-degree: 31%
 
 ---
 
@@ -55,7 +55,7 @@ In Workfront Fusion sono disponibili le seguenti direttive per la gestione degli
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Rollback</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>L’esecuzione dello scenario viene interrotta immediatamente.</li><li>Viene avviata una fase di rollback su tutti i moduli, nel tentativo di ripristinarne lo stato iniziale. </li><li>I moduli successivi non vengono elaborati.</p></li><li> <p>Nella maggior parte dei casi, lo scenario viene disattivato dopo il numero di errori consecutivi specificati in Impostazioni scenario. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Numero di errori consecutivi</a>.</p> </li><li><p>Lo stato di esecuzione dello scenario è contrassegnato come "Errore".</p></li></ul> <p><b>Nota</b>: questo è il comportamento predefinito se al modulo non è allegata alcuna route del gestore degli errori e se l'impostazione <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Consenti archiviazione esecuzioni incomplete</a>Consenti archiviazione esecuzioni incomplete in [!UICONTROL Scenario settings] non è selezionata.</p> </td> 
+   <td> <ul><li><p>L’esecuzione dello scenario viene interrotta immediatamente.</li><li>Viene avviata una fase di rollback su tutti i moduli, nel tentativo di ripristinarne lo stato iniziale. </li><li>I moduli successivi non vengono elaborati.</p></li><li> <p>Nella maggior parte dei casi, lo scenario viene disattivato dopo il numero di errori consecutivi specificati in Impostazioni scenario. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Numero di errori consecutivi</a>.</p> </li><li><p>Lo stato di esecuzione dello scenario è contrassegnato come "Errore".</p></li></ul> <p><b>Nota</b>: questo è il comportamento predefinito se al modulo non è allegata alcuna route del gestore degli errori e l'impostazione dello scenario <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Consenti archiviazione esecuzioni incomplete</a> non è selezionata.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Conferma</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -63,11 +63,11 @@ In Workfront Fusion sono disponibili le seguenti direttive per la gestione degli
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Resume (Riprendi)</p> <p> <img src="assets/resume.png"> </p> </td> 
-   <td> <ul><li><p>Un output sostitutivo viene specificato e fornito al modulo che rileva un errore.</p> </li><li><p>Vengono elaborati i moduli successivi.</p></li><li> <p>Lo stato di esecuzione dello scenario viene contrassegnato come “Success” (Completato).</p></li></ul> </td> 
+   <td> <ul><li><p>Un output sostitutivo viene specificato e fornito al modulo che rileva un errore.</p> </li><li><p>Vengono elaborati i moduli successivi.</p></li>Se il gestore degli errori si trova su un router, lo scenario procede attraverso le route come previsto.<li></li><li> <p>Lo stato di esecuzione dello scenario viene contrassegnato come “Success” (Completato).</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ignora</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>L’errore viene ignorato.</li><li> I moduli successivi non vengono elaborati.</p> </li><li><p>Se sono presenti bundle non elaborati, l’esecuzione dello scenario continua normalmente.</p> </li><li><p>Lo stato di esecuzione dello scenario viene contrassegnato come “Success” (Completato).</p> </li></ul></td> 
+   <td><ul><li> <p>L’errore viene ignorato.</li><li> I moduli successivi non vengono elaborati.</p> </li><li><p>Se sono presenti bundle non elaborati, l’esecuzione dello scenario continua normalmente.</p> </li><li>Se il gestore degli errori si trova su un router, le route successive da tale router vengono ignorate.</li><li><p>Lo stato di esecuzione dello scenario viene contrassegnato come “Success” (Completato).</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Break (Interrompi)</p> <p> <img src="assets/break.png"> </p> </td> 
