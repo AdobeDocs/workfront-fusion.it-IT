@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 3808ddc0525b11644060447f0a92ea1911aef7a3
+source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2091'
 ht-degree: 97%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 97%
 * Attività sulla versione di Fusion {#fusion-release-activity}
    * [Attività sulla versione di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versioni di Fusion - 2026 {#fusion-releases-2026}
+      * [Attività di rilascio di Workfront Fusion: settimana del 30 marzo 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 23 marzo 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 16 marzo 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
       * [Attività sulla versione di Workfront Fusion: settimana dell’martedì 9 marzo 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
@@ -310,7 +311,7 @@ ht-degree: 97%
       * [Pannello di mappatura](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
       * Tipi di dati {#data-types}
          * [Tipi di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
-         * [Tipi di dati elemento &#x200B;](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
+         * [Tipi di dati elemento ](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
          * [Coercizione del tipo](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [Strutture di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
       * Funzioni {#functions}
