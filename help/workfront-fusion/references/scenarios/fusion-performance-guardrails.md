@@ -4,10 +4,10 @@ description: Poiché l’automazione del lavoro richiede un’elaborazione rapid
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: c41cc27660b15824a560c770ace663739dccdfa2
+source-git-commit: d2bc26f26af530e3d770faba47d24e1d4f73b73d
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 96%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -72,6 +72,7 @@ Per ulteriori informazioni, consulta [Utilizzare file di grandi dimensioni](/hel
 ## Cronologia di esecuzione
 
 * I registri della cronologia di esecuzione sono limitati a **100 MB**. Se la cronologia di esecuzione supera queste dimensioni, verranno visualizzati solo i primi 100 MB.
+* Se l&#39;input o l&#39;output di una singola operazione supera i 15 MB, non viene visualizzato nella cronologia di esecuzione.
 * Se uno scenario presenta più esecuzioni simultanee, nell’area Esecuzioni della pagina dei dettagli dello scenario vengono visualizzate solo 5 esecuzioni. Questo vale anche quando sono in esecuzione più di 5 esecuzioni.
 
 ## Esecuzioni incomplete
