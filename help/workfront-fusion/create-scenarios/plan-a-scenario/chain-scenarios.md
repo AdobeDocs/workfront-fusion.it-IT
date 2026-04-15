@@ -4,14 +4,14 @@ description: Puoi concatenare gli scenari, consentendo a uno di attivarne un alt
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 0%
+source-wordcount: '1267'
+ht-degree: 12%
 
 ---
 
-# Catena più scenari insieme
+# Concatenare più scenari insieme
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Quando concili uno scenario, considera le seguenti best practice.
 
 ### Evitare la ricorsione durante il concatenamento degli scenari
 
-La ricorsione si verifica quando uno scenario attiva una nuova esecuzione di se stesso, che attiva una nuova esecuzione e così via in un ciclo infinito.
+La ricorsione si verifica quando uno scenario attiva una nuova esecuzione di se stesso, attivando una nuova esecuzione e così via in un ciclo infinito.
 
 La ricorsione può causare problemi di prestazioni sia per l’organizzazione proprietaria dello scenario ricorsivo che per altre organizzazioni.
 
@@ -96,12 +96,14 @@ Quando si concatenano scenari, seguire queste procedure per evitare ricorsioni:
 
 * Assicurati che **scenari figlio non possano attivare lo scenario padre**. Ad esempio, se uno scenario principale viene attivato al momento della creazione di una richiesta, assicurati che gli scenari secondari non creino richieste.
 * Assicurati che **scenari secondari non si chiamino tra loro**. Ad esempio, se lo scenario figlio A chiama lo scenario figlio B, assicurati che lo scenario figlio B non chiami lo scenario figlio A.
-* Assicurati che **uno scenario non possa chiamare se stesso**. Ad esempio, uno scenario viene attivato quando viene creata un&#39;attività e tale scenario crea due attività. Le nuove attività create attivano entrambe di nuovo lo scenario, che crea quattro nuove attività. Ogni volta che viene creata un&#39;attività, lo scenario viene attivato e ogni volta che lo scenario viene eseguito, il numero di attività raddoppia. Il numero di attività aumenta in modo esponenziale.
+* Assicurati che **uno scenario non possa chiamare se stesso**. Ad esempio, uno scenario viene attivato quando viene creata un’attività e tale scenario crea due attività. Le attività appena create attivano nuovamente lo scenario, creando quattro nuove attività. Ogni volta che viene creata un’attività, lo scenario viene attivato e ogni volta che lo scenario viene eseguito, il numero di attività raddoppia. Il numero di attività aumenta in modo esponenziale.
 
 >[!IMPORTANT]
 >
->* **Quando uno scenario provoca la ricorsione, viene disattivato dal team di progettazione di Fusion per evitare ulteriori problemi di prestazioni.**
->* Poiché la ricorsione è il risultato della progettazione dello scenario, è necessario progettare gli scenari in modo tale che lo scenario non includa azioni che attivino lo scenario.
+>* **Quando uno scenario sta causando la ricorsione, viene disattivato dal team di progettazione di Fusion per evitare ulteriori problemi di prestazioni.**
+>* Poiché la ricorsione è il risultato della progettazione dello scenario, è necessario progettare gli scenari in modo tale che lo scenario non includa azioni che lo attivino.
+>* È possibile visualizzare un diagramma delle relazioni tra gli scenari padre e figlio.
+>   Per istruzioni, vedere [Visualizzare le relazioni tra scenari concatenati](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
 ### Utilizza la gestione degli errori per garantire una risposta
 
