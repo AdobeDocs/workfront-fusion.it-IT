@@ -3,9 +3,10 @@ title: Aggiungi un prompt di IA al tuo scenario
 description: Puoi includere un prompt di IA nello scenario che si connette al tuo
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 09e8ca28c12990a699816671d07f85288d973bc7
+exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,12 +14,6 @@ ht-degree: 0%
 # Aggiungi un prompt di IA allo scenario
 
 È possibile includere un prompt di IA nello scenario utilizzando il protocollo MCP (Model Context Protocol) combinato con i modelli di linguaggio di grandi dimensioni (LLM, Large Language Model). Configurandoli nel modulo dell’agente MCP, puoi usare l’intelligenza artificiale per impostare flussi di lavoro efficienti, sicuri e flessibili.
-
->[!NOTE]
->
->Questa funzionalità è distinta dalla possibilità di aggiungere moduli a uno scenario utilizzando l’intelligenza artificiale.
->
->Per informazioni sull&#39;aggiunta di moduli con IA, vedere [Generare un segmento di scenario utilizzando IA](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md).
 
 ## Panoramica di Model Context Protocol
 
