@@ -4,7 +4,7 @@ description: È possibile visualizzare informazioni sugli eventi o sulle esecuzi
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 12%
@@ -122,7 +122,8 @@ Puoi filtrare la cronologia di esecuzione per visualizzare solo le esecuzioni co
 
 L’icona del filtro è arancione nelle colonne con un filtro attivo.
 
-<!-- don't see how to do this
+<!--
+don't see how to do this
 ## Sort the scenario execution history
 
 You can sort the scenario execution history.

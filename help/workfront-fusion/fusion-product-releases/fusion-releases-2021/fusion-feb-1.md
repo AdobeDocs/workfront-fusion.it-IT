@@ -3,27 +3,26 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Attività di rilascio di Workfront Fusion: settimana del 1° febbraio 2021'
-description: Questa pagina descrive tutti i miglioramenti apportati ad Adobe Workfront Fusion la settimana del 1° febbraio 2021.
+title: 'Attività sulla versione di Workfront Fusion: settimana del martedì 1 febbraio 2021'
+description: Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 1 febbraio 2021.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: ce0c1c62-d012-4bc2-8d73-69893c1be8da
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 0%
+ht-degree: 43%
 
 ---
 
 # Attività di rilascio di Workfront Fusion: settimana del 1° febbraio 2021
 
-Questa pagina descrive tutti i miglioramenti apportati ad Adobe Workfront Fusion la settimana del 1° febbraio 2021.
+Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 1 febbraio 2021.
 
-Per un elenco di tutte le modifiche recenti, vedere [Attività di Adobe Workfront Fusion release](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
+Per un elenco di tutte le modifiche recenti, consulta [Attività sulla versione di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Per un elenco delle correzioni di bug recenti in Workfront Fusion, vedere la pagina [Aggiornamenti di manutenzione di Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=it) e verificare la presenza di eventuali aggiornamenti etichettati Aggiornamento di manutenzione di Workfront Fusion.
+Per un elenco delle correzioni di bug recenti in Workfront Fusion, consulta la pagina [Aggiornamenti di manutenzione di Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=it) e controlla la presenza di eventuali aggiornamenti etichettati Aggiornamento di manutenzione di Workfront Fusion.
 
 
 ## Sono ora disponibili il connettore e i moduli MariaDB
@@ -45,4 +44,4 @@ Con i moduli MariaDB è possibile:
 * Aggiungere o rimuovere lead da un elenco
 * Pianificare una campagna
 * Copiare un programma
-* Effettuare una chiamata API personalizzata
+* Effettua chiamata API personalizzata

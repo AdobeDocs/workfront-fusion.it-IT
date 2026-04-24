@@ -3,27 +3,26 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Attività di rilascio di Workfront Fusion: settimana del 17 maggio 2021'
-description: Questa pagina descrive tutti i miglioramenti apportati ad Adobe Workfront Fusion la settimana del 17 maggio 2021.
+title: 'Attività sulla versione di Workfront Fusion: settimana del martedì 17 maggio 2021'
+description: Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 17 maggio 2021.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 2ea57c69-8db7-4500-9157-e2c2d8c74938
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
 
 # Attività di rilascio di Workfront Fusion: settimana del 17 maggio 2021
 
-Questa pagina descrive tutti i miglioramenti apportati ad Adobe Workfront Fusion la settimana del 17 maggio 2021.
+Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 17 maggio 2021.
 
-Per un elenco di tutte le modifiche recenti, vedere [Attività di Adobe Workfront Fusion release](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
+Per un elenco di tutte le modifiche recenti, consulta [Attività sulla versione di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Per un elenco delle correzioni di bug recenti in Workfront Fusion, vedere la pagina [Aggiornamenti di manutenzione di Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=it) e verificare la presenza di eventuali aggiornamenti etichettati Aggiornamento di manutenzione di Workfront Fusion.
+Per un elenco delle correzioni di bug recenti in Workfront Fusion, consulta la pagina [Aggiornamenti di manutenzione di Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=it) e controlla la presenza di eventuali aggiornamenti etichettati Aggiornamento di manutenzione di Workfront Fusion.
 
 ## Copiare moduli in scenari Workfront Fusion
 
@@ -45,7 +44,7 @@ Copiando e spostando i moduli vengono mantenuti i valori dei moduli e le linee c
 
 Per semplificare la creazione degli scenari, abbiamo consentito ai moduli di mantenere i valori dei campi quando non sono attivi. Ora, quando si fa clic lontano da un modulo senza salvarlo e quindi si torna ad esso, i campi mostrano i valori precedentemente immessi. Quando il modulo viene chiuso, viene visualizzato un indicatore della presenza di campi non salvati.
 
-## Il connettore Azure AD ora gestisce separatamente i record nuovi e aggiornati
+## Il connettore Azure AD ora gestisce separatamente i record nuovi e aggiornati.
 
 I nuovi record e gli aggiornamenti ai record esistenti vengono ora gestiti da moduli separati.
 

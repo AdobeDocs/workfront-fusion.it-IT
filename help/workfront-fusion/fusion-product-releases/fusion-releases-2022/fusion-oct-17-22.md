@@ -3,21 +3,20 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Attività di rilascio di Workfront Fusion: settimana del 17 ottobre 2022'
-description: Questa pagina descrive tutti i miglioramenti apportati ad Adobe Workfront Fusion la settimana del 17 ottobre 2022.
+title: 'Attività sulla versione di Workfront Fusion: settimana del 17 ottobre 2022'
+description: Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 17 ottobre 2022.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 74130f09-2b18-4732-b338-c2bf53a3ed3f
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 0%
+ht-degree: 25%
 
 ---
 
-# Attività di rilascio di Workfront Fusion: settimana del 17 ottobre 2022
+# Attività sulla versione di Workfront Fusion: settimana del 17 ottobre 2022
 
 ## Il modulo Adobe Creative Cloud Libraries > Carica risorse ora consente di caricare file di dimensioni maggiori
 

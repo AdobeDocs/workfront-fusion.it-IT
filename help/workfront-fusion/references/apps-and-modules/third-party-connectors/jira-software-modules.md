@@ -4,10 +4,10 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
+source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
 workflow-type: tm+mt
 source-wordcount: '2466'
-ht-degree: 37%
+ht-degree: 43%
 
 ---
 
@@ -141,7 +141,7 @@ Per connettere [!DNL Jira Software] a Workfront Fusion, è necessario creare un 
 
 Per autorizzare una connessione tra Workfront Fusion e [!DNL Jira Server], sono necessari la chiave consumer, la chiave privata e l&#39;URL del servizio. Potrebbe essere necessario contattare l&#39;amministratore [!DNL Jira] per ottenere queste informazioni.
 
-* [Genera chiavi pubbliche e private per la connessione  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
+* [Genera chiavi pubbliche e private per la connessione  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configura l&#39;app client come consumer in [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Crea una connessione al server  [!DNL Jira] o al centro dati Jira in Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 
@@ -309,8 +309,8 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto, aggiornat
      <li value="4"> <p>Selezionare il tipo di record che si desidera che venga controllato dal software:</p> 
       <ul> 
        <li>[!UICONTROL Comment] </li> 
-       <li>[!UICONTROL Issue]</li> 
-       <li>Progetto  </li> 
+       <li>[!UICONTROL Problema]</li> 
+       <li>[!UICONTROL Progetto] </li> 
        <li>[!UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
@@ -375,8 +375,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Progetto]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
@@ -416,7 +416,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
@@ -446,8 +446,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Progetto]</li> 
      <li>[!UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
@@ -502,8 +502,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Selezionare il tipo di record [!DNL Jira] che si desidera venga letto dal modulo.</p> 
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Progetto]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Utente]</li> 
     </ul> </td> 
@@ -542,8 +542,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Selezionare il tipo di record da aggiornare nel modulo. Quando si seleziona un tipo di record, nel modulo vengono visualizzati altri campi specifici per tale tipo di record.</p> 
     <ul> 
      <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Progetto]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Problema di transizione]</li> 
     </ul> </td> 
@@ -562,21 +562,21 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
 
 >[!IMPORTANT]
 >
->Il modulo di ricerca utilizzato dal connettore Jira legacy può causare il seguente errore:
+>Il modulo di ricerca utilizzato dal connettore Jira precedente può causare il seguente errore:
 >
 >`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
 >
->Ciò è dovuto a una deprecazione da parte di Jira.
+>Questo è dovuto alla rimozione di funzionalità da parte di Jira.
 >
->Se si verifica questo errore, è possibile sostituire il modulo di ricerca del connettore Jira legacy con il modulo di ricerca del nuovo connettore. Il nuovo connettore consente di selezionare la versione API utilizzata. Assicurati di selezionare V3 durante la creazione della connessione.
+>Se si verifica questo errore, puoi sostituire il modulo di ricerca del connettore Jira precedente con il modulo di ricerca del nuovo connettore. Nota: il nuovo connettore consente di selezionare la versione API utilizzata. Assicurati di selezionare V3 durante la creazione della connessione.
 >
 > ![Opzione di versione API nel nuovo connettore Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
->Tieni presente che:
+>Nota:
 >
->* È interessato solo il modulo di ricerca. Al momento, altri endpoint API Jira utilizzati dal connettore Fusion non sono interessati da questa rimozione.
+>* Solo il modulo di ricerca è interessato. Al momento, altri endpoint API Jira utilizzati dal connettore Fusion non sono interessati dalla rimozione di queste funzionalità.
 >
->* Il rollout geografico può causare incongruenze. Atlassian sta implementando questa modifica a livello regionale, il che significa che alcune istanze di Jira Cloud potrebbero ancora supportare temporaneamente gli endpoint precedenti. Questo può causare comportamenti non coerenti tra gli ambienti.
+>* Il rollout su base geografica può causare incongruenze. Poiché Atlassian sta implementando questa modifica a livello regionale, è possibile che alcune istanze di Jira Cloud supportino ancora temporaneamente gli endpoint precedenti. Questo può causare comportamenti non coerenti in ambienti diversi.
 
 #### [!UICONTROL Elenca record]
 
@@ -599,8 +599,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Selezionare il tipo di record che si desidera elencare nel modulo. Quando si seleziona un tipo di record, nel modulo vengono visualizzati altri campi specifici per tale tipo di record.</p> 
     <ul> 
      <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL Issue]</li> 
-     <li>Progetto </li> 
+     <li>[!UICONTROL Problema]</li> 
+     <li>[!UICONTROL Progetto]</li> 
      <li>[!UICONTROL Problema Sprint]</li> 
      <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
@@ -608,7 +608,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Max Results]</p> </td> 
    <td> <p>Immettere o mappare il numero massimo di record che il modulo deve recuperare durante ogni ciclo di esecuzione dello scenario.</p> </td> 
-  </tr> <!--
+  </tr> 
+  <!--
    <tr> 
     <td role="rowheader">Offset</td> 
     <td> Enter or map the ID of the first item you want to retrieve details for. This is a way to paginate the records. If you enter the 5000th item as the offset, the module would return items 5000-9999.</td> 
@@ -639,7 +640,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
     <ul> 
      <li>[!UICONTROL Problemi]</li> 
      <li> <p>[!UICONTROL Issues by JQL (Jira Query Language)] </p> <p>Per ulteriori informazioni su JQL, vedere <a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a> nella Guida di Atlassian. </p> </li> 
-     <li>Progetto </li> 
+     <li>[!UICONTROL Progetto]</li> 
      <li>[!UICONTROL Progetto per problema]</li> 
      <li>[!UICONTROL Utente]</li> 
     </ul> </td> 

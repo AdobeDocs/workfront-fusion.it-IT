@@ -4,7 +4,7 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '4276'
 ht-degree: 13%
@@ -86,7 +86,7 @@ Il connettore SharePoint utilizza quanto segue:
 
 ## Collegare Microsoft SharePoint Online a Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Connettere Microsoft SharePoint Online a Workfront Fusion utilizzando un account  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Connettere Microsoft SharePoint Online a Workfront Fusion utilizzando un account  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connettere Microsoft SharePoint Online a Workfront Fusion tramite impostazioni avanzate](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Connettere Microsoft SharePoint Online a Workfront Fusion tramite l’autorizzazione del certificato](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
@@ -644,7 +644,7 @@ Questo modulo di attivazione avvia uno scenario quando un elemento viene creato 
    <td role="rowheader">[!UICONTROL Immetti ID sito ed elenco]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito e dell'elenco che si desidera controllare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong> e l'ID elenco <strong></strong> che si desidera controllare.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong> e l'ID elenco <strong>[!UICONTROL]</strong> che si desidera controllare.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco che segui]</strong> </p> <p>Seleziona il sito da monitorare, quindi fai clic sull’elenco. Questi menu a discesa recuperano solo i siti seguiti.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -678,7 +678,7 @@ Questo modulo di azione crea un nuovo elenco in SharePoint.
    <td role="rowheader">[!UICONTROL Immetti un ID sito]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito in cui si desidera creare un elenco.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong> in cui si desidera creare un elenco.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong> in cui si desidera creare un elenco.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare il sito in cui si desidera creare un elenco. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -736,7 +736,7 @@ Questo modulo di azione recupera un elenco di tutti gli elementi in un sito spec
    <td role="rowheader">[!UICONTROL Elenchi]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito da cui si desidera recuperare gli elenchi.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong> contenente gli elenchi che si desidera restituire.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong> contenente gli elenchi che si desidera restituire.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare il sito contenente gli elenchi che si desidera recuperare. Il menu a discesa recupera solo i siti che segui.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -767,7 +767,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o modificato
    <td role="rowheader">[!UICONTROL Immetti ID sito]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito da controllare per gli elenchi.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong></strong> in cui desideri guardare gli elenchi.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong>[!UICONTROL]</strong> in cui desideri guardare gli elenchi.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco che segui]</strong> </p> <p>Seleziona il sito da monitorare. L’elenco a discesa recupera solo il sito che segui.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -805,7 +805,7 @@ Questo modulo di azione restituisce i dati di una pagina specificata.
    <td role="rowheader">[!UICONTROL Ottieni pagina]</td> 
    <td> <p>Seleziona la modalità di identificazione della pagina da recuperare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong></strong>e l'ID pagina <strong></strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong>[!UICONTROL]</strong>e l'ID pagina <strong>[!UICONTROL]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Seleziona il sito contenente la pagina da recuperare, quindi fai clic sulla pagina.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -855,7 +855,7 @@ Questo modulo di azione pubblica la versione più recente della pagina seleziona
    <td role="rowheader">[!UICONTROL Pubblica una pagina]</td> 
    <td> <p>Seleziona la modalità di identificazione della pagina da pubblicare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong></strong>e l'ID pagina <strong></strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong>[!UICONTROL]</strong>e l'ID pagina <strong>[!UICONTROL]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Seleziona il sito contenente la pagina da pubblicare, quindi fai clic sulla pagina.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -910,7 +910,7 @@ Questo modulo di azione restituisce i dati di un sito specificato.
    <td role="rowheader">[!UICONTROL Ottieni sito]</td> 
    <td> <p>Seleziona la modalità di identificazione della pagina da recuperare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Seleziona il sito da recuperare.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -962,7 +962,7 @@ Questo modulo recupera le aggiunte, gli aggiornamenti e le eliminazioni effettua
    <td role="rowheader">[!UICONTROL Immetti ID di sito, unità e cartella]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito e dell'unità che contiene l'elemento che si desidera aggiornare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong>, <strong>[!UICONTROL ID unità]</strong> e <strong>[!UICONTROL ID cartella]</strong> nei campi visualizzati.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong>, <strong>[!UICONTROL ID unità]</strong> e <strong>[!UICONTROL ID cartella]</strong> nei campi visualizzati.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare il sito contenente l'elemento che si desidera aggiornare, quindi selezionare l'unità e la cartella. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -1028,7 +1028,7 @@ Questo modulo di attivazione immediata avvia uno scenario quando un elemento vie
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Seleziona un webhook esistente oppure fai clic su Aggiungi e immetti la connessione per crearne uno nuovo.</p> 

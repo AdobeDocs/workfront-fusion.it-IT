@@ -4,10 +4,10 @@ description: Con i moduli Adobe I/O Events puoi avviare uno scenario Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 2%
+ht-degree: 44%
 
 ---
 
@@ -17,7 +17,7 @@ Con i moduli Adobe I/O Events, puoi avviare uno scenario Adobe Workfront Fusion 
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +25,31 @@ Con i moduli Adobe I/O Events, puoi avviare uno scenario Adobe Workfront Fusion 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -82,9 +82,9 @@ Il connettore Adobe I/O Events utilizza quanto segue:
 
 Per creare una connessione per i moduli Adobe I/O Events:
 
-1. Fare clic su Aggiungi accanto alla casella Connessione.
+1. Fai clic su Aggiungi accanto alla casella Connessione.
 
-1. Compila i campi seguenti:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
     <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -95,7 +95,7 @@ Per creare una connessione per i moduli Adobe I/O Events:
       <tr>
         <td role="rowheader">Nome connessione</td>
         <td>
-          <p>Immettere un nome per la connessione.</p>
+          <p>Specifica un nome per questa connessione.</p>
         </td>
       </tr>
       <tr>
@@ -150,11 +150,11 @@ Per creare una connessione per i moduli Adobe I/O Events:
 
 ## Moduli Adobe I/O Events e relativi campi
 
-Quando si configurano [!DNL Adobe I/O Events] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Adobe I/O Events], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli [!DNL Adobe I/O Events], in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati altri campi di [!DNL Adobe I/O Events], a seconda di fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Trigger](#triggers)
 * [Azioni](#actions)
@@ -171,7 +171,7 @@ Questo modulo di azione utilizza un webhook per creare una descrizione dell’ev
 Per creare un webhook:
 
 1. Fai clic su **Aggiungi** accanto al campo Webhook.
-1. Compila i campi seguenti:
+1. Compila i seguenti campi:
 
    <table>
      <col/>
@@ -179,11 +179,11 @@ Per creare un webhook:
      <tbody>
        <tr>
          <td role="rowheader">[!UICONTROL Nome webhook]</td>
-        <td>Immettere un nome per il webhook.</td>
+        <td>Specifica un nome per il webhook.</td>
        </tr>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
-        <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe I/O Events], vedere <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Creare una connessione a [!DNL Adobe I/O Events]</a> in questo articolo.</td>
+         <td role="rowheader">[!UICONTROL Connessione]</td>
+        <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe I/O Events], consulta <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Creare una connessione a [!DNL Adobe I/O Events]</a> in questo articolo.</td>
        </tr>
        <tr>
          <td role="rowheader">
@@ -217,7 +217,7 @@ Per creare un webhook:
 ### Azioni
 
 * [Ottieni ID provider ed evento](#get-provider-and-event-ids)
-* [Effettuare una chiamata API personalizzata](#make-a-custom-api-call)
+* [Effettua chiamata API personalizzata](#make-a-custom-api-call)
 
 #### Ottieni ID provider ed evento
 
@@ -228,8 +228,8 @@ Questo modulo di ricerca ottiene gli ID Adobe I/O Events per il provider e gli e
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
-        <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe I/O Events], vedere <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Creare una connessione a [!DNL Adobe I/O Events]</a> in questo articolo.</td>
+         <td role="rowheader">[!UICONTROL Connessione]</td>
+        <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe I/O Events], consulta <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Creare una connessione a [!DNL Adobe I/O Events]</a> in questo articolo.</td>
        </tr>
        <tr>
          <td role="rowheader">
@@ -251,7 +251,7 @@ Questo modulo di ricerca ottiene gli ID Adobe I/O Events per il provider e gli e
    </table>
 
 
-#### Effettuare una chiamata API personalizzata
+#### Effettua chiamata API personalizzata
 
 Questo modulo di azione effettua una chiamata API personalizzata all&#39;API [!DNL Adobe I/O Events]
 
@@ -260,12 +260,12 @@ Questo modulo di azione effettua una chiamata API personalizzata all&#39;API [!D
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL Connection]</td>
-        <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe I/O Events], vedere <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Creare una connessione a [!DNL Adobe I/O Events]</a> in questo articolo.</td>
+     <td role="rowheader">[!UICONTROL Connessione]</td>
+        <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe I/O Events], consulta <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Creare una connessione a [!DNL Adobe I/O Events]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Path]</p>
+        <p>[!UICONTROL Percorso]</p>
       </td>
       <td>
         <p>Inserisci un percorso relativo a <code>https://api.adobe.io/events</code></p>
@@ -273,14 +273,14 @@ Questo modulo di azione effettua una chiamata API personalizzata all&#39;API [!D
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
+        <p>[!UICONTROL Metodo]</p>
       </td>
       <td>
-  <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p>  
+  <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p>  
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL Intestazioni]</td>
       <td>
         <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p>
         <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p>
@@ -288,14 +288,14 @@ Questo modulo di azione effettua una chiamata API personalizzata all&#39;API [!D
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Stringa Di Query]  </td>
+      <td role="rowheader">[!UICONTROL Stringa di query]  </td>
       <td>
         <p>Immettere la stringa di query richiesta.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+      <td role="rowheader">[!UICONTROL Corpo]</td>
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -313,8 +313,8 @@ Questo modulo di ricerca recupera tutti gli eventi per una registrazione da un g
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
-        <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe I/O Events], vedere <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Creare una connessione a [!DNL Adobe I/O Events]</a> in questo articolo.</td>
+         <td role="rowheader">[!UICONTROL Connessione]</td>
+        <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe I/O Events], consulta <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Creare una connessione a [!DNL Adobe I/O Events]</a> in questo articolo.</td>
        </tr>
        <tr>
          <td role="rowheader">
@@ -329,7 +329,7 @@ Questo modulo di ricerca recupera tutti gli eventi per una registrazione da un g
            [!UICONTROL Numero massimo di eventi restituiti]
          </td>
          <td>
-              Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario. 
+              Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario. 
          </td>
        </tr>
        <tr>
@@ -339,13 +339,15 @@ Questo modulo di ricerca recupera tutti gli eventi per una registrazione da un g
          <td>Immettere o mappare una data. Il modulo restituisce eventi che si sono verificati dopo tale data.
          </td>
        </tr>
-<!--       <tr>
+<!--
+<tr>
          <td role="rowheader">
            [!UICONTROL Seek]
          </td>
          <td>
          </td>
-       </tr>-->
+       </tr>
+-->
        <tr>
          <td role="rowheader">
            [!UICONTROL Latest]
@@ -358,7 +360,7 @@ Questo modulo di ricerca recupera tutti gli eventi per una registrazione da un g
    </table>
 &lt;!—
 
-Guarda gli eventi
+Osserva eventi
 
 Questo modulo di attivazione avvia uno scenario quando si verifica un evento nel prodotto o servizio Adobe scelto.
 

@@ -6,7 +6,8 @@ title: Utilizzare i modelli per collegare Adobe Workfront Fusion e Jira
 description: Utilizza questi modelli per automatizzare i flussi di lavoro tra Adobe Workfront Fusion e Jira.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
+exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '4171'
 ht-degree: 3%
@@ -59,7 +60,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
   Per informazioni e istruzioni, consulta [Configurazione account tecnico](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) nella documentazione di Adobe.
 * È necessario applicare le autorizzazioni di amministratore di sistema all&#39;account tecnico nell&#39;area Profili di prodotto di Adobe Admin Console.
 
-  Per informazioni e istruzioni, vedere [Creazione di amministratori di sistema in Workfront con Adobe Admin Console](https://experienceleague.adobe.com/it/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Per informazioni e istruzioni, vedere [Creazione di amministratori di sistema in Workfront con Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -154,13 +155,13 @@ Per utilizzare questi moduli, è necessario creare quanto segue in Workfront:
 
 1. In Workfront, crea un utente di System Integration. Questo utente viene utilizzato solo da Workfront Fusion e non rappresenta un utente umano. Le attività assegnate a questo utente attiveranno lo scenario che sincronizza Workfront con Jira.
 
-   Per istruzioni, consulta [Aggiungere utenti](https://experienceleague.adobe.com/it/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) nella documentazione di Workfront.
+   Per istruzioni, consulta [Aggiungere utenti](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) nella documentazione di Workfront.
 
 #### Creare un modulo personalizzato in Workfront
 
 1. In Workfront, inizia a creare un modulo personalizzato.
 
-   Per istruzioni, consulta [Creare un modulo personalizzato](https://experienceleague.adobe.com/it/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) nella documentazione di Workfront.
+   Per istruzioni, consulta [Creare un modulo personalizzato](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) nella documentazione di Workfront.
 1. Denomina il modulo &quot;**Campi JIRA**&quot;.
 1. Includi i campi seguenti nel modulo personalizzato:
 
@@ -177,7 +178,7 @@ Per utilizzare questi moduli, è necessario creare quanto segue in Workfront:
 >
 >È consigliabile limitare questo modulo alle modifiche apportate da altri utenti. A tale scopo, è necessario assicurarsi che tutti gli utenti aggiunti al modulo personalizzato dispongano del solo accesso in visualizzazione.
 >
->Per istruzioni, consulta [Condividere un modulo personalizzato](https://experienceleague.adobe.com/it/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) nella documentazione di Workfront.
+>Per istruzioni, consulta [Condividere un modulo personalizzato](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) nella documentazione di Workfront.
 
 ### Configurare le connessioni in Workfront Fusion
 
@@ -272,9 +273,11 @@ Se viene assegnata un’attività Workfront, il problema in Jira è un’attivit
 
 1. Continua con [Mappa campi personalizzati in Jira](#map-custom-fields-in-jira)
 
-<!--#### Map custom fields in Jira. 
+<!--
+#### Map custom fields in Jira.
 
-Awaiting feedback-->
+Awaiting feedback
+-->
 
 +++
 
@@ -555,4 +558,3 @@ Questo scenario invia aggiornamenti dai problemi di Workfront ai problemi JIRA p
 
 
 +++
-

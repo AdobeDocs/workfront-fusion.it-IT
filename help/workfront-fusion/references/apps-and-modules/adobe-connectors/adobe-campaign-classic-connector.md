@@ -4,10 +4,10 @@ description: Con i moduli  [!DNL Adobe Campaign] , puoi avviare uno scenario Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: aa5b5f1fe805f43b6398e26bf1773d7540ef1634
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1401'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
@@ -57,7 +57,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 
 Aggiungere gli indirizzi IP di Fusion a [!DNL Adobe Campaign].
 
-* Per istruzioni sull&#39;aggiunta di indirizzi IP al inserisco nell&#39;elenco Consentiti di targeting di Campaign, consulta [Aggiunta di indirizzi IP al Adobe Campaign di targeting di](https://experienceleague.adobe.com/it/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) nella documentazione di inserire nell&#39;elenco Consentiti.
+* Per istruzioni sull&#39;aggiunta di indirizzi IP al inserisco nell&#39;elenco Consentiti di targeting di Campaign, consulta [Aggiunta di indirizzi IP al Adobe Campaign di targeting di](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) nella documentazione di inserire nell&#39;elenco Consentiti.
 * Per un elenco di indirizzi IP da aggiungere al inserisco nell&#39;elenco Consentiti di, vedere [Configurare gli indirizzi IP per Fusion nel inserisco nell&#39;elenco Consentiti di dell&#39;organizzazione](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Informazioni API di Adobe Campaign
@@ -81,7 +81,7 @@ Il connettore Adobe Campaign utilizza quanto segue:
 >
 >Si consiglia vivamente di creare una connessione server-to-server. Adobe Campaign ha aggiornato la propria API per accettare solo connessioni server-to-server. Se ti connetti a Campaign versione 8 o successiva, **devi** creare una connessione server-to-server.
 >
->Per ulteriori informazioni sui nuovi requisiti di connessione di Campaign, consulta [Migrazione degli operatori tecnici di Campaign a Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=it) nella documentazione di Campaign.
+>Per ulteriori informazioni sui nuovi requisiti di connessione di Campaign, consulta [Migrazione degli operatori tecnici di Campaign a Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) nella documentazione di Campaign.
 
 1. In qualsiasi modulo [!DNL Adobe Campaign], fai clic su **[!UICONTROL Aggiungi]** accanto al campo [!UICONTROL Connessione].
 1. Compila i seguenti campi:
@@ -117,7 +117,7 @@ Il connettore Adobe Campaign utilizza quanto segue:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Se si sta creando una connessione server-to-server, immettere l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].</td>
+          <td>Se si sta creando una connessione server-to-server, immettere l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
@@ -139,7 +139,8 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 * [Azioni](#actions)
 * [Ricerche](#searches)
 
-<!--### Triggers
+<!--
+### Triggers
 
 #### [!UICONTROL Watch records]
 
@@ -174,7 +175,8 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
   </tr> 
  </tbody> 
-</table>-->
+</table>
+-->
 
 
 ### Azioni
@@ -200,7 +202,7 @@ Questo modulo azioni crea un nuovo record in [!DNL Adobe Campaign].
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Campaign], consulta <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Creare una connessione a [!DNL Adobe Campaign]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL Risorsa]</td> 
    <td>Selezionare il tipo di record [!DNL Adobe Campaign] che si desidera creare oppure selezionare **Risorsa personalizzata** e immettere i dettagli della risorsa.</td> 
   </tr> 
   <tr> 
@@ -227,7 +229,7 @@ Questo modulo di azione elimina un singolo record da [!DNL Adobe Campaign].
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Campaign], consulta <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Creare una connessione a [!DNL Adobe Campaign]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL Risorsa]</td> 
    <td>Selezionare il tipo di risorsa da eliminare oppure selezionare **Risorsa personalizzata** e immettere i dettagli della risorsa.</td> 
   </tr> 
   <tr> 
@@ -278,7 +280,7 @@ Questo modulo effettua una chiamata API personalizzata all&#39;API [!DNL Adobe C
 
 Questo modulo di azione esegue un&#39;azione selezionata su un oggetto nell&#39;API [!DNL Adobe Campaign].
 
-Per informazioni su azioni e campi specifici, vedere [[!DNL Adobe Campaign] - Documentazione API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=it).
+Per informazioni su azioni e campi specifici, vedere [[!DNL Adobe Campaign] - Documentazione API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -289,7 +291,7 @@ Per informazioni su azioni e campi specifici, vedere [[!DNL Adobe Campaign] - Do
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Campaign], consulta <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Creare una connessione a [!DNL Adobe Campaign]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL Risorsa]</td> 
    <td>Selezionare il tipo di risorsa su cui si desidera eseguire un'azione oppure selezionare **Risorsa personalizzata** e immettere i dettagli della risorsa.</td> 
   </tr> 
   <tr> 
@@ -320,7 +322,7 @@ Questo modulo di azione legge un record di [!DNL Adobe Campaign].
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Campaign], consulta <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Creare una connessione a [!DNL Adobe Campaign]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL Risorsa]</td> 
    <td>Selezionare il tipo di record [!DNL Adobe Campaign] che si desidera leggere oppure selezionare **Risorsa personalizzata** e immettere i dettagli della risorsa.</td> 
   </tr> 
     <tr> 
@@ -379,7 +381,7 @@ Questo modulo di azione aggiorna un singolo record in [!DNL Adobe Campaign].
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Campaign], consulta <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Creare una connessione a [!DNL Adobe Campaign]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL Risorsa]</td> 
    <td>Selezionare il tipo di record [!DNL Adobe Campaign] che si desidera aggiornare oppure selezionare **Risorsa personalizzata** e immettere i dettagli della risorsa.</td> 
   </tr> 
     <tr> 
@@ -412,7 +414,7 @@ Questo modulo di ricerca restituisce record in base ai criteri specificati.
    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Campaign], consulta <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Creare una connessione a [!DNL Adobe Campaign]</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL Risorsa]</td> 
    <td>Selezionare il tipo di record [!DNL Adobe Campaign] che si desidera restituire oppure selezionare **Risorsa personalizzata** e immettere i dettagli della risorsa.</td> 
   </tr> 
   <tr> 

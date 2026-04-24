@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Gli utenti possono inviare i modelli creati per l’approvazione e condividerli 
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
@@ -32,12 +32,12 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
   <col>
   <tbody>
     <tr>
-      <td role="rowheader">piano Adobe Workfront</td>
+      <td role="rowheader">Piano Adobe Workfront</td>
       <td><p>Qualsiasi</p></td>
     </tr>
     <tr data-mc-conditions="">
-      <td role="rowheader">Licenza Adobe Workfront</td>
-      <td><p>Nuovo: Standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p></td>
+      <td role="rowheader">Licenza di Adobe Workfront</td>
+      <td><p>Nuovo: standard</p><p>Oppure</p><p>Corrente: [!UICONTROL Work] o versione successiva</p></td>
     </tr>
     <tr>
       <td role="rowheader">Licenza Adobe Workfront Fusion**</td>
@@ -65,7 +65,8 @@ Per utilizzare le funzionalità di questo articolo, è necessario disporre dei s
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+-->
 
 +++
 

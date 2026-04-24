@@ -4,24 +4,24 @@ description: In uno scenario Adobe Workfront Fusion, è possibile automatizzare 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '3292'
-ht-degree: 0%
+ht-degree: 26%
 
 ---
 
-# [!DNL Dropbox] moduli
+# Moduli [!DNL Dropbox]
 
 In uno scenario di Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!UICONTROL Dropbox] o [!DNL Dropbox Business], nonché collegarli a più applicazioni e servizi di terze parti. Ciò consente di automatizzare attività quali monitoraggio, ricerca, recupero, inserimento in elenco, creazione e modifica di file e cartelle in [!UICONTROL Dropbox].
 
-Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,31 +29,31 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -64,10 +64,10 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 >[!IMPORTANT]
 >
 >* Per utilizzare il connettore Dropbox, è innanzitutto necessario creare un&#39;applicazione in Dropbox.
->  &#x200B;>   Per ulteriori informazioni, consulta la sezione &quot;Creazione di un’applicazione&quot; nella guida per gli sviluppatori di Dropbox.
+>   Per ulteriori informazioni, consulta la sezione &quot;Creazione di un’applicazione&quot; nella guida per gli sviluppatori di Dropbox.
 >* Durante la creazione dell&#39;applicazione, utilizzare il seguente URI di reindirizzamento: `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox deve approvare le applicazioni con più di 50 utenti.
->  &#x200B;>   Per ulteriori informazioni, cerca &quot;Approvazione produzione&quot; nella guida per gli sviluppatori di Dropbox.
+>   Per ulteriori informazioni, cerca &quot;Approvazione produzione&quot; nella guida per gli sviluppatori di Dropbox.
 
 ## Informazioni API di Dropbox
 
@@ -93,13 +93,13 @@ Il connettore Dropbox utilizza quanto segue:
  </table>
 
 
-## Crea una connessione a [!DNL Dropbox]
+## Creare una connessione ad [!DNL Dropbox]
 
 Per creare una connessione per i moduli [!DNL Dropbox]:
 
 1. In qualsiasi modulo, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
-1. Compila i campi seguenti:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -108,27 +108,27 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Nome connessione]</td>
+        <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td>
         <td>
-          <p>Immettere un nome per la connessione.</p>
+          <p>Specifica un nome per questa connessione.</p>
         </td>
         <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td role="rowheader">[!UICONTROL Ambiente]</td>
         <td>Seleziona se la connessione è per un ambiente di produzione o non di produzione.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
-        <td>Specificare se ci si connette a un account di servizio o a un account personale.</td>
+        <td role="rowheader">[!UICONTROL Tipo]</td>
+        <td>Specifica se ti connetti a un account di servizio o a un account personale.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID client]</td>
         <td>Immetti [!UICONTROL Dropbox] [!UICONTROL Client ID]. </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Segreto client]</td>
+        <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
         <td>Immetti [!DNL Dropbox] [!UICONTROL Client Secret]. </td>
         </tr>
         <tr>
-        <td role="rowheader">Tipo di account </td>
+        <td role="rowheader">Tipo di account [!UICONTROL]</td>
         <td>Seleziona se ti stai connettendo a un account Dropbox personale o a un account aziendale (Dropbox Business).</td>
         </tr>
         <tr>
@@ -140,13 +140,13 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
 
 1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.## [!DNL Dropbox] moduli e relativi campi
 
-## [!DNL Dropbox] moduli e relativi campi
+## Moduli [!DNL Dropbox] e relativi campi
 
-Quando si configurano [!DNL Dropbox] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Dropbox], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli [!DNL Dropbox], in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati altri campi di [!DNL Dropbox], a seconda di fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Moduli trigger](#trigger-modules)
 * [Moduli per ottenere  [!DNL Dropbox]  file e cartelle](#modules-for-getting-dropbox-files-and-folders)
@@ -164,11 +164,11 @@ Questo modulo del tipo Trigger restituisce i dettagli del file quando viene modi
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Selezionare la cartella in cui si desidera verificare le modifiche.</p> </td> 
   </tr> 
   <tr> 
@@ -176,8 +176,8 @@ Questo modulo del tipo Trigger restituisce i dettagli del file quando viene modi
    <td> <p> Abilita questa opzione per monitorare anche le sottocartelle nella cartella selezionata per i file modificati.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit] </td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td>[!UICONTROL Limite] </td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -196,20 +196,20 @@ Questo modulo di azione scarica un file da una cartella.
 
 È possibile specificare il file e la relativa posizione.
 
-Il modulo restituisce l’ID del file e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del file e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 >[!NOTE]
 >
 >Questo modulo è utile per fornire file ai moduli successivi.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -229,16 +229,16 @@ Questo modulo di azione recupera i dettagli della cartella condivisa.
 
 Specifica l’ID della cartella.
 
-Il modulo restituisce l’ID della cartella e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID della cartella e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -254,16 +254,16 @@ Questo modulo di azione elenca i file o le cartelle presenti in una cartella spe
 
 Specifica l’ID della cartella.
 
-Il modulo restituisce gli ID dei file o delle cartelle e di tutti i campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce gli ID dei file o delle cartelle e di tutti i campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -290,16 +290,16 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 Questo modulo di azione recupera tutte le revisioni di file (una cronologia delle versioni) di un determinato file.\
 Specifica l’ID del file.
 
-Il modulo restituisce tutti i campi standard associati al record, insieme a tutti i campi e i valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce tutti i campi standard associati al record, insieme a tutti i campi e i valori personalizzati a cui accede la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -321,22 +321,22 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 Questo modulo di ricerca cerca i record in un oggetto in [!DNL Dropbox] che corrispondono alla query di ricerca specificata.
 
-Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL - Ricerca] </td> 
+   <td>[!UICONTROL Ricerca] </td> 
    <td> <p>Immettere il termine di ricerca.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Selezionare la cartella in cui si desidera eseguire la ricerca. Se non si seleziona una cartella, questo modulo esegue la ricerca nell'intero account [!DNL Dropbox].</p> </td> 
   </tr> 
   <tr> 
@@ -353,7 +353,7 @@ Puoi mappare queste informazioni nei moduli successivi nello scenario.
   </tr> 
   <tr> 
    <td>Limite </td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -375,16 +375,16 @@ Questo modulo di azione crea una nuova cartella.
 
 Specificate il percorso e il nome della cartella.
 
-Il modulo restituisce l’ID della cartella e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID della cartella e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -392,7 +392,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immettere il nome della nuova cartella.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Folder]</p> </td> 
+   <td> <p>[!UICONTROL Cartella]</p> </td> 
    <td> <p>Immetti o mappa il percorso in cui desideri creare una nuova cartella.</p> <p>Nota:   <p>Se si utilizza un account [!DNL Dropbox Business] (con spazi del team), è necessario rimuovere la barra <code>/</code> oppure non fare clic su <strong>Fare clic qui per scegliere la cartella</strong> per creare una cartella del team nella radice.</p> <p>Se la barra non viene rimossa, viene restituito l'errore <code>[409] path/malformed_path/..</code>.</p> </p> </td> 
   </tr> 
   <tr> 
@@ -408,22 +408,22 @@ Questo modulo di azione crea un file DOC o sovrascrive il contenuto di un file e
 
 È possibile specificare il file di origine e la cartella.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Seleziona per]</td> 
-   <td> <p> Selezionare se si desidera creare o sovrascrivere un file DOC.</p><ul><li><b>Creare</b></p>Selezionare la cartella in cui si desidera creare un file.</li><li><b>Sovrascrivi</b><p>Seleziona la modalità di selezione del file da sovrascrivere, quindi mappa il percorso del file o seleziona il file. </td> 
+   <td> <p> Selezionare se si desidera creare o sovrascrivere un file DOC.</p><ul><li><b>Crea</b></p>Selezionare la cartella in cui si desidera creare un file.</li><li><b>Sovrascrivi</b><p>Seleziona la modalità di selezione del file da sovrascrivere, quindi mappa il percorso del file o seleziona il file. </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>[!UICONTROL File di origine]</p> </td> 
    <td> <p>Seleziona un file di origine da un modulo precedente o mappane il contenuto. </p> <p>Se stai creando un file, seleziona <b>Vuoto</b>.</p> </td> 
   </tr> 
  </tbody> 
@@ -435,16 +435,16 @@ Questo modulo crea un collegamento pubblico a un file.
 
 Specificare il file e le informazioni sul collegamento.
 
-Il modulo restituisce l’ID del collegamento e di tutti i campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del collegamento e di tutti i campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -456,12 +456,12 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p style="font-weight: bold;">[!UICONTROL Percorso File]</p> <p>Immettete o mappate il percorso del file di destinazione.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Selezionare il file di destinazione.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Visibilità richiesta </p> </td> 
+   <td> <p>Visibilità richiesta [!UICONTROL]</p> </td> 
    <td> <p>Seleziona se il collegamento è pubblico, per team o con password limitata.</p> <p><b>Nota:</b></p><p> [!UICONTROL Solo team] è disponibile solo per gli account Dropbox Business. [!UICONTROL Access with password] è disponibile solo per [!DNL Dropbox Pro] o account Dropbox Business.</p> </td> 
   </tr> 
   <tr> 
-   <td>Data di scadenza del collegamento </td> 
-   <td> <p> Immetti la data e l’ora in cui il collegamento scadrà e non sarà più accessibile. Se questo campo viene lasciato vuoto, il collegamento non scade. Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Tipo di coercizione</a>.</p>  </td> 
+   <td>Data di scadenza del collegamento [!UICONTROL]</td> 
+   <td> <p> Immetti la data e l’ora in cui il collegamento scadrà e non sarà più accessibile. Se questo campo viene lasciato vuoto, il collegamento non scade. Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercizione del tipo</a>.</p>  </td> 
   </tr> 
   <tr> 
    <td> <p>Livello di accesso di [!UICONTROL Link]</p> </td> 
@@ -477,16 +477,16 @@ Questo modulo di azione elimina un file o una cartella.
 
 Specificare il file o la cartella.
 
-Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui ha accesso la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -506,16 +506,16 @@ Questo modulo di azione sposta un file o una cartella in una posizione diversa.
 
 È possibile specificare il file o la cartella e come e dove si desidera spostarlo.
 
-Il modulo restituisce l’ID del file o della cartella e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del file o della cartella e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -551,16 +551,16 @@ Questo modulo di azione rinomina un file o una cartella.
 
 Specificare il file o la cartella e il nuovo nome.
 
-Il modulo restituisce l’ID del file o della cartella e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del file o della cartella e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -585,16 +585,16 @@ Questo modulo ripristina una versione precedente di un file.
 
 È possibile specificare il file e il numero della revisione desiderata.
 
-Il modulo restituisce l’ID della versione e tutti i campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID della versione e tutti i campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -618,25 +618,25 @@ Questo modulo di azione carica un file in una cartella.
 
 È possibile specificare informazioni quali la posizione del file, il file che si desidera caricare e un nuovo nome facoltativo per il file.
 
-Il modulo restituisce l’ID del file e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del file e dei campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder]</td> 
+   <td>[!UICONTROL Cartella]</td> 
    <td> <p> Selezionare la cartella di [!DNL Dropbox] in cui caricare il file.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> <p><b>Nota:</b></p><p> La dimensione massima del file caricato è di 150 MB.</p> </td> 
+   <td> <p>[!UICONTROL File di origine]</p> </td> 
+   <td> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> <p><b>Nota:</b></p><p> La dimensione massima del file caricato è di 150 MB.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Sovrascrive un file esistente]</td> 
@@ -650,16 +650,16 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
 
 #### [!UICONTROL Effettuare una chiamata API]
 
-Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all&#39;API [!DNL Dropbox]. In questo modo è possibile creare un&#39;automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Dropbox].
+Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all’API [!DNL Dropbox]. In questo modo puoi creare un’automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Dropbox].
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Dropbox] a Workfront Fusion, vedere <a href="#create-a-connection-to-dropbox" class="MCXref xref">Creare una connessione a [!DNL Dropbox]</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -667,20 +667,20 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td> <p>Immettere un percorso relativo a Immettere un percorso relativo a <code>https://api.dropboxapi.com</code>. Ad esempio: <code>/2/files/list_folder</code></p>  </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td> <p>[!UICONTROL Metodo]</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Headers] </td> 
+   <td>[!UICONTROL Intestazioni] </td> 
    <td> <p>Inserisci le intestazioni di richiesta desiderate. Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Stringa Di Query]</td> 
+   <td>[!UICONTROL Stringa di query]</td> 
    <td> <p> Immettere la stringa di query richiesta.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Body] </td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:   <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+   <td>[!UICONTROL Corpo] </td> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:   <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

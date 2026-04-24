@@ -2,29 +2,28 @@
 product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
-keywords: fusione
+keywords: Fusion
 navigation-topic: fusion-release-activity
-title: 'Attività di rilascio di Workfront Fusion: settimana del 30 novembre 2020'
-description: Questa pagina descrive tutti i miglioramenti apportati ad Adobe Workfront Fusion la settimana del 30 novembre 2020.
+title: 'Attività sulla versione di Workfront Fusion: settimana del martedì 30 novembre 2020'
+description: Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 30 novembre 2020.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 76cc14b3-ffec-4d49-b471-f3eb9dd89658
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 0%
+ht-degree: 39%
 
 ---
 
 # Attività di rilascio di Workfront Fusion: settimana del 30 novembre 2020
 
-Questa pagina descrive tutti i miglioramenti apportati ad Adobe Workfront Fusion la settimana del 30 novembre 2020.
+Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 30 novembre 2020.
 
-Per un elenco di tutte le modifiche recenti, vedere [Attività di Adobe Workfront Fusion release](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
+Per un elenco di tutte le modifiche recenti, consulta [Attività sulla versione di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Per un elenco delle correzioni di bug recenti in Workfront Fusion, vedere la pagina [Aggiornamenti di manutenzione di Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=it) e verificare la presenza di eventuali aggiornamenti etichettati Aggiornamento di manutenzione di Workfront Fusion.
+Per un elenco delle correzioni di bug recenti in Workfront Fusion, consulta la pagina [Aggiornamenti di manutenzione di Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=it) e controlla la presenza di eventuali aggiornamenti etichettati Aggiornamento di manutenzione di Workfront Fusion.
 
 ## Limite di frequenza per i webhook di Workfront Fusion 2.0.
 

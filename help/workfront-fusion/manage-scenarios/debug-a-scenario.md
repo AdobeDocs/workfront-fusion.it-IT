@@ -1,17 +1,17 @@
 ---
-title: Debug di uno scenario
+title: Eseguire il debug di uno scenario
 description: Adobe Workfront Fusion Devtool consente di comprendere e risolvere gli scenari. Devtool aggiunge un pannello aggiuntivo a Chrome Developer Tools. Utilizzando questo pannello di debugger, puoi controllare tutte le esecuzioni manuali dello scenario, esaminare tutte le operazioni eseguite e visualizzare i dettagli di ogni chiamata API eseguita. Puoi vedere quale modulo, operazione o singola risposta ha causato l’errore e sfruttare queste informazioni per perfezionare lo scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1468'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# Debug di uno scenario
+# Eseguire il debug di uno scenario
 
 Adobe Workfront Fusion Devtool consente di comprendere e risolvere gli scenari. Utilizzando Devtool, puoi controllare tutte le esecuzioni manuali dello scenario, esaminare tutte le operazioni eseguite e visualizzare i dettagli di ogni chiamata API eseguita. Puoi vedere quale modulo, operazione o singola risposta ha causato l’errore e sfruttare queste informazioni per perfezionare lo scenario.
 
@@ -22,11 +22,11 @@ Adobe Workfront Fusion Devtool consente di comprendere e risolvere gli scenari. 
 Per un video introduttivo e una descrizione dettagliata dello strumento Fusion Devtool, vedere
 
 * [Strumento di sviluppo Fusion](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Procedura dettagliata per Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=it)
+* [Procedura dettagliata per Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -34,22 +34,22 @@ Per un video introduttivo e una descrizione dettagliata dello strumento Fusion D
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -111,10 +111,12 @@ Live Stream mostra cosa accade in background quando fai clic su Esegui una volta
       <td role="rowheader"> <p>Cancella elenco di richieste </p> </td> 
       <td> <p>Fai clic sull’icona cestino nell’angolo in alto a destra del pannello di sinistra di Devtool per cancellare l’elenco delle richieste registrate da Workfront Fusion Devtool. </p> </td> 
      </tr> 
-     <!--<tr> 
+     <!--
+     <tr>
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
       <td> <p>Click the computer icon <img src="assets/console-computer-icon.png"> in the top-right corner of the Devtool's left panel.</p> <p>Logging in the console is enabled when the computer icon is green.</p> </td> 
-     </tr>-->
+     </tr>
+     -->
      <tr> 
       <td role="rowheader"> <p>Recuperare la richiesta nel formato Raw JSON o in cURL</p> </td> 
       <td> 
@@ -183,7 +185,7 @@ Consente di cercare i valori dei moduli per un termine specificato. L’output c
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Parola chiave </td> 
+   <td role="rowheader">Parola chiave [!UICONTROL]</td> 
    <td> <p> Immettere il termine che si desidera cercare. </p> </td> 
   </tr> 
   <tr> 
@@ -264,7 +266,7 @@ Copia negli Appunti il nome del modulo selezionato.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Module] </td> 
+   <td role="rowheader">[!UICONTROL Modulo] </td> 
    <td> <p>Seleziona il modulo di cui desideri copiare il nome.</p> </td> 
   </tr> 
  </tbody> 
@@ -298,7 +300,7 @@ Cerca le variabili specificate nello scenario e le sostituisce con una nuova var
    <td> <p>Individua la pillola di variabili con cui desideri sostituire la variabile dal modulo delle variabili nello scenario e copiala in questo campo ([!UICONTROL Variabile da trovare]). Nel campo, viene visualizzato con parentesi graffe doppie. Esempio: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Module]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Modulo]</p> </td> 
    <td> <p>Seleziona il modulo delle variabili in cui desideri sostituire la variabile. Se non è selezionato alcun modulo, la variabile verrà sostituita nell’intero scenario.</p> </td> 
   </tr> 
  </tbody> 
@@ -318,7 +320,7 @@ Consente di codificare i dati immessi in Base64 o di decodificare Base64. Alcune
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Dati Non Elaborati]</p> </td> 
-   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo Operazione  precedente.</p> </td> 
+   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo Operazione [!UICONTROL] precedente.</p> </td> 
   </tr> 
  </tbody> 
 </table>

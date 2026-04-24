@@ -5,22 +5,21 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 123f49bc-54fd-4f60-8a61-33fce5ec56a6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 1%
+ht-degree: 16%
 
 ---
 
 # Attività di rilascio di Workfront Fusion: settimana del 4 ottobre 2021
 
-Questa pagina descrive tutti i miglioramenti apportati ad Adobe Workfront Fusion la settimana del 4 ottobre 2021.
+Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 4 ottobre 2021.
 
-Per un elenco di tutte le modifiche recenti, vedere [Attività di Adobe Workfront Fusion release](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
+Per un elenco di tutte le modifiche recenti, consulta [Attività sulla versione di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Per un elenco delle correzioni di bug recenti in Workfront Fusion, vedere la pagina [Aggiornamenti di manutenzione di Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=it) e verificare la presenza di eventuali aggiornamenti etichettati Aggiornamento di manutenzione di Workfront Fusion.
+Per un elenco delle correzioni di bug recenti in Workfront Fusion, consulta la pagina [Aggiornamenti di manutenzione di Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=it) e controlla la presenza di eventuali aggiornamenti etichettati Aggiornamento di manutenzione di Workfront Fusion.
 
 ## Visualizza i filtri eventi esistenti nei moduli Workfront > Osserva eventi
 
@@ -37,16 +36,16 @@ In precedenza era possibile immettere valori nei campi dei moduli personalizzati
 
 ## Utilizzare il testo RTF nei commenti e nei campi personalizzati creati con Workfront Fusion
 
-Ora è possibile utilizzare il formato Rich Text quando si utilizza Workfront > Crea un record o Aggiorna un modulo record in Workfront Fusion. Aggiungere tag HTML al testo del commento o del campo personalizzato che si sta aggiungendo o aggiornando e il commento in Workfront visualizza la formattazione. Questa funzionalità si applica anche alle risposte ai commenti.
+Ora è possibile utilizzare il formato Rich Text quando si utilizza Workfront > Crea un record o Aggiorna un modulo record in Workfront Fusion. Aggiungere i tag HTML al testo del commento o del campo personalizzato che si sta aggiungendo o aggiornando e il commento in Workfront visualizza la formattazione. Questa funzionalità si applica anche alle risposte ai commenti.
 
 Gli aggiornamenti supportano i seguenti formati Rich Text:
 
-* Bold
-* Italic
-* Sottolinea
+* Grassetto
+* Corsivo
+* Sottolineato
 * Elenco puntato
 * Elenco numerico
-* Link
+* Collegamento
 * Citazione Bloccati
 * Interrompi linea
 

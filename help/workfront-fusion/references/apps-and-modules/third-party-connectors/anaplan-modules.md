@@ -4,20 +4,20 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2031'
-ht-degree: 18%
+ht-degree: 26%
 
 ---
 
 # [!DNL Anaplan] moduli
 
-In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Anaplan] e collegarlo a più applicazioni e servizi di terze parti.
+In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Anaplan], nonché collegarli a più applicazioni e servizi di terze parti.
 
-Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
@@ -29,17 +29,17 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
    <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza di Workfront Fusion</p>
-   <p>Basata sul connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -87,12 +87,12 @@ Il connettore Anaplan utilizza quanto segue:
  </tbody> 
 </table>
 
-## Connetti [!DNL Anaplan] a Workfront Fusion {#connect-anaplan-to-workfront-fusion}
+## Connettere [!DNL Anaplan] a Workfront Fusion {#connect-anaplan-to-workfront-fusion}
 
 Per creare una connessione per i moduli [!DNL Anaplan]:
 
 1. Fai clic su **[!UICONTROL Aggiungi]** accanto alla casella [!UICONTROL Connessione].
-1. Compila i campi obbligatori:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
     <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -103,19 +103,19 @@ Per creare una connessione per i moduli [!DNL Anaplan]:
       <tr>
         <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td>
         <td>
-          <p>Immettere un nome per la nuova connessione.</p>
+          <p>Inserisci un nome per la nuova connessione.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td role="rowheader">[!UICONTROL Ambiente]</td>
         <td>
           <p>Seleziona se ti connetti a un ambiente di produzione o non di produzione.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
+        <td role="rowheader">[!UICONTROL Tipo]</td>
         <td>
-          <p>Specificare se ci si connette a un account di servizio o a un account personale.</p>
+          <p>Specifica se ti connetti a un account di servizio o a un account personale.</p>
         </td>
       </tr>
       <tr>
@@ -131,9 +131,10 @@ Per creare una connessione per i moduli [!DNL Anaplan]:
      </tbody>
     </table>
 
-1. Fai clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continue]** (Continua) per salvare la connessione e tornare al modulo.
 
-<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+<!--
+1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
 1. Select the connection type.
 
    <table style="table-layout:auto">
@@ -151,7 +152,8 @@ Per creare una connessione per i moduli [!DNL Anaplan]:
     </tbody> 
    </table>
 
-1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+-->
 
 ## Moduli [!DNL Anaplan] e relativi campi
 
@@ -159,7 +161,7 @@ Quando configuri i moduli [!DNL Anaplan], in Workfront Fusion vengono visualizza
 
 Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Pulsante di attivazione/disattivazione mappatura](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Trigger](#triggers)
 * [Azioni](#actions)
@@ -193,7 +195,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
   </tr> 
   <tr> 
    <td role="rowheader">Limite</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -201,14 +203,14 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
 ### Azioni
 
 * [[!UICONTROL Crea una voce di elenco]](#create-a-list-item)
-* [Eliminare un record](#delete-a-record)
-* [Esporta dati](#export-data)
-* [Importare dati](#import-data)
+* [Elimina una decisione](#delete-a-record)
+* [Esportare i dati](#export-data)
+* [Importare i dati](#import-data)
 * [[!UICONTROL Effettuare una chiamata API personalizzata]](#make-a-custom-api-call)
 * [[!UICONTROL Leggi un record]](#read-a-record)
 * [[!UICONTROL Esegui un&#39;azione]](#run-an-action)
 * [[!UICONTROL Aggiorna un record]](#update-a-record)
-* [[!UICONTROL Carica un file]](#upload-a-file)
+* [[!UICONTROL Caricare un file]](#upload-a-file)
 
 #### [!UICONTROL Crea una voce di elenco]
 
@@ -240,11 +242,11 @@ Questo modulo di azione aggiunge un nuovo elemento a un elenco in Anaplan.
         <td>Immettere il codice per il nuovo elemento. I codici sono codici generati dall'utente che consentono di distinguere tra righe con lo stesso nome.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL padre]</td>
+        <td>[!UICONTROL Padre]</td>
         <td>Immettere il nome dell'elemento padre in cui si desidera creare il nuovo elemento.</td>
     </tr>
     <tr>
-        <td>Proprietà </td>
+        <td>Proprietà [!UICONTROL]</td>
         <td>Se nell'elenco a cui si desidera aggiungere un elemento sono presenti proprietà personalizzate, selezionare le proprietà per le quali si desidera aggiungere i valori, quindi aggiungere i valori.</td>
     </tr>
     <tr>
@@ -315,7 +317,7 @@ Questo modulo di azione recupera i dati da Anaplan utilizzando le definizioni di
  </tbody> 
 </table>
 
-#### Importare dati
+#### Importare i dati
 
 Questo modulo di azione importa dati in Anaplan.
 
@@ -368,12 +370,12 @@ Questo modulo consente di eseguire una chiamata API personalizzata all&#39;API [
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringa Di Query] </td> 
+   <td role="rowheader">[!UICONTROL Stringa di query] </td> 
    <td> <p>Immettere la stringa di query richiesta.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, inserisci le virgolette al di fuori dell’istruzione condizionale.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -488,7 +490,7 @@ Questo modulo di azione aggiorna un singolo record in [!UICONTROL Anaplan].
    <td> <p>Selezionare il tipo di record da aggiornare.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Voce di elenco]</b> </p> <p>Per i campi, vedere <a href="#create-a-list-item" class="MCXref xref">Creare una voce di elenco</a> in questo articolo.</p> </li> 
-     <li> <p><b>[!UICONTROL Dati cella modulo]</b> </p> <p>Quando si aggiornano i dati delle celle, vengono aggiornati anche tutti i calcoli a valle che utilizzano tali dati.</p> <p>Compila i campi obbligatori:</p> 
+     <li> <p><b>[!UICONTROL Dati cella modulo]</b> </p> <p>Quando si aggiornano i dati delle celle, vengono aggiornati anche tutti i calcoli a valle che utilizzano tali dati.</p> <p>Compila i seguenti campi:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL ID modello]</b> </p> <p>Selezionate o mappate il modello contenente la cella da aggiornare.</p> </li> 
        <li> <p><b>[!UICONTROL ID modulo]</b> </p> <p>Selezionare o mappare il modulo contenente la cella da aggiornare</p> </li> 
@@ -563,7 +565,7 @@ Questo modulo di ricerca restituisce tutti i record accessibili del tipo selezio
        <li> <p><b>[!UICONTROL Versioni modello]</b> </p> </li> 
        <li> <p>Selezionate o mappate l'ID del modello contenente le versioni del modello che desiderate recuperare.</p> </li> 
        <li> <p><b>[!UICONTROL Utenti]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL Viste]</b> </p> <p>Seleziona se desideri scegliere la vista per modulo o per modello, quindi seleziona o mappa l’ID del modulo o del modello che contiene la vista da recuperare.</p> </li> 
+       <li> <p><b>[!Viste UICONTROL]</b> </p> <p>Seleziona se desideri scegliere la vista per modulo o per modello, quindi seleziona o mappa l’ID del modulo o del modello che contiene la vista da recuperare.</p> </li> 
       </ul> 
    </td> 
   </tr> 

@@ -3,21 +3,20 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Attività di rilascio di Workfront Fusion: settimana del 7 novembre 2022'
-description: Questa pagina descrive tutti i miglioramenti apportati ad Adobe Workfront Fusion la settimana del 7 novembre 2022.
+title: 'Attività sulla versione di Workfront Fusion: settimana del 7 novembre 2022'
+description: Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 7 novembre 2022.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 9d58abd0-1fe7-43c8-a1ea-2fadea738590
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '227'
-ht-degree: 0%
+ht-degree: 30%
 
 ---
 
-# Attività di rilascio di Workfront Fusion: settimana del 7 novembre 2022
+# Attività sulla versione di Workfront Fusion: settimana del 7 novembre 2022
 
 **Ottimizzazione coda webhook**
 
@@ -33,6 +32,6 @@ Per visualizzare gli eventi del webhook attualmente in coda, passa a Webhook nel
 Sono state apportate alcune modifiche al modo in cui Workfront Fusion gestisce i webhook inutilizzati. Ora, i webhook vengono disattivati automaticamente se si applica una delle seguenti condizioni:
 
 * Il webhook non è stato connesso ad alcuno scenario per più di 5 giorni.
-* Il webhook viene utilizzato solo in scenari inattivi, che sono stati inattivi per più di 30 giorni.
+* Il webhook viene utilizzato solo in scenari che rimangono inattivi per più di 30 giorni.
 
-I webhook disattivati vengono eliminati e annullati automaticamente se non sono connessi ad alcun scenario e se sono in stato disattivato da oltre 30 giorni.
+I webhook disattivati vengono eliminati e ne viene automaticamente annullata la registrazione se non connessi ad alcun scenario e se in stato di disattivazione da oltre 30 giorni.
