@@ -1,12 +1,12 @@
 ---
-title: Catena più scenari insieme
-description: Puoi concatenare gli scenari, consentendo a uno di attivarne un altro e restituendo l’output di dati dal secondo al primo.
+title: Chain Multiple Scenarios Together
+description: You can chain scenarios together, allowing one scenario to trigger another, and returning the data output by the second scenario to the first.
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 12%
 
 ---
@@ -15,56 +15,56 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->Questa funzione è attualmente in Beta.
+>This feature is currently in Beta.
 
-Puoi concatenare gli scenari, consentendo a uno di attivarne un altro e restituendo l’output di dati dal secondo al primo. Questo consente di creare scenari più modulari, senza dover duplicare sezioni di scenari in più scenari.
+You can chain scenarios together, allowing one scenario to trigger another, and returning the data output by the second scenario to the first. This allows more modular scenario creation, where you do not have to duplicate scenario sections in multiple scenarios.
 
 È possibile chiamare più scenari figlio da uno scenario padre e uno scenario figlio da più scenari padre. Puoi anche nidificare scenari secondari, effettuando una chiamata da un altro.
 
-Quando uno scenario padre è in attesa che uno scenario figlio restituisca i dati, tale tempo non viene conteggiato rispetto al timeout dello scenario padre. Ad esempio, uno scenario principale chiama 5 scenari secondari, ciascuno dei quali richiede 10 minuti per essere eseguito, per un totale di 50 minuti. L’esecuzione dei moduli nello scenario principale richiede 15 minuti. Lo scenario principale non va in timeout, anche se sono trascorsi in totale 65 minuti, ossia oltre il limite di timeout di 40 minuti.
+When a parent scenario is waiting for a child scenario to return data, that time does not count against the parent scenario&#39;s timeout. For example, a parent scenario calls 5 child scenarios, each of which takes 10 minutes to run, for a total of 50 minutes. The modules in the parent scenario itself take 15 minutes to run. The parent scenario does not time out, even though a total of 65 minutes has passed, which is over the timeout limit of 40 minutes.
 
-Per ulteriori informazioni sui guardrail delle prestazioni di Fusion, inclusi i timeout, vedere [Guardrail delle prestazioni di Fusion](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
+For more information on Fusion&#39;s performance guardrails, including timeouts, see [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
 
 Per istruzioni sulla configurazione dei moduli Chain, vedere [Moduli Chain](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
-## Scenari padre e figlio
+## Parent and child scenarios
 
-* Lo scenario **parent** chiama un altro scenario utilizzando il modulo **Chain** > **Call a child scenario**. Riceve l’output dello scenario figlio, che può elaborare nei moduli di scenario successivi.
-* Lo scenario **figlio** è chiamato dallo scenario padre. Il relativo modulo trigger riceve i dati dallo scenario padre e restituisce l&#39;output allo scenario padre.
+* The **parent** scenario calls another scenario, using the **Chain** > **Call a child scenario** module. It receives the output of the child scenario, which it can process in later scenario modules.
+* The **child** scenario is called by the parent scenario. Its trigger module receives data from the parent scenario, and returns output to the parent scenario.
 
-Lo scenario padre richiede una risposta dallo scenario figlio. Gli scenari secondari che non restituiscono dati non sono attualmente supportati.
+The parent scenario requires a response from the child scenario. Child scenarios that do not return data are currently not supported.
 
-## Strutture di dati in scenari concatenati
+## Data structures in chained scenarios
 
-Workfront Fusion utilizza le strutture di dati per trasferire le informazioni dallo scenario padre allo scenario figlio. La struttura dati è configurata nello scenario figlio. Quando lo scenario figlio viene selezionato dallo scenario padre, i campi per la struttura dati utilizzata come input dello scenario figlio vengono visualizzati nello scenario padre. Puoi mappare i valori su questi campi, che vengono passati allo scenario secondario quando viene attivato.
+Workfront Fusion uses data structures to transfer information from the parent scenario to the child scenario. The data structure is configured in the child scenario. When the child scenario is selected from the parent scenario, the fields for the data structure used as the child scenario&#39;s input appear in the parent scenario. You can map values to these fields, which are passed to the child scenario when it is triggered.
 
-Per informazioni sui moduli da configurare negli scenari padre e figlio, vedere [Moduli catena](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
+For information on the modules to configure in the parent and child scenarios, see [Chain modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
-Per informazioni sulle strutture dati, vedere [Strutture dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
-## Flusso di dati
+## Data flow
 
-1. I dati scorrono attraverso lo scenario principale.
-1. I dati raggiungono il modulo dello scenario Call a child. I dati vengono mappati sui campi nel modulo dello scenario Call a child, che corrispondono ai campi nella struttura dati utilizzata nel modulo trigger dello scenario figlio.
-1. I dati dello scenario Call a child vengono passati allo scenario child.
-1. Lo scenario figlio elabora i dati ed esegue azioni.
-1. Lo scenario figlio termina con la risposta Return al modulo padre.
-1. L’output della risposta Return to parent module viene passato allo scenario padre.
-1. L’output dello scenario Call a child è l’output dello scenario figlio. Questo output può essere elaborato successivamente nello scenario principale.
+1. Data flows through the parent scenario.
+1. Data reaches the Call a child scenario module. Data is mapped to the fields in the Call a child scenario module, which match the fields in the data structure used in the child scenario&#39;s trigger module.
+1. Data from the Call a child scenario is passed to the child scenario.
+1. The child scenario processes data and performs actions.
+1. The child scenario ends with the Return response to parent module.
+1. The output of the Return response to parent module is passed to the parent scenario.
+1. The output of the Call a child scenario is the output of the child scenario. This output can be processed later in the parent scenario.
 
 ## Casi d’uso
 
-Considera i seguenti casi d’uso di esempio per scenari di concatenamento:
+Consider the following example use cases for chaining scenarios:
 
-* **Logica riutilizzabile**: è possibile concatenare lo scenario per azioni ripetute utilizzate in più scenari. Ad esempio, in presenza di più scenari di archiviazione del contenuto, puoi creare uno scenario secondario denominato &quot;Archivia contenuto&quot; da utilizzare come scenario secondario per tutti i flussi di lavoro di archiviazione dei contenuti.
+* **Reusable logic**:  You can chain scenario for repeated actions used across multiple scenarios. For example, if you have multiple scenarios that archive content, you can create a single child scenario called &quot;Archive content&quot; that you can then use as a child scenario for any workflows that archive content.
 
-* **Gestione degli errori**: in genere le organizzazioni dispongono delle stesse azioni di gestione degli errori in più scenari, ad esempio una route di gestione degli errori che invia un log degli errori a un archivio dati e crea una notifica Slack. È possibile creare uno scenario figlio con queste azioni e concatenarlo nella gestione degli errori dei percorsi in più scenari.
+* **Error handling**: It&#39;s common for organizations to have the same error handling actions across multiple scenarios, such as an error handling route that sends an error log to a data store and creates a slack notification. You can create a child scenario with these actions and chain that scenario in error handling routes in multiple scenarios.
 
-* **Tempo di estensione**: è possibile utilizzare il concatenamento per operazioni batch di grandi dimensioni con azioni a esecuzione prolungata, ad esempio quando si esportano e importano file. Questa operazione richiede un po&#39; di tempo se sono presenti molti file. Poiché gli scenari figlio non vengono conteggiati rispetto al timeout dello scenario padre, è possibile superare il tempo di esecuzione utilizzando più scenari figlio per esportare o importare i file.
+* **Extending time**: You can use chaining for large batch operations with long running actions, such as when you export and import files. This operation takes some time if there are many files. Because child scenarios do not count against the parent scenario&#39;s timeout, you can exceed execution time by using multiple child scenarios to export or import the files.
 
-* **La sostituzione degli iteratori** La sostituzione degli iteratori con scenari figlio può ridurre l&#39;utilizzo di memoria, ad esempio in operazioni complesse in un&#39;iterazione che causano un errore di memoria insufficiente. Puoi creare uno scenario separato per l’operazione complessa e sostituire l’iteratore con il modulo di scenario Call a child
+* **Replacing iterators** Replacing iterators with child scenarios can reduce memory usage, such as in complex operations in an iteration that cause Out of Memory error. You can create a separate scenario for the complex operation and replace the iterator with Call a child scenario module
 
-* **Cercare e creare un record**: ad esempio, è possibile creare uno scenario in cui cercare un utente. Se esistono, vengono aggiunti come approvatori con accesso che devono rivedere e approvare. Se non esistono, viene creata una richiesta per l’amministratore per l’onboarding di un nuovo utente.
+* **Search for and create a record**:  For example, you could create a scenario that searches for a user. If they exist, the scehario adds them as approver with access they need to review and approve. If they don&#39;t exist, the scenario creates a request for the admin to onboard a new user.
 
 ## Visualizzazione della cronologia di esecuzione per gli scenari concatenati
 

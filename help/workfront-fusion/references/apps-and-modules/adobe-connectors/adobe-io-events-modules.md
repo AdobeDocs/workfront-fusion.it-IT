@@ -4,9 +4,9 @@ description: Con i moduli Adobe I/O Events puoi avviare uno scenario Adobe Workf
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1099'
 ht-degree: 44%
 
 ---
@@ -162,8 +162,6 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 
 ### Trigger
 
-<!--Becky start here-->
-
 #### Creare una registrazione evento
 
 Questo modulo di azione utilizza un webhook per creare una descrizione dell’evento. Puoi configurare un webhook qui. Se utilizzi un webhook esistente, i campi in questo modulo sono di sola lettura.
@@ -290,7 +288,7 @@ Questo modulo di azione effettua una chiamata API personalizzata all&#39;API [!D
     <tr>
       <td role="rowheader">[!UICONTROL Stringa di query]  </td>
       <td>
-        <p>Immettere la stringa di query richiesta.</p>
+        <p>Inserisci la stringa di query della richiesta.</p>
       </td>
     </tr>
     <tr>
@@ -358,7 +356,6 @@ Questo modulo di ricerca recupera tutti gli eventi per una registrazione da un g
        </tr>
      </tbody>
    </table>
-&lt;!—
 
 Osserva eventi
 

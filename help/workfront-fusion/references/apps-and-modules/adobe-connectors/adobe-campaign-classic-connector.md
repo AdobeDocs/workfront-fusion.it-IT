@@ -4,10 +4,10 @@ description: Con i moduli  [!DNL Adobe Campaign] , puoi avviare uno scenario Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 36%
+source-wordcount: '1449'
+ht-degree: 35%
 
 ---
 
@@ -57,7 +57,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 
 Aggiungere gli indirizzi IP di Fusion a [!DNL Adobe Campaign].
 
-* Per istruzioni sull&#39;aggiunta di indirizzi IP al inserisco nell&#39;elenco Consentiti di targeting di Campaign, consulta [Aggiunta di indirizzi IP al Adobe Campaign di targeting di](https://experienceleague.adobe.com/it/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) nella documentazione di inserire nell&#39;elenco Consentiti.
+* Per istruzioni sull&#39;aggiunta di indirizzi IP al inserisco nell&#39;elenco Consentiti di targeting di Campaign, consulta [Aggiunta di indirizzi IP al Adobe Campaign di targeting di](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) nella documentazione di inserire nell&#39;elenco Consentiti.
 * Per un elenco di indirizzi IP da aggiungere al inserisco nell&#39;elenco Consentiti di, vedere [Configurare gli indirizzi IP per Fusion nel inserisco nell&#39;elenco Consentiti di dell&#39;organizzazione](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Informazioni API di Adobe Campaign
@@ -81,7 +81,7 @@ Il connettore Adobe Campaign utilizza quanto segue:
 >
 >Si consiglia vivamente di creare una connessione server-to-server. Adobe Campaign ha aggiornato la propria API per accettare solo connessioni server-to-server. Se ti connetti a Campaign versione 8 o successiva, **devi** creare una connessione server-to-server.
 >
->Per ulteriori informazioni sui nuovi requisiti di connessione di Campaign, consulta [Migrazione degli operatori tecnici di Campaign a Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=it) nella documentazione di Campaign.
+>Per ulteriori informazioni sui nuovi requisiti di connessione di Campaign, consulta [Migrazione degli operatori tecnici di Campaign a Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) nella documentazione di Campaign.
 
 1. In qualsiasi modulo [!DNL Adobe Campaign], fai clic su **[!UICONTROL Aggiungi]** accanto al campo [!UICONTROL Connessione].
 1. Compila i seguenti campi:
@@ -117,7 +117,7 @@ Il connettore Adobe Campaign utilizza quanto segue:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Se si sta creando una connessione server-to-server, immettere l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].</td>
+          <td>Se si sta creando una connessione server-to-server, immettere l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
@@ -254,11 +254,13 @@ Questo modulo effettua una chiamata API personalizzata all&#39;API [!DNL Adobe C
     <tr>
       <td role="rowheader">[!UICONTROL Azione]</td>
       <td><p>Seleziona l’azione da eseguire per la chiamata API.</p>
-      <p>[!UICONTROL Esegui query]</p>
-      <p>[!UICONTROL Write]</p>
-      <p>[!UICONTROL Ottieni entità se più recente]</p>
-      <p>[!UICONTROL Seleziona tutto]</p>
-      <p>[!UICONTROL Evento push]</p>
+      <ul>
+      <li><p>[!UICONTROL Esegui query]</p></li>
+      <li><p>[!UICONTROL Write]</p></li>
+      <li><p>[!UICONTROL Ottieni entità se più recente]</p></li>
+      <li><p>[!UICONTROL Seleziona tutto]</p></li>
+      <li><p>[!UICONTROL Evento push]</p></li>
+      </ul>
     </td>
     </tr>
     <tr>
@@ -280,7 +282,7 @@ Questo modulo effettua una chiamata API personalizzata all&#39;API [!DNL Adobe C
 
 Questo modulo di azione esegue un&#39;azione selezionata su un oggetto nell&#39;API [!DNL Adobe Campaign].
 
-Per informazioni su azioni e campi specifici, vedere [[!DNL Adobe Campaign] - Documentazione API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=it).
+Per informazioni su azioni e campi specifici, vedere [[!DNL Adobe Campaign] - Documentazione API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 

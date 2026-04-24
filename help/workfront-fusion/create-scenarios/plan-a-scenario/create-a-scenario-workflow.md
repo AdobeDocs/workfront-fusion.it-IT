@@ -1,63 +1,63 @@
 ---
 title: Flusso di lavoro per creare uno scenario
-description: Segui questo flusso di lavoro generale per creare uno scenario
+description: Follow this general workflow to create a scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '782'
 ht-degree: 3%
 
 ---
 
 # Flusso di lavoro per creare uno scenario
 
-Gli scenari sono progettati per soddisfare le esigenze della tua organizzazione, con applicazioni e moduli che soddisfano i tuoi casi d’uso. Tuttavia, la creazione di uno scenario segue lo stesso flusso di lavoro di base indipendentemente dal caso d’uso. Questo articolo descrive il processo di base per la creazione di uno scenario.
+Scenarios are built to meet the needs of your organization, with applications and modules that address your use cases. However, creating a scenario follows the same basic workflow regardless of use case. This article describes the basic process of creating a scenario.
 
 
-* [Creare e denominare lo scenario](#create-and-name-the-scenario)
-* [Aggiungere e configurare il primo modulo](#configure-the-first-module)
+* [Create and name the scenario](#create-and-name-the-scenario)
+* [Add and configure the first module](#configure-the-first-module)
 * [Creare connessioni](#create-connections)
-* [Aggiungere e configurare moduli aggiuntivi](#add-and-configure-additional-modules)
-* [Mappare i dati tra i moduli](#map-data-between-modules)
-* [Configurare l’indirizzamento](#configure-routing)
+* [Add and configure additional modules](#add-and-configure-additional-modules)
+* [Map data between modules](#map-data-between-modules)
+* [Configure routing](#configure-routing)
 * [Configurare la gestione degli errori](#configure-error-handling)
 * [Configurare le impostazioni di uno scenario](#onfigure-scenario-settings)
-* [Test e revisione](#test-and-revise)
-* [Attiva lo scenario](#activate-the-scenario)
-* [Scelte rapide da tastiera per lo scenario Workfront Fusion](#workfront-fusion-scenario-keyboard-shortcuts)
+* [Test and revise](#test-and-revise)
+* [Activate the scenario](#activate-the-scenario)
+* [Workfront Fusion scenario keyboard shortcuts](#workfront-fusion-scenario-keyboard-shortcuts)
 
 Scelte rapide da tastiera
 
 
 
-## Creare e denominare lo scenario
+## Create and name the scenario
 
-1. Accedi al tuo account Workfront Fusion.
+1. Sign into your Workfront Fusion account.
 1. Fai clic su **[!UICONTROL Scenari]** ![Icona Scenari](assets/scenarios-icon.png) nel pannello a sinistra.
 
    >[!NOTE]
    >
-   >Se il pannello di navigazione a sinistra o le relative icone non sono visibili, fare clic sull&#39;icona Menu ![Menu](assets/main-menu-icon-left-nav.png).
+   >If you do not see the left navigation panel or its icons, click the Menu ![Menu](assets/main-menu-icon-left-nav.png) icon.
 
-1. (Facoltativo)Nel pannello [!UICONTROL **Cartelle**], fai clic sull&#39;icona **[!UICONTROL Aggiungi cartella]** ![Aggiungi cartella](assets/add-folder-icon.png), quindi digita un nome come &quot;Scenari di esercitazione&quot; per la prima cartella.
+1. (Optional)In the [!UICONTROL **Folders**] panel, click the **[!UICONTROL Add folder]** icon ![Add folder icon](assets/add-folder-icon.png), then type a name like &quot;Practice scenarios&quot; for your first folder.
 
-1. (Facoltativo) Apri la cartella, quindi fai clic su **[!UICONTROL Crea un nuovo scenario]** nell&#39;angolo superiore destro della pagina.
+1. (Optional) Open the folder, then click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page.
 
-1. Seleziona il nome del segnaposto **[!UICONTROL Nuovo scenario]** nell&#39;angolo superiore sinistro, quindi digita un nome come &quot;Esercitazione scenario 1&quot;.
+1. Select the **[!UICONTROL New scenario]** placeholder name in the upper-left corner, then type a name such as &quot;Practice scenario 1.&quot;
 
-   ![Assegna un nome allo scenario](assets/name-the-scenario.png)
+   ![Name the scenario](assets/name-the-scenario.png)
 
-1. Continua con [Connetti il primo modulo](#2-connect-the-first-module) di seguito.
+1. Continue with [Connect the first module](#2-connect-the-first-module) below.
 
-## Aggiungere e configurare il primo modulo
+## Add and configure the first module
 
-Il primo modulo per lo scenario è un modulo trigger, che avvierà lo scenario quando vengono soddisfatte determinate condizioni.
+The first module for your scenario is a trigger module, which will start the scenario when certain conditions are met.
 
-Per istruzioni sull&#39;aggiunta del primo modulo a uno scenario, vedere [Aggiungere il primo modulo a uno scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md#add-the-first-module-to-a-scenario) nell&#39;articolo Aggiungere un modulo a uno scenario.
+For instructions on adding the first module to a scenario, see [Add the first module to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md#add-the-first-module-to-a-scenario) in the article Add a module to a scenario.
 
-Per istruzioni sulla configurazione di un modulo, vedere [Configurare un modulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+For instructions on configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 
 ## Creare connessioni
 
@@ -115,7 +115,7 @@ Il test dello scenario consente di determinare se funziona come previsto. È qui
 
 ## Attiva lo scenario
 
-Questo scenario di esempio non ha un modulo trigger. Se si trattasse di uno scenario da utilizzare per dati reali, inizierebbe con un modulo trigger e l’ultima cosa da fare è attivarlo. Dopo aver attivato uno scenario, per impostazione predefinita viene eseguito ogni 15 minuti. Puoi modificare questa impostazione definendo quando e con quale frequenza desideri che venga eseguita.
+Dopo aver attivato uno scenario, per impostazione predefinita viene eseguito ogni 15 minuti. Puoi modificare questa impostazione definendo quando e con quale frequenza desideri che venga eseguita.
 
 Per ulteriori informazioni sull&#39;attivazione degli scenari, vedere [Attivare o disattivare uno scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 

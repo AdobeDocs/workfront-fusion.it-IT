@@ -4,9 +4,9 @@ description: In alcuni scenari, devi lavorare solo con bundle che soddisfano cri
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '528'
 ht-degree: 19%
 
 ---
@@ -79,16 +79,16 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ## Copiare un filtro
 
-Puoi copiare un filtro esistente e incollarlo altrove nello scenario.
+You can copy an existing filter and paste it elsewhere in the scenario.
 
 1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Seleziona lo scenario in cui desideri aggiungere un filtro.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
-1. Fai clic con il pulsante destro del mouse sui punti di connessione tra i moduli in cui si trova il filtro.
-1. Seleziona **Copia filtro**.
-1. Fai clic con il pulsante destro del mouse sui punti di connessione tra i moduli in cui desideri incollare il filtro.
-1. Seleziona **Incolla filtro
-1. (Facoltativo) Per modificare il filtro, fare clic sull&#39;icona o sull&#39;etichetta del filtro e immettere i valori come descritto in [Aggiungere un filtro tra due moduli](#add-a-filter-between-two-modules) in questo articolo.
+1. Right-click on the connecting dots between modules where the filter is located.
+1. Select **Copy filter**.
+1. Right-click on the connecting dots between modules where you want to paste the filter.
+1. Select **Paste** filter
+1. (Optional) To adjust the filter, click the filter icon or label, and enter values as described in [Add a filter between two modules](#add-a-filter-between-two-modules) in this article.
 
 
 

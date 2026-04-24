@@ -8,10 +8,10 @@ description: È possibile aggiungere un utente a Adobe Admin Console e assegnarl
 author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 1%
+source-wordcount: '607'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ Per un video che descrive Workfront Fusion in [!DNL Adobe Admin Console] e spieg
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -31,16 +31,16 @@ Per un video che descrive Workfront Fusion in [!DNL Adobe Admin Console] e spieg
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -58,7 +58,7 @@ Per un video che descrive Workfront Fusion in [!DNL Adobe Admin Console] e spieg
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -68,11 +68,11 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
 
 Prima di utilizzare [!DNL Admin Console] per Workfront, è necessario ricevere un&#39;e-mail di invito alla console.
 
-1. Se sei alle prime armi con [!DNL Adobe] e hai ricevuto un&#39;e-mail che ti informa che ora disponi dei diritti di amministrazione per gestire software e servizi [!DNL Adobe] per la tua organizzazione, fai clic sul pulsante nell&#39;e-mail per creare un account [!DNL Adobe] e aprire [!DNL Admin Console].
+* Se sei alle prime armi con [!DNL Adobe] e hai ricevuto un&#39;e-mail che ti informa che ora disponi dei diritti di amministrazione per gestire software e servizi [!DNL Adobe] per la tua organizzazione, fai clic sul pulsante nell&#39;e-mail per creare un account [!DNL Adobe] e aprire [!DNL Admin Console].
 
-   Oppure
+  Oppure
 
-   Se disponi già di un account Adobe, passa alla [[!DNL Adobe Admin Console] pagina](https://adminconsole.adobe.com).
+  Se disponi già di un account Adobe, passa alla [[!DNL Adobe Admin Console] pagina](https://adminconsole.adobe.com).
 
 
 ## Aggiungere un nuovo utente a [!DNL Adobe Admin Console] e Workfront Fusion
@@ -99,7 +99,7 @@ Prima di utilizzare [!DNL Admin Console] per Workfront, è necessario ricevere u
 
    L&#39;utente viene creato in Workfront Fusion.
 
-1. (Facoltativo) Continua con [Modifica il livello di accesso di un utente in Workfront Fusion](#change-a-users-access-level-in-workfront-fusion)
+1. (Facoltativo) Continua con [Modifica il livello di accesso di un utente in Workfront Fusion](#change-a-users-access-level-in-workfront-fusion).
 
 ## Modificare il livello di accesso di un utente in Workfront Fusion
 

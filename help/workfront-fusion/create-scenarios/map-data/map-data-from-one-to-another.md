@@ -1,17 +1,17 @@
 ---
-title: Mappare le informazioni da un modulo all'altro
+title: Mappare le informazioni da un modulo all’altro
 description: La mappatura è il processo di assegnazione degli output di un modulo, strutturati in elementi, ai campi di input di un altro modulo.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 17%
 
 ---
 
-# Mappare le informazioni da un modulo all&#39;altro
+# Mappare le informazioni da un modulo all’altro
 
 La mappatura è il processo di assegnazione degli output di un modulo ai campi di input di un altro modulo.
 
@@ -21,7 +21,7 @@ Il pannello di mappatura viene visualizzato quando fai clic su un campo in cui p
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,22 +29,22 @@ Il pannello di mappatura viene visualizzato quando fai clic su un campo in cui p
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -78,7 +78,7 @@ Per ulteriori informazioni, vedere [Configurare un modulo](/help/workfront-fusio
 
 ### Problema: elementi mancanti nel pannello di mappatura
 
-Il pannello di mappatura visualizza gli elementi di output dei moduli precedenti. A volte, alcuni elementi potrebbero non essere presenti in questo pannello. Puoi eseguire il modulo a cui manca l’output nell’editor di scenari e il pannello di mappatura può quindi includere tali elementi nei moduli successivi. La procedura esatta varia a seconda del tipo di modulo
+Il pannello di mappatura visualizza gli elementi di output dei moduli precedenti. A volte, alcuni elementi potrebbero non essere presenti in questo pannello. Puoi eseguire il modulo a cui manca l’output nell’editor di scenari e il pannello di mappatura può quindi includere tali elementi nei moduli successivi. La procedura esatta varia a seconda del tipo di modulo.
 
 * [Trigger istantaneo](#instant-trigger)
 * [Trigger di polling](#polling-trigger)

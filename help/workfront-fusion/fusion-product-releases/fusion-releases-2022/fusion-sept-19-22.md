@@ -9,10 +9,10 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 614fc0e0-4bee-4886-b6dc-5a95f89e4027
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 18%
+source-wordcount: '158'
+ht-degree: 21%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 18%
 Ora puoi collegare Workfront Fusion al tuo account Adobe Journey Optimizer.
 
 Con i moduli Adobe Journey Optimizer, puoi:
+
 * Creare, leggere, aggiornare ed eliminare record in Adobe Journey Optimizer
 * Cerca i record Adobe Journey Optimizer utilizzando i criteri specificati
 * Effettuare una chiamata API personalizzata all’API Adobe Journey Optimizer
@@ -32,6 +33,7 @@ Con i moduli Adobe Journey Optimizer, puoi:
 Ora puoi collegare Workfront Fusion al tuo account Adobe Campaign Classic.
 
 Con i moduli Adobe Campaign Classic, puoi:
+
 * Creare, leggere, aggiornare ed eliminare record in Adobe Campaign Classic
 * Effettuare o annullare l&#39;abbonamento a un servizio di informazioni
 * Eseguire un’azione dall’API di Adobe Campaign

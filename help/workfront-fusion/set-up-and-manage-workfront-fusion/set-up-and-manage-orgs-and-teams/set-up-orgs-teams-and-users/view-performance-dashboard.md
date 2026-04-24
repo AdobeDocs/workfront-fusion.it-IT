@@ -4,9 +4,9 @@ description: Gli amministratori di Fusion possono visualizzare un dashboard che 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '694'
 ht-degree: 7%
 
 ---
@@ -79,7 +79,7 @@ Questo grafico mostra le esecuzioni per scenario. Colori diversi rappresentano s
 
 ## Visualizzare il dashboard delle prestazioni di Fusion
 
-1. In Fusion, fai clic su Prestazioni nel menu di navigazione a sinistra.
+1. In Fusion, fai clic su **Prestazioni** nell&#39;area di navigazione a sinistra.
 
    Viene visualizzata la dashboard.
 

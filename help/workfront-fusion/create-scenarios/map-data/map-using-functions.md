@@ -4,20 +4,20 @@ description: Durante la mappatura degli elementi, puoi utilizzare funzioni per l
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 24%
+source-wordcount: '717'
+ht-degree: 23%
 
 ---
 
-# Mappare un elemento utilizzando le funzioni incorporate
+# Map an item using built-in functions
 
 Workfront Fusion include funzioni incorporate che consentono di creare formule semplici o complesse. Queste funzioni coprono un&#39;ampia varietà di casi d&#39;uso, tra cui funzioni per array, stringhe, numeri e dati dei moduli precedenti.
 
 Inoltre, puoi creare funzioni personalizzate che gli scenari possono utilizzare per trasformare e manipolare i dati.
 
-Per informazioni e istruzioni sulle funzioni personalizzate, vedere [Mappare i dati utilizzando le funzioni personalizzate](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
+For information and instructions on custom functions, see [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
 ## Requisiti di accesso
 
@@ -38,7 +38,7 @@ Per informazioni e istruzioni sulle funzioni personalizzate, vedere [Mappare i d
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p><ul><li>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li><li>Per utilizzare le funzioni personalizzate è necessario disporre di una licenza Adobe App Builder.</ul>
+   <p><ul><li>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li><li>You must have an Adobe App Builder license to use custom functions.</ul>
    </td> 
   </tr>
  </tbody> 
@@ -48,45 +48,45 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 +++
 
-## Mappare i dati utilizzando le funzioni integrate
+## Map data using built-in functions
 
 Durante la mappatura degli elementi, puoi utilizzare funzioni per la creazione di formule semplici o complesse. Le funzioni disponibili sono simili a quelle presenti in Excel e in alcuni linguaggi di programmazione:
 
 * Queste valutano la logica generale, la matematica, il testo, le date e gli array.
 * Consentono di eseguire logica condizionale e trasformazioni dei valori degli elementi, ad esempio la conversione di un testo in maiuscolo, il ritaglio del testo, la conversione di una data in un formato diverso e altro ancora.
 
-### Inserisci funzioni nei campi
+### Insert functions into fields
 
-Per inserire una funzione in un campo:
+To insert a function into a field:
 
-1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
-1. Seleziona lo scenario in cui desideri mappare i dati.
-1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
-1. Fare clic sul campo in cui si desidera inserire una funzione.
-1. Selezionare la scheda nel pannello di mappatura contenente la funzione che si desidera inserire.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to map data.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Click the field where you want to insert a function.
+1. Select the tab in the mapping panel that contains the function you want to insert.
 
-   Per informazioni sulle schede del pannello di mappatura, vedi [Panoramica delle funzioni](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
-   1. Fare clic sul nome della funzione.
+   For information on mapping panel tabs, see [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+1. Click the function name.
 
-      Oppure
+   Oppure
 
-      Trascina la funzione nel campo.
-1. Configura i parametri della funzione.
+   Drag the function into the field.
+1. Configure the function parameters.
 
-   Per una spiegazione dei parametri di funzione, passa il cursore sulla funzione nel pannello di mappatura.
+   For an explanation of function parameters, hover over the function in the mapping panel.
 
-   Per ulteriori informazioni sulle funzioni e i relativi parametri, vedere gli articoli in [Riferimenti alle funzioni: article index](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md).
+   For more information on functions and their parameters, see the articles under [Function references: article index](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md).
 
-1. Continuare la configurazione del modulo oppure fare clic su **OK**.
+1. Continue configuring the module, or click **OK**.
 
 >[!TIP]
 >
->Quando si crea una formula complessa che si desidera riutilizzare in un altro campo, è possibile fare clic sul campo che contiene la combinazione, utilizzare Cmd-A o Ctrl-A per selezionarla, quindi copiarla e incollarla nell&#39;altro campo.
+>When you create a complex formula that you want to reuse in another field, you can click the field that contains the combination, use Cmd-A or Ctrl-A to select it, then copy and paste it into the other field.
 
 
 >[!BEGINSHADEBOX]
 
-**Esempio:** alcuni tipi di dati impediscono agli utenti di immettere più di un determinato numero di caratteri. Puoi utilizzare la funzione di sottostringa per limitare un valore a un determinato numero di caratteri.
+**Example:** Some data types prevent users from entering more than a certain number of characters. You can use the substring function to limit a value to a certain number of characters.
 
 In questo esempio, la funzione di sottostringa limita il nome del progetto a 50 caratteri.
 
@@ -131,13 +131,13 @@ Se Workfront Fusion non include una funzione che si desidera utilizzare, ma è d
 1. Configura il modulo:
 
    1. Scegliere il nuovo foglio di calcolo creato nel campo **[!UICONTROL Foglio di calcolo]**.
-   1. Inserire la formula contenente le funzioni [!DNL Google Sheets] nel campo **[!UICONTROL Valore]**.
+   1. Insert your formula containing the [!DNL Google Sheets] function(s) into the **[!UICONTROL Value]** field.
 
-      Puoi utilizzare come di consueto l’output dei moduli precedenti.
+      You can use the output of preceding modules as usual.
 
-      ![Utilizzare le funzioni dei fogli di Google](assets/exploit-google-sheet-functions-350x218.png)
+      ![Use Google Sheets functions](assets/exploit-google-sheet-functions-350x218.png)
 
-1. Inserire il modulo **[!UICONTROL Fogli Google] >[!UICONTROL Ottieni una cella]** per ottenere il risultato calcolato.
-1. Configura il modulo utilizzando lo stesso ID cella utilizzato nel passaggio 4.
+1. Insert the **[!UICONTROL Google Sheets] >[!UICONTROL Get a cell]** module to obtain the calculated result.
+1. Configure the module, using the same Cell ID that you used in step 4.
 
-   ![Utilizzare le funzioni dei fogli di Google](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![Use Google Sheets functions](assets/exploit-google-sheet-functions-2-350x187.png)
