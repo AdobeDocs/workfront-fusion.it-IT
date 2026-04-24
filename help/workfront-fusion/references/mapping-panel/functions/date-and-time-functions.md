@@ -139,7 +139,7 @@ This function returns a new date with the seconds specified in parameters.
 
 Specify a number from 0 to 59. If the number is outside of that range, the function returns a second from the previous minute (for a negative number) or subsequent minute (for a positive number).
 
-If you need to specify a number outside the range, we recommend that you use[!UICONTROL  addSeconds], as described above in the section [addSeconds (date; number)](#addseconds-date-number).
+If you need to specify a number outside the range, we recommend that you use[!UICONTROL &#x200B; addSeconds], as described above in the section [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
