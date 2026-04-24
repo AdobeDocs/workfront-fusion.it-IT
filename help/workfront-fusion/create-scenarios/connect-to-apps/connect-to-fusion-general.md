@@ -68,7 +68,7 @@ Per creare una connessione a una determinata applicazione, è necessario essere 
 Per creare una connessione all&#39;interno di un modulo Workfront Fusion:
 
 1. In qualsiasi modulo per l&#39;applicazione specificata, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella [!UICONTROL Connessione] per aprire il pannello **[!UICONTROL Crea connessione]**.
-1. (Facoltativo) Modificare il nome predefinito della connessione ****.
+1. (Facoltativo) Modificare il nome predefinito della connessione **&#x200B;**.
 1. Nel campo Ambiente, seleziona se si tratta di un ambiente di produzione o non di produzione.
 1. Nel campo Tipo selezionare se si tratta di un account di servizio o personale.
 1. (Condizionale) Se l&#39;app richiede impostazioni di connessione avanzate, ad esempio un ID, una chiave o un [!UICONTROL segreto], immetti tali informazioni.
