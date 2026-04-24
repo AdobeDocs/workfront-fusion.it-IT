@@ -1,19 +1,19 @@
 ---
-title: Attività del rilascio di Workfront Fusion:&nbsp;Settimana del 3 gennaio 2022
-description: Attività del rilascio di Workfront Fusion:&nbsp;Settimana del 3 gennaio 2022
+title: 'Attività sulla versione di Workfront Fusion: settimana del 3 gennaio 2022'
+description: 'Attività sulla versione di Workfront Fusion: settimana del 3 gennaio 2022'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b532aabe-581b-401d-bf81-c5bd95dd60a0
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 39%
+source-wordcount: '133'
+ht-degree: 56%
 
 ---
 
-# Attività di rilascio di Workfront Fusion: settimana del 3 gennaio 2022
+# Attività sulla versione di Workfront Fusion: settimana del 3 gennaio 2022
 
 Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 3 gennaio 2022.
 

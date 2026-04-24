@@ -1,16 +1,16 @@
 ---
-title: Attività del rilascio di Workfront Fusion:&nbsp;Settimana del 12 aprile 2021
-description: Attività del rilascio di Workfront Fusion:&nbsp;Settimana del 12 aprile 2021
+title: 'Attività sulla versione di Workfront Fusion: settimana del martedì 12 aprile 2021'
+description: 'Attività sulla versione di Workfront Fusion: settimana del martedì 12 aprile 2021'
 author: Luke
 draft: Probably
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 46%
+source-wordcount: '111'
+ht-degree: 67%
 
 ---
 
-# Attività di rilascio di Workfront Fusion: settimana del 12 aprile 2021
+# Attività sulla versione di Workfront Fusion: settimana del martedì 12 aprile 2021
 
 Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 12 aprile 2021.
 

@@ -9,14 +9,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b0e9cb38-f16e-487b-9376-50b18549f8f4
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 23%
+ht-degree: 25%
 
 ---
 
-# Attività di rilascio di Workfront Fusion: settimana dell’11 luglio 2022
+# Attività sulla versione di Workfront Fusion: settimana del martedì 11 luglio 2022
 
 Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 11 luglio 2022.
 

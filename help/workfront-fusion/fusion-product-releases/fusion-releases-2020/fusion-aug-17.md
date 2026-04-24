@@ -9,14 +9,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 12cccfe6-a11b-4c42-98ce-0d38af19b19a
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 60%
+ht-degree: 66%
 
 ---
 
-# Attività di rilascio di Workfront Fusion: settimana del 17 agosto 2020
+# Attività sulla versione di Workfront Fusion: settimana del 17 agosto 2020
 
 Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 17 agosto 2020.
 

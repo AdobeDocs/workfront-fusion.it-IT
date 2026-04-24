@@ -4,7 +4,7 @@ description: Per automatizzare i processi all’interno di Workfront, puoi utili
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '7366'
 ht-degree: 100%
@@ -695,7 +695,7 @@ Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo m
 
 +++
 
-### **Ottieni un URL prefirmato del file**
++++ **Ottieni un URL prefirmato del file**
 
 Questo modulo di azione ottiene URL prefirmati di file che possono essere utilizzati successivamente da altre API.
 
@@ -717,6 +717,8 @@ Questo modulo di azione ottiene URL prefirmati di file che possono essere utiliz
   </tr> 
  </tbody> 
 </table>
+
++++
 
 +++ **[!UICONTROL Azioni varie]**
 
@@ -1034,7 +1036,7 @@ Workfront ha recentemente rilasciato una nuova versione del servizio di sottoscr
 
 Per ulteriori informazioni sulla nuova versione di sottoscrizione eventi, consulta [Controllo delle versioni per sottoscrizione eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 
-Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=it).
+Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2366,7 +2368,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   Per ulteriori informazioni sulla nuova versione di sottoscrizione a eventi, consulta [Controllo delle versioni per sottoscrizioni a eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 >
->   Per le risorse si come conservare gli scenari di Workfront Fusion durante l’aggiornamento della sottoscrizione a eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento V2 delle sottoscrizioni a eventi(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=it)].
+>   Per le risorse si come conservare gli scenari di Workfront Fusion durante l’aggiornamento della sottoscrizione a eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento V2 delle sottoscrizioni a eventi(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Il modulo [!UICONTROL Osserva eventi] di Workfront attiva scenari basati su un webhook che crea una sottoscrizione a eventi nell’API Workfront. La sottoscrizione a eventi consiste in un set di dati che determina quali eventi vengono inviati al webhook. Ad esempio, se imposti un modulo [!UICONTROL Osserva eventi] per rilevare eventuali problemi, la sottoscrizione a eventi invia solo eventi relativi ai problemi.
 

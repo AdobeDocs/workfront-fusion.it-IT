@@ -1,19 +1,19 @@
 ---
-title: Attività del rilascio di Workfront Fusion:&nbsp;Settimana del 25 aprile 2022
-description: Attività del rilascio di Workfront Fusion:&nbsp;Settimana del 25 aprile 2022
+title: 'Attività sulla versione di Workfront Fusion: settimana del martedì 25 aprile 2022'
+description: 'Attività sulla versione di Workfront Fusion: settimana del martedì 25 aprile 2022'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c1d5645f-9bca-4f04-b2e4-526530d9ecbd
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 33%
+source-wordcount: '157'
+ht-degree: 47%
 
 ---
 
-# Attività di rilascio di Workfront Fusion: settimana del 25 aprile 2022
+# Attività sulla versione di Workfront Fusion: settimana del martedì 25 aprile 2022
 
 Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 25 aprile 2022.
 

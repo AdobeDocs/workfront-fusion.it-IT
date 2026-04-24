@@ -4,10 +4,10 @@ description: L’app JSON per Adobe Workfront Fusion fornisce moduli per elabora
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '1229'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -17,7 +17,7 @@ L&#39;app Adobe Workfront Fusion [!UICONTROL JSON] fornisce moduli per elaborare
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +25,22 @@ L&#39;app Adobe Workfront Fusion [!UICONTROL JSON] fornisce moduli per elaborare
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -55,17 +55,17 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
 
 La struttura dati descrive come sono organizzati i dati JSON e consente la mappatura di singoli elementi JSON ad altri moduli nello scenario. Se non fornisci la struttura Dati, puoi eseguire manualmente il modulo e Workfront Fusion ne creerà la struttura dal JSON fornito:
 
-1. Aggiungi il modulo [!UICONTROL Analizza JSON] a uno scenario.
-1. Nel campo **[!UICONTROL Stringa JSON]**, immetti il JSON da cui desideri creare una struttura di dati.
-1. Non connettere altri moduli al modulo [!UICONTROL Analizza JSON]. Poiché Workfront Fusion non conosce ancora la struttura dei dati JSON, non è ancora possibile mappare i dati dal modulo [!UICONTROL Parse JSON] ad altri moduli nello scenario.
+1. Add the [!UICONTROL Parse JSON] module to a scenario.
+1. In the **[!UICONTROL JSON String]** field, enter the JSON from which you want to build a data structure.
+1. Do not connect other modules to the [!UICONTROL Parse JSON] module yet. Poiché Workfront Fusion non conosce ancora la struttura dei dati JSON, non è ancora possibile mappare i dati dal modulo [!UICONTROL Parse JSON] ad altri moduli nello scenario.
 1. Esegui manualmente lo scenario. Questo consente al modulo [!UICONTROL Analizza JSON] di identificare la struttura JSON dal JSON fornito.
-1. È ora possibile collegare i seguenti moduli. Gli elementi del modulo JSON di analisi sono ora disponibili per la mappatura.
+1. You can now connect following modules. The items from the Parse JSON module are now available for mapping.
 
-Per ulteriori informazioni, vedere [Strutture dati in [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+For more information, see [Data structures in [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
-### Confronto tra raccolta e array
+### Collection vs. Array
 
-Se il campo stringa JSON contiene una raccolta `{ ... }`, l&#39;output è un singolo bundle contenente gli elementi della raccolta.
+If the JSON string field contains a collection `{ ... }`, The output is a single bundle containing the items of the collection.
 
 >[!BEGINSHADEBOX]
 
@@ -109,11 +109,11 @@ Se il campo stringa JSON contiene un array `[ ... ]`, l&#39;output è una serie 
 
 ## Moduli [!UICONTROL JSON] e relativi campi
 
-Quando si configurano [!DNL JSON] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi JSON aggiuntivi, a seconda di fattori come il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli [!DNL JSON], in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati campi JSON aggiuntivi, a seconda di fattori come il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Converti JSON in XML](#convert-json-to-xml)
 * [Analizza JSON](#parse-json)
@@ -208,7 +208,7 @@ Questo modulo di azione analizza una stringa JSON in una struttura di dati, cons
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL JSON string] </td> 
-   <td> <p>Immetti o mappa il JSON da analizzare.</p> </td> 
+   <td> <p>Enter or map the JSON that you want to parse.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -223,22 +223,22 @@ Questo modulo di azione trasforma un oggetto in una stringa json.
  <tbody> 
   <tr> 
    <td role="rowheader">Rientro</td> 
-   <td> <p>Seleziona il rientro da utilizzare per questo JSON.</p> </td> 
+   <td> <p>Select the indentation you want to use for this JSON.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object]</td> 
-   <td> <p>Inserisci o mappa l’oggetto da trasformare in JSON.</p> </td> 
+   <td role="rowheader">[!UICONTROL Oggetto]</td> 
+   <td> <p>Enter or map the object that you want to transform into JSON.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Trasformazione dei record di dati in JSON
+## Transforming data records to JSON
 
 >[!BEGINSHADEBOX]
 
 **Esempio:** Nell&#39;esempio seguente viene illustrato come trasformare i record di dati da [!DNL Google Sheets] in formato JSON:
 
-1. Inserisci il modulo [!DNL Google Sheets] > [!UICONTROL Seleziona righe] nello scenario per recuperare i dati. Configurare il modulo per recuperare le righe dal foglio di calcolo [!DNL Google]. Imposta il&#x200B;**[!UICONTROL numero massimo di righe restituite]** su un numero ridotto, ma maggiore di uno a scopo di test (ad esempio, tre). Eseguire il modulo [!DNL Google Sheets] facendo clic con il pulsante destro del mouse e scegliendo &quot;**[!UICONTROL Esegui solo il modulo]**.&quot; Verifica l’output del modulo.
+1. Inserisci il modulo [!DNL Google Sheets] > [!UICONTROL Seleziona righe] nello scenario per recuperare i dati. Configurare il modulo per recuperare le righe dal foglio di calcolo [!DNL Google]. Impostare il **[!UICONTROL numero massimo di righe restituite]** su un numero ridotto, ma maggiore di uno a scopo di test (ad esempio, tre). Eseguire il modulo [!DNL Google Sheets] facendo clic con il pulsante destro del mouse e scegliendo &quot;**[!UICONTROL Esegui solo il modulo]**.&quot; Verifica l’output del modulo.
 
 1. Connetti il modulo [!UICONTROL Array Aggregator] dopo il modulo [!DNL Google Sheets]. Nella configurazione del modulo, scegli il modulo [!DNL Google Sheets] nel campo **[!UICONTROL nodo Source]**. Lascia gli altri campi così come sono per il momento.
 
@@ -265,7 +265,7 @@ Questo modulo di azione trasforma un oggetto in una stringa json.
 
 1. Fai clic su **[!UICONTROL OK]** per chiudere la configurazione del modulo [!UICONTROL JSON].
 
-1. Aprire la configurazione del modulo [!UICONTROL Array Aggregator]. Cambia la struttura di destinazione **&#x200B;**&#x200B;da [!UICONTROL Personalizzato] al campo del modulo [!UICONTROL JSON] corrispondente all&#39;attributo dell&#39;array principale. Mappare gli elementi dal modulo [!DNL Google Sheets] ai campi appropriati.
+1. Aprire la configurazione del modulo [!UICONTROL Array Aggregator]. Cambia la struttura di destinazione **** da [!UICONTROL Personalizzato] al campo del modulo [!UICONTROL JSON] corrispondente all&#39;attributo dell&#39;array principale. Mappare gli elementi dal modulo [!DNL Google Sheets] ai campi appropriati.
 
 1. Fare clic su **[!UICONTROL OK]** per chiudere la configurazione del modulo [!UICONTROL Aggregator].
 
@@ -285,7 +285,7 @@ Verificare che il contenuto JSON sia mappato correttamente nel modulo [!UICONTRO
 
 ### Il modulo genera un errore quando si utilizzano istruzioni condizionali in JSON
 
-Quando si utilizzano istruzioni condizionali come `if` nel JSON, inserire le virgolette al di fuori dell&#39;istruzione condizionale.
+Quando utilizzi istruzioni condizionali come `if` nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.
 
 >[!BEGINSHADEBOX]
 

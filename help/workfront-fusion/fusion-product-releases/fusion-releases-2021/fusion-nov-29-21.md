@@ -1,19 +1,19 @@
 ---
-title: Attività del rilascio di Workfront Fusion:&nbsp;Settimana del 29 novembre 2021
-description: Attività del rilascio di Workfront Fusion:&nbsp;Settimana del 29 novembre 2021
+title: 'Attività sulla versione di Workfront Fusion: settimana del martedì 29 novembre 2021'
+description: 'Attività sulla versione di Workfront Fusion: settimana del martedì 29 novembre 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 87ad4b2a-b052-4e5d-a540-6c53eba61c66
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 23%
+source-wordcount: '230'
+ht-degree: 32%
 
 ---
 
-# Attività di rilascio di Workfront Fusion: settimana del 29 novembre 2021
+# Attività sulla versione di Workfront Fusion: settimana del martedì 29 novembre 2021
 
 Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 29 novembre 2021.
 

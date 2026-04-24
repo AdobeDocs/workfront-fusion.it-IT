@@ -1,10 +1,10 @@
 ---
 title: Utilizzare l’autenticazione Mutual TLS nei moduli HTTP in Adobe Workfront Fusion
-description: Puoi utilizzare Mutual TLS nei moduli HTTP di Adobe Workfront Fusion, consentendo a entrambi i lati della transazione di informazioni di verificare l’identità dell’altro.
+description: You can use Mutual TLS in your Adobe Workfront Fusion HTTP modules, allowing both sides of the information transaction to verify the other's identity.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 47600e6e07ea07336557338cbb3037c3bffe9321
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 16%
@@ -15,15 +15,15 @@ ht-degree: 16%
 
 ## Panoramica di Mutual TLS
 
-Quando invii dati tramite Internet, è importante assicurarsi che arrivino o provengano dalla posizione corretta e che solo il destinatario previsto possa leggerli. Con TLS abilitato, il client (computer che richiede informazioni) utilizza i certificati per verificare l&#39;identità del server (computer che fornisce informazioni). Questo rende sicure le connessioni HTTP.
+Quando invii dati tramite Internet, è importante assicurarsi che arrivino o provengano dalla posizione corretta e che solo il destinatario previsto possa leggerli. With TLS enabled, the client (computer requesting information) uses certificates to verify the identity of the server (computer providing information). This makes secure HTTP connections.
 
-Il TLS reciproco consente di confermare l’identità in entrambi i modi. Quando il server invia il proprio certificato per verificarne l’identità al client, richiede anche il certificato del client. In questo modo il server non invia informazioni a un sito o a un utente che potrebbero utilizzarle in modo improprio.
+Mutual TLS allows this identity confirmation to go both ways. When the server sends its certificate to verify its identity to the client, it also requests the client&#39;s certificate. This ensures that the server does not send information to a site or user that would misuse it.
 
 >[!INFO]
 >
 >**Esempio:**
 >
->* **TLS**: quando una persona digita &quot;MyGreatBank.com&quot; in un browser, vuole essere sicura di andare nella Mia Grande Banca, non in un sito web che potrebbe abusare o vendere le proprie informazioni bancarie. Vogliono anche essere sicuri che le informazioni del loro conto bancario siano crittografate.
+>* **TLS**: When a person types &quot;MyGreatBank.com&quot; into a browser, they want to be sure that they are going to My Great Bank, not a website that might misuse or sell their banking information. They also want to be sure their bank account information is encrypted.
 >
 >   Quando il browser (il client) si connette a MyGreatBank.com (il server), TLS richiede un certificato da MyGreatBank.com per verificarne l’identità. Il certificato è fornito da un&#39;autorità di certificazione come [!DNL DigiCert] o [!DNL Thawte]. Poiché il browser considera attendibile l&#39;autorità di certificazione, consente la connessione.
 >
@@ -67,9 +67,9 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 
 +++
 
-## Fornire il certificato pubblico di Workfront Fusion
+## Providing your Workfront Fusion public certificate
 
-Quando ci si connette a un servizio Web con una richiesta HTTP, il servizio Web richiede in genere un certificato pubblico di Workfront Fusion per la verifica. Questo consente al servizio web di confrontare il certificato presentato nella richiesta HTTP con quello presente nel file, in modo da garantire che il certificato si trovi nel inserisco nell&#39;elenco Consentiti di del servizio web.
+When you connect to a web service with an HTTP request, the web service usually requires a Workfront Fusion public certificate for verification. Questo consente al servizio web di confrontare il certificato presentato nella richiesta HTTP con quello presente nel file, in modo da garantire che il certificato si trovi nel inserisco nell&#39;elenco Consentiti di del servizio web.
 
 Per istruzioni sul caricamento del certificato pubblico di Adobe Workfront Fusion in un servizio Web, consulta la documentazione del servizio Web.
 
@@ -92,8 +92,8 @@ Per istruzioni sul caricamento del certificato pubblico di Adobe Workfront Fusio
 
 | Datacenter | Collegamento di download | Date valide |
 | --- | --- | --- |
-| Datacenter AWS USA | [Scarica il certificato Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | Dal 29 gennaio 2026 al 2 marzo 2027 |
-| Cluster di Azure USA | [Scarica il certificato di Workfront Fusion US Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Dal 21 settembre 2025 al 23 ottobre 2026 |
+| Datacenter AWS USA | [Scarica il certificato Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| Cluster Azure USA | [Scarica il certificato Azure di Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Dal 21 settembre 2025 al 23 ottobre 2026 |
 | Datacenter AWS UE | [Scarica Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | Dal 29 gennaio 2026 al 2 marzo 2027 |
 | Cluster Azure UE | [Scarica il certificato Workfront Fusion EU Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | Dal 4 febbraio 2026 all’8 marzo 2027 |
 
@@ -101,19 +101,19 @@ Per istruzioni sul caricamento del certificato pubblico di Adobe Workfront Fusio
 
 >[!IMPORTANT]
 >
->* È consigliabile installare i certificati per il 2026, disponibili in precedenza.
->* Questi certificati pubblici di Workfront Fusion scadono il **4 aprile 2026** (Stati Uniti e UE) o il **25 novembre 2025** (Azure). Dopo la scadenza, dovrai caricare un nuovo certificato nel servizio web. Si consiglia di:
+>* We recommend installing the certificates for 2026, available above.
+>* These Workfront Fusion public certificates expire on **April 4, 2026** (US and EU) or **November 25, 2025** (Azure). After yours expires you will need to upload a new certificate to the web service. We recommend that you:
 >
->   * Prendi nota della data di scadenza e imposta un promemoria per te stesso per caricare il certificato nel servizio web.
+>   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
 >   * Aggiungi ai segnalibri questa pagina per trovare facilmente i nuovi certificati.
 >
 >* Si tratta di certificati mTLS non jolly.
 
-| Datacenter | Collegamento di download | Date valide |
+| Datacenter | Download link | Dates valid |
 | --- | --- | --- |
-| Datacenter USA | [Scarica il certificato Workfront Fusion US 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | Dal 3 marzo 2025 al 4 aprile 2026 |
+| US Datacenter | [Download Workfront Fusion US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | Dal 3 marzo 2025 al 4 aprile 2026 |
 | Datacenter UE | [Scarica Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | Dal 3 marzo 2025 al 4 aprile 2026 |
-| Cluster Azure | [Scarica il certificato di Workfront Fusion Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | dal 24 ottobre 2024 al 25 novembre 2025 |
+| Cluster Azure | [Scarica il certificato Workfront Fusion Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | dal 24 ottobre 2024 al 25 novembre 2025 |
 
 <!--
 
@@ -143,9 +143,9 @@ Tutti i moduli di richiesta [!UICONTROL HTTP] di Workfront Fusion hanno l&#39;op
 Per abilitare Mutual TLS in un modulo di richiesta [!UICONTROL HTTP]:
 
 1. Aggiungi un modulo di richiesta [!UICONTROL HTTP] allo scenario.
-1. Inizia la configurazione del modulo.
+1. Begin configuring the module.
 
-   Per istruzioni sulla configurazione di un modulo di richiesta [!UICONTROL HTTP], vedere l&#39;articolo appropriato in [Connettori universali](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
+   For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [Universal connectors](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-1. Abilita **[!UICONTROL Mostra impostazioni avanzate]** nella parte inferiore del modulo.
+1. Enable **[!UICONTROL Show advanced settings]** near the bottom of the module.
 1. Abilita **[!UICONTROL Usa TLS reciproco]**.
