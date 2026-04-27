@@ -8,8 +8,9 @@ description: Questa pagina descrive tutti i miglioramenti apportati a Adobe Work
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 8d2e2662-139f-42e4-99d0-71abc95fcfcc
-source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 60%

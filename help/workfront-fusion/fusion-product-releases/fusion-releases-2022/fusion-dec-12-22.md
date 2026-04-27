@@ -4,11 +4,12 @@ description: Attività di rilascio di Workfront Fusion alla settimana del 12 dic
 author: Becky
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: aa71be54-f956-438d-a84b-a6e80f6a1431
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 38%
+source-wordcount: '173'
+ht-degree: 42%
 
 ---
 
