@@ -4,10 +4,10 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
-source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
+source-git-commit: d64d894cfb0e1905c135cdf5ea39f11cd7a6e5f2
 workflow-type: tm+mt
-source-wordcount: '3683'
-ht-degree: 14%
+source-wordcount: '4125'
+ht-degree: 13%
 
 ---
 
@@ -182,6 +182,9 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 
 * [Documento](#document)
 * [Oggetto](#object)
+* [Estrazione di più file](#multi-file-extract)
+* [Caricamento di più file](#multi-file-load)
+* [Gestione temporanea dei file](#file-staging)
 * [Altro](#other)
 
 ### Documento
@@ -995,6 +998,148 @@ Questo modulo crea, copia o copia in profondità un singolo record oggetto.
  </tbody> 
 </table>
 
+### Estrazione di più file
+
+* [Estrai più file](#extract-multiple-files)
+* [Recupera risultati di estrazione](#retrieve-extract-results)
+
+#### Estrai più file
+
+Questo modulo di azione crea un processo loader per estrarre uno o più file di dati.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File di dati</td> 
+   <td>Per ogni file che si desidera estrarre, fare clic su <b>Aggiungi elemento</b> e immettere quanto segue:
+   <ul>
+   <li>Tipo di oggetto</li>
+   <li>Criteri VQL (facoltativo): per filtrare il set di dati in modo da includere solo i file che soddisfano criteri specifici, immettere i criteri in VQL (Vault Query Language).</li>
+   </ul>
+    </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Recupera risultati di estrazione
+
+Questo modulo di azione recupera i risultati di una richiesta di estrazione specificata.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID processo</p> </td> 
+   <td> <p>Immettere o mappare il job per il quale si desidera recuperare i risultati. Puoi mappare questo dal modulo Estrai file di dati.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID attività</td> 
+   <td> <p>Immettere o mappare l'attività per la quale si desidera recuperare i risultati. Puoi mappare questo dal modulo Estrai file di dati.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Caricamento di più file
+
+* [Carica più file](#load-multiple-files)
+* [Recuperare i risultati del registro](#retrieve-log-results)
+
+#### Carica più file
+
+Questo modulo crea un processo di caricamento e carica un set di file di dati.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File</td> 
+   <td>Immetti o mappa il percorso file sul file CSV che verrà utilizzato da questo processo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Ordine</td> 
+   <td>Immettere o mappare l'ordine per l'elenco dei file.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nessun trigger</td> 
+   <td>Selezionare Sì per ignorare i trigger di record o documenti.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Recuperare i risultati del registro
+
+Questo modulo di azione recupera un registro dei risultati del processo di caricamento.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID processo</p> </td> 
+   <td> <p>Immettere o mappare il job per il quale si desidera recuperare i risultati. Puoi eseguire il mapping dal modulo Carica file di dati.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID attività</td> 
+   <td> <p>Immettere o mappare l'attività per la quale si desidera recuperare i risultati. Puoi eseguire il mapping dal modulo Carica file di dati.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo</td> 
+   <td> <p>Specificare se si desidera recuperare i processi riusciti o non riusciti.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Gestione temporanea dei file
+
+#### Elementi elenco nel percorso
+
+Questo modulo restituisce un elenco di file e cartelle per il percorso specificato.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione </td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Scegli la home directory</td> 
+   <td>Selezionare la home directory da cui si desidera elencare gli elementi.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Ordine</td> 
+   <td>Immettere o mappare l'ordine per l'elenco dei file.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nessun trigger</td> 
+   <td>Selezionare Sì per ignorare i trigger di record o documenti.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Altro
 
 * [Effettua chiamata API personalizzata](#make-a-custom-api-call)
@@ -1015,7 +1160,7 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vau
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Immettere un percorso relativo a <code>baseurl/api/v</code>.  Ad esempio: <code>/objects/documents</code>. Non includere <code>baseurl/api/v/</code>, poiché è già incluso.</td> 
+   <td>Inserisci un percorso relativo a <code>baseurl/api/v</code>.  Ad esempio: <code>/objects/documents</code>. Non includere <code>baseurl/api/v/</code>, poiché è già incluso.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Metodo</td> 
