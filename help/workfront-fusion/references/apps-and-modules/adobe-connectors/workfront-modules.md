@@ -4,10 +4,10 @@ description: Per automatizzare i processi all’interno di Workfront, puoi utili
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '7366'
-ht-degree: 100%
+source-wordcount: '7298'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 Per automatizzare i processi all’interno di Workfront, puoi utilizzare il connettore Adobe Workfront Fusion. È inoltre possibile collegare Workfront ad altre applicazioni e servizi.
 
-Per istruzioni su come creare uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
+Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
@@ -219,6 +219,17 @@ Questo modulo trigger esegue uno scenario in tempo reale quando in Workfront ven
 Il modulo visualizza tutte le sottoscrizioni a eventi correlate al webhook. Sono incluse le sottoscrizioni a eventi create tramite Fusion e quelle create direttamente tramite l’API. Questa vista di sottoscrizione a eventi non è disponibile nella versione legacy del modulo Osserva eventi.
 
 Il modulo restituisce tutti i campi standard associati al record, insieme a tutti i campi e i valori personalizzati a cui accede la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
+
+>[!IMPORTANT]
+>
+>Puoi modificare questo modulo in un secondo momento, per modificare il webhook.
+>
+>Quando si aggiorna un webhook, considera quanto segue:
+>
+>* Il webhook modificato viene trattato dagli abbonamenti agli eventi di Workfront come un nuovo abbonamento. La cronologia delle sottoscrizioni degli eventi non viene mantenuta per la configurazione del webhook precedente, in quanto viene considerata una sottoscrizione di evento separata.
+>* Il passaggio dalla sottoscrizione precedente a quella nuova potrebbe non essere sincronizzato perfettamente. È quindi possibile ricevere un evento due volte (se il nuovo abbonamento inizia a essere eseguito prima che quello vecchio si fermi) o perdere un evento (se il vecchio abbonamento si arresta prima che quello nuovo inizi a essere eseguito).
+>
+>Per ulteriori informazioni sulla modifica dei webhook, vedere [Modifica webhook](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
 1. Fai clic su **[!UICONTROL Aggiungi]** a destra della casella **Webhook**.
 
@@ -1036,7 +1047,7 @@ Workfront ha recentemente rilasciato una nuova versione del servizio di sottoscr
 
 Per ulteriori informazioni sulla nuova versione di sottoscrizione eventi, consulta [Controllo delle versioni per sottoscrizione eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 
-Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=it).
+Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2368,7 +2379,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   Per ulteriori informazioni sulla nuova versione di sottoscrizione a eventi, consulta [Controllo delle versioni per sottoscrizioni a eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 >
->   Per le risorse si come conservare gli scenari di Workfront Fusion durante l’aggiornamento della sottoscrizione a eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento V2 delle sottoscrizioni a eventi(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=it)].
+>   Per le risorse si come conservare gli scenari di Workfront Fusion durante l’aggiornamento della sottoscrizione a eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento V2 delle sottoscrizioni a eventi(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Il modulo [!UICONTROL Osserva eventi] di Workfront attiva scenari basati su un webhook che crea una sottoscrizione a eventi nell’API Workfront. La sottoscrizione a eventi consiste in un set di dati che determina quali eventi vengono inviati al webhook. Ad esempio, se imposti un modulo [!UICONTROL Osserva eventi] per rilevare eventuali problemi, la sottoscrizione a eventi invia solo eventi relativi ai problemi.
 

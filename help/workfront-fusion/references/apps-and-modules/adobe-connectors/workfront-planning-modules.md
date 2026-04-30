@@ -4,10 +4,10 @@ description: Con i moduli  [!DNL Adobe Workfront Planning] , puoi avviare uno sc
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 52%
+source-wordcount: '2106'
+ht-degree: 50%
 
 ---
 
@@ -214,6 +214,17 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 #### Osserva eventi
 
 Questo modulo di attivazione avvia uno scenario quando un record, un tipo di record o un&#39;area di lavoro viene creata, aggiornata o eliminata in Workfront Planning.
+
+>[!IMPORTANT]
+>
+>Puoi modificare questo modulo in un secondo momento, per modificare il webhook.
+>
+>Quando si aggiorna un webhook, considera quanto segue:
+>
+>* Il webhook modificato viene trattato dagli abbonamenti agli eventi di Workfront come un nuovo abbonamento. La cronologia delle sottoscrizioni degli eventi non viene mantenuta per la configurazione del webhook precedente, in quanto viene considerata una sottoscrizione di evento separata.
+>* Il passaggio dalla sottoscrizione precedente a quella nuova potrebbe non essere sincronizzato perfettamente. È quindi possibile ricevere un evento due volte (se il nuovo abbonamento inizia a essere eseguito prima che quello vecchio si fermi) o perdere un evento (se il vecchio abbonamento si arresta prima che quello nuovo inizi a essere eseguito).
+>
+>Per ulteriori informazioni sulla modifica dei webhook, vedere [Modifica webhook](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
 <table style="table-layout:auto"> 
   <col/>
