@@ -5,9 +5,9 @@ description: Puoi configurare impostazioni specifiche per gli scenari nel pannel
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1306'
 ht-degree: 7%
 
 ---
@@ -58,6 +58,10 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. Attiva o disattiva le impostazioni dello scenario in base alle esigenze. Consulta [Opzioni impostazioni scenario](#scenario-settings-options) di seguito.
 
 ## Opzioni impostazioni scenario
+
+### Descrizione
+
+È possibile immettere una descrizione dello scenario, che verrà visualizzata nell&#39;elenco Scenari. Le descrizioni sono limitate a 240 caratteri.
 
 ### [!UICONTROL Elaborazione sequenziale]
 

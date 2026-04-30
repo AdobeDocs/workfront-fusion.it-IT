@@ -4,10 +4,11 @@ title: Gestisci scenari dall'area Scenari
 description: Questa sezione contiene articoli relativi alla gestione di scenari in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8801b8c175b3cf6ed7b0dc98a8b3d269ca2bbd2b
+exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 21%
+source-wordcount: '463'
+ht-degree: 19%
 
 ---
 
@@ -54,6 +55,9 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. Per cercare uno scenario specifico, inizia a digitare nella barra di ricerca. Gli scenari vengono filtrati durante la digitazione.
 1. Per attivare o disattivare uno scenario, individualo nell&#39;elenco, quindi cambia l&#39;opzione nella colonna **Stato** per quello scenario.
 1. Per passare direttamente alla pagina Dettagli di uno scenario, individuare lo scenario nell&#39;elenco, quindi fare clic su **Apri** nella riga dello scenario.
+1. Per aggiungere una descrizione a uno scenario, fare clic nella colonna Descrizione dello scenario e immettere una descrizione.
+
+   Le descrizioni possono contenere fino a 240 caratteri.
 1. Per clonare uno scenario, fare clic sulla casella di controllo nella riga dello scenario, quindi selezionare **Clona** dalla barra nella parte inferiore dello schermo.
 
    Per ulteriori informazioni sugli scenari di clonazione, vedere [Copiare uno scenario tramite clonazione](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md#copy-a-scenario-by-cloning) nell&#39;articolo Copiare moduli o scenari.
@@ -61,4 +65,3 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. Per assegnare uno o più scenari a un pool di lavoro, fare clic sulla casella di controllo accanto a ogni scenario che si desidera assegnare a un pool, quindi fare clic su **Assegna al pool di lavoro** nella barra nella parte inferiore della schermata. Selezionare il pool di lavoratori a cui si desidera assegnare gli scenari.
 1. Per eliminare uno scenario, fare clic sulla casella di controllo accanto allo scenario che si desidera eliminare, quindi fare clic su **Elimina** nella barra nella parte inferiore della pagina.
 1. Per nascondere le colonne dell&#39;elenco, fare clic sull&#39;icona **Colonne** ![Icona Colonne](assets/glist-column.png) e selezionare o deselezionare le caselle accanto ai nomi delle colonne.
-
