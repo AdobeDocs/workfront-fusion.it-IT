@@ -3,10 +3,11 @@ title: Visualizzare le relazioni tra scenari concatenati
 description: È possibile creare una mappa delle relazioni tra gli scenari padre e figlio.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e7b12ec51474440990cc28996bc70fd97688b082
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
+source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 20%
+source-wordcount: '485'
+ht-degree: 18%
 
 ---
 
@@ -88,5 +89,6 @@ Per visualizzare la mappa delle relazioni per uno scenario concatenato:
 
    * Se visualizzi solo una parte della mappa, questa è più scura sulla mappa semplificata.
    * Lo scenario corrente è contrassegnato in blu sulla mappa semplificata.
+1. Per visualizzare la cronologia di esecuzione della catena, fare clic sulla scheda Cronologia nella parte superiore della visualizzazione.
 
-
+   Puoi fare clic su una cronologia per visualizzare i dati specifici trasmessi tra scenari concatenati.
