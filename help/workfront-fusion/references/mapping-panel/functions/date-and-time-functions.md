@@ -4,10 +4,10 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '1879'
-ht-degree: 2%
+source-wordcount: '2253'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Ottiene l&#39;ora corrente come marca temporale Unix.
 
 ### [!UICONTROL addSeconds (data; numero)]
 
-Returns a new date as a result of adding a given number of seconds to a date. To subtract seconds, enter a negative number.
+Restituisce una nuova data in seguito all’aggiunta di un determinato numero di secondi a una data. Per sottrarre i secondi, immettere un numero negativo.
 
 >[!BEGINSHADEBOX]
 
@@ -35,17 +35,17 @@ Returns a new date as a result of adding a given number of seconds to a date. To
 
 * `addSeconds(2016-12-08T15:55:57.536Z;2)`
 
-  Returns 2016-12-08T15:55:59.536Z
+  Restituisce 2016-12-08T15:55:59.536Z
 
 * `addSeconds(2016-12-08T15:55:57.536Z;-2)`
 
-  Returns 2016-12-08T15:55:55.536Z
+  Restituisce 2016-12-08T15:55:55.536Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMinutes (date; number)] {#addminutes-date-number}
+### [!UICONTROL addMinutes (data; numero)] {#addminutes-date-number}
 
-Returns a new date as a result of adding a given number of minutes to a date. To subtract minutes, enter a negative number.
+Restituisce una nuova data in seguito all’aggiunta di un determinato numero di minuti a una data. Per sottrarre i minuti, immettere un numero negativo.
 
 >[!BEGINSHADEBOX]
 
@@ -53,11 +53,11 @@ Returns a new date as a result of adding a given number of minutes to a date. To
 
 * `addMinutes(2016-12-08T15:55:57.536Z;2)`
 
-  Returns 2016-12-08T15:57:57.536Z
+  Restituisce 2016-12-08T15:57:57.536Z
 
 * `addMinutes(2016-12-08T15:55:57.536Z;-2)`
 
-  Returns 2016-12-08T15:53:57.536Z
+  Restituisce 2016-12-08T15:53:57.536Z
 
 >[!ENDSHADEBOX]
 
@@ -97,6 +97,25 @@ Restituisce una nuova data come risultato dell’aggiunta di un numero specifica
 
 >[!ENDSHADEBOX]
 
+### [!UICONTROL addWeekDays(date; number)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Aggiunge il numero di giorni della settimana alla data. Vengono aggiunti solo valori interi interi (i valori frazionari vengono arrotondati per difetto).
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+`addWeekDays("2016-12-08T15:55:57.536Z"; 2)`
+
+Restituisce 2016-12-12T15:55:57.536Z
+`addWeekDays("2016-12-08T15:55:57.536Z"; -2)`
+Restituisce 2016-12-06T15:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL addMonths (data; numero)]
 
 Restituisce una nuova data in seguito all’aggiunta di un numero specificato di mesi a una data. Per sottrarre i mesi, immettere un numero negativo.
@@ -133,13 +152,294 @@ Restituisce una nuova data risultante dall&#39;aggiunta di un numero specificato
 
 >[!ENDSHADEBOX]
 
+### [!UICONTROL dayOfMonth(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il giorno del mese per la data come numero compreso tra 1 e 31.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `dayOfMonth("2016-12-28T16:03:06.372Z")`
+
+  Restituisce 28
+* `dayOfMonth("2015-01-05T11:36:39.138Z")`
+
+  Restituisce 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dayOfWeek(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il giorno della settimana per la data come numero compreso tra 1 (domenica) e 7 (sabato).
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `dayOfWeek("2016-12-28T16:03:06.372Z")`
+
+  Restituisce 4
+* `dayOfWeek("2016-12-25T16:03:06.372Z")`
+
+  Restituisce 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInMonth(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il numero totale di giorni nel mese della data specificata.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `daysInMonth("2016-01-01T00:00:00.000Z")`
+
+  Restituisce 31
+* `daysInMonth("2016-02-01T00:00:00.000Z")`
+
+  Restituisce 29
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInSplitWeek(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il numero totale di giorni della settimana compresi tra la data e la fine della settimana oppure la fine del mese, a seconda di quale dei due eventi si verifica per primo.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `daysInSplitWeek("2016-12-28T16:03:06.372Z")`
+
+  Restituisce 3
+* `daysInSplitWeek("2016-01-25T16:03:06.372Z")`
+
+  Restituisce 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInYear(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il numero totale di giorni nell&#39;anno della data specificata (365 per un anno regolare, 366 per un anno bisestile).
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `daysInYear("2016-06-01T00:00:00.000Z")`
+
+  Restituisce 366
+* `daysInYear("2015-06-01T00:00:00.000Z")`
+
+  Restituisce 365
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMax(date1; date2; ...)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce la data più recente dell&#39;elenco.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `dateMax("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z") `
+
+  Restituisce 2016-12-01T00:00:00.000Z
+
+* `dateMax("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z")`
+
+  Restituisce 2016-06-15T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMin(date1; date2; ...)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce la data meno recente dall&#39;elenco.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `dateMin("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z")`
+
+  Restituisce 2016-06-01T00:00:00.000Z
+
+* `dateMin("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z") `
+
+  Restituisce 2014-03-20T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL ora(data)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce l’ora della data sotto forma di numero compreso tra 0 e 23.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `hour("2016-12-08T15:55:57.536Z")`
+
+  Restituisce 15
+* `hour("2016-12-08T00:00:00.000Z")`
+
+  Restituisce 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL minuto(data)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il minuto della data come numero compreso tra 0 e 59.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `minute("2016-12-08T15:55:57.536Z")`
+
+  Restituisce 55
+* `minute("2016-12-08T15:00:00.000Z")`
+
+  Restituisce 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL mese(data)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il mese della data come numero compreso tra 1 e 12.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `month("2016-12-08T15:55:57.536Z")`
+
+  Restituisce 12
+* `month("2016-01-08T15:55:57.536Z")`
+
+  Restituisce 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL second(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il secondo della data come numero compreso tra 0 e 59.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `second("2016-12-08T15:55:57.536Z")`
+
+  Restituisce 57
+* `second("2016-12-08T15:55:00.000Z")`
+
+  Restituisce 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL weekDayDiff(date2; date1)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il numero di giorni feriali tra due date, tenendo conto dei timestamp in tali giorni. Ad esempio, se l&#39;ora di inizio è 15:00, il giorno di inizio non verrà conteggiato come giorno intero.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `weekDayDiff("2016-12-07T12:00:00.000Z"; "2016-12-05T00:00:00.000Z")`
+
+  Restituisce 2,5
+* `weekDayDiff("2016-12-09T15:00:00.000Z"; "2016-12-05T15:00:00.000Z")`
+
+  Restituisce 4
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL workMinutesDiff(date1; date2)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il numero di minuti lavorativi programmati tra due date, in base a una pianificazione standard da lunedì a venerdì, dalle 9.00 alle 17.00.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-05T17:00:00.000Z")`
+
+  Restituisce 480
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-06T17:00:00.000Z")`
+
+  Restituisce 960
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL year(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce l’anno della data sotto forma di numero a 4 cifre.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `year("2016-12-08T15:55:57.536Z")`
+
+  Restituisce il 2016
+* `year("2000-01-01T00:00:00.000Z")`
+
+  Restituisce 2000
+
+>[!ENDSHADEBOX]
+
 ### [!UICONTROL setSecond (date; number)]
 
-This function returns a new date with the seconds specified in parameters.
+Questa funzione restituisce una nuova data con i secondi specificati nei parametri.
 
-Specify a number from 0 to 59. If the number is outside of that range, the function returns a second from the previous minute (for a negative number) or subsequent minute (for a positive number).
+Specificare un numero compreso tra 0 e 59. Se il numero non rientra nell’intervallo, la funzione restituisce un secondo dal minuto precedente (per un numero negativo) o dal minuto successivo (per un numero positivo).
 
-If you need to specify a number outside the range, we recommend that you use[!UICONTROL &#x200B; addSeconds], as described above in the section [addSeconds (date; number)](#addseconds-date-number).
+Se devi specificare un numero non compreso nell&#39;intervallo, ti consigliamo di utilizzare [!UICONTROL  addSeconds], come descritto in precedenza nella sezione [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -147,11 +447,11 @@ If you need to specify a number outside the range, we recommend that you use[!UI
 
 * `setSecond(2015-10-07T11:36:39.138Z;10)`
 
-  Returns 2015-10-07T11:36:10.138Z
+  Restituisce 2015-10-07T11:36:10.138Z
 
 * `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
-  Returns 2015-10-07T11:37:01.138Z
+  Restituisce 2015-10-07T11:37:01.138Z
 
 >[!ENDSHADEBOX]
 
@@ -159,9 +459,9 @@ If you need to specify a number outside the range, we recommend that you use[!UI
 
 Questa funzione restituisce una nuova data con i minuti specificati nei parametri.
 
-Specify a number from 0 to 59. Se il numero non rientra nell’intervallo, la funzione restituisce un minuto dall’ora precedente (per un numero negativo) o dall’ora successiva (per un numero positivo).
+Specificare un numero compreso tra 0 e 59. Se il numero non rientra nell’intervallo, la funzione restituisce un minuto dall’ora precedente (per un numero negativo) o dall’ora successiva (per un numero positivo).
 
-If you need to specify a number outside the range, we recommend that you use addMinutes, as described above in [addMinutes (date; number)](#addminutes-date-number).
+Se è necessario specificare un numero non compreso nell&#39;intervallo, è consigliabile utilizzare addMinutes, come descritto in precedenza in [addMinutes (date; number)](#addminutes-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -213,23 +513,23 @@ Se è necessario specificare un numero non compreso nell&#39;intervallo, è cons
 
 * `setDay(2018-06-27T11:36:39.138Z;Monday)`
 
-  Returns 2018-06-25T11:36:39.138Z
+  Restituisce 2018-06-25T11:36:39.138Z
 
 * `setDay(2018-06-27T11:36:39.138Z;1)`
 
-  Returns 2018-06-24T11:36:39.138Z
+  Restituisce 2018-06-24T11:36:39.138Z
 
 * `setDay(2018-06-27T11:36:39.138Z;7)`
 
-  Returns 2018-06-30T11:36:39.138Z
+  Restituisce 2018-06-30T11:36:39.138Z
 
 >[!ENDSHADEBOX]
 
 ### [!UICONTROL setDate (date; number)]
 
-This function returns a new date with the day of the month specified in parameters.
+Questa funzione restituisce una nuova data con il giorno del mese specificato nei parametri.
 
-Specify a number from 1 to 31. If the number is outside of this range, the function returns a day from the previous month (for a negative number) or subsequent month (for a positive number).
+Specifica un numero compreso tra 1 e 31. Se il numero non rientra in questo intervallo, la funzione restituisce un giorno del mese precedente (per un numero negativo) o del mese successivo (per un numero positivo).
 
 >[!BEGINSHADEBOX]
 
@@ -237,17 +537,17 @@ Specify a number from 1 to 31. If the number is outside of this range, the funct
 
 * `setDate(2015-08-07T11:36:39.138Z;5)`
 
-  Returns 2015-08-05T11:36:39.138Z
+  Restituisce 2015-08-05T11:36:39.138Z
 
 * `setDate(2015-08-07T11:36:39.138Z;32)`
 
-  Returns 2015-09-01T11:36:39.138Z
+  Restituisce 2015-09-01T11:36:39.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMonth (date; number/name of the month in English)]
+### [!UICONTROL setMonth (data; numero/nome del mese in inglese)]
 
-This function returns a new date with the month specified in parameters.
+Questa funzione restituisce una nuova data con il mese specificato nei parametri.
 
 Specifica un numero compreso tra 1 e 12. Se il numero non rientra in questo intervallo, la funzione restituisce il mese dell’anno precedente (per un numero negativo) o dell’anno successivo (per un numero positivo).
 
@@ -308,12 +608,12 @@ Per ulteriori informazioni, vedere Date and Text nell&#39;articolo [Tipi di dati
   <tr> 
    <td>[!UICONTROL date] </td> 
    <td>Data </td> 
-   <td> <p>Converts a Date value to a Text value. </p> </td> 
+   <td> <p>Converte un valore Date in un valore Text. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL format] </td> 
    <td>Testo </td> 
-   <td> <p>Lets you specify a format using date/time formatting tokens. For more information, see <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens for date and time formatting</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
+   <td> <p>Consente di specificare un formato utilizzando i token di formattazione per data e ora. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token per la formattazione della data e dell'ora</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Esempio: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL timezone] </td> 
@@ -376,12 +676,12 @@ La seconda colonna indica il tipo previsto. Se viene fornito un tipo diverso, vi
   <tr> 
    <td>[!UICONTROL text] </td> 
    <td>Testo </td> 
-   <td> <p>Converts a Date value to a Text value. </p> </td> 
+   <td> <p>Converte un valore Date in un valore Text. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL format] </td> 
    <td>Testo </td> 
-   <td> <p>Lets you specify a format using date/time formatting tokens. For more information, see <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens for date and time formatting</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
+   <td> <p>Consente di specificare un formato utilizzando i token di formattazione per data e ora. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token per la formattazione della data e dell'ora</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Esempio: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL timezone] </td> 
@@ -395,39 +695,39 @@ Se viene fornito un tipo diverso, viene applicata la coercizione del tipo. Per u
 
 #### Valore e tipo restituiti
 
-This function converts a text string to a date, according to the format and timezone that you specify. The data type of the value is Date.
+Questa funzione converte una stringa di testo in una data, in base al formato e al fuso orario specificati. Il tipo di dati del valore è Data.
 
 >[!BEGINSHADEBOX]
 
-**Examples:** In the following examples, the returned Date value is expressed according to ISO 8601, but the data type of the result is Date.
+**Esempi:** Negli esempi seguenti, il valore di Data restituito è espresso in base allo standard ISO 8601, ma il tipo di dati del risultato è Date.
 
 * `parseDate(2016-12-28;YYYY-MM-DD)`
 
-  Returns 2016-12-28T00:00:00.000Z
+  Restituisce 2016-12-28T00:00:00.000Z
 
 * `parseDate(2016-12-28 16:03;YYYY-MM-DD HH:mm)`
 
-  Returns 2016-12-28T16:03:00.000Z
+  Restituisce 2016-12-28T16:03:00.000Z
 
 * `parseDate(2016-12-28 04:03 pm; YYYY-MM-DD hh:mm a)`
 
-  Returns 2016-12-28T16:03:06.000Z
+  Restituisce 2016-12-28T16:03:06.000Z
 
 * `parseDate(1482940986;X)`
 
-  Returns 2016-12-28T16:03:06.000Z
+  Restituisce 2016-12-28T16:03:06.000Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dateDifference (Date1; Date2; Unit)]
+### [!UICONTROL dataDifferenza (Data1; Data2; Unità)]
 
-Returns a number representing the difference in the two dates, expressed in the specified unit.
+Restituisce un numero che rappresenta la differenza tra le due date, espresso nell&#39;unità specificata.
 
-Date2 is subtracted from Date1.
+Data2 viene sottratto da Data1.
 
-Use one of the following time values for the `unit` parameter:
+Utilizzare uno dei valori di tempo seguenti per il parametro `unit`:
 
-* milliseconds
+* millisecondi
 * secondi
 * minuti
 * ore
@@ -435,7 +735,7 @@ Use one of the following time values for the `unit` parameter:
 * settimane
 * mesi
 
-If no unit is specified, the function returns the difference in milliseconds.
+Se non viene specificata alcuna unità, la funzione restituisce la differenza in millisecondi.
 
 >[!BEGINSHADEBOX]
 
@@ -465,6 +765,7 @@ Per calcolare una data corrispondente all&#39;ennesimo giorno della settimana de
 
 ![Calcola nono giorno](assets/date-time-functions-calc-nth-day-350x31.png)
 
+
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
 ```
@@ -488,7 +789,7 @@ La formula contiene i seguenti elementi:
    <td><code>2.dow</code> </td> 
    <td> <p> giorno della settimana:</p> 
     <ul> 
-     <li><code>1</code> for Monday</li> 
+     <li><code>1</code> per lunedì</li> 
      <li><code>2</code> per martedì</li> 
      <li><code>3</code> per mercoledì</li> 
      <li><code>4</code> per giovedì</li> 
@@ -499,29 +800,30 @@ La formula contiene i seguenti elementi:
   </tr> 
   <tr> 
    <td><code>1.date</code> </td> 
-   <td> <p> The date determines the month. To calculate n-th day of week in current month use the <code>now</code> variable.</p> </td> 
+   <td> <p> La data determina il mese. Per calcolare l'n-esimo giorno della settimana nel mese corrente, utilizzare la variabile <code>now</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-In case you want to calculate only one specific case, for example, every second Wednesday, you can replace the items `1.n` and `2.dow` in the formula with corresponding numbers. For the second Wednesday in the current month, you would use the following values:
+Se si desidera calcolare solo un caso specifico, ad esempio ogni due mercoledì, è possibile sostituire gli elementi `1.n` e `2.dow` nella formula con i numeri corrispondenti. Per il secondo mercoledì del mese corrente, vengono utilizzati i seguenti valori:
 
 * `1.n` = `2`
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![Nth day variable value](assets/nth-day-variable-value-350x33.png)
+![Valore variabile del nono giorno](assets/nth-day-variable-value-350x33.png)
 
-#### Explanation:
+#### Spiegazione:
 
-* `setDate(now;1)` returns first of current month
-* `formatDate(....;E)` returns day of week (1, 2, ... 6)
+* `setDate(now;1)` restituisce il primo del mese corrente
+* `formatDate(....;E)` restituisce il giorno della settimana (1, 2, ... 6)
 
-### How to calculate days between dates
+### Come calcolare i giorni tra le date
 
-One possibility is to employ the following expression:
+Una possibilità consiste nell’utilizzare la seguente espressione:
 
-![Calculate days between dates](assets/calculate-days-between-dates-350x68.png)
+![Calcola giorni tra date](assets/calculate-days-between-dates-350x68.png)
+
 
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
@@ -529,43 +831,45 @@ One possibility is to employ the following expression:
 
 >[!NOTE]
 >
->* Values of `D1`and `D2` have be Date type values. If they are String type values (for example, 20.10.2018), use the `parseDate()` function to convert them to Date type values.
+>* I valori di `D1` e `D2` sono valori di tipo Data. Se si tratta di valori di tipo String (ad esempio, 20.10.2018), utilizzare la funzione `parseDate()` per convertirli in valori di tipo Date.
 >
->* The `round()` function is used for cases when one of the dates falls within the daylight savings time period and the other does not. In these cases, the difference in hours is one hour less or more. You can divide it by 24 for a non-integer result. You lose an hour-Daylight Savings. Round flattens it so you don&#39;t have a percentage
+>* La funzione `round()` viene utilizzata per i casi in cui una delle date rientra nel periodo di tempo di risparmio dell&#39;ora legale e l&#39;altra no. In questi casi, la differenza di ore è di un’ora in meno o più. È possibile dividerlo per 24 per un risultato non intero. Perdi un&#39;ora di luce. L&#39;arrotondamento la appiattisce in modo da non avere una percentuale
 
-#### How to calculate last day/millisecond of month
+#### Come calcolare l’ultimo giorno/millisecondo del mese
 
-When you specify a date range, for example in a search module, if the range spans the whole previous month as a closed interval (the interval that includes both its limit points), you need to calculate the last day of the month.
+Quando si specifica un intervallo di date, ad esempio in un modulo di ricerca, se l’intervallo si estende sull’intero mese precedente come intervallo chiuso (l’intervallo che include entrambi i punti limite), è necessario calcolare l’ultimo giorno del mese.
 
 2019-09-01 ≤ D ≤ 2019-09-30
 
-The formula below shows one way how to calculate last day of the previous month:
+La formula seguente mostra un modo per calcolare l’ultimo giorno del mese precedente:
 
-![Last day of previous month](assets/last-day-prev-month.png)
+![Ultimo giorno del mese precedente](assets/last-day-prev-month.png)
+
 
 ```
 {{addDays(setDate(now; 1); -1)}}
 ```
 
-In some cases, you need to calculate not only the last day of month, but literally its last millisecond:
+In alcuni casi, è necessario calcolare non solo l’ultimo giorno del mese, ma letteralmente il suo ultimo millisecondo:
 
 2019-09-01T00:00:00.000Z ≤ D ≤ 2019-09-30T23:59:59.999Z
 
-This formula shows one way how to calculate last millisecond of the previous month:
+Questa formula mostra un modo per calcolare l’ultimo millisecondo del mese precedente:
 
-![Last millisecond of previous month](assets/last-millisecond-prev-month-350x45.png)
+![Ultimo millisecondo del mese precedente](assets/last-millisecond-prev-month-350x45.png)
+
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
 ```
 
-If you need the result to use your timezone setting, omit the UTC argument:
+Se è necessario che il risultato utilizzi l’impostazione del fuso orario, ometti l’argomento UTC:
 
-![Omit UTC](assets/omit-utc-argument-350x45.png)
+![Ometti UTC](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 
-However, it is preferable to use half-open interval instead (the interval that excludes one of its limit points), specifying the first day of the following month instead and replacing the &quot;less or equal than&quot; operator with &quot;less than&quot; as follows:
+Tuttavia, è preferibile utilizzare l’intervallo semi-aperto (l’intervallo che esclude uno dei suoi punti limite), specificando il primo giorno del mese successivo e sostituendo l’operatore &quot;minore o uguale a&quot; con &quot;minore di&quot; come segue:
 
 `2019-09-01 ≤ D < 2019-10-01`
 
