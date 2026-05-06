@@ -2,9 +2,9 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 1752b97d5902c9f9b2ec3a8c0bd01f9dbab93d0a
+source-git-commit: 532c5003b1f2e5e333eb59824743f88ed54449ef
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2403'
 ht-degree: 55%
 
 ---
@@ -358,6 +358,7 @@ ht-degree: 55%
          * [Moduli Adobe Creative Cloud Libraries](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
          * [Moduli Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
          * [Moduli Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+         * [Moduli audio e video di Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
          * [Moduli Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
          * [Moduli Adobe Frame.io Beta (V4)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
          * [Moduli Adobe Frame.io Legacy (V3)](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
