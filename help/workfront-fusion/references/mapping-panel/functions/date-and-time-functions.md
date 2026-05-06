@@ -4,9 +4,9 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: fc7f98c128f73a60d75750c6bd57ec8ddc31954c
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2375'
 ht-degree: 3%
 
 ---
@@ -294,6 +294,31 @@ Restituisce la data meno recente dall&#39;elenco.
 >[!ENDSHADEBOX]
 
 
+### [!UICONTROL endOfMonth(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce l&#39;ultimo momento del mese della data specificata, ovvero l&#39;ultimo millisecondo dell&#39;ultimo giorno (23:59:59.999). Tiene automaticamente conto del numero di giorni del mese, inclusi gli anni bisestili.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `endOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Restituisce 2016-06-30T23:59:59.999Z
+
+* `endOfMonth("2016-01-01T00:00:00.000Z")`
+
+  Restituisce 2016-01-31T23:59:59.999Z
+
+* `endOfMonth("2016-02-01T00:00:00.000Z")`
+
+  Restituisce 2016-02-29T23:59:59.999Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL ora(data)]
 
 [!BADGE Nuovo!]{type=Informative}
@@ -310,6 +335,35 @@ Restituisce l’ora della data sotto forma di numero compreso tra 0 e 23.
 * `hour("2016-12-08T00:00:00.000Z")`
 
   Restituisce 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL isWeekend(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce `true` se la data cade di sabato o domenica e `false` per qualsiasi altro giorno. Il risultato viene determinato nel fuso orario configurato dello scenario.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `isWeekend("2016-12-10T00:00:00.000Z")`
+
+  Restituisce true (sabato)
+
+* `isWeekend("2016-12-11T00:00:00.000Z")`
+
+  Restituisce true (domenica)
+
+* `isWeekend("2016-12-12T00:00:00.000Z")`
+
+  Restituisce false (lunedì)
+
+* `isWeekend("2016-12-09T00:00:00.000Z")`
+
+  Restituisce false (venerdì)
 
 >[!ENDSHADEBOX]
 
@@ -370,6 +424,27 @@ Restituisce il secondo della data come numero compreso tra 0 e 59.
 * `second("2016-12-08T15:55:00.000Z")`
 
   Restituisce 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL startOfMonth(date)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il primo momento del mese della data specificata, ovvero la mezzanotte del primo giorno (00:00:00.000). Il risultato dipende dal fuso orario.
+
+>[!BEGINSHADEBOX]
+
+**Esempi:**
+
+* `startOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Restituisce 2016-06-01T00:00:00.000Z
+
+* `startOfMonth("2024-02-14T08:00:00.000Z")`
+
+  Restituisce 2024-02-01T00:00:00.000Z
 
 >[!ENDSHADEBOX]
 
