@@ -4,10 +4,10 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: 5709c9c0f8efd2c29ff7dbc0391a5b496a467c6a
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 7%
+source-wordcount: '478'
+ht-degree: 6%
 
 ---
 
@@ -20,6 +20,7 @@ Puoi utilizzare queste variabili generali per identificare i dettagli di un’es
 * `executionID`: ID dell&#39;esecuzione dello scenario
 * `triggerTimestamp`: ora in cui è stata attivata l&#39;esecuzione
 * `scenarioID`: ID dello scenario attualmente aperto
+* `scenarioName`: nome dello scenario attualmente in esecuzione
 * `operationsConsumed`: numero di operazioni utilizzate in quel punto dello scenario.
 
 ## [!UICONTROL get (oggetto o array; percorso)]
