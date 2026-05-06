@@ -4,10 +4,10 @@ description: I moduli S3 di  [!DNL Adobe Workfront Fusion AWS] ti consentono di 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6b2d9dd5-0b33-4297-aea0-aba26072b26a
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 8d78f1b0e9ba020c6d63ac8f5b1f21500d1ada35
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 0%
+source-wordcount: '1561'
+ht-degree: 26%
 
 ---
 
@@ -17,7 +17,7 @@ I moduli S3 di [!DNL Adobe Workfront Fusion AWS] consentono di eseguire operazio
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +25,31 @@ I moduli S3 di [!DNL Adobe Workfront Fusion AWS] consentono di eseguire operazio
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -67,7 +67,7 @@ Il connettore AWS S3 utilizza quanto segue:
  <tbody> 
   <tr> 
    <td role="rowheader">URL di base</td> 
-   <td>https://s3.{{parameters.region}}.amazonaws.com</td> 
+   <td><pre><code>https://s3.&#123;&#123;parameters.region&#125;&#125;.amazonaws.com</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">Tag API</td> 
@@ -76,7 +76,7 @@ Il connettore AWS S3 utilizza quanto segue:
  </tbody> 
  </table>
 
-## Connetti [!DNL AWS] a Workfront Fusion {#connect-aws-to-workfront-fusion}
+## Connettere [!DNL AWS] a Workfront Fusion {#connect-aws-to-workfront-fusion}
 
 Per connettere [!DNL AWS S3] a Workfront Fusion è necessario connettere l&#39;account [!DNL AWS] a Workfront Fusion. A tale scopo, è innanzitutto necessario creare un utente API in [!DNL AWS] [!UICONTROL IAM].
 
@@ -90,18 +90,18 @@ Per connettere [!DNL AWS S3] a Workfront Fusion è necessario connettere l&#39;a
 1. Passare alle altre finestre di dialogo, quindi fare clic su **[!UICONTROL Crea utente]**.
 1. Copia l&#39;**[!UICONTROL ID chiave di accesso]** e la **[!UICONTROL Chiave di accesso segreta]** forniti.
 
-1. Passare a Workfront Fusion e aprire la finestra di dialogo [!DNL AWS S3]Crea connessione **[!UICONTROL del modulo]**.
+1. Passare a Workfront Fusion e aprire la finestra di dialogo **[!UICONTROL Crea connessione]** del modulo [!DNL AWS S3].
 1. Immetti l&#39;[!UICONTROL ID chiave di accesso] e la [!UICONTROL Chiave di accesso segreta] dal passaggio 7 ai rispettivi campi e fai clic su **[!UICONTROL Continua]** per stabilire la connessione.
 
 La connessione è stata stabilita. Puoi procedere con la configurazione del modulo.
 
-## [!DNL AWS S3] moduli e relativi campi
+## Moduli [!DNL AWS S3] e relativi campi
 
-Quando si configurano [!DNL AWS S3] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL AWS S3], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli [!DNL AWS S3], in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati altri campi di [!DNL AWS S3], a seconda di fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Azioni](#actions)
 * [Ricerche](#searches)
@@ -122,11 +122,11 @@ Questo modulo di azione crea un bucket in AWS.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL AWS] a Workfront Fusion, vedere <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
+    <td role="rowheader">[!UICONTROL Connessione] </td> 
+   <td> <p>Per istruzioni sulla connessione dell’account [!DNL AWS] a Workfront Fusion, consulta <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name] </td> 
+   <td role="rowheader">[!UICONTROL Nome] </td> 
    <td> <p>Immetti il nome del nuovo bucket.</p> </td> 
   </tr> 
   <tr> 
@@ -145,8 +145,8 @@ Questo modulo di azione scarica un file da un bucket.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL AWS] a Workfront Fusion, vedere <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td role="rowheader">[!UICONTROL Connessione] </td> 
+   <td> <p>Per istruzioni sulla connessione dell’account [!DNL AWS] a Workfront Fusion, consulta <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
@@ -157,7 +157,7 @@ Questo modulo di azione scarica un file da un bucket.
    <td> <p>Seleziona il bucket da cui desideri scaricare il file.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Path]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Percorso]</p> </td> 
    <td> <p>Immettere il percorso del file. Esempio: <code>/photos/2019/February/image023.jpg</code>.</p> </td> 
   </tr> 
  </tbody> 
@@ -174,8 +174,8 @@ Per informazioni dettagliate sull&#39;API [!DNL Amazon S3], vedere [[!DNL Amazon
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL AWS] a Workfront Fusion, vedere <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td>[!UICONTROL Connessione] </td> 
+   <td> <p>Per istruzioni sulla connessione dell’account [!DNL AWS] a Workfront Fusion, consulta <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Region] </td> 
@@ -186,11 +186,11 @@ Per informazioni dettagliate sull&#39;API [!DNL Amazon S3], vedere [[!DNL Amazon
    <td> <p>Immetti un URL host. Il percorso deve essere relativo a <code> https://s3.&lt;selected-region>.amazonaws.com/</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Method]</td> 
+   <td>[!UICONTROL Metodo]</td> 
    <td> <p>Seleziona il metodo di richiesta [!UICONTROL HTTP] necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!UICONTROL HTTP] metodi di richiesta in Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Headers]</td> 
+   <td>[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi un’intestazione di richiesta. Per ogni intestazione che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere l'intestazione. Puoi utilizzare le seguenti intestazioni di richiesta comuni. Per ulteriori intestazioni di richiesta fare riferimento alla documentazione API <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3]</a>.</p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> 
     <table style="table-layout:auto">
      <col> 
@@ -246,12 +246,12 @@ Per informazioni dettagliate sull&#39;API [!DNL Amazon S3], vedere [[!DNL Amazon
     </table> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Stringa Di Query]</td> 
+   <td>[!UICONTROL Stringa di query]</td> 
    <td> <p>Aggiungi le stringhe di query desiderate, ad esempio parametri o campi modulo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Body]</td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:   <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+   <td>[!UICONTROL Corpo]</td> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:   <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -268,20 +268,20 @@ Questo modulo di azione carica un file in un bucket AWS S3.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL AWS] a Workfront Fusion, vedere <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
+    <td role="rowheader">[!UICONTROL Connessione] </td> 
+   <td> <p>Per istruzioni sulla connessione dell’account [!DNL AWS] a Workfront Fusion, consulta <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
    <td> <p>Seleziona l’endpoint regionale. Per ulteriori informazioni, consulta <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">endpoint regionali</a> nella documentazione di [!DNL AWS].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Folder] </p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Cartella] </p> </td> 
    <td> <p>Specificare la cartella di destinazione in cui si desidera caricare un file.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td role="rowheader">[!UICONTROL File di origine]</td> 
+   <td> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Headers] (facoltativo)</p> </td> 
@@ -304,8 +304,8 @@ Restituisce un elenco di file da una posizione specificata.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL AWS] a Workfront Fusion, vedere <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
+    <td role="rowheader">[!UICONTROL Connessione] </td> 
+   <td> <p>Per istruzioni sulla connessione dell’account [!DNL AWS] a Workfront Fusion, consulta <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
@@ -331,8 +331,8 @@ Restituisce un elenco di cartelle da una posizione specificata.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Per istruzioni sulla connessione dell'account [!DNL AWS] a Workfront Fusion, vedere <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
+    <td role="rowheader">[!UICONTROL Connessione] </td> 
+   <td> <p>Per istruzioni sulla connessione dell’account [!DNL AWS] a Workfront Fusion, consulta <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connettere [!DNL AWS] a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 

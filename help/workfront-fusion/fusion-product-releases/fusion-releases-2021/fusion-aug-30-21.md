@@ -1,20 +1,19 @@
 ---
-title: 'Workfront Fusion release activity: Week of August 30, 2021'
-description: 'Workfront Fusion release activity: Week of August 30, 2021'
+title: 'Attività di rilascio di Workfront Fusion: settimana del 30 agosto 2021'
+description: 'Attività di rilascio di Workfront Fusion: settimana del 30 agosto 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: cac11147-5b3d-477b-869b-e255528c4bec
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 15%
 
 ---
 
-# Workfront Fusion release activity: Week of August 30, 2021
+# Attività di rilascio di Workfront Fusion: settimana del 30 agosto 2021
 
 Questa pagina descrive tutti i miglioramenti apportati a Adobe Workfront Fusion la settimana del martedì 30 agosto 2021.
 

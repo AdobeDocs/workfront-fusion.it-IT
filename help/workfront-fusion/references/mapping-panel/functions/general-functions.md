@@ -4,10 +4,10 @@ description: Nel pannello di mappatura di Adobe Workfront Fusion sono disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 2%
+source-wordcount: '471'
+ht-degree: 7%
 
 ---
 
@@ -142,3 +142,102 @@ Restituisce una raccolta contenente solo la password e l&#39;indirizzo e-mail de
 ## mergeCollections(collection1; collection2)
 
 Unisce due raccolte combinando le rispettive coppie chiave-valore. Se entrambi gli insiemi contengono la stessa chiave, il valore della seconda raccolta sovrascrive quello della prima raccolta.
+
+### [!UICONTROL isBlank(value)]
+
+Restituisce `true` se il valore è `null` o una stringa vuota, altrimenti restituisce `false`. A differenza di `ifEmpty`, questa funzione non considera il numero `0` o le stringhe solo spazi vuoti come vuoti.
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `isBlank("")     `
+
+  Restituisce true
+* `isBlank(null)   `
+
+  Restituisce true
+* `isBlank("Hello")`
+
+  Restituisce false
+* `isBlank(0)      `
+
+  Restituisce false
+* `isBlank(" ")    `
+
+  Restituisce false
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL in(valore; valore1; valore2; ...)]
+
+Restituisce `true` se il valore è uguale a uno dei valori specificati (uguaglianza rigorosa, nessuna coercizione del tipo).
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `in("B"; "A"; "B"; "C")`
+
+  Restituisce true
+* `in("D"; "A"; "B"; "C")`
+
+  Restituisce false
+* `in(2; 1; 2; 3)        `
+
+  Restituisce true
+* `in("2"; 1; 2; 3)      `
+
+  Restituisce false
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL ifin(value; value1; value2; ...; trueExpression; falseExpression)]
+
+Restituisce `trueExpression` se il valore corrisponde a uno qualsiasi dei valori di corrispondenza forniti, altrimenti restituisce `falseExpression`. Richiede almeno 3 argomenti (valore, un valore di corrispondenza e trueExpression + falseExpression).
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `ifin("B"; "A"; "B"; "yes"; "no")`
+
+  Restituisce sì
+* `ifin("D"; "A"; "B"; "yes"; "no")`
+
+  Restituisce no
+* `ifin("X"; "X"; "found"; "not found")`
+
+  Restituzioni trovate
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL case(indexNumber; value1; value2; ...)]
+
+Restituisce il valore nella posizione specificata dal numero di indice (basato su 1). Restituisce `null` se l&#39;indice non è compreso nei limiti o è 0.
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `case(1; "Sun"; "Mon"; "Tue")`
+
+  Restituisce il sole
+* `case(2; "Sun"; "Mon"; "Tue")`
+
+  Restituisce il lunedì
+* `case(3; "Sun"; "Mon"; "Tue")`
+
+  Restituisce Mar
+* `case(5; "a"; "b")           `
+
+  Restituisce null
+
+>[!NOTE]
+>
+>È consigliabile utilizzare questa opzione per ottenere il nome del giorno da una data:
+>`case(dayOfWeek(date); "Sun"; "Mon"; "Tue"; "Wed"; "Thu"; "Fri"; "Sat")`
+
+>[!ENDSHADEBOX]
+

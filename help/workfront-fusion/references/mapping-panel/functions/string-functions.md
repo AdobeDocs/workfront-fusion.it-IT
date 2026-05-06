@@ -4,10 +4,10 @@ description: Le seguenti funzioni stringa sono disponibili nel pannello di mappa
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 4%
+source-wordcount: '778'
+ht-degree: 5%
 
 ---
 
@@ -392,3 +392,144 @@ Trasforma il testo in base64.
 Restituisce: d29ya2Zyb250==
 
 >[!ENDSHADEBOX]
+
+
+### [!UICONTROL concat(stringa1; separatore; stringa2; ...)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Concatena le stringhe con un separatore tra ciascuna di esse.
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `concat("Hello"; " "; "World")`
+
+  Restituisce Hello World
+* `concat("a"; "-"; "b"; "c")`
+
+  Restituisce a-b-c
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL left(string; length)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il numero di caratteri specificato dal lato sinistro di una stringa.
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `left("Hello"; 3)`
+
+  Restituisce Hel
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL right(string; length)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce il numero di caratteri specificato dal lato destro di una stringa.
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `right("Hello"; 3)`
+
+  Restituisce il log
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL removeAccents(string)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Rimuove i segni diacritici (accenti) dai caratteri accentati.
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `removeAccents("Héllo wörld")`
+
+  Restituisce Hello world
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL replacePattern(string; pattern; replace)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Sostituisce tutte le corrispondenze di un pattern di espressione regolare con un
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `replacePattern("foo123bar"; "\\d+"; "\_")`
+
+  Restituisce foo\_bar
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortAscString(string1; string2; ...)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce le stringhe fornite in ordine crescente (alfabetico).
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `sortAscString("banana"; "apple"; "cherry")`
+
+  Restituisce \[&quot;mela&quot;, &quot;banana&quot;, &quot;ciliegia&quot;]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortDescString(string1; string2; ...)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Restituisce le stringhe fornite in ordine decrescente (in ordine alfabetico inverso).
+
+**Sintassi:** `sortDescString(string1; string2; ...)`
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `sortDescString("banana"; "apple"; "cherry")`
+
+  Restituisce \[&quot;ciliegia&quot;, &quot;banana&quot;, &quot;mela&quot;]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL pascal(string)]
+
+[!BADGE Nuovo!]{type=Informative}
+
+Converte una stringa in PascalCase utilizzando l&#39;iniziale maiuscola di ogni parola e rimuovendo gli spazi.
+
+**Sintassi:** `pascal(string)`
+
+>[!BEGINSHADEBOX]
+
+**Esempio:**
+
+* `pascal("hello world")`
+
+  Restituisce HelloWorld
+* `pascal("foo bar baz")`
+
+  Restituisce FooBarBaz
+
+>[!ENDSHADEBOX]
+
+
