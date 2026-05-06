@@ -184,7 +184,7 @@ Questo modulo trigger avvia uno scenario quando un campo viene aggiornato in [!D
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record] </td> 
-   <td> <p>Selezionare il tipo di record contenente il campo che si desidera controllare nel modulo. È necessario scegliere un tipo di record con [!UICONTROL Field History] attivato nella configurazione di [!DNL Salesforce]. Per ulteriori informazioni, vedere <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Tracciamento cronologia campi</a> nella documentazione di [!DNL Salesforce]. </p> </td> 
+   <td> <p>Selezionare il tipo di record contenente il campo che si desidera controllare nel modulo. È necessario scegliere un tipo di record con [!UICONTROL Field History] attivato nella configurazione di [!DNL Salesforce]. Per ulteriori informazioni, vedere <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Tracciamento cronologia campi</a> nella documentazione di [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Campo]</td> 
@@ -572,7 +572,7 @@ Questo modulo di azione carica un singolo file in Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connessione]</td> 
-   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL  Adobe Workfront Fusion] - Istruzioni di base</a></td> 
+   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL &#x200B; Adobe Workfront Fusion] - Istruzioni di base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File di origine]</td> 
@@ -612,7 +612,7 @@ Questo modulo di azione recupera tutti i record che soddisfano un determinato cr
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connessione]</td> 
-   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL  Adobe Workfront Fusion] - Istruzioni di base</a></td> 
+   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL &#x200B; Adobe Workfront Fusion] - Istruzioni di base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo]</td> 
@@ -652,7 +652,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>Tipo di ricerca [!UICONTROL]</td> 
+   <td>Tipo di ricerca </td> 
    <td> <p>Selezionare il tipo di ricerca che si desidera venga eseguita dal modulo:</p> 
     <ul> 
      <li> <p>[!UICONTROL Semplice]</p> </li> 
