@@ -4,9 +4,9 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
-source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+source-git-commit: 42b5b5729b68bf8cea9940fb261a15293db52be1
 workflow-type: tm+mt
-source-wordcount: '4581'
+source-wordcount: '4621'
 ht-degree: 12%
 
 ---
@@ -80,7 +80,7 @@ Il connettore Slack utilizza quanto segue:
  <tbody> 
   <tr> 
    <td role="rowheader">URL di base</td> 
-   <td>{{ifempty(parameters.domain, 'https://slack.com/api/')}}</td> 
+   <td><pre><code>&#123;&#123;ifempty(parameters.domain, 'https://slack.com/api/')&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">Tag API</td> 
@@ -1466,7 +1466,7 @@ Questo modulo aggiorna lo stato corrente di un utente.
    <td> <p>Inserisci o mappa le emoji che desideri utilizzare per rappresentare il tuo stato. Utilizza il formato <code>:emojiname:</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Scadenza stato </td> 
+   <td role="rowheader">Scadenza stato [!UICONTROL]</td> 
    <td>Immettere o mappare la data e l'ora di scadenza dello stato. Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercizione del tipo</a>.</td> 
   </tr> 
  </tbody> 
