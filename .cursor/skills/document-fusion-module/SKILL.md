@@ -100,6 +100,7 @@ Utilizzando la schermata con visualizzazione standard, è possibile acquisire og
    ```
    [!UICONTROL Background > Image > Source]
    ```
+
 2. Leggi il testo di supporto sotto il campo nella schermata (la didascalia grigia/gialla). Utilizzala come base per la descrizione.
 3. Fare riferimento incrociato al contesto API dal passaggio 3a per identificare ciò che il campo rappresenta (ad esempio, `background.fillAreaMask` è &quot;l&#39;area dello sfondo in cui verrà inserito l&#39;oggetto&quot;).
 4. Scrivere la descrizione combinando **il valore del campo** (dall&#39;API) con **come fornirlo** (dal testo helper dell&#39;interfaccia utente e dal tipo di campo).
@@ -123,6 +124,7 @@ Utilizzo della schermata di visualizzazione avanzata:
    ```html
    <td role="rowheader">[!UICONTROL Seeds]*</td>
    ```
+
 4. Dopo la chiusura di `</table>`, aggiungere questa nota a piè di pagina sulla propria riga:
 
    ```markdown

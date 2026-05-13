@@ -462,7 +462,7 @@ Questo modulo di azione genera un&#39;immagine utilizzando il modello di immagin
    <td>Fai clic su <b>Aggiungi elemento</b> e immetti o mappa un numero intero per riprodurre un risultato di generazione specifico. Lascia vuoto per generare un risultato casuale.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Motivo del prompt di [!UICONTROL]*</td> 
+   <td role="rowheader">Motivo del prompt di *</td> 
    <td>Selezionare la strategia di ragionamento rapida utilizzata durante la generazione.<ul><li><p><b>Qualità: genera la descrizione dell’immagine</b></p><p>Genera una descrizione immagine nell’output del modulo.</p></li><li><p><b>Velocità - Generazione più rapida, nessuna descrizione</b></p><p>Genera l’immagine più rapidamente, ma lascia vuota la descrizione dell’immagine.</p></li></ul></td> 
   </tr> 
   <tr> 
@@ -604,7 +604,7 @@ Questo modulo di azione genera un video da un prompt di testo. È inoltre possib
    <td>Fai clic su <b>Aggiungi elemento</b> e immetti o mappa le dimensioni del video generato.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Fattore di velocità in bit [!UICONTROL]*</td> 
+   <td role="rowheader">Fattore di velocità in bit *</td> 
    <td>Immettete un numero compreso tra 0 e 63 per specificare il fattore di bit rate del video generato.</td> 
   </tr> 
   <tr> 
