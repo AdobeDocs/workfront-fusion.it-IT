@@ -1,23 +1,26 @@
 ---
-title: Moduli immagine
+title: Moduli per immagini
 description: I moduli immagine di Adobe Workfront Fusion consentono di ottenere informazioni su un’immagine specifica (dimensioni, tipo e così via), convertire un’immagine in un altro formato di file e modificare direttamente le dimensioni dell’immagine.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/1YlCzSkD3MpRG6VcTPHk-sW0RXK1hexs6QPmQdN07Ps
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 0%
+source-wordcount: 741
+ht-degree: 23%
 
 ---
 
-# Moduli immagine
+# Moduli per immagini
 
 I moduli [!UICONTROL Immagine] di Adobe Workfront Fusion ti consentono di ottenere informazioni su un&#39;immagine specifica (dimensioni, tipo e così via), convertire un&#39;immagine in un altro formato di file e modificare direttamente le dimensioni dell&#39;immagine.
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +28,22 @@ I moduli [!UICONTROL Immagine] di Adobe Workfront Fusion ti consentono di ottene
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -48,7 +51,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
 
 ## [!UICONTROL Moduli immagine] e relativi campi
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
 * [[!UICONTROL Convertire un formato]](#convert-a-format)
 * [[!UICONTROL Estrai metadati]](#extract-metadata)
@@ -70,8 +73,8 @@ Sia il file di origine che l&#39;output devono essere in uno di questi formati. 
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td role="rowheader">[!UICONTROL File di origine]</td> 
+   <td> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Formato di output]</td> 
@@ -89,8 +92,8 @@ Questo modulo di trasformazione restituisce informazioni di base su un modulo.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td role="rowheader">[!UICONTROL File di origine]</td> 
+   <td> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -104,8 +107,8 @@ Questo modulo di trasformazione modifica l’altezza e la larghezza di un’imma
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td role="rowheader">[!UICONTROL File di origine]</td> 
+   <td> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL che desidero]</td> 
@@ -121,7 +124,7 @@ Questo modulo di trasformazione modifica l’altezza e la larghezza di un’imma
      <li> <p>[!UICONTROL larghezza minima]</p> <p>Ingrandisce un'immagine alla larghezza specificata. L'altezza viene calcolata automaticamente.</p> </li> 
      <li> <p>[!UICONTROL Altezza minima]</p> <p>Ingrandisce l'immagine all'altezza specificata. La larghezza viene calcolata automaticamente.</p> </li> 
      <li> <p>[!UICONTROL Altezza o larghezza minima]</p> <p>Ingrandisce un'immagine in modo che l'altezza e la larghezza non siano inferiori ai valori specificati. Poiché questa opzione mantiene il rapporto altezza-larghezza, una delle dimensioni potrebbe essere maggiore di quella specificata. Ad esempio, se altezza e larghezza sono entrambe specificate come 300, un'immagine 40x30 verrà ingrandita a 400X300.</p> </li> 
-     <li> <p>[!UICONTROL Percent]</p> <p>Modifica le dimensioni dell'immagine in base a una percentuale in base al valore specificato. </p> </li> 
+     <li> <p>[!UICONTROL Percentuale]</p> <p>Modifica le dimensioni dell'immagine in base a una percentuale in base al valore specificato. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

@@ -4,9 +4,13 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: 03f4556d7f903689c85cba966ad875973037a2ba
+TQID: https://experienceleague.adobe.com/N1oyeO-yNRUKW3u-BPw-yGOI1nCO8XT8pB4Rdg6zycA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: 1871
 ht-degree: 25%
 
 ---
@@ -15,7 +19,7 @@ ht-degree: 25%
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Gmail], nonché collegarli a più applicazioni e servizi di terze parti.
 
-Per istruzioni su come creare uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
+Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
@@ -64,7 +68,7 @@ Per utilizzare i moduli [!DNL Gmail], è necessario disporre di un account [!DNL
 * [Connetti [!DNL Gmail] a Workfront Fusion tramite [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
 * [Connetti [!DNL Gmail] a Workfront Fusion tramite [!DNL gmail.com] or [!DNL googlemail].com](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### Connetti [!DNL Gmail] a Workfront Fusion tramite [!DNL &#x200B; Google Workspace]
+### Connetti [!DNL Gmail] a Workfront Fusion tramite [!DNL  Google Workspace]
 
 Per istruzioni sulla connessione dell&#39;account [!DNL Google Workspace] a [!UICONTROL Workfront Fusion], vedere [Creare una connessione - Istruzioni di base](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
@@ -150,7 +154,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
 * [[!UICONTROL Crea una bozza]](#create-a-draft)
 * [[!UICONTROL Eliminare un&#39;e-mail]](#delete-an-email)
 * [[!UICONTROL Contrassegna un&#39;e-mail come già letta]](#mark-an-email-as-read)
-* [[!UICONTROL Mark an email as unread]](#mark-an-email-as-unread)
+* [[!UICONTROL Contrassegna un&#39;e-mail come non letta]](#mark-an-email-as-unread)
 * [[!UICONTROL Spostare un&#39;e-mail]](#move-an-email)
 * [[!UICONTROL Modifica etichette e-mail]](#modify-email-labels)
 * [[!UICONTROL Invia un&#39;e-mail]](#send-an-email)
@@ -292,12 +296,12 @@ Il modulo restituisce l’ID dell’e-mail e degli eventuali campi associati, in
   </tr> 
   <tr> 
    <td>[!UICONTROL ID e-mail (UID)]</td> 
-   <td> <p> Enter or map the Email ID.</p> </td> 
+   <td> <p> Inserisci o mappa l’ID e-mail.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Mark an email as unread]
+#### [!UICONTROL Contrassegna un&#39;e-mail come non letta]
 
 Questo modulo di azione contrassegna un’e-mail o una bozza e-mail come non letta.
 
@@ -443,7 +447,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
 
 ### Iteratori
 
-#### [!UICONTROL Iterate attachments]
+#### [!UICONTROL Itera allegati]
 
 È possibile iterare gli allegati e-mail. Ogni allegato è un bundle separato nell&#39;output del modulo. Per ulteriori informazioni, vedere [Modulo Iterator](/help/workfront-fusion/references/modules/iterator-module.md).
 

@@ -4,21 +4,24 @@ description: Con i moduli di Adobe Photoshop, puoi avviare uno scenario Adobe Wo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
+TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 7%
+source-wordcount: 5506
+ht-degree: 14%
 
 ---
 
-# [!DNL Adobe Photoshop] moduli
+# Moduli [!DNL Adobe Photoshop]
 
-In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Photoshop] e collegarlo a più applicazioni e servizi di terze parti.
+In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Photoshop], nonché collegarli a più applicazioni e servizi di terze parti.
 
 
 Se hai bisogno di istruzioni per la creazione di uno scenario, consulta gli articoli in [Creare uno scenario: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
@@ -30,17 +33,17 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
    <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza di Workfront Fusion</p>
-   <p>Basata sul connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -85,13 +88,13 @@ Il connettore Adobe Photoshop utilizza quanto segue:
  </tbody> 
  </table>
 
-## Crea una connessione a [!DNL Adobe Photoshop]
+## Creare una connessione ad [!DNL Adobe Photoshop]
 
 Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
 
 1. In qualsiasi modulo, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
-1. Compila i campi obbligatori:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -112,7 +115,7 @@ Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td role="rowheader">[!UICONTROL ID client]</td>
         <td>Immetti [!UICONTROL Adobe] [!UICONTROL ID client]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
@@ -121,11 +124,11 @@ Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID account tecnico]</td>
-        <td>Se utilizzi una connessione JWT, immetti l’ID dell’account tecnico [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Se utilizzi una connessione JWT, immetti l’ID dell’account tecnico [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID organizzazione]</td>
-        <td>Se utilizzi una connessione JWT, immetti l'ID organizzazione [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Se utilizzi una connessione JWT, immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Chiave privata]</td>
@@ -134,16 +137,16 @@ Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
           <p>Per estrarre la chiave privata o il certificato:</p>
           <ol>
             <li value="1">
-              <p>Fare clic su <b>[!UICONTROL Extract]</b>.</p>
+              <p>Fai clic su <b>[!UICONTROL Estrai]</b>.</p>
             </li>
             <li value="2">
-              <p>Selezionare il tipo di file da estrarre.</p>
+              <p>Seleziona il tipo di file da estrarre.</p>
             </li>
             <li value="3">
               <p>Seleziona il file che contiene la chiave privata o il certificato.</p>
             </li>
             <li value="4">
-              <p>Immettere la password per il file.</p>
+              <p>Inserisci la password per il file.</p>
             </li>
             <li value="5">
               <p>Fai clic su <b>Salva</b> per estrarre il file e tornare alla configurazione della connessione.</p>
@@ -154,7 +157,7 @@ Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
       </tbody>
     </table>
 
-1. Fai clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continue]** (Continua) per salvare la connessione e tornare al modulo.
 
 ## Moduli [!DNL Adobe Photoshop] e relativi campi
 
@@ -162,7 +165,7 @@ Quando configuri i moduli [!DNL Adobe Photoshop], in Workfront Fusion vengono vi
 
 Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Pulsante di attivazione/disattivazione mappatura](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Applicare le modifiche PSD](#apply-psd-edits)
 * [Correzione automatica del colore di un&#39;immagine](#auto-color-correct-an-image)
@@ -195,7 +198,7 @@ Questo modulo supporta file di grandi dimensioni. Per ulteriori informazioni sui
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Input)]</td>
@@ -324,7 +327,7 @@ Il colore automatico di questo modulo di azione corregge l’immagine specificat
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Input)]</td>
@@ -375,7 +378,7 @@ Questo modulo di azione converte un file in JPEG, PNG, PSD o TIFF.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Input)]</td>
@@ -432,7 +435,7 @@ Questo modulo di azione restituisce un file PNG con una maschera applicata attor
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Input)]</td>
@@ -490,7 +493,7 @@ Questo modulo di azione restituisce un file PNG con una maschera applicata attor
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL versione]</p>
+        <p>[!UICONTROL Versione]</p>
       </td>
    <td>Il valore predefinito è 4,0</td> 
     </tr> 
@@ -507,7 +510,7 @@ Questo modulo di azione crea un nuovo PSD con livelli opzionali e genera rappres
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">
@@ -612,10 +615,10 @@ Questo modulo di azione modifica i livelli di testo in un file Photoshop. Potete
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -686,10 +689,10 @@ Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#e
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -722,7 +725,7 @@ Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#e
       <td role="rowheader">[!UICONTROL Livelli]</td>
    <td> <p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifica livello testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di output di </td>
+      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p>
       </td>
@@ -765,7 +768,7 @@ Questo modulo di azione esegue azioni Photoshop utilizzando comandi JSON.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Input)]</td>
@@ -841,10 +844,10 @@ Questo modulo di azione esegue Sfocatura profondità sul file selezionato.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -898,10 +901,10 @@ Questo modulo di azione esegue un’azione Photoshop sull’immagine selezionata
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -985,10 +988,10 @@ Questo modulo di azione esegue il ritaglio prodotto sull’immagine selezionata.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file da ritagliare.</p>
       </td>
@@ -1060,10 +1063,10 @@ Questo modulo di azione recupera le informazioni sui livelli dal file PSD specif
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionate il servizio file da cui memorizzare il file da cui desiderate recuperare le informazioni sui livelli.</p>
       </td>
@@ -1093,7 +1096,7 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Photoshop
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
@@ -1116,14 +1119,14 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Photoshop
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Stringa Di Query]  </td>
+      <td role="rowheader">[!UICONTROL Stringa di query]  </td>
       <td>
-        <p>Immettere la stringa di query richiesta.</p>
+        <p>Inserisci la stringa di query della richiesta.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Corpo]</td>
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, inserisci le virgolette al di fuori dell’istruzione condizionale.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -1140,7 +1143,7 @@ Questo modulo di azione identifica il soggetto principale dell&#39;immagine e ri
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Input)]</td>
@@ -1198,7 +1201,7 @@ Questo modulo di azione identifica il soggetto principale dell&#39;immagine e ri
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL versione]</p>
+        <p>[!UICONTROL Versione]</p>
       </td>
    <td>Il valore predefinito è 4,0</td> 
     </tr> 
@@ -1217,7 +1220,7 @@ Questo modulo utilizza Smart Object API versione 2.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Input)]</td>
@@ -1282,7 +1285,7 @@ Questo modulo utilizza la versione legacy di Smart Objects.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Input)]</td>
@@ -1344,7 +1347,7 @@ Questa azione ridimensiona un’immagine utilizzando le stesse proporzioni.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Storage]</td>
@@ -1414,7 +1417,7 @@ Questo modulo di azione aggiunge una filigrana all’immagine selezionata.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], vedere <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">Archiviazione [!UICONTROL (Base &gt; Input)]</td>

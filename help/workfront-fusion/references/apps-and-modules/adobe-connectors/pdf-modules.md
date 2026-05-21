@@ -5,9 +5,13 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: ht
-source-wordcount: '4151'
+TQID: https://experienceleague.adobe.com/IMoZJbCBhHsko7g3MA5otzXcWUfkTPLQVhgWbpBdSyQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 4312
 ht-degree: 100%
 
 ---
@@ -61,7 +65,7 @@ Per informazioni sull’API utilizzata per i servizi PDF, consulta [API per gene
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni di questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -120,19 +124,19 @@ Per creare una connessione per i moduli [!DNL Adobe PDF Services]:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Inserisci il tuo [!UICONTROL ID client] [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Dettagli credenziali] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p></td>
+          <td>Inserisci il tuo [!UICONTROL Client ID] [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
-          <td>Inserisci il tuo [!UICONTROL Segreto client] [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Dettagli credenziali] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
+          <td>Inserisci il tuo [!UICONTROL Client Secret] (Segreto client) [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID account tecnico] (solo JWT)</td>
-          <td>Inserisci il tuo [!UICONTROL ID account tecnico] [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Dettagli credenziali] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
+          <td>Inserisci il tuo [!UICONTROL ID account tecnico] [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID organizzazione] (solo JWT)</td>
-          <td>Inserisci il tuo [!UICONTROL ID organizzazione] [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Dettagli credenziali] di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
+          <td>Inserisci il tuo [!UICONTROL ID organizzazione] [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].<p>Per istruzioni su come individuare le credenziali, consulta <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credenziali</a> nella documentazione per gli sviluppatori di Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Ambinti Meta] (solo JWT)</td>
@@ -166,10 +170,10 @@ Per creare una connessione per i moduli [!DNL Adobe PDF Services]:
       </tr>
        </tbody>
     </table>
-1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continue]** (Continua) per salvare la connessione e tornare al modulo.
 
 
-## Moduli di [!DNL Adobe PDF Services] e relativi campi
+## Moduli [!DNL Adobe PDF Services] e relativi campi
 
 Quando esegui la configurazione di [!DNL PDF Services], Workfront Fusion mostra i campi elencati di seguito. Insieme a questi, potrebbero essere mostrati campi aggiuntivi, a seconda di fattori come il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
@@ -676,7 +680,7 @@ Questo modulo di azione invia una richiesta HTTP personalizzata all’API PDF Se
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Campi]</td> 
-   <td> <p>Per ciascun campo che desideri aggiungere alla chiamata API, fai clic su <b>Aggiungi elemento</b> e inserisci la chiave del campo e il valore facoltativo.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
+   <td> <p>Per ciascun campo che desideri aggiungere alla chiamata API, fai clic su <b>Aggiungi elemento</b> e inserisci la chiave del campo e il valore facoltativo.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -749,7 +753,7 @@ Questo modulo consente di ruotare o eliminare selettivamente le pagine di un doc
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Pagine]</td> 
-   <td> <p>Per ciascun intervallo di pagine che desideri eliminare, fai clic su <strong>[!UICONTROL Aggiungi]</strong>, quindi inserisci la prima e l’ultima pagina dell’intervallo di pagine. </p> <p>Nota:   
+   <td> <p>Per ogni intervallo di pagine che desideri eliminare, fai clic su <strong>[!UICONTROL Aggiungi]</strong>, quindi inserisci la prima e l’ultima pagina dell’intervallo di pagine. </p> <p>Nota:   
      <ul> 
       <li> <p>Puoi utilizzare numeri negativi per effettuare il conteggio a partire dalla fine del documento. L’ultima pagina di un documento è -1, la penultima è -2 e così via.</p> </li> 
       <li> <p>Per eliminare una singola pagina, imposta lo stesso numero di pagina come inizio e fine dell’intervallo.</p> </li> 

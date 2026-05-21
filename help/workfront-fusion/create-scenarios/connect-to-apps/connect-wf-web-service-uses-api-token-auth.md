@@ -1,17 +1,20 @@
 ---
-title: Connettere Adobe Workfront Fusion a un servizio web che utilizza l’autorizzazione del token API
+title: Connettere Adobe Workfront Fusion a un servizio web che utilizza l’autorizzazione mediante token API
 description: Alcuni servizi non consentono alle soluzioni di integrazione, come Adobe Workfront Fusion, di creare un’app che puoi facilmente utilizzare nel tuo scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/y1H-y57MvK4LScn9Z6sUYuua3kr3iqyY-ElYkmCgxrI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 0%
+source-wordcount: 985
+ht-degree: 15%
 
 ---
 
-# Connettere Adobe Workfront Fusion a un servizio web che utilizza l’autorizzazione del token API
+# Connettere Adobe Workfront Fusion a un servizio web che utilizza l’autorizzazione mediante token API
 
 Alcuni servizi non consentono alle soluzioni di integrazione, come Adobe Workfront Fusion, di creare un’app che puoi facilmente utilizzare nel tuo scenario.
 
@@ -21,7 +24,7 @@ Questo articolo spiega come connettere quasi tutti i servizi web a Workfront Fus
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,31 +32,31 @@ Questo articolo spiega come connettere quasi tutti i servizi web a Workfront Fus
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
    <p>Basato su connettore (legacy): per connettersi ad applicazioni esterne alla famiglia di prodotti Workfront, è necessario disporre di Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -111,7 +114,7 @@ Per collegare un servizio web allo scenario Workfront Fusion, devi utilizzare HT
       <td> <p>Alcuni servizi web possono utilizzare le intestazioni per specificare l’autenticazione del token API o altri parametri. Questo non avviene nel nostro esempio, poiché l’endpoint di push dei messaggi utilizza il corpo (vedi sotto) per tutti i tipi di richiesta.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p> Stringa di query</p> </td> 
+      <td role="rowheader"> <p> Stringa query</p> </td> 
       <td> <p>Alcuni servizi web possono utilizzare una stringa di query per specificare altri parametri. Questo non è il caso nel nostro esempio, in quanto il servizio web push utilizza Body (vedi sotto) per tutti i tipi di richiesta.</p> </td> 
      </tr> 
      <tr> 
@@ -162,7 +165,7 @@ Questo esempio include le seguenti informazioni.
    <td> <p>Il token API/chiave API generato ha creato l'app Pushover.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> messaggio </td> 
+   <td role="rowheader"> message </td> 
    <td> <p>Il contenuto testuale della notifica push inviata ai dispositivi.</p> </td> 
   </tr> 
   <tr> 

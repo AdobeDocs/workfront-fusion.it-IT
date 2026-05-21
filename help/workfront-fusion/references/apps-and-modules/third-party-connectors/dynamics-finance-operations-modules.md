@@ -4,16 +4,19 @@ description: In uno scenario Adobe Workfront Fusion, è possibile automatizzare 
 author: Becky
 feature: Workfront Fusion
 exl-id: 96f8d4f1-f97b-4da8-8d82-83cccb54ec68
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/MSvJMXg8hyI8piqHpn1OnEPEoCcP1Tn-za1veFtHeIo
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 0%
+source-wordcount: 1147
+ht-degree: 39%
 
 ---
 
 # [!DNL Microsoft Dynamics 365 Finance and Operations modules]
 
-In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Microsoft Dynamics 365] e collegarlo a più applicazioni e servizi di terze parti.
+In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Microsoft Dynamics 365], nonché collegarli a più applicazioni e servizi di terze parti.
 
 >[!NOTE]
 >
@@ -23,13 +26,13 @@ In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di l
 
 
 
-Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -37,31 +40,31 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -73,7 +76,7 @@ Per creare una connessione per i moduli Finanza e Operazioni di Microsoft Dynami
 
 1. In qualsiasi modulo Microsoft Dynamics 365 Finance and Operations, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
-1. Compila i campi seguenti:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -82,23 +85,23 @@ Per creare una connessione per i moduli Finanza e Operazioni di Microsoft Dynami
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Tipo di connessione]</td>
+        <td role="rowheader">[!UICONTROL Connection type] (Tipo di connessione)</td>
         <td>
           <p>Specificare se si sta creando una connessione standard di Dynamics Finance e Operations o una connessione utilizzando un codice di autorizzazione.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Nome connessione]</td>
+        <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td>
         <td>
-          <p>Immettere un nome per la connessione.</p>
+          <p>Specifica un nome per questa connessione.</p>
         </td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID client]</td>
-        <td>Immettere l'ID client di Dynamics Finance and Operations .</td>
+        <td>Immettere l'ID client di Dynamics Finance and Operations [!UICONTROL].</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Segreto client]</td>
+        <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
         <td>Immettere Dynamics Finance and Operations [!UICONTROL Client Secret]. </td>
         </tr>
         <tr>
@@ -137,7 +140,7 @@ Questo modulo di azione crea un nuovo elemento entità in Microsoft Dynamics 365
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL Connection]</td>
+    <td>[!UICONTROL Connessione]</td>
     <td> <p>Per istruzioni sulla connessione di Microsoft Dynamics 365 Finance and Operations a Workfront Fusion, vedere <a href="#create-a-connection" class="MCXref xref">Creare una connessione</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -145,7 +148,7 @@ Questo modulo di azione crea un nuovo elemento entità in Microsoft Dynamics 365
      <td>Immettere o mappare il tipo di entità Dynamics Finance and Operations che si desidera creare.</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL Body]</td>
+    <td>[!UICONTROL Corpo]</td>
      <td> <p>Immetti o mappa un corpo JSON contenente i dati da includere nel nuovo elemento entità.</p> </td> 
   </tr> 
  </tbody> 
@@ -162,7 +165,7 @@ Questo modulo di azione elimina un elemento entità da Dynamics Finance e Operat
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL Connection]</td>
+    <td>[!UICONTROL Connessione]</td>
     <td> <p>Per istruzioni sulla connessione di Microsoft Dynamics 365 Finance and Operations a Workfront Fusion, vedere <a href="#create-a-connection" class="MCXref xref">Creare una connessione</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -176,7 +179,7 @@ Questo modulo di azione elimina un elemento entità da Dynamics Finance e Operat
  </tbody> 
 </table>
 
-### Effettuare una chiamata API personalizzata
+### Effettua chiamata API personalizzata
 
 Questo modulo di azione effettua una chiamata personalizzata all’API Dynamics Finance and Operations.
 
@@ -185,7 +188,7 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Dynamics 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
     <td> <p>Per istruzioni sulla connessione di Microsoft Dynamics 365 Finance and Operations a Workfront Fusion, vedere <a href="#create-a-connection" class="MCXref xref">Creare una connessione</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -193,20 +196,20 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Dynamics 
    <td> <p>Immettere un percorso relativo all'URL di Dynamics Finance e Operations.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Metodo]</td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Determina il tipo di contenuto della richiesta.</p> <p>Ad esempio:<code> {"Content-type":"application/json"}</code></p> <p>Nota: se ricevi errori ed è difficile determinarne l’origine, puoi modificare le intestazioni in base alla documentazione di Workfront. Se la chiamata API personalizzata restituisce un errore di richiesta HTTP 422, provare a utilizzare un'intestazione <code>"Content-Type":"text/plain"</code>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
+   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Questo determina il tipo di contenuto della richiesta.</p> <p>Ad esempio:<code> {"Content-type":"application/json"}</code></p> <p>Nota: se vengono restituiti errori ed è difficile determinarne l’origine, prendi in considerazione la modifica delle intestazioni in base alla documentazione di Workfront. Se la chiamata API personalizzata restituisce un errore di richiesta HTTP 422, prova a utilizzare un’intestazione <code>"Content-Type":"text/plain"</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Stringa di query]</td> 
-   <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> <p>Suggerimento: è consigliabile inviare informazioni tramite il corpo JSON anziché come parametri di query.</p> </td> 
+   <td> <p>Aggiungi la query per la chiamata API come oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> <p>Suggerimento: è consigliabile inviare informazioni tramite il corpo JSON anziché come parametri di query.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -225,7 +228,7 @@ Questo modulo di azione restituisce dati da un elemento entità. L&#39;elemento 
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL Connection]</td>
+    <td>[!UICONTROL Connessione]</td>
     <td> <p>Per istruzioni sulla connessione di Microsoft Dynamics 365 Finance and Operations a Workfront Fusion, vedere <a href="#create-a-connection" class="MCXref xref">Creare una connessione</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -246,7 +249,7 @@ Questo modulo di azione restituisce dati da un elemento entità. L&#39;elemento 
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL Connection]</td>
+    <td>[!UICONTROL Connessione]</td>
     <td> <p>Per istruzioni sulla connessione di Microsoft Dynamics 365 Finance and Operations a Workfront Fusion, vedere <a href="#create-a-connection" class="MCXref xref">Creare una connessione</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -258,7 +261,7 @@ Questo modulo di azione restituisce dati da un elemento entità. L&#39;elemento 
      <td> I campi Chiave primaria identificano l'elemento. Per ogni campo chiave primaria che si desidera fornire, fare clic su <b>Aggiungi elemento</b> e immettere o mappare la chiave e il valore univoci che identificano l'elemento. </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL Body]</td>
+    <td>[!UICONTROL Corpo]</td>
      <td> <p>Immetti o mappa un corpo JSON contenente i dati da includere nel nuovo elemento entità.</p> </td> 
   </tr> 
  </tbody> 
@@ -273,20 +276,20 @@ Questo modulo di ricerca restituisce i risultati in base ai criteri specificati.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>Per istruzioni sulla connessione dell'app Workfront a Workfront Fusion, vedere <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connessione di Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td>[!UICONTROL Connessione]</td> 
+   <td> <p>Per istruzioni sulla connessione dell’app Workfront a Workfront Fusion, consulta <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connettere Workfront a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Entity]</td> 
    <td>Immettere o mappare il tipo di entità Dynamics Finance and Operations che si desidera cercare.</td> 
   </tr> 
   <tr> 
-   <td>Criteri di ricerca di </td> 
-   <td> <p>Immettere il campo in base al quale si desidera eseguire la ricerca, l'operatore che si desidera utilizzare nella query e il valore ricercato nel campo.</p> </td> 
+   <td>[!UICONTROL Criteri di ricerca]</td> 
+   <td> <p>Inserisci il campo in base al quale desideri eseguire la ricerca, l’operatore da utilizzare nella query e il valore ricercato nel campo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td>[!UICONTROL Limite]</td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Ordina per]</td> 

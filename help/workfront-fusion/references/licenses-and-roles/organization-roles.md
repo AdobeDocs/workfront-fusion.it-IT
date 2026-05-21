@@ -4,14 +4,16 @@ description: Questo articolo include informazioni sull'accesso e le autorizzazio
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+TQID: https://experienceleague.adobe.com/r2AIAgWN-yH4OMHGhjyURrg58H1gJg-o6-QfeIvax7s
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 33%
+source-wordcount: 286
+ht-degree: 6%
 
 ---
 
-# Ruoli di organizzazione e team
+# Ruoli per organizzazioni e team
 
 Questo articolo descrive l’accesso e le funzionalità disponibili per i diversi ruoli team e organizzazione in Workfront Fusion.
 
@@ -78,7 +80,7 @@ Questo articolo descrive l’accesso e le funzionalità disponibili per i divers
 
 ## Ruoli di team
 
-### Situazioni che potrebbero verificarsi con
+### Scenari
 
 <table style="table-layout:auto"> 
  <col> 
@@ -482,7 +484,7 @@ Questo articolo descrive l’accesso e le funzionalità disponibili per i divers
    <td> </td> 
   </tr> 
   <tr> 
-   <td> <p style="text-align: left;">Modifica modelli</p> </td> 
+   <td> <p style="text-align: left;">Modificare i modelli</p> </td> 
    <td>✓ </td> 
    <td>✓ </td> 
    <td> </td> 

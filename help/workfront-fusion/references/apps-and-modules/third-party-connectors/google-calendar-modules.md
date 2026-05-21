@@ -4,9 +4,13 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/Odm53LiZwpv6l-WOLmsvwAdCG1WeyN3CAJfI38o4lXc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: 2717
 ht-degree: 16%
 
 ---
@@ -61,9 +65,9 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 
 Per utilizzare i moduli [!DNL Google Calendar], è necessario disporre di un account [!DNL Google].
 
-## Google Calendar API information
+## Informazioni API calendario Google
 
-The Google Calendar connector uses the following:
+Il connettore Google Calendar utilizza quanto segue:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -100,7 +104,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 ### Trigger
 
 * [Osserva eventi](#watch-events)
-* [Watch events (Instant)](#watch-events-instant)
+* [Guarda gli eventi (istantanei)](#watch-events-instant)
 
 #### Osserva eventi
 
@@ -149,11 +153,11 @@ Questo modulo di attivazione utilizza un mailhook per creare un indirizzo e-mail
  <tbody> 
   <tr> 
    <td>[!UICONTROL Mailhook] </td> 
-   <td> <p>Selezionare il mailhook che si desidera utilizzare per questo modulo. To create a new mailhooke, click <b>Add</b> and enter the connection you want to use for the mailhook.</p><p>Per istruzioni sulla connessione dell'account [!DNL Google Calendar] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a></p> </td> 
+   <td> <p>Selezionare il mailhook che si desidera utilizzare per questo modulo. Per creare un nuovo mailhook, fare clic su <b>Aggiungi</b> e immettere la connessione da utilizzare per il mailhook.</p><p>Per istruzioni sulla connessione dell'account [!DNL Google Calendar] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of events]</td> 
-   <td> <p> Set the maximum number of events that Workfront Fusion works with during one cycle (the number of repetitions per scenario run). If the value is set too high, the connection may be interrupted on the side of the given third-party service (timeout). Workfront Fusion has no influence on this. We recommend that you set a lower value and either define a higher value for the maximum number of cycles or run the scenario more frequently.</p> </td> 
+   <td>[!UICONTROL Numero massimo di eventi]</td> 
+   <td> <p> Impostare il numero massimo di eventi con cui Workfront Fusion lavora durante un ciclo (il numero di ripetizioni per esecuzione dello scenario). Se il valore è impostato su un valore troppo alto, la connessione potrebbe essere interrotta sul lato del servizio di terze parti specificato (timeout). Workfront Fusion non ha alcuna influenza su questo aspetto. È consigliabile impostare un valore più basso e definire un valore più alto per il numero massimo di cicli oppure eseguire lo scenario più frequentemente.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -180,22 +184,22 @@ Questo modulo di azione crea un calendario associato all’account.
   </tr> 
   <tr> 
    <td>[!UICONTROL Color] </td> 
-   <td> <p>Select the color to associate with the calendar.</p> </td> 
+   <td> <p>Selezionare il colore da associare al calendario.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendar name] </td> 
-   <td> <p>Enter or map a name for the new calendar.</p> </td> 
+   <td>[!UICONTROL Nome calendario] </td> 
+   <td> <p>Immettere o mappare un nome per il nuovo calendario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an event]
+#### [!UICONTROL Crea un evento]
 
-This action module creates an event.
+Questo modulo di azione crea un evento.
 
-You specify the calendar and the parameters for the event.
+Puoi specificare il calendario e i parametri per l’evento.
 
-The module returns the ID of the  event and any associated fields, along with any custom fields and values that the connection accesses. Puoi mappare queste informazioni nei moduli successivi dello scenario.
+Il modulo restituisce l’ID dell’evento ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
@@ -209,15 +213,15 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendario]</td> 
-   <td> <p>Select the calendar where you want the event to appear.</p> </td> 
+   <td> <p>Seleziona il calendario in cui desideri visualizzare l’evento.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Color]</td> 
-   <td>Select the color that the event shows on the calendar.</td> 
+   <td>Selezionare il colore visualizzato dall'evento nel calendario.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Event name]</td> 
-   <td> <p> Enter or map a name for the event. </p> <p>Note: If you have selected [!UICONTROL Quick add] in the [!UICONTROL Create an event] field, you can include the date and time of the event, and Workfront Fusion creates the event for that date and time. Esempio: <code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>. Se si seleziona [!UICONTROL Aggiunta rapida] ma non si include una data e un'ora nel nome dell'evento, l'evento viene creato dall'ora corrente e dura un'ora.</p> </td> 
+   <td>[!UICONTROL Nome evento]</td> 
+   <td> <p> Inserisci o mappa un nome per l’evento. </p> <p>Nota: se è stato selezionato [!UICONTROL Aggiunta rapida] nel campo [!UICONTROL Crea un evento], è possibile includere la data e l'ora dell'evento e Workfront Fusion crea l'evento per tale data e ora. Esempio: <code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>. Se si seleziona [!UICONTROL Aggiunta rapida] ma non si include una data e un'ora nel nome dell'evento, l'evento viene creato dall'ora corrente e dura un'ora.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tutto il giorno]</td> 
@@ -260,12 +264,12 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Seleziona la visibilità di questo evento. </p> 
     <ul> 
      <li> <p><b>[!UICONTROL predefinito]</b></p> <p>L'evento ha la visibilità impostata nelle impostazioni del calendario.</p> </li> 
-     <li> <p><b>[!UICONTROL Pubblico]</b></p> <p>Anyone the calendar is shared with can see this event.</p> </li> 
-     <li> <p><b>[!UICONTROL Privato]</b></p> <p>Only attendees can see this event.</p> </li> 
+     <li> <p><b>[!UICONTROL Pubblico]</b></p> <p>Chiunque condivida il calendario può visualizzare questo evento.</p> </li> 
+     <li> <p><b>[!UICONTROL Privato]</b></p> <p>Solo i partecipanti possono visualizzare questo evento.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Send notification about the event creation]</td> 
+   <td>[!UICONTROL Invia notifica sulla creazione dell'evento]</td> 
    <td> <p>Seleziona se inviare notifiche sulla creazione di un nuovo evento a tutti gli ospiti, a non [!DNL Google Calendar] ospiti o a nessuno.</p> <p>Suggerimento: è consigliabile utilizzare l'opzione [!UICONTROL None] solo per i casi di utilizzo relativi alla migrazione.</p> </td> 
   </tr> 
   <tr> 
@@ -283,9 +287,9 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
 
 Questo modulo di azione elimina un evento.
 
-You specify the calendar and event ID.
+Puoi specificare il calendario e l’ID evento.
 
-The module returns the ID of the  event and any associated fields, along with any custom fields and values that the connection accesses. Puoi mappare queste informazioni nei moduli successivi dello scenario.
+Il modulo restituisce l’ID dell’evento ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
@@ -299,7 +303,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendario]</td> 
-   <td> <p>Select the calendar that contains the event you want to delete.</p> </td> 
+   <td> <p>Selezionare il calendario contenente l'evento che si desidera eliminare.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID evento]</td> 
@@ -381,14 +385,14 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendario] </td> 
-   <td> <p>Select the calendar you want to work with.</p> </td> 
+   <td> <p>Selezionare il calendario che si desidera utilizzare.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID evento] </td> 
-   <td> <p>Enter the event ID from the previously created [!DNL Google Calendar] event that you want to update.</p> </td> 
+   <td> <p>Immettere l'ID evento dall'evento [!DNL Google Calendar] creato in precedenza che si desidera aggiornare.</p> </td> 
   </tr>   <tr> 
-   <td>[!UICONTROL Event name]</td> 
-   <td> <p> Enter or map a name for the event. </p> <p>Nota: se è stato selezionato [!UICONTROL Aggiunta rapida] nel campo [!UICONTROL Crea un evento], è possibile includere la data e l'ora dell'evento e Workfront Fusion crea l'evento per tale data e ora. Esempio: <code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>. Se si seleziona [!UICONTROL Aggiunta rapida] ma non si include una data e un'ora nel nome dell'evento, l'evento viene creato dall'ora corrente e dura un'ora.</p> </td> 
+   <td>[!UICONTROL Nome evento]</td> 
+   <td> <p> Inserisci o mappa un nome per l’evento. </p> <p>Nota: se è stato selezionato [!UICONTROL Aggiunta rapida] nel campo [!UICONTROL Crea un evento], è possibile includere la data e l'ora dell'evento e Workfront Fusion crea l'evento per tale data e ora. Esempio: <code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>. Se si seleziona [!UICONTROL Aggiunta rapida] ma non si include una data e un'ora nel nome dell'evento, l'evento viene creato dall'ora corrente e dura un'ora.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Tutto il giorno]</td> 
@@ -495,23 +499,23 @@ Puoi attivare uno scenario un&#39;ora specificata prima di un evento con l&#39;a
 
    ![Scenario di attivazione prima dell&#39;evento](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
-1. Create a new scenario starting with the [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook] module.
+1. Crea un nuovo scenario che inizia con il modulo [!UICONTROL Webhook] >[!UICONTROL mailhook personalizzato].
 
-   1. Copy the mailhook&#39;s email address.
-   1. Save the scenario and execute it.
+   1. Copia l’indirizzo e-mail del mailhook.
+   1. Salva lo scenario ed eseguilo.
 
-1. In [!DNL Gmail], redirect the [!DNL Google Calendar] email reminders to the mailhook&#39;s email address:
+1. In [!DNL Gmail], reindirizzare i promemoria e-mail di [!DNL Google Calendar] all&#39;indirizzo e-mail del mailhook:
 
-   1. Open your **[!UICONTROL [!DNL Gmail]settings]**.
-   1. Open the **[!UICONTROL Forwarding and POP/IMAP]** tab.
-   1. Click **[!UICONTROL Add a forwarding address].**
-   1. Paste the copied mailhooks&#39;s email address, click **[!UICONTROL Next]**, confirm by pressing **[!UICONTROL Proceed]** in the popup window, then click **[!UICONTROL OK]**.
+   1. Apri le impostazioni di **[!UICONTROL [!DNL Gmail]]**.
+   1. Apri la scheda **[!UICONTROL Inoltro e POP/IMAP]**.
+   1. Fai clic su **[!UICONTROL Aggiungi un indirizzo di inoltro].**
+   1. Incolla l&#39;indirizzo e-mail dei mailhook copiati, fai clic su **[!UICONTROL Avanti]**, conferma premendo **[!UICONTROL Procedi]** nella finestra popup, quindi fai clic su **[!UICONTROL OK]**.
 
-   1. In Workfront Fusion, switch to the new scenario that should finish its execution by receiving the confirmation email.
-   1. Click the bubble above the module to inspect the module&#39;s output.
-   1. Expand the `Text` item and copy the Confirmation code:
+   1. In Workfront Fusion, passa al nuovo scenario che deve terminare la sua esecuzione ricevendo l’e-mail di conferma.
+   1. Fai clic sulla bolla sopra il modulo per controllare l’output del modulo.
+   1. Espandere l&#39;elemento `Text` e copiare il codice di conferma:
 
-      ![Confirmation code](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![Codice di conferma](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. In Gmail, incolla il codice di conferma nella casella di modifica e fai clic su **[!UICONTROL Verifica]**:
 

@@ -4,9 +4,12 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
-source-git-commit: 3e39d284014c76a1cc300a075e61c25964c49995
+TQID: https://experienceleague.adobe.com/cIq5yfUbJsb3v8DbVjWv7hCP6kOkTbGmGouBirjETpo
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: 1643
 ht-degree: 43%
 
 ---
@@ -444,16 +447,16 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
    <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tipo di ricerca </td> 
+   <td role="rowheader">Tipo di ricerca [!UICONTROL]</td> 
    <td> <p>Seleziona il tipo di ricerca da eseguire nel modulo</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Query avanzata]</strong> </p> 
       <ul> 
-       <li> <p>Query di ricerca </p> <p>Immettere la query di ricerca personalizzata. Per informazioni su [!DNL ServiceNow] query di ricerca personalizzate, consulta la <a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">documentazione sulle query ServiceNow</a>.</p> </li> 
+       <li> <p>Query di ricerca [!UICONTROL]</p> <p>Immettere la query di ricerca personalizzata. Per informazioni su [!DNL ServiceNow] query di ricerca personalizzate, consulta la <a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">documentazione sulle query ServiceNow</a>.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Semplice]</strong> </p> 
       <ul> 
-       <li> <p>Criteri di ricerca di </p> <p>Immettere i criteri in base ai quali si desidera eseguire la ricerca nel modulo. </li> 
+       <li> <p>Criteri di ricerca di [!UICONTROL]</p> <p>Immettere i criteri in base ai quali si desidera eseguire la ricerca nel modulo. </li> 
        <li> <p>[!UICONTROL Ordina per]</p> <p>Indica per quale campo desideri che il modulo ordini i risultati e se devono essere ordinati in ordine crescente o decrescente.</p> </li> 
       </ul> </li> 
     </ul> <p> </p> </td> 

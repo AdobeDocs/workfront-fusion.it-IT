@@ -4,9 +4,11 @@ description: Quando apri Fusion vengono visualizzate molte opzioni per l’esecu
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
+TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: 775
 ht-degree: 94%
 
 ---
@@ -17,7 +19,7 @@ Puoi accedere alle diverse aree di Adobe Workfront Fusion dal pannello di naviga
 
 Questo articolo presenta le aree e fornisce collegamenti a ulteriori informazioni su ciascuna area.
 
-| Area | Descrizione | Per ulteriori informazioni, consulta   |
+| Area | Descrizione | Per ulteriori informazioni, consulta |
 | --- | --- | --- |
 | Panoramica dell’organizzazione <br> ![Icona dell’organizzazione](assets/org-icon.png) | Qui trovi informazioni sulla tua organizzazione Fusion. Puoi visualizzare il numero di operazioni eseguite dagli scenari in questa organizzazione e un elenco degli scenari attivi. Puoi anche visualizzare elenchi dei team, degli utenti e degli ambienti di questa organizzazione.<br>L’organizzazione attualmente selezionata è riportata sopra questa icona. | [Organizzazioni e team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Panoramica dei team  <br> ![Icona team](assets/team-icon.png) | Qui trovi informazioni sui team di Fusion, ad esempio quante operazioni sono state eseguite dagli scenari in un team e un elenco degli scenari attivi. Puoi anche visualizzare e gestire gli utenti di un team. Quando visualizzi un team, puoi selezionare un team diverso da un elenco a discesa nella parte superiore della pagina.<br>Il team attualmente selezionato viene visualizzato sopra questa icona.<br>Prima di visualizzare la panoramica dei team o una delle sezioni elencate in questo articolo, potresti dover creare un team. | [Organizzazioni e team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |

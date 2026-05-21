@@ -4,20 +4,23 @@ description: Con i moduli  [!DNL Adobe Acrobat Sign] , puoi avviare uno scenario
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/bIhgpTsd4d1GOHARM2tYljUIJTt1JNRA-8JslmAuMRk
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '6763'
-ht-degree: 0%
+source-wordcount: 6796
+ht-degree: 12%
 
 ---
 
-# [!DNL Adobe Acrobat Sign] moduli
+# Moduli [!DNL Adobe Acrobat Sign]
 
 Con i moduli [!DNL Adobe Acrobat Sign], è possibile avviare uno scenario Adobe Workfront Fusion basato sugli eventi nell&#39;account [!DNL Adobe Acrobat Sign], creare, leggere o aggiornare contratti e altri record, cercare i record utilizzando i criteri impostati e caricare i documenti.
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +28,31 @@ Con i moduli [!DNL Adobe Acrobat Sign], è possibile avviare uno scenario Adobe 
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -83,13 +86,13 @@ I nuovi utenti di [!DNL Adobe Sign] devono prestare particolare attenzione ad al
 
 ![Raccomandazioni per Adobe Sign](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
-## [!DNL Adobe Acrobat Sign] moduli e relativi campi
+## Moduli [!DNL Adobe Acrobat Sign] e relativi campi
 
-Quando si configurano [!DNL Adobe Acrobat Sign] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Adobe Acrobat Sign], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli [!DNL Adobe Acrobat Sign], in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati altri campi di [!DNL Adobe Acrobat Sign], a seconda di fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Trigger](#triggers)
 * [Azioni](#actions)
@@ -111,7 +114,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
 <td>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a></td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filtro]</td> 
@@ -123,11 +126,11 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Trova testo]</td> 
-   <td> <p>Immettere i termini che si desidera cercare. Il modulo restituisce record che includono questi termini come valori di campo.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/it/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Ricerca di Adobe Sign - Funzionamento</a>.</p> </td> 
+   <td> <p>Immettere i termini che si desidera cercare. Il modulo restituisce record che includono questi termini come valori di campo.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Ricerca di Adobe Sign - Funzionamento</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Numero massimo di contratti restituiti]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td role="rowheader">[!UICONTROL Numero massimo di accordi restituiti]</td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,20 +151,20 @@ Questo modulo di attivazione avvia uno scenario quando si verifica un evento sel
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nome webhook]</td> 
-   <td> <p>Immetti un nome per il webhook</p> </td> 
+   <td> <p>Specifica un nome per il webhook.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Ambiti]</td> 
    <td> 
     <ul> 
-     <li> <p>Account </p> </li> 
-     <li> <p>[!UICONTROL Group]</p> </li> 
+     <li> <p>Account [!UICONTROL]</p> </li> 
+     <li> <p>[!UICONTROL Gruppo]</p> </li> 
      <li> <p>[!UICONTROL Utente]</p> </li> 
-     <li> <p>[!UICONTROL Resource]</p> <p>Se si seleziona [!UICONTROL Risorsa], immettere l'ID risorsa e il tipo di risorsa.</p> </li> 
+     <li> <p>[!UICONTROL Risorsa]</p> <p>Se si seleziona [!UICONTROL Risorsa], immettere l'ID risorsa e il tipo di risorsa.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -223,11 +226,11 @@ Questo modulo di azione crea un nuovo record del tipo selezionato.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Ad esempio: <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
@@ -246,12 +249,12 @@ Questo modulo di azione crea un nuovo record del tipo selezionato.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Informazioni documento libreria]</td> 
-   <td> <p>Compila i campi seguenti:</p> 
+   <td> <p>Compila i seguenti campi:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL File da inviare]</b> </p> <p>Per ogni file da aggiungere, fare clic su <b>[!UICONTROL Add item]</b> e compilare i campi.</p> 
       <ul> 
        <li><b>[!UICONTROL ID documento transitorio]</b> <p>Immettere l'ID del documento transitorio</p> </li> 
-       <li> <p><b>[!UICONTROL URL file transfer]</b> </p> <p>Compila i campi seguenti:</p> 
+       <li> <p><b>[!UICONTROL URL file transfer]</b> </p> <p>Compila i seguenti campi:</p> 
         <ul> 
          <li> <p><b>[!UICONTROL MIME-Type]</b> </p> <p>Immetti il tipo mime del file originale. I tipi MIME (Multipurpose Internet Mail Extension) sono etichette che consentono al software di identificare diversi tipi di dati condivisi su Internet. I server web e i browser utilizzano il tipo MIME per determinare cosa si deve fare con un file. Ad esempio, un file con tipo MIME <code>text/html</code> verrà elaborato in un browser in modo diverso rispetto a un file con tipo MIME <code>image/jpeg</code>.</p> </li> 
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Immettere un nome per il file.</p> </li> 
@@ -263,13 +266,13 @@ Questo modulo di azione crea un nuovo record del tipo selezionato.
      <li> <p><b>[!UICONTROL Modalità di condivisione]</b> </p> <p>Specificare gli utenti a cui assegnare l'accesso al documento della raccolta.</p> </li> 
      <li> <p><b>[!UICONTROL Stato documento libreria]</b> </p> <p>Specificare se il documento è in stato di creazione o attivo.</p> </li> 
      <li> <p><b>[!UICONTROL Tipo di modello libreria]</b> </p> <p>Per ogni tipo di modello di libreria che si desidera utilizzare, fare clic su <b>[!UICONTROL Add item]</b> e selezionare il tipo di modello.</p> </li> 
-     <li> <p><b>[!UICONTROL Data ultimo evento]</b> </p> <p>Immettere l'ultima data in cui si è verificato un evento nel documento di libreria.</p> <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p> </li> 
+     <li> <p><b>[!UICONTROL Data ultimo evento]</b> </p> <p>Immettere l'ultima data in cui si è verificato un evento nel documento di libreria.</p> <p>Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</p> </li> 
      <li> <p><b>[!UICONTROL Stato documento libreria]</b> </p> <p>Selezionare lo stato del documento della raccolta.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Informazioni utente]</td> 
-   <td> <p>Compila i campi seguenti:</p> 
+   <td> <p>Compila i seguenti campi:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL E-Mail]</b> </p> <p>Inserisci l’indirizzo e-mail dell’utente.</p> </li> 
      <li> <p><b>[!UICONTROL È l'amministratore dell'account]</b> </p> <p>Seleziona questa opzione se l’utente creato è un amministratore account.</p> </li> 
@@ -356,10 +359,10 @@ Questo modulo di azione crea un accordo, lo invia per la firma e restituisce l�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
 <td>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a></td>  </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Ad esempio: <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
@@ -368,7 +371,7 @@ Questo modulo di azione crea un accordo, lo invia per la firma e restituisce l�
     <ul> 
      <li> <p><b>[!UICONTROL Tipo di file]</b> </p> 
       <ul> 
-       <li> <p><b></b> </p> <p>Compila i campi seguenti:</p> 
+       <li> <p><b></b> </p> <p>Compila i seguenti campi:</p> 
         <ul> 
          <li> <p><b>[!UICONTROL Data di creazione]</b> </p> <p>Immettere o mappare la data di creazione del documento nel formato <code>yyyy-MM-dd'T'HH:mm:ssZ</code>. Ad esempio, <code>2016-02-25T18:46:19Z</code> rappresenta l'ora UTC.</p> </li> 
          <li> <p><b>[!UICONTROL ID]</b> </p> <p>Immettere o mappare l'ID del documento.</p> </li> 
@@ -379,7 +382,7 @@ Questo modulo di azione crea un accordo, lo invia per la firma e restituisce l�
         </ul> </li> 
        <li> <p><b>[!UICONTROL ID documento libreria]</b> </p> <p>Immettere l'ID del documento di libreria</p> </li> 
        <li> <p><b>[!UICONTROL ID documento transitorio]</b> </p> <p>Immettere l'ID del documento transitorio</p> </li> 
-       <li> <p><b>[!UICONTROL URL file transfer]</b> </p> <p>Compila i campi seguenti:</p> 
+       <li> <p><b>[!UICONTROL URL file transfer]</b> </p> <p>Compila i seguenti campi:</p> 
         <ul> 
          <li> <p><b>[!UICONTROL MIME-Type]</b> </p> <p>Immetti il tipo mime del file originale. I tipi MIME (Multipurpose Internet Mail Extension) sono etichette che consentono al software di identificare diversi tipi di dati condivisi su Internet. I server web e i browser utilizzano il tipo MIME per determinare cosa si deve fare con un file. Ad esempio, un file con tipo MIME <code>text/html</code> verrà elaborato in un browser in modo diverso rispetto a un file con tipo MIME <code>image/jpeg</code>.</p> </li> 
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Immettere un nome per il file.</p> </li> 
@@ -417,7 +420,7 @@ Questo modulo di azione crea un accordo, lo invia per la firma e restituisce l�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL State]</td> 
+   <td role="rowheader">[!UICONTROL Stato]</td> 
    <td> <p>Selezionare uno stato per il contratto.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Authoring]</b> </p> <p>È comunque possibile modificare o aggiungere campi al contratto.</p> </li> 
@@ -454,7 +457,7 @@ Questo modulo di azione crea un accordo, lo invia per la firma e restituisce l�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Informazioni notaio]</td> 
-   <td> <p>Compila i campi seguenti:</p> 
+   <td> <p>Compila i seguenti campi:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Appuntamento]</b> </p> <p>Immettere o mappare un'ora e una data proposte per l'appuntamento per la registrazione del contratto.</p> </li> 
      <li> <p><b>[!UICONTROL Nota]</b> </p> <p>Immettere o mappare le note da includere sulla sessione notarile.</p> </li> 
@@ -470,7 +473,7 @@ Questo modulo di azione crea un accordo, lo invia per la firma e restituisce l�
    <td role="rowheader">[!UICONTROL Opzione firma post]</td> 
    <td> <p>Selezionare se si desidera che i firmatari vengano indirizzati a una pagina di successo dopo la firma del contratto. Se si seleziona <b>[!UICONTROL Sì]</b>, compilare i campi seguenti:</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Ritardo reindirizzamento]</b> </p> <p>Inserisci o mappa un numero che rappresenta il numero di secondi prima che il firmatario venga reindirizzato alla pagina riuscita. Se questo valore è maggiore di 0, l'utente visualizzerà prima il messaggio di successo standard di [!DNL Adobe Sign] e quindi, dopo un ritardo, verrà reindirizzato alla pagina di successo.</p> </li> 
+     <li> <p><b>[!Ritardo reindirizzamento UICONTROL]</b> </p> <p>Inserisci o mappa un numero che rappresenta il numero di secondi prima che il firmatario venga reindirizzato alla pagina riuscita. Se questo valore è maggiore di 0, l'utente visualizzerà prima il messaggio di successo standard di [!DNL Adobe Sign] e quindi, dopo un ritardo, verrà reindirizzato alla pagina di successo.</p> </li> 
      <li> <p><b>[!UICONTROL URL reindirizzamento]</b> </p> <p>Immetti o mappa un URL accessibile al pubblico a cui l’utente verrà inviato dopo aver completato correttamente il processo di firma.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -496,11 +499,11 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
@@ -516,7 +519,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
    <td> <p>Seleziona il tipo di campo correlato da creare</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Campi modulo]</b> </p> <p>Immettere l'ID modello del modello contenente i campi che si desidera creare</p> </li> 
-     <li> <p><b>[!UICONTROL Promemoria]</b> </p> <p>Compila i campi seguenti:</p> 
+     <li> <p><b>[!UICONTROL Promemoria]</b> </p> <p>Compila i seguenti campi:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL ID partecipante destinatario]</b> </p> <p>Per ogni partecipante a cui si desidera inviare un promemoria, fare clic su [!UICONTROL Aggiungi elemento] e immettere l'ID del partecipante.</p> </li> 
        <li> <p><b>[!UICONTROL Stato]</b> </p> <p>Per i nuovi record, lo stato deve essere [!UICONTROL Attivo].</p> </li> 
@@ -528,7 +531,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
        <li> <p><b>[!UICONTROL Avvia contatore promemoria da]</b> </p> <p>Selezionare se il promemoria viene inviato in base alla data di creazione dell'accordo quando diventa disponibile.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Rapporto identità firmatario]</b> </p> <p>Immettere la password utilizzata per proteggere il documento PDF.</p> </li> 
-     <li> <p><b>[!UICONTROL Viste]</b> </p> <p>Immetti i campi seguenti</p> 
+     <li> <p><b>[!Viste UICONTROL]</b> </p> <p>Immetti i campi seguenti</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Selezionate il nome della vista da creare.</p> </li> 
        <li> <p><b>[!UICONTROL Utente di accesso automatico]</b> </p> <p>Selezionare <b>[!UICONTROL Yes]</b> per accedere automaticamente all'URL restituito.</p> </li> 
@@ -552,7 +555,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Informazioni vista libreria]</td> 
-   <td> <p>Compila i campi seguenti:</p> 
+   <td> <p>Compila i seguenti campi:</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Immetti un nome per il modello della libreria. Questo nome viene utilizzato nelle e-mail e nei siti web.</p> </li> 
      <li> <p><b>[!UICONTROL Utente di accesso automatico]</b> </p> <p>Selezionare <b>[!UICONTROL Yes]</b> per accedere automaticamente all'URL restituito.</p> </li> 
@@ -583,7 +586,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
    <td role="rowheader">Campi correlati a [!UICONTROL Widget]</td> 
    <td> <p>Selezionare il record correlato da creare.</p> 
     <ul> 
-     <li> <p>Visualizzazioni di </p> <p>Compila i campi seguenti.</p> 
+     <li> <p>[!UICONTROL Visualizzazioni]</p> <p>Compila i campi seguenti.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Seleziona il nome della visualizzazione del modulo web richiesta</p> </li> 
        <li> <p><b>[!UICONTROL Utente di accesso automatico]</b> </p> <p>Selezionare <b>[!UICONTROL Sì]</b> per accedere automaticamente all'utente. Selezionare <b>[!UICONTROL No]</b> per richiedere le credenziali. Il valore predefinito è [!UICONTROL No].</p> </li> 
@@ -594,7 +597,7 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
         <ul> 
          <li> <p><b>[!UICONTROL E-Mail]</b> </p> <p>Immetti l’indirizzo e-mail della persona che riceve il modulo web appena creato</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>Inserisci un commento che descrive come il chiamante API ha stabilito l’identità del firmatario. Queste informazioni vengono visualizzate nell'audit trail [!DNL Adobe Acrobat Sign].</p> </li> 
-         <li> <p><b>[!UICONTROL Scadenza]</b> </p> <p>Immetti una data di scadenza per la personalizzazione del modulo web. </p> <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Tipo di coercizione</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Scadenza]</b> </p> <p>Immetti una data di scadenza per la personalizzazione del modulo web. </p> <p>Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercizione del tipo</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Riutilizzabile]</b> </p> <p>Selezionare <b>[!UICONTROL Sì]</b> se si desidera che il firmatario desiderato sia in grado di firmare il modulo più di una volta.</p> </li> 
         </ul> </li> 
       </ul> </li> 
@@ -607,42 +610,42 @@ Questo modulo di azione crea record collegati a un modulo selezionato.
 +++
 
 +++ **[!UICONTROL Chiamata API personalizzata]**
-Questo modulo ti consente di eseguire una chiamata API personalizzata.
+Questo modulo ti consente di effettuare una chiamata API personalizzata.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Inserisci un percorso relativo a <code>https://api.[region].adobesign.com/api/rest/v6/</code></p> <p>Nota: per l'elenco degli endpoint disponibili, fare riferimento al riferimento API [!DNL Adobe Sign].</p> </td> 
+   <td> <p>Inserisci un percorso relativo a <code>https://api.[region].adobesign.com/api/rest/v6/</code></p> <p>Nota: per l’elenco degli endpoint disponibili, consulta la documentazione di riferimento API [!DNL Adobe Sign].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Metodo]</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringa Di Query] </td> 
-   <td> <p>Immettere la stringa di query richiesta.</p> </td> 
+   <td role="rowheader">[!UICONTROL Stringa di query] </td> 
+   <td> <p>Inserisci la stringa di query della richiesta.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Carica un documento transitorio]</td> 
-   <td> <p>Se si desidera caricare un documento transitorio, immettere il file di origine del documento che si desidera caricare.</p> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td> <p>Se si desidera caricare un documento transitorio, immettere il file di origine del documento che si desidera caricare.</p> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -658,11 +661,11 @@ Questo modulo di azione elenca tutti i record del tipo selezionato a cui l’acc
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
@@ -691,7 +694,7 @@ Questo modulo di azione elenca tutti i record del tipo selezionato a cui l’acc
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Numero massimo di record restituiti]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> <p>Nota: questo campo è combinato con il campo [!UICONTROL Cursor] o [!UICONTROL Start Index] per l'impaginazione. Ad esempio, se il numero massimo di eventi restituiti è 100 e l'indice [!UICONTROL Start] è 101, il modulo restituisce i record 101-200 o la seconda pagina di risultati.</p> </td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> <p>Nota: questo campo è combinato con il campo [!UICONTROL Cursor] o [!UICONTROL Start Index] per l'impaginazione. Ad esempio, se il numero massimo di eventi restituiti è 100 e l'indice [!UICONTROL Start] è 101, il modulo restituisce i record 101-200 o la seconda pagina di risultati.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL del dominio padre]</td> 
@@ -711,11 +714,11 @@ Questo modulo di azione recupera le informazioni da un singolo record.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
@@ -740,11 +743,11 @@ Leggi le informazioni aggiuntive relative a un singolo record.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
@@ -781,16 +784,16 @@ Questo modulo di azione aggiorna un singolo record in [!DNL Adobe Acrobat Sign].
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID record] </td> 
-   <td>Immetti o mappa l’ID del record da aggiornare.</td> 
+   <td>Inserisci oppure mappa l’ID del record da aggiornare.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo di record]</td> 
@@ -842,11 +845,11 @@ Questo modulo di azione aggiorna i record relativi a un oggetto specifico.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
@@ -880,17 +883,17 @@ Questo modulo di azione aggiorna i record relativi a un oggetto specifico.
          <li> <p><b>[!UICONTROL Nome]</b> </p> <p>Immettere o mappare il nome del gruppo.</p> </li> 
          <li> <p><b>[!UICONTROL Creazione documento libreria visibile]</b> </p> <p>Queste impostazioni determinano se l'utente può creare documenti della libreria</p> 
           <ul> 
-           <li> <p>Valore </p> <p>Consenti</p> </li> 
+           <li> <p>[!UICONTROL Valore]</p> <p>Consenti</p> </li> 
            <li> <p>[!UICONTROL ereditato]</p> <p>Eredita impostazione gruppo da gruppo o account</p> </li> 
           </ul> </li> 
          <li> <p><b>[!UICONTROL Invio limitato a flussi di lavoro]</b> </p> <p>Queste impostazioni determinano se l'utente può creare accordi solo utilizzando flussi di lavoro.</p> 
           <ul> 
-           <li> <p>Valore </p> <p>Consenti</p> </li> 
+           <li> <p>[!UICONTROL Valore]</p> <p>Consenti</p> </li> 
            <li> <p>[!UICONTROL ereditato]</p> <p>Eredita impostazione gruppo da gruppo o account</p> </li> 
           </ul> </li> 
          <li> <p><b>[!UICONTROL Utente può inviare]</b> </p> 
           <ul> 
-           <li> <p>Valore </p> <p>Consenti</p> </li> 
+           <li> <p>[!UICONTROL Valore]</p> <p>Consenti</p> </li> 
            <li> <p>[!UICONTROL ereditato]</p> <p>Eredita impostazione gruppo da gruppo o account</p> </li> 
           </ul> </li> 
         </ul> </li> 
@@ -920,11 +923,11 @@ Carica un documento transitorio. Un documento transitorio è disponibile per 7 g
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
@@ -959,11 +962,11 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Adobe Acrobat Sign] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -972,7 +975,7 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
     <ul> 
      <li> <p><b>[!UICONTROL Trova testo]</b> </p> <p>Immettere il testo da trovare nei metadati del contratto. Ogni parola viene trattata come un elemento di testo separato. </p> </li> 
      <li> <p><b></b> Trova testo in </p> <p>Selezionare i campi di metadati in cui si desidera trovare il testo. Se non si seleziona nulla, i moduli eseguiranno la ricerca in tutti i metadati.</p> </li> 
-    </ul> <p>Il modulo restituisce qualsiasi accordo contenente il testo immesso in uno dei campi selezionati. Esempio: inserendo "campagna primaverile" e selezionando le opzioni Titolo e Nota, vengono restituiti tutti i contratti con le parole "Primavera" o "Campagna" in Titolo o Nota.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/it/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Ricerca - Funzionamento</a>.</p> </td> 
+    </ul> <p>Il modulo restituisce qualsiasi accordo contenente il testo immesso in uno dei campi selezionati. Esempio: inserendo "campagna primaverile" e selezionando le opzioni Titolo e Nota, vengono restituiti tutti i contratti con le parole "Primavera" o "Campagna" in Titolo o Nota.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Ricerca - Funzionamento</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data di creazione]</td> 
@@ -999,7 +1002,7 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
    <td> <p>Questo è l’ID assegnato al contratto specifico. </p> <p>Per ogni ID esterno che desideri aggiungere, fai clic su <b>[!UICONTROL Add]</b> e immetti o mappa l'ID esterno.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID padre </td> 
+   <td role="rowheader">ID padre [!UICONTROL]</td> 
    <td> <p>Questo è l'ID assegnato all'oggetto padre dell'accordo. </p> <p>Per ogni ID esterno che desideri aggiungere, fai clic su <b>[!UICONTROL Add]</b> e immetti o mappa l'ID esterno.</p> </td> 
   </tr> 
   <tr> 
@@ -1007,7 +1010,7 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
    <td> <p>L’indirizzo e-mail di un partecipante. </p> <p>Per ogni ID esterno che desideri aggiungere, fai clic su <b>[!UICONTROL Add]</b> e immetti o mappa l'ID esterno.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Role]</td> 
+   <td role="rowheader">[!UICONTROL Ruolo]</td> 
    <td>Selezionare i ruoli da includere nei risultati restituiti.</td> 
   </tr> 
   <tr> 
@@ -1023,7 +1026,7 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
    <td>Selezionare gli stati da includere nei risultati restituiti.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td role="rowheader">[!UICONTROL Tipo]</td> 
    <td>Selezionare i tipi di contratto da includere nei risultati restituiti.</td> 
   </tr> 
   <tr> 
@@ -1044,7 +1047,7 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Numero massimo di risultati restituiti]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>

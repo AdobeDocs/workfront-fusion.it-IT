@@ -4,21 +4,24 @@ description: In uno scenario di Adobe Workfront Fusion, puoi automatizzare i flu
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
+TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 18%
+source-wordcount: 2368
+ht-degree: 31%
 
 ---
 
 # [!DNL Adobe Target] moduli
 
-In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Target] e collegarlo a più applicazioni e servizi di terze parti. I moduli [!DNL Adobe Target] consentono di creare, leggere, aggiornare o eliminare record, elencare tutti i record di un determinato tipo, cercare i record in base ai criteri specificati o eseguire una chiamata API personalizzata all&#39;API [!DNL Adobe Target].
+In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Target], nonché collegarli a più applicazioni e servizi di terze parti. I moduli [!DNL Adobe Target] consentono di creare, leggere, aggiornare o eliminare record, elencare tutti i record di un determinato tipo, cercare i record in base ai criteri specificati o eseguire una chiamata API personalizzata all&#39;API [!DNL Adobe Target].
 
 
 Se hai bisogno di istruzioni per la creazione di uno scenario, consulta gli articoli in [Creare uno scenario: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
@@ -30,17 +33,17 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
    <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza di Workfront Fusion</p>
-   <p>Basata sul connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -79,7 +82,7 @@ Il connettore Adobe Target utilizza quanto segue:
  </tbody> 
  </table>
 
-## Crea una connessione a [!DNL Adobe Target]
+## Creare una connessione ad [!DNL Adobe Target]
 
 >[!IMPORTANT]
 >
@@ -92,7 +95,7 @@ Per creare una connessione per i moduli [!DNL Adobe Target]:
 
 1. In qualsiasi modulo, fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
-1. Compila i campi obbligatori:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
     <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -112,17 +115,17 @@ Per creare una connessione per i moduli [!DNL Adobe Target]:
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td role="rowheader">[!UICONTROL Ambiente]</td>
         <td>Seleziona se ti connetti a un ambiente di produzione o non di produzione.
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
-        <td>Specificare se ci si connette a un account di servizio o a un account personale.
+        <td role="rowheader">[!UICONTROL Tipo]</td>
+        <td>Specifica se ti connetti a un account di servizio o a un account personale.
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td role="rowheader">[!UICONTROL ID client]</td>
         <td>Immetti l'ID client [!DNL Adobe]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].
       </tr>
       <tr>
@@ -155,19 +158,19 @@ Per creare una connessione per i moduli [!DNL Adobe Target]:
           <p>Per estrarre la chiave privata o il certificato:</p>
           <ol>
             <li value="1">
-              <p>Fare clic su <b>[!UICONTROL Extract]</b>.</p>
+              <p>Fai clic su <b>[!UICONTROL Estrai]</b>.</p>
             </li>
             <li value="2">
-              <p>Selezionare il tipo di file da estrarre.</p>
+              <p>Seleziona il tipo di file da estrarre.</p>
             </li>
             <li value="3">
               <p>Seleziona il file che contiene la chiave privata o il certificato.</p>
             </li>
             <li value="4">
-              <p>Immettere la password per il file.</p>
+              <p>Inserisci la password per il file.</p>
             </li>
             <li value="5">
-              <p>Fare clic su <b>[!UICONTROL Salva]</b> per estrarre il file e tornare alla configurazione della connessione.</p>
+              <p>Fai clic su <b>[!UICONTROL Salva]</b> per estrarre il file e tornare alla configurazione della connessione.</p>
             </li>
           </ol>
         </td>
@@ -175,7 +178,7 @@ Per creare una connessione per i moduli [!DNL Adobe Target]:
     </tbody>
     </table>
 
-1. Fai clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continue]** (Continua) per salvare la connessione e tornare al modulo.
 
 ## Moduli [!DNL Adobe Target] e relativi campi
 
@@ -183,7 +186,7 @@ Quando configuri i moduli [!DNL Adobe Target], in Workfront Fusion vengono visua
 
 Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Pulsante di attivazione/disattivazione mappatura](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Azioni](#actions)
 
@@ -213,12 +216,12 @@ Questo modulo di azione crea un’attività AB o XT, un’offerta o un pubblico.
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL Connessione]</td>
-    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], vedere <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
+    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], consulta <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Tipo di record]</td>
     <td>
-      <p>Selezionare il tipo di record da creare.</p>
+      <p>Seleziona il tipo di ambiente da creare.</p>
       <ul>
         <li>
         <b>Proprietà</b><p>Per informazioni dettagliate sui campi, consulta <a href="https://developer.adobe.com/target/administer/admin-api/#tag/Properties/operation/createProperty">Creare una proprietà</a> nella documentazione dell'API di Adobe Target.</p>
@@ -477,7 +480,7 @@ Questo modulo di azione crea un’attività AB o XT, un’offerta o un pubblico.
       <td>Immetti o mappa un nome per questa attività. Il nome non può contenere più di 250 caratteri.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Options]</td>
+      <td role="rowheader">[!UICONTROL Opzioni]</td>
       <td>
         <p>Per ogni opzione che si desidera aggiungere all'attività, fare clic su <b>[!UICONTROL Aggiungi elemento]</b> e compilare i campi seguenti:</p>
         <ul>
@@ -573,7 +576,7 @@ Questo modulo di azione crea un’attività AB o XT, un’offerta o un pubblico.
       <td>Immettere o mappare la data e l'ora di fine dell'attività nel formato <code>YYYY-MM-DD hh:mm:ss.z</code>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL State]</td>
+      <td role="rowheader">[!UICONTROL Stato]</td>
       <td>
         <p>Inserisci o mappa lo stato dell’attività.</p>
         <ul>
@@ -596,7 +599,7 @@ Questo modulo di azione crea un’attività AB o XT, un’offerta o un pubblico.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Priorità </td>
+      <td role="rowheader">[!UICONTROL Priorità]</td>
       <td>Immetti un numero che definisce la priorità dell’attività. I numeri più alti hanno priorità più alta. Questo valore deve essere compreso tra 0 e 999. Il valore predefinito è 5.</td>
     </tr>
     <tr>
@@ -607,7 +610,7 @@ Questo modulo di azione crea un’attività AB o XT, un’offerta o un pubblico.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Area di lavoro]</td>
       <td>Inserisci o mappa l’area di lavoro a cui è associata l’attività</td>
     </tr>
     <tr>
@@ -657,13 +660,13 @@ Questo modulo di azione crea un’attività AB o XT, un’offerta o un pubblico.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Area di lavoro]</td>
       <td>
         <p>Inserisci o mappa l’ID dell’area di lavoro associata all’offerta. Se non specificata, l’offerta viene associata all’area di lavoro predefinita dell’account. Questa funzionalità si applica solo agli account Premium [!DNL Target].</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Area di lavoro]</td>
       <td>
         <p>Immetti o mappa la data e l’ora in cui l’offerta è stata modificata.</p>
       </td>
@@ -753,7 +756,7 @@ Questo modulo effettua una chiamata API personalizzata all&#39;API [!DNL Adobe T
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], vedere <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], consulta <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL [!DNL Target] URL di base]</td>
@@ -764,7 +767,7 @@ Questo modulo effettua una chiamata API personalizzata all&#39;API [!DNL Adobe T
         <p>[!UICONTROL Percorso]</p>
       </td>
       <td>
-        <p>Immettere un percorso relativo a {baseURL}/</p>
+        <p>Immetti un percorso relativo a {baseURL}/</p>
       </td>
     </tr>
     <tr>
@@ -782,14 +785,14 @@ Questo modulo effettua una chiamata API personalizzata all&#39;API [!DNL Adobe T
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Stringa Di Query]  </td>
+      <td role="rowheader">[!UICONTROL Stringa di query]  </td>
       <td>
-        <p>Immettere la stringa di query richiesta.</p>
+        <p>Inserisci la stringa di query della richiesta.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Corpo]</td>
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, inserisci le virgolette al di fuori dell’istruzione condizionale.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -806,7 +809,7 @@ Questo modulo di azione elimina una singola attività AB, un’attività XT, un�
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL Connessione]</td>
-    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], vedere <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
+    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], consulta <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Tipo di record]</td>
@@ -829,7 +832,7 @@ Questo modulo di azione recupera i dati per una singola attività, offerta, pubb
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL Connessione]</td>
-    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], vedere <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
+    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], consulta <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Tipo di record]</td>
@@ -852,7 +855,7 @@ Questo modulo di azione aggiorna un record in Target.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], vedere <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], consulta <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Tipo di record]</td>
@@ -886,7 +889,7 @@ Questo modulo di ricerca recupera un elenco di record del tipo selezionato.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connessione]</td>
-      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], vedere <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], consulta <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Tipo di record]</td>
@@ -900,14 +903,14 @@ Questo modulo di ricerca recupera un elenco di record del tipo selezionato.
       <td role="rowheader">[!UICONTROL Inizia Da]</td>
       <td>
         <p>Immettere la prima data per la quale si desidera recuperare i record. </p>
-        <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p>
+        <p>Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Termina A]</td>
       <td>
         <p>Immettere l'ultima data per la quale si desidera recuperare i record. </p>
-        <p>Per un elenco dei formati di data e ora supportati, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Tipo di coercizione</a>.</p>
+        <p>Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</p>
       </td>
     </tr>
   </tbody>
@@ -923,7 +926,7 @@ Questo modulo di ricerca cerca attività, offerte o tipi di pubblico in base ai 
 <tbody>
   <tr>
     <td role="rowheader">[!UICONTROL Connessione]</td>
-    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], vedere <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
+    <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Target], consulta <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Creare una connessione a [!DNL Adobe Target]</a> in questo articolo.</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Tipo di record]</td>
@@ -934,7 +937,7 @@ Questo modulo di ricerca cerca attività, offerte o tipi di pubblico in base ai 
     <td>Per ogni campo in base al quale si desidera ordinare, fare clic su <b>[!UICONTROL Add item]</b> e selezionare il campo e specificare se i risultati restituiti devono essere crescenti o decrescenti.</td>
   </tr>
   <tr>
-    <td role="rowheader">Criteri di ricerca di </td>
+    <td role="rowheader">[!UICONTROL Criteri di ricerca]</td>
     <td>Per ogni regola che desideri impostare, seleziona il campo, l’operatore e il valore. Fare clic su <b>[!UICONTROL Add AND rule]</b> per creare regole aggiuntive.</td>
   </tr>
   <tr>
@@ -945,9 +948,9 @@ Questo modulo di ricerca cerca attività, offerte o tipi di pubblico in base ai 
     </td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Limit]</td>
+    <td role="rowheader">[!UICONTROL Limite]</td>
     <td>
-      <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario. Utilizzare questo campo in combinazione con il campo [!UICONTROL Offset] per impaginare le risposte.</p>
+      <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario. Utilizzare questo campo in combinazione con il campo [!UICONTROL Offset] per impaginare le risposte.</p>
       <p>Ad esempio, per visualizzare la terza pagina di risposte, quando ogni pagina ha dieci risposte, impostare [!UICONTROL Offset] su 20 e [!UICONTROL Numero massimo di risultati restituiti] su 10.</p>
     </td>
   </tr>

@@ -4,10 +4,13 @@ description: Con i moduli Adobe Workfront Fusion Figma è possibile recuperare e
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
+TQID: https://experienceleague.adobe.com/sr5gzukvb4qLZHn0lszB15dVogIfa-VrLwqEAWd69oA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2638'
-ht-degree: 14%
+source-wordcount: 2643
+ht-degree: 19%
 
 ---
 
@@ -17,7 +20,7 @@ Con i moduli di Adobe Workfront Fusion [!DNL Figma] è possibile recuperare elen
 
 Se hai bisogno di istruzioni per la creazione di uno scenario, consulta gli articoli in [Creare uno scenario: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
@@ -29,17 +32,17 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze di Adobe Workfront</td> 
+   <td role="rowheader">Licenze Adobe Workfront</td> 
    <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza di Workfront Fusion</p>
-   <p>Basata sul connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -95,7 +98,7 @@ Per creare una connessione per i moduli Figma:
 
 1. In qualsiasi modulo Figma, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
-1. Compila i campi obbligatori:
+1. Compila i seguenti campi:
 
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -116,12 +119,12 @@ Per creare una connessione per i moduli Figma:
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td role="rowheader">[!UICONTROL ID client]</td>
         <td>Immetti il [!UICONTROL Figma] [!UICONTROL Client ID].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
-        <td>Immetti il segreto client Figma .</td>
+        <td>Immetti il segreto client Figma [!UICONTROL].</td>
         </tr>
         <tr>
         <td role="rowheader">Ambiti personalizzati</td>
@@ -134,7 +137,7 @@ Per creare una connessione per i moduli Figma:
       </tbody>
     </table>
 
-1. Fai clic su **[!UICONTROL Continue]** per salvare la connessione e tornare al modulo.
+1. Fai clic su **[!UICONTROL Continue]** (Continua) per salvare la connessione e tornare al modulo.
 
 
 
@@ -144,7 +147,7 @@ Quando configuri i moduli [!DNL Figma], in Workfront Fusion vengono visualizzati
 
 Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Pulsante di attivazione/disattivazione mappatura](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Commenti](#comments)
 
@@ -164,7 +167,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 * [Pubblica un commento](#post-a-comment)
 
 
-#### [!UICONTROL Elimina un commento]
+#### [!UICONTROL Eliminare un commento]
 
 Questo modulo elimina un singolo commento da un file.
 
@@ -250,7 +253,7 @@ Questo modulo di azione pubblica un commento su un file Figma.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Comment]</td>
-      <td>Immettere il testo del commento.</td>
+      <td>Digita il testo del commento.</td>
     </tr>
   </tbody>
 </table>
@@ -472,7 +475,7 @@ Questo modulo di azione recupera un singolo file o immagine da una libreria Figm
       <td>Abilita questa opzione per utilizzare le dimensioni complete del nodo indipendentemente dal fatto che sia ritagliato o meno o che lo spazio intorno a esso sia vuoto. Utilizzare questa opzione per esportare nodi di testo senza ritaglio. Impostazione predefinita: [!UICONTROL false].</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL versione]</td>
+      <td role="rowheader">[!UICONTROL Versione]</td>
       <td>Immettere o mappare la versione del file che si desidera venga restituita dal modulo. Per il modulo corrente, lascia vuoto questo campo.</td>
     </tr>
   </tbody>
@@ -517,7 +520,7 @@ Questo modulo di ricerca restituisce la cronologia delle versioni di un singolo 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Numero massimo di file restituiti]</td>
-      <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td>
+      <td>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</td>
     </tr>
   </tbody>
 </table>
@@ -547,7 +550,7 @@ Questo modulo di ricerca restituisce un elenco di tutti i file nel progetto spec
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Numero massimo di file restituiti]</td>
-      <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td>
+      <td>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</td>
     </tr>
   </tbody>
 </table>
@@ -570,7 +573,7 @@ Questo modulo di ricerca restituisce un elenco di tutti i progetti all’interno
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Numero massimo di progetti restituiti]</td>
-      <td>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</td>
+      <td>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</td>
     </tr>
   </tbody>
 </table>
@@ -630,7 +633,7 @@ Questo modulo di azione recupera un singolo stile o componente oppure un set di 
 
 * [Effettuare una chiamata API](#make-an-api-call)
 
-* [Guarda gli eventi](#watch-events)
+* [Osserva eventi](#watch-events)
 
 
 #### [!UICONTROL Effettuare una chiamata API]
@@ -648,7 +651,7 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p>Immettere un percorso relativo a <code>https://api.figma.com/v1/</code>.</p>
+        <p>Inserisci un percorso relativo a <code>https://api.figma.com/v1/</code>.</p>
         <p>Ad esempio: <code>[!DNL files/7179110/comments]</code></p>
       </td>
     </tr>
@@ -665,15 +668,15 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Stringa Di Query]</td>
+      <td role="rowheader">[!UICONTROL Stringa di query]</td>
       <td>
-        <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p>
+        <p>Aggiungi la query per la chiamata API come oggetto JSON standard.</p>
         <p>Ad esempio: <code>{"name":"something-urgent"}</code></p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Corpo]</td>
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, inserisci le virgolette al di fuori dell’istruzione condizionale.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

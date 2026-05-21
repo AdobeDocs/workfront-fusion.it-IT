@@ -4,10 +4,13 @@ description: I moduli  [!DNL Adobe Workfront Fusion SFTP]  consentono di monitor
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 0%
+source-wordcount: 2238
+ht-degree: 14%
 
 ---
 
@@ -17,7 +20,7 @@ I moduli di Adobe Workfront Fusion SFTP consentono di monitorare le modifiche de
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +28,31 @@ I moduli di Adobe Workfront Fusion SFTP consentono di monitorare le modifiche de
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -66,15 +69,15 @@ Per connettere l’account SFTP a Workfront Fusion è necessario creare una conn
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Nome connessione]</td> 
+   <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione)</td> 
    <td> <p> Immetti il nome della connessione SFTP.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Environment]</td>
+    <td role="rowheader">[!UICONTROL Ambiente]</td>
     <td>Seleziona se ti connetti a un ambiente di produzione o non di produzione.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Type]</td>
+    <td role="rowheader">[!UICONTROL Tipo]</td>
     <td>Seleziona se ti interessa la connessione a un account di servizio o a un account personale.</td>
   </tr>
   <tr>
@@ -82,7 +85,7 @@ Per connettere l’account SFTP a Workfront Fusion è necessario creare una conn
    <td> <p>Immetti il nome host del server SFTP che desideri connettere.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Porta  </td> 
+   <td role="rowheader">Porta [!UICONTROL] </td> 
    <td> <p>Immetti la porta del server SFTP. Ad esempio, 22.</p> </td> 
   </tr> 
   <tr> 
@@ -152,9 +155,9 @@ Il connettore SFTP supporta quanto segue durante la creazione di una connessione
 
 Quando configuri [!UICONTROL moduli SFTP], Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi [!UICONTROL SFTP], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Trigger
 
@@ -170,11 +173,11 @@ Restituisce i file con i dettagli quando un file viene creato o modificato in un
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Immetti la cartella da controllare. È possibile specificare un percorso assoluto come <code>/home/user/</code> oppure un percorso relativo che punta a una cartella specifica dell'utente connesso, ad esempio <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -183,7 +186,7 @@ Restituisce i file con i dettagli quando un file viene creato o modificato in un
   </tr> 
   <tr> 
    <td>[!UICONTROL Numero massimo di file restituiti]</td> 
-   <td> <p> Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td> <p> Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -197,23 +200,23 @@ Restituisce le cartelle con i dettagli quando una cartella viene creata o modifi
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Immetti o mappa la cartella da controllare. È possibile specificare un percorso assoluto come <code>/home/user/</code>. Oppure puoi specificare un percorso relativo che punti a una cartella specifica dell’utente connesso, ad esempio <code>./.</code></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Numero massimo di file restituiti]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Azioni
 
-* [Creare una cartella](#create-a-folderr)
+* [Crea una cartella](#create-a-folderr)
 * [Eliminare un file](#delete-a-file)
 * [Eliminare una cartella](#delete-a-folder)
 * [Ottieni un file](#get-a-file)
@@ -222,7 +225,7 @@ Restituisce le cartelle con i dettagli quando una cartella viene creata o modifi
 * [Spostare un file](#move-a-file)
 * [Rinominare un file](#rename-a-file)
 * [Autorizzazioni di aggiornamento file](#update-file-permissions)
-* [Carica un file](#upload-a-file)
+* [Caricare un file](#upload-a-file)
 
 #### [!UICONTROL Crea una cartella]
 
@@ -237,11 +240,11 @@ Questo modulo di azione crea una nuova cartella nel percorso specificato.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Specificare una cartella esistente come percorso di archiviazione per la nuova cartella. È possibile specificare un percorso assoluto come <code>/home/user/file.txt</code>. Oppure è possibile specificare un percorso relativo che punti a una cartella specifica dell'utente connesso, ad esempio <code>./</code>.</p> </td> 
   </tr> 
   <tr> 
@@ -249,7 +252,7 @@ Questo modulo di azione crea una nuova cartella nel percorso specificato.
    <td> <p> Immetti il nome della cartella.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissions]</p> </td> 
+   <td> <p>[!UICONTROL Autorizzazioni]</p> </td> 
    <td> <p>Imposta le autorizzazioni della cartella desiderate. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
@@ -262,7 +265,7 @@ Questo modulo di azione crea una nuova cartella nel percorso specificato.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -279,7 +282,7 @@ Questo modulo di azione crea una nuova cartella nel percorso specificato.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -298,7 +301,7 @@ Questo modulo recupera i dettagli del file, inclusi i dati di un file.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -321,7 +324,7 @@ Questo modulo restituisce file da una cartella specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -329,11 +332,11 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Immettere la dimensione del buffer in byte. Il valore definisce la dimensione dei blocchi trasferiti dal server. Alcuni server possono causare problemi o file danneggiati quando il valore è troppo alto.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Immettere o mappare la cartella contenente i file o le cartelle da elencare. È possibile specificare un percorso assoluto come <code>/home/user/</code>. Oppure puoi specificare un percorso relativo che punti a una cartella specifica dell’utente connesso, ad esempio <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL - Ricerca] </td> 
+   <td>[!UICONTROL Ricerca] </td> 
    <td> <p>Inserisci o mappa il termine di ricerca. Se ad esempio si desidera cercare file con estensione .txt, immettere <code>.txt</code>.È inoltre possibile immettere o mappare il nome del file che si desidera cercare.</p> </td> 
   </tr> 
   <tr> 
@@ -341,7 +344,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome del file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento </td> 
+   <td>Ordinamento [!UICONTROL]</td> 
    <td> <p> Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -350,7 +353,7 @@ Questo modulo restituisce file da una cartella specificata.
   </tr> 
   <tr> 
    <td>[!UICONTROL Numero massimo di risultati restituiti]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,7 +365,7 @@ Questo modulo restituisce file da una cartella specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -370,11 +373,11 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p>Seleziona se desideri recuperare file, cartelle o entrambi.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Immettere o mappare la cartella contenente i file o le cartelle da elencare. È possibile specificare un percorso assoluto come <code>/home/user/</code>. Oppure puoi specificare un percorso relativo che punti a una cartella specifica dell’utente connesso, ad esempio <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL - Ricerca] </td> 
+   <td>[!UICONTROL Ricerca] </td> 
    <td> <p>Inserisci o mappa il termine di ricerca. Se ad esempio si desidera cercare file con estensione .txt, immettere <code>.txt</code>.È inoltre possibile immettere o mappare il nome del file che si desidera cercare.</p> </td> 
   </tr> 
   <tr> 
@@ -382,7 +385,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento  </td> 
+   <td>Ordinamento [!UICONTROL] </td> 
    <td> <p>Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -391,7 +394,7 @@ Questo modulo restituisce file da una cartella specificata.
   </tr> 
   <tr> 
    <td>[!UICONTROL Numero massimo di risultati restituiti]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -403,7 +406,7 @@ Questo modulo restituisce file da una cartella specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -426,7 +429,7 @@ Rinomina un file.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -449,7 +452,7 @@ Consente di modificare le autorizzazioni del file.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -457,7 +460,7 @@ Consente di modificare le autorizzazioni del file.
    <td> <p> Immettere il percorso del file che si desidera spostare. È possibile specificare un percorso assoluto come <code>/home/user/file.txt</code>. Oppure è possibile specificare un percorso relativo che punti a una cartella specifica dell'utente connesso, ad esempio <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissions]</p> </td> 
+   <td> <p>[!UICONTROL Autorizzazioni]</p> </td> 
    <td> <p>Imposta le autorizzazioni file desiderate. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
@@ -472,19 +475,19 @@ Questo modulo ti consente di caricare un file sul server SFTP.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL Connessione] </td>
    <td> <p>Per istruzioni sulla connessione dell'account SFTP a Workfront Fusion, vedi <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Connettere SFTP a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Specificare una cartella esistente come percorso di archiviazione del file. È possibile specificare un percorso assoluto come <code>/home/user/</code>. Oppure puoi specificare un percorso relativo che punti a una cartella specifica dell’utente connesso, ad esempio <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source File]</td> 
-   <td> <p> Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td>[!UICONTROL File di origine]</td> 
+   <td> <p> Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissions]</p> </td> 
+   <td> <p>[!UICONTROL Autorizzazioni]</p> </td> 
    <td> <p>Impostare le autorizzazioni desiderate per il file o la cartella. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
   </tr> 
   <tr> 

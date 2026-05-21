@@ -1,12 +1,15 @@
 ---
 title: XML
-description: L'app XML consente di analizzare un testo in formato XML tramite il modulo XML &gt; Analizza XML e convertirlo in un bundle per rendere i dati disponibili ad altri moduli. È inoltre possibile convertire un bundle in un testo in formato XML tramite il modulo &gt; Crea XML
+description: L'app XML consente di analizzare un testo in formato XML tramite il modulo XML > Analizza XML e convertirlo in un bundle per rendere i dati disponibili per altri moduli. È inoltre possibile convertire un bundle in un testo in formato XML tramite il modulo > Crea XML
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: 1433
 ht-degree: 8%
 
 ---
@@ -109,7 +112,7 @@ Un caso d&#39;uso tipico consiste nel trasformare i dati da un foglio di calcolo
    Un campo corrispondente all’attributo dell’array principale viene visualizzato come campo mappabile nella configurazione del modulo JSON.
 1. Fai clic sul pulsante **[!UICONTROL Mappa]** accanto al campo e mappa l&#39;elemento `Array[]` dell&#39;output [!UICONTROL Array aggregator] su di esso:
 1. Fare clic su **[!UICONTROL OK]** per chiudere la configurazione del modulo XML.
-1. Aprire la configurazione del modulo [!UICONTROL Array Aggregator]. Modificare la **[!UICONTROL struttura di destinazione]** da Personalizzato nel campo di un modulo XML corrispondente agli elementi XML padre.Mappare gli elementi del modulo [!DNL Google Sheets] nei campi appropriati.
+1. Aprire la configurazione del modulo [!UICONTROL Array Aggregator]. Modificare la **[!UICONTROL struttura di destinazione]** da Personalizzato nel campo di un modulo XML corrispondente all&#39;elemento XML padre.Mappare gli elementi dal modulo [!DNL Google Sheets] ai campi appropriati.
 1. Fare clic su **[!UICONTROL OK]** per chiudere la configurazione del modulo Aggregator della matrice.
 1. Esegui lo scenario.
 
@@ -218,7 +221,7 @@ Per scaricare un file XML da un URL e analizzarne il contenuto:
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL XML]</td> 
-      <td> <p>Mappa l'elemento <code>Data </code> dall'output del modulo [!UICONTROL HTTP] &gt; [!UICONTROL Ottieni un file] nel campo. Utilizzare la funzione <code>toString()</code> per convertire il relativo valore dal tipo di buffer  (dati binari) al tipo di dati [!UICONTROL Text].</p> <p>Puoi copiare e incollare il codice della formula nel campo: <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>Per ulteriori informazioni sui tipi di dati Buffer e Testo, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipi di dati elemento</a>.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
+      <td> <p>Mappa l'elemento <code>Data </code> dall'output del modulo [!UICONTROL HTTP] &gt; [!UICONTROL Ottieni un file] nel campo. Utilizzare la funzione <code>toString()</code> per convertire il relativo valore dal tipo di buffer [!UICONTROL] (dati binari) al tipo di dati [!UICONTROL Text].</p> <p>Puoi copiare e incollare il codice della formula nel campo: <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>Per ulteriori informazioni sui tipi di dati Buffer e Testo, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipi di dati elemento</a>.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
      </tr> 
     </tbody> 
    </table>

@@ -4,9 +4,12 @@ description: L’app JSON per Adobe Workfront Fusion fornisce moduli per elabora
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/hyUiO-ocxPsI8Wz0A34ZZ2LyBNbJWGrY5CbquHVQvHI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: 1230
 ht-degree: 14%
 
 ---
@@ -55,17 +58,17 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 La struttura dati descrive come sono organizzati i dati JSON e consente la mappatura di singoli elementi JSON ad altri moduli nello scenario. Se non fornisci la struttura Dati, puoi eseguire manualmente il modulo e Workfront Fusion ne creerà la struttura dal JSON fornito:
 
-1. Add the [!UICONTROL Parse JSON] module to a scenario.
-1. In the **[!UICONTROL JSON String]** field, enter the JSON from which you want to build a data structure.
-1. Do not connect other modules to the [!UICONTROL Parse JSON] module yet. Poiché Workfront Fusion non conosce ancora la struttura dei dati JSON, non è ancora possibile mappare i dati dal modulo [!UICONTROL Parse JSON] ad altri moduli nello scenario.
+1. Aggiungi il modulo [!UICONTROL Analizza JSON] a uno scenario.
+1. Nel campo **[!UICONTROL Stringa JSON]**, immetti il JSON da cui desideri creare una struttura di dati.
+1. Non connettere altri moduli al modulo [!UICONTROL Analizza JSON]. Poiché Workfront Fusion non conosce ancora la struttura dei dati JSON, non è ancora possibile mappare i dati dal modulo [!UICONTROL Parse JSON] ad altri moduli nello scenario.
 1. Esegui manualmente lo scenario. Questo consente al modulo [!UICONTROL Analizza JSON] di identificare la struttura JSON dal JSON fornito.
-1. You can now connect following modules. The items from the Parse JSON module are now available for mapping.
+1. È ora possibile collegare i seguenti moduli. Gli elementi del modulo JSON di analisi sono ora disponibili per la mappatura.
 
-For more information, see [Data structures in [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+Per ulteriori informazioni, vedere [Strutture dati in [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
-### Collection vs. Array
+### Confronto tra raccolta e array
 
-If the JSON string field contains a collection `{ ... }`, The output is a single bundle containing the items of the collection.
+Se il campo stringa JSON contiene una raccolta `{ ... }`, l&#39;output è un singolo bundle contenente gli elementi della raccolta.
 
 >[!BEGINSHADEBOX]
 
@@ -208,7 +211,7 @@ Questo modulo di azione analizza una stringa JSON in una struttura di dati, cons
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL JSON string] </td> 
-   <td> <p>Enter or map the JSON that you want to parse.</p> </td> 
+   <td> <p>Immetti o mappa il JSON da analizzare.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -223,16 +226,16 @@ Questo modulo di azione trasforma un oggetto in una stringa json.
  <tbody> 
   <tr> 
    <td role="rowheader">Rientro</td> 
-   <td> <p>Select the indentation you want to use for this JSON.</p> </td> 
+   <td> <p>Seleziona il rientro da utilizzare per questo JSON.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Oggetto]</td> 
-   <td> <p>Enter or map the object that you want to transform into JSON.</p> </td> 
+   <td> <p>Inserisci o mappa l’oggetto da trasformare in JSON.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Transforming data records to JSON
+## Trasformazione dei record di dati in JSON
 
 >[!BEGINSHADEBOX]
 
@@ -265,7 +268,7 @@ Questo modulo di azione trasforma un oggetto in una stringa json.
 
 1. Fai clic su **[!UICONTROL OK]** per chiudere la configurazione del modulo [!UICONTROL JSON].
 
-1. Aprire la configurazione del modulo [!UICONTROL Array Aggregator]. Cambia la struttura di destinazione **&#x200B;**&#x200B;da [!UICONTROL Personalizzato] al campo del modulo [!UICONTROL JSON] corrispondente all&#39;attributo dell&#39;array principale. Mappare gli elementi dal modulo [!DNL Google Sheets] ai campi appropriati.
+1. Aprire la configurazione del modulo [!UICONTROL Array Aggregator]. Cambia la struttura di destinazione **** da [!UICONTROL Personalizzato] al campo del modulo [!UICONTROL JSON] corrispondente all&#39;attributo dell&#39;array principale. Mappare gli elementi dal modulo [!DNL Google Sheets] ai campi appropriati.
 
 1. Fare clic su **[!UICONTROL OK]** per chiudere la configurazione del modulo [!UICONTROL Aggregator].
 

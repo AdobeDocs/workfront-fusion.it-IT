@@ -1,29 +1,33 @@
 ---
-title: Moduli Google Docs
+title: Moduli Google Documenti
 description: I moduli di Adobe Workfront Fusion [!DNL Google Docs] ti consentono di monitorare, creare, modificare e recuperare documenti nei tuoi [!DNL Google Docs] e [!DNL Google Docs] (per [!DNL Google Workspace] utenti).
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/8Ssu593A6Le2Z45BVg5T-wbj0Ld3z-efmO6JVRYk9n0
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4093'
-ht-degree: 0%
+source-wordcount: 4104
+ht-degree: 9%
 
 ---
 
-# [!DNL Google Docs] moduli
+# Moduli [!DNL Google Docs]
 
 I moduli di Adobe Workfront Fusion [!DNL Google Docs] consentono di monitorare, creare, modificare e recuperare documenti in [!DNL Google Docs] e [!DNL Google Docs] (per [!DNL Google Workspace] utenti).
 
 Per utilizzare [!DNL Google Docs] con Adobe Workfront Fusion, è necessario disporre di un account [!DNL Google]. Se non si dispone ancora di un account [!DNL Google], è possibile crearne uno nella pagina della guida dell&#39;account [!DNL Google].
 
-Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -31,31 +35,31 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,13 +90,13 @@ Il connettore Google Docs utilizza quanto segue:
  </tbody> 
  </table>
 
-## [!DNL Google Docs] moduli e relativi campi
+## Moduli [!DNL Google Docs] e relativi campi
 
-Quando configuri [!DNL Google Docs] moduli, [!UICONTROL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Google Docs], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri [!DNL Google Docs] moduli, [!UICONTROL Workfront Fusion] visualizza i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati altri campi di [!DNL Google Docs], a seconda di fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Documento
 
@@ -117,11 +121,11 @@ Questo modulo consente di creare un nuovo documento nella cartella selezionata.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name] </td> 
+   <td role="rowheader">[!UICONTROL Nome] </td> 
    <td> <p>Immettere un nome per il documento.</p> </td> 
   </tr> 
   <tr> 
@@ -157,7 +161,7 @@ Questo modulo di azione crea una copia di un documento modello esistente e sosti
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -182,7 +186,7 @@ Questo modulo di azione crea una copia di un documento modello esistente e sosti
    <td> <p>Mappa l’ID del modello se hai selezionato In base a mappatura oppure seleziona il percorso del modello e del modello.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Valori]</p> </td> 
    <td> <p>Per ogni tag per cui si desidera immettere un valore, fare clic su <b>Aggiungi elemento</b>, immettere il tag e immettere il valore che verrà immesso al posto del tag nel nuovo documento.</p> 
     <ul> 
      <li><strong>[!UICONTROL Tags]</strong> <br>Immettere i tag contenuti nel modello di documento. Non utilizzare <code>&#123;&#123;&#125;&#125;</code>. Esempio: utilizzare <code>name</code> invece di <code>&#123;&#123;name&#125;&#125;</code>.</li> 
@@ -195,7 +199,7 @@ Questo modulo di azione crea una copia di un documento modello esistente e sosti
     <ol> 
      <li value="1">Fai clic con il pulsante destro del mouse sull’immagine.</li> 
      <li value="2">Selezionare l'opzione [!UICONTROL ALT text].</li> 
-     <li value="3">Immettere il testo ALT  nel campo Titolo  e fare clic su [!UICONTROL OK].</li> 
+     <li value="3">Immettere il testo ALT [!UICONTROL] nel campo Titolo [!UICONTROL] e fare clic su [!UICONTROL OK].</li> 
     </ol> <p>Dopo aver aggiunto il testo ALT all'immagine, il testo ALT viene visualizzato tra parentesi nel nome del campo.</p> </td> 
   </tr> 
   <tr> 
@@ -223,7 +227,7 @@ Questo modulo di azione elimina un documento.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -255,7 +259,7 @@ Questo modulo consente di convertire e scaricare il documento selezionato.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -268,7 +272,7 @@ Questo modulo consente di convertire e scaricare il documento selezionato.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type] </p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Tipo] </p> </td> 
    <td> <p>Selezionare il formato di file di destinazione del documento scaricato.</p> </td> 
   </tr> 
  </tbody> 
@@ -285,7 +289,7 @@ Potrebbe essere necessario estendere le autorizzazioni.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -311,7 +315,7 @@ Potrebbe essere necessario estendere le autorizzazioni.
     <ul> 
      <li>[!UICONTROL Image] (impostazione predefinita)</li> 
      <li>[!UICONTROL Drawing]</li> 
-     <li>Grafico </li> 
+     <li>Grafico [!UICONTROL]</li> 
     </ul> <p>Nota:  <p>Per eseguire ulteriori mapping di questi oggetti, utilizzare il valore [!UICONTROL Inline Objects Array] nell'output di questo modulo (anziché [!UICONTROL inlineObjects]).</p> <p>Gli oggetti [!UICONTROL Inline Objects Array] vengono ordinati nello stesso ordine in cui vengono visualizzati nel documento. Semplificherà l’ulteriore elaborazione.</p> </p> </td> 
   </tr> 
  </tbody> 
@@ -326,7 +330,7 @@ Questo modulo di azione aggiunge o inserisce un nuovo paragrafo in un documento 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -385,7 +389,7 @@ Questo modulo di azione inserisce un’immagine dall’URL al documento.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -417,7 +421,7 @@ Questo modulo di azione inserisce un’immagine dall’URL al documento.
       <ul> 
        <li> <p><strong>[!UICONTROL Per indice]</strong> </p> 
         <ul> 
-         <li> <p><strong>[!UICONTROL Indice]</strong> </p> <p>Immettere il numero di indice in cui si desidera inserire l'immagine. È possibile utilizzare il modulo [!UICONTROL Get a Document] per recuperare il numero di indice .</p>  </li> 
+         <li> <p><strong>[!UICONTROL Indice]</strong> </p> <p>Immettere il numero di indice in cui si desidera inserire l'immagine. È possibile utilizzare il modulo [!UICONTROL Get a Document] per recuperare il numero di indice [!UICONTROL].</p>  </li> 
          <li> <p><strong>[!UICONTROL URL immagine]</strong> </p> <p>Immettere l'URL dell'immagine da inserire nel documento.</p> <p>La dimensione massima dell'immagine è di 50 MB. Non deve superare i 25 megapixel. È supportato solo il formato PNG, JPEG o GIF.</p> </li> 
         </ul> </li> 
        <li> <p><strong>[!UICONTROL Per ID segmento]</strong> </p> <p>Selezionare l'intestazione e il piè di pagina a cui si desidera inserire l'immagine e immettere l'URL dell'immagine nei campi corrispondenti.</p> <p>La dimensione massima dell'immagine è di 50 MB. L’immagine non deve superare i 25 megapixel. È supportato solo il formato PNG, JPEG o GIF.</p> </li> 
@@ -444,7 +448,7 @@ Questo modulo di azione recupera un elenco di documenti dalla cartella seleziona
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -457,7 +461,7 @@ Questo modulo di azione recupera un elenco di documenti dalla cartella seleziona
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Limite] </td> 
    <td> <p>Impostare il numero massimo di documenti restituiti da Workfront Fusion in un ciclo di esecuzione.</p> </td> 
   </tr> 
  </tbody> 
@@ -472,7 +476,7 @@ Questo modulo di azione sostituisce il testo di un documento.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -516,7 +520,7 @@ Questo modulo sostituisce un’immagine esistente. Vengono mantenute le proporzi
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -557,7 +561,7 @@ Questo modulo di attivazione restituisce i dettagli del documento quando viene c
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -574,7 +578,7 @@ Questo modulo di attivazione restituisce i dettagli del documento quando viene c
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Limite] </td> 
    <td> <p>Impostare il numero massimo di documenti restituiti da Workfront Fusion in un ciclo di esecuzione.</p> </td> 
   </tr> 
  </tbody> 
@@ -594,7 +598,7 @@ Questo modulo di azione trova tutti i collegamenti nel documento e li rende clic
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -634,28 +638,28 @@ Questo modulo di azione ti consente di eseguire una chiamata API personalizzata.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Google] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td> <p>Immettere un percorso relativo a <code>https://docs.googleapis.com/</code>. Esempio: <code>/v1/documents/{presentationID}</code>. </p> </td> 
+   <td> <p>Inserisci un percorso relativo a <code>https://docs.googleapis.com/</code>. Esempio: <code>/v1/documents/{presentationID}</code>. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> <p> </p> </td> 
+   <td role="rowheader">[!UICONTROL Metodo]</td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Ad esempio, <code>{"Content-type":"application/json"}</code>. Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
-   <td> <p> Immettere la stringa di query richiesta.</p> </td> 
+   <td role="rowheader">[!UICONTROL Stringa di query]</td> 
+   <td> <p> Inserisci la stringa di query della richiesta.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

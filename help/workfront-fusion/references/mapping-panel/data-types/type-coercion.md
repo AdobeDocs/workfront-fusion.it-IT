@@ -1,21 +1,23 @@
 ---
-title: Tipo coercizione
+title: Coercizione del tipo
 description: Questo documento descrive il comportamento di Adobe Workfront Fusion nelle situazioni in cui riceve valori in formati di dati previsti e imprevisti.
 author: Becky
 feature: Workfront Fusion
 exl-id: a8bdd36d-c01f-4019-a3ea-fb185101500e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/rqDQTI-IuOW95TbguHt-F2-4lugdaOfJf-7dcwXk5ZE
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 5%
+source-wordcount: 709
+ht-degree: 9%
 
 ---
 
-# Tipo coercizione
+# Coercizione del tipo
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 Per utilizzare le funzionalità di questo articolo, è necessario disporre dei seguenti diritti di accesso:
 
@@ -56,7 +58,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
 
 +++
 
-### Tipo coercizione
+### Coercizione del tipo
 
 Questo documento descrive il comportamento di Adobe Workfront Fusion nelle situazioni in cui riceve valori in formati di dati previsti e imprevisti.
 

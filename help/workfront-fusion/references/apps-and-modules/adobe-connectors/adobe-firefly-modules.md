@@ -4,9 +4,13 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 4e432e277c84f95b3792cb7c295cba41a5563244
+TQID: https://experienceleague.adobe.com/1hI4NuUl2eEAgWyXRKLHQ3-6MM9-2tFyujGbRfHSBmU
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3886'
+source-wordcount: 3886
 ht-degree: 15%
 
 ---
@@ -462,7 +466,7 @@ Questo modulo di azione genera un&#39;immagine utilizzando il modello di immagin
    <td>Fai clic su <b>Aggiungi elemento</b> e immetti o mappa un numero intero per riprodurre un risultato di generazione specifico. Lascia vuoto per generare un risultato casuale.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Motivo del prompt di *</td> 
+   <td role="rowheader">Motivo del prompt di [!UICONTROL]*</td> 
    <td>Selezionare la strategia di ragionamento rapida utilizzata durante la generazione.<ul><li><p><b>Qualità: genera la descrizione dell’immagine</b></p><p>Genera una descrizione immagine nell’output del modulo.</p></li><li><p><b>Velocità - Generazione più rapida, nessuna descrizione</b></p><p>Genera l’immagine più rapidamente, ma lascia vuota la descrizione dell’immagine.</p></li></ul></td> 
   </tr> 
   <tr> 
@@ -604,7 +608,7 @@ Questo modulo di azione genera un video da un prompt di testo. È inoltre possib
    <td>Fai clic su <b>Aggiungi elemento</b> e immetti o mappa le dimensioni del video generato.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Fattore di velocità in bit *</td> 
+   <td role="rowheader">Fattore di velocità in bit [!UICONTROL]*</td> 
    <td>Immettete un numero compreso tra 0 e 63 per specificare il fattore di bit rate del video generato.</td> 
   </tr> 
   <tr> 

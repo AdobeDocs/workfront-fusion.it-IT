@@ -4,10 +4,12 @@ description: La sezione  [!DNL Adobe Workfront Fusion Tools]  include diversi mo
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 0%
+source-wordcount: 2289
+ht-degree: 4%
 
 ---
 
@@ -19,7 +21,7 @@ I moduli [!UICONTROL Strumenti] sono disponibili dall&#39;elenco delle app o dal
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +29,22 @@ I moduli [!UICONTROL Strumenti] sono disponibili dall&#39;elenco delle app o dal
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -267,7 +269,7 @@ Questo modulo consente di recuperare i valori numerici, applicare una delle funz
    <td> <p>Seleziona il modulo da cui desideri aggregare i campi.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Funzione di aggregazione </p> </td> 
+   <td> <p>Funzione di aggregazione [!UICONTROL]</p> </td> 
    <td> <p>Selezionare la funzione da utilizzare per aggregare i valori.</p> </td> 
   </tr> 
   <tr> 
@@ -279,7 +281,7 @@ Questo modulo consente di recuperare i valori numerici, applicare una delle funz
    <td>Abilita questa opzione per interrompere lo scenario quando non ci sono risultati.</td> 
   </tr> 
   <tr> 
-   <td> <p>Valore </p> </td> 
+   <td> <p>[!UICONTROL Valore]</p> </td> 
    <td> <p>Immettere o mappare il valore da aggregare.</p> </td> 
   </tr> 
  </tbody> 
@@ -345,7 +347,7 @@ Questo modulo unisce in un singolo bundle i valori dei campi selezionati dei bun
    <td>Selezionare questa opzione per interrompere lo scenario quando non sono presenti risultati.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
+   <td>[!UICONTROL Testo]</td> 
    <td> <p> Inserisci o mappa il testo che desideri aggregare nel modulo.</p> </td> 
   </tr> 
  </tbody> 
@@ -372,7 +374,7 @@ Converte qualsiasi valore in un tipo di dati stringa (testo). Questo semplifica 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td role="rowheader">[!UICONTROL Testo]</td> 
    <td> <p>Immettere o mappare i dati da convertire in testo.</p> </td> 
   </tr> 
  </tbody> 

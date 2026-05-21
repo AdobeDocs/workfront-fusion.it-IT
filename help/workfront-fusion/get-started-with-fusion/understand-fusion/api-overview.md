@@ -3,10 +3,14 @@ title: Panoramica delle API
 description: Le interfacce API (Application Programming Interface) consentono le comunicazioni tra le applicazioni e i servizi. Fusion utilizza le API per comunicare con l’applicazione a cui ti connetti. Ciascuna applicazione dispone di un’API separata.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 74308a6a43418296b29739f03683f23357d545bc
+exl-id: 2629ff6e-2b76-44cd-8030-465724cc04bf
+TQID: https://experienceleague.adobe.com/LTJpx90BlcSJp-l1JieuH8Tr2ulGpLujwt50-5IYttY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 87%
+source-wordcount: 494
+ht-degree: 79%
 
 ---
 
@@ -32,7 +36,7 @@ Il fatto che le API siano definite dai rispettivi proprietari e non da Fusion im
 
   Per un elenco dei connettori universali, consulta [Connettori universali](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-* **Le modifiche apportate dal proprietario all’API di un’applicazione possono influire sulla funzionalità di Fusion.** Se le modifiche sono sufficientemente rilevanti, Fusion potrebbe dover aggiornare i moduli o i tipi di connessione, oppure, in casi estremi, potrebbe dover creare un nuovo connettore per l’applicazione.
+* **Le modifiche apportate dal proprietario all&#39;API di un&#39;applicazione possono influire sulla funzionalità Fusion.** Se le modifiche sono abbastanza severe, Fusion potrebbe dover aggiornare moduli o tipi di connessione oppure, in casi estremi, potrebbe creare un nuovo connettore per l&#39;applicazione.
 
   Per ulteriori informazioni su queste situazioni estreme, note come “breaking change”, consulta [Modifiche che introducono errori o incompatibilità](#breaking-changes) in questo articolo.
 

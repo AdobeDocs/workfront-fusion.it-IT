@@ -1,17 +1,19 @@
 ---
-title: Licenze Adobe Workfront Fusion
+title: Licenze di Adobe Workfront Fusion
 description: Adobe Workfront Fusion offre due diverse licenze che determinano la funzionalità a cui è possibile accedere. La tua organizzazione ha scelto una di queste licenze al momento dell’acquisto di Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHRpI5Q
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 1%
+source-wordcount: 767
+ht-degree: 2%
 
 ---
 
-# Licenze Adobe Workfront Fusion
+# Licenze di Adobe Workfront Fusion
 
 Workfront Fusion dispone di due modelli di licenze, un nuovo modello basato sulle operazioni e un modello basato su connettori legacy.
 

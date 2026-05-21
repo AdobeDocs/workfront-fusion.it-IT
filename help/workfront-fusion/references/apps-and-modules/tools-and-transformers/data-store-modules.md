@@ -1,13 +1,16 @@
 ---
-title: Moduli archivio dati
+title: Moduli per archivi dati
 description: Un archivio dati di Adobe Workfront Fusion, simile a un database o a una semplice tabella, può memorizzare i dati di scenari, rendendo possibile il trasferimento di dati tra scenari singoli o tra esecuzioni di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 0%
+source-wordcount: 1139
+ht-degree: 30%
 
 ---
 
@@ -25,7 +28,7 @@ Per un video introduttivo sugli archivi dati in Workfront Fusion, vedi:
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -33,22 +36,22 @@ Per un video introduttivo sugli archivi dati in Workfront Fusion, vedi:
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -66,9 +69,9 @@ Quando configuri i moduli Archivio dati, Workfront Fusion visualizza i campi ele
 
 Non è necessario creare una connessione per utilizzare gli archivi dati.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [Aggiungere/sostituire un record](#addreplace-a-record)
@@ -86,24 +89,24 @@ Questo modulo di azione aggiunge o sostituisce un record.
 
 Specificare l&#39;archivio dati e la chiave del record.
 
-Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui ha accesso la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 >[!NOTE]
 >
 >Il modulo genera un errore quando si tenta di aggiungere un record già presente nell&#39;archivio dati con lo stesso nome e l&#39;opzione [!UICONTROL Sovrascrivi un record esistente] è disabilitata.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chiave] </td> 
    <td> <p>Immettere la chiave univoca del record che si desidera venga aggiunto o sostituito dal modulo. La chiave può essere utilizzata in un secondo momento per recuperare il record. Se lasci vuoto questo campo, viene generata automaticamente una chiave.</p> </td> 
   </tr> 
   <tr> 
@@ -128,11 +131,11 @@ Specificare l&#39;archivio dati e la chiave del record.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chiave] </td> 
    <td> <p>Immettere la chiave univoca del record che si desidera che il modulo verifichi.</p> </td> 
   </tr> 
  </tbody> 
@@ -144,14 +147,14 @@ Questo modulo di azione numera i record in un archivio dati.
 
 Specifica l’archivio dati.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati contenente i record che si desidera conteggiare.</p> </td> 
   </tr> 
  </tbody> 
@@ -163,18 +166,18 @@ Questo modulo di azione elimina un record.
 
 Specificare l&#39;archivio dati e la chiave del record.
 
-Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui ha accesso la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chiave] </td> 
    <td> <p>Immettere la chiave univoca del record che si desidera eliminare dal modulo.</p> </td> 
   </tr> 
  </tbody> 
@@ -191,7 +194,7 @@ Specifica l’archivio dati.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati da cui si desidera eliminare tutti i record.</p> </td> 
   </tr> 
  </tbody> 
@@ -203,18 +206,18 @@ Questo modulo di azione recupera un record.
 
 Specificare l&#39;archivio dati e la chiave del record.
 
-Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui ha accesso la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare l'archivio dati da cui si desidera recuperare un record</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chiave] </td> 
    <td> <p>Immettere la chiave univoca del record che si desidera recuperare dal modulo.</p> </td> 
   </tr> 
  </tbody> 
@@ -224,16 +227,16 @@ Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a 
 
 Questo modulo di ricerca cerca i record in un oggetto nell’archivio dati che corrispondono alla query di ricerca specificata.
 
-Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Seleziona l’archivio dati in cui desideri eseguire la ricerca.</p> </td> 
   </tr> 
   <tr> 
@@ -242,10 +245,10 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Sort]</p> </td> 
-   <td> <p style="font-weight: normal;">Per ogni campo in base al quale si desidera eseguire l'ordinamento, compilare i campi seguenti:</p> <p style="font-weight: bold;">[!UICONTROL Key]</p> <p>Selezionare il nome della colonna in base al quale si desidera ordinare i risultati.</p> <p style="font-weight: bold;">[!UICONTROL Order]</p> <p>Seleziona se desideri ordinare i risultati in ordine crescente o decrescente.</p> </td> 
+   <td> <p style="font-weight: normal;">Per ogni campo in base al quale si desidera eseguire l'ordinamento, compilare i campi seguenti:</p> <p style="font-weight: bold;">[!UICONTROL Chiave]</p> <p>Selezionare il nome della colonna in base al quale si desidera ordinare i risultati.</p> <p style="font-weight: bold;">[!UICONTROL Order]</p> <p>Seleziona se desideri ordinare i risultati in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL Limite]</td> 
    <td> <p> Imposta il numero massimo di risultati di ricerca restituiti da Workfront Fusion durante un ciclo di esecuzione.</p> </td> 
   </tr> 
   <tr> 
@@ -261,20 +264,20 @@ Questo modulo di azione aggiorna un record.
 
 Specificare l&#39;archivio dati e la chiave del record.
 
-Il modulo restituisce l’ID del record ed eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui la connessione accede. Puoi mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme a eventuali campi e valori personalizzati a cui ha accesso la connessione. Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL Chiave] </td> 
    <td> <p>Immettere la chiave univoca del record che si desidera aggiornare nel modulo.</p> </td> 
   </tr> 
   <tr> 

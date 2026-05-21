@@ -1,19 +1,22 @@
 ---
 title: Moduli Dropbox
-description: In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano Dropbox e collegarli a più applicazioni e servizi di terze parti. In questo modo è possibile automatizzare attività quali il monitoraggio, la ricerca, il recupero, l'inserimento in un elenco, la creazione e la modifica di file e cartelle nel Dropbox.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Dropbox e collegarlo a più applicazioni e servizi di terze parti.In questo modo è possibile automatizzare attività quali il monitoraggio, la ricerca, il recupero, l'inserimento in un elenco, la creazione e la modifica di file e cartelle nel Dropbox.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: 3307
 ht-degree: 26%
 
 ---
 
 # Moduli [!DNL Dropbox]
 
-In uno scenario di Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!UICONTROL Dropbox] o [!DNL Dropbox Business], nonché collegarli a più applicazioni e servizi di terze parti. Ciò consente di automatizzare attività quali monitoraggio, ricerca, recupero, inserimento in elenco, creazione e modifica di file e cartelle in [!UICONTROL Dropbox].
+In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!UICONTROL Dropbox] o [!DNL Dropbox Business], nonché collegarli a più applicazioni e servizi di terze parti.In questo modo è possibile automatizzare attività quali il monitoraggio, la ricerca, il recupero, l&#39;elenco, la creazione e la modifica di file e cartelle in [!UICONTROL Dropbox].
 
 Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -125,10 +128,10 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
         <td>Immetti [!UICONTROL Dropbox] [!UICONTROL Client ID]. </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
-        <td>Immetti [!DNL Dropbox] [!UICONTROL Client Secret]. </td>
+        <td>Inserisci il tuo [!UICONTROL Client Secret] (Segreto client) [!DNL Dropbox]. </td>
         </tr>
         <tr>
-        <td role="rowheader">Tipo di account </td>
+        <td role="rowheader">Tipo di account [!UICONTROL]</td>
         <td>Seleziona se ti stai connettendo a un account Dropbox personale o a un account aziendale (Dropbox Business).</td>
         </tr>
         <tr>
@@ -138,7 +141,7 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
       </tbody>
     </table>
 
-1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.## [!DNL Dropbox] moduli e relativi campi
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.## moduli [!DNL Dropbox] e relativi campi
 
 ## Moduli [!DNL Dropbox] e relativi campi
 
@@ -456,11 +459,11 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p style="font-weight: bold;">[!UICONTROL Percorso File]</p> <p>Immettete o mappate il percorso del file di destinazione.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Selezionare il file di destinazione.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Visibilità richiesta </p> </td> 
+   <td> <p>Visibilità richiesta [!UICONTROL]</p> </td> 
    <td> <p>Seleziona se il collegamento è pubblico, per team o con password limitata.</p> <p><b>Nota:</b></p><p> [!UICONTROL Solo team] è disponibile solo per gli account Dropbox Business. [!UICONTROL Access with password] è disponibile solo per [!DNL Dropbox Pro] o account Dropbox Business.</p> </td> 
   </tr> 
   <tr> 
-   <td>Data di scadenza del collegamento </td> 
+   <td>Data di scadenza del collegamento [!UICONTROL]</td> 
    <td> <p> Immetti la data e l’ora in cui il collegamento scadrà e non sarà più accessibile. Se questo campo viene lasciato vuoto, il collegamento non scade. Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercizione del tipo</a>.</p>  </td> 
   </tr> 
   <tr> 
@@ -676,7 +679,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
   </tr> 
   <tr> 
    <td>[!UICONTROL Stringa di query]</td> 
-   <td> <p> Immettere la stringa di query richiesta.</p> </td> 
+   <td> <p> Inserisci la stringa di query della richiesta.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Corpo] </td> 

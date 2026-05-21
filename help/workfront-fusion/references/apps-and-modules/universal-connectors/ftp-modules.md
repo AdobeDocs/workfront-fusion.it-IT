@@ -4,10 +4,13 @@ description: I moduli FTP consentono di monitorare le modifiche apportate ai fil
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/gEM0-dJD4FYvu9TFvxoDtriimtlk001zevih7KnhKJE
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 0%
+source-wordcount: 1404
+ht-degree: 15%
 
 ---
 
@@ -17,7 +20,7 @@ I moduli FTP consentono di monitorare le modifiche apportate ai file in una cart
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +28,31 @@ I moduli FTP consentono di monitorare le modifiche apportate ai file in una cart
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -67,16 +70,16 @@ Per utilizzare i moduli FTP, è necessario disporre di un account con un servizi
     <col> 
     <tbody> 
      <tr> 
-      <td>[!UICONTROL Nome connessione]</td> 
+      <td>[!UICONTROL Connection name] (Nome della connessione)</td> 
       <td> <p> Immetti il nome della connessione FTP.</p> </td> 
      </tr> 
      <tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Ambiente]</p> </td> 
       <td> <p>Seleziona se utilizzi un ambiente di produzione o non di produzione.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL Tipo]</p> </td> 
       <td> <p>Seleziona se utilizzi un account di servizio o un account personale.</p> </td> 
      </tr> 
      <tr> 
@@ -84,7 +87,7 @@ Per utilizzare i moduli FTP, è necessario disporre di un account con un servizi
       <td> <p>Immetti il nome host del server FTP. Esempio: <code>myftp123.server.com</code></p> </td> 
      </tr> 
      <tr> 
-      <td>Porta  </td> 
+      <td>Porta [!UICONTROL] </td> 
       <td> <p>Immettere il numero di porta del server FTP. Esempio: <code>21</code></p> </td> 
      </tr> 
      <tr> 
@@ -133,11 +136,11 @@ Per utilizzare i moduli FTP, è necessario disporre di un account con un servizi
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#create-a-connection" class="MCXref xref">[!UICONTROL Create a connection] in un modulo FTP</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Folder]</p> </td> 
+   <td> <p>[!UICONTROL Cartella]</p> </td> 
    <td> <p>Seleziona la cartella da controllare.</p> <p><b>Nota:</b> è consentita una sola cartella per scenario. Le sottocartelle vengono ignorate.</p> <p><b>Suggerimento:</b> Per controllare più cartelle, crea uno scenario separato per ciascuna di esse.</p> </td> 
   </tr> 
   <tr> 
@@ -167,7 +170,7 @@ Questo modulo di azione modifica le impostazioni delle autorizzazioni di un file
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Connection]</td>
+            <td>[!UICONTROL Connessione]</td>
             <td>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] in un modulo FTP</a> in questo articolo.</td>
          </tr>
          <tr>
@@ -181,7 +184,7 @@ Questo modulo di azione modifica le impostazioni delle autorizzazioni di un file
             <td>Immettere o mappare il percorso del file alla cartella o al file.</td>
          </tr>
          <tr>
-            <td>[!UICONTROL Permissions]</td>
+            <td>[!UICONTROL Autorizzazioni]</td>
             <td>
                <p>Imposta le autorizzazioni per il file o la cartella desiderate. Utilizzare i parametri chmod. Ad esempio: <code>777 </code> o <code>-rwxrwxrwx</code>.</p>
                <p>Le autorizzazioni devono corrispondere al pattern <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code>.</p>
@@ -199,7 +202,7 @@ Questo modulo di azione crea una nuova cartella.
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Connection]</td>
+            <td>[!UICONTROL Connessione]</td>
             <td>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] in un modulo FTP</a> in questo articolo.</td>
          </tr>
          <tr>
@@ -209,7 +212,7 @@ Questo modulo di azione crea una nuova cartella.
          <tr>
             <td>[!UICONTROL Nome nuova cartella]</td>
             <td>
-               <p>Immettere o mappare un nome per la nuova cartella.</p>
+               <p>Inserisci oppure mappa un nome per la nuova cartella.</p>
             </td>
          </tr>
    </tbody>
@@ -224,11 +227,11 @@ Questo modulo di azione elimina un file dalla cartella specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
             <td>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] in un modulo FTP</a> in questo articolo.</td>
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Selezionare la cartella FTP da cui si desidera eliminare un file.</p> </td> 
   </tr> 
   <tr> 
@@ -247,11 +250,11 @@ Questo modulo di azione elimina definitivamente la cartella specificata.
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Connection]</td>
+            <td>[!UICONTROL Connessione]</td>
             <td>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] in un modulo FTP</a> in questo articolo.</td>
          </tr>
          <tr>
-            <td>[!UICONTROL Folder]</td>
+            <td>[!UICONTROL Cartella]</td>
             <td>
                <p>Selezionare la cartella FTP da cui si desidera eliminare un file.</p>
             </td>
@@ -268,7 +271,7 @@ Questo modulo di azione recupera un file dal server FTP.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#creating-the-ftp-connection" class="MCXref xref">Creazione della connessione FTP</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -287,11 +290,11 @@ Questo modulo di azione recupera le informazioni sul file e/o sulla cartella.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td> <p>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#creating-the-ftp-connection" class="MCXref xref">Creazione della connessione FTP</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Seleziona la cartella FTP in cui desideri eseguire la ricerca.</p> </td> 
   </tr> 
   <tr> 
@@ -299,7 +302,7 @@ Questo modulo di azione recupera le informazioni sul file e/o sulla cartella.
    <td> <p>Specificare se si desidera recuperare informazioni su file, cartelle o entrambi.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL - Ricerca] </td> 
+   <td>[!UICONTROL Ricerca] </td> 
    <td> <p>Immettere il termine di ricerca. Se non viene immesso alcun termine di ricerca, verranno recuperati tutti i file o le cartelle della cartella specificata.</p> </td> 
   </tr> 
   <tr> 
@@ -318,7 +321,7 @@ Questo modulo di azione sposta un file o una cartella in una posizione diversa.
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL Connection]</td>
+            <td>[!UICONTROL Connessione]</td>
             <td>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#Create" class="MCXref xref" >[!UICONTROL Create a connection] in un modulo FTP</a> in questo articolo.</td>
          </tr>
          <tr>
@@ -337,7 +340,7 @@ Questo modulo di azione sposta un file o una cartella in una posizione diversa.
 </table>
 
 
-#### [!UICONTROL Carica un file]
+#### [!UICONTROL Caricare un file]
 
 Carica un file sul server FTP.
 
@@ -346,16 +349,16 @@ Carica un file sul server FTP.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connessione] </td> 
    <td>Per istruzioni su come stabilire una connessione all'account FTP, vedere <a href="#creating-the-ftp-connection" class="MCXref xref">Creazione della connessione FTP</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL Cartella] </td> 
    <td> <p>Selezionare la cartella FTP in cui si desidera caricare il file.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file] </td> 
-   <td> <p>Selezionare un file di origine da un modulo precedente o mappare il nome e i dati del file di origine.</p> </td> 
+   <td>[!UICONTROL File di origine] </td> 
+   <td> <p>Seleziona un file di origine da un modulo precedente oppure mappa il nome e i dati del file di origine.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Aggiungi a un file già esistente]</td> 

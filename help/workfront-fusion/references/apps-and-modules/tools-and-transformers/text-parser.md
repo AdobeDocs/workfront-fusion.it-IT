@@ -4,9 +4,12 @@ description: È possibile utilizzare lo strumento parser di testo per analizzare
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
+TQID: https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: 1324
 ht-degree: 11%
 
 ---
@@ -183,7 +186,7 @@ Una discussione sulle espressioni regolari va oltre lo scopo di questo articolo.
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>Abilitare questa opzione per assicurarsi che il punto (.) corrisponda ai caratteri di nuova riga (<code>\n</code>).</td> 
+   <td>Abilita questa opzione per garantire che il periodo (.) corrisponde ai caratteri di nuova riga (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continua l'esecuzione della route anche se il modulo non restituisce alcun risultato]</td> 
@@ -226,7 +229,7 @@ Cerca un valore o un&#39;espressione regolare specificata nel testo immesso e so
   </tr> 
   <tr> 
    <td>[!UICONTROL Singleline]</td> 
-   <td>Abilitare questa opzione per assicurarsi che il punto (.) corrisponda ai caratteri di nuova riga (<code>\n</code>).</td> 
+   <td>Abilita questa opzione per garantire che il periodo (.) corrisponde ai caratteri di nuova riga (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Testo] </td> 
@@ -263,7 +266,7 @@ Il motivo è che la &quot;i&quot; mostra solo il numero di corrispondenze per pa
 
 ![Corrispondenza](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
-Per ottenere i valori di corrispondenza necessari per aggiungere parentesi alla parte che si desidera analizzare, ad esempio per estrarre da &quot;filename.docx&quot; - solo &quot;docx&quot;, in base all&#39;espressione regex utilizzata per questo scenario, le parentesi devono essere applicate a \.(.+)
+Per ottenere i valori di corrispondenza necessari per aggiungere parentesi alla parte da analizzare, ad esempio per estrarre da &quot;filename.docx&quot; - solo &quot;docx&quot;, in base all&#39;espressione regex utilizzata per questo scenario, le parentesi devono essere applicate a \.(.+)
 
 Questo acquisisce il DOCX, lo inserisce in un gruppo e lascia il &quot;.&quot; fuori di esso.
 

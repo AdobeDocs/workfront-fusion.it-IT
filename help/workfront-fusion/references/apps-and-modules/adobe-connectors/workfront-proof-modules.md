@@ -4,10 +4,13 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/PE6mgMsKjoQLz5JeXx6EN-xYsm-x1DpaIrtHBnRE1PY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 22%
+source-wordcount: 3117
+ht-degree: 23%
 
 ---
 
@@ -110,7 +113,7 @@ Puoi creare una connessione al tuo account [!DNL Workfront Proof] direttamente d
                 <td><strong>Nota</strong>: i clienti che non utilizzano BYOK devono lasciare vuoto questo campo. <p>Immetti l’ID tenant per questo account. Se hai bisogno di aiuto per trovare l’ID tenant, contatta l’Assistenza clienti Workfront.</p></td>
             </tr>
             <tr>
-                <td role="rowheader">Estensione di dominio </td>
+                <td role="rowheader">Estensione di dominio [!UICONTROL]</td>
                 <td>Immetti l’estensione per l’URL utilizzato per accedere al tuo account. <p>Esempio: <code>com</code> o <code>eu</code></p></td>
             </tr>
             <tr>
@@ -259,8 +262,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Workfront Proof] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>Tipo di bozza </td> 
-   <td> <p>Specifica se la bozza creata deve avere un flusso di lavoro di base o un flusso di lavoro automatico .</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Flusso di lavoro automatico], compila il campo <strong>[!UICONTROL Fasi del flusso di lavoro]</strong> per configurare le fasi.</p></td> 
+   <td>Tipo di bozza [!UICONTROL]</td> 
+   <td> <p>Specifica se la bozza creata deve avere un flusso di lavoro di base o un flusso di lavoro automatico [!UICONTROL].</p> <p>Compila quindi i campi visualizzati per il tipo di bozza scelto. Ad esempio, se hai scelto [!UICONTROL Flusso di lavoro automatico], compila il campo <strong>[!UICONTROL Fasi del flusso di lavoro]</strong> per configurare le fasi.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Consenti il download del file originale]</td> 
@@ -279,7 +282,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td>Seleziona questa opzione se desideri che il modulo crei una nuova versione di una bozza esistente. Quindi, nel campo <strong>[!UICONTROL ID bozza esistente]</strong> che visualizza, mappa o immetti l'ID univoco della bozza.</td> 
   </tr> 
   <tr> 
-   <td>Etichetta collegamento personalizzato </td> 
+   <td>Etichetta collegamento personalizzato [!UICONTROL]</td> 
    <td>Inserisci o mappa un’etichetta per il collegamento della bozza personalizzata.</td> 
   </tr> 
   <tr> 
@@ -433,7 +436,7 @@ Questo modulo di azione scarica il file sorgente di una particolare bozza che id
 
 Specifica l’ID della bozza.
 
-Il modulo restituisce il contenuto del file di origine utilizzato per creare la bozza.È possibile mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce il contenuto del file di origine utilizzato per creare la bozza.Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 Per recuperare queste informazioni, è necessario disporre di autorizzazioni sufficienti per accedere al record in [!DNL Workfront Proof].
 
@@ -559,14 +562,14 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
     <ul>
      <li> [!UICONTROL Tutti i nuovi commenti e risposte]</li>
      <li>[!UICONTROL Risponde ai miei commenti]</li>
-     <li>Riepilogo giornaliero di </li>
-     <li> Riepilogo orario </li>
+     <li>Riepilogo giornaliero di [!UICONTROL]</li>
+     <li> Riepilogo orario [!UICONTROL]</li>
      <li> [!UICONTROL Decisions only]</li>
      <li> [!UICONTROL Disabilitato]</li>
     </ul></td> 
   </tr> 
   <tr> 
-   <td>Ruolo predefinito di </td> 
+   <td>Ruolo predefinito di [!UICONTROL]</td> 
    <td>Seleziona il ruolo predefinito per la bozza.</td> 
   </tr> 
   <tr> 
@@ -575,7 +578,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
   </tr> 
   <tr> 
    <td>[!UICONTROL - Abilita sottoscrizioni]</td> 
-   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo Ruolo predefinito di .</td> 
+   <td>Seleziona se consentire agli utenti non partecipanti di abbonarsi alla bozza.<br>Se si seleziona questa opzione, è anche possibile selezionare un'opzione nel campo Ruolo predefinito di [!UICONTROL].</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Abilita convalida sottoscrizioni]</td> 
@@ -598,7 +601,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td>Inserisci o mappa l’ID della bozza da aggiornare.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Nome bozza]</td> 
+   <td>[!UICONTROL Nome della bozza]</td> 
    <td>Inserisci o mappa il nome della bozza da aggiornare.</td> 
   </tr> 
   <tr> 
@@ -671,7 +674,7 @@ Questo modulo di ricerca elenca tutti i modelli di flusso di lavoro disponibili.
 
 Questo modulo di ricerca cerca i record in un oggetto in [!DNL Workfront Proof] che corrispondono alla query di ricerca specificata.
 
-Il modulo restituisce l’ID della bozza se sta cercando una bozza. In alternativa, restituisce gli ID utente, le e-mail, i nomi, le posizioni e gli alias e-mail dei destinatari, se è in corso la ricerca dei destinatari. È possibile mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID della bozza se sta cercando una bozza. In alternativa, restituisce gli ID utente, le e-mail, i nomi, le posizioni e gli alias e-mail dei destinatari, se sta cercando i destinatari.Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 Per recuperare queste informazioni, è necessario disporre di autorizzazioni sufficienti per accedere al record in [!DNL Workfront Proof].
 

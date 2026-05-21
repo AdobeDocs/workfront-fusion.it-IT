@@ -4,10 +4,14 @@ description: Chiamare l’API REST di MS Graph tramite Adobe Workfront Fusion HT
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/EhrbH3ohTVdBxnrbfVI8Uwqq7j8BfCrdWvEn7Y0pe4A
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 3%
+source-wordcount: 719
+ht-degree: 24%
 
 ---
 
@@ -17,7 +21,7 @@ Molti servizi web di Microsoft sono accessibili tramite l’API di Microsoft Gra
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,31 +29,31 @@ Molti servizi web di Microsoft sono accessibili tramite l’API di Microsoft Gra
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -126,7 +130,7 @@ Dopo aver registrato Workfront Fusion come descritto in [Registrare Workfront Fu
     <tbody> 
      <tr> 
       <td role="rowheader">Nome connessione</td> 
-      <td>Immettere un nome per la connessione.</td> 
+      <td>Specifica un nome per la connessione.</td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p role="rowheader">Ambiente</p> </td> 
@@ -134,7 +138,7 @@ Dopo aver registrato Workfront Fusion come descritto in [Registrare Workfront Fu
      </tr> 
      <tr> 
       <td role="rowheader"> <p role="rowheader">Tipo</p> </td> 
-      <td>Specificare se ci si connette a un account di servizio o a un account personale. </td> 
+      <td>Specifica se ti connetti a un account di servizio o a un account personale. </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p role="rowheader">Tipo di flusso</p> </td> 
@@ -196,5 +200,5 @@ Dopo aver registrato Workfront Fusion come descritto in [Registrare Workfront Fu
     </tbody> 
    </table>
 
-1. Fai clic su **Continua**.
+1. Fai clic su **Continue** (Continua).
 1. Nella finestra visualizzata, fai clic su **Accetta** per completare la connessione e tornare al modulo.
