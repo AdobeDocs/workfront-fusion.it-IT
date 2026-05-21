@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
 TQID: https://experienceleague.adobe.com/YscMl6qY47zJvwOieRmWg5rW-RaMnQ69R-b0tjB-FA4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 4184
@@ -157,7 +160,7 @@ Questo modulo di azione copia un file in un nuovo percorso di cartella
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Immettere l'ID dell'unità che contiene il file o la cartella da copiare.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito SharePoint contenente il file che si desidera spostare. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito SharePoint contenente il file che si desidera spostare. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo la cui unità contiene il file da copiare.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -186,13 +189,13 @@ Questo modulo di azione copia un file in un nuovo percorso di cartella
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Immettere l'ID dell'unità in cui copiare il file.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito [!DNL SharePoint] in cui copiare il file. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito [!DNL SharePoint] in cui copiare il file. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo di cui si desidera copiare il file.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID unità]</td> 
-   <td> <p>Selezionare o mappare l'unità contenente la cartella in cui si desidera copiare il file. Questo campo non è disponibile se è stato selezionato [!UICONTROL No] nel campo [!UICONTROL Attiva per immettere un ID unità].</p> <p>Se si lascia vuoto questo campo, il file o la cartella può essere copiato solo nello stesso [!UICONTROL OneDrive].</p> <p>È possibile copiare file e cartelle da [!UICONTROL Unità personale] in un'unità del sito [!UICONTROL Unità del sito] o in un'unità del gruppo [!UICONTROL]. </p> <p>È possibile copiare i file da un'unità del sito [!UICONTROL] solo nella stessa unità nello stesso sito.</p> <p>È possibile copiare i file da un'unità del gruppo [!UICONTROL] solo nella stessa unità dello stesso gruppo.</p> </td> 
+   <td> <p>Selezionare o mappare l'unità contenente la cartella in cui si desidera copiare il file. Questo campo non è disponibile se è stato selezionato [!UICONTROL No] nel campo [!UICONTROL Attiva per immettere un ID unità].</p> <p>Se si lascia vuoto questo campo, il file o la cartella può essere copiato solo nello stesso [!UICONTROL OneDrive].</p> <p>È possibile copiare file e cartelle da [!UICONTROL Unità personale] in un'unità del sito [!UICONTROL Unità del sito] o in un'unità del gruppo . </p> <p>È possibile copiare i file da un'unità del sito  solo nella stessa unità nello stesso sito.</p> <p>È possibile copiare i file da un'unità del gruppo  solo nella stessa unità dello stesso gruppo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cartella]</td> 
@@ -226,7 +229,7 @@ Questo modulo di azione crea una nuova cartella nell&#39;unità specificata.
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Selezionare l'unità in cui si desidera creare una cartella.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito [!DNL SharePoint] in cui creare una cartella. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito [!DNL SharePoint] in cui creare una cartella. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo proprietario dell'unità in cui si desidera creare una cartella.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -282,7 +285,7 @@ Questo modulo di azione elimina il file o la cartella selezionata.
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Immettere l'ID dell'unità che contiene il file o la cartella che si desidera eliminare.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito [!DNL SharePoint] contenente il file o la cartella che si desidera eliminare. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito [!DNL SharePoint] contenente il file o la cartella che si desidera eliminare. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo la cui unità contiene il file o la cartella che si desidera eliminare.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -334,7 +337,7 @@ Questo modulo di azione scarica il file specificato.
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Immettere l'ID dell'unità che contiene il file da scaricare.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito SharePoint contenente il file che si desidera scaricare. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito SharePoint contenente il file che si desidera scaricare. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo la cui unità contiene il file da scaricare.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -422,7 +425,7 @@ Questo modulo di azione ottiene i metadati di un file specificato.
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Immettere l'ID dell'unità che contiene il file che si desidera ottenere.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito SharePoint contenente il file che si desidera ottenere. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito SharePoint contenente il file che si desidera ottenere. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo la cui unità contiene il file che si desidera ottenere.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -470,7 +473,7 @@ Questo modulo di azione restituisce un collegamento di condivisione per il file 
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Immettere l'ID dell'unità contenente il file per il quale si desidera recuperare un collegamento di condivisione.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito SharePoint contenente il file per il quale si desidera recuperare un collegamento di condivisione. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito SharePoint contenente il file per il quale si desidera recuperare un collegamento di condivisione. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo la cui unità contiene il file per il quale si desidera recuperare un collegamento di condivisione.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -526,7 +529,7 @@ Questo modulo di azione sposta un file o una cartella in una nuova posizione
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Immettere l'ID dell'unità che contiene il file o la cartella che si desidera spostare.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito [!DNL SharePoint] contenente il file o la cartella che si desidera spostare. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito [!DNL SharePoint] contenente il file o la cartella che si desidera spostare. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo la cui unità contiene il file o la cartella che si desidera spostare.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -559,13 +562,13 @@ Questo modulo di azione sposta un file o una cartella in una nuova posizione
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Immettere l'ID dell'unità in cui spostare il file o la cartella.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito [!DNL SharePoint] in cui spostare il file o la cartella. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito [!DNL SharePoint] in cui spostare il file o la cartella. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo di cui si desidera spostare il file o la cartella.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID unità]</td> 
-   <td> <p>Selezionare o mappare l'unità contenente la cartella in cui si desidera spostare il file o la cartella. Questo campo non è disponibile se è stato selezionato [!UICONTROL No] nel campo [!UICONTROL Attiva per immettere un ID unità].</p> <p>Se si lascia vuoto questo campo, il file o la cartella può essere spostato solo all'interno dello stesso [!DNL OneDrive].</p> <p>È possibile spostare file e cartelle da [!UICONTROL Unità personale] a un'unità del sito [!UICONTROL Unità] o a un'unità del gruppo [!UICONTROL]. </p> <p>È possibile spostare i file da un'unità di un sito [!UICONTROL] solo nella stessa unità nello stesso sito.</p> <p>È possibile spostare i file dall'unità di un gruppo [!UICONTROL] solo alla stessa unità nello stesso gruppo.</p> </td> 
+   <td> <p>Selezionare o mappare l'unità contenente la cartella in cui si desidera spostare il file o la cartella. Questo campo non è disponibile se è stato selezionato [!UICONTROL No] nel campo [!UICONTROL Attiva per immettere un ID unità].</p> <p>Se si lascia vuoto questo campo, il file o la cartella può essere spostato solo all'interno dello stesso [!DNL OneDrive].</p> <p>È possibile spostare file e cartelle da [!UICONTROL Unità personale] a un'unità del sito [!UICONTROL Unità] o a un'unità del gruppo . </p> <p>È possibile spostare i file da un'unità di un sito  solo nella stessa unità nello stesso sito.</p> <p>È possibile spostare i file dall'unità di un gruppo  solo alla stessa unità nello stesso gruppo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cartella]</td> 
@@ -596,7 +599,7 @@ Questo modulo di ricerca restituisce file e cartelle in base ai criteri impostat
        <li> <p><b>[!UICONTROL No]</b> </p> <p>Passa alla cartella in cui desideri eseguire la ricerca nel modulo. Puoi anche inserire una query per filtrare i risultati restituiti.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Condiviso Con Me]</b> </p> <p>Il modulo cerca i file che sono stati condivisi con il proprietario dell'unità.</p> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito [!DNL SharePoint] in cui si desidera eseguire la ricerca nel modulo. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito [!DNL SharePoint] in cui si desidera eseguire la ricerca nel modulo. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo di cui si desidera cercare l'unità del modulo.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -636,7 +639,7 @@ Questo modulo di azione carica un file nella cartella specificata.
        <li> <p><b>[!UICONTROL Sì]</b> </p> <p>Selezionare l'unità contenente il file che si desidera ottenere.</p> </li> 
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Selezionare il sito [!DNL SharePoint] contenente la cartella in cui si desidera caricare un file. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Selezionare il sito [!DNL SharePoint] contenente la cartella in cui si desidera caricare un file. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo la cui unità contiene la cartella in cui si desidera caricare un file.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -689,7 +692,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
        <li> <p><b>[!UICONTROL No]</b> </p> <p>Passare alla cartella che si desidera controllare nel modulo. Puoi anche inserire una query per filtrare i risultati restituiti.</p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Condiviso Con Me]</b> </p> <p>Il modulo controlla i file condivisi con il proprietario dell'unità.</p> </li> 
-     <li> <p><b>[!Unità sito UICONTROL]</b> </p> <p>Seleziona il sito SharePoint che desideri che il modulo controlli. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
+     <li> <p><b>[!UICONTROL Unità sito]</b> </p> <p>Seleziona il sito SharePoint che desideri che il modulo controlli. I Siti disponibili sono Siti seguiti dall'utente connesso.</p> </li> 
      <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Selezionare il gruppo di cui si desidera controllare l'unità del modulo.</p> </li> 
     </ul> </td> 
   </tr> 

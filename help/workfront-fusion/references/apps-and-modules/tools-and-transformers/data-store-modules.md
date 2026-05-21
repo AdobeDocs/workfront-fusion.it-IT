@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
 TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1139
@@ -102,7 +104,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL]</td> 
+   <td>Archivio dati </td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 
@@ -131,7 +133,7 @@ Specificare l&#39;archivio dati e la chiave del record.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL] </td> 
+   <td>Archivio dati  </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -154,7 +156,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL] </td> 
+   <td>Archivio dati  </td> 
    <td> <p>Selezionare l'archivio dati contenente i record che si desidera conteggiare.</p> </td> 
   </tr> 
  </tbody> 
@@ -173,7 +175,7 @@ Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL] </td> 
+   <td>Archivio dati  </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -194,7 +196,7 @@ Specifica l’archivio dati.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL] </td> 
+   <td>Archivio dati  </td> 
    <td> <p>Selezionare l'archivio dati da cui si desidera eliminare tutti i record.</p> </td> 
   </tr> 
  </tbody> 
@@ -213,7 +215,7 @@ Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL]</td> 
+   <td>Archivio dati </td> 
    <td> <p> Selezionare l'archivio dati da cui si desidera recuperare un record</p> </td> 
   </tr> 
   <tr> 
@@ -236,7 +238,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL]</td> 
+   <td>Archivio dati </td> 
    <td> <p> Seleziona l’archivio dati in cui desideri eseguire la ricerca.</p> </td> 
   </tr> 
   <tr> 
@@ -273,7 +275,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati [!UICONTROL]</td> 
+   <td>Archivio dati </td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 

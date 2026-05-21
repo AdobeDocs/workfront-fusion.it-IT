@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
 TQID: https://experienceleague.adobe.com/JYHqJHWDLrc6DDe6L8UwgKUCU0nxXib0ESCGYdMz4nQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2612
@@ -504,7 +507,7 @@ Questo modulo di azione crea un nuovo set di dati.
       <td>Seleziona o mappa l’ID del gruppo proprietario del nuovo set di dati.</td>
     </tr>
     <tr>
-      <td role="rowheader">Modalità predefinita [!UICONTROL]</td>
+      <td role="rowheader">Modalità predefinita </td>
       <td>
         <p>Seleziona o mappa la modalità predefinita per il set di dati:</p>
         <ul>
@@ -618,7 +621,7 @@ Questo modulo di azione crea un nuovo set di dati.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Database [!UICONTROL]  </td>
+      <td role="rowheader">Database   </td>
       <td>
         <p>Immettere o mappare il database che si desidera utilizzare.</p>
       </td>
@@ -642,7 +645,7 @@ Questo modulo di azione crea un nuovo set di dati.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di origine dati [!UICONTROL]  </td>
+      <td role="rowheader">Tipo di origine dati   </td>
       <td>
         <p>Selezionare o mappare il tipo di origine dati. Esempio: SQL.</p>
       </td>

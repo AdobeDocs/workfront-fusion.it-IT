@@ -6,8 +6,10 @@ draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
 TQID: https://experienceleague.adobe.com/Dq7tbOvvEndH-6k3yX8AvH29kZxp748JeT1HW-zcDDQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 657
@@ -93,11 +95,11 @@ Puoi creare una connessione al tuo account [!DNL MariaDB] direttamente da un mod
       <td> <p>Immettere l'indirizzo IP o il nome host dell'istanza di database. L'host deve essere accessibile dall'esterno della rete.</p> <p>Esempio: <code>[!DNL mariadb.hwoh2j5h.us-east-1.rds.amazon.com]</code></p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Porta [!UICONTROL]</td> 
+      <td role="rowheader">Porta </td> 
       <td>La porta predefinita è 3306. Se si utilizza una porta non standard, impostare questo numero sulla porta. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Database ]</td> 
+      <td role="rowheader">[!UICONTROL Database &#x200B;]</td> 
       <td>Immettere il nome del database con cui si desidera interagire.</td> 
      </tr> 
      <tr> 
@@ -153,7 +155,7 @@ Questo modulo legge i record dal database.
    <td>Per istruzioni sulla connessione dell’account [!DNL MariaDB] a Workfront Fusion, consulta <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Connettere [!DNL MariaDB] a Workfront Fusion</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tabella [!UICONTROL]</td> 
+   <td role="rowheader">Tabella </td> 
    <td> <p>Selezionare la tabella contenente i record che si desidera leggere.</p> </td> 
   </tr> 
   <tr> 
