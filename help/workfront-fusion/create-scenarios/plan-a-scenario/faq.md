@@ -4,10 +4,13 @@ description: Le informazioni contenute in questo articolo possono essere utili q
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/PQablbYLDlXlY5mc7qMAXMrXnUeeHA6sSc-aMVHa6HY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 1%
+source-wordcount: 554
+ht-degree: 5%
 
 ---
 
@@ -21,7 +24,7 @@ Le informazioni contenute in questo articolo possono essere utili quando si iniz
 
 Uno scenario definisce una sequenza di passaggi che devono essere eseguiti da Adobe Workfront Fusion. Per ogni scenario, specificare l&#39;origine dati, i dati da utilizzare e la modalità di elaborazione dei dati. Fusion consente di creare scenari semplici o complessi, in grado di soddisfare i casi d’uso per la tua organizzazione.
 
-Per ulteriori informazioni sugli scenari, vedere [Panoramica dello scenario](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
+Per ulteriori informazioni sugli scenari, consulta [Panoramica degli scenari](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
 
 ## Quanti moduli posso utilizzare in uno scenario?
 
@@ -71,7 +74,7 @@ Il trasferimento di dati si riferisce alla quantità di dati trasferiti attraver
 
 Una connessione è il collegamento tra l’account Workfront Fusion e il servizio di terze parti che desideri utilizzare. La connessione può essere creata durante la modifica di uno scenario.
 
-Per ulteriori informazioni, vedere [Panoramica della connessione](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
+Per ulteriori informazioni, consulta [Panoramica delle connessioni](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 
 ## Cosa sono gli aggregatori?
 

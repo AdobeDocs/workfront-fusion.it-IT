@@ -4,10 +4,15 @@ description: In uno scenario Adobe Workfront Fusion, è possibile automatizzare 
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: 413736673426c1a77dac9f15defa43d4348638b5
+TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 21%
+source-wordcount: 2053
+ht-degree: 22%
 
 ---
 
@@ -316,11 +321,11 @@ Questo modulo di azione aggiorna un evento esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data di fine]</td> 
-   <td> Immettere un singolo punto dell'ora in cui l'evento termina in una rappresentazione combinata di data e ora. Utilizza il formato <code>({date}T{time}</code>, ad esempio <code>2017-08-29T04:00:00.0000000</code>. Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</td> 
+   <td> Immettere un singolo punto di ora in cui l'evento termina con una rappresentazione combinata data e ora. Utilizza il formato <code>({date}T{time}</code>, ad esempio <code>2017-08-29T04:00:00.0000000</code>. Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Coercizione del tipo</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Promemoria attivato]</td> 
-   <td>Seleziona se attivare un promemoria per questo evento.</td> 
+   <td>Seleziona se desideri attivare un promemoria per questo evento.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reminder]</td> 
@@ -423,11 +428,11 @@ Questo modulo trigger recupera i dettagli di un evento quando viene creato, aggi
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filtro]</td> 
-   <td>Imposta le condizioni del filtro per filtrare i risultati in base al soggetto, all’ID evento o al corpo.</td> 
+   <td>Imposta le condizioni del filtro per filtrare i risultati per oggetto, ID evento o corpo.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limite]</td> 
-   <td> <p>Immettere il numero massimo di messaggi restituiti da Workfront Fusion durante un ciclo di esecuzione di uno scenario.</p> </td> 
+   <td> <p>Immettere il numero massimo di messaggi che Workfront Fusion deve restituire durante un ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>

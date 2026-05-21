@@ -4,10 +4,16 @@ description: I moduli CRM HubSpot di Adobe Workfront Fusion ti consentono di mon
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
+TQID: https://experienceleague.adobe.com/F-jLL4aF0bSUiFpDjJr-DVBU8ZnbqNHKiFzjEjmalxw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '7314'
-ht-degree: 9%
+source-wordcount: 7326
+ht-degree: 10%
 
 ---
 
@@ -1618,7 +1624,7 @@ Questo modulo di azione restituisce tutti i moduli creati nell&#39;account assoc
 
 
 
-&lt;!—#### Osserva gli invii per un modulo—È necessario trovare una connessione funzionante>—>
+&lt;!—#### Controlla gli invii per un modulo—È necessario trovare una connessione funzionante>—>
 
 ### Social media (broadcast)
 
@@ -2125,11 +2131,11 @@ Consente di eseguire una chiamata API personalizzata.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Stringa di query]</td> 
-   <td> <p> Immettere la stringa di query richiesta.</p> </td> 
+   <td> <p> Inserisci la stringa di query della richiesta.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard. Quando utilizzi istruzioni condizionali come <code>if</code> nel JSON, inserisci le virgolette al di fuori dell'istruzione condizionale.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
   </tr> 
  </tbody> 
 </table>

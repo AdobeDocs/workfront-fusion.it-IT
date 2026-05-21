@@ -4,14 +4,21 @@ description: Per effettuare una richiesta HTTP(S) di Adobe Workfront Fusion ai s
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/ylQwzctWz1sE03eGhHWxjf48mKxHiuZVy-HN07Mtmh0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2320'
-ht-degree: 0%
+source-wordcount: 2371
+ht-degree: 11%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL Crea una richiesta OAuth 2.0]
+# Modulo [!UICONTROL HTTP] > [!UICONTROL Effettua una richiesta OAuth 2.0]
 
 >[!NOTE]
 >
@@ -36,7 +43,7 @@ Per ulteriori informazioni sull&#39;autenticazione OAuth 2.0, vedere [Il framewo
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -44,31 +51,31 @@ Per ulteriori informazioni sull&#39;autenticazione OAuth 2.0, vedere [Il framewo
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -107,15 +114,15 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Nome connessione] </td> 
+      <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione) </td> 
       <td> <p>Immettere il nome della connessione.</p> </td> 
      </tr> 
       <tr> 
-      <td role="rowheader">[!UICONTROL Environment] </td> 
+      <td role="rowheader">[!UICONTROL Ambiente] </td> 
       <td> <p>Seleziona se utilizzi un ambiente di produzione o non di produzione.</p> </td> 
      </tr> 
       <tr> 
-      <td role="rowheader">[!UICONTROL Type] </td> 
+      <td role="rowheader">[!UICONTROL Tipo] </td> 
       <td> <p>Seleziona se utilizzi un account di servizio o un account personale.</p> </td> 
      </tr> 
      <tr> 
@@ -139,7 +146,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Ado
       <td> <p>Immetti l'ID client. Hai ottenuto l’ID client quando hai creato un client OAuth nel servizio che desideri connettere.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Segreto client]</td> 
+      <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td> 
       <td> <p> Immetti il segreto client. Il segreto client è stato ottenuto quando hai creato un client OAuth nel servizio che desideri connettere.</p> </td> 
      </tr> 
      <tr> 
@@ -236,15 +243,15 @@ Nell&#39;esempio seguente viene illustrato come utilizzare [!UICONTROL HTTP] > [
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Nome connessione] </td> 
-      <td> <p>Immettere un nome per la connessione.</p> </td> 
+      <td role="rowheader">[!UICONTROL Connection name] (Nome della connessione) </td> 
+      <td> <p>Specifica un nome per la connessione.</p> </td> 
      </tr> 
       <tr> 
-      <td role="rowheader">[!UICONTROL Environment] </td> 
+      <td role="rowheader">[!UICONTROL Ambiente] </td> 
       <td> <p>Seleziona se utilizzi un ambiente di produzione o non di produzione.</p> </td> 
      </tr> 
       <tr> 
-      <td role="rowheader">[!UICONTROL Type] </td> 
+      <td role="rowheader">[!UICONTROL Tipo] </td> 
       <td> <p>Seleziona se utilizzi un account di servizio o un account personale.</p> </td> 
      </tr> 
      <tr> 
@@ -272,7 +279,7 @@ Nell&#39;esempio seguente viene illustrato come utilizzare [!UICONTROL HTTP] > [
       <td> <p>Immetti l'ID client [!DNL Google]. </p> <p>Per creare un ID client, vedi <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">Creare credenziali OAuth</a> nell'articolo da [!DNL Connect Adobe Workfront Fusion] a [!DNL Google Services] utilizzando un client OAuth personalizzato</a>.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Segreto client]</td> 
+      <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td> 
       <td> <p>Immetti il segreto client [!DNL Google]. </p> <p>Per creare un segreto client, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">Creare credenziali OAuth</a> nell'articolo [!DNL Connect Adobe Workfront Fusion] per [!DNL Google] Servizi tramite un client OAuth personalizzato</a>.</p> </td> 
      </tr> 
      <tr> 
@@ -291,16 +298,16 @@ Dopo aver stabilito una connessione OAuth 2.0, continua a configurare il modulo 
 
 Quando configuri il modulo [!UICONTROL HTTP] > [!UICONTROL Crea una richiesta OAuth 2.0], Workfront Fusion visualizza i campi elencati di seguito. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo all&#39;altro in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo all&#39;altro in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto">  
  <col> 
  <col> 
  <tbody> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per informazioni sulla configurazione di una connessione, vedere <a href="#create-a-connection-for-an-oauth-request" class="MCXref xref">Creare una connessione per una richiesta OAuth</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -312,15 +319,15 @@ Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possib
    <td> <p>Immetti l’URL a cui desideri inviare una richiesta, ad esempio un endpoint API, un sito web, ecc.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Metodo]</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers] </td> 
+   <td role="rowheader">[!UICONTROL Intestazioni] </td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard. Ad esempio: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
+   <td role="rowheader">[!UICONTROL Stringa di query]</td> 
    <td> <p> Immetti le coppie chiave-valore di query desiderate.</p> </td> 
   </tr> 
   <tr> 

@@ -4,10 +4,15 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: e65d868dc2165cbe800600f271f6b03d0a906cb4
+TQID: https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 20%
+source-wordcount: 2399
+ht-degree: 25%
 
 ---
 
@@ -108,7 +113,7 @@ Per creare una connessione OAuth2 a Jira, è necessario creare un’applicazione
 
    | Datacenter di Fusion | URL di callback |
    |---|---|
-   | STATI UNITI | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
    | UE | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
    | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
 
@@ -274,7 +279,7 @@ Durante la configurazione del PAT potrebbero essere necessarie le seguenti infor
 
   | Datacenter di Fusion | Reindirizza URL |
   |---|---|
-  | STATI UNITI | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
   | UE | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
   | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
 
@@ -338,10 +343,10 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunto, aggiornat
 * [Aggiungi problema a sprint](#add-issue-to-sprint)
 * [Crea un record](#create-a-record)
 * [Chiamata API personalizzata](#custom-api-call)
-* [Eliminare un record](#delete-a-record)
+* [Elimina una decisione](#delete-a-record)
 * [Scaricare un allegato](#download-an-attachment)
 * [Leggi un record](#read-a-record)
-* [Aggiornare un record](#update-a-record)
+* [Aggiorna un record](#update-a-record)
 
 #### Aggiungi problema a sprint
 
@@ -419,7 +424,7 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
   </tr> 
   <tr> 
    <td role="rowheader">Metodo</td> 
-   td&gt; <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTPS</a>.</p> </td> 
+   td&gt; <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Intestazioni</td> 
@@ -431,13 +436,13 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
   </tr> 
   <tr> 
    <td role="rowheader">Corpo</td> 
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Eliminare un record
+#### Elimina una decisione
 
 Questo modulo di azione elimina il record specificato.
 
@@ -529,7 +534,7 @@ Questo modulo di azione legge i dati dal record specificato in Jira.
  </tbody> 
 </table>
 
-#### Aggiornare un record
+#### Aggiorna un record
 
 Questo modulo aggiorna un record esistente, ad esempio un problema o un progetto.
 
@@ -568,21 +573,21 @@ Questo modulo aggiorna un record esistente, ad esempio un problema o un progetto
 
 >[!IMPORTANT]
 >
->Il modulo di ricerca utilizzato dal connettore Jira legacy può causare il seguente errore:
+>Il modulo di ricerca utilizzato dal connettore Jira precedente può causare il seguente errore:
 >
 >`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
 >
->Ciò è dovuto a una deprecazione da parte di Jira.
+>Questo è dovuto alla rimozione di funzionalità da parte di Jira.
 >
->Se si verifica questo errore, è possibile sostituire il modulo di ricerca del connettore Jira legacy con il modulo di ricerca del nuovo connettore. Il nuovo connettore consente di selezionare la versione API utilizzata. Assicurati di selezionare V3 durante la creazione della connessione.
+>Se si verifica questo errore, puoi sostituire il modulo di ricerca del connettore Jira precedente con il modulo di ricerca del nuovo connettore. Nota: il nuovo connettore consente di selezionare la versione API utilizzata. Assicurati di selezionare V3 durante la creazione della connessione.
 >
 > ![Opzione di versione API nel nuovo connettore Jira](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
->Tieni presente che:
+>Nota:
 >
->* È interessato solo il modulo di ricerca. Al momento, altri endpoint API Jira utilizzati dal connettore Fusion non sono interessati da questa rimozione.
+>* Solo il modulo di ricerca è interessato. Al momento, altri endpoint API Jira utilizzati dal connettore Fusion non sono interessati dalla rimozione di queste funzionalità.
 >
->* Il rollout geografico può causare incongruenze. Atlassian sta implementando questa modifica a livello regionale, il che significa che alcune istanze di Jira Cloud potrebbero ancora supportare temporaneamente gli endpoint precedenti. Questo può causare comportamenti non coerenti tra gli ambienti.
+>* Il rollout su base geografica può causare incongruenze. Poiché Atlassian sta implementando questa modifica a livello regionale, è possibile che alcune istanze di Jira Cloud supportino ancora temporaneamente gli endpoint precedenti. Questo può causare comportamenti non coerenti in ambienti diversi.
 
 #### Cerca record
 

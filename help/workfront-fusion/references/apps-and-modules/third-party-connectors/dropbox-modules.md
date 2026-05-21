@@ -1,19 +1,25 @@
 ---
 title: Moduli Dropbox
-description: In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano Dropbox e collegarli a più applicazioni e servizi di terze parti. In questo modo è possibile automatizzare attività quali il monitoraggio, la ricerca, il recupero, l'inserimento in un elenco, la creazione e la modifica di file e cartelle nel Dropbox.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Dropbox e collegarlo a più applicazioni e servizi di terze parti.In questo modo è possibile automatizzare attività quali il monitoraggio, la ricerca, il recupero, l'inserimento in un elenco, la creazione e la modifica di file e cartelle nel Dropbox.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: 3307
 ht-degree: 26%
 
 ---
 
 # Moduli [!DNL Dropbox]
 
-In uno scenario di Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!UICONTROL Dropbox] o [!DNL Dropbox Business], nonché collegarli a più applicazioni e servizi di terze parti. Ciò consente di automatizzare attività quali monitoraggio, ricerca, recupero, inserimento in elenco, creazione e modifica di file e cartelle in [!UICONTROL Dropbox].
+In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!UICONTROL Dropbox] o [!DNL Dropbox Business], nonché collegarli a più applicazioni e servizi di terze parti.In questo modo è possibile automatizzare attività quali il monitoraggio, la ricerca, il recupero, l&#39;elenco, la creazione e la modifica di file e cartelle in [!UICONTROL Dropbox].
 
 Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -125,7 +131,7 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
         <td>Immetti [!UICONTROL Dropbox] [!UICONTROL Client ID]. </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
-        <td>Immetti [!DNL Dropbox] [!UICONTROL Client Secret]. </td>
+        <td>Inserisci il tuo [!UICONTROL Client Secret] (Segreto client) [!DNL Dropbox]. </td>
         </tr>
         <tr>
         <td role="rowheader">Tipo di account </td>
@@ -138,7 +144,7 @@ Per creare una connessione per i moduli [!DNL Dropbox]:
       </tbody>
     </table>
 
-1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.## [!DNL Dropbox] moduli e relativi campi
+1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.## moduli [!DNL Dropbox] e relativi campi
 
 ## Moduli [!DNL Dropbox] e relativi campi
 
@@ -676,7 +682,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
   </tr> 
   <tr> 
    <td>[!UICONTROL Stringa di query]</td> 
-   <td> <p> Immettere la stringa di query richiesta.</p> </td> 
+   <td> <p> Inserisci la stringa di query della richiesta.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Corpo] </td> 

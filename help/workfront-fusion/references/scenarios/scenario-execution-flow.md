@@ -5,20 +5,23 @@ description: Questo articolo spiega come viene eseguito uno scenario e come i da
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 0%
+source-wordcount: 770
+ht-degree: 1%
 
 ---
 
-# Flusso di esecuzione dello scenario
+# Flusso di esecuzione di uno scenario
 
 Questo articolo spiega come viene eseguito uno scenario, come scorrono i dati al suo interno e come visualizzare i dati elaborati da ciascun modulo.
 
 Per visualizzare il modo in cui i dati scorrono attraverso uno scenario attivo, vedere [Visualizzare il flusso di dati in uno scenario in esecuzione](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
-## Flusso di esecuzione dello scenario
+## Flusso di esecuzione di uno scenario
 
 Dopo aver configurato correttamente e attivato uno scenario, questo viene eseguito in base alla pianificazione definita.
 

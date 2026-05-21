@@ -3,20 +3,25 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
 title: Utilizzare una funzione per aggiornare un progetto in uno scenario di base
-description: Learn how to add a function to update a work item in Workfront.
+description: Scopri come aggiungere una funzione per aggiornare un elemento di lavoro in Workfront.
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/F0kYjSMVgit8t-gPAR4U7O-1v8Qxy7UxSRK6uYxKItg
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: 607
 ht-degree: 18%
 
 ---
 
 # Utilizzare una funzione per aggiornare un progetto in uno scenario di base
 
-Updating a Workfront work item is a common use case for Workfront Fusion. In this example, you will use a function to change the name of a project to be in uppercase letters.
+L’aggiornamento di un elemento di lavoro di Workfront è un caso d’uso comune per Workfront Fusion. In questo esempio, utilizzerai una funzione per modificare il nome di un progetto in lettere maiuscole.
 
 Fusion include molti tipi di funzioni che consentono di trasformare ed eseguire logica condizionale sui dati. Per ulteriori informazioni sull&#39;utilizzo delle funzioni, vedere [Panoramica delle funzioni](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
@@ -57,12 +62,12 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ## Utilizzare una funzione per aggiornare un progetto
 
-### Add the Update Record module to your scenario
+### Aggiungi il modulo Aggiorna record allo scenario
 
-1. Open the scenario in the scenario editor.
-1. Hover over the partial circle to the right of the of the second module, then click **[!UICONTROL Add another module]**.
-1. Select Adobe Workfront from the list of applications, then choose the module **[!UICONTROL Update Record]**.
-1. In the ID field, select the ID block that is under the Convert object module. Questo è l&#39;ID del progetto generato da quel modulo.
+1. Apri lo scenario nell’editor dello scenario.
+1. Passa il puntatore del mouse sul cerchio parziale a destra del del secondo modulo, quindi fai clic su **[!UICONTROL Aggiungi un altro modulo]**.
+1. Seleziona Adobe Workfront dall&#39;elenco delle applicazioni, quindi scegli il modulo **[!UICONTROL Aggiorna record]**.
+1. Nel campo ID, seleziona il blocco ID che si trova sotto il modulo Converti oggetto. Questo è l&#39;ID del progetto generato da quel modulo.
 
    ![ID da Converti oggetto](assets/id-convert-object.png)
 
@@ -74,12 +79,12 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ### Mappa la funzione per l’aggiornamento del nome
 
-Quando questo scenario converte una richiesta in un progetto, il nome del progetto è uguale alla richiesta. The function here takes that name and capitalizes all of the letters in it.
+Quando questo scenario converte una richiesta in un progetto, il nome del progetto è uguale alla richiesta. La funzione in questo caso prende il nome e le lettere in maiuscolo.
 
-1. Click the **Name** field.
+1. Fai clic sul campo **Nome**.
 
-   The mapping panel opens.
-1. In the mapping panel, click the **Text and binary functions** icon. ![Icona funzioni testo](assets/toolbar-icon-text-binary-functions.png)
+   Viene visualizzato il pannello di mappatura.
+1. Nel pannello di mappatura, fai clic sull&#39;icona **Funzioni testo e binarie**. ![Icona funzioni testo](assets/toolbar-icon-text-binary-functions.png)
 1. Selezionare la funzione **upper**.
 
    La funzione viene visualizzata nel campo Nome, inclusa la formattazione dell&#39;input previsto.
@@ -88,22 +93,22 @@ Quando questo scenario converte una richiesta in un progetto, il nome del proget
 
 1. Spostare il cursore tra le parentesi, perché è qui che andrà l&#39;input.
 1. Nel pannello di mappatura, fai clic sull&#39;icona **Output modulo**. ![Icona output modulo](assets/toolbar-icon-functions-you-map-from-other-modules.png)
-1. Select the name block that was output by your first module.
+1. Seleziona il blocco del nome restituito dal primo modulo.
 
-   The name block appears in the function.
+   Il blocco del nome viene visualizzato nella funzione.
 
-   ![Name block in function](assets/map-name.png)
+   ![Blocco nome nella funzione](assets/map-name.png)
 
-1. Click **OK** to save the module settings.
+1. Fare clic su **OK** per salvare le impostazioni del modulo.
 
-### Test and activate
+### Test e attivazione
 
 1. Verificare lo scenario facendo clic su **Esegui una volta** nell&#39;angolo inferiore sinistro della schermata.
 1. Esamina l’output per garantire che lo scenario sia stato eseguito come previsto.
-1. When you are satisfied that the scenario is working as expected, click the **Scheduling** toggle in the lower-left of the screen to **On**.
+1. Quando si è certi che lo scenario funziona come previsto, fare clic sull&#39;interruttore **Pianificazione** in basso a sinistra dello schermo per **Attivato**.
 
-   This activates the scenario. Active scenarios run according to the schedule set in the trigger module.
-1. In Workfront Fusion, click **[!UICONTROL Save]** near the lower-left corner to save your progress on the scenario.
+   Questo attiva lo scenario. Gli scenari attivi vengono eseguiti in base alla pianificazione impostata nel modulo trigger.
+1. In Workfront Fusion, fai clic su **[!UICONTROL Salva]** nell&#39;angolo inferiore sinistro per salvare l&#39;avanzamento dello scenario.
 
    >[!IMPORTANT]
    >

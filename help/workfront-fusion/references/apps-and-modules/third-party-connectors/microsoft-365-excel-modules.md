@@ -4,9 +4,15 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 03f4556d7f903689c85cba966ad875973037a2ba
+TQID: https://experienceleague.adobe.com/SZwX0GVZYFlIudwirqN6ne-W8mEoXHC-WKI8JFnbzrA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: 2707
 ht-degree: 18%
 
 ---
@@ -166,9 +172,9 @@ Questo modulo di azione cerca [!DNL Excel] cartelle di lavoro.
 </table>
 </table>
 
-#### [!UICONTROL Watch Workbooks]
+#### [!UICONTROL Cartelle di lavoro osservate]
 
-This trigger module starts a scenario when a workbook is created.
+Questo modulo di attivazione avvia uno scenario quando viene creata una cartella di lavoro.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -180,11 +186,11 @@ This trigger module starts a scenario when a workbook is created.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cartella]</td> 
-   <td> <p>Select the folder that you want to watch for new workbooks.</p> </td> 
+   <td> <p>Selezionare la cartella da controllare per le nuove cartelle di lavoro.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Filtro]</p> </td> 
-   <td> <p>You can set a filter to watch for only workbooks that meet criteria you select.</p> <p>Per ogni filtro, inserisci il campo che desideri venga valutato dal filtro, l’operatore e il valore che desideri sia consentito dal filtro. Puoi utilizzare più di un filtro aggiungendo regole AND o OR.</p> </td> 
+   <td> <p>È possibile impostare un filtro per controllare solo le cartelle di lavoro che soddisfano i criteri selezionati.</p> <p>Per ogni filtro, inserisci il campo che desideri venga valutato dal filtro, l’operatore e il valore che desideri sia consentito dal filtro. Puoi utilizzare più di un filtro aggiungendo regole AND o OR.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limite]</td> 
@@ -240,7 +246,7 @@ Questo modulo di azione aggiunge una nuova riga al foglio di lavoro selezionato.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
-   <td> <p>Select the workbook that contains the worksheet where you want to add a row, including the path if the workbook is not in the root directory.</p> </td> 
+   <td> <p>Selezionare la cartella di lavoro contenente il foglio di lavoro in cui si desidera aggiungere una riga, incluso il percorso se la cartella di lavoro non si trova nella directory principale.</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Worksheet] </td>
@@ -303,22 +309,22 @@ Questo modulo di azione recupera un elenco di righe nel foglio di lavoro specifi
   </tr> 
   <tr>
     <td role="rowheader" >[!UICONTROL cartella di lavoro] </td>
-   <td> <p>Select the workbook that contains the worksheet that includes the rows you want to list, including the path if the workbook is not in the root directory.</p> </td> 
+   <td> <p>Selezionare la cartella di lavoro contenente il foglio di lavoro che include le righe da elencare, incluso il percorso se la cartella di lavoro non si trova nella directory principale.</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Select the worksheet that contains the rows you want to list.</p> </td> 
+   <td> <p>Selezionare il foglio di lavoro contenente le righe da elencare.</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Limite]</td>
-   <td> <p>Enter or map the maximum number of worksheet rows you want the module to return during each scenario execution cycle.</p> </td> 
+   <td> <p>Immettere o mappare il numero massimo di righe del foglio di lavoro che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Elenca fogli di lavoro]
 
-This action module retrieves a list of worksheets in the specified workbook.
+Questo modulo di azione recupera un elenco di fogli di lavoro nella cartella di lavoro specificata.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -415,7 +421,7 @@ Questo modulo di attivazione avvia uno scenario quando viene aggiunta una nuova 
 * [[!UICONTROL Aggiungi una tabella]](#add-a-table)
 * [[!UICONTROL Aggiungi una riga di tabella]](#add-a-table-row)
 * [[!UICONTROL Eliminare una tabella]](#delete-a-table)
-* [[!UICONTROL Get a Table]](#get-a-table)
+* [[!UICONTROL Ottieni una tabella]](#get-a-table)
 * [[!UICONTROL Elenca righe tabella]](#list-table-rows)
 * [[!UICONTROL Elenca tabelle]](#list-tables)
 * [[!UICONTROL Aggiorna una tabella]](#update-a-table)
@@ -435,14 +441,14 @@ Questo modulo di azione crea un elemento tabella nel foglio di lavoro di Excel.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL cartella di lavoro] </td> 
-   <td> <p>Select the workbook that contains the worksheet where you want to add a table.</p> </td> 
+   <td> <p>Selezionare la cartella di lavoro contenente il foglio di lavoro in cui si desidera aggiungere una tabella.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Worksheet] </td> 
-   <td> <p>Select the worksheet where you want to add a table.</p> </td> 
+   <td> <p>Selezionare il foglio di lavoro in cui aggiungere una tabella.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Has headers]</td> 
+   <td role="rowheader">[!UICONTROL Ha Intestazioni]</td> 
    <td> <p>Abilita questa opzione per definire la prima riga come intestazioni di tabella.</p> </td> 
   </tr> 
   <tr> 
@@ -555,7 +561,7 @@ Questo modulo di ricerca recupera un elenco di tutte le righe di tabella in una 
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Select the worksheet that contains the table that includes the rows you want to list</p> </td> 
+   <td> <p>Selezionare il foglio di lavoro contenente la tabella che include le righe da elencare</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader" >Tabella  </td>

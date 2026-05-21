@@ -1,28 +1,34 @@
 ---
-title: Amplia moduli
+title: Moduli Widen
 description: In uno scenario di Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!UICONTROL Widen], nonché collegarli a più applicazioni e servizi di terze parti.
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/joW38nxn0gj6qr1bd1RMS2RT2xOd2KgUsA-M8l57-ys
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 0%
+source-wordcount: 1673
+ht-degree: 30%
 
 ---
 
-# [!DNL Widen] moduli
+# Moduli [!DNL Widen]
 
 In uno scenario di Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!UICONTROL Widen], nonché collegarli a più applicazioni e servizi di terze parti.
 
-Per istruzioni sulla creazione di uno scenario, vedere gli articoli in [Creare scenari: indice articolo](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Per istruzioni sulla creazione di uno scenario, consulta gli articoli in [Creare scenari: indice degli articoli](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/help/workfront-fusion/references/modules/modules-toc.md).
+Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli articoli](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -30,31 +36,31 @@ Per informazioni sui moduli, vedere gli articoli in [Moduli: indice articolo](/h
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Licenza Adobe Workfront Fusion</td> 
+   <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basato su operazioni: nessun requisito di licenza Workfront Fusion</p>
-   <p>Basato su connettore (legacy): Workfront Fusion for Work Automation and Integration </p>
+   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Per informazioni sulle licenze di Adobe Workfront Fusion, vedere [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -81,7 +87,7 @@ Il connettore Widen utilizza quanto segue:
  </tbody> 
  </table>
 
-## Connetti [!DNL Widen] a Workfront Fusion  {#connect-widen-to-workfront-fusion}
+## Connettere [!DNL Widen] a Workfront Fusion  {#connect-widen-to-workfront-fusion}
 
 Puoi creare una connessione al tuo account [!DNL Widen] direttamente da un modulo [!DNL Widen].
 
@@ -91,13 +97,13 @@ Puoi creare una connessione al tuo account [!DNL Widen] direttamente da un modul
 1. Immetti il token per l&#39;account [!DNL Widen]. Per istruzioni su come individuare questo token, consulta le [[!DNL Widen] domande frequenti sulle API](https://community.widen.com/collective/s/article/API-FAQs).
 1. Fai clic su **[!UICONTROL Continua]** per creare la connessione e tornare al modulo.
 
-## [!DNL Widen] moduli e relativi campi
+## Moduli [!DNL Widen] e relativi campi
 
-Quando si configurano [!DNL Widen] moduli, in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati ulteriori campi di [!DNL Widen], a seconda di fattori quali il livello di accesso nell&#39;app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
+Quando configuri i moduli [!DNL Widen], in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati altri campi di [!DNL Widen], a seconda di fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
-Se viene visualizzato il pulsante Mappa sopra un campo o una funzione, è possibile utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, vedere [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utilizzarlo per impostare variabili e funzioni per tale campo. Per ulteriori informazioni, consulta [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Attiva/Disattiva mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Moduli trigger](#trigger-modules)
 * [Moduli azione](#action-modules)
@@ -114,7 +120,7 @@ Questo modulo di attivazione avvia uno scenario quando una risorsa viene creata 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -130,7 +136,7 @@ Questo modulo di attivazione avvia uno scenario quando una risorsa viene creata 
    <td>Selezionare i campi da includere nell'output del modulo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
    <td> <p>Immettere o mappare il numero massimo di risorse con cui si desidera che il modulo funzioni durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
@@ -144,7 +150,7 @@ Questo modulo di attivazione avvia uno scenario quando una risorsa viene creata 
 * [[!UICONTROL Leggi informazioni risorsa]](#read-asset-info)
 * [[!UICONTROL Rimuovi risorse dalla raccolta]](#remove-assets-from-collection)
 * [[!UICONTROL Aggiorna metadati risorsa]](#update-asset-metadata)
-* [[!UICONTROL Carica un file]](#upload-a-file)
+* [[!UICONTROL Caricare un file]](#upload-a-file)
 
 #### [!UICONTROL Aggiungere risorse alle raccolte]
 
@@ -155,7 +161,7 @@ Questo modulo di azione aggiunge una o più risorse alle raccolte.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -169,7 +175,7 @@ Questo modulo di azione aggiunge una o più risorse alle raccolte.
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
    <td> <p>Immettere o mappare il numero massimo di risorse con cui si desidera che il modulo funzioni durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
@@ -177,16 +183,16 @@ Questo modulo di azione aggiunge una o più risorse alle raccolte.
 
 #### [!UICONTROL Chiamata API personalizzata]
 
-Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all&#39;API [!DNL Widen]. In questo modo è possibile creare un&#39;automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Widen].
+Questo modulo di azione consente di effettuare una chiamata autenticata personalizzata all’API [!DNL Widen]. In questo modo puoi creare un’automazione del flusso di dati che non può essere eseguita dagli altri moduli [!DNL Widen].
 
-Durante la configurazione di questo modulo, vengono visualizzati i campi seguenti.
+Durante la configurazione di questo modulo, vengono visualizzati i seguenti campi.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -198,20 +204,20 @@ Durante la configurazione di questo modulo, vengono visualizzati i campi seguent
    <td>Inserisci o mappa l’URL per la chiamata API.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Metodo]</td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Intestazioni]</td> 
    <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringa Di Query]</td> 
-   <td> <p>Aggiungi la query per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">[!UICONTROL Stringa di query]</td> 
+   <td> <p>Aggiungi la query per la chiamata API come oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Aggiungi il contenuto body per la chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando si utilizzano istruzioni condizionali come <code>if</code> nel JSON, inserire le virgolette al di fuori dell'istruzione condizionale.</p> 
+   <td role="rowheader">[!UICONTROL Corpo]</td> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -228,7 +234,7 @@ Questo modulo di azione scarica una risorsa dal tuo account [!DNL Widen].
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -247,7 +253,7 @@ Questo modulo di azione recupera una singola risorsa in base al suo ID univoco.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -274,7 +280,7 @@ Questo modulo di azione rimuove una o più risorse dalle raccolte.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -289,7 +295,7 @@ Questo modulo di azione rimuove una o più risorse dalle raccolte.
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
    <td> <p>Immettere o mappare il numero massimo di risorse con cui si desidera che il modulo funzioni durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
@@ -304,7 +310,7 @@ Questo modulo di azione aggiorna i campi di metadati di una risorsa.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -320,13 +326,13 @@ Questo modulo di azione aggiorna i campi di metadati di una risorsa.
    <td>Seleziona i campi di metadati da aggiornare. Immettere il nuovo valore per ogni campo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
    <td> <p>Immettere o mappare il numero massimo di risorse con cui si desidera che il modulo funzioni durante ogni ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Carica un file]
+#### [!UICONTROL Caricare un file]
 
 Questo modulo di azione carica un file nel tuo account [!DNL Widen].
 
@@ -335,7 +341,7 @@ Questo modulo di azione carica un file nel tuo account [!DNL Widen].
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -379,7 +385,7 @@ Questo modulo di azione recupera un elenco di risorse all’interno di una racco
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -392,7 +398,7 @@ Questo modulo di azione recupera un elenco di risorse all’interno di una racco
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Max]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Ordina per]</td> 
@@ -418,7 +424,7 @@ Questo modulo di ricerca recupera un elenco di risorse che corrispondono ai crit
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
@@ -446,8 +452,8 @@ Questo modulo di ricerca recupera un elenco di risorse che corrispondono ai crit
    <td>Abilita questa opzione per includere il testo del documento nella ricerca oppure imposta questa opzione su false per includere solo le risorse il cui titolo corrisponde ai criteri di ricerca.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Immettere o mappare il numero massimo di record che il modulo deve restituire durante ogni ciclo di esecuzione dello scenario.</p> </td> 
+   <td role="rowheader">[!UICONTROL Limite]</td> 
+   <td> <p>Inserisci oppure mappa il numero massimo di record che il modulo potrà restituire durante ciascun ciclo di esecuzione dello scenario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Offset]</td> 

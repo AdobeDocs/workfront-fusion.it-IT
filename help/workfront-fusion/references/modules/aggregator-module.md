@@ -4,9 +4,14 @@ description: Un modulo aggregatore è un tipo di modulo progettato per unire div
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: 810
 ht-degree: 11%
 
 ---
@@ -108,7 +113,7 @@ Lo scenario seguente mostra come:
 
 * Il terzo modulo è l&#39;aggregatore. Aggrega i bundle generati dal modulo [!UICONTROL Email] >[!UICONTROL Itera allegati]. [!UICONTROL Archivia] >[!UICONTROL Crea un aggregatore di archivi] accumula tutti i bundle che riceve ed restituisce un singolo bundle contenente il file ZIP.
 
-* L&#39;ultimo modulo carica il file ZIP risultante in [!DNL Dropbox].  [!DNL Dropbox] > [!UICONTROL Carica un file] ottiene il file ZIP dal [!UICONTROL Archivio] > [!UICONTROL Crea un archivio] modulo e lo carica in [!DNL Dropbox].
+* L&#39;ultimo modulo carica il file ZIP risultante in [!DNL Dropbox]. [!DNL Dropbox] > [!UICONTROL Carica un file] ottiene il file ZIP dall&#39;[!UICONTROL Archivio] > [!UICONTROL Crea un archivio] modulo e lo carica in [!DNL Dropbox].
 
 
 

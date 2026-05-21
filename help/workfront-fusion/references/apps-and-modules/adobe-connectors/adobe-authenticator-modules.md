@@ -4,10 +4,18 @@ description: Con il modulo Adobe Authenticator, puoi connetterti a qualsiasi pro
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 42ec34b1931eb9962569906d78c281bbef86a57e
+TQID: https://experienceleague.adobe.com/8yRmtq6RJPuw97tGe5lreoyUd85pd1BVvIFaZjmeof4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1478'
-ht-degree: 33%
+source-wordcount: 1513
+ht-degree: 34%
 
 ---
 
@@ -233,7 +241,7 @@ Questo modulo è stato reso disponibile il 14 novembre 2024. Qualsiasi chiamata 
     <tr>
       <td role="rowheader">[!UICONTROL Stringa di query]  </td>
       <td>
-        <p>Immettere la stringa di query richiesta.</p>
+        <p>Inserisci la stringa di query della richiesta.</p>
       </td>
     </tr>
     <tr>
@@ -299,7 +307,7 @@ Questo modulo di azione ti consente di effettuare una chiamata a qualsiasi API d
     <tr>
       <td role="rowheader">[!UICONTROL Stringa di query]  </td>
       <td>
-        <p>Immettere la stringa di query richiesta.</p>
+        <p>Inserisci la stringa di query della richiesta.</p>
       </td>
     </tr>
     <tr>
@@ -356,7 +364,7 @@ Questo modulo effettua una chiamata personalizzata e include l’opzione per ese
     <tr>
       <td role="rowheader">[!UICONTROL Stringa di query]  </td>
       <td>
-        <p>Immettere la stringa di query richiesta.</p>
+        <p>Inserisci la stringa di query della richiesta.</p>
       </td>
     </tr>
     <tr>

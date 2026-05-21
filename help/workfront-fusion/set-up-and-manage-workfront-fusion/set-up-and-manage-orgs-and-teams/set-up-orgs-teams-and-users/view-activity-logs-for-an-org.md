@@ -1,21 +1,24 @@
 ---
-title: View activity logs for an organization
-description: You can view a log of activities, such as scenario creation or activation, for your organization.
+title: Visualizzare i registri attività di un’organizzazione
+description: Puoi visualizzare un registro delle attività dell’organizzazione, ad esempio la creazione o l’attivazione di uno scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/HzeBJonpCSsEnDAgsfveksA7Xc2EKoeywgol9Vp0KGc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: 504
 ht-degree: 8%
 
 ---
 
-# View activity logs for an organization
+# Visualizzare i registri attività di un’organizzazione
 
-You can view a log of activities, such as creating a scenario or inviting a user, for your organization.
+Puoi visualizzare un registro delle attività, ad esempio la creazione di uno scenario o l’invito di un utente, per la tua organizzazione.
 
-Activity logs show three months of data. Data older than 3 months can be exported.
+I registri attività mostrano tre mesi di dati. È possibile esportare i dati di oltre 3 mesi.
 
 ## Requisiti di accesso
 
@@ -27,7 +30,7 @@ Activity logs show three months of data. Data older than 3 months can be exporte
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Adobe Workfront Workflow Ultimate and Adobe Workfront Automation and Integration Ultimate</p><p>Workfront Ultimate</p></td> 
+   <td> <p>Flusso di lavoro di Adobe Workfront Ultimate e Adobe Workfront Automazione e integrazione Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
@@ -36,8 +39,8 @@ Activity logs show three months of data. Data older than 3 months can be exporte
   <tr data-mc-conditions=""> 
    <td role="rowheader">Configurazioni del livello di accesso</td> 
    <td> 
-     <p>You must be a Workfront Fusion administrator for your organization.</p>
-     <p>You must be a Workfront Fusion administrator for your team.</p>
+     <p>Devi essere un amministratore di Workfront Fusion per la tua organizzazione.</p>
+     <p>Devi essere un amministratore di Workfront Fusion per il tuo team.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -47,47 +50,47 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 +++
 
-## View the Activity Logs
+## Visualizzare i registri attività
 
-1. In the left navigation panel, click **Org overview** ![Org overview icon](assets/org-overview-icon.png).
-1. If you are not currently in the organziation that you want to view the activity log for, click the organization name in the upper-right corner of the screen and select the organization from the dropdown.
-1. Click the **[!UICONTROL Activity Logs]** tab near the top of the screen.
+1. Nel pannello di navigazione a sinistra, fai clic su **Panoramica organizzazione** ![Icona Panoramica organizzazione](assets/org-overview-icon.png).
+1. Se al momento non ti trovi nell’organizzazione per la quale desideri visualizzare il registro delle attività, fai clic sul nome dell’organizzazione nell’angolo in alto a destra dello schermo e seleziona l’organizzazione dal menu a discesa.
+1. Fai clic sulla scheda **[!UICONTROL Registri attività]** nella parte superiore dello schermo.
 
-   The Activity Log page opens.
-1. (Optional) Filter the Activity log to limit results by criteria you specify.
+   Viene visualizzata la pagina Registro attività.
+1. (Facoltativo) Filtra il registro attività per limitare i risultati in base ai criteri specificati.
 
-   For instructions, see [Filter the Activity Logs](#filter-the-activity-logs) in this article.
-1. (Optional) To clear an applied filter, Locate the filter near the upper-right of the screen, and click the **X** in the filter&#39;s box.
-1. (Optional) Export the log.
+   Per istruzioni, consulta [Filtrare i registri attività](#filter-the-activity-logs) in questo articolo.
+1. (Facoltativo) Per cancellare un filtro applicato, individua il filtro in alto a destra dello schermo e fai clic su **X** nella casella del filtro.
+1. (Facoltativo) Esporta il registro.
 
-   For instructions, see [Export the Activity Logs](#export-the-activity-logs) in this article.
+   Per istruzioni, vedere [Esportare i registri attività](#export-the-activity-logs) in questo articolo.
 
 
-## Filter the Activity Logs
+## Filtrare i registri attività
 
-1. In the left navigation panel, click **Org overview** ![Org overview icon](assets/org-overview-icon.png).
-1. If you are not currently in the organization that you want to view the activity log for, click the organization name in the upper-right corner of the screen and select the organization from the dropdown.
-1. Click the **[!UICONTROL Activity Logs]** tab near the top of the screen.
+1. Nel pannello di navigazione a sinistra, fai clic su **Panoramica organizzazione** ![Icona Panoramica organizzazione](assets/org-overview-icon.png).
+1. Se al momento non ti trovi nell’organizzazione per la quale desideri visualizzare il registro attività, fai clic sul nome dell’organizzazione nell’angolo in alto a destra dello schermo e seleziona l’organizzazione dal menu a discesa.
+1. Fai clic sulla scheda **[!UICONTROL Registri attività]** nella parte superiore dello schermo.
 
-   The Activity Log page opens.
-1. Click **Filter** ![Filter icon](assets/filter-activity-log.png).
-1. Configure one or more of the following filters by clicking on the field.
+   Viene visualizzata la pagina Registro attività.
+1. Fai clic sull&#39;icona **Filtro** ![Filtro](assets/filter-activity-log.png).
+1. Configura uno o più dei seguenti filtri facendo clic sul campo.
 
-   * **Start Date &amp; End Date**: Select dates from the calendar, and (optional) enter times.
-   * **User**: Select a user from the dropdown.
-   * **Team**: Select a team from the dropdown. Only teams that you are a member of display in the dropdown.
-   * **Entity**: Select the type of Fusion object that you want to view activity logs for.
-   * **Action**: Select the action that you want to view activity logs for.
+   * **Data inizio e data fine**: selezionare le date dal calendario e (facoltativo) immettere le ore.
+   * **Utente**: seleziona un utente dal menu a discesa.
+   * **Team**: seleziona un team dal menu a discesa. Nel menu a discesa vengono visualizzati solo i team di cui sei membro.
+   * **Entità**: selezionare il tipo di oggetto Fusion per il quale si desidera visualizzare i registri attività.
+   * **Azione**: selezionare l&#39;azione per la quale si desidera visualizzare i registri attività.
 
-1. Click **Apply**
+1. Fai clic su **Applica**
 
-## Export the Activity Logs
+## Esportare i registri attività
 
-1. In the left navigation panel, click **Org overview** ![Org overview icon](assets/org-overview-icon.png).
-1. If you are not currently in the organziation that you want to view the activity log for, click the organization name in the upper-right corner of the screen and select the organization from the dropdown.
-1. Click the **[!UICONTROL Activity Logs]** tab near the top of the screen.
+1. Nel pannello di navigazione a sinistra, fai clic su **Panoramica organizzazione** ![Icona Panoramica organizzazione](assets/org-overview-icon.png).
+1. Se al momento non ti trovi nell’organizzazione per la quale desideri visualizzare il registro delle attività, fai clic sul nome dell’organizzazione nell’angolo in alto a destra dello schermo e seleziona l’organizzazione dal menu a discesa.
+1. Fai clic sulla scheda **[!UICONTROL Registri attività]** nella parte superiore dello schermo.
 
-   The Activity Log page opens.
-1. Select the date range from the from the calendar, and (optional) enter times.
-1. Select whether to export an Excel file or a CSV file.
+   Viene visualizzata la pagina Registro attività.
+1. Seleziona l’intervallo di date dal calendario e (facoltativo) immetti le ore.
+1. Seleziona se esportare un file Excel o CSV.
 1. Fai clic su **Applica**.

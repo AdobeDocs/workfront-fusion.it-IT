@@ -4,14 +4,17 @@ description: Questo articolo descrive gli eventi che si verificano durante l’e
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 1%
+source-wordcount: 482
+ht-degree: 2%
 
 ---
 
-# Esecuzione, cicli e fasi dello scenario
+# Esecuzione, cicli e fasi di uno scenario
 
 Ogni esecuzione dello scenario inizia con la fase di inizializzazione, continua con almeno un ciclo composto dalle fasi di operazione e commit/rollback e termina con la fase di finalizzazione
 

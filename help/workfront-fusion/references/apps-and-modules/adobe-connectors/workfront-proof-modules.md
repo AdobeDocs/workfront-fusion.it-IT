@@ -4,10 +4,15 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/PE6mgMsKjoQLz5JeXx6EN-xYsm-x1DpaIrtHBnRE1PY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 22%
+source-wordcount: 3117
+ht-degree: 23%
 
 ---
 
@@ -433,7 +438,7 @@ Questo modulo di azione scarica il file sorgente di una particolare bozza che id
 
 Specifica l’ID della bozza.
 
-Il modulo restituisce il contenuto del file di origine utilizzato per creare la bozza.È possibile mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce il contenuto del file di origine utilizzato per creare la bozza.Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 Per recuperare queste informazioni, è necessario disporre di autorizzazioni sufficienti per accedere al record in [!DNL Workfront Proof].
 
@@ -598,7 +603,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td>Inserisci o mappa l’ID della bozza da aggiornare.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Nome bozza]</td> 
+   <td>[!UICONTROL Nome della bozza]</td> 
    <td>Inserisci o mappa il nome della bozza da aggiornare.</td> 
   </tr> 
   <tr> 
@@ -671,7 +676,7 @@ Questo modulo di ricerca elenca tutti i modelli di flusso di lavoro disponibili.
 
 Questo modulo di ricerca cerca i record in un oggetto in [!DNL Workfront Proof] che corrispondono alla query di ricerca specificata.
 
-Il modulo restituisce l’ID della bozza se sta cercando una bozza. In alternativa, restituisce gli ID utente, le e-mail, i nomi, le posizioni e gli alias e-mail dei destinatari, se è in corso la ricerca dei destinatari. È possibile mappare queste informazioni nei moduli successivi nello scenario.
+Il modulo restituisce l’ID della bozza se sta cercando una bozza. In alternativa, restituisce gli ID utente, le e-mail, i nomi, le posizioni e gli alias e-mail dei destinatari, se sta cercando i destinatari.Puoi mappare queste informazioni nei moduli successivi dello scenario.
 
 Per recuperare queste informazioni, è necessario disporre di autorizzazioni sufficienti per accedere al record in [!DNL Workfront Proof].
 

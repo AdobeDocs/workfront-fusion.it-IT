@@ -1,17 +1,20 @@
 ---
-title: Panoramica dei dettagli dello scenario
+title: Panoramica dei dettagli delllo scenario
 description: Dettagli dello scenario in Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+TQID: https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 1%
+source-wordcount: 576
+ht-degree: 18%
 
 ---
 
-# Panoramica dei dettagli dello scenario
+# Panoramica dei dettagli delllo scenario
 
 La pagina dei dettagli dello scenario è la home page di uno scenario specifico. Consente di accedere a informazioni specifiche per lo scenario rappresentato nella pagina.
 
@@ -21,7 +24,7 @@ Per informazioni sull&#39;editor scenario, vedere [Editor scenario](/help/workfr
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,22 +32,22 @@ Per informazioni sull&#39;editor scenario, vedere [Editor scenario](/help/workfr
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -103,7 +106,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [R
       <td>Fai clic sul diagramma dello scenario per aprire l’editor dello scenario e apportare modifiche allo scenario.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Options]</td> 
+      <td role="rowheader">[!UICONTROL Opzioni]</td> 
       <td> <p>Questo menu offre opzioni aggiuntive senza dover aprire l’editor di scenari. Comprendono:</p> 
        <ul> 
         <li>[!UICONTROL Scheduling]</li> 

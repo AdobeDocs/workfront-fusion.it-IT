@@ -4,9 +4,17 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: 4303
 ht-degree: 13%
 
 ---
@@ -194,7 +202,7 @@ Puoi utilizzare l’autorizzazione del certificato per connetterti a SharePoint.
     </tbody> 
    </table>
 
-1. Fai clic su **Continua** per salvare la connessione e tornare al modulo.
+1. Fai clic su **Continue** (Continua) per salvare la connessione e tornare al modulo.
 
 ## Moduli SharePoint di Microsoft e relativi campi
 
@@ -339,7 +347,7 @@ Questo modulo ha recuperato i dettagli sulla cartella specificata
    <td> <p>Per istruzioni sulla connessione dell'account Microsoft SharePoint Online a Workfront Fusion, vedere <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connessione di Microsoft SharePoint Online a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Immetti sito, unità e file                ID]</td> 
+   <td role="rowheader">[!UICONTROL Immetti ID sito, unità e file]</td> 
    <td> <p>Selezionare la modalità di identificazione della posizione del file che si desidera ottenere.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare <strong>[!UICONTROL ID sito]</strong>, <strong>[!UICONTROL ID elenco]</strong> e <strong>[!UICONTROL Percorso cartella]</strong> per la cartella da recuperare.</p> </li> 
@@ -362,7 +370,7 @@ Questo modulo di azione aggiorna i metadati di una cartella o di un file
    <td> <p>Per istruzioni sulla connessione dell'account Microsoft SharePoint Online a Workfront Fusion, vedere <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connessione di Microsoft SharePoint Online a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Immetti sito, unità e file                ID]</td> 
+   <td role="rowheader">[!UICONTROL Immetti ID sito, unità e file]</td> 
    <td> <p>Selezionare la modalità di identificazione della posizione del file che si desidera ottenere.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare <strong>[!UICONTROL ID sito]</strong>, <strong>[!UICONTROL ID elenco]</strong> e <strong>[!UICONTROL ID cartella o elemento]</strong> per la cartella o il file che si desidera recuperare.</p> </li> 

@@ -4,9 +4,17 @@ description: Con il connettore Adobe Experience Manager Assets per Adobe Workfro
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
-workflow-type: ht
-source-wordcount: '3734'
+TQID: https://experienceleague.adobe.com/x0Sf-4GkVLQ2JkOXOPQdmwcVWVrM8b9JF3P6LV6BE6U
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 3823
 ht-degree: 100%
 
 ---
@@ -340,12 +348,12 @@ Questo modulo di azione carica una risorsa nel tuo account Adobe Experience Mana
 
 
 * [Copiare una cartella o una risorsa](#copy-a-folder-or-asset)
-* [Creare un record](#create-a-record)
+* [Crea un record](#create-a-record)
 * [Eliminare una cartella, una risorsa o una rappresentazione](#delete-a-folder-asset-or-rendition)
 * [Ottenere l’elenco di una cartella](#get-a-folder-listing)
 * [Effettua chiamata API personalizzata](#make-a-custom-api-call)
 * [Spostare una cartella o una risorsa](#move-a-folder-or-asset)
-* [Aggiornare un record](#update-a-record)
+* [Aggiorna un record](#update-a-record)
 
 
 
@@ -390,7 +398,7 @@ Questo modulo di azione copia una cartella o una risorsa in un’altra posizione
 
 
 
-#### Creare un record
+#### Crea un record
 
 Questo modulo di azione crea una cartella o un commento a una risorsa.
 
@@ -482,7 +490,7 @@ Questo modulo di azione effettua una chiamata API personalizzata all’API Adobe
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Metodo</p> </td> 
-   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTPS</a>.</p> </td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Intestazioni</td> 
@@ -537,7 +545,7 @@ Questo modulo di azione sposta la risorsa o la cartella dal percorso specificato
  </tbody> 
 </table>
 
-#### Aggiornare un record
+#### Aggiorna un record
 
 Questo modulo di azione aggiorna un record esistente.
 
@@ -547,13 +555,13 @@ Questo modulo di azione aggiorna un record esistente.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni sulla connessione del tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Tipo di record</td> 
    <td> <p>Seleziona se desideri eliminare i metadati o la rappresentazione di una risorsa.</p> 
     <ul> 
-     <li> <p>Metadati risorsa </p> 
+     <li> <p>Metadati risorsa</p> 
       <ul> 
        <li> <p>Seleziona la risorsa per la quale vuoi aggiornare i metadati.</p> </li> 
        <li> <p>Inserisci il nuovo titolo della risorsa.</p> </li> 
@@ -606,7 +614,7 @@ Questo modulo ottiene lo stato corrente di un processo asincrono.
  <tbody> 
   <tr> 
    <td role="rowheader">Connessione</td> 
-   <td> <p>Per istruzioni su come connettere il tuo account  Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
+   <td> <p>Per istruzioni su come connettere il tuo account Adobe Experience Manager Assets a Workfront Fusion, consulta <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connettere Adobe Experience Manager Assets a Workfront Fusion</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID processo</td> 

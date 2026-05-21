@@ -4,9 +4,20 @@ description: Per automatizzare i processi all’interno di Workfront, puoi utili
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
+TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2:
+  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '7298'
+source-wordcount: 7298
 ht-degree: 98%
 
 ---
@@ -1045,7 +1056,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 Workfront ha recentemente rilasciato una nuova versione del servizio di sottoscrizione eventi. Questa nuova versione non cambia l’API Workfront, ma la funzionalità di sottoscrizione eventi. Questo modulo di azione aggiorna la versione del payload dell’evento utilizzata per questo scenario.
 
-Per ulteriori informazioni sulla nuova versione di sottoscrizione eventi, consulta [Controllo delle versioni per sottoscrizione eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
+Per ulteriori informazioni sulla nuova versione di sottoscrizione a eventi, consulta [Controllo delle versioni per sottoscrizioni a eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 
 Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=it).
 

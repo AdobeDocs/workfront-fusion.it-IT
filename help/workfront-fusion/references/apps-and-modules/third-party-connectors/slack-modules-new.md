@@ -4,9 +4,14 @@ description: In uno scenario  [!DNL Adobe Workfront Fusion] , puoi automatizzare
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
-source-git-commit: 42b5b5729b68bf8cea9940fb261a15293db52be1
+TQID: https://experienceleague.adobe.com/fHIb5n3hU15APXxrrQiEmT-KS9aIlN-4hjUByFfpG-I
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: 4621
 ht-degree: 12%
 
 ---
@@ -66,7 +71,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 ## Prerequisiti
 
 * Per utilizzare i moduli [!DNL Slack], è necessario disporre di un account [!DNL Slack].
-* Se stai creando connessioni OAuth@, devi aggiungere i seguenti URL al inserisco nell&#39;elenco Consentiti di della tua organizzazione:
+* Se stai creando connessioni OAuth@, devi aggiungere i seguenti URL al inserisco nell&#39;elenco Consentiti di dell’organizzazione:
    * token bot: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
    * token utente:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
 

@@ -7,13 +7,20 @@ navigation-topic: apps-and-their-modules
 title: Moduli Adobe InDesign
 description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Adobe InDesign e collegarlo a più applicazioni e servizi di terze parti.
 author: Becky
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
+TQID: https://experienceleague.adobe.com/D2JdaOqvTA5SUsKm9U8Sjss6dJFMZv2Uo5RGk25QphQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 20%
+source-wordcount: 1702
+ht-degree: 22%
 
 ---
-
 
 # Moduli Adobe InDesign
 
@@ -107,7 +114,7 @@ Per creare una connessione per i moduli Adobe InDesign:
         </tr>
       </tbody>
     </table>
-1. Fai clic su **Continue** (Continua) per salvare la connessione e tornare al modulo.
+1. Fai clic su **Continua** per salvare la connessione e tornare al modulo.
 
 ## Moduli InDesign e relativi campi
 
@@ -284,7 +291,7 @@ Questo modulo di azione invia una richiesta di esecuzione per uno script persona
 
 * [Ottieni dettagli script personalizzati](#get-custom-script-details)
 * [Ottieni tag unione dati](#get-data-merge-tags)
-* [Ottieni informazioni documento](#get-document-information)
+* [Ottenere informazioni sul documento](#get-document-information)
 * [Elencare script personalizzati](#list-custom-scripts)
 
 #### Ottieni dettagli script personalizzati
@@ -340,7 +347,7 @@ Questo modulo recupera i tag di unione dati da un documento.
   </tbody>
 </table>
 
-#### Ottieni informazioni documento
+#### Ottenere informazioni sul documento
 
 Questo modulo recupera informazioni complete sui documenti INDD/IDML e restituisce dati in base ai tipi di informazioni abilitati specificati nella richiesta.
 
@@ -433,12 +440,12 @@ Questo modulo effettua una chiamata API personalizzata all’API Adobe InDesign
     <tr>
       <td role="rowheader">Stringa query  </td>
       <td>
-        <p>Immettere la stringa di query richiesta.</p>
+        <p>Inserisci la stringa di query della richiesta.</p>
       </td>
     </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Corpo]</td> 
-   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> in JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
+   <td> <p>Aggiungi il contenuto del corpo della chiamata API sotto forma di oggetto JSON standard.</p> <p>Nota:  <p>Quando utilizzi istruzioni condizionali come <code>if</code> nel codice JSON, racchiudi l’istruzione condizionale tra virgolette.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

@@ -4,10 +4,13 @@ description: I moduli di Adobe Workfront Fusion Encryptor consentono di crittogr
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/C4okceW3ZngBJrcDS-qymjR16GwTb3pFfdZpG-CoSwc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 0%
+source-wordcount: 863
+ht-degree: 14%
 
 ---
 
@@ -19,7 +22,7 @@ Questi moduli richiedono una certa familiarità con i processi di crittografia.
 
 ## Requisiti di accesso
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità in questo articolo.
++++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +30,22 @@ Questi moduli richiedono una certa familiarità con i processi di crittografia.
  <tbody> 
   <tr> 
    <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto di flusso di lavoro Adobe Workfront e qualsiasi pacchetto di automazione e integrazione Adobe Workfront</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Lavoro o superiore</p> </td> 
+   <td> <p>Standard</p><p>Work o successiva</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Prodotto</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Select o Prime Workfront che non include l’automazione e l’integrazione di Workfront, deve acquistare Adobe Workfront Fusion.</li></ul>
+   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, vedere [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -64,7 +67,7 @@ Durante la configurazione di [!UICONTROL moduli Encryptor] vengono visualizzati 
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Key]</td>
+        <td>[!UICONTROL Chiave]</td>
         <td>Seleziona la chiave da utilizzare per il modulo. Per creare una chiave, fare clic su <b>Aggiungi</b> e immettere il nome, la chiave e il tipo di codifica della chiave.</td>
     </tr>
     <tr>
@@ -132,7 +135,7 @@ Durante la configurazione di [!UICONTROL moduli Encryptor] vengono visualizzati 
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Key]</td>
+        <td>[!UICONTROL Chiave]</td>
         <td>Seleziona la chiave da utilizzare per il modulo. Per creare una chiave, fare clic su <b>Aggiungi</b> e immettere il nome, la chiave e il tipo di codifica della chiave.</td>
     </tr>
    <tr>
@@ -169,7 +172,7 @@ Durante la configurazione di [!UICONTROL moduli Encryptor] vengono visualizzati 
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Key]</td>
+        <td>[!UICONTROL Chiave]</td>
         <td>Seleziona la chiave da utilizzare per il modulo. Per creare una chiave, fare clic su <b>Aggiungi</b> e immettere il nome, la chiave e il tipo di codifica della chiave.</td>
     </tr>
     <tr>
@@ -226,7 +229,7 @@ Durante la configurazione di [!UICONTROL moduli Encryptor] vengono visualizzati 
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Key]</td>
+        <td>[!UICONTROL Chiave]</td>
         <td>Seleziona la chiave da utilizzare per il modulo. Per creare una chiave, fare clic su <b>Aggiungi</b> e immettere il nome, la chiave e il tipo di codifica della chiave.</td>
     </tr>
    <tr>
