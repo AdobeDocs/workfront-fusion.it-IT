@@ -51,7 +51,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 Adobe deve disporre di un accordo Adobe Gen AI firmato su file.
 
-Per ulteriori informazioni sulla firma del contratto, consulta [Firmare il contratto di Adobe Gen AI](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) nell&#39;articolo Panoramica dell&#39;Assistente IA nella documentazione di Workfront.
+Per ulteriori informazioni sulla firma del contratto, consulta [Firmare il contratto di Adobe Gen AI](https://experienceleague.adobe.com/it/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) nell&#39;articolo Panoramica dell&#39;Assistente IA nella documentazione di Workfront.
 
 ## Ottieni informazioni dall’Assistente AI
 
