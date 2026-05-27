@@ -7,9 +7,9 @@ exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
 TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
 workflow-type: tm+mt
-source-wordcount: 1272
+source-wordcount: 1300
 ht-degree: 10%
 
 ---
@@ -82,6 +82,10 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. Per impostare la priorità per un webhook, fai clic sul menu a discesa nella colonna Priorità e seleziona la nuova priorità.
 
    I webhook con priorità più elevata verranno gestiti per primi, il che può essere utile se un pool di lavoratori dispone di molte automazioni in concorrenza per le risorse.
+
+   >[!NOTE]
+   >
+   >Solo gli utenti con ruolo [!UICONTROL Amministratore team] o con ruolo [!UICONTROL Amministratore] o [!UICONTROL Proprietario] dell&#39;organizzazione possono modificare la priorità di un webhook. Per gli altri utenti, il menu a discesa Priorità è disabilitato.
 1. Per disabilitare o abilitare un webhook, disabilitare o abilitare l&#39;interruttore nella colonna Stato nella riga di tale webhook.
 1. Per verificare se una coda dei webhook è piena, selezionare la colonna Coda completa. Il numero in questa colonna è il numero di elementi attualmente in coda.
 1. Per visualizzare le operazioni gestite da un webhook, fare clic su **Operazioni** nella colonna Coda completa del webhook.
