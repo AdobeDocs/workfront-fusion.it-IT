@@ -2,10 +2,10 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 207cda01f5207e0906ddfc20a5d1c50b75e689ea
+source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 55%
+source-wordcount: '2445'
+ht-degree: 54%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 55%
 * Attività sulla versione di Fusion {#fusion-release-activity}
    * [Attività sulla versione di Adobe Workfront Fusion](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Versioni di Fusion - 2026 {#fusion-releases-2026}
+      * [Attività di rilascio di Workfront Fusion: settimana del 1° giugno 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 25 maggio 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-25.md)
       * [Attività di rilascio di Workfront Fusion: settimana dell’11 maggio 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-11.md)
       * [Attività di rilascio di Workfront Fusion: settimana del 4 maggio 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-4.md)
@@ -279,6 +280,8 @@ ht-degree: 55%
    * [Eliminare elementi dello scenario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [Gestisci scenari dall&#39;area Scenari](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
    * [Modifica webhook](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
+   * [Riattivare l’esecuzione di uno scenario](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
+   * [Utilizza Esegui una volta per testare uno scenario](/help/workfront-fusion/manage-scenarios/run-once.md)
 * Creare scenari di esercitazione {#build-practice-scenarios}
    * [Creare scenari di esercitazione](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Creare uno scenario di base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
