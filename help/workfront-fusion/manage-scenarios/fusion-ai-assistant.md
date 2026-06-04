@@ -7,61 +7,68 @@ exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
 TQID: https://experienceleague.adobe.com/MeGV8WNtXy8HkizGkUutuhw2ctdmf3DFIkRWBRXPzA0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+hide: true
+source-git-commit: b84dea9d44b4112a8d905b631720727e557351df
 workflow-type: tm+mt
-source-wordcount: 310
-ht-degree: 34%
+source-wordcount: 30
+ht-degree: 50%
 
 ---
 
 # Assistente IA in Workfront Fusion
 
-L’Assistente AI è in grado di individuare le informazioni contenute nella documentazione di Workfront, eliminando la necessità di visitare Adobe Experience League per ottenere l’aiuto di cui hai bisogno.
+Questa funzionalità è stata dichiarata obsoleta e questo articolo verrà rimosso a breve.
 
-## Requisiti di accesso
+<!--
 
-+++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
+AI Assistant can locate information from Workfront documentation, eliminating the need for you to visit Adobe Experience League to get the help you need. 
+
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Pacchetto Adobe Workfront</td> 
-   <td> <p>Qualsiasi pacchetto Workflow di Adobe Workfront, e qualsiasi pacchetto Automation and Integration di Adobe Workfront.</p><p>Workfront Ultimate</p><p>Pacchetti Workfront Prime e Select, con un ulteriore acquisto di Workfront Fusion.</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Licenze Adobe Workfront</td> 
-   <td> <p>Standard</p><p>Work o successiva</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Prodotto</td> 
+   <td role="rowheader">Product</td> 
    <td>
-   <p>Se la tua organizzazione dispone di un pacchetto Workfront Select o Prime che non include Workfront Automation and Integration, dovrà acquistare Adobe Workfront Fusion.</li></ul>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta [Requisiti di accesso nella documentazione](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Prerequisiti
+## Prerequisites
 
-Adobe deve disporre di un accordo Adobe Gen AI firmato su file.
+Adobe must have a signed Adobe Gen AI agreement on file.
 
-Per ulteriori informazioni sulla firma del contratto, consulta [Firmare il contratto di Adobe Gen AI](https://experienceleague.adobe.com/it/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) nell&#39;articolo Panoramica dell&#39;Assistente IA nella documentazione di Workfront.
+For more information on signing the agreement, see [Sign the Adobe Gen AI agreement](https://experienceleague.adobe.com/it/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) in the article AI Assistant overview in the Workfront documentation.
 
-## Ottieni informazioni dall’Assistente AI
+## Get information from AI Assistant
 
-Per ottenere informazioni o istruzioni dalla documentazione di Workfront Fusion utilizzando l’Assistente IA:
+To get information or instructions from the Workfront Fusion documentation using AI Assistant:
 
-1. Fai clic sull&#39;icona **Assistente AI** ![Icona Assistente AI](assets/ai-assistant-icon.png) nell&#39;angolo superiore destro dello schermo.
-1. Nel pannello Assistente AI, immetti il prompt nell’area di testo accanto alla parte inferiore del pannello.
+1. Click the **AI Assistant** icon ![AI Assistant icon](assets/ai-assistant-icon.png) near the upper-right corner of the screen.
+1. In the AI Assistant panel, enter your prompt in the text area near the bottom of the panel.
 
-   L’Assistente AI può impiegare alcuni minuti per individuare le informazioni, a seconda delle dimensioni o della complessità del prompt. Consigliamo semplici prompt.
+   AI Assistant may take a few moments to locate the information, depending on how large or complex the prompt is. We recommend simple prompts.
 
-1. Visualizza la risposta nel pannello Assistente AI.
-1. (Facoltativo) Se la risposta non contiene le informazioni necessarie, perfeziona la risposta e riprova.
-1. (Facoltativo e condizionale) Se la risposta include un collegamento a un articolo Adobe Experience League, fai clic sul collegamento per aprire l’articolo in una nuova finestra.
+1. View the response in the AI Assistant panel.
+1. (Optional) If the response does not contain the information you need, refine your response and try again.
+1. (Optional and conditional) If the response includes a link to an Adobe Experience League article, click the link to open the article in a new window.
+
+-->
