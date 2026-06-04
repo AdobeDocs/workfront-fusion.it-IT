@@ -2,7 +2,7 @@
 user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
-source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
+source-git-commit: b84dea9d44b4112a8d905b631720727e557351df
 workflow-type: tm+mt
 source-wordcount: '2445'
 ht-degree: 54%
@@ -275,7 +275,7 @@ ht-degree: 54%
    * [Visualizzare e gestire le relazioni tra scenari concatenati](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
    * [Visualizzare il flusso di dati di uno scenario in esecuzione](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [Visualizzare la coda di un webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-   * [Assistente IA in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+   * {hide-from-toc}[Assistente IA in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [Eseguire la funzione Esperto punteggio dello scenario](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [Eliminare elementi dello scenario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [Gestisci scenari dall&#39;area Scenari](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
