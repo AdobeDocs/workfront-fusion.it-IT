@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
+source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
 workflow-type: tm+mt
 source-wordcount: 332
 ht-degree: 0%
@@ -53,3 +53,6 @@ La funzione Esegui una volta si trova nell’editor di scenari.
    * **Fornire l&#39;input manualmente**: è necessario fornire il payload del webhook per l&#39;input dello scenario. Deve essere in formato JSON.
 
      Per specificare l&#39;input, immettere il testo nella casella **Payload webhook** e fare clic su **Esegui**.
+
+
+
