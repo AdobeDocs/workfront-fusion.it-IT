@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
 TQID: https://experienceleague.adobe.com/fHIb5n3hU15APXxrrQiEmT-KS9aIlN-4hjUByFfpG-I
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 4621
+source-wordcount: 4620
 ht-degree: 12%
 
 ---
@@ -1471,7 +1469,7 @@ Questo modulo aggiorna lo stato corrente di un utente.
    <td> <p>Inserisci o mappa le emoji che desideri utilizzare per rappresentare il tuo stato. Utilizza il formato <code>:emojiname:</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Scadenza stato </td> 
+   <td role="rowheader">Scadenza stato [!UICONTROL]</td> 
    <td>Immettere o mappare la data e l'ora di scadenza dello stato. Per un elenco dei formati di data e ora supportati, consulta <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Coercizione del tipo</a>.</td> 
   </tr> 
  </tbody> 

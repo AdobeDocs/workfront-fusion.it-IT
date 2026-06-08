@@ -5,12 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
 TQID: https://experienceleague.adobe.com/1gzJh1C9Trah5ABH9oSeihxOyA7K2oTXkU021jHpoCI
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 1556
 ht-degree: 27%
@@ -299,7 +296,7 @@ Questo modulo di azione crea una nuova cartella vuota all’interno della cartel
    <td> <p>Inserisci oppure mappa un nome per la nuova cartella.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Cartella padre </td> 
+   <td role="rowheader">Cartella padre [!UICONTROL]</td> 
    <td> <p>Selezionare la cartella in cui si desidera creare la nuova cartella.</p> </td> 
   </tr> 
   <tr> 
@@ -478,7 +475,7 @@ Questo modulo di ricerca cerca gli elementi disponibili per l’utente o per l�
    <td> <p>Per ogni attributo che si desidera restituire nella risposta del modulo, fare clic su <b>Aggiungi elemento</b> e immettere il campo.</p><p>Può essere utilizzato per richiedere campi che normalmente non vengono restituiti in una risposta standard. Tieni presente che la specifica di questo parametro avrà l’effetto che nessuno dei campi standard viene restituito nella risposta, a meno che non sia specificato esplicitamente. </p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Estensioni file di </td> 
+   <td role="rowheader">Estensioni file di [!UICONTROL]</td> 
    <td> <p>Per limitare la ricerca a estensioni di file specifiche, immettere un elenco di estensioni di file separate da virgole.</p> </td> 
   </tr> 
   <tr> 
@@ -490,7 +487,7 @@ Questo modulo di ricerca cerca gli elementi disponibili per l’utente o per l�
    <td> <p>Per cercare le risorse in un intervallo di dimensioni specifico, inserisci l’estremità più grande dell’intervallo, in byte.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID utente proprietario di </td> 
+   <td role="rowheader">ID utente proprietario di [!UICONTROL]</td> 
    <td> <p>Per cercare le risorse di proprietà di utenti specifici, inserisci un elenco separato da virgole di ID proprietari.</p> </td> 
   </tr> 
   <tr> 

@@ -5,20 +5,23 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 15%
+source-wordcount: 883
+ht-degree: 10%
 
 ---
 
 # Moduli di concatenamento
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Questa funzione è attualmente in Beta.
+>Questa funzione è disponibile in Beta e non è consigliata per flussi di lavoro di produzione mission-critical. In quanto funzione di Beta, il comportamento può cambiare e i casi limite potrebbero non essere gestiti completamente.
+>
+>Per integrazioni stabili, puoi attivare un secondo scenario tramite webhook utilizzando un modulo di richiesta HTTP: questo modello utilizza primitive completamente supportate e fornisce a ogni scenario un controllo di esecuzione indipendente.
+>
+>Se scegli di utilizzare scenari concatenati, consulta [Creare più scenari insieme](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) per indicazioni sulla progettazione.
 
 Utilizzando i moduli Catena, potete collegare uno scenario a un altro.
 
@@ -84,6 +87,16 @@ Per configurare Ricevi dati dal modulo padre:
 
 Questo modulo si trova nello scenario principale. I campi riflettono la struttura dati impostata nello scenario figlio Ricevi dati dal modulo padre.
 
+>[!IMPORTANT]
+>
+> Prima di configurare questo modulo in uno scenario di produzione, verifica quanto segue:
+>
+> * **Non abilitare Commit Trigger Last (CTL)** in questo scenario quando Fire and Forget è disabilitato. CTL ritenterà lo scenario quando sospende l&#39;attesa di una risposta figlio, creando un ciclo di nuovi tentativi non limitato.
+> * **Prestare attenzione quando si inserisce questo modulo all&#39;interno di un iteratore.** L’invio di uno scenario figlio per ogni elemento in un iteratore di grandi dimensioni crea un carico di piattaforma significativo. Valuta di allineare la logica dello scenario secondario o di pre-calcolare le ricerche condivise al di fuori dell’iteratore.
+> * **Attivato e dimenticato** significa che l&#39;elemento padre non ha alcuna visibilità sull&#39;esecuzione o sul completamento dell&#39;elemento figlio. Da utilizzare solo quando gli errori figlio vengono monitorati in modo indipendente.
+>
+> Per istruzioni complete sulla progettazione, consulta [Incatenare più scenari](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+
 >[!NOTE]
 >
 >* Puoi selezionare uno scenario figlio esistente o crearne uno nuovo tramite questo modulo.
@@ -112,7 +125,11 @@ Per configurare il modulo di scenario Call a child
 
 Si trova nello scenario figlio e invia i dati nella struttura selezionata allo scenario padre. Puoi mappare questi dati in moduli successivi nello scenario principale.
 
-Se lo scenario figlio dispone di più route, si consiglia di aggiungere questo modulo a una route che viene sempre eseguita ed eseguita dopo qualsiasi altra route.
+>[!IMPORTANT]
+>
+> Se lo scenario figlio ha più route, **devi** garantire che la risposta Return to parent module sia raggiungibile da ogni percorso di esecuzione. Se il modulo di risposta Return si trova su una route ignorata o non eseguita, lo scenario padre attenderà indefinitamente una risposta che non arriva mai.
+>
+> Aggiungere la risposta Return al modulo padre dopo il router, su una route che viene sempre eseguita indipendentemente dal risultato del router, oppure aggiungere la gestione degli errori per garantire che venga sempre restituita una risposta anche quando si verifica un errore.
 
 Per configurare il modulo Aggiungi risponditore:
 

@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1101
-ht-degree: 94%
+source-wordcount: 1351
+ht-degree: 77%
 
 ---
 
@@ -27,6 +26,12 @@ Poiché l’automazione del lavoro richiede un’elaborazione rapida, Workfront 
 * Il timeout predefinito per l’esecuzione di uno scenario è di **40 minuti**. Quando il tempo di esecuzione raggiunge questo timeout, Workfront Fusion interrompe l’esecuzione dello scenario dopo il ciclo o l’operazione successiva, a seconda dello scenario. Di conseguenza lo scenario si interrompe poco dopo il raggiungimento del limite di 40 minuti
 
   La concatenazione di scenari non viene considerata per il timeout di esecuzione dello scenario. Uno scenario principale non accumula tempo durante l’attesa dell’esecuzione di uno scenario secondario.
+
+  >[!IMPORTANT]
+  >
+  > Anche se il concatenamento consente ai flussi di lavoro di durare oltre 40 minuti, deve essere trattato come un segnale di rischio di progettazione, non come una soluzione alternativa supportata. Gli scenari principali che si estendono su più scenari figlio a lunga durata non hanno un limite di timeout complessivo. Se uno scenario figlio si blocca o riscontra un problema di piattaforma, l’elemento padre attende indefinitamente senza errori e senza ripristino automatico.
+  >
+  > Se la progettazione dello scenario richiede il concatenamento per evitare il limite di 40 minuti, controlla l’architettura prima di implementare in produzione. Consulta [Incatenare più scenari](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) per indicazioni sulla progettazione.
 * La dimensione massima della blueprint di uno scenario è di **5 MB**, ma ti consigliamo di mantenere la dimensione dello scenario al di sotto di **3 MB**.
 
   I moduli di app che creano o aggiornano dati con un numero elevato di campi possono determinare blueprint molto grandi.
@@ -35,6 +40,14 @@ Poiché l’automazione del lavoro richiede un’elaborazione rapida, Workfront 
    * Quando lavori con altre app, utilizza moduli API personalizzati per interagire con i tipi di record con un numero elevato di campi.
 
 * Anche se non esiste un limite per il numero di moduli in uno scenario, gli scenari con più di 150 moduli limitano le prestazioni del sistema Workfront Fusion. Per questo motivo non è consigliato creare scenari con più di 150 moduli.
+
+## Scenari concatenati
+
+* La funzionalità di concatenamento degli scenari è disponibile in Beta e non è consigliata per i flussi di lavoro mission-critical. In quanto funzione di Beta, il comportamento può cambiare e i casi limite potrebbero non essere gestiti completamente.
+
+  Per integrazioni stabili, puoi attivare un secondo scenario tramite webhook utilizzando un modulo di richiesta HTTP. Questo modello utilizza primitive completamente supportate e fornisce a ogni scenario un controllo di esecuzione indipendente.
+
+  Se scegli di utilizzare scenari concatenati, controlla le linee guida di progettazione e i vincoli nell&#39;articolo [Catena più scenari](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
 
 ## Operazioni
 
@@ -77,6 +90,8 @@ Per ulteriori informazioni, consulta [Utilizzare file di grandi dimensioni](/hel
 * I registri della cronologia di esecuzione sono limitati a **100 MB**. Se la cronologia di esecuzione supera queste dimensioni, verranno visualizzati solo i primi 100 MB.
 * Se l&#39;input o l&#39;output di una singola operazione supera i 15 MB, non viene visualizzato nella cronologia di esecuzione.
 * Se uno scenario presenta più esecuzioni simultanee, nell’area Esecuzioni della pagina dei dettagli dello scenario vengono visualizzate solo 5 esecuzioni. Questo vale anche quando sono in esecuzione più di 5 esecuzioni.
+* Se uno scenario fa parte di una rete concatenata, la cronologia di esecuzione viene mantenuta separatamente per ogni scenario della catena. Non esiste una visualizzazione di traccia unificata tra scenari padre e figlio. Per analizzare un’esecuzione a catena, apri singolarmente la cronologia di esecuzione di ogni scenario.
+* Se l&#39;input o l&#39;output di una singola operazione supera i 15 MB, non viene visualizzato nella cronologia di esecuzione. Questo limite si applica ai dati trasmessi tra scenari padre e figlio tramite moduli a catena.
 
 ## Esecuzioni incomplete
 

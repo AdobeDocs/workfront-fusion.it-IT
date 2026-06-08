@@ -5,11 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 3032
 ht-degree: 35%
@@ -189,7 +187,7 @@ Questo modulo trigger avvia uno scenario quando un campo viene aggiornato in [!D
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record] </td> 
-   <td> <p>Selezionare il tipo di record contenente il campo che si desidera controllare nel modulo. È necessario scegliere un tipo di record con [!UICONTROL Field History] attivato nella configurazione di [!DNL Salesforce]. Per ulteriori informazioni, vedere <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Tracciamento cronologia campi</a> nella documentazione di [!DNL Salesforce]. </p> </td> 
+   <td> <p>Selezionare il tipo di record contenente il campo che si desidera controllare nel modulo. È necessario scegliere un tipo di record con [!UICONTROL Field History] attivato nella configurazione di [!DNL Salesforce]. Per ulteriori informazioni, vedere <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Tracciamento cronologia campi</a> nella documentazione di [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Campo]</td> 
@@ -256,7 +254,7 @@ Questo modulo richiede una configurazione aggiuntiva. È necessario configurare 
 1. Set a rule name, evaluation criteria, and rule criteria, then click **[!UICONTROL Save]** and **[!UICONTROL Next]**.
 
 1. Click **[!UICONTROL Done]**.
-1. From the newly created Workflow rule, click **[!UICONTROL Edit]**..
+1. From the newly created Workflow rule, click **[!UICONTROL Edit]**.
 1. From the **[!UICONTROL Add Workflow Action]** drop-down list, select **[!UICONTROL New Outbound Message]**.
 
 1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.
@@ -577,7 +575,7 @@ Questo modulo di azione carica un singolo file in Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connessione]</td> 
-   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL &#x200B; Adobe Workfront Fusion] - Istruzioni di base</a></td> 
+   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL  Adobe Workfront Fusion] - Istruzioni di base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File di origine]</td> 
@@ -617,7 +615,7 @@ Questo modulo di azione recupera tutti i record che soddisfano un determinato cr
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connessione]</td> 
-   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL &#x200B; Adobe Workfront Fusion] - Istruzioni di base</a></td> 
+   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL  Adobe Workfront Fusion] - Istruzioni di base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo]</td> 
@@ -657,7 +655,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>Tipo di ricerca </td> 
+   <td>Tipo di ricerca [!UICONTROL]</td> 
    <td> <p>Selezionare il tipo di ricerca che si desidera venga eseguita dal modulo:</p> 
     <ul> 
      <li> <p>[!UICONTROL Semplice]</p> </li> 

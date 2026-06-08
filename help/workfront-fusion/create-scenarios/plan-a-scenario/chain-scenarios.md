@@ -5,20 +5,23 @@ author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1266
-ht-degree: 12%
+source-wordcount: 1705
+ht-degree: 9%
 
 ---
 
 # Concatenare più scenari insieme
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Questa funzione è attualmente in Beta.
+>Questa funzione è disponibile in Beta e non è consigliata per flussi di lavoro di produzione mission-critical. In quanto funzione di Beta, il comportamento può cambiare e i casi limite potrebbero non essere gestiti completamente.
+>
+>Per integrazioni stabili, puoi attivare un secondo scenario tramite webhook utilizzando un modulo di richiesta HTTP: questo modello utilizza primitive completamente supportate e fornisce a ogni scenario un controllo di esecuzione indipendente.
+>
+>Se scegli di utilizzare scenari concatenati, controlla attentamente le linee guida e i vincoli di progettazione in questo articolo, in particolare la sezione [Best practice](#best-practices).
 
 Puoi concatenare gli scenari, consentendo a uno di attivarne un altro e restituendo l’output di dati dal secondo al primo. Questo consente di creare scenari più modulari, senza dover duplicare sezioni di scenari in più scenari.
 
@@ -63,7 +66,9 @@ Considera i seguenti casi d’uso di esempio per scenari di concatenamento:
 
 * **Gestione degli errori**: in genere le organizzazioni dispongono delle stesse azioni di gestione degli errori in più scenari, ad esempio una route di gestione degli errori che invia un log degli errori a un archivio dati e crea una notifica Slack. È possibile creare uno scenario figlio con queste azioni e concatenarlo nella gestione degli errori dei percorsi in più scenari.
 
-* **Tempo di estensione**: è possibile utilizzare il concatenamento per operazioni batch di grandi dimensioni con azioni a esecuzione prolungata, ad esempio quando si esportano e importano file. Questa operazione richiede un po&#39; di tempo se sono presenti molti file. Poiché gli scenari figlio non vengono conteggiati rispetto al timeout dello scenario padre, è possibile superare il tempo di esecuzione utilizzando più scenari figlio per esportare o importare i file.
+* **Tempo di estensione**: è possibile utilizzare il concatenamento per operazioni batch di grandi dimensioni in cui il tempo totale di elaborazione supererebbe il limite di esecuzione di un singolo scenario di 40 minuti. Tuttavia, considera questo modello con cautela: uno scenario principale che si concatena a più scenari secondari di lunga durata non ha un limite di timeout complessivo. Se uno scenario figlio si blocca o si verifica un problema di piattaforma, l’elemento principale attende indefinitamente senza che venga visualizzato un errore.
+
+  Prima di utilizzare il concatenamento per estendere il tempo di esecuzione, valutare se sia possibile ridurre la dimensione del batch, aumentare la frequenza o ristrutturare il progetto per evitare lunghe catene sequenziali. Consulta [Best practice](#best-practices) di seguito.
 
 * **La sostituzione degli iteratori** La sostituzione degli iteratori con scenari figlio può ridurre l&#39;utilizzo di memoria, ad esempio in operazioni complesse in un&#39;iterazione che causano un errore di memoria insufficiente. Puoi creare uno scenario separato per l’operazione complessa e sostituire l’iteratore con il modulo di scenario Call a child
 
@@ -111,3 +116,39 @@ Quando si concatenano scenari, seguire queste procedure per evitare ricorsioni:
 ### Utilizza la gestione degli errori per garantire una risposta
 
 Poiché lo scenario padre è in attesa di una risposta dallo scenario figlio prima di continuare, è necessario assicurarsi che lo scenario figlio sia generato in modo che fornisca una risposta anche se viene rilevato un errore.
+
+### Non utilizzare l&#39;impostazione &quot;Conferma ultimo trigger (CTL)&quot;
+
+Si sconsiglia di utilizzare l’impostazione dello scenario &quot;Commit Trigger Last (CTL)&quot; (Conferma ultimo trigger (CTL)) con scenari concatenati. Se è necessario eseguire un nuovo tentativo in uno scenario che utilizza il concatenamento, implementarlo esplicitamente utilizzando un percorso di gestione degli errori con un conteggio massimo di tentativi definito.
+
+### Limita annidamento profondità
+
+Limita le reti di scenari concatenati a due livelli di profondità (padre → figlio). Gli scenari nidificati a tre o più livelli (genitore → figlio → nipote) aumentano in modo significativo la complessità, riducono l&#39;osservabilità e rendono difficile la diagnosi dei guasti senza il supporto tecnico.
+
+Se la progettazione richiede una nidificazione più approfondita, documenta l’intera mappa della catena e assicurati che sia attivo il monitoraggio prima di distribuire in produzione.
+
+### Utilizzare Fire and Forget con attenzione
+
+Quando **Fire e Forget** è abilitato nel modulo di scenario Call a child, lo scenario padre invia l&#39;elemento figlio e continua immediatamente senza attendere una risposta. L&#39;elemento padre non è in grado di determinare se lo scenario figlio è stato eseguito, se ha avuto esito positivo o negativo.
+
+Utilizza Fire e Forget solo quando:
+
+* Lo scenario figlio esegue registrazioni, notifiche o scritture di controllo che non influiscono sulla logica dello scenario padre
+* È attivo un monitoraggio indipendente per rilevare gli errori silenziosi dei bambini
+
+Non utilizzare Fire and Forget quando:
+
+* Lo scenario figlio esegue scritture da cui dipende il padre
+* È necessario sapere se lo scenario figlio è riuscito prima che il padre continui
+* Il flusso di lavoro è transazionale o richiede garanzie di elaborazione esattamente una volta
+
+### Evita di chiamare scenari secondari all’interno di iteratori a volume elevato
+
+Se si inserisce un modulo di scenario Call a child all&#39;interno di un BasicFeeder o di un altro iteratore, viene inviato uno scenario figlio per ogni elemento elaborato. Con un numero elevato di elementi (centinaia o più per esecuzione), si crea un notevole sovraccarico di lavoro e si aumenta l&#39;esposizione ai problemi di affidabilità della piattaforma.
+
+Prima di utilizzare questo pattern:
+
+* Valuta se la logica dello scenario figlio può essere allineata direttamente allo scenario padre come moduli
+* Pre-calcola eventuali ricerche che restituiscono lo stesso valore per ogni iterazione all&#39;esterno dell&#39;iteratore, anziché inviare una chiamata a catena per elemento
+* Conferma il conteggio massimo realistico degli elementi ed esamina con l’amministratore prima di implementarli nell’ambiente di produzione.
+
