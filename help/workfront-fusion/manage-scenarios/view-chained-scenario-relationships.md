@@ -4,14 +4,22 @@ description: È possibile creare una mappa delle relazioni tra gli scenari padre
 author: Becky
 feature: Workfront Fusion
 exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
-source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 18%
+source-wordcount: '557'
+ht-degree: 16%
 
 ---
 
 # Visualizzare e gestire le relazioni tra scenari concatenati
+
+>[!IMPORTANT]
+>
+>Questa funzione è disponibile in Beta e non è consigliata per flussi di lavoro di produzione mission-critical. In quanto funzione di Beta, il comportamento può cambiare e i casi limite potrebbero non essere gestiti completamente.
+>
+>Per integrazioni stabili, puoi attivare un secondo scenario tramite webhook utilizzando un modulo di richiesta HTTP: questo modello utilizza primitive completamente supportate e fornisce a ogni scenario un controllo di esecuzione indipendente.
+>
+>Se scegli di utilizzare scenari concatenati, consulta [Creare più scenari insieme](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) per indicazioni sulla progettazione.
 
 È possibile creare una mappa delle relazioni tra gli scenari padre e figlio. Puoi anche utilizzare la mappa per passare a diversi scenari della catena.
 
