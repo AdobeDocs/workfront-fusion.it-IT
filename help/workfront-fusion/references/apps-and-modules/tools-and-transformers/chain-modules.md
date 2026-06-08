@@ -96,7 +96,7 @@ Questo modulo si trova nello scenario principale. I campi riflettono la struttur
 > * **Prestare attenzione quando si inserisce questo modulo all&#39;interno di un iteratore.** L’invio di uno scenario figlio per ogni elemento in un iteratore di grandi dimensioni crea un carico di piattaforma significativo. Valuta di allineare la logica dello scenario secondario o di pre-calcolare le ricerche condivise al di fuori dell’iteratore.
 > * **Attivato e dimenticato** significa che l&#39;elemento padre non ha alcuna visibilità sull&#39;esecuzione o sul completamento dell&#39;elemento figlio. Da utilizzare solo quando gli errori figlio vengono monitorati in modo indipendente.
 >
-> Per istruzioni complete sulla progettazione, consulta [Incatenare più scenari](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+> Per istruzioni complete sulla progettazione, consulta [Incatenare più scenari](https://experienceleague.adobe.com/it/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
 
 >[!NOTE]
 >
