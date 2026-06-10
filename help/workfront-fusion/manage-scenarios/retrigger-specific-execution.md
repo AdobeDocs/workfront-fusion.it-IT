@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
+source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -18,7 +18,7 @@ Puoi riattivare l’esecuzione di uno scenario specifico per elaborare i dati ut
 
 Ad esempio, se aggiorni uno scenario per aggiungere un’azione, ad esempio la creazione di un problema, puoi riattivare un’esecuzione che si è verificata prima dell’aggiornamento. Lo scenario aggiornato verrà eseguito utilizzando l’evento di attivazione dello scenario originale, ma includerà l’azione aggiornata. In questo esempio, lo scenario crea un problema come parte della nuova esecuzione.
 
-Il riavvio è disponibile per gli scenari che dispongono di trigger del webhook e per gli scenari figlio.
+Il riavvio è disponibile per gli scenari che dispongono di trigger del webhook e per gli scenari concatenati.
 
 Quando si riattiva uno scenario che utilizza un webhook, è possibile utilizzare di nuovo l’evento webhook originale, pertanto non è necessario ricreare l’evento per riattivare lo scenario.
 
