@@ -7,10 +7,10 @@ exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 50a1b6a8f8e3ad09c8734e901f8f0dab36f79e2e
 workflow-type: tm+mt
-source-wordcount: 902
-ht-degree: 15%
+source-wordcount: 899
+ht-degree: 16%
 
 ---
 
@@ -93,12 +93,27 @@ Per istruzioni sul caricamento del certificato pubblico di Adobe Workfront Fusio
 >
 >* Si tratta di certificati mTLS non jolly.
 
+Scarica il seguente file zip, decomprimi e utilizza il file PEM per il centro dati.
+
+[Download dei certificati di Workfront Fusion 2026](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+
 | Datacenter | Collegamento di download | Date valide |
 | --- | --- | --- |
-| Datacenter AWS USA | [Scarica il certificato Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | Dal 29 gennaio 2026 al 2 marzo 2027 |
-| Cluster Azure USA | [Scarica il certificato Azure di Workfront Fusion US 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | Dal 21 settembre 2025 al 23 ottobre 2026 |
-| Datacenter AWS UE | [Scarica Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | Dal 29 gennaio 2026 al 2 marzo 2027 |
-| Cluster Azure UE | [Scarica il certificato Workfront Fusion EU Azure 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | Dal 4 febbraio 2026 all’8 marzo 2027 |
+| Datacenter AWS USA | `fusion-prod-us-mtls-certificate-2026.pem` | Dal 29 gennaio 2026 al 2 marzo 2027 |
+| Cluster Azure USA | `fusion-prod-az-mtls-certificate.pem` | Dal 21 settembre 2025 al 23 ottobre 2026 |
+| Datacenter AWS UE | `fusion-prod-eu-mtls-certificate-2026.pem` | Dal 29 gennaio 2026 al 2 marzo 2027 |
+| Cluster Azure UE | `fusion-prod-eu-az-mtls-certificate-2026.pem` | Dal 4 febbraio 2026 all’8 marzo 2027 |
+
+<!--
+
+| Datacenter | Download link | Dates valid |
+| --- | --- | --- |
+| US AWS Datacenter | [Download Workfront Fusion US Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| US Azure Cluster | [Download Workfront Fusion US Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | September 21, 2025 to October 23, 2026 |
+| EU AWS Datacenter | [Download Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| EU Azure Cluster | [Download Workfront Fusion EU Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | February 4, 2026 to March 8, 2027 |
+
+-->
 
 ### Certificati per il 2025
 
@@ -112,11 +127,26 @@ Per istruzioni sul caricamento del certificato pubblico di Adobe Workfront Fusio
 >
 >* Si tratta di certificati mTLS non jolly.
 
-| Datacenter | Collegamento di download | Date valide |
+Scarica il seguente file zip, decomprimi e utilizza il file PEM per il centro dati.
+
+[Download dei certificati di Workfront Fusion 2025](assets/2025-certs/fusion-prod-mtls-certificate-2025.zip)
+
+| Datacenter | File | Date valide |
 | --- | --- | --- |
-| Datacenter USA | [Scarica il certificato Workfront Fusion US 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | Dal 3 marzo 2025 al 4 aprile 2026 |
-| Datacenter UE | [Scarica Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | Dal 3 marzo 2025 al 4 aprile 2026 |
-| Cluster Azure | [Scarica il certificato Workfront Fusion Azure 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | dal 24 ottobre 2024 al 25 novembre 2025 |
+| Datacenter USA | `fusion-prod-us-mtls-certificate.pem` | Dal 3 marzo 2025 al 4 aprile 2026 |
+| Datacenter UE | `fusion-prod-eu-mtls-certificate.pem` | Dal 3 marzo 2025 al 4 aprile 2026 |
+| Cluster Azure | `fusion-prod-az-mtls-certificate.pem` | dal 24 ottobre 2024 al 25 novembre 2025 |
+
+
+<!--
+
+| Datacenter | Download link | Dates valid |
+| --- | --- | --- |
+| US Datacenter | [Download Workfront Fusion US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
+| EU Datacenter | [Download Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
+| Azure Cluster | [Download Workfront Fusion Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | October 24, 2024 to November 25, 2025 |
+
+-->
 
 <!--
 
@@ -152,3 +182,4 @@ Per abilitare Mutual TLS in un modulo di richiesta [!UICONTROL HTTP]:
 
 1. Abilita **[!UICONTROL Mostra impostazioni avanzate]** nella parte inferiore del modulo.
 1. Abilita **[!UICONTROL Usa TLS reciproco]**.
+
