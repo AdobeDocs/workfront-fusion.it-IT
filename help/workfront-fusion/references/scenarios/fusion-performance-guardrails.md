@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
-source-wordcount: 1351
-ht-degree: 77%
+source-wordcount: 1360
+ht-degree: 76%
 
 ---
 
@@ -32,7 +31,7 @@ Poiché l’automazione del lavoro richiede un’elaborazione rapida, Workfront 
   >
   > Anche se il concatenamento consente ai flussi di lavoro di durare oltre 40 minuti, deve essere trattato come un segnale di rischio di progettazione, non come una soluzione alternativa supportata. Gli scenari principali che si estendono su più scenari figlio a lunga durata non hanno un limite di timeout complessivo. Se uno scenario figlio si blocca o riscontra un problema di piattaforma, l’elemento padre attende indefinitamente senza errori e senza ripristino automatico.
   >
-  > Se la progettazione dello scenario richiede il concatenamento per evitare il limite di 40 minuti, controlla l’architettura prima di implementare in produzione. Consulta [Incatenare più scenari](https://experienceleague.adobe.com/it/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) per indicazioni sulla progettazione.
+  > Se la progettazione dello scenario richiede il concatenamento per evitare il limite di 40 minuti, controlla l’architettura prima di implementare in produzione. Consulta [Incatenare più scenari](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) per indicazioni sulla progettazione.
 * La dimensione massima della blueprint di uno scenario è di **5 MB**, ma ti consigliamo di mantenere la dimensione dello scenario al di sotto di **3 MB**.
 
   I moduli di app che creano o aggiornano dati con un numero elevato di campi possono determinare blueprint molto grandi.
@@ -41,6 +40,7 @@ Poiché l’automazione del lavoro richiede un’elaborazione rapida, Workfront 
    * Quando lavori con altre app, utilizza moduli API personalizzati per interagire con i tipi di record con un numero elevato di campi.
 
 * Anche se non esiste un limite per il numero di moduli in uno scenario, gli scenari con più di 150 moduli limitano le prestazioni del sistema Workfront Fusion. Per questo motivo non è consigliato creare scenari con più di 150 moduli.
+* I nomi degli scenari non possono contenere più di 120 caratteri.
 
 ## Scenari concatenati
 
