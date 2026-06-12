@@ -32,7 +32,7 @@ Poiché l’automazione del lavoro richiede un’elaborazione rapida, Workfront 
   >
   > Anche se il concatenamento consente ai flussi di lavoro di durare oltre 40 minuti, deve essere trattato come un segnale di rischio di progettazione, non come una soluzione alternativa supportata. Gli scenari principali che si estendono su più scenari figlio a lunga durata non hanno un limite di timeout complessivo. Se uno scenario figlio si blocca o riscontra un problema di piattaforma, l’elemento padre attende indefinitamente senza errori e senza ripristino automatico.
   >
-  > Se la progettazione dello scenario richiede il concatenamento per evitare il limite di 40 minuti, controlla l’architettura prima di implementare in produzione. Consulta [Incatenare più scenari](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) per indicazioni sulla progettazione.
+  > Se la progettazione dello scenario richiede il concatenamento per evitare il limite di 40 minuti, controlla l’architettura prima di implementare in produzione. Consulta [Incatenare più scenari](https://experienceleague.adobe.com/it/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) per indicazioni sulla progettazione.
 * La dimensione massima della blueprint di uno scenario è di **5 MB**, ma ti consigliamo di mantenere la dimensione dello scenario al di sotto di **3 MB**.
 
   I moduli di app che creano o aggiornano dati con un numero elevato di campi possono determinare blueprint molto grandi.
