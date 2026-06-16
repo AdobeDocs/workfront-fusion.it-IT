@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
 workflow-type: tm+mt
-source-wordcount: 2101
-ht-degree: 50%
+source-wordcount: 2236
+ht-degree: 47%
 
 ---
 
@@ -277,6 +274,8 @@ Questo modulo di attivazione avvia uno scenario quando un record, un tipo di rec
       </tr>
   </tbody>
 </table>
+
+Per un esempio di utilizzo della logica avanzata in questo modulo, vedere [Esempio di logica avanzata nel modulo Watch Events](#example-of-advanced-logic-in-the-watch-events-module).
 
 ### Azioni
 
@@ -571,3 +570,40 @@ La seguente espressione JSONata crea un output leggibile della query di Planning
 
 Per informazioni sull&#39;utilizzo dei moduli JSONata, vedere [Moduli JSONata](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
 
+## Esempio di logica avanzata nel modulo Watch Events
+
+Questo è un esempio del formato utilizzato dalla logica avanzata quando si utilizza il modulo Workfront Planning > Osserva eventi.
+
+```
+[
+  {
+    "fieldName": "recordTypeId",
+    "fieldValue": "Rt68c886502d4b5554ee80896b",
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "planning"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "active"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  }
+]
+```
+
+Quando utilizzi una logica avanzata nel modulo Watch Event, tieni presente quanto segue:
+
+* La prima voce `"fieldvalue":` è l&#39;ID del tipo di record di pianificazione estratto dall&#39;URL. In questo esempio, l&#39;ID del tipo di record di pianificazione è `Rt68c886502d4b5554ee80896b`.
+* I dati di Planning vengono restituiti all&#39;interno di un array denominato `data `, che in questo esempio viene visualizzato come `"fieldName": "data"`.
+* I nomi dei campi di Planning vengono restituiti come ID che iniziano con `F`.
+* Poiché questo esempio esegue la valutazione in base a un connettore di filtro `OR`, sono presenti due voci per lo stesso campo (`F68c886502d4b5554eec808975`).  Le due opzioni dell&#39;elenco a discesa a cui si applica il filtro del modulo sono `"planning"` e `"active"`.
