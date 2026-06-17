@@ -10,7 +10,7 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 8b031ed2093d4844f05c52db9fc79ce9e7e4b85c
+source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
 workflow-type: tm+mt
 source-wordcount: 3743
 ht-degree: 15%
@@ -140,7 +140,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 * [Eliminare una decisione in una fase](#delete-a-decision-on-a-stage)
 * [Eliminare una fase](#delete-a-stage)
 * [Eliminare un modello](#delete-a-template)
-* [# Eliminazione di un&#39;approvazione](#delete-an-approval)
+* [Eliminare un’approvazione](#delete-an-approval)
 * [Elimina decisioni](#delete-decisions)
 * [Elimina partecipanti](#delete-participants)
 * [Bloccare una fase](#lock-a-stage)
