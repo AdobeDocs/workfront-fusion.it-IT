@@ -8,9 +8,9 @@ exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 28b8a270f6cb0e7a42c81153493b983d5b9e428b
 workflow-type: tm+mt
-source-wordcount: 770
+source-wordcount: 771
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Se il primo modulo restituisce un bundle, il bundle passa attraverso il resto de
 
 Il primo passaggio dello scenario, eseguito dal primo modulo, consiste nel controllare i documenti in Workfront. Ogni documento trovato viene considerato un unico bundle. Se il modulo viene eseguito senza trovare bundle, lo scenario termina dopo il primo modulo.
 
-Se viene restituito un bundle, questo passa attraverso il resto dello scenario. In questo esempio, il resto dello scenario è costituito dal modulo secondario, che carica il bundle nella cartella [!DNL Dropbox].
+Se viene restituito un bundle, questo passa attraverso il resto dello scenario. In questo esempio, il resto dello scenario è costituito dal secondo modulo, che carica il bundle nella cartella [!DNL Dropbox].
 
 ![Flusso di esecuzione dello scenario di integrazione](assets/example-execution-flow-wf-dropbox.png)
 
