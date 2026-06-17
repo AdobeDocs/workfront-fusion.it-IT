@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
 workflow-type: tm+mt
-source-wordcount: 5506
-ht-degree: 14%
+source-wordcount: 6526
+ht-degree: 13%
 
 ---
 
@@ -126,11 +124,11 @@ Per creare una connessione per i moduli [!DNL Adobe Photoshop]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID account tecnico]</td>
-        <td>Se utilizzi una connessione JWT, immetti l’ID dell’account tecnico [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Se utilizzi una connessione JWT, immetti l’ID dell’account tecnico [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID organizzazione]</td>
-        <td>Se utilizzi una connessione JWT, immetti l'ID organizzazione [!DNL Adobe] . Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
+        <td>Se utilizzi una connessione JWT, immetti l'ID organizzazione [!DNL Adobe] [!UICONTROL]. Questo si trova nella sezione dei dettagli [!UICONTROL Credentials] del [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Chiave privata]</td>
@@ -283,7 +281,7 @@ Questo modulo supporta file di grandi dimensioni. Per ulteriori informazioni sui
     <tr>
       <td role="rowheader">[!UICONTROL Output]</td>
       <td>
-        <p>Per ogni file modificato che si desidera creare, fare clic su Aggiungi elemento e immettere l'archivio, il percorso e il tipo elencati nella tabella.</p>
+        <p>Per ogni file modificato che si desidera creare, fare clic su Aggiungi elemento e immettere l'archivio, il percorso e il tipo elencati.</p>
       </td>
     </tr>
     <tr>
@@ -397,7 +395,7 @@ Questo modulo di azione converte un file in JPEG, PNG, PSD o TIFF.
     <tr>
       <td role="rowheader">[!UICONTROL Output]</td>
       <td>
-        <p>Per ogni file convertito che si desidera creare, fare clic su Aggiungi elemento e immettere l'archivio, il percorso e il tipo elencati nella tabella.</p>
+        <p>Per ogni file convertito che si desidera creare, fare clic su Aggiungi elemento e immettere l'archivio, il percorso e il tipo elencati.</p>
       </td>
     </tr>
     <tr>
@@ -577,7 +575,7 @@ Questo modulo di azione crea un nuovo PSD con livelli opzionali e genera rappres
     <tr>
       <td role="rowheader">[!UICONTROL Output]</td>
       <td>
-        <p>Per ogni file che si desidera creare, fare clic su Aggiungi elemento e immettere l'archivio, il percorso e il tipo elencati nella tabella.</p>
+        <p>Per ogni file che si desidera creare, fare clic su Aggiungi elemento e immettere l'archivio, il percorso e il tipo elencati.</p>
       </td>
     </tr>
     <tr>
@@ -620,7 +618,7 @@ Questo modulo di azione modifica i livelli di testo in un file Photoshop. Potete
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -694,7 +692,7 @@ Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#e
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -727,7 +725,7 @@ Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#e
       <td role="rowheader">[!UICONTROL Livelli]</td>
    <td> <p>Per informazioni dettagliate sulle opzioni dei livelli, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Modifica livello testo</a> nella documentazione di Adobe Photoshop.</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di output di </td>
+      <td role="rowheader">Archiviazione file di output di [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui si desidera memorizzare il file modificato.</p>
       </td>
@@ -806,7 +804,7 @@ Questo modulo di azione esegue azioni Photoshop utilizzando comandi JSON.
     <tr>
       <td role="rowheader">[!UICONTROL Output]</td>
       <td>
-        <p>Per ogni file che si desidera creare, fare clic su Aggiungi elemento e immettere l'opzione di archiviazione, posizione, tipo e sovrascrittura indicata nella tabella.</p>
+        <p>Per ogni file che si desidera creare, fare clic su Aggiungi elemento e immettere l'opzione di archiviazione, posizione, tipo e sovrascrittura nell'elenco.</p>
       </td>
     </tr>
     <tr>
@@ -849,7 +847,7 @@ Questo modulo di azione esegue Sfocatura profondità sul file selezionato.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -906,7 +904,7 @@ Questo modulo di azione esegue un’azione Photoshop sull’immagine selezionata
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file che si desidera modificare.</p>
       </td>
@@ -993,7 +991,7 @@ Questo modulo di azione esegue il ritaglio prodotto sull’immagine selezionata.
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionare il servizio file in cui è memorizzato il file da ritagliare.</p>
       </td>
@@ -1068,7 +1066,7 @@ Questo modulo di azione recupera le informazioni sui livelli dal file PSD specif
       <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
     </tr>
     <tr>
-      <td role="rowheader">Archiviazione file di input </td>
+      <td role="rowheader">Archiviazione file di input [!UICONTROL]</td>
       <td>
         <p>Selezionate il servizio file da cui memorizzare il file da cui desiderate recuperare le informazioni sui livelli.</p>
       </td>
@@ -1366,7 +1364,7 @@ Questa azione ridimensiona un’immagine utilizzando le stesse proporzioni.
     <tr>
       <td role="rowheader">[!UICONTROL Output]</td>
       <td>
-        <p>Per ogni file convertito che si desidera creare, fare clic su Aggiungi elemento e immettere l'archivio, il percorso e le altre opzioni elencate in questa tabella.</p>
+        <p>Per ogni file convertito che si desidera creare, fare clic su Aggiungi elemento e immettere l'archivio, il percorso e altre opzioni elencate.</p>
       </td>
     </tr>
     <tr>
@@ -1499,3 +1497,346 @@ Questo modulo di azione aggiunge una filigrana all’immagine selezionata.
       </td>
     </tbody>
 </table>
+
+
+### Creare una tavola da disegno
+
+Questo modulo crea una nuova tavola da disegno in Photoshop.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connessione]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Immagini]</td>
+      <td>
+        <p>Per ogni immagine da aggiungere alla tavola da disegno, fare clic su <b>Aggiungi elemento</b> e immettere il tipo e il percorso di origine dell'immagine.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Spaziatura tavola da disegno]</p>
+      </td>
+   <td>Immettete o mappate la spaziatura, in pixel, che desiderate avere tra ciascuna tavola da disegno.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output]</td>
+      <td>
+        <p>Per ogni file convertito che si desidera creare, fare clic su Aggiungi elemento e immettere l'archivio, il percorso e altre opzioni elencate.</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+### Creare o modificare un elemento composito
+
+Questo modulo crea o modifica un composito in Photoshop.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connessione]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Immagini]</td>
+      <td>
+        <p>Per ogni immagine da aggiungere alla tavola da disegno, fare clic su <b>Aggiungi elemento</b> e immettere il tipo e il percorso di origine dell'immagine.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Width]</p>
+      </td>
+   <td>Se state creando un'immagine, immettete la larghezza dell'immagine in pixel.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Height]</td>
+      <td>
+        <p>Se state creando un'immagine, immettete l'altezza dell'immagine in pixel.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Mode]</td>
+      <td>
+        <p>Selezionare la modalità colore per l'immagine.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Fill]</td>
+      <td>
+        <p>Selezionate il tipo di riempimento per il livello di sfondo.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Nome]</td>
+      <td>
+        <p>Immettere o mappare un nome per la nuova immagine.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Pixel scale factor]</td>
+      <td>
+        <p>Immettete o mappate il fattore di scala pixel. Deve essere un numero compreso tra 0,1 e 1.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Resolution]</td>
+      <td>
+        <p>Nel campo <b>Valore</b> immettere il valore della risoluzione in unità di densità (pixel per pollice). Il valore predefinito è 72.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Profile Type]</td>
+      <td>
+        <p>Se desiderate sostituire il profilo colore predefinito, selezionate un tipo di profilo e immettete i dettagli elencati.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ritaglio &gt; Superiore / Sinistro / Inferiore / Destro]</td>
+      <td>
+        <p>Immettete i limiti ai quali desiderate ritagliare l'immagine.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Nascondi]</td>
+      <td>
+        <p>Selezionate Sì per nascondere i pixel al di fuori dei limiti di ritaglio. Se è impostato su false, i pixel al di fuori dei limiti di ritaglio vengono eliminati. Il valore predefinito è false.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ridimensiona &gt; Larghezza]</td>
+      <td>
+        <p>Selezionare l'unità da utilizzare per la larghezza, quindi selezionare il valore che rappresenta la larghezza desiderata. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ridimensiona &gt; Altezza]</td>
+      <td>
+        <p>Selezionare l'unità da utilizzare per l'altezza, quindi selezionare il valore che rappresenta l'altezza desiderata. </p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Resolution]</td>
+      <td>
+        <p>Selezionare l'unità da utilizzare per la risoluzione, quindi selezionare il valore che rappresenta la risoluzione desiderata.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Ricampionamento]</td>
+      <td>
+        <p>Selezionate il metodo di ricampionamento da utilizzare per il ridimensionamento.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Vincola proporzioni]</td>
+      <td>
+        <p>Selezionare Sì per mantenere le proporzioni tra larghezza e altezza. Selezionate No per consentire la regolazione indipendente di larghezza e altezza.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Rasterizza]</td>
+      <td>
+        <p>Selezionare se si desidera rasterizzare l'immagine.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Scala stili]</td>
+      <td>
+        <p>Selezionate se desiderate applicare il ridimensionamento agli stili quando ridimensionate l'immagine.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Rifila su]</td>
+      <td>
+        <p>Selezionate se desiderate tagliare i pixel trasparenti.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Livelli]</td>
+      <td>
+        <p>Per ogni elemento che si desidera aggiungere in un secondo momento, fare clic su <b>Aggiungi elemento</b> e immettere i dettagli del livello. </p><p>Per informazioni dettagliate, vedere <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">Creare o modificare un elemento composito</a> nella documentazione di Adobe.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Default font PostScript name]</td>
+      <td>
+        <p>Immettere o mappare il nome PostScript del carattere predefinito che si desidera utilizzare.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Strategia font mancante]</td>
+      <td>
+        <p>Specificare se si desidera che la creazione o la modifica non riesca o se si desidera utilizzare il tipo di carattere predefinito, qualora non sia disponibile.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Caratteri aggiuntivi]</td>
+      <td>
+        <p>Per ogni tipo di carattere che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere l'URL di origine del tipo di carattere. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output]</td>
+      <td>
+        <p>Per ogni file modificato che si desidera creare, fare clic su Aggiungi elemento e immettere i dettagli di output. </p><p>Per informazioni dettagliate, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">Creare o modificare un elemento composito</a> nella documentazione di Adobe.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Numero massimo di risultati]</td>
+      <td>
+        <p>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante un ciclo di esecuzione.</p>
+      </td>
+      </tr>
+      </tbody>
+</table>
+
+### Modificare un’immagine con varie regolazioni
+
+Questo modulo apporta le regolazioni di un&#39;immagine in stile Lightroom.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connessione]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Immagini]</td>
+      <td>
+        <p>Immettete o mappate il tipo di origine e la posizione dell'immagine.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Altri campi]</p>
+      </td>
+   <td><p>Per informazioni dettagliate, consulta <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/edit">Modificare un'immagine con varie regolazioni</a> nella documentazione di Adobe.</p></td> 
+    </tr>
+    </tbody>
+</table>
+
+### Eseguire azioni, script e trasformazioni di Photoshop
+
+Questo modulo esegue azioni, script e trasformazioni disponibili nell’API Photoshop di Firefly.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connessione]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Immagini]</td>
+      <td>
+        <p>Immettete o mappate il tipo di origine e la posizione dell'immagine.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Azioni]</p>
+      </td>
+   <td><p>Per ogni azione che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere l'origine, l'URL e il nome dell'azione.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL UXP source]</p>
+      </td>
+   <td><p>Se utilizzi uno script UXP, seleziona se stai fornendo un URL o contenuto in linea, quindi immetti o mappa l’URL o il contenuto.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Contenuti aggiuntivi]</p>
+      </td>
+   <td><p>Aggiungi fino a 25 file a cui si fa riferimento dall’azione o da UXP.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output]</td>
+      <td>
+        <p>Per ogni file modificato che si desidera creare, fare clic su Aggiungi elemento e immettere il formato, la destinazione e il pattern di output.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Numero massimo di risultati]</td>
+      <td>
+        <p>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante un ciclo di esecuzione.</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
+### Generare un manifesto
+
+Questo modulo genera un manifesto PSD per l’immagine di input specificata.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connessione]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Photoshop], consulta <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Creare una connessione a [!DNL Adobe Photoshop]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Origine]</td>
+      <td>
+        <p>Immettete o mappate il tipo di origine e la posizione dell'immagine.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output]</td>
+      <td>
+        <p>Per ogni file modificato che si desidera creare, fare clic su Aggiungi elemento e immettere i dettagli di destinazione.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Includi miniature livello]</p>
+      </td>
+   <td><p>Selezionate Sì se desiderate che il modulo generi una rappresentazione in miniatura per ciascun livello del manifesto.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Profondità massima miniature]</p>
+      </td>
+   <td><p>Immettete o mappate la profondità massima per le rappresentazioni delle miniature. Per nessuna profondità massima, immettere <code>0</code>.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layer thumbnail format]</p>
+      </td>
+   <td><p>Seleziona se desideri che le miniature siano in formato JPEG o PNG.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Estrai dati oggetto avanzato]</td>
+      <td>
+        <p>Seleziona se estrarre gli oggetti avanzati incorporati e includere un URL preceduto nel manifesto.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Rifila in trasparenza]</td>
+      <td>
+        <p>Selezionate se rifilare la miniatura di ogni livello per rimuovere i pixel trasparenti.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Numero massimo di risultati]</td>
+      <td>
+        <p>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante un ciclo di esecuzione.</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
