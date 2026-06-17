@@ -4,13 +4,10 @@ description: Con i moduli Contenuto e approvazioni di Adobe Workfront puoi otten
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 8b031ed2093d4844f05c52db9fc79ce9e7e4b85c
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
 workflow-type: tm+mt
 source-wordcount: 3743
 ht-degree: 15%
@@ -21,7 +18,7 @@ ht-degree: 15%
 
 Con i moduli Revisione e approvazioni unificate di Adobe Workfront, puoi ottenere i dettagli di approvazione, prendere una decisione su una risorsa, aggiungere o eliminare partecipanti all’approvazione, aggiungere o aggiornare fasi di approvazione, bloccare o sbloccare e effettuare chiamate API personalizzate.
 
-Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/it/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
+Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
 
 ## Requisiti di accesso
 
@@ -140,7 +137,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 * [Eliminare una decisione in una fase](#delete-a-decision-on-a-stage)
 * [Eliminare una fase](#delete-a-stage)
 * [Eliminare un modello](#delete-a-template)
-* [# Eliminazione di un&#39;approvazione](#delete-an-approval)
+* [Eliminare un’approvazione](#delete-an-approval)
 * [Elimina decisioni](#delete-decisions)
 * [Elimina partecipanti](#delete-participants)
 * [Bloccare una fase](#lock-a-stage)
