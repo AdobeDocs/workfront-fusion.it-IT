@@ -4,10 +4,10 @@ description: Il connettore App Builder di Adobe consente di utilizzare funzioni 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
+source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 26%
+source-wordcount: '289'
+ht-degree: 32%
 
 ---
 
@@ -48,26 +48,30 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ## Moduli di Adobe App Builder
 
-### Eseguire un blocco di codice personalizzato
+<!--
 
-Questo modulo consente di eseguire un blocco di codice. Il blocco di codice viene configurato durante la configurazione del modulo e viene eseguito quando il modulo viene eseguito durante l’esecuzione di uno scenario.
+### Run a custom code block
+
+This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connessione]</td>
-   <td>Selezionare la connessione contenente la funzione personalizzata che si desidera eseguire. </td> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Select the connection that contains the custom function that you want to run. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Code block]</td> 
-   <td>Immettere il blocco di codice che si desidera venga eseguito dal modulo.<p>Per formattare il codice per facilitarne la lettura, fare clic sull'icona <b>Formatta codice</b>.</td> 
+   <td>Enter the block of code that you want the module to run.<p>To format the code for easier reading, click the <b>Format code</b> icon.</td> 
   </tr> 
    </tbody> 
 </table>
 
-### Eseguire una funzione personalizzata
+-->
+
+### Eseguire una funzione personalizzata o un blocco di codice
 
 Questo modulo consente di utilizzare una funzione JavaScript personalizzata precedentemente configurata e memorizzata nell’area Funzioni.
 
