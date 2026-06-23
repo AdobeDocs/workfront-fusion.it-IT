@@ -3,10 +3,11 @@ title: Modulo Adobe App Builder
 description: Il connettore App Builder di Adobe consente di utilizzare funzioni personalizzate negli scenari.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8250d4fdad8ed7ffe63cd003f6e0cb325cbbfa8d
+exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
+source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 31%
+source-wordcount: '365'
+ht-degree: 26%
 
 ---
 
@@ -45,15 +46,32 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 +++
 
-## Modulo Adobe App Builder
+## Moduli di Adobe App Builder
 
-L’unico modulo di Adobe App Builder attualmente disponibile è Esegui un’azione, che consente di utilizzare una funzione di JavaScript personalizzata configurata in precedenza.
+### Eseguire un blocco di codice personalizzato
+
+Questo modulo consente di eseguire un blocco di codice. Il blocco di codice viene configurato durante la configurazione del modulo e viene eseguito quando il modulo viene eseguito durante l’esecuzione di uno scenario.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connessione]</td>
+   <td>Selezionare la connessione contenente la funzione personalizzata che si desidera eseguire. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Code block]</td> 
+   <td>Immettere il blocco di codice che si desidera venga eseguito dal modulo.<p>Per formattare il codice per facilitarne la lettura, fare clic sull'icona <b>Formatta codice</b>.</td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Eseguire una funzione personalizzata
+
+Questo modulo consente di utilizzare una funzione JavaScript personalizzata precedentemente configurata e memorizzata nell’area Funzioni.
 
 Per istruzioni sulla configurazione di una funzione personalizzata, vedere [Mappare i dati utilizzando le funzioni personalizzate](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
-
-### Eseguire un’azione
-
-Questo modulo esegue una funzione personalizzata configurata in precedenza.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -73,5 +91,3 @@ Questo modulo esegue una funzione personalizzata configurata in precedenza.
   </tr> 
    </tbody> 
 </table>
-
-
