@@ -3,10 +3,11 @@ title: Mappare i dati utilizzando funzioni personalizzate
 description: Durante la mappatura degli elementi, puoi utilizzare funzioni per la creazione di formule semplici o complesse.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 109ea8a6b3c37918110dc930a19ac85ef3e6d764
+exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
+source-git-commit: bf8274d9a80af75022fd600aee99c511b2e2d9e5
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 20%
+source-wordcount: '640'
+ht-degree: 16%
 
 ---
 
@@ -53,9 +54,19 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ## Configurare una funzione personalizzata
 
-Le funzioni personalizzate sono configurate nell&#39;area Funzioni di Workfront Fusion. Dopo aver configurato una funzione, puoi aggiungerla a uno scenario utilizzando il connettore App Builder di Adobe.
+È possibile creare una funzione personalizzata nell&#39;area Funzioni che può essere utilizzata in più scenari oppure configurare funzioni personalizzate all&#39;interno di singoli scenari.
 
-### Inizializzare l’ambiente di runtime
+* [Creare una funzione personalizzata da utilizzare in più scenari](#create-a-custom-function-to-use-in-multiple-scenarios)
+* [Creare una funzione personalizzata all’interno di uno scenario](#create-a-custom-function-within-a-scenario)
+
+### Creare una funzione personalizzata da utilizzare in più scenari
+
+Le funzioni personalizzate che possono essere utilizzate in più scenari sono configurate nell&#39;area Funzioni di Workfront Fusion. Dopo aver configurato una funzione, puoi aggiungerla a uno scenario utilizzando il connettore App Builder di Adobe.
+
+* [Inizializzare l’ambiente di runtime](#initialize-your-runtime-environment)
+* [Creare una funzione personalizzata nell&#39;area Funzioni](#create-a-custom-function-in-the-functions-area)
+
+#### Inizializzare l’ambiente di runtime
 
 Prima di poter creare funzioni personalizzate, è necessario inizializzare l&#39;ambiente di runtime. Questa operazione deve essere eseguita solo se il team non dispone di funzioni personalizzate.
 
@@ -72,7 +83,7 @@ Prima di poter creare funzioni personalizzate, è necessario inizializzare l&#39
 
    Dopo un certo periodo di tempo, viene visualizzato un elenco Funzioni, con due funzioni di esempio.
 
-### Creare una funzione personalizzata
+#### Creare una funzione personalizzata nell&#39;area Funzioni
 
 Dopo aver configurato l’ambiente di runtime, puoi iniziare a creare funzioni personalizzate.
 
@@ -96,9 +107,14 @@ Dopo aver configurato l’ambiente di runtime, puoi iniziare a creare funzioni p
    È possibile ignorare i parametri predefiniti quando si aggiunge la funzione a uno scenario.
 1. Fai clic su **Salva**
 
+### Creare una funzione personalizzata all’interno di uno scenario
+
+Per creare una funzione personalizzata all&#39;interno di uno scenario, utilizza il modulo **Esegui un blocco di codice personalizzato** nel connettore Adobe App Builder.
+
+Per istruzioni, vedere [Modulo Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+
 ## Aggiungere una funzione personalizzata a uno scenario
 
 Per aggiungere una funzione personalizzata a uno scenario, utilizza il connettore App Builder di Adobe.
 
 Per istruzioni, vedere [Modulo Adobe App Builder](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
-
