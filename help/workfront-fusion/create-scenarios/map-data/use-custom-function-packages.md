@@ -3,7 +3,7 @@ title: Usa pacchetti di funzioni personalizzati
 description: Durante la mappatura degli elementi, puoi utilizzare funzioni per la creazione di formule semplici o complesse.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: eb4c1ed6991606928beccbb57a8a86182e58a9e7
+source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 5%
@@ -355,5 +355,8 @@ To add one:
 >Publish a function before using it in a scenario, and turn on **Public** for any variable you want to use there.
 
 -->
+
+
+
 
 
