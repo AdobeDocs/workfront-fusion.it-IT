@@ -4,10 +4,10 @@ description: Il connettore App Builder di Adobe consente di utilizzare funzioni 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
+source-git-commit: 042f32f35e630ec76a7356fa750f5238f74a6f25
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 32%
+source-wordcount: '409'
+ht-degree: 23%
 
 ---
 
@@ -70,6 +70,56 @@ This module allows you to run a code block. You configure the code block when yo
 </table>
 
 -->
+
+### Eseguire una funzione personalizzata dal pacchetto
+
+Questo modulo esegue una funzione da un pacchetto.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connessione]</td>
+   <td>Selezionare la connessione contenente la funzione personalizzata che si desidera eseguire. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Package]</td> 
+   <td>Selezionare il pacchetto che include la funzione da eseguire nello scenario.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variable] </td> 
+   <td>Selezionare la funzione da eseguire nello scenario.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Usa variabile da pacchetto
+
+Questo modulo porta nello scenario una variabile configurata in un pacchetto.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connessione]</td>
+   <td>Selezionare la connessione contenente la funzione personalizzata che si desidera eseguire. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Package]</td> 
+   <td>Seleziona il pacchetto che include la variabile da inserire nello scenario.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variable] </td> 
+   <td>Seleziona la variabile da inserire nello scenario.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
 
 ### Eseguire una funzione personalizzata o un blocco di codice
 
