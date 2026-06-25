@@ -4,10 +4,10 @@ description: Durante la mappatura degli elementi, puoi utilizzare funzioni per l
 author: Becky
 feature: Workfront Fusion
 exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
-source-git-commit: bf8274d9a80af75022fd600aee99c511b2e2d9e5
+source-git-commit: cf686d3b04eadfa7aea314bdd995c25cdea370a5
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 16%
+source-wordcount: '665'
+ht-degree: 15%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 16%
 Poiché le funzioni personalizzate funzionano tramite Adobe App Builder, la tua organizzazione deve disporre di una licenza Adobe App Builder per utilizzarle.
 
 Le funzioni personalizzate, come la maggior parte degli elementi dello scenario, sono di proprietà dei team.
+
+Le funzioni sono semplici funzioni di JavaScript. Per includere variabili o dipendenze nella logica delle funzioni, utilizza i pacchetti.
+
+Per informazioni sui pacchetti, vedere [Utilizzare pacchetti di funzioni personalizzati](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 Workfront Fusion include inoltre funzioni incorporate che consentono di creare formule semplici o complesse. Queste funzioni coprono un&#39;ampia varietà di casi d&#39;uso, tra cui funzioni per array, stringhe, numeri e dati dei moduli precedenti.
 
