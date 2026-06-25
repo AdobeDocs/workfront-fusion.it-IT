@@ -9,7 +9,7 @@ ht-degree: 3%
 
 Regole dettagliate per l&#39;abilità `writing-quality`. Il file SKILL.md contiene le regole più comuni; questo file fornisce il riferimento completo per la punteggiatura, la terminologia, gli esempi di utilizzo delle maiuscole e la formattazione delle procedure.
 
----
+&#x200B;---
 
 ## Punteggiatura
 
@@ -85,7 +85,7 @@ Utilizza con moderazione. Considera invece la ristrutturazione della frase.
 - Usare per combinazioni: interruttore on/off
 - Uso per indirizzi Internet e frazioni
 
----
+&#x200B;---
 
 ## Esempi di utilizzo delle maiuscole
 
@@ -117,7 +117,7 @@ Utilizza con moderazione. Considera invece la ristrutturazione della frase.
 - Segui maiuscole nell’interfaccia utente
 - Se il pulsante è tutto maiuscolo nell’interfaccia utente, scrivilo invece in lettere maiuscole
 
----
+&#x200B;---
 
 ## Terminologia
 
@@ -147,7 +147,7 @@ Sono parole diverse con significati diversi — usate quella corretta per il con
 
 Utilizza sempre l’estensione del file, non l’acronimo: &quot;Carica un file .pdf&quot; (non &quot;Carica un PDF&quot;).
 
----
+&#x200B;---
 
 ## Formattazione procedura
 
@@ -210,7 +210,7 @@ Documenta prima il modo più semplice:
 - Spazi intorno alle parentesi
 - Non utilizzare per il menu principale: utilizza lo snippet del menu principale
 
----
+&#x200B;---
 
 ## Riferimenti grassetto e corsivo
 
@@ -230,7 +230,7 @@ Documenta prima il modo più semplice:
 - Testo che l&#39;utente deve digitare: &quot;Digitare *my.workfront.com* nella casella URL&quot;
 - Mai per enfasi — ristrutturate la frase
 
----
+&#x200B;---
 
 ## Note, Suggerimenti, Avvertenze — Linee guida dettagliate
 
@@ -258,15 +258,15 @@ Documenta prima il modo più semplice:
 - Combinare le note correlate in una con un elenco puntato
 - Non utilizzare le note per annunciare nuove funzioni; rielaborare il testo dell&#39;articolo
 
----
+&#x200B;---
 
 ## Serie di riferimenti incrociati
 
 | Situazione | Pattern |
 |-----------|---------|
-| Dopo aver fornito le informazioni | &quot;Per ulteriori informazioni, vedere [Nome articolo](link).&quot; |
-| Senza informazioni preliminari | &quot;Per informazioni, vedere [Nome articolo](link).&quot; |
-| In una sezione di un altro articolo | &quot;Per ulteriori informazioni, vedere [Sezione] in [Nome articolo](link).&quot; |
+| Dopo aver fornito le informazioni | &quot;Per ulteriori informazioni, vedere [Nome articolo] (link).&quot; |
+| Senza informazioni preliminari | &quot;Per informazioni, vedere [Nome articolo] (link).&quot; |
+| In una sezione di un altro articolo | &quot;Per ulteriori informazioni, vedere [Sezione] in [Nome articolo] (link).&quot; |
 | A una sezione nello stesso articolo | &quot;Per ulteriori informazioni, vedere [Sezione] in questo articolo.&quot; |
 
 Posizione:
@@ -274,7 +274,7 @@ Posizione:
 - Passaggi della procedura In: nuova riga dopo il passaggio
 - Più riferimenti: elenco puntato
 
----
+&#x200B;---
 
 ## Caratteristiche di qualità DQTI
 
@@ -302,7 +302,7 @@ Posizione:
 | Recuperabilità | Un lettore può analizzare le intestazioni e comprendere il contenuto? Vengono forniti collegamenti? |
 | Efficacia visiva | Elenchi per più di 3 elementi? Tabelle per confronti? Nessun paragrafo di muro di testo? |
 
----
+&#x200B;---
 
 ## Correzioni comuni
 

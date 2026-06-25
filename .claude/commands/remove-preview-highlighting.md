@@ -118,7 +118,7 @@ Se la struttura è ambigua (nessun chiaro parallelo), **arresta** e mostra entra
 - Non eseguire questo flusso di lavoro sui percorsi in **`product-announcements`** (note sulla versione e correlate). L&#39;inventario deve escluderli.
 - Non inventariare o modificare i percorsi elencati in **[Percorsi esclusi](#excluded-paths)** a meno che l&#39;utente non chieda esplicitamente di includerne uno.
 - **Non** rimuovere o modificare automaticamente **blocchi esclusi** (`<!-- … -->`); segui **sezioni esclusi** sopra.
-- Non rimuovere &quot;Anteprima&quot; quando è **not** su questo pattern di disponibilità delle funzionalità (ad esempio [Anteprima ambiente sandbox](·) come **nome prodotto** in un contesto non correlato); utilizza il giudizio e chiedi se non sei sicuro.
+- Non rimuovere &quot;Anteprima&quot; quando è **not** su questo pattern di disponibilità delle funzionalità (ad esempio [Anteprima ambiente sandbox] (·) come **nome prodotto** in un contesto non correlato); utilizza il giudizio e chiedi se non sei sicuro.
 - Non modificare `author:` o elementi di primo piano non correlati a meno che l&#39;utente non lo richieda.
 - Non saltare il passaggio **mostra → approva**.
 
