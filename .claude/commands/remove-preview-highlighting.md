@@ -130,4 +130,4 @@ Se la struttura è ambigua (nessun chiaro parallelo), **arresta** e mostra entra
 
 ## Riferimenti
 
-- Abbina **[Stile documentazione Workfront](https://experienceleague.adobe.com/?lang=it)** e convenzioni archivio (regole commit/PR se l&#39;utente esegue il commit).
+- Abbina **[Stile documentazione Workfront](https://experienceleague.adobe.com/it?lang=it)** e convenzioni archivio (regole commit/PR se l&#39;utente esegue il commit).
