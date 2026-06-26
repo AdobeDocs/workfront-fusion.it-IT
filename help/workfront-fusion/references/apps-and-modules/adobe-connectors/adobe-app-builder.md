@@ -4,7 +4,7 @@ description: Il connettore App Builder di Adobe consente di utilizzare funzioni 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 19%
@@ -141,7 +141,5 @@ Per istruzioni sulla configurazione di una funzione personalizzata, vedere [Mapp
   </tr> 
    </tbody> 
 </table>
-
-
 
 

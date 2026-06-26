@@ -3,9 +3,9 @@ title: Usa pacchetti di funzioni personalizzati
 description: Durante la mappatura degli elementi, puoi utilizzare funzioni per la creazione di formule semplici o complesse.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+source-git-commit: 4ec81401b5a76edd620b9779414ee578966b4315
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '2042'
 ht-degree: 5%
 
 ---
@@ -127,17 +127,26 @@ Se lo spazio è esaurito, è consigliabile rimuovere le dipendenze, le variabili
 Per tornare all&#39;elenco dei pacchetti, selezionare la freccia indietro accanto al nome del pacchetto.
 
 <!--Create toc here-->
+* [Funzioni](#functions)
+* [Variabili](#variables)
+* [Dipendenze](#dependencies)
+* [Cronologia](#history)
 
 ### Funzioni
 
 Nell&#39;area **Funzioni** viene visualizzato un elenco di funzioni nel pacchetto, inclusi il nome, lo stato, le dimensioni e il numero di input previsti.
 
-Per filtrare l&#39;elenco delle funzioni:
+* [Visualizzare e gestire l&#39;elenco Funzioni](#view-and-manage-the-functions-list)
+* [Creare o modificare una funzione nell&#39;area Pacchetti](#create-or-edit-a-function-in-the-packages-area)
+* [Apportare modifiche a una funzione live](#make-changes-to-a-live-function)
+* [Eliminare una funzione](#delete-a-function)
+
+#### Visualizzare e gestire l&#39;elenco Funzioni
+
+Per filtrare l&#39;elenco Funzioni:
 
 1. Filtra per stato facendo clic su **Tutti**, **Bozze** o **Pubblicato**.
 1. Utilizza la barra di ricerca per cercare funzioni specifiche.
-
-#### Stato funzione
 
 Una funzione può avere lo stato bozza o pubblicato.
 
@@ -191,6 +200,9 @@ L&#39;utilizzo delle bozze consente di apportare modifiche in modo sicuro. Potet
    >[!NOTE]
    >
    >La pubblicazione di una funzione cancella la cronologia delle versioni. La versione pubblicata diventa il punto di partenza corrente e le versioni precedenti delle bozze non vengono più mantenute.
+
+* [Definire gli input](#define-inputs)
+* [Testare una funzione](#test-a-function)
 
 ##### Definire gli input
 
@@ -256,11 +268,14 @@ Dopo la pubblicazione di una funzione, il pulsante **Pubblica** diventa un menu:
 >
 >L’eliminazione di una funzione la rimuove completamente, insieme alla relativa cronologia. Qualsiasi scenario o funzione che la utilizza smetterà di funzionare.
 
-## Variabili
+### Variabili
 
 Le variabili sono valori riutilizzabili che le funzioni possono utilizzare, ad esempio un URL di base, un ID account o una chiave API. Se si memorizzano queste variabili, si imposta un valore una volta e lo si aggiorna in un&#39;unica posizione, anziché aggiornarlo in molte funzioni.
 
-### Creare o modificare una variabile
+* [Creare o modificare una variabile](#create-or-edit-a-variable)
+* [Eliminare una variabile](#delete-a-variable)
+
+#### Creare o modificare una variabile
 
 1. Fai clic sulla scheda **Pacchetti** ![Icona Pacchetti](assets/packages-icon.png) nel pannello di navigazione a sinistra.
 1. Nella scheda **Variabili** selezionare **Nuova variabile**.
@@ -283,7 +298,7 @@ Le variabili sono valori riutilizzabili che le funzioni possono utilizzare, ad e
 
 1. Seleziona **Crea variabile** o **Salva modifiche**.
 
-### Eliminare una variabile
+#### Eliminare una variabile
 
 1. Fai clic sulla scheda **Pacchetti** ![Icona Pacchetti](assets/packages-icon.png) nel pannello di navigazione a sinistra.
 1. Nella scheda **Variabili** fare clic sull&#39;icona **Elimina** accanto alla variabile che si desidera eliminare.
@@ -292,18 +307,21 @@ Le variabili sono valori riutilizzabili che le funzioni possono utilizzare, ad e
 >
 >Le funzioni che utilizzano una variabile eliminata cesseranno di funzionare.
 
-## Dipendenze
+### Dipendenze
 
 Alcune funzioni richiedono librerie aggiuntive per eseguire il proprio lavoro. Nella scheda **Dipendenze** è possibile aggiungere e gestire tali librerie.
 
-### Aggiungere librerie
+* [Aggiungere librerie](#add-libraries)
+* [Rimuovere una libreria](#remove-a-library)
+
+#### Aggiungere librerie
 
 1. Fai clic sulla scheda **Pacchetti** ![Icona Pacchetti](assets/packages-icon.png) nel pannello di navigazione a sinistra.
 1. Nella scheda **Dipendenze** immettere uno o più nomi di libreria separati da virgole. È possibile richiedere una versione specifica aggiungendola dopo il nome, ad esempio `axios, lodash@4.17.21`.
 
 1. Fare clic su **Installa**.
 
-### Rimuovere una libreria
+#### Rimuovere una libreria
 
 1. Fai clic sulla scheda **Pacchetti** ![Icona Pacchetti](assets/packages-icon.png) nel pannello di navigazione a sinistra.
 1. Nella scheda **Dipendenze**, fai clic sull&#39;icona **Elimina** accanto alla libreria da rimuovere.
@@ -312,7 +330,7 @@ Alcune funzioni richiedono librerie aggiuntive per eseguire il proprio lavoro. N
 >
 >Le funzioni che si basano su una libreria rimossa potrebbero non funzionare più.
 
-## Cronologia
+### Cronologia
 
 Ogni volta che salvate una bozza di una funzione, Fusion ne conserva una copia. La scheda **Cronologia** consente di visualizzare e ripristinare le versioni precedenti.
 

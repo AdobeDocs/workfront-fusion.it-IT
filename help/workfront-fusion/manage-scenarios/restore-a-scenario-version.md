@@ -7,10 +7,10 @@ exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
 workflow-type: tm+mt
-source-wordcount: 633
-ht-degree: 14%
+source-wordcount: 713
+ht-degree: 12%
 
 ---
 
@@ -102,7 +102,7 @@ La funzionalità di visualizzazione delle modifiche mostra le differenze tra due
 
 ### Esamina le modifiche
 
-&#x200B;
+
 Ogni modifica viene visualizzata sul lato a cui appartiene e colorata in base al tipo di ripristino
 eseguire le operazioni seguenti:
 
@@ -110,9 +110,7 @@ eseguire le operazioni seguenti:
 * Verde (destra): questa modifica si trova nella versione a destra e verrebbe aggiunta se la versione fosse stata ripristinata.
 
 Se qualcosa è stato modificato, invece di essere rimosso o aggiunto, il valore viene visualizzato in rosso a sinistra e in verde a destra.
-&#x200B;
 Le modifiche sono raggruppate in sezioni:
-&#x200B;
 
 * **Scenario**: nome, descrizione e tipo.
 * **Impostazioni scenario**: opzioni di pianificazione ed elaborazione.
@@ -121,9 +119,5 @@ Le modifiche sono raggruppate in sezioni:
 * **Route router**: route e relativo contenuto.
 * **Gestori errori**: rami di gestione degli errori.
 * **Gruppi orfani**: moduli disconnessi nell&#39;area di lavoro.
-&#x200B;
 Se le due versioni sono identiche, viene visualizzato il messaggio/ **Nessuna differenza trovata**.
-&#x200B;
-
-
 
