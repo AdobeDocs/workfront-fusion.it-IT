@@ -97,6 +97,7 @@ Note:
   
   {Regular description paragraph(s).}
   ```
+
 - Ogni funzionalità deve terminare con un &quot;Per ulteriori informazioni, vedere [...]&quot; collegamento all’articolo della guida pertinente. Verifica che la destinazione del collegamento esista nell’archivio.
 
 ## Passaggio 4: aggiungere la pagina all’indice della panoramica
@@ -111,6 +112,7 @@ Modifica `help/workfront-fusion/fusion-product-releases/fusion-release-activity.
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - Se si tratta della prima versione di un nuovo anno, aggiungi una nuova intestazione `## Fusion releases in {YYYY}` sopra l&#39;intestazione dell&#39;anno precedente e racchiudi la sezione dell&#39;*anno precedente* in un blocco comprimibile `+++ **Click to open**` / `+++`, se non lo è già (solo l&#39;anno corrente rimane espanso).
 
 ## Passaggio 5: aggiungi la pagina al sommario
@@ -123,6 +125,7 @@ Modifica `help/workfront-fusion/TOC.md`:
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - Se l&#39;intestazione dell&#39;anno corrente non esiste ancora, aggiungere `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` sopra l&#39;intestazione dell&#39;anno precedente.
 - **Non** aggiungere il prefisso `{hide-from-toc}` alle nuove voci, che viene utilizzato solo per le voci meno recenti una volta superata la navigazione visibile (vedi Incoerenze note di seguito).
 

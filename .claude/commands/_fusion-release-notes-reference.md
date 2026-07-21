@@ -10,7 +10,7 @@ ht-degree: 0%
 Esempi funzionanti per l&#39;abilità `fusion-release-notes`, in base alle pagine recenti effettive in
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
----
+&#x200B;---
 
 ## Esempio 1: settimana multifunzionale diretta
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
----
+&#x200B;---
 
 ## Esempio 2: settimana con un callout obbligatorio/obsoleto
 
@@ -96,7 +96,7 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
----
+&#x200B;---
 
 ## Schema di aggiornamento della pagina Panoramica (`fusion-release-activity.md`)
 
@@ -129,7 +129,7 @@ A partire dal nuovo anno del brand (solo ad esempio, eseguire questa operazione 
 +++
 ```
 
----
+&#x200B;---
 
 ## Schema di aggiornamento TOC.md
 
@@ -144,7 +144,7 @@ Aggiunta della settimana del 20 luglio 2026 come voce più recente:
         ...
 ```
 
----
+&#x200B;---
 
 ## Incongruenze note nelle pagine esistenti (solo come riferimento, non copiarle in nuove pagine)
 
