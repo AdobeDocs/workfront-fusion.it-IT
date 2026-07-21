@@ -11,9 +11,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: e6ebc56a6e7d068ccf14411e2af91b3f79d0ca24
+source-git-commit: 6be23a08563e72a8d6f3c1d0489a81d613f1c365
 workflow-type: tm+mt
-source-wordcount: 509
+source-wordcount: 512
 ht-degree: 94%
 
 ---
@@ -50,6 +50,7 @@ Fusion offre connettori per diversi prodotti e servizi Adobe.
 * [Moduli Adobe Creative Cloud Libraries](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Moduli Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Moduli Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+* [Moduli Adobe Express](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
 * [Moduli audio e video di Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
 * [Moduli Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Moduli Lightroom di Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
