@@ -10,7 +10,7 @@ ht-degree: 0%
 Esempi funzionanti per l&#39;abilità `fusion-release-notes`, in base alle pagine recenti effettive in
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
----
+&#x200B;---
 
 ## Esempio 1: settimana multifunzionale diretta
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
----
+&#x200B;---
 
 ## Esempio 2: settimana con un callout obbligatorio/obsoleto
 
@@ -96,7 +96,7 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
----
+&#x200B;---
 
 ## Esempio 3: avvio di un nuovo connettore
 
@@ -118,7 +118,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 
 Per un lancio del connettore come questo, chiedi sempre (per il Passaggio 1 dell’abilità) se l’utente desidera una configurazione di reindirizzamento per esso.
 
----
+&#x200B;---
 
 ## Schema di aggiornamento della pagina Panoramica (`fusion-release-activity.md`)
 
@@ -151,7 +151,7 @@ A partire dal nuovo anno del brand (solo ad esempio, eseguire questa operazione 
 +++
 ```
 
----
+&#x200B;---
 
 ## Schema di aggiornamento TOC.md
 
@@ -166,7 +166,7 @@ Aggiunta della settimana del 20 luglio 2026 come voce più recente:
         ...
 ```
 
----
+&#x200B;---
 
 ## Reindirizza il riferimento all’archivio (per il passaggio 7)
 
@@ -181,7 +181,7 @@ Regole di riga (dal file README dell’archivio):
 
 Dopo l&#39;aggiunta di una riga, è ancora necessario generare una PR nell&#39;archivio `redirects` e unirla prima che diventi attiva (~5 minuti dopo l&#39;unione per i reindirizzamenti 1:1). Questa abilità aggiunge la riga solo dopo che l’utente la conferma e non solleva la PR.
 
----
+&#x200B;---
 
 ## Incongruenze note nelle pagine esistenti (solo come riferimento, non copiarle in nuove pagine)
 
