@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
 workflow-type: tm+mt
-source-wordcount: 7298
-ht-degree: 98%
+source-wordcount: 7518
+ht-degree: 95%
 
 ---
 
@@ -791,6 +791,10 @@ Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo m
 
 #### Opzioni per azioni varie
 
+* [Attività](#task)
+* [Problema](#issue)
+* [Progetto](#project)
+
 ##### Attività
 
 <table style="table-layout:auto">
@@ -1373,8 +1377,8 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
 
 >[!IMPORTANT]
 >
->Questo modulo è stato sostituito con il modulo Cerca record. È consigliato utilizzare tale modulo nei nuovi scenari.
->Gli scenari esistenti che utilizzano questo modulo continueranno a funzionare come previsto. Questo modulo verrà rimosso dal selettore di moduli a maggio 2025.
+>Questo modulo è stato sostituito con il modulo Record di ricerca. È consigliabile utilizzare tale modulo in nuovi scenari.
+>Gli scenari esistenti che utilizzano questo modulo continueranno a funzionare come previsto. Questo modulo verrà rimosso dal selettore dei moduli a maggio 2025.
 
 Questo modulo di ricerca cerca i record in un oggetto in Workfront che corrispondono alla query di ricerca specificata.
 
@@ -2382,6 +2386,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## Filtri per sottoscrizione a eventi nei moduli Workfront > [!UICONTROL Osserva eventi]
 
+I filtri nelle sottoscrizioni di eventi ti consentono di garantire che gli scenari vengano eseguiti solo quando vengono soddisfatti determinati parametri.
+
+* [Best practice per il filtro degli abbonamenti agli eventi](#event-subscription-filter-best-practices)
+* [Utilizzo dei filtri avanzati](#using-advanced-filters)
+
+### Best practice per il filtro degli abbonamenti agli eventi
+
 >[!NOTE]
 >
 >* È fortemente consigliato utilizzare i filtri di sottoscrizione a eventi nei moduli [!UICONTROL Osserva eventi].
@@ -2390,7 +2401,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   Per ulteriori informazioni sulla nuova versione di sottoscrizione a eventi, consulta [Controllo delle versioni per sottoscrizioni a eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 >
->   Per le risorse si come conservare gli scenari di Workfront Fusion durante l’aggiornamento della sottoscrizione a eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento V2 delle sottoscrizioni a eventi(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=it)].
+>   Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=it).
 
 Il modulo [!UICONTROL Osserva eventi] di Workfront attiva scenari basati su un webhook che crea una sottoscrizione a eventi nell’API Workfront. La sottoscrizione a eventi consiste in un set di dati che determina quali eventi vengono inviati al webhook. Ad esempio, se imposti un modulo [!UICONTROL Osserva eventi] per rilevare eventuali problemi, la sottoscrizione a eventi invia solo eventi relativi ai problemi.
 
@@ -2408,13 +2419,13 @@ Nel filtro Workfront > Osserva eventi sono disponibili i seguenti operatori:
 * È minore di o uguale a
 * Contiene
 * Esiste
-   * Questo operatore non richiede un valore e il campo del valore è assente.
+  * Questo operatore non richiede un valore e il campo del valore è assente.
 * Non esiste
-   * Questo operatore non richiede un valore e il campo del valore è assente.
+  * Questo operatore non richiede un valore e il campo del valore è assente.
 * Cambiato
-   * Questo operatore non richiede un valore e il campo del valore è assente.
-   * Questo operatore ignora il campo Stato.
-   * Quando utilizzi `Changed`, seleziona **Solo eventi aggiornati** nel campo **Origine record**.
+  * Questo operatore non richiede un valore e il campo del valore è assente.
+  * Questo operatore ignora il campo Stato.
+  * Quando utilizzi `Changed`, seleziona **Solo eventi aggiornati** nel campo **Origine record**.
 
 >[!IMPORTANT]
 >
@@ -2424,7 +2435,7 @@ Nel filtro Workfront > Osserva eventi sono disponibili i seguenti operatori:
 >
 >**Esempio:** considera uno scenario che elabora nuovi problemi assegnati a un utente specifico, Ana.
 >
->### Filtrare gli eventi utilizzando un filtro per la sottoscrizione a eventi (consigliato)
+>#### Filtrare gli eventi utilizzando un filtro per la sottoscrizione a eventi (consigliato)
 >
 >Utilizzando il filtro eventi, puoi configurare il webhook per attivare lo scenario quando, al momento della creazione di un problema, questo viene assegnato ad Ana. Ana ha l’ID utente b378489d8f7cd3cee0539260720a84b7.
 >
@@ -2432,7 +2443,7 @@ Nel filtro Workfront > Osserva eventi sono disponibili i seguenti operatori:
 >
 >Se vengono creati 100 problemi in un giorno, ma solo due di essi sono assegnati ad Ana, lo scenario verrebbe eseguito due volte.
 >
->### Filtrare gli eventi all’interno dello scenario (non consigliato)
+>#### Filtrare gli eventi all’interno dello scenario (non consigliato)
 >
 >Per filtrare gli eventi in modo che vengano elaborati solo i problemi assegnati ad Ana, puoi creare un filtro dopo il modulo [!UICONTROL Osserva eventi].
 >
@@ -2445,3 +2456,26 @@ Per ulteriori informazioni sulle sottoscrizioni a eventi di Workfront, consulta 
 Per ulteriori informazioni sui webhook, consulta [Trigger istantanei (webhook) in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
 Per ulteriori informazioni sui filtri negli scenari, consulta [Aggiungere un filtro a uno scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+
+### Utilizzo dei filtri avanzati
+
+Il modulo Workfront > Osserva eventi offre due tipi di filtri.
+
+* **Semplice**: questo filtro fornisce un&#39;interfaccia che consente di selezionare campi, operatori e valori, insieme agli operatori AND e OR per creare un filtro.
+* **Avanzate**: questo filtro consente di caricare JSON che rappresenta il filtro.
+
+#### Filtri semplici e filtri avanzati
+
+La differenza principale tra i due tipi è lo stato del filtro.
+
+* **Semplice**: quando si imposta un filtro semplice, si seleziona se si desidera filtrare in base al vecchio o al nuovo stato di un campo. In altre parole, puoi decidere se attivare lo scenario quando il campo cambia **da** un dato valore o se attivare quando cambia **a** un dato valore. L’utilizzo di AND e OR consente di includere più campi e valori, ma questi devono condividere lo stesso stato. Non è possibile utilizzare lo stato precedente per alcuni campi e il nuovo stato per altri.
+* **Avanzate**: è possibile configurare il JSON in un filtro avanzato per specificare i valori per gli stati precedente e nuovo nello stesso filtro. Ad esempio, è possibile specificare di attivare uno scenario quando un progetto passa dallo stato Pianificazione a quello Corrente. Questo escluderebbe i progetti che passano da Planning a Dead (Inattivo) o che passano da On Hold (In sospeso) a Current (Corrente).
+
+<!--
+
+#### Advanced filter examples
+
+-->
+
+<!--CHECK ON EDITING FILTERS-->
+
