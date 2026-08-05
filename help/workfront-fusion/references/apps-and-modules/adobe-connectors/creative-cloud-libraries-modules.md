@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
 TQID: https://experienceleague.adobe.com/uVGhNEE-KiHbnVa2ZbP5h2rsg5GO2b1uuAkfj8BIJRw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1416
-ht-degree: 34%
+source-wordcount: 1418
+ht-degree: 33%
 
 ---
 
@@ -47,7 +45,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -115,7 +113,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 
 * [[!UICONTROL Carica un elemento]](#upload-an-element)
 
-* [[!UICONTROL [Guarda il nuovo elemento nella libreria]]](#watch-new-element-in-library)
+* [!UICONTROL [Guarda il nuovo elemento nella libreria]](#watch-new-element-in-library)
 
 * [[!UICONTROL Guarda gli elementi aggiornati]](#watch-updated-elements)
 
@@ -417,7 +415,7 @@ Questo modulo di azione carica una risorsa di file di piccole dimensioni in una 
       <td >Seleziona la libreria in cui desideri caricare una risorsa.</td>
     </tr>
     <tr>
-      <td role="rowheader">Modalità chiamata </td>
+      <td role="rowheader">Modalità chiamata [!UICONTROL]</td>
       <td>
         <p>Seleziona la modalità di elaborazione con cui richiamare il processo di richiesta.</p>
         <ul>
@@ -443,7 +441,7 @@ Questo modulo di azione carica una risorsa di file di piccole dimensioni in una 
       <td >Seleziona il tipo di elemento da caricare</td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di file </td>
+      <td role="rowheader">Tipo di file [!UICONTROL]</td>
       <td >Immetti o mappa il tipo MIME del file caricato.</td>
     </tr>
     <tr>

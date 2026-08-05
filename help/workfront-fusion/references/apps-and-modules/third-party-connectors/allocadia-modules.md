@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9a6fccd6-6eee-42dc-a678-c1f34280d139
 TQID: https://experienceleague.adobe.com/bCfkq5fzw21hmZWLrWztL27g2RAlBbyk9vPEQ-v6bBU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1467
+source-wordcount: 1469
 ht-degree: 56%
 
 ---
@@ -43,7 +41,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -214,7 +212,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output]</td> 
-   <td> <p>Selezionare i campi da includere nell'output del modulo. I campi disponibili dipendono dal tipo di entità  selezionato.</p> </td> 
+   <td> <p>Selezionare i campi da includere nell'output del modulo. I campi disponibili dipendono dal tipo di entità [!UICONTROL] selezionato.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 

@@ -5,17 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
 TQID: https://experienceleague.adobe.com/8yRmtq6RJPuw97tGe5lreoyUd85pd1BVvIFaZjmeof4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1513
-ht-degree: 34%
+source-wordcount: 1515
+ht-degree: 33%
 
 ---
 
@@ -46,7 +42,7 @@ Per visualizzare un elenco delle API Adobe disponibili, vedi [API Adobe](https:/
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -71,10 +67,10 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 * Devi avere accesso a Adobe Developer Console.
 * In Adobe Developer Console è necessario disporre di un progetto che includa l’API a cui desideri che il modulo si connetta. Puoi eseguire le seguenti operazioni:
 
-   * Crea un nuovo progetto con l’API.
+  * Crea un nuovo progetto con l’API.
 
-     Oppure
-   * Aggiungi l’API a un progetto esistente.
+    Oppure
+  * Aggiungi l’API a un progetto esistente.
 
   Per informazioni sulla creazione o l&#39;aggiunta di un&#39;API a un progetto in Adobe Developer Console, vedere [Creazione di un progetto](https://developer.adobe.com/dep/guides/dev-console/create-project/) nella documentazione di Adobe.
 

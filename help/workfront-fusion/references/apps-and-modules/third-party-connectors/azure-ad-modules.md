@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
 TQID: https://experienceleague.adobe.com/FS2TZrWeFQ-6hQZlmu7pd46bIHjnVvIU6g61hxWFkWc
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1113
-ht-degree: 59%
+source-wordcount: 1115
+ht-degree: 58%
 
 ---
 
@@ -43,7 +41,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -254,7 +252,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure Active Directory] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Criteri di ricerca di </td> 
+   <td role="rowheader">Criteri di ricerca di [!UICONTROL]</td> 
    <td> <p>Immettere i criteri da utilizzare nella ricerca.</p> <p>Per informazioni sui parametri da utilizzare, ad esempio "[!UICONTROL $filter]", vedere <a href="https://docs.microsoft.com/en-us/graph/query-parameters">Utilizzare i parametri di query per personalizzare le risposte</a> nella documentazione API [!DNL Microsoft].</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 

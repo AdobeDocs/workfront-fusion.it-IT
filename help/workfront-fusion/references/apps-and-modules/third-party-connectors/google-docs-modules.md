@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
 TQID: https://experienceleague.adobe.com/8Ssu593A6Le2Z45BVg5T-wbj0Ld3z-efmO6JVRYk9n0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4104
+source-wordcount: 4106
 ht-degree: 9%
 
 ---
@@ -47,7 +44,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -202,7 +199,7 @@ Questo modulo di azione crea una copia di un documento modello esistente e sosti
     <ol> 
      <li value="1">Fai clic con il pulsante destro del mouse sull’immagine.</li> 
      <li value="2">Selezionare l'opzione [!UICONTROL ALT text].</li> 
-     <li value="3">Immettere il testo ALT  nel campo Titolo  e fare clic su [!UICONTROL OK].</li> 
+     <li value="3">Immettere il testo ALT [!UICONTROL] nel campo Titolo [!UICONTROL] e fare clic su [!UICONTROL OK].</li> 
     </ol> <p>Dopo aver aggiunto il testo ALT all'immagine, il testo ALT viene visualizzato tra parentesi nel nome del campo.</p> </td> 
   </tr> 
   <tr> 
@@ -318,7 +315,7 @@ Potrebbe essere necessario estendere le autorizzazioni.
     <ul> 
      <li>[!UICONTROL Image] (impostazione predefinita)</li> 
      <li>[!UICONTROL Drawing]</li> 
-     <li>Grafico </li> 
+     <li>Grafico [!UICONTROL]</li> 
     </ul> <p>Nota:  <p>Per eseguire ulteriori mapping di questi oggetti, utilizzare il valore [!UICONTROL Inline Objects Array] nell'output di questo modulo (anziché [!UICONTROL inlineObjects]).</p> <p>Gli oggetti [!UICONTROL Inline Objects Array] vengono ordinati nello stesso ordine in cui vengono visualizzati nel documento. Semplificherà l’ulteriore elaborazione.</p> </p> </td> 
   </tr> 
  </tbody> 
@@ -424,7 +421,7 @@ Questo modulo di azione inserisce un’immagine dall’URL al documento.
       <ul> 
        <li> <p><strong>[!UICONTROL Per indice]</strong> </p> 
         <ul> 
-         <li> <p><strong>[!UICONTROL Indice]</strong> </p> <p>Immettere il numero di indice in cui si desidera inserire l'immagine. È possibile utilizzare il modulo [!UICONTROL Get a Document] per recuperare il numero di indice .</p>  </li> 
+         <li> <p><strong>[!UICONTROL Indice]</strong> </p> <p>Immettere il numero di indice in cui si desidera inserire l'immagine. È possibile utilizzare il modulo [!UICONTROL Get a Document] per recuperare il numero di indice [!UICONTROL].</p>  </li> 
          <li> <p><strong>[!UICONTROL URL immagine]</strong> </p> <p>Immettere l'URL dell'immagine da inserire nel documento.</p> <p>La dimensione massima dell'immagine è di 50 MB. Non deve superare i 25 megapixel. È supportato solo il formato PNG, JPEG o GIF.</p> </li> 
         </ul> </li> 
        <li> <p><strong>[!UICONTROL Per ID segmento]</strong> </p> <p>Selezionare l'intestazione e il piè di pagina a cui si desidera inserire l'immagine e immettere l'URL dell'immagine nei campi corrispondenti.</p> <p>La dimensione massima dell'immagine è di 50 MB. L’immagine non deve superare i 25 megapixel. È supportato solo il formato PNG, JPEG o GIF.</p> </li> 

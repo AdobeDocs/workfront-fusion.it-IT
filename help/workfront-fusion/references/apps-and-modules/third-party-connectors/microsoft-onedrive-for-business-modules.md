@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
 TQID: https://experienceleague.adobe.com/bFoOLIFIX2ml2K2I2FVSJuNCPwlhfm6sa1RXaVzUoO0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1154
-ht-degree: 30%
+source-wordcount: 1156
+ht-degree: 29%
 
 ---
 
@@ -43,7 +41,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -173,7 +171,7 @@ Crea una cartella all&#39;interno della cartella padre specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td><strong>[!UICONTROL Connessione]</strong> </td> 
+   <td><strong>[!Connessione UICONTROL]</strong> </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 

@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
 TQID: https://experienceleague.adobe.com/XOlUFhvSj8JNu8MS5Kgm0VEwEPmrpVwbTggi6rU4jfk
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1449
-ht-degree: 35%
+source-wordcount: 1451
+ht-degree: 34%
 
 ---
 
@@ -40,7 +37,7 @@ Con i moduli [!DNL Adobe Campaign], puoi avviare uno scenario Adobe Workfront Fu
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -63,7 +60,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 
 Aggiungere gli indirizzi IP di Fusion a [!DNL Adobe Campaign].
 
-* Per istruzioni sull&#39;aggiunta di indirizzi IP al inserisco nell&#39;elenco Consentiti di di Campaign, consulta [Aggiunta di indirizzi IP al inserisco nell&#39;elenco Consentiti di](https://experienceleague.adobe.com/it/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) nella documentazione di Adobe Campaign.
+* Per istruzioni sull&#39;aggiunta di indirizzi IP al inserisco nell&#39;elenco Consentiti di di Campaign, consulta [Aggiunta di indirizzi IP al inserisco nell&#39;elenco Consentiti di](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) nella documentazione di Adobe Campaign.
 * Per un elenco di indirizzi IP da aggiungere al inserisco nell&#39;elenco Consentiti di, vedere [Configurare gli indirizzi IP per Fusion nel inserisco nell&#39;elenco Consentiti di  di dell&#39;organizzazione](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Informazioni API di Adobe Campaign
@@ -87,7 +84,7 @@ Il connettore Adobe Campaign utilizza quanto segue:
 >
 >Si consiglia vivamente di creare una connessione server-to-server. Adobe Campaign ha aggiornato la propria API per accettare solo connessioni server-to-server. Se ti connetti a Campaign versione 8 o successiva, **devi** creare una connessione server-to-server.
 >
->Per ulteriori informazioni sui nuovi requisiti di connessione di Campaign, consulta [Migrazione degli operatori tecnici di Campaign a Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=it) nella documentazione di Campaign.
+>Per ulteriori informazioni sui nuovi requisiti di connessione di Campaign, consulta [Migrazione degli operatori tecnici di Campaign a Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) nella documentazione di Campaign.
 
 1. In qualsiasi modulo [!DNL Adobe Campaign], fai clic su **[!UICONTROL Aggiungi]** accanto al campo [!UICONTROL Connessione].
 1. Compila i seguenti campi:
@@ -123,7 +120,7 @@ Il connettore Adobe Campaign utilizza quanto segue:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]</td>
-          <td>Se si sta creando una connessione server-to-server, immettere l'ID client [!DNL Adobe] . È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].</td>
+          <td>Se si sta creando una connessione server-to-server, immettere l'ID client [!DNL Adobe] [!UICONTROL]. È disponibile nella sezione [!UICONTROL Credentials details] (Dettagli delle credenziali) di [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
@@ -288,7 +285,7 @@ Questo modulo effettua una chiamata API personalizzata all&#39;API [!DNL Adobe C
 
 Questo modulo di azione esegue un&#39;azione selezionata su un oggetto nell&#39;API [!DNL Adobe Campaign].
 
-Per informazioni su azioni e campi specifici, vedere [[!DNL Adobe Campaign] - Documentazione API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=it).
+Per informazioni su azioni e campi specifici, vedere [[!DNL Adobe Campaign] - Documentazione API](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 

@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
 TQID: https://experienceleague.adobe.com/MFz4BA1p4lfDWSft169C3GEMRY9vtO2TrkUcg35LPYE
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2478
+source-wordcount: 2481
 ht-degree: 43%
 
 ---
@@ -49,7 +47,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -146,7 +144,7 @@ Per connettere [!DNL Jira Software] a Workfront Fusion, è necessario creare un 
 
 Per autorizzare una connessione tra Workfront Fusion e [!DNL Jira Server], sono necessari la chiave consumer, la chiave privata e l&#39;URL del servizio. Potrebbe essere necessario contattare l&#39;amministratore [!DNL Jira] per ottenere queste informazioni.
 
-* [Genera chiavi pubbliche e private per la connessione  [!DNL Jira] &#x200B;](#generate-public-and-private-keys-for-your-jira-connection)
+* [Genera chiavi pubbliche e private per la connessione  [!DNL Jira] ](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configura l&#39;app client come consumer in [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
 * [Crea una connessione al server  [!DNL Jira] o al centro dati Jira in Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
 

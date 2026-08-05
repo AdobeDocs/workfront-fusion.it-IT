@@ -5,17 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
 TQID: https://experienceleague.adobe.com/mpTM66zk6PRthMvpk302CQ6MkOs5qEqPODNcvv-Qauo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 3230
+source-wordcount: 3232
 ht-degree: 19%
 
 ---
@@ -47,7 +42,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -530,7 +525,7 @@ Questo modulo di azione recupera la rappresentazione più recente della risorsa 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di rappresentazione </td>
+      <td role="rowheader">Tipo di rappresentazione [!UICONTROL]</td>
       <td>
         <p>Selezionare il tipo di rappresentazione da recuperare.</p>
       </td>
@@ -724,7 +719,7 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Sottotipo </td>
+      <td role="rowheader">Sottotipo [!UICONTROL]</td>
       <td>
         <p>Selezionare il sottotipo dell'album.</p>
       </td>
@@ -758,7 +753,7 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">ID padre </td>
+      <td role="rowheader">ID padre [!UICONTROL]</td>
       <td>
         <p>Immettere o mappare l'ID dell'elemento padre per l'album.</p>
       </td>

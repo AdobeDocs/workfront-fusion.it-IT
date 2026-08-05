@@ -5,15 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
 TQID: https://experienceleague.adobe.com/jHKSttikcFb-V7D5gVCmet9WgnfvRrQGY8dNQhU6kNA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 3224
+source-wordcount: 3226
 ht-degree: 25%
 
 ---
@@ -41,7 +37,7 @@ In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro ch
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

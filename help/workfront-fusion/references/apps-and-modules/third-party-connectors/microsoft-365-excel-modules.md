@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
 TQID: https://experienceleague.adobe.com/SZwX0GVZYFlIudwirqN6ne-W8mEoXHC-WKI8JFnbzrA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2707
-ht-degree: 18%
+source-wordcount: 2709
+ht-degree: 17%
 
 ---
 
@@ -44,7 +41,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -479,7 +476,7 @@ Questo modulo modifica una tabella esistente.
    <td> <p>Selezionare il foglio di lavoro contenente la tabella in cui si desidera aggiungere una riga.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >Tabella </td>
+    <td role="rowheader" >Tabella [!UICONTROL]</td>
    <td>Selezionare la tabella in cui si desidera aggiungere una riga.</td> 
   </tr> 
   <tr>
@@ -564,7 +561,7 @@ Questo modulo di ricerca recupera un elenco di tutte le righe di tabella in una 
    <td> <p>Selezionare il foglio di lavoro contenente la tabella che include le righe da elencare</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >Tabella  </td>
+    <td role="rowheader" >Tabella [!UICONTROL] </td>
    <td> <p>Selezionare la tabella contenente le righe da elencare.</p> </td> 
   </tr> 
   <tr> 
@@ -667,7 +664,7 @@ Questo trigger avvia uno scenario quando viene aggiunta una nuova riga a una tab
    <td> <p> Selezionare il foglio di lavoro contenente la tabella che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Tabella </p> </td> 
+   <td role="rowheader"> <p>Tabella [!UICONTROL]</p> </td> 
    <td> <p>Selezionare la tabella che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
