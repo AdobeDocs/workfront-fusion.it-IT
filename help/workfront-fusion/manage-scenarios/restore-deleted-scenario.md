@@ -5,9 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 6a176c74f45b17ed9fbf80b2d87cf45873067f74
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: d4cfac1293b7c0523cc0e45872013238a7bdb364
 workflow-type: tm+mt
 source-wordcount: 217
 ht-degree: 42%
@@ -55,7 +54,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ## Ripristinare uno scenario eliminato
 
-1. Nel menu di navigazione a sinistra, fai clic su Panoramica team.
+1. Nel menu di navigazione a sinistra, fai clic su Panoramica organizzazione.
 1. Fare clic sulla scheda **Cestino** nella parte superiore della finestra.
 1. (Facoltativo) Filtra l&#39;elenco degli scenari eliminati immettendo un termine di ricerca nella barra di **Ricerca**, selezionando un intervallo di date nel campo **Eliminato tra** o selezionando un team specifico dal menu a discesa **Team**.
 1. Seleziona uno o più scenari da ripristinare, quindi fai clic su **Ripristina** nella barra nella parte inferiore della schermata.
