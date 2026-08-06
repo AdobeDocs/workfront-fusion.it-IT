@@ -10,10 +10,10 @@ product_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 985
-ht-degree: 15%
+source-wordcount: 987
+ht-degree: 14%
 
 ---
 
@@ -44,7 +44,7 @@ Questo articolo spiega come connettere quasi tutti i servizi web a Workfront Fus
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basato su connettore (legacy): per connettersi ad applicazioni esterne alla famiglia di prodotti Workfront, è necessario disporre di Workfront Fusion per l'automazione e l'integrazione del lavoro </p>
    </td> 
   </tr> 

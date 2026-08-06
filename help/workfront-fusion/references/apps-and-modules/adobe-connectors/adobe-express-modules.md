@@ -3,9 +3,9 @@ title: Moduli Adobe Express
 description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano Adobe Express.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-source-git-commit: eab04db9a38020ed973f98d7f8f290ccd183251c
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1374'
 ht-degree: 17%
 
 ---
@@ -37,7 +37,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -147,7 +147,7 @@ Questo modulo esporta un documento in formato JPG o PNG. Può fornire URL prefir
    <td>Se si sta esportando un PDF, selezionare se esportare un PDF standard o di stampa.</td> 
   </tr>
   <tr> 
-   <td role="rowheader">Dimensione</td> 
+   <td role="rowheader">Dimensioni</td> 
    <td>Se state esportando un'immagine o un video, immettete o mappate la dimensione in pixel del lato più lungo. Le proporzioni vengono mantenute. Per le immagini, la dimensione minima supportata è 1 px e la dimensione massima supportata è 8192 px. Se non specificato, viene considerata la dimensione predefinita della pagina.</td> 
   </tr>
   <tr> 

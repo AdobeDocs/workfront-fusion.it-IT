@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4620
+source-wordcount: 4623
 ht-degree: 12%
 
 ---
@@ -49,7 +49,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -72,8 +72,8 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 
 * Per utilizzare i moduli [!DNL Slack], è necessario disporre di un account [!DNL Slack].
 * Se stai creando connessioni OAuth@, devi aggiungere i seguenti URL al inserisco nell&#39;elenco Consentiti di dell’organizzazione:
-   * token bot: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
-   * token utente:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
+  * token bot: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
+  * token utente:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
 
 ## Informazioni API di Slack
 

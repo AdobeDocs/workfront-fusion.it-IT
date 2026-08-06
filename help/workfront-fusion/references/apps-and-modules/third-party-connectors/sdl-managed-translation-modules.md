@@ -7,10 +7,10 @@ exl-id: 41953b04-9011-4ddb-9f53-cdf11e807e04
 TQID: https://experienceleague.adobe.com/J6v5bxEi3MzcrkaiQQFOpToDzon0K-BhpmuJQe8sdgY
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 567
-ht-degree: 24%
+source-wordcount: 569
+ht-degree: 23%
 
 ---
 
@@ -37,7 +37,7 @@ In uno scenario Adobe Workfront Fusion, è possibile collegare l&#39;account [!D
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

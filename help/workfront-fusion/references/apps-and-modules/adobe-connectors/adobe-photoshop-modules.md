@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7285
-ht-degree: 12%
+source-wordcount: 7501
+ht-degree: 11%
 
 ---
 
@@ -55,7 +55,7 @@ Per informazioni sui moduli, consulta gli articoli in [Moduli: indice degli arti
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -681,7 +681,7 @@ Questo modulo di azione identifica il soggetto principale dell&#39;immagine e ri
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo in [Crea o modifica un modulo composito](#create-or-edit-a-composite).
+>Aggiorna il modulo al modulo [Crea o modifica un modulo composito](#create-or-edit-a-composite).
 
 Questo modulo di azione applica una serie di modifiche a livello di documento e di livello.
 
@@ -868,7 +868,7 @@ Il colore automatico di questo modulo di azione corregge l’immagine specificat
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo in [Crea o modifica un modulo composito](#create-or-edit-a-composite).
+>Aggiorna il modulo al modulo [Crea o modifica un modulo composito](#create-or-edit-a-composite).
 
 Questo modulo di azione converte un file in JPEG, PNG, PSD o TIFF.
 
@@ -1005,7 +1005,7 @@ Questo modulo di azione restituisce un file PNG con una maschera applicata attor
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo in [Crea o modifica un modulo composito](#create-or-edit-a-composite).
+>Aggiorna il modulo al modulo [Crea o modifica un modulo composito](#create-or-edit-a-composite).
 
 Questo modulo di azione crea un nuovo PSD con livelli opzionali e genera rappresentazioni o salvataggi come PSD.
 
@@ -1170,7 +1170,7 @@ Questo modulo di azione crea un nuovo PSD con livelli opzionali e genera rappres
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+>Aggiorna questo modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
 
 Questo modulo di azione modifica i livelli di testo in un file Photoshop. Potete immettere dettagli di modifica separati per più livelli nello stesso file.
 
@@ -1247,7 +1247,7 @@ Questo modulo di azione modifica i livelli di testo in un file Photoshop. Potete
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+>Aggiorna questo modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
 
 Questo modulo di azione modifica un livello di testo su un file Photoshop.
 
@@ -1333,7 +1333,7 @@ Per modificare più livelli, utilizzare il modulo [Modifica livelli di testo](#e
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+>Aggiorna questo modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
 
 Questo modulo di azione esegue azioni Photoshop utilizzando comandi JSON.
 
@@ -1475,7 +1475,7 @@ Questo modulo di azione esegue Sfocatura profondità sul file selezionato.
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+>Aggiorna questo modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
 
 Questo modulo di azione esegue un’azione Photoshop sull’immagine selezionata.
 
@@ -1567,7 +1567,7 @@ Questo modulo di azione esegue un’azione Photoshop sull’immagine selezionata
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
+>Aggiorna questo modulo al modulo [Esegui azioni, script e trasformazioni di Photoshop](#execute-photoshop-actions-scripts-and-transformations).
 
 Questo modulo di azione esegue il ritaglio prodotto sull’immagine selezionata.
 
@@ -1647,7 +1647,7 @@ Questo modulo di azione esegue il ritaglio prodotto sull’immagine selezionata.
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo al modulo [Genera un manifesto](#generate-a-manifest).
+>Aggiorna questo modulo al modulo [Genera un manifesto](#generate-a-manifest).
 
 Questo modulo di azione recupera le informazioni sui livelli dal file PSD specificato.
 
@@ -1732,12 +1732,12 @@ Questo modulo di azione effettua una chiamata personalizzata all’API Photoshop
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo in [Crea o modifica un modulo composito](#create-or-edit-a-composite).
+>Aggiorna il modulo al modulo [Crea o modifica un modulo composito](#create-or-edit-a-composite).
 
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo in [Crea o modifica un modulo composito](#create-or-edit-a-composite).
+>Aggiorna il modulo al modulo [Crea o modifica un modulo composito](#create-or-edit-a-composite).
 
 Questo modulo di azione sostituisce un oggetto avanzato all’interno di un livello PSD e genera nuove rappresentazioni.
 
@@ -1871,7 +1871,7 @@ Questo modulo utilizza la versione legacy di Smart Objects.
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo in [Crea o modifica un modulo composito](#create-or-edit-a-composite).
+>Aggiorna il modulo al modulo [Crea o modifica un modulo composito](#create-or-edit-a-composite).
 
 Questa azione ridimensiona un’immagine utilizzando le stesse proporzioni.
 
@@ -1946,7 +1946,7 @@ Questa azione ridimensiona un’immagine utilizzando le stesse proporzioni.
 >[!NOTE]
 >
 >Questo modulo è stato dichiarato obsoleto e non funzionerà più dopo il 30 luglio 2026.
->Aggiorna il modulo in [Crea o modifica un modulo composito](#create-or-edit-a-composite).
+>Aggiorna il modulo al modulo [Crea o modifica un modulo composito](#create-or-edit-a-composite).
 
 Questo modulo di azione aggiunge una filigrana all’immagine selezionata.
 

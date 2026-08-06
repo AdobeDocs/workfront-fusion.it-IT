@@ -12,10 +12,10 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 6796
-ht-degree: 12%
+source-wordcount: 6798
+ht-degree: 11%
 
 ---
 
@@ -42,7 +42,7 @@ Con i moduli [!DNL Adobe Acrobat Sign], è possibile avviare uno scenario Adobe 
   <tr> 
    <td role="rowheader">Licenza di Adobe Workfront Fusion</td> 
    <td>
-   <p>Basata sulle operazioni: nessun requisito di licenza Workfront Fusion</p>
+   <p>Basato su operazioni: disponibile per le organizzazioni con licenze basate su operazioni</p>
    <p>Basata su connettore (precedente): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -131,7 +131,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Trova testo]</td> 
-   <td> <p>Immettere i termini che si desidera cercare. Il modulo restituisce record che includono questi termini come valori di campo.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/it/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Ricerca di Adobe Sign - Funzionamento</a>.</p> </td> 
+   <td> <p>Immettere i termini che si desidera cercare. Il modulo restituisce record che includono questi termini come valori di campo.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Ricerca di Adobe Sign - Funzionamento</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Numero massimo di accordi restituiti]</td> 
@@ -980,7 +980,7 @@ Questo modulo di ricerca cerca i contratti in base ai criteri specificati.
     <ul> 
      <li> <p><b>[!UICONTROL Trova testo]</b> </p> <p>Immettere il testo da trovare nei metadati del contratto. Ogni parola viene trattata come un elemento di testo separato. </p> </li> 
      <li> <p><b></b> Trova testo in </p> <p>Selezionare i campi di metadati in cui si desidera trovare il testo. Se non si seleziona nulla, i moduli eseguiranno la ricerca in tutti i metadati.</p> </li> 
-    </ul> <p>Il modulo restituisce qualsiasi accordo contenente il testo immesso in uno dei campi selezionati. Esempio: inserendo "campagna primaverile" e selezionando le opzioni Titolo e Nota, vengono restituiti tutti i contratti con le parole "Primavera" o "Campagna" in Titolo o Nota.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/it/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Ricerca - Funzionamento</a>.</p> </td> 
+    </ul> <p>Il modulo restituisce qualsiasi accordo contenente il testo immesso in uno dei campi selezionati. Esempio: inserendo "campagna primaverile" e selezionando le opzioni Titolo e Nota, vengono restituiti tutti i contratti con le parole "Primavera" o "Campagna" in Titolo o Nota.</p> <p>Per ulteriori informazioni sulla ricerca dei campi in [!DNL Adobe Acrobat Sign], vedere "Funzionamento della ricerca di testo" in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Ricerca - Funzionamento</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Data di creazione]</td> 
