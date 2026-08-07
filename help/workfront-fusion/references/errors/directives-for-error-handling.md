@@ -6,14 +6,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
 TQID: https://experienceleague.adobe.com/4vL9oj7UXeRWQuSzDZP7GJU30oHUg1m75gWGVUkfCfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 5daf7bb8e2912744df6f37ec45110d179875bcb2
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 31%
+source-wordcount: 529
+ht-degree: 34%
 
 ---
 
@@ -63,27 +61,32 @@ In Workfront Fusion sono disponibili le seguenti direttive per la gestione degli
    <td> <ul><li><p>L’esecuzione dello scenario viene interrotta immediatamente.</li><li>Viene avviata una fase di rollback su tutti i moduli, nel tentativo di ripristinarne lo stato iniziale. </li><li>I moduli successivi non vengono elaborati.</p></li><li> <p>Nella maggior parte dei casi, lo scenario viene disattivato dopo il numero di errori consecutivi specificati in Impostazioni scenario. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Numero di errori consecutivi</a>.</p> </li><li><p>Lo stato di esecuzione dello scenario è contrassegnato come "Errore".</p></li></ul> <p><b>Nota</b>: questo è il comportamento predefinito se al modulo non è allegata alcuna route del gestore degli errori e l'impostazione dello scenario <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Consenti archiviazione esecuzioni incomplete</a> non è selezionata.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Conferma</p> <p> <img src="assets/commit.png"> </p> </td> 
-   <td> <ul><li><p>L’esecuzione dello scenario viene interrotta immediatamente.</li><li>Viene avviata una fase Commit su tutti i moduli. </li><li>I moduli successivi non vengono elaborati.</p></li><li> <p>Tutti i bundle non elaborati vengono ignorati.</p> </li><li><p>Lo stato di esecuzione dello scenario viene contrassegnato come “Success” (Completato). </p> </li></ul></td> 
+   <td role="rowheader"> <p>Break (Interrompi)</p> <p> <img src="assets/break.png"> </p> </td> 
+   <td><ul><li> <p>Lo stato di esecuzione dello scenario viene memorizzato nella coda delle esecuzioni incomplete dove l’errore può essere risolto manualmente. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">Visualizzare e risolvere le esecuzioni incomplete</a>.</p> <p>Vi sono tuttavia alcune eccezioni. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Consentire l'archiviazione di esecuzioni incomplete</a> nell'articolo Configurare le impostazioni dello scenario</a>.</p></li><li> <p>I moduli successivi non vengono elaborati.</p></li><li> <p>Se sono presenti bundle non elaborati, l’esecuzione dello scenario continua normalmente.</p> </li><li><p>Lo stato di esecuzione dello scenario è contrassegnato come "avvertenza" quando l'opzione [!UICONTROL Automatically complete execution] è disabilitata.</p></li></ul> <p>Per ulteriori informazioni, vedere la sezione <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> in questo articolo</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Resume (Riprendi)</p> <p> <img src="assets/resume.png"> </p> </td> 
    <td> <ul><li><p>Un output sostitutivo viene specificato e fornito al modulo che rileva un errore.</p> </li><li><p>Vengono elaborati i moduli successivi.</p></li>Se il gestore degli errori si trova su un router, lo scenario procede attraverso le route come previsto.<li></li><li> <p>Lo stato di esecuzione dello scenario viene contrassegnato come “Success” (Completato).</p></li></ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader"> <p>Conferma</p> <p> <img src="assets/commit.png"> </p> </td> 
+   <td> <ul><li><p>L’esecuzione dello scenario viene interrotta immediatamente.</li><li>Viene avviata una fase Commit su tutti i moduli. </li><li>I moduli successivi non vengono elaborati.</p></li><li> <p>Tutti i bundle non elaborati vengono ignorati.</p> </li><li><p>Lo stato di esecuzione dello scenario viene contrassegnato come “Success” (Completato). </p> </li></ul></td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>Ignora</p> <p> <img src="assets/ignore.png"> </p> </td> 
    <td><ul><li> <p>L’errore viene ignorato.</li><li> I moduli successivi non vengono elaborati.</p> </li><li><p>Se sono presenti bundle non elaborati, l’esecuzione dello scenario continua normalmente.</p> </li><li>Se il gestore degli errori si trova su un router, le route successive da tale router vengono ignorate.</li><li><p>Lo stato di esecuzione dello scenario viene contrassegnato come “Success” (Completato).</p> </li></ul></td> 
-  </tr> 
+  </tr>
+
+<!--
+
   <tr> 
-   <td role="rowheader"> <p>Break (Interrompi)</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>Lo stato di esecuzione dello scenario viene memorizzato nella coda delle esecuzioni incomplete dove l’errore può essere risolto manualmente. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">Visualizzare e risolvere le esecuzioni incomplete</a>.</p> <p>Vi sono tuttavia alcune eccezioni. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Consentire l'archiviazione di esecuzioni incomplete</a> nell'articolo Configurare le impostazioni dello scenario</a>.</p></li><li> <p>I moduli successivi non vengono elaborati.</p></li><li> <p>Se sono presenti bundle non elaborati, l’esecuzione dello scenario continua normalmente.</p> </li><li><p>Lo stato di esecuzione dello scenario è contrassegnato come "avvertenza" quando l'opzione [!UICONTROL Automatically complete execution] è disabilitata.</p></li></ul> <p>Per ulteriori informazioni, vedere la sezione <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> in questo articolo</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>Riprova</p> <p> <img src="assets/retry.png"> </p> </td> 
-   <td> <p>In alcuni casi può essere utile rieseguire un modulo non riuscito quando è possibile che il motivo dell’errore passi nel tempo.</p> <p>Workfront Fusion attualmente non offre la direttiva sui nuovi tentativi, anche se è possibile utilizzare diverse soluzioni alternative per imitarne la funzionalità. Per ulteriori informazioni, vedere <a href="/help/workfront-fusion/create-scenarios/config-error-handling/retry.md" class="MCXref xref">Gestione degli errori dei tentativi</a>.</p> </td> 
+   <td role="rowheader"> <p>Retry</p> <p> <img src="assets/retry.png"> </p> </td> 
+   <td> <p>In some cases it may be useful to re-execute a failing module when there is a chance that the reason for the failure might pass over time.</p> <p>Workfront Fusion currently does not offer the Retry directive, though several workarounds can be employed to mimic its functionality. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/retry.md" class="MCXref xref">Retry error handling</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+-->
 
 >[!NOTE]
 >
