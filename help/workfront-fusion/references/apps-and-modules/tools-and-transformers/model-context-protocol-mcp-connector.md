@@ -6,18 +6,15 @@ feature: Workfront Fusion
 hide: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 TQID: https://experienceleague.adobe.com/KC5YvcNC-EQG4bnPA5pOVbGWZHdqa0XKYHKPMLwY-24
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 490
 ht-degree: 18%
 
 ---
 
 # Modulo agente MCP
-
-<!--SET UP REDIRECTS-->
 
 Model Context Protocol (MCP) è un modo per collegare in modo sicuro i modelli di linguaggio AI con altre applicazioni. Puoi configurare i server MCP, che consentono al modello di intelligenza artificiale di accedere all’applicazione. È quindi possibile inviare un messaggio di richiesta al modello di IA, che può restituire informazioni dall&#39;applicazione.
 
