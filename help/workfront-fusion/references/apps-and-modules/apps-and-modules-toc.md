@@ -11,9 +11,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 4d018e92863fa3461ea73defe6b83991a7e2083d
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 517
 ht-degree: 93%
 
 ---
@@ -153,7 +153,7 @@ Questi moduli ti consentono di eseguire azioni sui tuoi dati, ma non richiedono 
 * [Moduli Lexical](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Moduli Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [Modulo Math](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
-* [Moduli MCP (Model Context Protocol)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+* [Modulo agente MCP (Model Context Protocol)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
 * [Moduli MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
 * [Moduli per analisi testo](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [Moduli per strumenti](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
