@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 713
-ht-degree: 12%
+source-wordcount: 754
+ht-degree: 11%
 
 ---
 
@@ -19,6 +18,11 @@ ht-degree: 12%
 Adobe Workfront Fusion salva una versione dello scenario ogni volta che cambia.
 
 Puoi visualizzare, ripristinare, rinominare o scaricare i blueprint per le versioni precedenti di uno scenario.
+
+>[!NOTE]
+>
+>Le versioni dello scenario salvate in precedenza sono disponibili per 60 giorni dopo la creazione della versione dello scenario successiva.
+>Per conservare la cronologia delle versioni dello scenario oltre tale intervallo di tempo a scopo di audit, si consiglia di salvare e archiviare una blueprint dello scenario in un’altra posizione.
 
 ## Requisiti di accesso
 
@@ -80,7 +84,7 @@ La funzionalità di visualizzazione delle modifiche mostra le differenze tra due
 1. Fai clic sull&#39;icona [!UICONTROL Altro] ![Icona Altro](assets/more-icon.png) nella parte inferiore dello schermo, quindi fai clic su **[!UICONTROL Versioni precedenti]**.
 
    Viene visualizzato un elenco delle versioni precedenti.
-&#x200B;
+   &#x200B;
 1. Fare clic su **Visualizza modifiche** per la versione dello scenario da visualizzare.
 1. Viene aperta la visualizzazione **Rivedi modifiche** che confronta la versione con lo scenario corrente.
 
@@ -102,7 +106,7 @@ La funzionalità di visualizzazione delle modifiche mostra le differenze tra due
 
 ### Esamina le modifiche
 
-
+&#x200B;
 Ogni modifica viene visualizzata sul lato a cui appartiene e colorata in base al tipo di ripristino
 eseguire le operazioni seguenti:
 
@@ -110,7 +114,9 @@ eseguire le operazioni seguenti:
 * Verde (destra): questa modifica si trova nella versione a destra e verrebbe aggiunta se la versione fosse stata ripristinata.
 
 Se qualcosa è stato modificato, invece di essere rimosso o aggiunto, il valore viene visualizzato in rosso a sinistra e in verde a destra.
+&#x200B;
 Le modifiche sono raggruppate in sezioni:
+&#x200B;
 
 * **Scenario**: nome, descrizione e tipo.
 * **Impostazioni scenario**: opzioni di pianificazione ed elaborazione.
@@ -119,5 +125,7 @@ Le modifiche sono raggruppate in sezioni:
 * **Route router**: route e relativo contenuto.
 * **Gestori errori**: rami di gestione degli errori.
 * **Gruppi orfani**: moduli disconnessi nell&#39;area di lavoro.
+&#x200B;
 Se le due versioni sono identiche, viene visualizzato il messaggio/ **Nessuna differenza trovata**.
+&#x200B;
 
