@@ -7,10 +7,10 @@ exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 TQID: https://experienceleague.adobe.com/0NhWgeBcqYtVJ7XKqZ30O1lg3fKSs7YijEhhYBQ-jfg
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 629
-ht-degree: 18%
+source-wordcount: 659
+ht-degree: 16%
 
 ---
 
@@ -80,7 +80,7 @@ Per visualizzare alcuni di questi controlli, potrebbe essere necessario fare cli
 
 | Azione | Dettagli |
 | ---------- | ---------- |
-| Salva <p>![Icona Salva](assets/save-icon.png)</p> | Dopo aver salvato lo scenario, sarà disponibile una nuova versione nel menu con tre punti, qualora tu debba accedervi in futuro. Le versioni degli scenari salvati in precedenza sono disponibili solo per 60 giorni. |
+| Salva <p>![Icona Salva](assets/save-icon.png)</p> | <p>Dopo aver salvato lo scenario, sarà disponibile una nuova versione nel menu con tre punti, qualora tu debba accedervi in futuro. Le versioni dello scenario salvate in precedenza sono disponibili per 60 giorni dopo la creazione della versione dello scenario successiva. </p><p>Per mantenere la cronologia delle versioni dello scenario oltre i 60 giorni a scopo di audit, si consiglia di salvare e archiviare una blueprint dello scenario in un’altra posizione.</p> |
 | Impostazioni scenario <p>![Icona impostazioni scenario](assets/scenario-settings-icon.png)</p> | Il pannello delle impostazioni dello scenario contiene le impostazioni avanzate per lo scenario. Per ulteriori informazioni sulle impostazioni disponibili, vedere [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Note  <p>![Icona note](assets/notes-icon.png)</p> | Prendi nota dello scenario. Altri utenti possono visualizzare queste note quando si trovano nello scenario. |
 | Allineamento automatico <p>![Icona Allineamento automatico](assets/auto-align-icon.png)</p> | Allinea automaticamente i moduli nello scenario. |
