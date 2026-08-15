@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: f0e185778e01b71a91837531a082e88485e97ca2
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 6075
+source-wordcount: 6097
 ht-degree: 35%
 
 ---
@@ -206,7 +206,8 @@ Il connettore Workfront Planning utilizza OAuth 2.0 per connettersi a Workfront 
 
 >[!IMPORTANT]
 >
->I moduli in questa sezione appartengono al connettore Workfront Planning V2.Per i moduli nel connettore Workfront Planning V1, vedere [[!DNL Adobe Workfront Planning] Moduli versione 1 e relativi campi](#adobe-workfront-planning-version-1-modules-and-their-fields).
+>I moduli in questa sezione appartengono al connettore Workfront Planning V2.
+>Per i moduli nel connettore Workfront Planning V1, vedere [[!DNL Adobe Workfront Planning] Moduli versione 1 e relativi campi](#adobe-workfront-planning-version-1-modules-and-their-fields).
 
 Quando si configurano i moduli di Workfront Planning, Workfront Fusion visualizza i campi elencati di seguito. Oltre a questi campi potrebbero essere mostrati campi di Workfront aggiuntivi, in base a fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
@@ -1467,6 +1468,11 @@ Questo modulo di attivazione avvia uno scenario quando un record, un tipo di rec
 >
 >Per ulteriori informazioni sulla modifica dei webhook, vedere [Modifica webhook](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
+>[!NOTE]
+>
+>Dopo il 23 agosto 2026, Fusion abiliterà la sicurezza basata su authToken per impostazione predefinita per tutti i moduli Workfront Planning > Watch Event, compresi quelli esistenti.
+
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1531,7 +1537,8 @@ Per un esempio di utilizzo della logica avanzata in questo modulo, vedere [Esemp
 
 >[!IMPORTANT]
 >
->I moduli in questa sezione appartengono al connettore Workfront Planning V1.Per i moduli nel connettore Workfront Planning V2, vedere [[!DNL Adobe Workfront Planning] Moduli versione 2 e relativi campi](#adobe-workfront-planning-version-2-modules-and-their-fields).
+>I moduli in questa sezione appartengono al connettore Workfront Planning V1.
+>Per i moduli nel connettore Workfront Planning V2, vedere [[!DNL Adobe Workfront Planning] Moduli versione 2 e relativi campi](#adobe-workfront-planning-version-2-modules-and-their-fields).
 
 Quando si configurano i moduli di Workfront Planning, Workfront Fusion visualizza i campi elencati di seguito. Oltre a questi campi potrebbero essere mostrati campi di Workfront aggiuntivi, in base a fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
