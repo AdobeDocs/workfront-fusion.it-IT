@@ -478,7 +478,7 @@ ht-degree: 51%
       * [Moduli Markdown](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
       * [Modulo Math](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
       * [Moduli MIME](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-      * Modulo {hide-from-toc}[Agente MCP (Model Context Protocol)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+      * {hide-from-toc}[Modulo Agente MCP (Model Context Protocol)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
       * [Moduli per analisi testo](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
       * [Moduli per strumenti](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
       * [Moduli XML](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
