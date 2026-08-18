@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
 workflow-type: tm+mt
-source-wordcount: 6097
-ht-degree: 35%
+source-wordcount: 6620
+ht-degree: 33%
 
 ---
 
@@ -642,17 +639,61 @@ Questo modulo aggiorna un tipo di record.
 
 ### Record (V2)
 
-* [Crea un record](#create-a-record-v2)
+* [Crea un record (V2)](#create-a-record-v2)
+* [Crea un record (legacy)](#create-a-record-legacy)
 * [Elimina una decisione](#delete-a-record-v2)
 * [Ottieni un record](#get-a-record-v2)
 * [Ottieni record per tipo di record](#get-records-by-record-type-v2)
 * [Sposta record](#move-records-v2)
-* [Cerca record](#search-records-v2)
-* [Aggiorna un record](#update-a-record-v2)
+* [Cerca record (V2)](#search-records-v2)
+* [Cerca record (legacy)](#search-records-legacy)
+* [Aggiornare un record (V2)](#update-a-record-v2)
+* [Aggiornare un record (legacy)](#update-a-record-legacy)
 
 #### Crea un record (V2)
 
+Questa azione consente di creare un singolo record in Workfront Planning. Questa versione del modulo consente di selezionare i campi per i quali si desidera fornire i valori, creando in tal modo un payload più piccolo ed efficiente durante la creazione del record.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connessione]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Workfront Planning], consulta <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Creare una connessione a [!DNL Adobe Workfront Planning]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Area di lavoro]</p>
+      </td>
+      <td>Selezionare l'area di lavoro in cui si desidera creare un record.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Tipo di record]</p>
+      </td>
+      <td>Seleziona il tipo di ambiente da creare.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Seleziona i campi da mappare</p>
+      </td>
+      <td>Seleziona i campi per i quali vuoi fornire valori durante la creazione del modulo.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Altri campi</p>
+      </td>
+      <td>Immettere i valori desiderati per il nuovo record. Questi campi sono basati sul tipo di record e sui campi selezionati e sono specifici dell'organizzazione Workfront Planning.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Crea un record (legacy)
+
 Questa azione consente di creare un singolo record in Workfront Planning.
+
+È consigliabile utilizzare il nuovo modulo Crea record, che consente di selezionare i campi per i quali si desidera fornire i valori. La selezione dei campi crea un payload più piccolo ed efficiente durante la creazione del record.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -799,7 +840,48 @@ Questo modulo riordina uno o più record all&#39;interno di un tipo di record sp
 
 #### Cerca record (V2)
 
+Restituire i record in base ai criteri specificati.Questa versione del modulo consente di selezionare i campi per i quali si desidera fornire i valori, creando in tal modo un payload più piccolo ed efficiente durante la ricerca nei record.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connessione]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Workfront Planning], consulta <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Creare una connessione a [!DNL Adobe Workfront Planning]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Area di lavoro]</p>
+      </td>
+      <td>Selezionare l'area di lavoro contenente i record da recuperare.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Tipo di record]</p>
+      </td>
+      <td>Selezionare il tipo di record contenente i record che si desidera recuperare.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Seleziona i campi da mappare</p>
+      </td>
+      <td>Selezionare i campi in cui si desidera aggiornare i valori.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Altri campi]</p>
+      </td>
+      <td>Per ogni campo in base al quale si desidera filtrare, immettere l'operatore e il valore per tale campo. Questi campi sono basati sul tipo di record e sui campi selezionati e sono specifici dell'organizzazione Workfront Planning.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Cerca record (legacy)
+
 Restituire i record in base ai criteri specificati
+
+È consigliabile utilizzare il nuovo modulo Aggiorna record, che consente di selezionare i campi per i quali si desidera fornire i valori. La selezione dei campi crea un payload più piccolo ed efficiente durante l’aggiornamento del record.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -832,8 +914,56 @@ Restituire i record in base ai criteri specificati
 
 #### Aggiornare un record (V2)
 
+Questo modulo aggiorna il record specificato. Questa versione del modulo consente di selezionare i campi per i quali si desidera fornire i valori, creando un payload più piccolo ed efficiente durante l’aggiornamento del record.
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connessione]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Workfront Planning], consulta <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Creare una connessione a [!DNL Adobe Workfront Planning]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Area di lavoro]</p>
+      </td>
+      <td>Selezionare l'area di lavoro contenente il record che si desidera aggiornare.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL ID tipo di record]</p>
+      </td>
+      <td>Selezionare il tipo di record da aggiornare.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL ID record]</p>
+      </td>
+      <td>Immetti o mappa l’ID del record da aggiornare.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Seleziona i campi da mappare</p>
+      </td>
+      <td>Selezionare i campi in cui si desidera aggiornare i valori.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Altri campi]</p>
+      </td>
+      <td>Immettere valori per altri campi. I campi disponibili dipendono dal record e dai campi selezionati.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+#### Aggiornare un record (legacy)
+
 Questo modulo aggiorna il record specificato.
 
+È consigliabile utilizzare il nuovo modulo Aggiorna record, che consente di selezionare i campi per i quali si desidera fornire i valori. La selezione dei campi crea un payload più piccolo ed efficiente durante l’aggiornamento del record.
 
 
 <table style="table-layout:auto"> 
@@ -870,7 +1000,6 @@ Questo modulo aggiorna il record specificato.
     </tr>
   </tbody>
 </table>
-
 
 ### Campi (V2)
 
