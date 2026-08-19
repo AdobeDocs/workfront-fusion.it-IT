@@ -3,12 +3,11 @@ title: Riattivare l’esecuzione di uno scenario specifico
 description: Puoi riattivare l’esecuzione di uno scenario specifico per elaborare i dati utilizzando una blueprint di scenario aggiornata o per visualizzarne il flusso di dati.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 561
-ht-degree: 17%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +26,12 @@ Quando si utilizzano scenari concatenati, il riavvio può essere applicato anche
 Per ulteriori informazioni, consulta [Trigger istantanei (webhook)](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 Per ulteriori informazioni sugli scenari di concatenamento, vedere [Creare concatenamenti di più scenari](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+
+
+>[!NOTE]
+>
+>Nella cronologia di esecuzione vengono conservati solo fino a 256 KB di dati. Di conseguenza, le esecuzioni con dati di input superiori a 256 KB non possono essere riattivate. Qualsiasi tentativo di riattivare tale esecuzione non riesce e viene visualizzato un messaggio di errore.
 
 ## Requisiti di accesso
 
