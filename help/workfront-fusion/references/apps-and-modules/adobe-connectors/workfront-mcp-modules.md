@@ -133,7 +133,7 @@ Questo modulo di azione elabora un prompt in inglese semplice contro il server M
   </tr>  </tbody> 
 </table>
 
-Per un elenco degli strumenti che è possibile selezionare per i campi Strumenti di sola lettura e Strumenti di scrittura/eliminazione, vedere [Strumenti server Adobe Workfront MCP](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) nella documentazione di Workfront.
+Per un elenco degli strumenti che è possibile selezionare per i campi Strumenti di sola lettura e Strumenti di scrittura/eliminazione, vedere [Strumenti server Adobe Workfront MCP](https://experienceleague.adobe.com/it/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) nella documentazione di Workfront.
 
 Il modulo restituisce le seguenti informazioni, che puoi mappare nei moduli successivi nello scenario:
 
