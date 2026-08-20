@@ -3,11 +3,10 @@ title: Moduli MCP di Adobe Workfront
 description: Con il modulo MCP di Adobe Workfront, puoi inviare un messaggio in inglese semplice al server MCP di Adobe Workfront e consentire a un modello AI di eseguire la richiesta.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
 workflow-type: tm+mt
-source-wordcount: 841
+source-wordcount: 871
 ht-degree: 17%
 
 ---
@@ -19,6 +18,8 @@ Il connettore MCP di Adobe Workfront è un’integrazione dedicata di Fusion per
 Ad esempio, puoi immettere il prompt &quot;Trova tutti i miei progetti attivi che sono in ritardo sulla programmazione e riepiloga il loro stato&quot; e il modulo restituisce una risposta sintetizzata, invece di dover concatenare diversi moduli Get e Filter.
 
 Puoi limitare quali azioni di Workfront l’IA può eseguire, in modo che anche uno scenario incustodito possa garantire che non venga eseguita alcuna azione distruttiva inaspettata.
+
+Per impostazione predefinita, questo modulo utilizza Adobe Managed AI, che utilizza il modello `claude-sonnet-5`. È possibile configurare il modulo in modo che utilizzi un LLM diverso, utilizzando una chiave e altre credenziali fornite.
 
 Per ulteriori informazioni su MCP in scenari Fusion, consulta [Aggiungere un prompt di IA allo scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
@@ -133,7 +134,7 @@ Questo modulo di azione elabora un prompt in inglese semplice contro il server M
   </tr>  </tbody> 
 </table>
 
-Per un elenco degli strumenti che è possibile selezionare per i campi Strumenti di sola lettura e Strumenti di scrittura/eliminazione, vedere [Strumenti server Adobe Workfront MCP](https://experienceleague.adobe.com/it/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) nella documentazione di Workfront.
+Per un elenco degli strumenti che è possibile selezionare per i campi Strumenti di sola lettura e Strumenti di scrittura/eliminazione, vedere [Strumenti server Adobe Workfront MCP](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) nella documentazione di Workfront.
 
 Il modulo restituisce le seguenti informazioni, che puoi mappare nei moduli successivi nello scenario:
 
