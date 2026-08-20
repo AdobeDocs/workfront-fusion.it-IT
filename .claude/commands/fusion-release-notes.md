@@ -1,10 +1,10 @@
 ---
 name: fusion-release-notes
 description: Crea una nuova pagina delle note sulla versione settimanale di Workfront Fusion e collegala alla pagina di panoramica delle attività di rilascio e al sommario. Da utilizzare quando l’utente desidera scrivere, aggiungere o creare una nuova nota sulla versione di Fusion o una nuova pagina sulla versione settimanale, oppure quando richiede di documentare le nuove funzioni di Fusion per una versione. Non utilizzare per le note sulla versione di Workfront (Quicksilver) in annunci di prodotti/versioni di prodotti; utilizza le note sulla versione-formattatore per tali note.
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ Chiedi all’utente (se non già fornito) l’elenco delle funzioni/modifiche al
 - Una semplice descrizione di ciò che è cambiato e del perché è importante
 - Gli articoli della guida a cui è collegato (verifica che il percorso esista — non indovinare)
 - Se richiede un&#39;azione utente/amministratore o è una dichiarazione di obsolescenza (richiede un callout `>[!IMPORTANT]`)
+- **Se si tratta di un nuovo avvio del connettore** (un nuovo connettore/app che diventa disponibile, non solo nuovi moduli aggiunti a un connettore esistente). In caso affermativo, questo attiva **Passaggio 7** — non saltare le richieste di reindirizzamento solo perché è stata completata la nota sulla versione.
 
 ## Passaggio 2: determinare il nome e la data del file
 
@@ -134,7 +135,23 @@ Modifica `help/workfront-fusion/TOC.md`:
 - Diverse voci del sommario relative all’inizio del 2026 sono nidificate sotto l’intestazione `Fusion releases - 2025` per errore, anche se le pagine stesse sono versioni del 2026. Quando aggiungi una nuova voce, controlla sempre che arrivi sotto l&#39;intestazione corrispondente al **suo anno**, non dove si trova la voce precedente.
 - Alcuni titoli di pagina/H1 meno recenti omettono la virgola prima dell&#39;anno (`July 13 2026` invece di `July 13, 2026`). Usa sempre la virgola nelle nuove pagine.
 
-## Passaggio 6: elenco di controllo finale
+## Passaggio 7: nuovi avvii dei connettori — domande su un reindirizzamento (non saltare)
+
+**Questo passaggio si applica ogni volta che il passaggio 1 ha identificato l&#39;avvio di un nuovo connettore.** È facile considerare la nota sulla versione &quot;completata&quot; dopo il passaggio 5 e dimenticare questo — trattare una nuova funzione del connettore come incompleta fino a quando questo passaggio non è stato affrontato in un modo o nell&#39;altro.
+
+Chiedere all&#39;utente: *&quot;Impostare un reindirizzamento per il nuovo articolo del connettore?&quot;*
+
+- Se **no**, tieni presente che e continua — nient&#39;altro da fare.
+- Se **sì**, raccogliere:
+  - Il percorso di origine **&#x200B;**&#x200B;(deve iniziare con `/en`, senza spazi)
+  - La **destinazione** — un percorso relativo che inizia con `/en` o un URL `https` completo (senza spazi)
+- Aggiungere la riga all&#39;archivio `Adobe-Enterprise-Docs/redirects` di pari livello in `redirects/` un file per ambiente (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Regole di riga (dal file README dell’archivio):
+  - Nessuna coppia duplicata `source` e nessuna coppia duplicata `source`/`destination`.
+  - Il reindirizzamento non deve causare un loop di reindirizzamento.
+- **Questa abilità aggiunge la riga CSV solo dopo la conferma dell&#39;utente.** L&#39;aumento del PR nell&#39;archivio `redirects` è un passaggio separato che questa abilità non fa: indica all&#39;utente che un PR deve ancora essere aperto e unito lì prima che il reindirizzamento venga attivato (~5 minuti dopo l&#39;unione per reindirizzamenti 1:1).
+
+## Passaggio 8: elenco di controllo finale
 
 - [ ] File creato nel percorso corretto senza zeri iniziali nella data
 - [ ] Il materiale frontale utilizza `hidefromtoc: true`, nessun oggetto inventato `exl-id`/`TQID`
@@ -144,6 +161,7 @@ Modifica `help/workfront-fusion/TOC.md`:
 - [ ] Nuova pagina aggiunta come voce più recente in `fusion-release-activity.md`, nell&#39;anno/mese corretto
 - [ ] Nuova pagina aggiunta come voce più recente in `TOC.md`, sotto l&#39;intestazione dell&#39;anno corretto
 - [ ] intestazioni anno/mese nuove create se necessario, con l&#39;anno precedente compresso in `fusion-release-activity.md`
+- [ ] **Se una funzione era un nuovo avvio del connettore: richiesta di informazioni su un reindirizzamento (passaggio 7), impostarne uno o rifiutarlo esplicitamente**
 
 ## Risorse aggiuntive
 
