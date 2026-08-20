@@ -5,14 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
 TQID: https://experienceleague.adobe.com/hugbkrxjvBcwIiPQMfM9VIcRby-zpFK6U5hRmrF38Lc
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 1886
 ht-degree: 44%
@@ -108,7 +104,7 @@ Puoi creare una connessione al tuo account [!DNL Microsoft Dynamics 365] diretta
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Tipo]</td>
-          <td>Seleziona se ti interessa la connessione a un account di servizio o a un account personale.</td>
+          <td>Specifica se ti connetti a un account di servizio o a un account personale.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
@@ -250,7 +246,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td>Selezionare i campi per i quali si desidera includere i valori al momento della creazione del record. I campi disponibili dipendono dal tipo di entità.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Campi proprietà </td> 
+   <td role="rowheader">Campi proprietà [!UICONTROL]</td> 
    <td> Questi sono i campi selezionati. Immettere il valore desiderato per il record per una determinata proprietà. </td> 
   </tr> 
  </tbody> 
@@ -389,7 +385,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td>Selezionare i campi per i quali si desidera includere i valori al momento della creazione del record. I campi disponibili dipendono dal tipo di entità.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Campi proprietà </td> 
+   <td role="rowheader">Campi proprietà [!UICONTROL]</td> 
    <td>Questi sono i campi selezionati. Immettere il valore desiderato per il record per una determinata proprietà.</td> 
   </tr> 
   <tr data-mc-conditions=""> 

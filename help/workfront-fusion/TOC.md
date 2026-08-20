@@ -3,9 +3,9 @@ user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
 nudge: true
-source-git-commit: a482c81a3813d1f3a2e37e5f123907f98b216655
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2590'
 ht-degree: 51%
 
 ---
@@ -402,6 +402,7 @@ ht-degree: 51%
       * [Moduli Adobe Storage](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
       * [Moduli Adobe Target](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
       * [Moduli Adobe User Management](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+      * [Moduli MCP di Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)
       * [Moduli Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
       * [Moduli Adobe Workfront - Pianificazione](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
       * [Moduli di revisione e approvazione unificate di Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)

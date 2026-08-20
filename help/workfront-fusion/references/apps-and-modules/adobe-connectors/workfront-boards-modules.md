@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
 TQID: https://experienceleague.adobe.com/0yHy2mMpsOxPH-cphARzE3LmIlAmYLNQTpXxFgb6dvo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2906
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -108,7 +105,7 @@ Per creare una connessione alle schede madri Workfront:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Tipo]</td>
-          <td>Seleziona se ti interessa la connessione a un account di servizio o a un account personale.</td>
+          <td>Specifica se ti connetti a un account di servizio o a un account personale.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID client]<p>(Facoltativo)</p></td>
@@ -314,7 +311,7 @@ Questo modulo di azione aggiorna le informazioni relative a una scheda specifica
    <td>Immettere o mappare una nuova descrizione per la scheda.</p></td> 
   </tr> 
   <tr> 
-   <td>Stima </td> 
+   <td>Stima [!UICONTROL]</td> 
    <td>Immetti o mappa una stima del tempo necessario per completare questa scheda.</p></td> 
   </tr> 
   <tr> 
@@ -636,7 +633,7 @@ Questo modulo di azione invia una richiesta GraphQL personalizzata all’API del
    <td> <p>Immettere un nome per l'operazione. Questo può semplificare il tracciamento e il debug della chiamata.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Origine dati delle variabili </td> 
+   <td role="rowheader">Origine dati delle variabili [!UICONTROL]</td> 
    <td> <p>Seleziona se le variabili devono provenire da un modulo o da una raccolta.</p> </td> 
   </tr> 
   <tr> 
