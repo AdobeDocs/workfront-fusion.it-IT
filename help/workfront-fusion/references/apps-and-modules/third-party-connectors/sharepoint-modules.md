@@ -5,17 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
 TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 4305
-ht-degree: 13%
+source-wordcount: 4846
+ht-degree: 12%
 
 ---
 
@@ -94,9 +90,10 @@ Il connettore SharePoint utilizza quanto segue:
 
 ## Collegare Microsoft SharePoint Online a Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Connettere Microsoft SharePoint Online a Workfront Fusion utilizzando un account  [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Connettere Microsoft SharePoint Online a Workfront Fusion utilizzando un account  [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connettere Microsoft SharePoint Online a Workfront Fusion tramite impostazioni avanzate](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Connettere Microsoft SharePoint Online a Workfront Fusion tramite l’autorizzazione del certificato](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [Connettere Microsoft SharePoint Online a Workfront Fusion utilizzando un’entità servizio](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### Connettere Microsoft SharePoint Online a Workfront Fusion utilizzando un account [!DNL Microsoft]
 
@@ -204,6 +201,97 @@ Puoi utilizzare l’autorizzazione del certificato per connetterti a SharePoint.
 
 1. Fai clic su **Continue** (Continua) per salvare la connessione e tornare al modulo.
 
+### Connettere Microsoft SharePoint Online a Workfront Fusion utilizzando un’entità servizio
+
+È possibile creare una connessione che utilizza un&#39;entità servizio (una connessione API dell&#39;applicazione) invece di un account personale. Ciò è utile quando si desidera che la connessione venga eseguita come identità di un&#39;applicazione o di un servizio anziché come persona specifica, ad esempio, in modo che l&#39;integrazione non si interrompa se la persona lascia l&#39;azienda o modifica la password.
+
+>[!IMPORTANT]
+>
+>Questo tipo di connessione è disponibile solo per il modulo [Effettua una chiamata API](#make-an-api-call). Altri moduli SharePoint richiedono uno degli altri tipi di connessione descritti in questo articolo.
+
+* [Prerequisiti per la connessione di Microsoft SharePoint Online a Workfront Fusion tramite un’entità servizio](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
+* [Creare la registrazione dell’app in Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)
+* [Creare un segreto client](#create-a-client-secret)
+* [Concedere le autorizzazioni API](#grant-api-permissions)
+* [Raccogliere i dettagli di connessione](#collect-your-connection-details)
+* [Creare la connessione](#create-the-connection)
+
+#### Prerequisiti per la connessione di Microsoft SharePoint Online a Workfront Fusion tramite un’entità servizio
+
+Per registrare l&#39;app e concederle le autorizzazioni, è necessario l&#39;accesso **Amministratore globale**, **Amministratore applicazioni** o **Amministratore ruoli con privilegi** in Microsoft Entra ID. Se non disponi di questo accesso, chiedi a qualcuno del tuo team IT o di identità di completare questi passaggi al posto tuo.
+
+Continua con [Crea la registrazione all&#39;app in Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id).
+
+#### Creare la registrazione dell’app in Microsoft Entra ID
+
+1. Accedere al centro di amministrazione [!DNL Microsoft Entra].
+1. Vai a **[!UICONTROL Registrazioni app]** > **[!UICONTROL Nuova registrazione]**.
+1. Assegna all’app un nome chiaro e riconoscibile. Ad esempio, `Make - SharePoint Integration`.
+1. Lascia vuoto **[!UICONTROL URI reindirizzamento]**. Questa connessione non richiede l&#39;accesso tramite un browser.
+1. Seleziona **[!UICONTROL Registra]**.
+1. Continua con [Crea un segreto client](#create-a-client-secret).
+
+#### Creare un segreto client
+
+1. Nella tua nuova registrazione all&#39;app, vai a **[!UICONTROL Certificati e segreti]**.
+1. Seleziona **[!UICONTROL Nuovo segreto client]**, aggiungi una descrizione e scegli un periodo di scadenza.
+1. Seleziona **[!UICONTROL Aggiungi]**.
+1. Copia immediatamente il **[!UICONTROL Valore]** del segreto. Viene visualizzato una sola volta. Se esci prima di copiarlo, devi crearne uno nuovo.
+1. Continua con [Concedi autorizzazioni API](#grant-api-permissions).
+
+#### Concedere le autorizzazioni API
+
+>[!IMPORTANT]
+>
+>BECKY CHECK ME: a differenza di Azure DevOps, Microsoft Graph supporta le autorizzazioni dell’applicazione direttamente in questo passaggio. Prima di pubblicare questa sezione, conferma le autorizzazioni specifiche necessarie per il modulo Effettua una chiamata API (ad esempio, un ambito di autorizzazione Sites) e aggiorna di conseguenza i passaggi seguenti.
+
+1. Nella registrazione dell&#39;app, vai a **[!UICONTROL Autorizzazioni API]**.
+1. Seleziona **[!UICONTROL Aggiungi un&#39;autorizzazione]**, quindi seleziona **[!UICONTROL Microsoft Graph]**.
+1. Selezionare **[!UICONTROL Autorizzazioni applicazione]**.
+1. Seleziona l&#39;autorizzazione o le autorizzazioni necessarie per le chiamate API, quindi seleziona **[!UICONTROL Aggiungi autorizzazioni]**.
+1. Seleziona **[!UICONTROL Concedi il consenso all&#39;amministratore per]** la tua organizzazione, quindi conferma.
+1. Continua con [Raccogliere i dettagli della connessione](#collect-your-connection-details).
+
+#### Raccogliere i dettagli di connessione
+
+Nella pagina **[!UICONTROL Panoramica]** della registrazione dell&#39;app, prendi nota dei seguenti valori. Immetti questi valori durante la creazione della connessione nel modulo.
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL ID tenant]</td>
+   <td>Nella pagina Panoramica, con etichetta <b>ID directory (tenant)</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL ID client]</td>
+   <td>Nella pagina Panoramica, etichettato <b>ID applicazione (client)</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
+   <td>Il valore copiato in <a href="#create-a-client-secret" class="MCXref xref">Crea un segreto client</a>.</td>
+  </tr>
+ </tbody>
+</table>
+
+Continua a [Creare la connessione](#create-the-connection).
+
+#### Creare la connessione
+
+1. Nel modulo [!UICONTROL Effettua una chiamata API], fai clic su **[!UICONTROL Aggiungi]** accanto al campo Connessione per aprire la casella **[!UICONTROL Crea una connessione]**.
+1. Fare clic su **[!UICONTROL Mostra impostazioni avanzate]**.
+1. Nel campo [!UICONTROL Tipo di connessione], selezionare **[!UICONTROL Entità servizio]**.
+1. Immetti il codice seguente:
+
+   * [!UICONTROL ID tenant]
+   * [!UICONTROL ID client]
+   * [!UICONTROL Segreto client]
+
+1. Fai clic su **Continua** per salvare la connessione e tornare al modulo.
+
+   Se tutto è configurato correttamente, la connessione viene convalidata correttamente.
+
 ## Moduli SharePoint di Microsoft e relativi campi
 
 Quando configuri i moduli di Microsoft SharePoint Online, Workfront Fusion visualizza i campi elencati di seguito. Insieme a questi, possono essere visualizzati campi SharePoint Online aggiuntivi di Microsoft, a seconda di fattori quali il livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
@@ -222,6 +310,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 ### Elemento unità
 
 * [Creare un file](#create-a-file)
+* [Crea un file (legacy)](#create-a-file-legacy)
 * [Crea una cartella](#create-a-folder)
 * [Ottieni un file](#get-a-file)
 * [Ottieni una cartella](#get-a-folder)
@@ -417,7 +506,7 @@ Questo modulo di attivazione avvia uno scenario quando un elemento viene aggiorn
 * [[!UICONTROL Crea un elemento]](#create-an-item)
 * [[!UICONTROL Eliminare un elemento]](#delete-an-item)
 * [[!UICONTROL Ottieni un elemento]](#get-an-item)
-* [Ottieni dettagli](#get-details)
+* [Maggiori dettagli](#get-details)
 * [[!UICONTROL Elementi elenco]](#list-items)
 * [[!UICONTROL Sposta un elemento]](#move-an-item)
 * [[!UICONTROL Aggiorna un elemento]](#update-an-item)
@@ -652,7 +741,7 @@ Questo modulo di attivazione avvia uno scenario quando un elemento viene creato 
    <td role="rowheader">[!UICONTROL Immetti ID sito ed elenco]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito e dell'elenco che si desidera controllare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong> e l'ID elenco <strong></strong> che si desidera controllare.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong> e l'ID elenco <strong>[!UICONTROL]</strong> che si desidera controllare.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco che segui]</strong> </p> <p>Seleziona il sito da monitorare, quindi fai clic sull’elenco. Questi menu a discesa recuperano solo i siti seguiti.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -686,7 +775,7 @@ Questo modulo di azione crea un nuovo elenco in SharePoint.
    <td role="rowheader">[!UICONTROL Immetti un ID sito]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito in cui si desidera creare un elenco.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong> in cui si desidera creare un elenco.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong> in cui si desidera creare un elenco.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare il sito in cui si desidera creare un elenco. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -744,7 +833,7 @@ Questo modulo di azione recupera un elenco di tutti gli elementi in un sito spec
    <td role="rowheader">[!UICONTROL Elenchi]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito da cui si desidera recuperare gli elenchi.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong> contenente gli elenchi che si desidera restituire.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong> contenente gli elenchi che si desidera restituire.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare il sito contenente gli elenchi che si desidera recuperare. Il menu a discesa recupera solo i siti che segui.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -775,7 +864,7 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o modificato
    <td role="rowheader">[!UICONTROL Immetti ID sito]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito da controllare per gli elenchi.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong></strong> in cui desideri guardare gli elenchi.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong>[!UICONTROL]</strong> in cui desideri guardare gli elenchi.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco che segui]</strong> </p> <p>Seleziona il sito da monitorare. L’elenco a discesa recupera solo il sito che segui.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -813,7 +902,7 @@ Questo modulo di azione restituisce i dati di una pagina specificata.
    <td role="rowheader">[!UICONTROL Ottieni pagina]</td> 
    <td> <p>Seleziona la modalità di identificazione della pagina da recuperare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong></strong>e l'ID pagina <strong></strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong>[!UICONTROL]</strong>e l'ID pagina <strong>[!UICONTROL]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Seleziona il sito contenente la pagina da recuperare, quindi fai clic sulla pagina.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -863,7 +952,7 @@ Questo modulo di azione pubblica la versione più recente della pagina seleziona
    <td role="rowheader">[!UICONTROL Pubblica una pagina]</td> 
    <td> <p>Seleziona la modalità di identificazione della pagina da pubblicare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong></strong>e l'ID pagina <strong></strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immetti o mappa l'ID sito <strong>[!UICONTROL]</strong>e l'ID pagina <strong>[!UICONTROL]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Seleziona il sito contenente la pagina da pubblicare, quindi fai clic sulla pagina.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -918,7 +1007,7 @@ Questo modulo di azione restituisce i dati di un sito specificato.
    <td role="rowheader">[!UICONTROL Ottieni sito]</td> 
    <td> <p>Seleziona la modalità di identificazione della pagina da recuperare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Seleziona il sito da recuperare.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -970,7 +1059,7 @@ Questo modulo recupera le aggiunte, gli aggiornamenti e le eliminazioni effettua
    <td role="rowheader">[!UICONTROL Immetti ID di sito, unità e cartella]</td> 
    <td> <p>Selezionare la modalità di identificazione del sito e dell'unità che contiene l'elemento che si desidera aggiornare.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong></strong>, <strong>[!UICONTROL ID unità]</strong> e <strong>[!UICONTROL ID cartella]</strong> nei campi visualizzati.</p> </li> 
+     <li> <p><strong>[!UICONTROL Immetti manualmente]</strong> </p> <p>Immettere o mappare l'ID sito <strong>[!UICONTROL]</strong>, <strong>[!UICONTROL ID unità]</strong> e <strong>[!UICONTROL ID cartella]</strong> nei campi visualizzati.</p> </li> 
      <li> <p><strong>[!UICONTROL Seleziona dall'elenco]</strong> </p> <p>Selezionare il sito contenente l'elemento che si desidera aggiornare, quindi selezionare l'unità e la cartella. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -1036,7 +1125,7 @@ Questo modulo di attivazione immediata avvia uno scenario quando un elemento vie
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Seleziona un webhook esistente oppure fai clic su Aggiungi e immetti la connessione per crearne uno nuovo.</p> 
