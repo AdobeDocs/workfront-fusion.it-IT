@@ -15,9 +15,9 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 7689
+source-wordcount: 7687
 ht-degree: 93%
 
 ---
@@ -282,8 +282,8 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
      <tr> 
       <td>[!UICONTROL Abilita hook protetti]</td> 
       <td>
-       <p>Scegliere se attivare la protezione basata su enableauthToken per questo webhook.</p><p>
-       <b>NOTA</b>: dopo il 23 agosto 2026, Fusion abiliterà la sicurezza basata su authToken per impostazione predefinita per tutti i moduli Workfront &gt; Watch Event, inclusi quelli esistenti. Se uno specifico webhook si interrompe o è necessario disattivarlo per motivi di compatibilità, puoi disattivare l’opzione Abilita hook protetti prima del 23 agosto 2026.</p>
+       <p>Scegliere se abilitare la protezione basata su authToken per questo webhook.</p><p>
+       <b>NOTA</b>: a partire dal 23 agosto 2026, Fusion abilita la sicurezza basata su authToken per impostazione predefinita per tutti i moduli Workfront &gt; Watch Event, inclusi quelli esistenti. Se un webhook specifico si interrompe o è necessario disattivarlo per motivi di compatibilità, è possibile disattivare l’opzione Abilita hook protetti.</p>
        </td> 
      </tr> 
     </tbody> 
