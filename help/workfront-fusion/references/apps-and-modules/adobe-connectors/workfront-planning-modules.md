@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 6620
+source-wordcount: 6660
 ht-degree: 33%
 
 ---
@@ -1600,11 +1597,6 @@ Questo modulo di attivazione avvia uno scenario quando un record, un tipo di rec
 >
 >Per ulteriori informazioni sulla modifica dei webhook, vedere [Modifica webhook](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
->[!NOTE]
->
->Dopo il 23 agosto 2026, Fusion abiliterà la sicurezza basata su authToken per impostazione predefinita per tutti i moduli Workfront Planning > Watch Event, compresi quelli esistenti.
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1654,6 +1646,13 @@ Questo modulo di attivazione avvia uno scenario quando un record, un tipo di rec
         <p>[!UICONTROL Escludi aggiornamenti effettuati da questa connessione]</p>
       </td>
       <td>Abilita questa opzione per impedire che lo scenario venga attivato quando viene apportata una modifica dalla connessione utilizzata da questo modulo. Questo impedisce l’attivazione di un’altra istanza dello scenario se questo esegue un’azione di attivazione.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Abilita hook protetti]</td>
+      <td>
+       <p>Scegliere se abilitare la protezione basata su authToken per questo webhook.</p><p>
+       <b>NOTA</b>: a partire dal 23 agosto 2026, Fusion abilita la sicurezza basata su authToken per impostazione predefinita per tutti i moduli Workfront Planning &gt; Watch Event, inclusi quelli esistenti. Se un webhook specifico si interrompe o è necessario disattivarlo per motivi di compatibilità, è possibile disattivare l’opzione Abilita hook protetti.</p>
+      </td>
     </tr>
   </tbody>
 </table>
