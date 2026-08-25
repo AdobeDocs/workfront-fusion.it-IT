@@ -3,7 +3,8 @@ title: Spostare i moduli in una catena
 description: È possibile selezionare un gruppo di moduli in uno scenario e spostarli in un nuovo scenario concatenato, senza ricreare manualmente mappature o strutture di dati.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: f1a80f64edc410ae76bfbba1280df7232e2d09c5
 workflow-type: tm+mt
 source-wordcount: 513
