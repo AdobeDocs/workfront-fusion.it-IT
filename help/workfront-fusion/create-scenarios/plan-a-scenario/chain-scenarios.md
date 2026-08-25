@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 1705
+source-wordcount: 1744
 ht-degree: 9%
 
 ---
@@ -33,6 +32,8 @@ Quando uno scenario padre è in attesa che uno scenario figlio restituisca i dat
 Per ulteriori informazioni sui guardrail delle prestazioni di Fusion, inclusi i timeout, vedere [Guardrail delle prestazioni di Fusion](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
 
 Per istruzioni sulla configurazione dei moduli Chain, vedere [Moduli Chain](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
+
+Per istruzioni su come selezionare i moduli esistenti in uno scenario e spostarli in un nuovo scenario figlio, vedere [Spostare i moduli in una catena](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 ## Scenari padre e figlio
 

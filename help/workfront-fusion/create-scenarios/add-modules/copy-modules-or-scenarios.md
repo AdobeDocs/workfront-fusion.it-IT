@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
 TQID: https://experienceleague.adobe.com/JLouqKhRBefW2RU5BnwYQfapJz-SWcSmtqAqg--kOjo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 914
-ht-degree: 11%
+source-wordcount: 941
+ht-degree: 10%
 
 ---
 
@@ -83,6 +81,10 @@ La copia di un gruppo di moduli è simile alla copia di un singolo modulo.
 1. Connetti i moduli incollati allo scenario trascinandoli nella posizione appropriata nello scenario.
 
    È inoltre possibile utilizzare i tasti di scelta rapida per copiare e incollare.
+
+>[!NOTE]
+>
+>Invece di copiare un gruppo di moduli, puoi spostare un gruppo di moduli in un nuovo scenario concatenato. Per istruzioni, vedere [Spostare i moduli in una catena](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 ## Copiare uno scenario tramite clonazione
 
