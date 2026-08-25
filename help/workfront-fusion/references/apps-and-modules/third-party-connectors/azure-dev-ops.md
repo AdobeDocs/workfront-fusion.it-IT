@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 1899
-ht-degree: 32%
+source-wordcount: 2646
+ht-degree: 23%
 
 ---
 
@@ -89,6 +89,11 @@ Il connettore Azure DevOps utilizza quanto segue:
 
 ## Connettere [!DNL Azure DevOps] a Workfront Fusion {#connect-azure-devops-to-workfront-fusion}
 
+* [Collegare Azure DevOps a Workfront Fusion utilizzando EntraApp](#connect-azure-devops-to-workfront-fusion-using-entraapp)
+* [Connettere Azure DevOps a Workfront Fusion utilizzando un’entità servizio](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
+
+### Collegare Azure DevOps a Workfront Fusion utilizzando EntraApp
+
 1. Aggiungi un modulo [!DNL Azure DevOps] allo scenario.
 1. Fai clic su **[!UICONTROL Aggiungi]** accanto al campo [!UICONTROL Connessione].
 1. Nel campo [!UICONTROL Tipo di connessione], selezionare il tipo di connessione che si desidera utilizzare.
@@ -124,6 +129,112 @@ Il connettore Azure DevOps utilizza quanto segue:
 
 1. Per immettere un ID app Azure DevOps o un segreto client, fai clic su <b>Mostra impostazioni avanzate</b> e immettili nei campi aperti.
 1. Fai clic su **[!UICONTROL Continua]** per completare la configurazione della connessione e continuare a creare lo scenario.
+
+### Connettere Azure DevOps a Workfront Fusion utilizzando un’entità servizio
+
+È possibile creare una connessione che utilizza un&#39;entità servizio (una connessione API dell&#39;applicazione) invece di un account personale. Questa opzione è utile quando si desidera che la connessione venga eseguita come identità di un&#39;applicazione o di un servizio anziché come persona specifica. Questo può essere utile in modo che l’integrazione non si interrompa se, ad esempio, quella persona lascia l’azienda o modifica la propria password.
+
+Questo tipo di connessione è disponibile per tutti i moduli DevOps di Azure.
+
+>[!NOTE]
+>
+>L’autenticazione dell’entità servizio non supporta tutte le funzioni DevOps di Azure. Un numero limitato di azioni a livello di amministratore, come la gestione delle licenze utente, richiede ancora una connessione a un account personale. Utilizza l’autenticazione dell’entità servizio se è necessaria solo per elementi di lavoro, bacheche, repository o pipeline.
+
+* [Prerequisiti per la connessione di Azure DevOps a Workfront Fusion tramite un’entità servizio](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
+* [Creare la registrazione dell’app in Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)
+* [Creare un segreto client](#create-a-client-secret)
+* [Raccogliere i dettagli di connessione](#collect-your-connection-details)
+* [Aggiungere l’entità servizio all’organizzazione Azure DevOps](#add-the-service-principal-to-your-azure-devops-organization)
+* [Creare la connessione](#create-the-connection)
+
+#### Prerequisiti per la connessione di Azure DevOps a Workfront Fusion tramite un’entità servizio
+
+Per creare questa connessione, è necessario disporre dei seguenti elementi:
+
+* Accesso **Amministratore globale** o **Amministratore applicazioni** in Microsoft Entra ID, per registrare l&#39;app. Se non disponi di questo accesso, chiedi a qualcuno del tuo team IT o di identità di completare quel passaggio al posto tuo.
+* Accesso **Amministratore raccolta progetti** nell&#39;organizzazione Azure DevOps per aggiungere l&#39;entità servizio come membro. Spesso si tratta di una persona diversa da quella che gestisce l’Entra ID di Microsoft.
+* Nome dell’organizzazione Azure DevOps. È possibile trovarlo nell&#39;URL di Azure DevOps: `dev.azure.com/<your organization name>`.
+
+#### Creare la registrazione dell’app in Microsoft Entra ID
+
+1. Accedere al centro di amministrazione [!DNL Microsoft Entra].
+1. Vai a **[!UICONTROL Registrazioni app]** > **[!UICONTROL Nuova registrazione]**.
+1. Assegna all’app un nome chiaro e riconoscibile. Ad esempio, `Workfront Fusion Azure DevOps Integration`.
+1. Lascia vuoto **[!UICONTROL URI reindirizzamento]**. Questa connessione non comporta l’accesso tramite un browser.
+1. Seleziona **[!UICONTROL Registra]**.
+1. Continua con [Crea un segreto client](#create-a-client-secret).
+
+#### Creare un segreto client
+
+1. Nella tua nuova registrazione all&#39;app, vai a **[!UICONTROL Certificati e segreti]**.
+1. Seleziona **[!UICONTROL Nuovo segreto client]**, aggiungi una descrizione e scegli un periodo di scadenza.
+1. Seleziona **[!UICONTROL Aggiungi]**.
+1. Copia immediatamente il **[!UICONTROL Valore]** del segreto. Viene visualizzato una sola volta. Se esci prima di copiarlo, devi crearne uno nuovo.
+1. Continua con [Raccogliere i dettagli della connessione](#collect-your-connection-details).
+
+#### Raccogliere i dettagli di connessione
+
+1. Nella pagina **[!UICONTROL Panoramica]** della registrazione dell&#39;app, prendi nota dei seguenti valori. Immetti questi valori durante la creazione della connessione nel modulo.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL ID tenant]</td>
+      <td>Nella pagina Panoramica, con etichetta <b>ID directory (tenant)</b>.</td>
+      </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL ID client]</td>
+      <td>Nella pagina Panoramica, etichettato <b>ID applicazione (client)</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
+      <td>Il valore copiato in <a href="#create-a-client-secret" class="MCXref xref">Crea un segreto client</a>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Organizzazione]</td>
+      <td>Il nome della tua organizzazione Azure DevOps. Ad esempio, se l'URL è <code>dev.azure.com/yourorg</code>, immettere <code>yourorg</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!NOTE]
+   >
+   >Puoi saltare l&#39;area **Autorizzazioni API** della registrazione dell&#39;app. Se aggiungi Azure DevOps, sono disponibili solo **autorizzazioni delegate**. Le **autorizzazioni dell&#39;applicazione** sono visualizzate in grigio. Ciò è previsto, perché Azure DevOps non supporta questa modalità di concessione dell’accesso. Nella parte successiva, l’accesso viene concesso direttamente all’interno di Azure DevOps.
+
+1. Continua con [Aggiungi l&#39;entità servizio alla tua organizzazione Azure DevOps](#add-the-service-principal-to-your-azure-devops-organization).
+
+#### Aggiungere l’entità servizio all’organizzazione Azure DevOps
+
+La registrazione dell’app in Microsoft Entra ID ne crea solo l’identità. Non fornisce ancora all’app alcun accesso ai dati Azure DevOps. Questa procedura consente l&#39;accesso.
+
+1. Accedi alla tua organizzazione Azure DevOps all&#39;indirizzo `dev.azure.com/<your organization name>`.
+1. Seleziona **[!UICONTROL Impostazioni organizzazione]** in basso a sinistra, quindi seleziona **[!UICONTROL Utenti]**.
+1. Selezionare **[!UICONTROL Aggiungi utenti]**.
+1. Nella casella di ricerca, cerca in base al nome visualizzato dell’app, che è il nome che le hai assegnato quando hai registrato l’app. Non eseguire ricerche in base all’ID client.
+1. Selezionare un livello di accesso:
+
+   * **[!UICONTROL Base]** è in genere sufficiente per leggere e scrivere elementi di lavoro, bacheche e repository.
+   * Se il flusso di lavoro deve sfogliare i processi disponibili, ad esempio i modelli Agile, Scrum o personalizzati, come parte della configurazione, aggiungi l&#39;entità servizio al gruppo **[!UICONTROL Amministratori raccolta progetti]**. Si tratta di un livello di accesso più ampio, quindi concedilo solo se hai bisogno di tale funzionalità.
+
+1. Assegna l’entità servizio al progetto o ai progetti specifici necessari, seguendo le consuete procedure di accesso dell’organizzazione.
+1. Seleziona **[!UICONTROL Aggiungi]**.
+1. Continua a [Creare la connessione](#create-the-connection).
+
+#### Creare la connessione
+
+1. Nella schermata di configurazione della connessione del modulo, selezionare il tipo di connessione **[!UICONTROL Entità servizio]**.
+1. Immetti il codice seguente:
+
+   * [!UICONTROL ID tenant]
+   * [!UICONTROL ID client]
+   * [!UICONTROL Segreto client]
+   * [!UICONTROL Organizzazione]
+
+1. Salva la connessione.
+
+   Se tutto è configurato correttamente, la connessione viene convalidata correttamente.
 
 ## [!UICONTROL Moduli DevOps] di Azure e relativi campi
 
