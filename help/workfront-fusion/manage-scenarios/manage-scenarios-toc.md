@@ -9,10 +9,10 @@ exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
 TQID: https://experienceleague.adobe.com/EUSuZIyMovl2W3PlmmGaJ6rivpwQWZIJMKbZ4VGJDgw
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 336cdb956b69b996b2eaa7f08508e2efaae56a0e
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 110
-ht-degree: 53%
+source-wordcount: 115
+ht-degree: 51%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 53%
 * [Visualizzare la coda di un webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [Visualizzare il flusso di dati di uno scenario in esecuzione](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
 * [Visualizzare le relazioni tra scenari concatenati](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
+* [Spostare i moduli in una catena](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
 * [Assistente IA in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [Eseguire la funzione Esperto punteggio dello scenario](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [Eliminare elementi dello scenario](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)

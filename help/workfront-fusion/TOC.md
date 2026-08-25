@@ -3,10 +3,10 @@ user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
 nudge: true
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: fedd3e509b76cb7db5bf814c1677a2a5a6699aa7
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 51%
+source-wordcount: '2604'
+ht-degree: 50%
 
 ---
 
@@ -294,6 +294,7 @@ ht-degree: 51%
   * [Visualizzare la cronologia delle esecuzioni di uno scenario](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
   * [Visualizzare una specifica esecuzione di uno scenario](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
   * [Visualizzare e gestire le relazioni tra scenari concatenati](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
+  * [Spostare i moduli in una catena](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [Visualizzare il flusso di dati di uno scenario in esecuzione](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [Visualizzare la coda di un webhook](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
   * {hide-from-toc}[Assistente IA in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
