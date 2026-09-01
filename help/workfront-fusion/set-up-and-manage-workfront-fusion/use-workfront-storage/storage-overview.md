@@ -3,7 +3,8 @@ title: Panoramica sull’archiviazione
 description: Storage è una pagina di Workfront Fusion che offre ai team l'accesso diretto ai repository di Adobe Enterprise Storage Management (ESM), consentendo agli utenti di sfogliare le cartelle, caricare e scaricare file, visualizzare la cronologia delle versioni e creare scenari di automazione.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: d5568479d43bd5518adae5b66b132b4075e7f356
 workflow-type: tm+mt
 source-wordcount: 279
