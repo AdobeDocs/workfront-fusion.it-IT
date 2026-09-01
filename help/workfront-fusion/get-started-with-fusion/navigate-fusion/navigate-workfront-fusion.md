@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
 TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
-source-wordcount: 775
-ht-degree: 94%
+source-wordcount: 895
+ht-degree: 82%
 
 ---
 
@@ -23,6 +22,7 @@ Questo articolo presenta le aree e fornisce collegamenti a ulteriori informazion
 | Area | Descrizione | Per ulteriori informazioni, consulta |
 | --- | --- | --- |
 | Panoramica dell’organizzazione <br> ![Icona dell’organizzazione](assets/org-icon.png) | Qui trovi informazioni sulla tua organizzazione Fusion. Puoi visualizzare il numero di operazioni eseguite dagli scenari in questa organizzazione e un elenco degli scenari attivi. Puoi anche visualizzare elenchi dei team, degli utenti e degli ambienti di questa organizzazione.<br>L’organizzazione attualmente selezionata è riportata sopra questa icona. | [Organizzazioni e team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
+| Approfondimenti <br> ![Icona approfondimenti](assets/insights-icon.png) | Qui puoi vedere un dashboard delle metriche di esecuzione per l’organizzazione, ad esempio quali scenari sono più in esecuzione, dove si verificano ritardi e quanto efficacemente funzionano i pool di lavoro. | [Visualizza il dashboard Approfondimenti per un&#39;organizzazione](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-insights-dashboard.md) |
 | Panoramica dei team  <br> ![Icona team](assets/team-icon.png) | Qui trovi informazioni sui team di Fusion, ad esempio quante operazioni sono state eseguite dagli scenari in un team e un elenco degli scenari attivi. Puoi anche visualizzare e gestire gli utenti di un team. Quando visualizzi un team, puoi selezionare un team diverso da un elenco a discesa nella parte superiore della pagina.<br>Il team attualmente selezionato viene visualizzato sopra questa icona.<br>Prima di visualizzare la panoramica dei team o una delle sezioni elencate in questo articolo, potresti dover creare un team. | [Organizzazioni e team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Scenari  <br> ![Icona scenari](assets/scenarios-icon.png) | In Fusion uno scenario è un flusso di lavoro automatizzato. Ad esempio uno scenario può controllare le richieste Workfront in arrivo e convertirle in progetti; un altro scenario può generare immagini, caricarle in un provider di documenti e aggiungere attività di approvazione a Workfront. La maggior parte del lavoro che svolgi in Fusion consiste nel configurare e gestire gli scenari. Nell’area Scenari puoi visualizzare e organizzare un elenco degli scenari del tuo team, selezionare singoli scenari da visualizzare o modificare, oppure iniziare a creare un nuovo scenario. | [Panoramica degli scenari](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
 | Modelli  <br> ![Icona modelli](assets/templates-icon.png) | I modelli sono scenari predefiniti che puoi configurare per casi d’uso specifici. Qui puoi visualizzare gli scenari pubblici forniti da Workfront Fusion, nonché i modelli creati dal tuo team. | [Creare e gestire modelli: indice degli articoli](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md) |
@@ -32,6 +32,8 @@ Questo articolo presenta le aree e fornisce collegamenti a ulteriori informazion
 | Archivi dati  <br> ![Icona degli archivi dati](assets/data-store-icon.png) | Gli archivi dati sono piccoli database che esistono al di fuori degli scenari. Gli archivi dati ti consentono di trasferire dati tra gli scenari o tra esecuzioni distinte di uno scenario. Nell’area Archivi dati puoi visualizzare e gestire gli archivi dati di proprietà del tuo team. | [Archivi dati](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | Strutture di dati <br> ![Icona delle strutture di dati](assets/data-structure-icon.png) | Le strutture di dati descrivono il formato dei dati trasferiti a Fusion e vengono comunemente utilizzate per la serializzazione o l’analisi di formati come JSON, XML e CSV. In Strutture di dati puoi visualizzare e gestire le strutture di dati di proprietà del tuo team. | [Strutture di dati](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
 | Funzioni <br> ![Icona funzioni](assets/functions-icon.png) | Le funzioni personalizzate sono funzioni di JavaScript che possono essere aggiunte a scenari per manipolare e trasformare i dati. <br>La tua organizzazione deve disporre di una licenza per Adobe App Builder per creare e utilizzare funzioni personalizzate. | [Mappare i dati utilizzando funzioni personalizzate](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
+| Pacchetti <br> ![Icona pacchetti](assets/packages-icon.png) | I pacchetti consentono di creare ed eseguire una logica personalizzata all&#39;interno di Fusion, senza uscire dall&#39;interfaccia di Fusion. Nell’area Pacchetti puoi visualizzare e gestire i pacchetti di proprietà del team. | [Utilizzare pacchetti di funzioni personalizzati](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md) |
+| Archiviazione <br> ![Icona Archiviazione](assets/storage-icon.png) | Lo storage offre al team l&#39;accesso diretto agli archivi Adobe Enterprise Storage Management (ESM). È possibile sfogliare cartelle, caricare e scaricare file, visualizzare la cronologia delle versioni dei file e creare scenari di automazione, il tutto senza uscire da Fusion. | [Panoramica archiviazione](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md) |
 
 >[!NOTE]
 >
