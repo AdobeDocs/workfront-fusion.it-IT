@@ -1,5 +1,5 @@
 ---
-title: Visualizzare la dashboard delle prestazioni per un’organizzazione
+title: Visualizzare la dashboard Approfondimenti per un’organizzazione
 description: Gli amministratori di Fusion possono visualizzare un dashboard che mostra le metriche di esecuzione per un’organizzazione.
 author: Becky
 feature: Workfront Fusion
@@ -7,16 +7,16 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
 source-wordcount: 694
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
-# Visualizzare la dashboard delle prestazioni per un’organizzazione
+# Visualizzare la dashboard Approfondimenti per un’organizzazione
 
-Il dashboard delle prestazioni di Fusion consente di vedere rapidamente quali scenari sono più in esecuzione, dove si verificano ritardi e con quale efficacia funzionano i pool di lavoro. Questo fornisce visibilità in tempo reale sui volumi di esecuzione, sulla profondità della coda, sull’utilizzo del pool e sulle prestazioni a livello di scenario.
+Il dashboard Fusion Insights consente di vedere rapidamente quali scenari sono più in esecuzione, dove si verificano ritardi e con quale efficacia funzionano i pool di lavoro. Questo fornisce visibilità in tempo reale sui volumi di esecuzione, sulla profondità della coda, sull’utilizzo del pool e sulle prestazioni a livello di scenario.
 
 ## Requisiti di accesso
 
@@ -47,7 +47,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 +++
 
-## Componenti del dashboard prestazioni
+## Componenti del dashboard Approfondimenti
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 -->
 
-Nel dashboard delle prestazioni di Fusion sono disponibili le metriche seguenti.
+Nel dashboard Fusion Insights puoi visualizzare le metriche seguenti.
 
 * **Esecuzioni in attesa di elaborazione**
 Questo grafico mostra il numero di esecuzioni in attesa di elaborazione (note anche come backlog di esecuzione) in un determinato momento.
@@ -80,9 +80,9 @@ Questo grafico mostra le esecuzioni per scenario. Colori diversi rappresentano s
 
   Puoi utilizzare questo grafico per identificare scenari che richiedono più tempo del solito, inclusi quelli interessati da problemi con un’app o un servizio connesso.
 
-## Visualizzare il dashboard delle prestazioni di Fusion
+## Visualizzare il dashboard di Fusion Insights
 
-1. In Fusion, fai clic su **Prestazioni** nell&#39;area di navigazione a sinistra.
+1. In Fusion, fai clic su **Approfondimenti** nell&#39;area di navigazione a sinistra.
 
    Viene visualizzata la dashboard.
 
