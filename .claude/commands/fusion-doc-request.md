@@ -25,11 +25,11 @@ Le connessioni Slack in questo ambiente sono incomplete (token scaduti, disconne
 
 Il modello di richiesta include i campi seguenti: estrarre ciascuno:
 
-* **Titolo funzionalità**
-* **Descrizione**
-* **Punti da aggiungere alla documentazione** *(talvolta presenti - sezioni/dettagli specifici richiesti dal richiedente; trattarli come obbligatori, non facoltativi, se forniti)*
-* **Data di rilascio prevista**
-* **Annuncio necessario** *(Sì/No - solo informativo; vedere la nota precedente. Non intervenire su questo campo.)*
+&#x200B;* **Titolo funzionalità**
+&#x200B;* **Descrizione**
+&#x200B;* **Punti da aggiungere alla documentazione** *(talvolta presenti - sezioni/dettagli specifici richiesti dal richiedente; trattarli come obbligatori, non facoltativi, se forniti)*
+&#x200B;* **Data di rilascio prevista**
+&#x200B;* **Annuncio necessario** *(Sì/No - solo informativo; vedere la nota precedente. Non intervenire su questo campo.)*
 
 Se la richiesta è collegata a una pagina wiki di Confluence con le specifiche complete, recuperarla (`get_wiki_content`) prima di scrivere la documentazione. Non fare affidamento solo sul riepilogo di Slack per i dettagli tecnici (nomi di campo esatti, passaggi, etichette dell’interfaccia utente) - richiamare quelli dalla specifica wiki quando ne viene collegata una.
 
@@ -37,8 +37,8 @@ Se la richiesta è collegata a una pagina wiki di Confluence con le specifiche c
 
 Trova gli articoli esistenti rilevanti in questo archivio (grep per i nomi dei moduli, le etichette dell’interfaccia utente o i nomi delle impostazioni correlati, non indovinare il file). Aggiornali per riflettere la modifica, seguendo la struttura esistente dell’articolo, il livello di intestazione e lo stile della casa.
 
-* Non inventare dettagli tecnici (nomi di campo esatti, ambiti di autorizzazione, passaggi di configurazione) che non sono presenti nella richiesta Slack o nelle specifiche wiki collegate. Se qualcosa non è confermato, contrassegnalo in linea come commento HTML (ad esempio `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) invece di indovinare - mai come callout visibile. Non deve essere riprodotto sulla pagina pubblicata.
-* Se questo richiede un file di articolo nuovo di zecca (non solo una modifica a uno esistente), segui le convenzioni di posizione di questo repository: nessun `exl-id`/`TQID` creato in frontmatter, collegare la nuova pagina nel TOC rilevante e convertire il file in CRLF/no-BOM dopo averlo creato (lo strumento `Write` predefinito è LF).
+&#x200B;* Non inventare dettagli tecnici (nomi di campo esatti, ambiti di autorizzazione, passaggi di configurazione) che non sono presenti nella richiesta Slack o nelle specifiche wiki collegate. Se qualcosa non è confermato, contrassegnalo in linea come commento HTML (ad esempio `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) invece di indovinare - mai come callout visibile. Non deve essere riprodotto sulla pagina pubblicata.
+&#x200B;* Se questo richiede un file di articolo nuovo di zecca (non solo una modifica a uno esistente), segui le convenzioni di posizione di questo repository: nessun `exl-id`/`TQID` creato in frontmatter, collegare la nuova pagina nel TOC rilevante e convertire il file in CRLF/no-BOM dopo averlo creato (lo strumento `Write` predefinito è LF).
 
 ## Passaggio 3: creare l&#39;attività Workfront
 
@@ -78,15 +78,15 @@ Prima della chiamata di creazione, chiama `read_workflow_docs` con `workfront://
 
 Report semplice:
 
-* Quali file di documenti hai modificato e cosa hai aggiunto.
-* Il nome dell’attività e l’URL.
-* I valori esatti dei campi impostati, inclusi i campi della data di anteprima.
-* Tutto ciò per cui non eri completamente sicuro: ad esempio, Slack non era raggiungibile e lavoravi solo con testo incollato, l&#39;articolo del documento di destinazione era ambiguo, o un dettaglio tecnico non era nel materiale sorgente e veniva segnalato invece di essere indovinato.
+&#x200B;* Quali file di documenti hai modificato e cosa hai aggiunto.
+&#x200B;* Il nome dell’attività e l’URL.
+&#x200B;* I valori esatti dei campi impostati, inclusi i campi della data di anteprima.
+&#x200B;* Tutto ciò per cui non eri completamente sicuro: ad esempio, Slack non era raggiungibile e lavoravi solo con testo incollato, l&#39;articolo del documento di destinazione era ambiguo, o un dettaglio tecnico non era nel materiale sorgente e veniva segnalato invece di essere indovinato.
 
 ## Valori noti (da esecuzioni precedenti)
 
 Conferma che questi siano ancora risolti, anziché presupporre che siano permanenti:
 
-* Il progetto &quot;Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica&quot; è mappato sull&#39;ID `5e69583f00236b9f767c3e3944100ee4`
-* Il modulo personalizzato per la documentazione del prodotto (`categoryID`) è `5d7275b9000514604bd969d418725843`
-* Campi personalizzati utilizzati: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+&#x200B;* Il progetto &quot;Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica&quot; è mappato sull&#39;ID `5e69583f00236b9f767c3e3944100ee4`
+&#x200B;* Il modulo personalizzato per la documentazione del prodotto (`categoryID`) è `5d7275b9000514604bd969d418725843`
+&#x200B;* Campi personalizzati utilizzati: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
