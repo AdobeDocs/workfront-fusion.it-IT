@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
 workflow-type: tm+mt
-source-wordcount: 6660
+source-wordcount: 6739
 ht-degree: 33%
 
 ---
@@ -408,6 +408,7 @@ Questo modulo di azione aggiorna una nuova area di lavoro in Planning.
 * [Ottieni tipi di record globali](#get-global-record-types-v2)
 * [Ottieni un tipo di record](#get-a-record-type-v2)
 * [Recupera tipi di record](#get-record-types-v2)
+* [Configurazione tipo di record di rifusione](#recast-record-type-configuration-v2)
 * [Aggiornare un tipo di record](#update-a-record-type-v2)
 
 #### Creare un tipo di record (V2)
@@ -553,6 +554,27 @@ Questo modulo recupera un elenco di tipi di record disponibili in una determinat
         <p>[!UICONTROL Numero massimo di tipi di record restituiti]</p>
       </td>
       <td>Immettere o mappare il numero massimo di tipi di record restituiti dal modulo durante un ciclo di esecuzione.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Configurazione tipo di record di rifusione (V2)
+
+Questo modulo recupera tutti i tipi di record nell&#39;area di lavoro, raggruppati per sezione, insieme ai campi di ogni tipo di record e alle opzioni di selezione di ogni campo. L’output è strutturato come sezione > tipo di record > campi.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connessione]</td>
+      <td>Per istruzioni sulla creazione di una connessione a [!DNL Adobe Workfront Planning], consulta <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Creare una connessione a [!DNL Adobe Workfront Planning]</a> in questo articolo.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL ID area di lavoro]</p>
+      </td>
+      <td>Immettere o mappare l'ID dell'area di lavoro per la quale si desidera recuperare la configurazione del tipo di record.</td> 
     </tr>
   </tbody>
 </table>
