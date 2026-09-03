@@ -3,7 +3,8 @@ title: Moduli Workfront Fusion
 description: Con il connettore Workfront Fusion, puoi gestire la tua organizzazione Fusion dall’interno di uno scenario, inclusi record, hook, scenari e connessioni.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 1665553df806ba49ee9b52199fdcc587a5bb6337
 workflow-type: tm+mt
 source-wordcount: 1374
