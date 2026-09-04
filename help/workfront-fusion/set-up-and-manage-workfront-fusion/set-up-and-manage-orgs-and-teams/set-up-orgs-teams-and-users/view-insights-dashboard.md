@@ -7,10 +7,10 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 5%
+source-wordcount: 849
+ht-degree: 4%
 
 ---
 
@@ -63,6 +63,9 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 Nel dashboard Fusion Insights puoi visualizzare le metriche seguenti.
 
+* **Registri esecuzioni non riuscite**
+In questa tabella vengono elencati tutti gli scenari di errore o di avviso eseguiti nell’organizzazione, in modo da poter individuare e risolvere i problemi senza uscire dal dashboard.
+
 * **Esecuzioni in attesa di elaborazione**
 Questo grafico mostra il numero di esecuzioni in attesa di elaborazione (note anche come backlog di esecuzione) in un determinato momento.
 
@@ -95,3 +98,25 @@ Questo grafico mostra le esecuzioni per scenario. Colori diversi rappresentano s
 1. Per modificare l&#39;intervallo di tempo del dashboard, selezionare il campo Intervallo di tempo nell&#39;angolo superiore destro del dashboard, quindi selezionare un nuovo intervallo di tempo. L’intervallo di tempo disponibile più lungo è di 24 ore e il più breve è di 15 minuti.
 1. Per aggiornare i grafici, fare clic sull&#39;icona Aggiorna nell&#39;angolo superiore destro del dashboard.
 1. Per visualizzare un pool di lavoro diverso, fare clic sul campo Pool nell&#39;angolo superiore sinistro del dashboard, quindi selezionare il pool da visualizzare.
+
+## Filtrare e valutare le esecuzioni nel registro di esecuzione
+
+Utilizza il registro di esecuzione per trovare le esecuzioni degli scenari che hanno avuto esito negativo o hanno restituito un avviso nell’organizzazione e riattivare tutti gli scenari che sono stati disattivati automaticamente dopo errori ripetuti.
+
+1. Nel registro di esecuzione, filtrare le esecuzioni in base a una delle seguenti opzioni:
+
+   * [!UICONTROL Team]
+   * [!UICONTROL Scenario]
+   * [!UICONTROL Esegui tipo]
+   * [!UICONTROL Intervallo date]
+   * [!UICONTROL Stato disattivazione]
+   * [!UICONTROL Messaggio di errore]
+
+   Per la maggior parte dei filtri, puoi scegliere di far corrispondere solo i valori selezionati o tutto tranne loro.
+
+1. Fai clic su un’esecuzione per visualizzare ulteriori dettagli sul relativo errore.
+1. Per riattivare uno o più scenari disattivati automaticamente dopo errori ripetuti, selezionare le esecuzioni, quindi fare clic su **Attiva**.
+
+   >[!NOTE]
+   >
+   >Prima di riattivare uno scenario, indaga la causa degli errori, ad esempio credenziali scadute o un problema del connettore, in modo che lo scenario non si riproduca immediatamente.
