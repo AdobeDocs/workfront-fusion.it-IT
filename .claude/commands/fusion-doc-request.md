@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gestire una richiesta di documentazione di Fusion dal modello Slack
-source-git-commit: e354c51f13bd4f15172de068cac9720bd097eb8d
+source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,18 @@ Il modello di richiesta include i campi seguenti: estrarre ciascuno:
 
 Se la richiesta è collegata a una pagina wiki di Confluence con le specifiche complete, recuperarla (`get_wiki_content`) prima di scrivere la documentazione. Non fare affidamento solo sul riepilogo di Slack per i dettagli tecnici (nomi di campo esatti, passaggi, etichette dell’interfaccia utente) - richiamare quelli dalla specifica wiki quando ne viene collegata una.
 
+Se invece la richiesta è collegata a un’origine secondaria non di Confluence (ad esempio un post della community Experience League, un articolo di supporto, un riepilogo generato da AI) anziché a una specifica autorevole, puoi utilizzarla per compilare i dettagli tecnici mancanti nel testo di Slack, ma trattarla come un elemento di affidabilità inferiore rispetto alla richiesta Slack stessa. Se è in conflitto o si aggiunge al testo di Slack (un nome diverso per lo stesso pulsante/campo, un dettaglio non menzionato in Slack), non sceglierne immediatamente uno; scrivi il documento utilizzando il testo della richiesta Slack come origine principale e contrassegna la discrepanza in linea con un commento di HTML (ad esempio `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) in base alle indicazioni del passaggio 2.
+
 ## Passaggio 2: aggiornare la documentazione
 
 Trova gli articoli esistenti rilevanti in questo archivio (grep per i nomi dei moduli, le etichette dell’interfaccia utente o i nomi delle impostazioni correlati, non indovinare il file). Aggiornali per riflettere la modifica, seguendo la struttura esistente dell’articolo, il livello di intestazione e lo stile della casa.
 
 &#x200B;* Non inventare dettagli tecnici (nomi di campo esatti, ambiti di autorizzazione, passaggi di configurazione) che non sono presenti nella richiesta Slack o nelle specifiche wiki collegate. Se qualcosa non è confermato, contrassegnalo in linea come commento HTML (ad esempio `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) invece di indovinare - mai come callout visibile. Non deve essere riprodotto sulla pagina pubblicata.
-&#x200B;* Se questo richiede un file di articolo nuovo di zecca (non solo una modifica a uno esistente), segui le convenzioni di posizione di questo repository: nessun `exl-id`/`TQID` creato in frontmatter, collegare la nuova pagina nel TOC rilevante e convertire il file in CRLF/no-BOM dopo averlo creato (lo strumento `Write` predefinito è LF).
+&#x200B;* Se questo richiede un file di articolo nuovo di zecca (non solo una modifica a uno esistente), segui le convenzioni di posizione di questo repository: nessun `exl-id`/`TQID` creato in frontmatter, e converti il file in CRLF/no-BOM dopo averlo creato (lo strumento `Write` predefinito è LF).
+&#x200B;* Inserire una nuova pagina nel &quot;sommario&quot; significa ENTRAMBE queste, non una sola: una pagina può essere collegata da un sottoindice pur rimanendo invisibile ai lettori:
+  - Il file di navigazione principale per l&#39;area di prodotto (ad esempio `help/workfront-fusion/TOC.md`): è questo che determina la struttura di navigazione pubblicata.
+  - Qualsiasi sottoindice/pagina di destinazione nel contenuto che collega anche articoli di questo tipo (ad esempio `apps-and-modules-toc.md` per una nuova pagina di moduli connettore).
+    Seleziona esplicitamente e conferma che la nuova voce si trovi nello stesso elenco, allo stesso livello di nidificazione, in quanto gli articoli di pari livello più vicini in ciascun file - non presumere di aggiungerla a una copre l’altra.
 
 ## Passaggio 3: creare l&#39;attività Workfront
 
@@ -50,6 +56,7 @@ Campi attività:
 |---|---|
 | `name` | `Becky - {Feature Title}` |
 | `projectID` | dalla ricerca del progetto precedente |
+| `parentID` | l&#39;ID dell&#39;attività padre (`parentID`, un campo di sistema - nessun prefisso `DE:`). Vedere i valori noti di seguito. In questo modo la nuova attività diventa una sottoattività e non un&#39;attività di livello superiore nel progetto. |
 | `assignedToID` | utente corrente, da `insights_get_current_user` |
 | `categoryID` | ID del modulo personalizzato della documentazione del prodotto: consulta Valori noti di seguito. Se non è chiaro, eseguire una query `task.task_categoryID` su qualsiasi attività di pari livello recente in questo progetto per confermare. |
 | `description` | il **testo completo del messaggio di Slack** (tutti i campi del modello di richiesta, non una parafrasi), seguito da un collegamento alla conversazione Slack |
@@ -88,5 +95,6 @@ Report semplice:
 Conferma che questi siano ancora risolti, anziché presupporre che siano permanenti:
 
 &#x200B;* Il progetto &quot;Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica&quot; è mappato sull&#39;ID `5e69583f00236b9f767c3e3944100ee4`
+&#x200B;* L&#39;attività padre &quot;Becky - Tasks from Fusion-Documentation channel&quot; è mappata sull&#39;ID `6a9b065100003a7554832780c2015e93` (nello stesso progetto) - resolve con `insights_find_id_by_name` (entità `task`) anziché mediante codifica fissa, nel caso in cui cambi mai
 &#x200B;* Il modulo personalizzato per la documentazione del prodotto (`categoryID`) è `5d7275b9000514604bd969d418725843`
 &#x200B;* Campi personalizzati utilizzati: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
