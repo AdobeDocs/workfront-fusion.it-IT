@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gestire una richiesta di documentazione di Fusion dal modello Slack
-source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
+source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Flusso di lavoro diverso dall&#39;abilità `fusion-release-notes`. Questa abilit
 
 ## Passaggio 1: ottenere i dettagli della richiesta
 
-Se viene fornito un collegamento Slack, analizzare `channel_id` e `message_ts` dall&#39;URL e recuperare il thread (`slack_get_thread_replies` o `slack_read_thread`, a seconda dello strumento Slack MCP connesso. In caso di errore, provare entrambi). Mantieni il collegamento/URL permanente del thread, necessario nel passaggio 3.
+Se viene fornito un collegamento Slack, analizzare `channel_id` e `message_ts` dall&#39;URL e recuperare il thread (`slack_get_thread_replies` o `slack_read_thread`, a seconda dello strumento Slack MCP connesso. In caso di errore, provare entrambi). Mantieni il collegamento/URL permanente del thread, necessario nel passaggio 4.
 
 Le connessioni Slack in questo ambiente sono incomplete (token scaduti, disconnette una sessione intermedia). Se un recupero non riesce:
 - Riprova una volta.
@@ -25,28 +25,36 @@ Le connessioni Slack in questo ambiente sono incomplete (token scaduti, disconne
 
 Il modello di richiesta include i campi seguenti: estrarre ciascuno:
 
-&#x200B;* **Titolo funzionalità**
-&#x200B;* **Descrizione**
-&#x200B;* **Punti da aggiungere alla documentazione** *(talvolta presenti - sezioni/dettagli specifici richiesti dal richiedente; trattarli come obbligatori, non facoltativi, se forniti)*
-&#x200B;* **Data di rilascio prevista**
-&#x200B;* **Annuncio necessario** *(Sì/No - solo informativo; vedere la nota precedente. Non intervenire su questo campo.)*
+* **Titolo funzionalità**
+* **Descrizione**
+* **Punti da aggiungere alla documentazione** *(talvolta presenti - sezioni/dettagli specifici richiesti dal richiedente; trattarli come obbligatori, non facoltativi, se forniti)*
+* **Data di rilascio prevista**
+* **Annuncio necessario** *(Sì/No - solo informativo; vedere la nota precedente. Non intervenire su questo campo.)*
 
 Se la richiesta è collegata a una pagina wiki di Confluence con le specifiche complete, recuperarla (`get_wiki_content`) prima di scrivere la documentazione. Non fare affidamento solo sul riepilogo di Slack per i dettagli tecnici (nomi di campo esatti, passaggi, etichette dell’interfaccia utente) - richiamare quelli dalla specifica wiki quando ne viene collegata una.
 
-Se invece la richiesta è collegata a un’origine secondaria non di Confluence (ad esempio un post della community Experience League, un articolo di supporto, un riepilogo generato da AI) anziché a una specifica autorevole, puoi utilizzarla per compilare i dettagli tecnici mancanti nel testo di Slack, ma trattarla come un elemento di affidabilità inferiore rispetto alla richiesta Slack stessa. Se è in conflitto o si aggiunge al testo di Slack (un nome diverso per lo stesso pulsante/campo, un dettaglio non menzionato in Slack), non sceglierne immediatamente uno; scrivi il documento utilizzando il testo della richiesta Slack come origine principale e contrassegna la discrepanza in linea con un commento di HTML (ad esempio `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) in base alle indicazioni del passaggio 2.
+Se invece la richiesta è collegata a un’origine secondaria non di Confluence (ad esempio un post della community Experience League, un articolo di supporto, un riepilogo generato da AI) anziché a una specifica autorevole, puoi utilizzarla per compilare i dettagli tecnici mancanti nel testo di Slack, ma trattarla come un elemento di affidabilità inferiore rispetto alla richiesta Slack stessa. Se è in conflitto o si aggiunge al testo di Slack (un nome diverso per lo stesso pulsante/campo, un dettaglio non menzionato in Slack), non sceglierne immediatamente uno; scrivi il documento utilizzando il testo della richiesta Slack come origine principale e contrassegna la discrepanza in linea con un commento di HTML (ad esempio `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) in base alle indicazioni del passaggio 3.
 
-## Passaggio 2: aggiornare la documentazione
+## Passaggio 2: creare un ramo per la richiesta
+
+Prima di toccare qualsiasi file, crea un nuovo ramo Git per questa richiesta ed estrailo. Ramo del ramo predefinito corrente (`main`), non disattivato qualsiasi ramo venga estratto.
+
+Denomina il ramo `becky-{short-kebab-case-description}`, derivato dal **Titolo funzionalità**. La prima parola deve essere `becky`, corrispondente alla convenzione di ramo esistente dell&#39;archivio (ad esempio `becky-webhook-update`, `becky-storage-beta-sos`). Breve: poche parole, non il titolo completo.
+
+Se la struttura di lavoro non è pulita (modifiche non salvate da lavoro non correlato), interrompi l’operazione e informa l’utente anziché suddividerla.
+
+## Passaggio 3: aggiornare la documentazione
 
 Trova gli articoli esistenti rilevanti in questo archivio (grep per i nomi dei moduli, le etichette dell’interfaccia utente o i nomi delle impostazioni correlati, non indovinare il file). Aggiornali per riflettere la modifica, seguendo la struttura esistente dell’articolo, il livello di intestazione e lo stile della casa.
 
-&#x200B;* Non inventare dettagli tecnici (nomi di campo esatti, ambiti di autorizzazione, passaggi di configurazione) che non sono presenti nella richiesta Slack o nelle specifiche wiki collegate. Se qualcosa non è confermato, contrassegnalo in linea come commento HTML (ad esempio `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) invece di indovinare - mai come callout visibile. Non deve essere riprodotto sulla pagina pubblicata.
-&#x200B;* Se questo richiede un file di articolo nuovo di zecca (non solo una modifica a uno esistente), segui le convenzioni di posizione di questo repository: nessun `exl-id`/`TQID` creato in frontmatter, e converti il file in CRLF/no-BOM dopo averlo creato (lo strumento `Write` predefinito è LF).
-&#x200B;* Inserire una nuova pagina nel &quot;sommario&quot; significa ENTRAMBE queste, non una sola: una pagina può essere collegata da un sottoindice pur rimanendo invisibile ai lettori:
+* Non inventare dettagli tecnici (nomi di campo esatti, ambiti di autorizzazione, passaggi di configurazione) che non sono presenti nella richiesta Slack o nelle specifiche wiki collegate. Se qualcosa non è confermato, contrassegnalo in linea come commento HTML (ad esempio `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) invece di indovinare - mai come callout visibile. Non deve essere riprodotto sulla pagina pubblicata.
+* Se questo richiede un file di articolo nuovo di zecca (non solo una modifica a uno esistente), segui le convenzioni di posizione di questo repository: nessun `exl-id`/`TQID` creato in frontmatter, e converti il file in CRLF/no-BOM dopo averlo creato (lo strumento `Write` predefinito è LF).
+* Inserire una nuova pagina nel &quot;sommario&quot; significa ENTRAMBE queste, non una sola: una pagina può essere collegata da un sottoindice pur rimanendo invisibile ai lettori:
   - Il file di navigazione principale per l&#39;area di prodotto (ad esempio `help/workfront-fusion/TOC.md`): è questo che determina la struttura di navigazione pubblicata.
   - Qualsiasi sottoindice/pagina di destinazione nel contenuto che collega anche articoli di questo tipo (ad esempio `apps-and-modules-toc.md` per una nuova pagina di moduli connettore).
     Seleziona esplicitamente e conferma che la nuova voce si trovi nello stesso elenco, allo stesso livello di nidificazione, in quanto gli articoli di pari livello più vicini in ciascun file - non presumere di aggiungerla a una copre l’altra.
 
-## Passaggio 3: creare l&#39;attività Workfront
+## Passaggio 4: creare l&#39;attività Workfront
 
 Progetto: **Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica**. Risolvi il suo ID con `insights_find_id_by_name` (entità `project`) invece di codificarlo, nel caso in cui dovesse cambiare. Vedi Valori noti di seguito per l&#39;ultimo ID risolto.
 
@@ -81,20 +89,21 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 Prima della chiamata di creazione, chiama `read_workflow_docs` con `workfront://tools/create-any-object`. Questa chiamata imposta campi personalizzati e un valore enum (`DE:Preview Date Known`) che lo richiede in base alle regole del server MCP.
 
-## Passaggio 4: conferma all’utente
+## Passaggio 5: conferma all’utente
 
 Report semplice:
 
-&#x200B;* Quali file di documenti hai modificato e cosa hai aggiunto.
-&#x200B;* Il nome dell’attività e l’URL.
-&#x200B;* I valori esatti dei campi impostati, inclusi i campi della data di anteprima.
-&#x200B;* Tutto ciò per cui non eri completamente sicuro: ad esempio, Slack non era raggiungibile e lavoravi solo con testo incollato, l&#39;articolo del documento di destinazione era ambiguo, o un dettaglio tecnico non era nel materiale sorgente e veniva segnalato invece di essere indovinato.
+* Il ramo creato.
+* Quali file di documenti hai modificato e cosa hai aggiunto.
+* Il nome dell’attività e l’URL.
+* I valori esatti dei campi impostati, inclusi i campi della data di anteprima.
+* Tutto ciò per cui non eri completamente sicuro: ad esempio, Slack non era raggiungibile e lavoravi solo con testo incollato, l&#39;articolo del documento di destinazione era ambiguo, o un dettaglio tecnico non era nel materiale sorgente e veniva segnalato invece di essere indovinato.
 
 ## Valori noti (da esecuzioni precedenti)
 
 Conferma che questi siano ancora risolti, anziché presupporre che siano permanenti:
 
-&#x200B;* Il progetto &quot;Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica&quot; è mappato sull&#39;ID `5e69583f00236b9f767c3e3944100ee4`
-&#x200B;* L&#39;attività padre &quot;Becky - Tasks from Fusion-Documentation channel&quot; è mappata sull&#39;ID `6a9b065100003a7554832780c2015e93` (nello stesso progetto) - resolve con `insights_find_id_by_name` (entità `task`) anziché mediante codifica fissa, nel caso in cui cambi mai
-&#x200B;* Il modulo personalizzato per la documentazione del prodotto (`categoryID`) è `5d7275b9000514604bd969d418725843`
-&#x200B;* Campi personalizzati utilizzati: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Il progetto &quot;Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica&quot; è mappato sull&#39;ID `5e69583f00236b9f767c3e3944100ee4`
+* L&#39;attività padre &quot;Becky - Tasks from Fusion-Documentation channel&quot; è mappata sull&#39;ID `6a9b065100003a7554832780c2015e93` (nello stesso progetto) - resolve con `insights_find_id_by_name` (entità `task`) anziché mediante codifica fissa, nel caso in cui cambi mai
+* Il modulo personalizzato per la documentazione del prodotto (`categoryID`) è `5d7275b9000514604bd969d418725843`
+* Campi personalizzati utilizzati: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
