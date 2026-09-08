@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gestire una richiesta di documentazione di Fusion dal modello Slack
-source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
+source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Flusso di lavoro diverso dall&#39;abilità `fusion-release-notes`. Questa abilit
 
 ## Passaggio 1: ottenere i dettagli della richiesta
 
-Se viene fornito un collegamento Slack, analizzare `channel_id` e `message_ts` dall&#39;URL e recuperare il thread (`slack_get_thread_replies` o `slack_read_thread`, a seconda dello strumento Slack MCP connesso. In caso di errore, provare entrambi). Mantieni il collegamento/URL permanente del thread, necessario nel passaggio 3.
+Se viene fornito un collegamento Slack, analizzare `channel_id` e `message_ts` dall&#39;URL e recuperare il thread (`slack_get_thread_replies` o `slack_read_thread`, a seconda dello strumento Slack MCP connesso. In caso di errore, provare entrambi). Mantieni il collegamento/URL permanente del thread, necessario nel passaggio 4.
 
 Le connessioni Slack in questo ambiente sono incomplete (token scaduti, disconnette una sessione intermedia). Se un recupero non riesce:
 - Riprova una volta.
@@ -33,9 +33,17 @@ Il modello di richiesta include i campi seguenti: estrarre ciascuno:
 
 Se la richiesta è collegata a una pagina wiki di Confluence con le specifiche complete, recuperarla (`get_wiki_content`) prima di scrivere la documentazione. Non fare affidamento solo sul riepilogo di Slack per i dettagli tecnici (nomi di campo esatti, passaggi, etichette dell’interfaccia utente) - richiamare quelli dalla specifica wiki quando ne viene collegata una.
 
-Se invece la richiesta è collegata a un’origine secondaria non di Confluence (ad esempio un post della community Experience League, un articolo di supporto, un riepilogo generato da AI) anziché a una specifica autorevole, puoi utilizzarla per compilare i dettagli tecnici mancanti nel testo di Slack, ma trattarla come un elemento di affidabilità inferiore rispetto alla richiesta Slack stessa. Se è in conflitto o si aggiunge al testo di Slack (un nome diverso per lo stesso pulsante/campo, un dettaglio non menzionato in Slack), non sceglierne immediatamente uno; scrivi il documento utilizzando il testo della richiesta Slack come origine principale e contrassegna la discrepanza in linea con un commento di HTML (ad esempio `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) in base alle indicazioni del passaggio 2.
+Se invece la richiesta è collegata a un’origine secondaria non di Confluence (ad esempio un post della community Experience League, un articolo di supporto, un riepilogo generato da AI) anziché a una specifica autorevole, puoi utilizzarla per compilare i dettagli tecnici mancanti nel testo di Slack, ma trattarla come un elemento di affidabilità inferiore rispetto alla richiesta Slack stessa. Se è in conflitto o si aggiunge al testo di Slack (un nome diverso per lo stesso pulsante/campo, un dettaglio non menzionato in Slack), non sceglierne immediatamente uno; scrivi il documento utilizzando il testo della richiesta Slack come origine principale e contrassegna la discrepanza in linea con un commento di HTML (ad esempio `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) in base alle indicazioni del passaggio 3.
 
-## Passaggio 2: aggiornare la documentazione
+## Passaggio 2: creare un ramo per la richiesta
+
+Prima di toccare qualsiasi file, crea un nuovo ramo Git per questa richiesta ed estrailo. Ramo del ramo predefinito corrente (`main`), non disattivato qualsiasi ramo venga estratto.
+
+Denomina il ramo `becky-{short-kebab-case-description}`, derivato dal **Titolo funzionalità**. La prima parola deve essere `becky`, corrispondente alla convenzione di ramo esistente dell&#39;archivio (ad esempio `becky-webhook-update`, `becky-storage-beta-sos`). Breve: poche parole, non il titolo completo.
+
+Se la struttura di lavoro non è pulita (modifiche non salvate da lavoro non correlato), interrompi l’operazione e informa l’utente anziché suddividerla.
+
+## Passaggio 3: aggiornare la documentazione
 
 Trova gli articoli esistenti rilevanti in questo archivio (grep per i nomi dei moduli, le etichette dell’interfaccia utente o i nomi delle impostazioni correlati, non indovinare il file). Aggiornali per riflettere la modifica, seguendo la struttura esistente dell’articolo, il livello di intestazione e lo stile della casa.
 
@@ -46,7 +54,7 @@ Trova gli articoli esistenti rilevanti in questo archivio (grep per i nomi dei m
   - Qualsiasi sottoindice/pagina di destinazione nel contenuto che collega anche articoli di questo tipo (ad esempio `apps-and-modules-toc.md` per una nuova pagina di moduli connettore).
     Seleziona esplicitamente e conferma che la nuova voce si trovi nello stesso elenco, allo stesso livello di nidificazione, in quanto gli articoli di pari livello più vicini in ciascun file - non presumere di aggiungerla a una copre l’altra.
 
-## Passaggio 3: creare l&#39;attività Workfront
+## Passaggio 4: creare l&#39;attività Workfront
 
 Progetto: **Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica**. Risolvi il suo ID con `insights_find_id_by_name` (entità `project`) invece di codificarlo, nel caso in cui dovesse cambiare. Vedi Valori noti di seguito per l&#39;ultimo ID risolto.
 
@@ -81,10 +89,11 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 Prima della chiamata di creazione, chiama `read_workflow_docs` con `workfront://tools/create-any-object`. Questa chiamata imposta campi personalizzati e un valore enum (`DE:Preview Date Known`) che lo richiede in base alle regole del server MCP.
 
-## Passaggio 4: conferma all’utente
+## Passaggio 5: conferma all’utente
 
 Report semplice:
 
+&#x200B;* Il ramo creato.
 &#x200B;* Quali file di documenti hai modificato e cosa hai aggiunto.
 &#x200B;* Il nome dell’attività e l’URL.
 &#x200B;* I valori esatti dei campi impostati, inclusi i campi della data di anteprima.
