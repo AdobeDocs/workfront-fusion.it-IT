@@ -8,10 +8,10 @@ exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
 TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 7c16e9411b334d32e63b88b18f538f69e494b360
+source-git-commit: 5c5f46e2ec05d6f3e1fdde8d13fb1e38d2a99690
 workflow-type: tm+mt
-source-wordcount: 1366
-ht-degree: 7%
+source-wordcount: 1389
+ht-degree: 6%
 
 ---
 
@@ -65,6 +65,8 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 ### Descrizione
 
 È possibile immettere una descrizione dello scenario, che verrà visualizzata nell&#39;elenco Scenari. Le descrizioni sono limitate a 240 caratteri.
+
+Fare clic su **[!UICONTROL Descrivi con IA]** per fare in modo che AI generi automaticamente una descrizione dello scenario, in base ai moduli e alla configurazione dello scenario.
 
 ### [!UICONTROL Elaborazione sequenziale]
 
