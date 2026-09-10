@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: Crea una nuova pagina delle note sulla versione settimanale di Workfront Fusion e collegala alla pagina di panoramica delle attività di rilascio e al sommario. Da utilizzare quando l’utente desidera scrivere, aggiungere o creare una nuova nota sulla versione di Fusion o una nuova pagina sulla versione settimanale, oppure quando richiede di documentare le nuove funzioni di Fusion per una versione. Non utilizzare per le note sulla versione di Workfront (Quicksilver) in annunci di prodotti/versioni di prodotti; utilizza le note sulla versione-formattatore per tali note.
-source-git-commit: fcdbfd246808c5cc7a81c4f01990a077ca189112
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/it/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -98,7 +98,6 @@ Note:
   
   {Regular description paragraph(s).}
   ```
-
 - Ogni funzionalità deve terminare con un &quot;Per ulteriori informazioni, vedere [...]&quot; collegamento all’articolo della guida pertinente. Verifica che la destinazione del collegamento esista nell’archivio.
 
 ## Passaggio 4: aggiungere la pagina all’indice della panoramica
@@ -113,7 +112,6 @@ Modifica `help/workfront-fusion/fusion-product-releases/fusion-release-activity.
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - Se si tratta della prima versione di un nuovo anno, aggiungi una nuova intestazione `## Fusion releases in {YYYY}` sopra l&#39;intestazione dell&#39;anno precedente e racchiudi la sezione dell&#39;*anno precedente* in un blocco comprimibile `+++ **Click to open**` / `+++`, se non lo è già (solo l&#39;anno corrente rimane espanso).
 
 ## Passaggio 5: aggiungi la pagina al sommario
@@ -126,7 +124,6 @@ Modifica `help/workfront-fusion/TOC.md`:
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - Se l&#39;intestazione dell&#39;anno corrente non esiste ancora, aggiungere `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` sopra l&#39;intestazione dell&#39;anno precedente.
 - **Non** aggiungere il prefisso `{hide-from-toc}` alle nuove voci, che viene utilizzato solo per le voci meno recenti una volta superata la navigazione visibile (vedi Incoerenze note di seguito).
 
@@ -143,12 +140,13 @@ Chiedere all&#39;utente: *&quot;Impostare un reindirizzamento per il nuovo artic
 
 - Se **no**, tieni presente che e continua — nient&#39;altro da fare.
 - Se **sì**, raccogliere:
-  - Il percorso di origine **&#x200B;**&#x200B;(deve iniziare con `/en`, senza spazi)
+  - Il percorso di origine **** (deve iniziare con `/en`, senza spazi)
   - La **destinazione** — un percorso relativo che inizia con `/en` o un URL `https` completo (senza spazi)
-- Aggiungere la riga all&#39;archivio `Adobe-Enterprise-Docs/redirects` di pari livello, in `redirects/redirects-prod.csv` **only**. Non aggiungerlo mai a `redirects-dev.csv` o `redirects-stage.csv` — prod è l&#39;unico ambiente che questa abilità tocca in assoluto.
+- Aggiungere la riga all&#39;archivio `Adobe-Enterprise-Docs/redirects` di pari livello, a `redirects/redirects-prod.csv` **e nessun altro file**. Non aggiungerlo mai a `redirects-dev.csv`, `redirects-stage.csv` o a qualsiasi altro file nell&#39;archivio. Prod è l&#39;unico ambiente che questa abilità tocca e il ramo deve contenere solo la modifica di un file.
 - Regole di riga (dal file README dell’archivio):
   - Nessuna coppia duplicata `source` e nessuna coppia duplicata `source`/`destination`.
   - Il reindirizzamento non deve causare un loop di reindirizzamento.
+- Apportare la modifica in un nuovo ramo nell&#39;archivio `redirects`, denominato `workfront-{month}-{day}-{year}-{topic}` (minuscolo, ad esempio `workfront-sep-10-2026-aem-mcp-redirect`), senza eseguire mai il commit direttamente in `main`.
 - **Questa abilità aggiunge la riga CSV solo dopo la conferma dell&#39;utente.** L&#39;aumento del PR nell&#39;archivio `redirects` è un passaggio separato che questa abilità non fa: indica all&#39;utente che un PR deve ancora essere aperto e unito lì prima che il reindirizzamento venga attivato (~5 minuti dopo l&#39;unione per reindirizzamenti 1:1).
 
 ## Passaggio 8: elenco di controllo finale
