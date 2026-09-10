@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 6739
+source-wordcount: 6777
 ht-degree: 33%
 
 ---
@@ -1677,6 +1674,12 @@ Questo modulo di attivazione avvia uno scenario quando un record, un tipo di rec
       <td>
        <p>Scegliere se abilitare la protezione basata su authToken per questo webhook.</p><p>
        <b>NOTA</b>: a partire dal 23 agosto 2026, Fusion abilita la sicurezza basata su authToken per impostazione predefinita per tutti i moduli Workfront Planning &gt; Watch Event, inclusi quelli esistenti. Se un webhook specifico si interrompe o è necessario disattivarlo per motivi di compatibilità, è possibile disattivare l’opzione Abilita hook protetti.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Token personalizzato]</td>
+      <td>
+       <p>(Facoltativo) Se [!UICONTROL Abilita hook protetti] è impostato su [!UICONTROL Sì], puoi immettere un valore di token personalizzato per proteggere il webhook. Se si lascia vuoto questo campo, Fusion genera automaticamente un token.</p>
       </td>
     </tr>
   </tbody>
