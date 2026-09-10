@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: Crea una nuova pagina delle note sulla versione settimanale di Workfront Fusion e collegala alla pagina di panoramica delle attività di rilascio e al sommario. Da utilizzare quando l’utente desidera scrivere, aggiungere o creare una nuova nota sulla versione di Fusion o una nuova pagina sulla versione settimanale, oppure quando richiede di documentare le nuove funzioni di Fusion per una versione. Non utilizzare per le note sulla versione di Workfront (Quicksilver) in annunci di prodotti/versioni di prodotti; utilizza le note sulla versione-formattatore per tali note.
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -145,10 +145,11 @@ Chiedere all&#39;utente: *&quot;Impostare un reindirizzamento per il nuovo artic
 - Se **sì**, raccogliere:
   - Il percorso di origine **&#x200B;**&#x200B;(deve iniziare con `/en`, senza spazi)
   - La **destinazione** — un percorso relativo che inizia con `/en` o un URL `https` completo (senza spazi)
-- Aggiungere la riga all&#39;archivio `Adobe-Enterprise-Docs/redirects` di pari livello in `redirects/` un file per ambiente (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Aggiungere la riga all&#39;archivio `Adobe-Enterprise-Docs/redirects` di pari livello, a `redirects/redirects-prod.csv` **e nessun altro file**. Non aggiungerlo mai a `redirects-dev.csv`, `redirects-stage.csv` o a qualsiasi altro file nell&#39;archivio. Prod è l&#39;unico ambiente che questa abilità tocca e il ramo deve contenere solo la modifica di un file.
 - Regole di riga (dal file README dell’archivio):
   - Nessuna coppia duplicata `source` e nessuna coppia duplicata `source`/`destination`.
   - Il reindirizzamento non deve causare un loop di reindirizzamento.
+- Apportare la modifica in un nuovo ramo nell&#39;archivio `redirects`, denominato `workfront-{month}-{day}-{year}-{topic}` (minuscolo, ad esempio `workfront-sep-10-2026-aem-mcp-redirect`), senza eseguire mai il commit direttamente in `main`.
 - **Questa abilità aggiunge la riga CSV solo dopo la conferma dell&#39;utente.** L&#39;aumento del PR nell&#39;archivio `redirects` è un passaggio separato che questa abilità non fa: indica all&#39;utente che un PR deve ancora essere aperto e unito lì prima che il reindirizzamento venga attivato (~5 minuti dopo l&#39;unione per reindirizzamenti 1:1).
 
 ## Passaggio 8: elenco di controllo finale

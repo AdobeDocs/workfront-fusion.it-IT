@@ -11,10 +11,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 57887f779ac8dcae346056764d39d116a300cbf3
+source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
 workflow-type: tm+mt
-source-wordcount: 518
-ht-degree: 93%
+source-wordcount: 523
+ht-degree: 92%
 
 ---
 
@@ -51,6 +51,7 @@ Fusion offre connettori per diversi prodotti e servizi Adobe.
 * [Moduli Adobe Creative Cloud Libraries](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Moduli Adobe Experience Manager Assets](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Moduli Adobe Experience Manager Forms](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+* [Moduli MCP di Adobe Experience Manager](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
 * [Moduli Adobe Express](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
 * [Moduli audio e video di Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
 * [Moduli Adobe Firefly](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
@@ -159,3 +160,4 @@ Questi moduli ti consentono di eseguire azioni sui tuoi dati, ma non richiedono 
 * [Moduli per analisi testo](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [Moduli per strumenti](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
 * [Moduli XML](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
+

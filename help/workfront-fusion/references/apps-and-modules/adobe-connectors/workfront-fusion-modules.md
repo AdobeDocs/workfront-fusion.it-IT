@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
-source-wordcount: 1374
-ht-degree: 21%
+source-wordcount: 1430
+ht-degree: 20%
 
 ---
 
@@ -276,6 +276,9 @@ Aggiorna un record specificato.
 
 ### Esporta
 
+* [Esporta registri attività](#export-activity-logs)
+* [Esporta scenari](#export-scenarios)
+
 #### Esporta registri attività
 
 Questo modulo esporta i registri attività.
@@ -311,6 +314,25 @@ Questo modulo esporta i registri attività.
   <tr> 
    <td role="rowheader">Direzione</td> 
    <td>Seleziona se desideri ordinare i risultati in ordine crescente o decrescente.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Esporta scenari
+
+Questo modulo esporta i progetti Fusion per uno o più scenari.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
+   <td> <p>Per istruzioni sulla connessione di Workfront Fusion a Workfront Fusion, vedere <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connessione di Workfront Fusion a Workfront Fusion</a> in questo articolo.</p> </td> 
+  <tr> 
+   <td role="rowheader">ID scenario</td> 
+   <td>Per ogni scenario da esportare, fare clic su <b>Aggiungi elemento</b> e immettere l'ID dello scenario.</td> 
+  </tr> 
   </tr> 
  </tbody> 
 </table>
