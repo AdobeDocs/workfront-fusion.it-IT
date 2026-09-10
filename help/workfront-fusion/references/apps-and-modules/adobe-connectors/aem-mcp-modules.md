@@ -3,7 +3,8 @@ title: Moduli MCP di Adobe Experience Manager
 description: Con il modulo MCP di Adobe Experience Manager, puoi inviare un messaggio in inglese semplice al server MCP di Adobe Experience Manager e consentire a un modello AI di eseguire la richiesta.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 4c23409465b4be9fd10ff6938a750bc662ba2fe4
 workflow-type: tm+mt
 source-wordcount: 1020
