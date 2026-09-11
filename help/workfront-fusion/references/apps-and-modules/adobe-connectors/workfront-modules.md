@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 7687
-ht-degree: 93%
+source-wordcount: 7725
+ht-degree: 92%
 
 ---
 
@@ -284,6 +284,12 @@ Il modulo restituisce tutti i campi standard associati al record, insieme a tutt
       <td>
        <p>Scegliere se abilitare la protezione basata su authToken per questo webhook.</p><p>
        <b>NOTA</b>: a partire dal 23 agosto 2026, Fusion abilita la sicurezza basata su authToken per impostazione predefinita per tutti i moduli Workfront &gt; Watch Event, inclusi quelli esistenti. Se un webhook specifico si interrompe o è necessario disattivarlo per motivi di compatibilità, è possibile disattivare l’opzione Abilita hook protetti.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Token personalizzato]</td> 
+      <td>
+       <p>(Facoltativo) Se [!UICONTROL Abilita hook protetti] è impostato su [!UICONTROL Sì], puoi immettere un valore di token personalizzato per proteggere il webhook. Se si lascia vuoto questo campo, Fusion genera automaticamente un token.</p>
        </td> 
      </tr> 
     </tbody> 

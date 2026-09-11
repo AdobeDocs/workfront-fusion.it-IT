@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gestire una richiesta di documentazione di Fusion dal modello Slack
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -70,10 +70,13 @@ Campi attività:
 | `description` | il **testo completo del messaggio di Slack** (tutti i campi del modello di richiesta, non una parafrasi), seguito da un collegamento alla conversazione Slack |
 | `DE:Release notes` | una nota sulla versione formattata, consulta la sezione seguente formato |
 | `DE:Preview Date Known` | `Yes`, per impostazione predefinita |
-| `DE:Preview Date` | **Data di rilascio prevista** della richiesta, per impostazione predefinita |
+| `DE:Preview Date` | la data indicata nel messaggio originale di Slack (la **data di rilascio prevista** della richiesta), per impostazione predefinita |
+| `taskConstraint` + `constraintDate` | Imposta `taskConstraint` su `MFO` (Deve finire il) con `constraintDate` = la data citata nel messaggio originale di Slack (la **data di rilascio prevista** della richiesta), quindi la data di completamento pianificata dell&#39;attività corrisponde anche a essa. |
 | Prodotto/Area | selezionare `Fusion` (un campo enum nel modulo Documentazione prodotto; confermare il nome esatto del campo con `insights_search_fields` se non è mai chiaro) |
 
-Imposta i campi della data di anteprima come parte della stessa chiamata di creazione: non lasciarli per dopo né attendere di essere richiesti. Se l’utente assegna una data diversa in un secondo momento o dice che la data non è ancora nota, effettua l’aggiornamento di conseguenza, ma per impostazione predefinita questa viene compilata ogni volta.
+Imposta i campi della data di anteprima e della data di completamento pianificata come parte della stessa chiamata di creazione: non lasciarli per un momento successivo o in attesa di una richiesta. Se l’utente assegna una data diversa in un secondo momento o dice che la data non è ancora nota, effettua l’aggiornamento di conseguenza, ma per impostazione predefinita questa viene compilata ogni volta.
+
+Per impostazione predefinita, le nuove attività sono impostate su un vincolo Il più presto possibile con durata 0, in base al quale `plannedStartDate`/`plannedCompletionDate` sono derivate dall&#39;utilità di pianificazione e una scrittura diretta in una delle due viene eliminata automaticamente (nessun errore, la data non cambia). L&#39;impostazione di `taskConstraint: "MFO"` con `constraintDate` è il modo affidabile per fissare la data di completamento pianificata alla data indicata nel messaggio di Slack. Leggi `workfront://knowledge/task/update` prima di questa scrittura: è un campo di pianificazione/data in base alle regole del server MCP.
 
 Formato nota sulla versione per il campo `DE:Release notes`. Inizia sempre con `***FUSION***` sulla propria riga, poi una riga vuota, quindi il titolo. In questo modo la nota viene contrassegnata come appartenente a Fusion (anziché al core Workfront) a colpo d&#39;occhio:
 
