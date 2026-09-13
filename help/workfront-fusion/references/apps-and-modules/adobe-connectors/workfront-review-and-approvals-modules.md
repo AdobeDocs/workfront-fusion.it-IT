@@ -4,16 +4,13 @@ description: Con i moduli Contenuto e approvazioni di Adobe Workfront puoi otten
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
 workflow-type: tm+mt
-source-wordcount: 3743
-ht-degree: 15%
+source-wordcount: 3631
+ht-degree: 16%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 15%
 
 Con i moduli Revisione e approvazioni unificate di Adobe Workfront, puoi ottenere i dettagli di approvazione, prendere una decisione su una risorsa, aggiungere o eliminare partecipanti all’approvazione, aggiungere o aggiornare fasi di approvazione, bloccare o sbloccare e effettuare chiamate API personalizzate.
 
-Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/it/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
+Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
 
 ## Requisiti di accesso
 
@@ -135,7 +132,6 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 * [Aggiungi o aggiorna partecipanti](#add-or-update-participants)
 * [Modelli di eliminazione in blocco](#bulk-delete-templates)
 * [Creare un modello](#create-a-template)
-* [Creare un’approvazione](#create-an-approval)
 * [Creare le fasi](#create-stages)
 * [Eliminare una decisione in una fase](#delete-a-decision-on-a-stage)
 * [Eliminare una fase](#delete-a-stage)
@@ -237,35 +233,6 @@ Questo modulo crea un modello di approvazione
     <tr>
       <td role="rowheader"><p>Condiviso con</p></td>
       <td>Per ogni utente con cui vuoi condividere il modello, fai clic su <b>Aggiungi elemento</b> e ID utente, quindi fai clic sul livello di accesso desiderato.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Creare un’approvazione
-
-Questo modulo di azione crea un’approvazione per un documento sull’archiviazione cloud Adobe, inclusi i dati di staging o un modello.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connessione</td>
-      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ID Documento</p></td>
-      <td>Immetti o mappa l’ID della risorsa per la quale desideri creare un’approvazione.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Fasi</p>
-      </td>
-      <td>Per ogni fase che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere i dati dell'area di visualizzazione.<p>Per informazioni specifiche, vedere <a href="#stages-fields" class="MCXref xref" >Campi Stadi</a> in questo articolo. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>ID Modello</p></td>
-      <td>Immetti o mappa l’ID del modello da utilizzare per questa approvazione.</td> 
       </tr>
   </tbody>
 </table>
