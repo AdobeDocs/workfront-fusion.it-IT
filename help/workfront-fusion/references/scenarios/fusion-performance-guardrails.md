@@ -7,13 +7,12 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
+    internal-label: Workfront
+source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
 workflow-type: tm+mt
-source-wordcount: 1360
-ht-degree: 76%
-
+source-wordcount: '1445'
+ht-degree: 72%
 ---
-
 # Guardrail delle prestazioni di Fusion
 
 Poiché l’automazione del lavoro richiede un’elaborazione rapida, Workfront Fusion è progettato per prestazioni elevate. Gli scenari con esecuzioni prolungate possono rallentare il ritmo del tuo lavoro; pertanto Workfront Fusion è stato progettato con guardrail per il mantenimento delle prestazioni che limitano il tempo di esecuzione, le dimensioni dei dati e altri parametri dello scenario. Chi progetta gli scenari in Workfront Fusion deve essere consapevole di questi guardrail e incorporarli nelle attività di progettazione.
@@ -32,13 +31,13 @@ Poiché l’automazione del lavoro richiede un’elaborazione rapida, Workfront 
   >
   > Anche se il concatenamento consente ai flussi di lavoro di durare oltre 40 minuti, deve essere trattato come un segnale di rischio di progettazione, non come una soluzione alternativa supportata. Gli scenari principali che si estendono su più scenari figlio a lunga durata non hanno un limite di timeout complessivo. Se uno scenario figlio si blocca o riscontra un problema di piattaforma, l’elemento padre attende indefinitamente senza errori e senza ripristino automatico.
   >
-  > Se la progettazione dello scenario richiede il concatenamento per evitare il limite di 40 minuti, controlla l’architettura prima di implementare in produzione. Consulta [Incatenare più scenari](https://experienceleague.adobe.com/it/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) per indicazioni sulla progettazione.
+  > Se la progettazione dello scenario richiede il concatenamento per evitare il limite di 40 minuti, controlla l’architettura prima di implementare in produzione. Consulta [Incatenare più scenari](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) per indicazioni sulla progettazione.
 * La dimensione massima della blueprint di uno scenario è di **5 MB**, ma ti consigliamo di mantenere la dimensione dello scenario al di sotto di **3 MB**.
 
   I moduli di app che creano o aggiornano dati con un numero elevato di campi possono determinare blueprint molto grandi.
 
-   * Quando utilizzi l’app Workfront, accertati di selezionare solo i campi necessari per i casi d’uso relativi alla creazione o all’aggiornamento.
-   * Quando lavori con altre app, utilizza moduli API personalizzati per interagire con i tipi di record con un numero elevato di campi.
+  * Quando utilizzi l’app Workfront, accertati di selezionare solo i campi necessari per i casi d’uso relativi alla creazione o all’aggiornamento.
+  * Quando lavori con altre app, utilizza moduli API personalizzati per interagire con i tipi di record con un numero elevato di campi.
 
 * Anche se non esiste un limite per il numero di moduli in uno scenario, gli scenari con più di 150 moduli limitano le prestazioni del sistema Workfront Fusion. Per questo motivo non è consigliato creare scenari con più di 150 moduli.
 * I nomi degli scenari non possono contenere più di 120 caratteri.
@@ -79,10 +78,14 @@ Per ulteriori informazioni, consulta [Utilizzare file di grandi dimensioni](/hel
 * La dimensione massima predefinita di un payload è di **5 MB**.
 * I webhook sono limitati a **100 richieste al secondo**. Al raggiungimento di questo limite, Workfront Fusion restituisce uno stato 429 ([!UICONTROL Troppe richieste]).
 * Workfront Fusion archivia i payload dei webhook per 30 giorni. L’accesso a un payload del webhook dopo più di 30 giorni dalla ricezione genera un errore di tipo “[!UICONTROL Impossibile leggere il file dall’archivio.]”
+* La coda di un webhook può contenere fino a **100.000** eventi in coda. La coda si riempie quando uno scenario che utilizza il webhook viene disattivato o è impostato per l’esecuzione su una pianificazione invece che istantaneamente. Quando la coda raggiunge 100.000 eventi, i nuovi eventi vengono rifiutati con un errore &quot;Queue is full&quot; (Coda piena) e un codice di stato 400.
+
+  Per gli eventi di Workfront e Planning, se la coda rimane piena per un periodo prolungato, la sottoscrizione dell&#39;evento viene disabilitata e quindi congelata e Workfront Fusion smette di ricevere gli eventi per tale sottoscrizione.
+
 * I webhook vengono disattivati automaticamente se è una delle seguenti condizioni è vera:
 
-   * Il webhook non è stato collegato a nessuno scenario da più di 5 giorni
-   * Il webhook viene utilizzato solo in scenari che rimangono inattivi per più di 30 giorni.
+  * Il webhook non è stato collegato a nessuno scenario da più di 5 giorni
+  * Il webhook viene utilizzato solo in scenari che rimangono inattivi per più di 30 giorni.
 
 * I webhook disattivati vengono eliminati e ne viene automaticamente annullata la registrazione se non connessi ad alcun scenario e se in stato di disattivazione da oltre 30 giorni.
 * Il timeout per una risposta del webhook è di 5 minuti.
