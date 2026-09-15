@@ -6,22 +6,23 @@ feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
+    internal-label: Customer experience
+source-git-commit: 56b4c0736c60131ed83635a55cd4a86a35759586
 workflow-type: tm+mt
-source-wordcount: 3631
-ht-degree: 16%
-
+source-wordcount: '5202'
+ht-degree: 11%
 ---
-
 # Moduli di revisione e approvazione unificate di Adobe Workfront
 
 Con i moduli Revisione e approvazioni unificate di Adobe Workfront, puoi ottenere i dettagli di approvazione, prendere una decisione su una risorsa, aggiungere o eliminare partecipanti all’approvazione, aggiungere o aggiornare fasi di approvazione, bloccare o sbloccare e effettuare chiamate API personalizzate.
 
-Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/it/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
+Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
 
 ## Requisiti di accesso
 
@@ -135,16 +136,14 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 * [Aggiungi o aggiorna partecipanti](#add-or-update-participants)
 * [Modelli di eliminazione in blocco](#bulk-delete-templates)
 * [Creare un modello](#create-a-template)
+* [Crea approvazione raggruppata](#create-grouped-approval)
 * [Creare le fasi](#create-stages)
-* [Eliminare una decisione in una fase](#delete-a-decision-on-a-stage)
-* [Eliminare una fase](#delete-a-stage)
-* [Eliminare un modello](#delete-a-template)
-* [Eliminare un’approvazione](#delete-an-approval)
-* [Elimina decisioni](#delete-decisions)
-* [Elimina partecipanti](#delete-participants)
 * [Bloccare una fase](#lock-a-stage)
 * [Prendi una decisione](#make-a-decision)
 * [Prendere una decisione su una fase](#make-a-decision-on-a-stage)
+* [Gestire le risorse con un’approvazione raggruppata](#manage-assets-on-a-grouped-approval)
+* [Gestire i partecipanti alla fase](#manage-stage-participants)
+* [Gestire le fasi di un’approvazione raggruppata](#manage-stages-on-a-grouped-approval)
 * [Ricordare a un partecipante su un palco](#remind-a-participant-on-a-stage)
 * [Ricorda partecipante](#remind-participant)
 * [Promemoria ai partecipanti indecisi](#remind-undecided-participants)
@@ -153,6 +152,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 * [Aggiornare una fase](#update-a-stage)
 * [Aggiornare un modello](#update-a-template)
 * [Aggiorna tutte le fasi](#update-all-stages)
+* [Aggiorna approvazione raggruppata (stato completo)](#update-grouped-approval-full-state)
 
 
 #### Aggiungi o aggiorna partecipanti
@@ -240,26 +240,66 @@ Questo modulo crea un modello di approvazione
   </tbody>
 </table>
 
-<!--
+#### Crea approvazione raggruppata
 
-#### Create Grouped Approval
-
-This action module creates a grouped approval.
+Questo modulo di azione crea un’approvazione raggruppata: un insieme di versioni di documenti che si spostano insieme attraverso uno o più percorsi di approvazione, ognuno dei quali è una sequenza ordinata di fasi con i propri partecipanti.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Connessione</td>
+      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Nome</p></td>
+      <td>Inserisci o mappa un nome visualizzato per l’approvazione raggruppata. Il nome deve contenere tra 1 e 255 caratteri.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Risorse</p></td>
+      <td>Per ogni versione del documento che si desidera includere nel gruppo, fare clic su <b>Aggiungi elemento</b> e immettere l'ID della versione del documento (DOCV).</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Percorsi</p></td>
+      <td>Per ogni percorso di approvazione che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere l'ID percorso, il nome e le fasi. Ogni percorso contiene una sequenza ordinata di stadi. Per ogni fase, nel campo Stadi, fare clic su <b>Aggiungi elemento</b> e immettere i dati seguenti:
+      <ul>
+      <li><b>ID fase</b><p>Inserisci un identificatore assegnato dal client per la fase, univoco per tutti i percorsi. Deve essere alfanumerico, con sottolineature o trattini consentiti e non più di 64 caratteri.</p></li>
+      <li><b>Nome fase</b><p>Immettere o mappare un nome per l'area di visualizzazione.</p></li>
+      <li><b>ID fase padre</b><p>Per ogni fase padre che si desidera aggiungere all'area di visualizzazione, fare clic su <b>Aggiungi elemento</b> e immettere l'ID padre.</p></li>
+      <li><b>Partecipanti</b><p>Per ogni partecipante che si desidera aggiungere all'area di visualizzazione, fare clic su <b>Aggiungi elemento</b> e immettere i dettagli del partecipante.
+      <ul>
+      <li><b>ID partecipante</b><p>Inserisci o mappa l’ID del partecipante.</p></li>
+      <li><b>Tipo di partecipante</b><p>Seleziona se il partecipante è un utente o un team.</p></li>
+      <li><b>Ruolo partecipante</b><p>Specificare se il partecipante è un approvatore o un revisore.</p></li>
+      </ul>
+      </p></li>
+      <li><b>Data di scadenza</b><p>Se la scadenza è una data specifica, inserirla o eseguirne il mapping.</p></li>
+      <li><b>Giorni Lavorativi Fino Alla Scadenza</b><p>Se la scadenza è successiva a un numero specifico di giorni lavorativi, immettere o mappare il numero di giorni.</p></li>
+      <li><b>Scadenza: ore</b><p>Immetti o mappa l’ora del giorno per la scadenza (0-23). Coppia con data di scadenza: minuti.</p></li>
+      <li><b>Scadenza: minuti</b><p>Immetti o mappa il minuto dell’ora per la scadenza (0-59). Coppia con data di scadenza: ore.</p></li>
+      <li><b>Messaggio personalizzato</b><p>Inserisci o mappa un messaggio personalizzato per l’area di visualizzazione.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>ID oggetto principale</p></td>
+      <td>Immettere o mappare l'ID dell'oggetto padre di Workfront, ad esempio un progetto o un task, che si desidera associare all'approvazione raggruppata. Se si utilizza questo campo, è necessario immettere anche il codice oggetto.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Codice oggetto</p></td>
+      <td>Immettere o mappare il codice del tipo di oggetto Workfront per l'oggetto padre, ad esempio <code>PROJ</code> o <code>TASK</code>. Obbligatorio se si immette un ID oggetto padre.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>ID modello</p></td>
+      <td>(Facoltativo) Inserisci o mappa un ID modello da registrare sull’approvazione raggruppata per la tracciabilità.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante ogni ciclo di esecuzione dello scenario.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail.
-
--->
 
 #### Creare le fasi
 
@@ -285,121 +325,17 @@ Questo modulo di azione crea un’approvazione con i dati della fase specificati
       </tr>
     </tr>
      <tr>
-      <td role="rowheader"><p>ID Modello</p></td>
+      <td role="rowheader"><p>ID modello</p></td>
       <td>Inserisci o mappa l’ID del cespite per il quale desideri creare delle fasi.</td> 
       </tr>
   </tbody>
 </table>
 
-#### Eliminare una decisione in una fase
+<!-- BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
 
-Questo modulo rimuove la decisione dell’utente corrente dalla fase specificata. L&#39;utente corrente è l&#39;utente le cui credenziali vengono utilizzate nella connessione utilizzata in questo modulo.
+#### Delete a decision on a stage
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connessione</td>
-      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ID Documento</p></td>
-      <td>Inserisci o mappa l’ID del documento da cui desideri eliminare una decisione.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>ID fase</p></td>
-      <td>Immetti o mappa l’ID della fase da eliminare.</td> 
-      </tr>
-   </tbody>
-</table>
-
-
-#### Eliminare una fase
-
-Questo modulo di azione elimina la fase specificata dall’approvazione.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connessione</td>
-      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ID Documento</p></td>
-      <td>Immettere o mappare l'ID del documento da cui si desidera eliminare una fase.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>ID fase</p></td>
-      <td>Immetti o mappa l’ID della fase da eliminare.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Eliminare un modello
-
-Questo modulo elimina il modello di approvazione specificato.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connessione</td>
-      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ID Modello</p></td>
-      <td>Inserisci o mappa l’ID del modello da eliminare.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Eliminare un’approvazione
-
-Questo modulo di azione elimina l’approvazione per il documento specificato.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connessione</td>
-      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ID Documento</p></td>
-      <td>Immetti o mappa l’ID del documento da cui desideri eliminare un’approvazione.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Elimina decisioni
-
-Questo modulo rimuove la decisione dell’utente corrente dalla fase specificata. L&#39;utente corrente è l&#39;utente le cui credenziali vengono utilizzate nella connessione utilizzata in questo modulo.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connessione</td>
-      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>ID Documento</p></td>
-      <td>Inserisci o mappa l’ID del documento da cui desideri eliminare una decisione.</td> 
-      </tr>
-  </tbody>
-</table>
-
-<!--
-
-#### Delete Grouped Approval
-
-This action module deletes the specified grouped approval.
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -409,43 +345,152 @@ This action module deletes the specified grouped approval.
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
-  </tbody>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
+      </tr>
+   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail.
 
--->
+#### Delete a stage
 
-#### Elimina partecipanti
-
-Questo modulo di azione elimina i partecipanti da un’approvazione.
+This action module deletes the specified stage from the approval.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connessione</td>
-      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
      <tr>
-      <td role="rowheader"><p>ID Documento</p></td>
-      <td>Inserisci o mappa l’ID della risorsa da cui desideri eliminare i partecipanti.</td> 
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a stage from.</td> 
       </tr>
      <tr>
-      <td role="rowheader">
-        <p>Tipo di partecipante</p>
-      </td>
-      <td>Seleziona se i partecipanti sono un utente o un team.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>ID partecipante</p>
-      </td>
-      <td>Inserisci o mappa l’ID del partecipante.</td> 
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
       </tr>
   </tbody>
 </table>
+
+#### Delete a template
+
+This module deletes the specified approval template.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map the ID of the template that you want to delete.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete an approval
+
+This action module deletes the approval for the given document.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete an approval from.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete decisions
+
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete grouped approval
+
+This action module deletes a grouped approval, cascading to its child asset approvals and paths.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Group GUID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to delete.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Delete participants
+
+This action module deletes participants from an approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to delete participants from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant type</p>
+      </td>
+      <td>Select whether the participants is a user or a team.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant ID</p>
+      </td>
+      <td>Enter or map the ID of the participant.</td> 
+      </tr>
+  </tbody>
+</table>
+-->
 
 #### Bloccare una fase
 
@@ -528,68 +573,143 @@ Questo modulo applica una decisione alla fase specificata.
   </tbody>
 </table>
 
-<!--
+#### Gestire le risorse con un’approvazione raggruppata
 
-#### Manage Assets on a Grouped Approval
-
-This action module manages which assets are included in a grouped approval.
+Questo modulo di azione aggiunge e/o rimuove versioni di documenti in un’approvazione raggruppata.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Connessione</td>
+      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>ID approvazione raggruppata</p></td>
+      <td>Immetti o mappa il GUID dell’approvazione raggruppata su cui desideri gestire le risorse.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Aggiungi Assets</p></td>
+      <td>Per ogni versione del documento che si desidera aggiungere al gruppo, fare clic su <b>Aggiungi elemento</b> e immettere l'ID della versione del documento (DOCV).</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Rimuovi Assets</p></td>
+      <td>Per ogni versione del documento che si desidera rimuovere dal gruppo, fare clic su <b>Aggiungi elemento</b> e immettere l'ID della versione del documento (DOCV).</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante ogni ciclo di esecuzione dello scenario.</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail.
+#### Gestire i partecipanti alla fase
 
--->
-
-<!--
-
-#### Manage Stage Participants
-
-This action module manages participants on a stage.
+Questo modulo di azione aggiunge, aggiorna e/o rimuove partecipanti in una fase specifica di un’approvazione raggruppata.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Connessione</td>
+      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>ID approvazione raggruppata</p></td>
+      <td>Immetti o mappa il GUID dell’approvazione raggruppata.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>ID fase</p></td>
+      <td>Immettere o mappare l'ID della fase su cui si desidera gestire i partecipanti.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Aggiungi partecipanti</p></td>
+      <td>Per ogni partecipante che si desidera aggiungere all'area di visualizzazione, fare clic su <b>Aggiungi elemento</b> e immettere i dettagli seguenti:
+      <ul>
+      <li><b>Tipo partecipante</b><p>Seleziona se il partecipante è un utente o un team.</p></li>
+      <li><b>Partecipante</b><p>Inserisci o mappa l’ID del partecipante.</p></li>
+      <li><b>Ruolo</b><p>Specificare se il partecipante è un approvatore o un revisore.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Aggiorna partecipanti</p></td>
+      <td>Per ogni partecipante che si desidera aggiornare nell'area di visualizzazione, fare clic su <b>Aggiungi elemento</b> e immettere i dettagli seguenti:
+      <ul>
+      <li><b>Tipo partecipante</b><p>Seleziona se il partecipante è un utente o un team.</p></li>
+      <li><b>Partecipante</b><p>Inserisci o mappa l’ID del partecipante.</p></li>
+      <li><b>Ruolo</b><p>Specificare se il partecipante è un approvatore o un revisore.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Rimuovi partecipanti</p></td>
+      <td>Per ogni partecipante che si desidera rimuovere dall'area di visualizzazione, fare clic su <b>Aggiungi elemento</b> e immettere i dettagli seguenti:
+      <ul>
+      <li><b>Tipo partecipante</b><p>Seleziona se il partecipante è un utente o un team.</p></li>
+      <li><b>Partecipante</b><p>Inserisci o mappa l’ID del partecipante.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante ogni ciclo di esecuzione dello scenario.</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail.
+#### Gestire le fasi di un’approvazione raggruppata
 
--->
-
-<!--
-
-#### Manage Stages on a Grouped Approval
-
-This action module manages the stages on a grouped approval.
+Questo modulo di azione aggiunge, aggiorna e/o rimuove fasi in un’approvazione raggruppata.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Connessione</td>
+      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>ID approvazione raggruppata</p></td>
+      <td>Immetti o mappa il GUID dell’approvazione raggruppata.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Aggiungi fasi</p></td>
+      <td>Per ogni fase che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere i dettagli seguenti:
+      <ul>
+      <li><b>ID fase</b><p>Immettere o mappare un identificatore per la fase.</p></li>
+      <li><b>Nome fase</b><p>Immettere o mappare un nome per l'area di visualizzazione.</p></li>
+      <li><b>Data di scadenza</b><p>Se la scadenza è una data specifica, inserirla o eseguirne il mapping.</p></li>
+      <li><b>Giorni Lavorativi Fino Alla Scadenza</b><p>Se la scadenza è successiva a un numero specifico di giorni lavorativi, immettere o mappare il numero di giorni.</p></li>
+      <li><b>Messaggio personalizzato</b><p>Inserisci o mappa un messaggio personalizzato per l’area di visualizzazione.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Aggiorna fasi</p></td>
+      <td>Per ogni fase che si desidera aggiornare, fare clic su <b>Aggiungi elemento</b> e immettere i dettagli seguenti:
+      <ul>
+      <li><b>ID fase</b><p>Inserisci o mappa l’ID della fase da aggiornare.</p></li>
+      <li><b>Nome fase</b><p>Immettere o mappare un nome per l'area di visualizzazione.</p></li>
+      <li><b>Data di scadenza</b><p>Se la scadenza è una data specifica, inserirla o eseguirne il mapping.</p></li>
+      <li><b>Giorni Lavorativi Fino Alla Scadenza</b><p>Se la scadenza è successiva a un numero specifico di giorni lavorativi, immettere o mappare il numero di giorni.</p></li>
+      <li><b>Messaggio personalizzato</b><p>Inserisci o mappa un messaggio personalizzato per l’area di visualizzazione.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Rimuovi fasi</p></td>
+      <td>Per ogni fase che si desidera rimuovere, fare clic su <b>Aggiungi elemento</b> e immettere l'ID della fase.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante ogni ciclo di esecuzione dello scenario.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail.
-
--->
 
 #### Ricordare a un partecipante su un palco
 
@@ -779,7 +899,7 @@ Questo modulo aggiorna i campi del modello di approvazione specificato.
       <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
      <tr>
-      <td role="rowheader"><p>ID Modello</p></td>
+      <td role="rowheader"><p>ID modello</p></td>
       <td>Immettere o mappare un nome per il modello.</td> 
       </tr>
      <tr>
@@ -830,37 +950,73 @@ Questo modulo sostituisce tutte le fasi di un’approvazione esistente con i dat
   </tbody>
 </table>
 
-<!--
+#### Aggiorna approvazione raggruppata (stato completo)
 
-#### Update Grouped Approval (Full State)
-
-This action module replaces the full state of the specified grouped approval.
+Questo modulo di azione applica un aggiornamento completo a un’approvazione raggruppata.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Connessione</td>
+      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>ID approvazione raggruppata</p></td>
+      <td>Immetti o mappa il GUID dell’approvazione raggruppata che desideri aggiornare. Ad esempio, <code>9f8b60820000462ecf66c409d1248fa9</code>.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Percorsi</p></td>
+      <td>Per ogni percorso di approvazione che si desidera assegnare all'approvazione raggruppata, fare clic su <b>Aggiungi elemento</b> e immettere l'ID percorso, il nome e le fasi. Fusion esegue la riconciliazione dello stato corrente, aggiungendo, aggiornando e rimuovendo i percorsi in modo che corrispondano a quelli inviati. Ogni percorso contiene una sequenza ordinata di stadi. Per ogni fase, nel campo Stadi, fare clic su <b>Aggiungi elemento</b> e immettere i dati seguenti:
+      <ul>
+      <li><b>ID fase</b><p>Inserisci un identificatore assegnato dal client per la fase, univoco per tutti i percorsi. Deve essere alfanumerico, con sottolineature o trattini consentiti e non più di 64 caratteri.</p></li>
+      <li><b>Nome fase</b><p>Immettere o mappare un nome per l'area di visualizzazione.</p></li>
+      <li><b>ID fase padre</b><p>Per ogni fase padre che si desidera aggiungere all'area di visualizzazione, fare clic su <b>Aggiungi elemento</b> e immettere l'ID padre.</p></li>
+      <li><b>Partecipanti</b><p>Per ogni partecipante che si desidera aggiungere all'area di visualizzazione, fare clic su <b>Aggiungi elemento</b> e immettere i dettagli del partecipante.
+      <ul>
+      <li><b>ID partecipante</b><p>Inserisci o mappa l’ID del partecipante.</p></li>
+      <li><b>Tipo di partecipante</b><p>Seleziona se il partecipante è un utente o un team.</p></li>
+      <li><b>Ruolo partecipante</b><p>Specificare se il partecipante è un approvatore o un revisore.</p></li>
+      </ul>
+      </p></li>
+      <li><b>Data di scadenza</b><p>Se la scadenza è una data specifica, inserirla o eseguirne il mapping.</p></li>
+      <li><b>Giorni Lavorativi Fino Alla Scadenza</b><p>Se la scadenza è successiva a un numero specifico di giorni lavorativi, immettere o mappare il numero di giorni.</p></li>
+      <li><b>Scadenza: ore</b><p>Immetti o mappa l’ora del giorno per la scadenza (0-23). Coppia con data di scadenza: minuti.</p></li>
+      <li><b>Scadenza: minuti</b><p>Immetti o mappa il minuto dell’ora per la scadenza (0-59). Coppia con data di scadenza: ore.</p></li>
+      <li><b>Messaggio personalizzato</b><p>Inserisci o mappa un messaggio personalizzato per l’area di visualizzazione.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Risorse</p></td>
+      <td>(Facoltativo) Per ogni versione del documento che si desidera includere nel gruppo, fare clic su <b>Aggiungi elemento</b> e immettere l'ID della versione del documento (DOCV). Se ometti questo campo, le risorse correnti vengono lasciate invariate.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Chiave Idempotenza</p></td>
+      <td>(Facoltativo) Inserisci o mappa una chiave fornita dal client (massimo 128 caratteri) che rende sicura una richiesta ritentata. Se invii nuovamente la stessa chiave, il modulo non applica l’aggiornamento una seconda volta.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante ogni ciclo di esecuzione dello scenario.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail.
-
--->
 
 ### Ricerche
 
 * [Ottieni un modello](#get-a-template)
 * [Ottieni dettagli approvazione](#get-approval-details)
+* [Ottenere approvazioni in un’approvazione raggruppata](#get-approvals-in-a-grouped-approval)
+* [Ottieni dettagli approvazione raggruppati](#get-grouped-approval-details)
 * [Ottenere più approvazioni](#get-multiple-approvals)
 * [Ottieni approvazioni suggerite](#get-suggested-approvals)
 * [Ottieni partecipanti suggeriti](#get-suggested-participants)
 * [Elenca bot](#list-bots)
+* [Elenca approvazioni raggruppate per elemento padre](#list-grouped-approvals-by-parent)
 * [Modelli di elenco](#list-templates)
-* [Cerca revisori del brand AI](#search-ai-brand-reviews)
+* [Ricerca in base alle recensioni del brand AI](#search-ai-brand-reviews)
+* [Cerca approvazioni raggruppate](#search-grouped-approvals)
 
 
 #### Ottieni un modello
@@ -876,7 +1032,7 @@ Questo modulo restituisce il modello di approvazione specificato.
       <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
      <tr>
-      <td role="rowheader"><p>ID Modello</p></td>
+      <td role="rowheader"><p>ID modello</p></td>
       <td>Immetti o mappa l’ID del documento per il quale desideri ottenere i partecipanti di approvazione suggeriti.</td> 
       </tr>
        <tr>
@@ -913,47 +1069,55 @@ Questo modulo di ricerca recupera i dettagli di approvazione di una risorsa.
   </tbody>
 </table>
 
-<!--
+#### Ottenere approvazioni in un’approvazione raggruppata
 
-#### Get Approvals in a Grouped Approval
-
-This search module returns the individual approvals contained in a grouped approval.
+Questo modulo di ricerca restituisce le singole approvazioni di risorse che compongono un’approvazione raggruppata.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Connessione</td>
+      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>GUID gruppo</p></td>
+      <td>Immetti o mappa il GUID dell'approvazione raggruppata per la quale desideri ottenere le approvazioni.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Dati versione documento</p></td>
+      <td>Selezionare se allegare il record documentVersion Redrock all'approvazione di ogni versione del documento (DOCV). </td>
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante ogni ciclo di esecuzione dello scenario.</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail.
+#### Ottieni dettagli approvazione raggruppati
 
--->
-
-<!--
-
-#### Get Grouped Approval Details
-
-This search module retrieves details for the specified grouped approval.
+Questo modulo di ricerca restituisce un’approvazione raggruppata in base al relativo GUID.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Connessione</td>
+      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>GUID gruppo</p></td>
+      <td>Immetti o mappa il GUID dell’approvazione raggruppata per la quale desideri ottenere i dettagli.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante ogni ciclo di esecuzione dello scenario.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail.
-
--->
 
 #### Ottenere più approvazioni
 
@@ -1063,26 +1227,32 @@ Questo modulo restituisce un elenco impaginato di account bot.
   </tbody>
 </table>
 
-<!--
+#### Elenca approvazioni raggruppate per elemento padre
 
-#### List Grouped Approvals by Parent
-
-This search module returns a list of grouped approvals for the specified parent.
+Questo modulo di ricerca restituisce le approvazioni raggruppate associate a un oggetto padre di Workfront.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Connessione</td>
+      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>ID Genitore</p></td>
+      <td>Immetti o mappa l’ID dell’oggetto principale di Workfront (ad esempio, un progetto o un’attività) per il quale desideri ottenere approvazioni raggruppate.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Codice oggetto</p></td>
+      <td>(Facoltativo) Immettere o mappare il codice del tipo di oggetto Workfront per l'oggetto padre, ad esempio <code>PROJ</code> o <code>TASK</code>.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante ogni ciclo di esecuzione dello scenario.</td> 
+      </tr>
   </tbody>
 </table>
-
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail.
-
--->
 
 #### Modelli di elenco
 
@@ -1144,26 +1314,42 @@ Questo modulo restituisce i risultati della revisione del marchio AI prodotti pe
   </tbody>
 </table>
 
-<!--
+#### Cerca approvazioni raggruppate
 
-#### Search Grouped Approvals
-
-This search module searches for grouped approvals matching the specified criteria.
+Questo modulo di ricerca cerca le approvazioni raggruppate utilizzando una vista denominata.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Connessione</td>
+      <td>Per istruzioni sulla creazione di una connessione alle approvazioni e alle revisioni unificate di Adobe Workfront, vedere <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connessione alle approvazioni e alle revisioni unificate di Adobe Workfront</a> in questo articolo.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Visualizzazione</p></td>
+      <td>(Facoltativo) Seleziona o mappa la vista denominata che determina la forma della risposta. Attualmente, sono supportate solo le approvazioni in attesa di approvazione.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>(Facoltativo) Immetti o mappa le dimensioni della pagina per la prima pagina dei risultati. Il valore massimo è 100 e quello predefinito è 20.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Cursore</p></td>
+      <td>(Facoltativo) Inserisci o mappa il cursore opaco da una risposta precedente, per recuperare la pagina successiva dei risultati. Se si fornisce un cursore, il modulo ignora il campo Limite.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>ID team</p></td>
+      <td>(Facoltativo) Per ogni team a cui si desidera associare anche le approvazioni raggruppate (di cui il team è un partecipante), fare clic su <b>Aggiungi elemento</b> e immettere l'ID team.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limite</p></td>
+      <td>Immettere o mappare il numero massimo di risultati che si desidera utilizzare per il modulo durante ogni ciclo di esecuzione dello scenario.</td> 
+      </tr>
   </tbody>
 </table>
 
-BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail.
-
--->
+<!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
 
 ### Altro
 
@@ -1284,4 +1470,3 @@ I campi seguenti sono disponibili durante la configurazione delle fasi. È possi
       <td>Inserisci o mappa un messaggio personalizzato per l’area di visualizzazione.</td> 
       </tr>
 </table>
-
