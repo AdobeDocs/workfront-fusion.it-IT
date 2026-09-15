@@ -7,15 +7,15 @@ exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 6d107dda1c657e7b0b7ae44cfebecc97421ca47e
 workflow-type: tm+mt
-source-wordcount: 3034
-ht-degree: 35%
-
+source-wordcount: '3056'
+ht-degree: 34%
 ---
-
 # Moduli [!DNL Salesforce]
 
 In uno scenario Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Salesforce] e collegarlo a più applicazioni e servizi di terze parti.
@@ -111,7 +111,7 @@ Per ulteriori informazioni sulle possibilità di ricerca, vedere la documentazio
 
 ## Creare una connessione ad [!DNL Salesforce]
 
-Per creare una connessione per i moduli [!DNL Salesforce]:
+Per creare una connessione per i moduli [!DNL Salesforce], è possibile eseguire l&#39;autenticazione utilizzando OAuth 2 o PKCE.
 
 1. In qualsiasi modulo di [!DNL Salesforce], fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
@@ -139,6 +139,12 @@ Per creare una connessione per i moduli [!DNL Salesforce]:
         <td role="rowheader">[!UICONTROL Tipo]</td>
         <td>
           <p>Specifica se ti connetti a un account di servizio o a un account personale.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type] (Tipo di connessione)</td>
+        <td>
+          <p>Seleziona se desideri eseguire l’autenticazione utilizzando OAuth 2 o PKCE.</p>
         </td>
       </tr>
       <tr>
@@ -189,7 +195,7 @@ Questo modulo trigger avvia uno scenario quando un campo viene aggiornato in [!D
   </tr> 
   <tr> 
    <td>[!UICONTROL Tipo di record] </td> 
-   <td> <p>Selezionare il tipo di record contenente il campo che si desidera controllare nel modulo. È necessario scegliere un tipo di record con [!UICONTROL Field History] attivato nella configurazione di [!DNL Salesforce]. Per ulteriori informazioni, vedere <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Tracciamento cronologia campi</a> nella documentazione di [!DNL Salesforce]. </p> </td> 
+   <td> <p>Selezionare il tipo di record contenente il campo che si desidera controllare nel modulo. È necessario scegliere un tipo di record con [!UICONTROL Field History] attivato nella configurazione di [!DNL Salesforce]. Per ulteriori informazioni, vedere <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Tracciamento cronologia campi</a> nella documentazione di [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Campo]</td> 
@@ -577,7 +583,7 @@ Questo modulo di azione carica un singolo file in Salesforce.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connessione]</td> 
-   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL &#x200B; Adobe Workfront Fusion] - Istruzioni di base</a></td> 
+   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL  Adobe Workfront Fusion] - Istruzioni di base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File di origine]</td> 
@@ -617,7 +623,7 @@ Questo modulo di azione recupera tutti i record che soddisfano un determinato cr
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connessione]</td> 
-   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL &#x200B; Adobe Workfront Fusion] - Istruzioni di base</a></td> 
+   <td>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione a[!DNL  Adobe Workfront Fusion] - Istruzioni di base</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Tipo]</td> 
@@ -657,7 +663,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Salesforce] a Workfront Fusion, vedere <a href="#create-a-connection-to-salesforce">Creare una connessione a Salesforce</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td>Tipo di ricerca </td> 
+   <td>Tipo di ricerca [!UICONTROL]</td> 
    <td> <p>Selezionare il tipo di ricerca che si desidera venga eseguita dal modulo:</p> 
     <ul> 
      <li> <p>[!UICONTROL Semplice]</p> </li> 
