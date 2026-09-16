@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: Gestire una richiesta di documentazione di Fusion dal modello Slack
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: Gestire una richiesta di documentazione di Fusion da #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Richiesta documentazione Fusion
 
@@ -43,6 +41,8 @@ Denomina il ramo `becky-{short-kebab-case-description}`, derivato dal **Titolo f
 
 Se la struttura di lavoro non è pulita (modifiche non salvate da lavoro non correlato), interrompi l’operazione e informa l’utente anziché suddividerla.
 
+Questa abilità crea e impegna il ramo, ma non lo invia né apre una richiesta di pull. Lascialo all’utente a meno che non ti chieda separatamente di farlo.
+
 ## Passaggio 3: aggiornare la documentazione
 
 Trova gli articoli esistenti rilevanti in questo archivio (grep per i nomi dei moduli, le etichette dell’interfaccia utente o i nomi delle impostazioni correlati, non indovinare il file). Aggiornali per riflettere la modifica, seguendo la struttura esistente dell’articolo, il livello di intestazione e lo stile della casa.
@@ -53,6 +53,7 @@ Trova gli articoli esistenti rilevanti in questo archivio (grep per i nomi dei m
   - Il file di navigazione principale per l&#39;area di prodotto (ad esempio `help/workfront-fusion/TOC.md`): è questo che determina la struttura di navigazione pubblicata.
   - Qualsiasi sottoindice/pagina di destinazione nel contenuto che collega anche articoli di questo tipo (ad esempio `apps-and-modules-toc.md` per una nuova pagina di moduli connettore).
     Seleziona esplicitamente e conferma che la nuova voce si trovi nello stesso elenco, allo stesso livello di nidificazione, in quanto gli articoli di pari livello più vicini in ciascun file - non presumere di aggiungerla a una copre l’altra.
+&#x200B;* Lascia non confermate le modifiche della documentazione nel ramo. Non eseguire `git commit` (o `git add`) come parte di questa abilità: l&#39;utente si impegna quando è pronto, dopo aver esaminato le modifiche. Esegui il commit solo se l’utente ti chiede esplicitamente di farlo.
 
 ## Passaggio 4: creare l&#39;attività Workfront
 
@@ -78,6 +79,11 @@ Imposta i campi della data di anteprima e della data di completamento pianificat
 
 Per impostazione predefinita, le nuove attività sono impostate su un vincolo Il più presto possibile con durata 0, in base al quale `plannedStartDate`/`plannedCompletionDate` sono derivate dall&#39;utilità di pianificazione e una scrittura diretta in una delle due viene eliminata automaticamente (nessun errore, la data non cambia). L&#39;impostazione di `taskConstraint: "MFO"` con `constraintDate` è il modo affidabile per fissare la data di completamento pianificata alla data indicata nel messaggio di Slack. Leggi `workfront://knowledge/task/update` prima di questa scrittura: è un campo di pianificazione/data in base alle regole del server MCP.
 
+Il campo `description` ha un limite rigido di 4000 caratteri. Se il testo completo del messaggio di Slack non rientra:
+
+1. Crea prima l&#39;attività con un breve `description`: Titolo funzione, Data di rilascio prevista, Annuncio dei bisogni, Riepilogo di una riga della richiesta, una nota che il testo completo della richiesta è pubblicato come primo commento sull&#39;attività e il collegamento del thread di Slack.
+1. Pubblica quindi il testo completo del messaggio Slack (tutti i campi del modello, non una parafrasi) come commento sulla nuova attività creata, tramite `comment-stream_create_comment` (`objectCode` `task`, `objectID` l&#39;ID della nuova attività) - questo strumento non ha un limite di lunghezza paragonabile. Includi sia `content` (testo normale) che `contentHTML` (strutturati con intestazioni/elenchi, non solo `<p>` tag nudi).
+
 Formato nota sulla versione per il campo `DE:Release notes`. Inizia sempre con `***FUSION***` sulla propria riga, poi una riga vuota, quindi il titolo. In questo modo la nota viene contrassegnata come appartenente a Fusion (anziché al core Workfront) a colpo d&#39;occhio:
 
 ```markdown
@@ -96,8 +102,9 @@ Prima della chiamata di creazione, chiama `read_workflow_docs` con `workfront://
 
 Report semplice:
 
-&#x200B;* Il ramo creato.
+&#x200B;* Il ramo creato (eseguito localmente, non inviato e nessuna richiesta pull aperta, secondo il passaggio 2).
 &#x200B;* Quali file di documenti hai modificato e cosa hai aggiunto.
+&#x200B;* Le modifiche non vengono applicate al ramo, in attesa della revisione dell’utente.
 &#x200B;* Il nome dell’attività e l’URL.
 &#x200B;* I valori esatti dei campi impostati, inclusi i campi della data di anteprima.
 &#x200B;* Tutto ciò per cui non eri completamente sicuro: ad esempio, Slack non era raggiungibile e lavoravi solo con testo incollato, l&#39;articolo del documento di destinazione era ambiguo, o un dettaglio tecnico non era nel materiale sorgente e veniva segnalato invece di essere indovinato.

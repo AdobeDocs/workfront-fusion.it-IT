@@ -5,13 +5,12 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
+    internal-label: Workfront
+source-git-commit: f39af7ec908c7ae62924635ef2d08584cf79310a
 workflow-type: tm+mt
-source-wordcount: 1020
+source-wordcount: '1020'
 ht-degree: 11%
-
 ---
-
 # Moduli MCP di Adobe Experience Manager
 
 Il connettore MCP di Adobe Experience Manager è un&#39;integrazione Fusion dedicata per il server MCP (Model Context Protocol) di Adobe Experience Manager. A differenza di un connettore tipico, in cui ogni modulo esegue un’azione fissa, questo connettore ha un singolo modulo che accetta un’istruzione aperta in inglese semplice e consente a un modello di intelligenza artificiale di decidere quali operazioni Adobe Experience Manager sono necessarie per eseguirlo, in aree come siti, risorse digitali, frammenti di contenuto, cartelle, archivio dei contenuti e IA per l’analisi dei contenuti.
@@ -98,7 +97,7 @@ Ogni esecuzione di questo modulo è una singola esecuzione autonoma, simile all�
 
 Poiché ogni esecuzione è indipendente, il modulo non dispone di memoria delle esecuzioni precedenti. Per creare un’esperienza a più turni e conversazionale su più esecuzioni, archivia la domanda e la risposta precedenti. A tale scopo, è possibile utilizzare un archivio dati e quindi includere la cronologia come testo all&#39;inizio del prompt successivo, seguito dalla nuova domanda.
 
-Per informazioni sugli archivi dati, vedere [Archivio dati](/help/workfront-fusion/create-scenarios/data-stores/data-store-overview.md).
+Per informazioni sugli archivi dati, vedere [Archivio dati](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
 <table style="table-layout:auto"> 
  <col/>
