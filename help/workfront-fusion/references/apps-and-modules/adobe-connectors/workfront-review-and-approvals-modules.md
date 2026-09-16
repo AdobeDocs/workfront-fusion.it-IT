@@ -13,7 +13,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 56b4c0736c60131ed83635a55cd4a86a35759586
+source-git-commit: 4f637dcb9d7865f73b41faa5b0acf397944bb559
 workflow-type: tm+mt
 source-wordcount: '5202'
 ht-degree: 11%
@@ -22,7 +22,7 @@ ht-degree: 11%
 
 Con i moduli Revisione e approvazioni unificate di Adobe Workfront, puoi ottenere i dettagli di approvazione, prendere una decisione su una risorsa, aggiungere o eliminare partecipanti all’approvazione, aggiungere o aggiornare fasi di approvazione, bloccare o sbloccare e effettuare chiamate API personalizzate.
 
-Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/it/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
+Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
 
 ## Requisiti di accesso
 
@@ -331,7 +331,8 @@ Questo modulo di azione crea un’approvazione con i dati della fase specificati
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
+<!--
+BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
 
 #### Delete a decision on a stage
 
