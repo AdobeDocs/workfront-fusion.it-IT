@@ -3,13 +3,12 @@ title: Modifica webhook
 description: È possibile modificare i webhook esistenti per i connettori Workfront e Workfront Planning.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2561c911b9b542a7b143fae745baf4e1de45be38
+exl-id: 86849d21-5a74-43f7-9ccf-dff4421cc981
+source-git-commit: 25ba44b8ab1aab8ad6e2d6a989f55366d48a0575
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
-
 ---
-
 # Modifica webhook
 
 Puoi modificare i webhook esistenti. Gli scenari che utilizzano questi webhook utilizzeranno la nuova configurazione in futuro, eliminando la necessità di creare un nuovo webhook e di assegnarlo manualmente a tutti gli scenari interessati.
@@ -51,4 +50,3 @@ Puoi modificare i webhook da uno scenario o dall’elenco Webhook.
 1. Nel banner blu nella parte inferiore della schermata, fai clic su **Modifica**.
 1. Apporta le modifiche desiderate al webhook.
 1. Fai clic su **Salva** per salvare il webhook e tornare all&#39;elenco dei webhook.
-
