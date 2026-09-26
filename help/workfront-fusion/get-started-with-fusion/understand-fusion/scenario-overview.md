@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion richiede una licenza Adobe Workfront Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-TQID: https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc
+TQID: 'https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # Panoramica degli scenari
 
 Il ruolo di Adobe Workfront Fusion è quello di automatizzare i processi in modo che gli utenti non debbano dedicare troppo tempo alle attività di routine. Funziona collegando azioni all’interno e tra le app e o servizi per creare uno scenario che trasferisce e trasforma automaticamente i dati. Lo scenario creato controlla i dati in un’app o in un servizio e li elabora in modo da fornire il risultato desiderato.
@@ -111,5 +113,5 @@ Per un elenco dei connettori dedicati, consulta [Riferimenti alle applicazioni F
 * Per un glossario dei termini utilizzati in Workfront Fusion, consulta [Glossario di Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md).
 * Per iniziare a creare uno scenario di esercitazione, consulta [Creare uno scenario di base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 * Per informazioni sulla creazione e la gestione degli scenari, consulta gli articoli elencati in:
-   * [Creare scenari](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * [Gestire gli scenari](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+  * [Creare scenari](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
+  * [Gestire gli scenari](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)

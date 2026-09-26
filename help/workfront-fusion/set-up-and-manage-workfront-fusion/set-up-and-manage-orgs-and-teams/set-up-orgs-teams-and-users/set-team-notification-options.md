@@ -4,16 +4,18 @@ description: Le opzioni di notifica e-mail sono impostate a livello di team.
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-TQID: https://experienceleague.adobe.com/-HytP4gfrhiiSn-dg5ndg1YC6NTMC-NURYzSFgO5kIo
+TQID: 'https://experienceleague.adobe.com/-HytP4gfrhiiSn-dg5ndg1YC6NTMC-NURYzSFgO5kIo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 90a58033e240271b88d01b9daef9763f38264056
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 665
+source-wordcount: '665'
 ht-degree: 13%
-
 ---
-
 # Impostare le opzioni di notifica
 
 Nell’organizzazione utilizza Adobe Unified Shell, ricevi notifiche tramite l’area Notifiche di Adobe.
@@ -32,7 +34,7 @@ Per impostazione predefinita, in Workfront Fusion sono abilitati tutti i tipi di
 
 >[!IMPORTANT]
 >
->Per ricevere notifiche da Workfront Fusion, è necessario che le impostazioni di notifica di Adobe CX Enterprise siano abilitate. Per accedere a queste impostazioni, fai clic sul campanello di notifica nell’angolo superiore destro dello schermo e sull’icona delle impostazioni.
+>Per ricevere le notifiche da Workfront Fusion, è necessario che le impostazioni di notifica di Adobe CX Enterprise abilitino le notifiche di Fusion. Per accedere a queste impostazioni, fai clic sul campanello di notifica nell’angolo superiore destro dello schermo e sull’icona delle impostazioni.
 
 ## Requisiti di accesso
 

@@ -4,16 +4,18 @@ description: Un'operazione in Adobe Workfront Fusion è un'operazione eseguita d
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-TQID: https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA
+TQID: 'https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: '413'
 ht-degree: 1%
-
 ---
-
 # Operazioni
 
 Un&#39;operazione in Adobe Workfront Fusion è un&#39;operazione eseguita da un modulo. Ai fini del tracciamento, qualsiasi azione eseguita correttamente da un modulo è un’operazione.
@@ -26,10 +28,10 @@ Un&#39;operazione in Adobe Workfront Fusion è un&#39;operazione eseguita da un 
 * Le operazioni possono avere un valore diverso. Alcune saranno operazioni più piccole e più semplici, mentre altre saranno più complesse. Le operazioni contano per il totale, indipendentemente da quanto siano semplici o complesse.
 * Le operazioni vengono conteggiate nella fase [!UICONTROL Finalizzazione] dell&#39;esecuzione di uno scenario.
 * **non** sono conteggiati come operazioni:
-   * Qualsiasi passaggio di filtro.
-   * Qualsiasi azione che si verifichi un errore o si arresti.
-   * Qualsiasi route non eseguita perché non sono state soddisfatte le regole della route, ad esempio route di fallback o disabilitate.
-   * Qualsiasi azione non eseguita, perché un filtro non ha consentito il passaggio dei dati o perché lo scenario è stato interrotto a causa di un errore.
+  * Qualsiasi passaggio di filtro.
+  * Qualsiasi azione che si verifichi un errore o si arresti.
+  * Qualsiasi route non eseguita perché non sono state soddisfatte le regole della route, ad esempio route di fallback o disabilitate.
+  * Qualsiasi azione non eseguita, perché un filtro non ha consentito il passaggio dei dati o perché lo scenario è stato interrotto a causa di un errore.
 
 >[!NOTE]
 >

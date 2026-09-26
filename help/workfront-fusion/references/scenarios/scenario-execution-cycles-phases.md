@@ -4,31 +4,33 @@ description: Questo articolo descrive gli eventi che si verificano durante l’e
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+TQID: 'https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 2%
-
 ---
-
 # Esecuzione, cicli e fasi di uno scenario
 
 Ogni esecuzione dello scenario inizia con la fase di inizializzazione, continua con almeno un ciclo composto dalle fasi di operazione e commit/rollback e termina con la fase di finalizzazione
 
 * Inizializzazione
 * #1 ciclo
-   * Funzionamento (lettura o scrittura)
-   * Conferma o rollback
+  * Funzionamento (lettura o scrittura)
+  * Conferma o rollback
 * #2 ciclo
-   * Funzionamento (lettura o scrittura)
-   * Conferma o rollback
+  * Funzionamento (lettura o scrittura)
+  * Conferma o rollback
 * ...
 * #n ciclo
-   * Funzionamento (lettura o scrittura)
-   * Conferma o rollback
+  * Funzionamento (lettura o scrittura)
+  * Conferma o rollback
 * Finalizzazione
 
 Su scala ridotta, ogni modulo segue anche queste fasi. Le informazioni sulle fasi del modulo si trovano nelle informazioni del bundle elaborate, nella bolla numerata in alto a destra di ciascun modulo dopo l’esecuzione dello scenario. Per ulteriori informazioni sull&#39;individuazione delle informazioni sui bundle elaborati, vedere [Informazioni sui bundle elaborati](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles) nell&#39;articolo Flusso di esecuzione dello scenario.

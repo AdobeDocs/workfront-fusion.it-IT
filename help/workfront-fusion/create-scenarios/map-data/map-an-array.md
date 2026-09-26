@@ -4,18 +4,21 @@ description: È possibile mappare un array o singoli elementi di array a un camp
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
+TQID: 'https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 898
+source-wordcount: '898'
 ht-degree: 10%
-
 ---
-
 # Mappare un elemento array o array
 
 Un array è un elemento bundle che può contenere i seguenti elementi:
@@ -141,28 +144,28 @@ La formula può essere spiegata come segue:
 
 * `map`
 
-   1. Il primo parametro della funzione `map()` è l&#39;intero elemento dell&#39;array.
-   1. Il secondo parametro è il nome non elaborato dell&#39;elemento valore. Per ottenere il nome non elaborato, passa il cursore sull&#39;elemento nel pannello [!UICONTROL mapping]:
+  1. Il primo parametro della funzione `map()` è l&#39;intero elemento dell&#39;array.
+  1. Il secondo parametro è il nome non elaborato dell&#39;elemento valore. Per ottenere il nome non elaborato, passa il cursore sull&#39;elemento nel pannello [!UICONTROL mapping]:
 
-      ![Ottieni nome non elaborato](assets/obtain-raw-name-350x124.png)
+     ![Ottieni nome non elaborato](assets/obtain-raw-name-350x124.png)
 
-      >[!NOTE]
-      >
-      >Tutti i parametri fanno distinzione tra maiuscole e minuscole. Anche se in questo particolare esempio l’etichetta dell’elemento differisce dal suo nome non elaborato solo in maiuscolo, è necessario utilizzare il nome non elaborato.
+     >[!NOTE]
+     >
+     >Tutti i parametri fanno distinzione tra maiuscole e minuscole. Anche se in questo particolare esempio l’etichetta dell’elemento differisce dal suo nome non elaborato solo in maiuscolo, è necessario utilizzare il nome non elaborato.
 
-   1. Il terzo parametro è il nome non elaborato dell’elemento chiave:
+  1. Il terzo parametro è il nome non elaborato dell’elemento chiave:
 
-      ![Terzo parametro](assets/3rd-parameter-350x166.png)
+     ![Terzo parametro](assets/3rd-parameter-350x166.png)
 
-   1. Il quarto parametro è il valore chiave specificato.
+  1. Il quarto parametro è il valore chiave specificato.
 
   Poiché la funzione `map()` restituisce un array (poiché potrebbero essere presenti più elementi con il valore chiave specificato), è necessario applicare la funzione `get()` per ottenere il primo elemento:
 
 * `get`
 
-   1. Il primo parametro della funzione `get()` è il risultato della funzione `map()`.
+  1. Il primo parametro della funzione `get()` è il risultato della funzione `map()`.
 
-   1. Il secondo parametro rappresenta l&#39;indice dell&#39;elemento. In questo esempio, l&#39;indice è `1`.
+  1. Il secondo parametro rappresenta l&#39;indice dell&#39;elemento. In questo esempio, l&#39;indice è `1`.
 
 Questo esempio genera il seguente output:
 

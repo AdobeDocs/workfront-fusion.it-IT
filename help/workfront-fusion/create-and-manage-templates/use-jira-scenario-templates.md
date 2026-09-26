@@ -7,24 +7,30 @@ description: Utilizza questi modelli per automatizzare i flussi di lavoro tra Ad
 author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
-TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
+TQID: 'https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 subfeature_v2:
   - id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+    internal-label: Custom forms
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 4277
+source-wordcount: '4283'
 ht-degree: 3%
-
 ---
-
 # Utilizzare i modelli per collegare Adobe Workfront Fusion e Jira
 
 Adobe Workfront Fusion offre modelli in grado di automatizzare flussi di lavoro comuni tra Fusion e Jira.
@@ -228,10 +234,10 @@ Durante la configurazione di questi modelli, utilizza i seguenti parametri gener
 * **wfBaseURL**: URL di base per l&#39;istanza di Workfront.  In genere: `https://<domain>.my.workfront.com` dove `<domain>` è il nome di dominio di Workfront specifico.
 * **defaultJIRAReporterID**: ID dell&#39;utente in JIRA che crea problemi. (Esempio: `557058:5aedf933-2312-40bc-b328-0c21314167f0`)
 Per ottenere questo ID, effettua una delle seguenti operazioni:
-   * Fai clic sul profilo dell’utente in JIRA e controlla l’URL nel browser.
-(Esempio`https://myjira.atlassian.net/jira/people/<JiraUserID>`)
-   * Esegui la seguente chiamata API sull’istanza JIRA per ottenere l’ID per l’account specifico in JIRA:
-     `GET /rest/api/3/user/search?query=email@example.com`
+  * Fai clic sul profilo dell’utente in JIRA e controlla l’URL nel browser.
+    (Esempio`https://myjira.atlassian.net/jira/people/<JiraUserID>`)
+  * Esegui la seguente chiamata API sull’istanza JIRA per ottenere l’ID per l’account specifico in JIRA:
+    `GET /rest/api/3/user/search?query=email@example.com`
 
 
 ### Scenario 1: da Workfront a Jira: creare un problema JIRA dall’assegnazione di un’attività o di un problema Workfront
