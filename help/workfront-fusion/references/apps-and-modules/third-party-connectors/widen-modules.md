@@ -170,7 +170,7 @@ Questo modulo di azione aggiunge una o più risorse alle raccolte.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID Raccolte]</td> 
-   <td>Per ogni raccolta a cui si desidera aggiungere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta [!UICONTROL].</li> 
+   <td>Per ogni raccolta a cui si desidera aggiungere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta .</li> 
    </td> 
   </tr> 
   <tr> 
@@ -290,7 +290,7 @@ Questo modulo di azione rimuove una o più risorse dalle raccolte.
   <tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID Raccolte]</td> 
-   <td>Per ogni raccolta da cui si desidera rimuovere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta [!UICONTROL].</li> 
+   <td>Per ogni raccolta da cui si desidera rimuovere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta .</li> 
    </td> 
   </tr> 
   <tr> 
@@ -326,7 +326,7 @@ Questo modulo di azione aggiorna i campi di metadati di una risorsa.
    <td> <p>Seleziona il tipo di metadati per i metadati da aggiornare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di [!UICONTROL]</td> 
+   <td role="rowheader">Metadati di </td> 
    <td>Seleziona i campi di metadati da aggiornare. Immettere il nuovo valore per ogni campo.</td> 
   </tr> 
   <tr> 
@@ -369,8 +369,8 @@ Questo modulo di azione carica un file nel tuo account [!DNL Widen].
    <td>Seleziona il tipo di metadati per il file da caricare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di [!UICONTROL]</td> 
-   <td>Seleziona i campi di metadati da includere nel caricamento del file. Per ogni campo, immettere il valore [!UICONTROL] per il campo.</td> 
+   <td role="rowheader">Metadati di </td> 
+   <td>Seleziona i campi di metadati da includere nel caricamento del file. Per ogni campo, immettere il valore  per il campo.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -432,7 +432,7 @@ Questo modulo di ricerca recupera un elenco di risorse che corrispondono ai crit
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Query di ricerca [!UICONTROL]</td> 
+   <td role="rowheader">Query di ricerca </td> 
    <td> <p>Inserire i criteri in base ai quali si desidera cercare le risorse.</p> </td> 
   </tr> 
   <tr> 

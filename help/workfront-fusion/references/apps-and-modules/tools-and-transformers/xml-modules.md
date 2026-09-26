@@ -228,7 +228,7 @@ Per scaricare un file XML da un URL e analizzarne il contenuto:
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL XML]</td> 
-      <td> <p>Mappa l'elemento <code>Data </code> dall'output del modulo [!UICONTROL HTTP] &gt; [!UICONTROL Ottieni un file] nel campo. Utilizzare la funzione <code>toString()</code> per convertire il relativo valore dal tipo di buffer [!UICONTROL] (dati binari) al tipo di dati [!UICONTROL Text].</p> <p>Puoi copiare e incollare il codice della formula nel campo: <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>Per ulteriori informazioni sui tipi di dati Buffer e Testo, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipi di dati elemento</a>.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
+      <td> <p>Mappa l'elemento <code>Data </code> dall'output del modulo [!UICONTROL HTTP] &gt; [!UICONTROL Ottieni un file] nel campo. Utilizzare la funzione <code>toString()</code> per convertire il relativo valore dal tipo di buffer  (dati binari) al tipo di dati [!UICONTROL Text].</p> <p>Puoi copiare e incollare il codice della formula nel campo: <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>Per ulteriori informazioni sui tipi di dati Buffer e Testo, vedere <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Tipi di dati elemento</a>.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
      </tr> 
     </tbody> 
    </table>

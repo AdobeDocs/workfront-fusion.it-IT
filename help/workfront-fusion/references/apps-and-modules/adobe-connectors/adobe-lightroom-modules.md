@@ -540,7 +540,7 @@ Questo modulo di azione recupera la rappresentazione più recente della risorsa 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di rappresentazione [!UICONTROL]</td>
+      <td role="rowheader">Tipo di rappresentazione </td>
       <td>
         <p>Selezionare il tipo di rappresentazione da recuperare.</p>
       </td>
@@ -734,7 +734,7 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Sottotipo [!UICONTROL]</td>
+      <td role="rowheader">Sottotipo </td>
       <td>
         <p>Selezionare il sottotipo dell'album.</p>
       </td>
@@ -768,7 +768,7 @@ Questo modulo di azione crea un nuovo album in Lightroom.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">ID padre [!UICONTROL]</td>
+      <td role="rowheader">ID padre </td>
       <td>
         <p>Immettere o mappare l'ID dell'elemento padre per l'album.</p>
       </td>

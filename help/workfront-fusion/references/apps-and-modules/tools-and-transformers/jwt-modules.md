@@ -94,7 +94,7 @@ Questo modulo genera un JWT basato sull’algoritmo selezionato.
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Payload [!UICONTROL] </td> 
+   <td role="rowheader">Payload  </td> 
    <td> <p>Per ogni elemento del payload che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore dell'elemento.</p> </td> 
   </tr> 
   <tr> 

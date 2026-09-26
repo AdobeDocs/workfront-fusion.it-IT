@@ -182,7 +182,7 @@ Una discussione sulle espressioni regolari va oltre lo scopo di questo articolo.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>Immettete il pattern di espressione regolare. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Esempio: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> estrae tutti i numeri nel testo specificato.</p> <p>Nota:  <p>Il modello deve contenere almeno un gruppo di acquisizione tra parentesi <code>()</code>. Se il modello non contiene gruppi di acquisizione, il bundle di output è vuoto.</p> </p> </td> 
+   <td> <p>Immettete il pattern di espressione regolare. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Esempio: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE]&#x200B;[+-]?\d+)?</code> estrae tutti i numeri nel testo specificato.</p> <p>Nota:  <p>Il modello deve contenere almeno un gruppo di acquisizione tra parentesi <code>()</code>. Se il modello non contiene gruppi di acquisizione, il bundle di output è vuoto.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Corrispondenza globale]</td> 

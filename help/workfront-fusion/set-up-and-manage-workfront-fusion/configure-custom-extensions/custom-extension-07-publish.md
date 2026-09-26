@@ -47,7 +47,7 @@ Ogni progetto App Builder ha un&#39;area di lavoro **Stage** e un&#39;area di la
 > * [Configurare gli strumenti e l&#39;account dell&#39;estensione dell&#39;interfaccia utente](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)
 > * [Come ottenere l&#39;accesso](https://developer.adobe.com/uix/docs/guides/get-access/) nella documentazione Adobe.
 
-Per impostazione predefinita, Fusion mostra solo **estensioni pubblicate**. Si tratta di estensioni distribuite nell&#39;area di lavoro **Produzione** e quindi inviate per l&#39;approvazione ****. Questa è l’impostazione predefinita sicura, pertanto una distribuzione work-in-progress non viene mai visualizzata per errore nell’intera organizzazione.
+Per impostazione predefinita, Fusion mostra solo **estensioni pubblicate**. Si tratta di estensioni distribuite nell&#39;area di lavoro **Produzione** e quindi inviate per l&#39;approvazione **&#x200B;**. Questa è l’impostazione predefinita sicura, pertanto una distribuzione work-in-progress non viene mai visualizzata per errore nell’intera organizzazione.
 
 Una distribuzione nell&#39;area di lavoro **Stage** non è pubblicata, pertanto non viene visualizzata in Fusion. Puoi provare un’estensione in due modi prima di pubblicarla:
 

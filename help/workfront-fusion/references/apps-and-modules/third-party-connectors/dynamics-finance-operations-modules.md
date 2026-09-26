@@ -103,7 +103,7 @@ Per creare una connessione per i moduli Finanza e Operazioni di Microsoft Dynami
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID client]</td>
-        <td>Immettere l'ID client di Dynamics Finance and Operations [!UICONTROL].</td>
+        <td>Immettere l'ID client di Dynamics Finance and Operations .</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>

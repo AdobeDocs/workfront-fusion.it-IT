@@ -96,7 +96,7 @@ Per utilizzare i moduli FTP, è necessario disporre di un account con un servizi
       <td> <p>Immetti il nome host del server FTP. Esempio: <code>myftp123.server.com</code></p> </td> 
      </tr> 
      <tr> 
-      <td>Porta [!UICONTROL] </td> 
+      <td>Porta  </td> 
       <td> <p>Immettere il numero di porta del server FTP. Esempio: <code>21</code></p> </td> 
      </tr> 
      <tr> 
@@ -196,7 +196,7 @@ Questo modulo di azione modifica le impostazioni delle autorizzazioni di un file
             <td>[!UICONTROL Autorizzazioni]</td>
             <td>
                <p>Imposta le autorizzazioni per il file o la cartella desiderate. Utilizzare i parametri chmod. Ad esempio: <code>777 </code> o <code>-rwxrwxrwx</code>.</p>
-               <p>Le autorizzazioni devono corrispondere al pattern <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code>.</p>
+               <p>Le autorizzazioni devono corrispondere al pattern <code> /(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3,4}/</code>.</p>
             </td>
          </tr>
    </tbody>
