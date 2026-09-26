@@ -4,16 +4,18 @@ description: Molti connettori Adobe Workfront Fusion non richiedono una configur
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-TQID: https://experienceleague.adobe.com/7wmBBiCK-UBhGs4HvQWu2JbUgBu-5SfVI9yLNCp-2mE
+TQID: 'https://experienceleague.adobe.com/7wmBBiCK-UBhGs4HvQWu2JbUgBu-5SfVI9yLNCp-2mE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 577
+source-wordcount: '577'
 ht-degree: 20%
-
 ---
-
 # Creare una connessione: istruzioni di base
 
 Molti connettori Adobe Workfront Fusion non richiedono una configurazione personalizzata durante la creazione di una connessione. Questo articolo descrive il processo predefinito di creazione della connessione.
@@ -71,7 +73,7 @@ Per creare una connessione a una determinata applicazione, è necessario essere 
 Per creare una connessione all&#39;interno di un modulo Workfront Fusion:
 
 1. In qualsiasi modulo per l&#39;applicazione specificata, fare clic su **[!UICONTROL Aggiungi]** accanto alla casella [!UICONTROL Connessione] per aprire il pannello **[!UICONTROL Crea connessione]**.
-1. (Facoltativo) Modificare il nome predefinito della connessione **&#x200B;**.
+1. (Facoltativo) Modificare il nome predefinito della connessione ****.
 1. Nel campo Ambiente, seleziona se si tratta di un ambiente di produzione o non di produzione.
 1. Nel campo Tipo selezionare se si tratta di un account di servizio o personale.
 1. (Condizionale) Se l&#39;app richiede impostazioni di connessione avanzate, ad esempio un ID, una chiave o un [!UICONTROL segreto], immetti tali informazioni.

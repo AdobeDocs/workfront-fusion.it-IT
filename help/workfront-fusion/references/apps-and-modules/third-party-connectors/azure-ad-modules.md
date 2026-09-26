@@ -1,21 +1,24 @@
 ---
 title: Moduli Azure Active Directory
-description: In uno scenario di Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano  [!DNL Azure] Active Directory, nonché collegarlo a più applicazioni e servizi di terze parti.
+description: In uno scenario di Adobe Workfront Fusion, è possibile automatizzare i flussi di lavoro che utilizzano [!DNL Azure] Active Directory e collegarlo a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
 exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
-TQID: https://experienceleague.adobe.com/FS2TZrWeFQ-6hQZlmu7pd46bIHjnVvIU6g61hxWFkWc
+TQID: 'https://experienceleague.adobe.com/FS2TZrWeFQ-6hQZlmu7pd46bIHjnVvIU6g61hxWFkWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1115
+source-wordcount: '1116'
 ht-degree: 58%
-
 ---
-
 # Moduli [!DNL Azure Active Directory]
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Azure Active Directory], nonché collegarli a più applicazioni e servizi di terze parti.
@@ -254,7 +257,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Azure Active Directory] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Creare una connessione ad Adobe Workfront Fusion - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Criteri di ricerca di </td> 
+   <td role="rowheader">Criteri di ricerca di [!UICONTROL]</td> 
    <td> <p>Immettere i criteri da utilizzare nella ricerca.</p> <p>Per informazioni sui parametri da utilizzare, ad esempio "[!UICONTROL $filter]", vedere <a href="https://docs.microsoft.com/en-us/graph/query-parameters">Utilizzare i parametri di query per personalizzare le risposte</a> nella documentazione API [!DNL Microsoft].</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 

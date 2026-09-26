@@ -4,19 +4,23 @@ description: Un archivio dati, simile a un database o a una semplice tabella, pu
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-TQID: https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs
+TQID: 'https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1366
+source-wordcount: '1366'
 ht-degree: 8%
-
 ---
-
 # Creare e gestire archivi dati
 
 Un archivio dati, simile a un database o a una semplice tabella, può memorizzare i dati di scenari, rendendo possibile il trasferimento di dati tra scenari singoli o l’esecuzione di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
@@ -79,7 +83,7 @@ Le istanze di Fusion sul pacchetto Ultimate ricevono:
 
 ### Seleziona piani e Prime
 
-Le istanze di fusione nei pacchetti Select o Prime ricevono:-->
+Le istanze di Fusion nei pacchetti Select o Prime ricevono:—>
 
 * 100 MB per le prime operazioni 500K.
 

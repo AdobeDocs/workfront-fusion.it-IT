@@ -4,18 +4,20 @@ description: Durante la mappatura degli elementi, puoi utilizzare funzioni per l
 author: Becky
 feature: Workfront Fusion
 exl-id: e07730cb-52be-46db-a365-93cdbed1021c
-TQID: https://experienceleague.adobe.com/qms9CZ6iX1V4AtOotaaLWy3FxiTm5C7S9hYgJmx-7S4
+TQID: 'https://experienceleague.adobe.com/qms9CZ6iX1V4AtOotaaLWy3FxiTm5C7S9hYgJmx-7S4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: '296'
 ht-degree: 59%
-
 ---
-
 # Panoramica delle funzioni
 
 Workfront Fusion include funzioni incorporate che consentono di creare formule semplici o complesse. Queste funzioni coprono un&#39;ampia varietà di casi d&#39;uso, tra cui funzioni per array, stringhe, numeri e dati dei moduli precedenti.
@@ -35,10 +37,10 @@ Il pannello di mappatura include le seguenti schede. Ciascuna scheda include fun
 
 | Tipo di funzioni | Per ulteriori informazioni, consulta: |
 | --- | --- |
-| **Mappare da altri moduli**<br>![&#x200B; Mappare da altri moduli](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **Funzioni generali**<br>![&#x200B; Funzioni generali](assets/toolbar-icon-general-function.png) | [Funzioni generali](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
-| **Funzioni matematiche**<br>![&#x200B; Funzioni matematiche](assets/toolbar-icon-math-functions.png) | [Funzioni matematiche](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
-| **Funzioni testuali e binarie**<br>![&#x200B; Funzioni stringa](assets/toolbar-icon-text-binary-functions.png) | [Funzioni stringa](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
+| **Mappare da altri moduli**<br>![ Mappare da altri moduli](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Mappare le informazioni da un modulo a un altro](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **Funzioni generali**<br>![ Funzioni generali](assets/toolbar-icon-general-function.png) | [Funzioni generali](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **Funzioni matematiche**<br>![ Funzioni matematiche](assets/toolbar-icon-math-functions.png) | [Funzioni matematiche](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
+| **Funzioni testuali e binarie**<br>![ Funzioni stringa](assets/toolbar-icon-text-binary-functions.png) | [Funzioni stringa](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
 | **Data e ora** <br> ![Funzioni data e ora](assets/toolbar-icon-date-time-functions.png) | <ul><li>[Funzioni data e ora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Token per la formattazione di data e ora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Token per l’analisi di data e ora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **Funzioni per l’utilizzo degli array**<br> ![Funzioni array](assets/toolbar-icon-functions-for-arrays.png) | [Funzioni array](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 

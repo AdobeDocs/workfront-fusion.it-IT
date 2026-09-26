@@ -4,18 +4,21 @@ description: Fusion utilizza indirizzi IP e domini specifici per la comunicazion
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-TQID: https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10
+TQID: 'https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 569
-ht-degree: 8%
-
+source-wordcount: '554'
+ht-degree: 6%
 ---
-
 # Configurare gli indirizzi IP per Fusion nell’elenco Consentiti della tua organizzazione
 
 Poiché Adobe Workfront Fusion comunica con la rete della tua organizzazione, il firewall di quest’ultima deve essere configurato in modo da consentire tale comunicazione. I firewall sono misure di sicurezza altamente efficaci che funzionano separando la rete di un&#39;organizzazione da Internet. Garantiscono che solo i dati e il traffico di rete selezionati possano essere spostati all’interno o all’esterno della rete dell’organizzazione. Il firewall consente o blocca i dati in base al sito che invia o riceve i dati. In qualità di amministratore di Fusion, devi assicurarti che i dati inviati a o da Fusion possano passare attraverso il firewall dell’organizzazione.

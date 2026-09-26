@@ -1,22 +1,26 @@
 ---
 title: Moduli Adobe Journey Optimizer
-description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano  [!DNL Adobe Journey Optimizer], nonché collegarli a più applicazioni e servizi di terze parti.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Journey Optimizer], nonché collegarli a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-TQID: https://experienceleague.adobe.com/fBUiP2f1zw2GMSqvZzoak1mQlnJrBATZw56YazKzuQw
+TQID: 'https://experienceleague.adobe.com/fBUiP2f1zw2GMSqvZzoak1mQlnJrBATZw56YazKzuQw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3723
+source-wordcount: '3723'
 ht-degree: 27%
-
 ---
-
 # Moduli [!DNL Adobe Journey Optimizer]
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Journey Optimizer], nonché collegarli a più applicazioni e servizi di terze parti. I moduli [!DNL Adobe Journey Optimizer] consentono di creare, leggere, aggiornare o eliminare record oppure di eseguire una chiamata API personalizzata all&#39;API [!DNL Adobe Journey Optimizer].
@@ -203,7 +207,7 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
    <td>Inserisci o mappa l’ID Adobe IMS dell’organizzazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metodi </td> 
+   <td role="rowheader">Metodi [!UICONTROL]</td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
@@ -243,11 +247,11 @@ Questo modulo di azione crea un endpoint di limitazione o una configurazione di 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metodi </td> 
+   <td role="rowheader">Metodi [!UICONTROL]</td> 
    <td>Selezionare i metodi da utilizzare in questa configurazione.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Velocità effettiva massima </td> 
+   <td role="rowheader">Velocità effettiva massima [!UICONTROL]</td> 
    <td>Seleziona se utilizzi un’azione o un’origine dati per questa configurazione.</td> 
   </tr> 
   <tr> 
@@ -852,7 +856,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td>Selezionare l'origine del modello.</td>  
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
@@ -892,7 +896,7 @@ Questo modulo di azione crea un nuovo modello di contenuto o un nuovo frammento 
    <td>Seleziona l’origine del frammento.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Per includere le proprietà personalizzate nel nuovo modello, seleziona "Aggiungi metadati" e immetti o mappa la chiave e il valore dei metadati. Ripetere l'operazione per ogni campo personalizzato che si desidera includere.</td> 
   </tr> 
   <tr> 
@@ -1236,7 +1240,7 @@ Questo modulo di ricerca elenca i processi di esportazione e importazione corren
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">Parametro query </td> 
+   <td role="rowheader">Parametro query [!UICONTROL]</td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 
@@ -1269,7 +1273,7 @@ Questo modulo di ricerca elenca tutti i pacchetti dell’organizzazione. Puoi ut
       <td>Seleziona se ordinare i risultati per data di creazione o data di modifica.</td>
   </tr> 
     <tr> 
-   <td role="rowheader">Parametro query </td> 
+   <td role="rowheader">Parametro query [!UICONTROL]</td> 
    <td>Per ogni parametro di query in base al quale si desidera filtrare, fare clic su <b>Aggiungi parametro di query</b>, quindi selezionare il campo e l'operatore e immettere il valore del campo per il filtro.</td> 
   </tr> 
  </tbody> 

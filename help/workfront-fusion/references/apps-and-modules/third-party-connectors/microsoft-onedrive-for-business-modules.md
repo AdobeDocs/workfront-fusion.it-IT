@@ -1,21 +1,24 @@
 ---
 title: Moduli Microsoft OneDrive for Business
-description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano  [!DNL Microsoft OneDrive for Business], nonché collegarli a più applicazioni e servizi di terze parti.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Microsoft OneDrive for Business], nonché collegarli a più applicazioni e servizi di terze parti.
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-TQID: https://experienceleague.adobe.com/bFoOLIFIX2ml2K2I2FVSJuNCPwlhfm6sa1RXaVzUoO0
+TQID: 'https://experienceleague.adobe.com/bFoOLIFIX2ml2K2I2FVSJuNCPwlhfm6sa1RXaVzUoO0'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1156
+source-wordcount: '1156'
 ht-degree: 29%
-
 ---
-
 # Moduli [!DNL Microsoft OneDrive for Business]
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Microsoft OneDrive for Business], nonché collegarli a più applicazioni e servizi di terze parti.
@@ -173,7 +176,7 @@ Crea una cartella all&#39;interno della cartella padre specificata.
  <col> 
  <tbody> 
   <tr> 
-   <td><strong>[!UICONTROL Connessione]</strong> </td> 
+   <td><strong>[!Connessione UICONTROL]</strong> </td> 
    <td> <p>Per istruzioni sulla connessione dell'account [!DNL Office 365] a Workfront Fusion, vedere <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Creare una connessione - Istruzioni di base</a>.</p> </td> 
   </tr> 
   <tr> 

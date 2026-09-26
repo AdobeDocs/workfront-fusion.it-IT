@@ -4,18 +4,21 @@ description: In uno scenario Adobe Workfront Fusion, puoi collegare il tuo accou
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
+TQID: 'https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2509
+source-wordcount: '2509'
 ht-degree: 10%
-
 ---
-
 # Moduli Email
 
 In uno scenario Adobe Workfront Fusion, puoi collegare il tuo account e-mail a più applicazioni e servizi di terze parti.Questo consente di scaricare e-mail tramite IMAP, inviare e-mail tramite SMTP, creare nuove bozze, spostare e copiare e-mail da una cartella a un’altra, contrassegnare le e-mail come lette o non lette ed eliminare le e-mail.
@@ -309,7 +312,7 @@ Questo modulo di azione rimuove un messaggio e-mail o una bozza dalla cartella s
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Immetti l’UID e-mail dell’e-mail da eliminare.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
+   <td> <p>Immetti l’UID e-mail dell’e-mail da eliminare.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Expunge]</td> 
@@ -404,7 +407,7 @@ Questo modulo di azione contrassegna un messaggio e-mail o una bozza in una cart
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
+   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -427,7 +430,7 @@ Contrassegna un messaggio e-mail o una bozza in una cartella selezionata come no
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come non letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
+   <td> <p>Inserisci l’UID e-mail dell’e-mail che desideri contrassegnare come non letta.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -454,7 +457,7 @@ Sposta un messaggio e-mail o una bozza selezionati in una cartella selezionata.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL ID e-mail (UID)]</p> </td> 
-   <td> <p>Immetti l’UID e-mail dell’e-mail che desideri spostare nella cartella di destinazione.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca .</p> </td> 
+   <td> <p>Immetti l’UID e-mail dell’e-mail che desideri spostare nella cartella di destinazione.</p> <p>Puoi ottenere l’UID dell’e-mail utilizzando il modulo E-mail &gt; E-mail di controllo o il modulo Ricerca [!UICONTROL].</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -485,7 +488,7 @@ Invia una nuova e-mail.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Tipo di contenuto]</p> </td> 
-   <td> <p>Seleziona il tipo di contenuto  per l'e-mail:</p> 
+   <td> <p>Seleziona il tipo di contenuto [!UICONTROL] per l'e-mail:</p> 
     <ul> 
      <li>HTML</li> 
      <li>[!UICONTROL Testo normale]</li> 

@@ -1,22 +1,25 @@
 ---
 title: Moduli MariaDB
-description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano  [!DNL MariaDB], nonché collegarli a più applicazioni e servizi di terze parti.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL MariaDB], nonché collegarli a più applicazioni e servizi di terze parti.
 author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
-TQID: https://experienceleague.adobe.com/Dq7tbOvvEndH-6k3yX8AvH29kZxp748JeT1HW-zcDDQ
+TQID: 'https://experienceleague.adobe.com/Dq7tbOvvEndH-6k3yX8AvH29kZxp748JeT1HW-zcDDQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 659
+source-wordcount: '659'
 ht-degree: 59%
-
 ---
-
 # Moduli [!DNL MariaDB]
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL MariaDB], nonché collegarli a più applicazioni e servizi di terze parti.
@@ -95,11 +98,11 @@ Puoi creare una connessione al tuo account [!DNL MariaDB] direttamente da un mod
       <td> <p>Immettere l'indirizzo IP o il nome host dell'istanza di database. L'host deve essere accessibile dall'esterno della rete.</p> <p>Esempio: <code>[!DNL mariadb.hwoh2j5h.us-east-1.rds.amazon.com]</code></p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Porta </td> 
+      <td role="rowheader">Porta [!UICONTROL]</td> 
       <td>La porta predefinita è 3306. Se si utilizza una porta non standard, impostare questo numero sulla porta. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Database &#x200B;]</td> 
+      <td role="rowheader">[!UICONTROL Database ]</td> 
       <td>Immettere il nome del database con cui si desidera interagire.</td> 
      </tr> 
      <tr> 
@@ -155,7 +158,7 @@ Questo modulo legge i record dal database.
    <td>Per istruzioni sulla connessione dell’account [!DNL MariaDB] a Workfront Fusion, consulta <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Connettere [!DNL MariaDB] a Workfront Fusion</a> in questo articolo.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Tabella </td> 
+   <td role="rowheader">Tabella [!UICONTROL]</td> 
    <td> <p>Selezionare la tabella contenente i record che si desidera leggere.</p> </td> 
   </tr> 
   <tr> 

@@ -4,16 +4,18 @@ description: Nella cartella [!UICONTROL Esecuzioni incomplete] sono memorizzate 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-TQID: https://experienceleague.adobe.com/iTS5K7IjJzZdlqX2kCuPBCKojdmM-Id9xa-lRrY2FKI
+TQID: 'https://experienceleague.adobe.com/iTS5K7IjJzZdlqX2kCuPBCKojdmM-Id9xa-lRrY2FKI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 584
+source-wordcount: '584'
 ht-degree: 7%
-
 ---
-
 # Visualizzare e risolvere le esecuzioni incomplete
 
 Nella cartella [!UICONTROL Esecuzioni incomplete] sono memorizzate esecuzioni dello scenario non finalizzate correttamente a causa di un errore. Ogni esecuzione incompleta archiviata può essere risolta manualmente o automaticamente.
@@ -98,18 +100,18 @@ Se si verifica un errore in un altro modulo e non è collegata alcuna route del 
 
 * È stato memorizzato un record di esecuzione incompleto con un nuovo tentativo automatico per i seguenti tipi di errore:
 
-   * `ConnectionError`
-   * `RateLimitError`
-   * `OutOfSpaceError`
-   * `ModuleTimeoutError`
+  * `ConnectionError`
+  * `RateLimitError`
+  * `OutOfSpaceError`
+  * `ModuleTimeoutError`
 
 * È stato memorizzato un record di esecuzione incompleto senza tentativi automatici per i seguenti tipi di errore:
 
-   * `DataError`
-   * `InvalidConfigurationError`
-   * `InvalidAccessTokenError`
-   * `UnexpectedError`
-   * `MaxFileSizeExceededError`
-   * `MaxResultsExceededError`
+  * `DataError`
+  * `InvalidConfigurationError`
+  * `InvalidAccessTokenError`
+  * `UnexpectedError`
+  * `MaxFileSizeExceededError`
+  * `MaxResultsExceededError`
 
 * Se il tipo di errore è diverso da quelli riportati sopra, l’esecuzione non riesce.

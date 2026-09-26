@@ -4,18 +4,21 @@ description: In uno scenario Adobe Workfront Fusion, è possibile automatizzare 
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
+TQID: 'https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2055
+source-wordcount: '2055'
 ht-degree: 21%
-
 ---
-
 # [!DNL Microsoft Office 365 Calendar]
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Microsoft Office 365 Calendar], nonché collegarli a più applicazioni e servizi di terze parti.
@@ -262,7 +265,7 @@ Questo modulo di ricerca recupera i dettagli di un evento quando viene creato, a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari  che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
+   <td>Selezionare il gruppo di calendari [!UICONTROL] che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendario]</td> 
@@ -274,7 +277,7 @@ Questo modulo di ricerca recupera i dettagli di un evento quando viene creato, a
     <ul> 
      <li>[!UICONTROL Subject]</li> 
      <li>[!UICONTROL ID evento]</li> 
-     <li>Data e ora di creazione di </li> 
+     <li>Data e ora di creazione di [!UICONTROL]</li> 
      <li>[!UICONTROL Data e ora ultima modifica]</li> 
      <li>[!UICONTROL Anteprima corpo]</li> 
     </ul> </td> 
@@ -420,7 +423,7 @@ Questo modulo trigger recupera i dettagli di un evento quando viene creato, aggi
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari  che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
+   <td>Selezionare il gruppo di calendari [!UICONTROL] che contiene il calendario in cui si desidera visualizzare gli eventi.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendario]</td> 
@@ -518,7 +521,7 @@ Questo modulo di ricerca recupera un elenco di tutti i calendari dell’utente a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Calendar Group ID]</td> 
-   <td>Selezionare il gruppo di calendari  contenente i calendari da elencare.</td> 
+   <td>Selezionare il gruppo di calendari [!UICONTROL] contenente i calendari da elencare.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limite]</td> 
@@ -541,7 +544,7 @@ Questo modulo di azione modifica un calendario esistente.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID calendario]</td> 
-   <td>Immettere l'ID del calendario  per il calendario che si desidera aggiornare. </td> 
+   <td>Immettere l'ID del calendario [!UICONTROL] per il calendario che si desidera aggiornare. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nome nuovo calendario]</td> 

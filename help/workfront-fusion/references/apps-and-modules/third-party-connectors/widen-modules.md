@@ -5,19 +5,23 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
-TQID: https://experienceleague.adobe.com/joW38nxn0gj6qr1bd1RMS2RT2xOd2KgUsA-M8l57-ys
+TQID: 'https://experienceleague.adobe.com/joW38nxn0gj6qr1bd1RMS2RT2xOd2KgUsA-M8l57-ys'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1675'
 ht-degree: 30%
-
 ---
-
 # Moduli [!DNL Widen]
 
 In uno scenario di Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!UICONTROL Widen], nonché collegarli a più applicazioni e servizi di terze parti.
@@ -166,7 +170,7 @@ Questo modulo di azione aggiunge una o più risorse alle raccolte.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID Raccolte]</td> 
-   <td>Per ogni raccolta a cui si desidera aggiungere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta .</li> 
+   <td>Per ogni raccolta a cui si desidera aggiungere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta [!UICONTROL].</li> 
    </td> 
   </tr> 
   <tr> 
@@ -286,7 +290,7 @@ Questo modulo di azione rimuove una o più risorse dalle raccolte.
   <tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID Raccolte]</td> 
-   <td>Per ogni raccolta da cui si desidera rimuovere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta .</li> 
+   <td>Per ogni raccolta da cui si desidera rimuovere le risorse, fare clic su <strong>[ID raccolta]</strong> e immettere o mappare l'ID raccolta [!UICONTROL].</li> 
    </td> 
   </tr> 
   <tr> 
@@ -322,7 +326,7 @@ Questo modulo di azione aggiorna i campi di metadati di una risorsa.
    <td> <p>Seleziona il tipo di metadati per i metadati da aggiornare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
    <td>Seleziona i campi di metadati da aggiornare. Immettere il nuovo valore per ogni campo.</td> 
   </tr> 
   <tr> 
@@ -365,8 +369,8 @@ Questo modulo di azione carica un file nel tuo account [!DNL Widen].
    <td>Seleziona il tipo di metadati per il file da caricare.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Metadati di </td> 
-   <td>Seleziona i campi di metadati da includere nel caricamento del file. Per ogni campo, immettere il valore  per il campo.</td> 
+   <td role="rowheader">Metadati di [!UICONTROL]</td> 
+   <td>Seleziona i campi di metadati da includere nel caricamento del file. Per ogni campo, immettere il valore [!UICONTROL] per il campo.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -428,7 +432,7 @@ Questo modulo di ricerca recupera un elenco di risorse che corrispondono ai crit
   <td> <p>Per istruzioni sulla connessione dell'account [!DNL Widen] a Workfront Fusion, vedere <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Widen] a Workfront Fusion </a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Query di ricerca </td> 
+   <td role="rowheader">Query di ricerca [!UICONTROL]</td> 
    <td> <p>Inserire i criteri in base ai quali si desidera cercare le risorse.</p> </td> 
   </tr> 
   <tr> 

@@ -1,21 +1,24 @@
 ---
 title: Moduli Adobe Creative Cloud Libraries
-description: Con i moduli Libraries  [!DNL Adobe Workfront Fusion Adobe Creative Cloud] , puoi avviare uno scenario quando viene creato o aggiornato un elemento o una libreria. Puoi anche caricare, recuperare, archiviare o elencare elementi oppure effettuare una chiamata all'API  [!DNL Adobe Creative Cloud Libraries] .
+description: Con i moduli Librerie [!DNL Adobe Workfront Fusion Adobe Creative Cloud], puoi avviare uno scenario quando un elemento o una libreria viene creato o aggiornato. È inoltre possibile caricare, recuperare, archiviare o elencare elementi oppure effettuare una chiamata all'API [!DNL Adobe Creative Cloud Libraries].
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-TQID: https://experienceleague.adobe.com/uVGhNEE-KiHbnVa2ZbP5h2rsg5GO2b1uuAkfj8BIJRw
+TQID: 'https://experienceleague.adobe.com/uVGhNEE-KiHbnVa2ZbP5h2rsg5GO2b1uuAkfj8BIJRw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1418
+source-wordcount: '1420'
 ht-degree: 33%
-
 ---
-
 # Moduli Adobe Creative Cloud Libraries
 
 Con i moduli di Adobe Workfront Fusion [!DNL Adobe Creative Cloud Libraries], puoi avviare uno scenario quando viene creato o aggiornato un elemento o una libreria. È inoltre possibile caricare, recuperare, archiviare o elencare elementi oppure effettuare una chiamata all&#39;API [!DNL Adobe Creative Cloud Libraries].
@@ -115,7 +118,7 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 
 * [[!UICONTROL Carica un elemento]](#upload-an-element)
 
-* [[!UICONTROL [Guarda il nuovo elemento nella libreria]]](#watch-new-element-in-library)
+* [!UICONTROL [Guarda il nuovo elemento nella libreria]](#watch-new-element-in-library)
 
 * [[!UICONTROL Guarda gli elementi aggiornati]](#watch-updated-elements)
 
@@ -417,7 +420,7 @@ Questo modulo di azione carica una risorsa di file di piccole dimensioni in una 
       <td >Seleziona la libreria in cui desideri caricare una risorsa.</td>
     </tr>
     <tr>
-      <td role="rowheader">Modalità chiamata </td>
+      <td role="rowheader">Modalità chiamata [!UICONTROL]</td>
       <td>
         <p>Seleziona la modalità di elaborazione con cui richiamare il processo di richiesta.</p>
         <ul>
@@ -443,7 +446,7 @@ Questo modulo di azione carica una risorsa di file di piccole dimensioni in una 
       <td >Seleziona il tipo di elemento da caricare</td>
     </tr>
     <tr>
-      <td role="rowheader">Tipo di file </td>
+      <td role="rowheader">Tipo di file [!UICONTROL]</td>
       <td >Immetti o mappa il tipo MIME del file caricato.</td>
     </tr>
     <tr>

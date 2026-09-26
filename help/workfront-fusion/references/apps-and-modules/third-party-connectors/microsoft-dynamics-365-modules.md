@@ -4,21 +4,25 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-TQID: https://experienceleague.adobe.com/hugbkrxjvBcwIiPQMfM9VIcRby-zpFK6U5hRmrF38Lc
+TQID: 'https://experienceleague.adobe.com/hugbkrxjvBcwIiPQMfM9VIcRby-zpFK6U5hRmrF38Lc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1886
+source-wordcount: '1886'
 ht-degree: 44%
-
 ---
-
 # [!DNL Microsoft Dynamics 365 modules]
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Microsoft Dynamics 365], nonché collegarli a più applicazioni e servizi di terze parti.
@@ -250,7 +254,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td>Selezionare i campi per i quali si desidera includere i valori al momento della creazione del record. I campi disponibili dipendono dal tipo di entità.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Campi proprietà </td> 
+   <td role="rowheader">Campi proprietà [!UICONTROL]</td> 
    <td> Questi sono i campi selezionati. Immettere il valore desiderato per il record per una determinata proprietà. </td> 
   </tr> 
  </tbody> 
@@ -389,7 +393,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
    <td>Selezionare i campi per i quali si desidera includere i valori al momento della creazione del record. I campi disponibili dipendono dal tipo di entità.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Campi proprietà </td> 
+   <td role="rowheader">Campi proprietà [!UICONTROL]</td> 
    <td>Questi sono i campi selezionati. Immettere il valore desiderato per il record per una determinata proprietà.</td> 
   </tr> 
   <tr data-mc-conditions=""> 

@@ -4,19 +4,28 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-TQID: https://experienceleague.adobe.com/SZwX0GVZYFlIudwirqN6ne-W8mEoXHC-WKI8JFnbzrA
+TQID: 'https://experienceleague.adobe.com/SZwX0GVZYFlIudwirqN6ne-W8mEoXHC-WKI8JFnbzrA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2709
+source-wordcount: '2709'
 ht-degree: 17%
-
 ---
-
 # Moduli [!DNL Microsoft Office 365 Excel]
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Microsoft 365 Excel], nonché collegarli a più applicazioni e servizi di terze parti.
@@ -479,7 +488,7 @@ Questo modulo modifica una tabella esistente.
    <td> <p>Selezionare il foglio di lavoro contenente la tabella in cui si desidera aggiungere una riga.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >Tabella </td>
+    <td role="rowheader" >Tabella [!UICONTROL]</td>
    <td>Selezionare la tabella in cui si desidera aggiungere una riga.</td> 
   </tr> 
   <tr>
@@ -564,7 +573,7 @@ Questo modulo di ricerca recupera un elenco di tutte le righe di tabella in una 
    <td> <p>Selezionare il foglio di lavoro contenente la tabella che include le righe da elencare</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >Tabella  </td>
+    <td role="rowheader" >Tabella [!UICONTROL] </td>
    <td> <p>Selezionare la tabella contenente le righe da elencare.</p> </td> 
   </tr> 
   <tr> 
@@ -667,7 +676,7 @@ Questo trigger avvia uno scenario quando viene aggiunta una nuova riga a una tab
    <td> <p> Selezionare il foglio di lavoro contenente la tabella che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Tabella </p> </td> 
+   <td role="rowheader"> <p>Tabella [!UICONTROL]</p> </td> 
    <td> <p>Selezionare la tabella che si desidera controllare.</p> </td> 
   </tr> 
   <tr> 

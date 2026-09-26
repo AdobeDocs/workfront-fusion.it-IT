@@ -4,16 +4,18 @@ description: L'app Adobe Workfront Fusion [!UICONTROL JWT] fornisce un modulo ch
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-TQID: https://experienceleague.adobe.com/90zhDiLzi34ES2MPE-hg26mmSHZ-XQIgZJIFeW4vwy4
+TQID: 'https://experienceleague.adobe.com/90zhDiLzi34ES2MPE-hg26mmSHZ-XQIgZJIFeW4vwy4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 528
+source-wordcount: '528'
 ht-degree: 18%
-
 ---
-
 # Modulo [!UICONTROL JWT]
 
 L&#39;app Adobe Workfront Fusion [!UICONTROL JWT] fornisce un modulo che crea i token JWT in base all&#39;algoritmo fornito.
@@ -92,7 +94,7 @@ Questo modulo genera un JWT basato sull’algoritmo selezionato.
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Payload  </td> 
+   <td role="rowheader">Payload [!UICONTROL] </td> 
    <td> <p>Per ogni elemento del payload che si desidera aggiungere, fare clic su <b>Aggiungi elemento</b> e immettere la chiave e il valore dell'elemento.</p> </td> 
   </tr> 
   <tr> 

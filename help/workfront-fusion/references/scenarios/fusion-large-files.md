@@ -4,16 +4,18 @@ description: Il supporto per file di grandi dimensioni è attualmente disponibil
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-TQID: https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc
+TQID: 'https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1060
+source-wordcount: '1075'
 ht-degree: 6%
-
 ---
-
 # Lavorare con file di grandi dimensioni
 
 >[!IMPORTANT]
@@ -34,26 +36,26 @@ Attualmente, i seguenti connettori supportano file di grandi dimensioni.
 >* I moduli che non supportano file di grandi dimensioni possono elaborare file fino a 200 MB.
 
 * Workfront
-   * Carica documento
-   * Scarica Documento
+  * Carica documento
+  * Scarica Documento
 * Adobe Experience Manager Assets
-   * Carica documento
+  * Carica documento
 * Workfront Proof
-   * Carica file
-   * Scarica bozza
+  * Carica file
+  * Scarica bozza
 * Adobe Authenticator
-   * Effettuare una chiamata API personalizzata
+  * Effettuare una chiamata API personalizzata
 * Adobe Photoshop
-   * Applica modifiche PSD
+  * Applica modifiche PSD
 * SharePoint
-   * Creare un file
-   * Crea un file (legacy)
-   * Ottieni un file
+  * Creare un file
+  * Crea un file (legacy)
+  * Ottieni un file
 * Salesforce
-   * Carica file
+  * Carica file
 * AWS S3
-   * Carica file
-   * Ottieni file
+  * Carica file
+  * Ottieni file
 * HTTP
 
 Altri connettori saranno supportati nelle versioni future.

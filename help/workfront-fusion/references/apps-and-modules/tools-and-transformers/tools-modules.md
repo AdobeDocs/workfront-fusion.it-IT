@@ -1,19 +1,21 @@
 ---
 title: Strumenti
-description: La sezione  [!DNL Adobe Workfront Fusion Tools]  include diversi moduli utili che possono migliorare il tuo scenario.
+description: La sezione [!DNL Adobe Workfront Fusion Tools] include diversi moduli utili che possono migliorare il tuo scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-TQID: https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o
+TQID: 'https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2289
+source-wordcount: '2290'
 ht-degree: 4%
-
 ---
-
 # [!UICONTROL Strumenti]
 
 La sezione [!DNL Adobe Workfront Fusion Tools] include diversi moduli utili che possono migliorare il tuo scenario.
@@ -270,7 +272,7 @@ Questo modulo consente di recuperare i valori numerici, applicare una delle funz
    <td> <p>Seleziona il modulo da cui desideri aggregare i campi.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>Funzione di aggregazione </p> </td> 
+   <td> <p>Funzione di aggregazione [!UICONTROL]</p> </td> 
    <td> <p>Selezionare la funzione da utilizzare per aggregare i valori.</p> </td> 
   </tr> 
   <tr> 

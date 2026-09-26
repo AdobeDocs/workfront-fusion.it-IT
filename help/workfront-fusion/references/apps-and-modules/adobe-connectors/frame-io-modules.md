@@ -1,21 +1,24 @@
 ---
 title: Moduli Frame.io (legacy)
-description: I [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] account.
+description: I moduli [!DNL Adobe Workfront Fusion Frame].io ti consentono di monitorare, creare, aggiornare, recuperare o eliminare risorse e commenti nel tuo account [!DNL Frame.io].
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-TQID: https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4
+TQID: 'https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2664
+source-wordcount: '2681'
 ht-degree: 44%
-
 ---
-
 # [!DNL Frame.io] moduli legacy
 
 >[!IMPORTANT]
@@ -240,7 +243,7 @@ Questo modulo di azione crea una nuova risorsa.
    <td> <p>Se crei un file, immetti una breve descrizione della risorsa.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Etichetta  </td> 
+   <td role="rowheader">Etichetta [!UICONTROL] </td> 
    <td> <p>In caso di creazione di un file, selezionare se il file è in corso, se deve essere esaminato o se è approvato.</p> </td> 
   </tr> 
  </tbody> 

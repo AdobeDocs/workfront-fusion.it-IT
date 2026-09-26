@@ -1,22 +1,26 @@
 ---
 title: Moduli Adobe Target
-description: In uno scenario di Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano  [!DNL Adobe Target], as well as connect it to multiple third-party applications and services. [!DNL Adobe Target] moduli per creare, leggere, aggiornare o eliminare record, elencare tutti i record di un determinato tipo, cercare i record in base ai criteri specificati o eseguire una chiamata API personalizzata all'API [!DNL Adobe Target] API.
+description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Target], nonché collegarli a più applicazioni e servizi di terze parti. I moduli [!DNL Adobe Target] consentono di creare, leggere, aggiornare o eliminare record, elencare tutti i record di un determinato tipo, cercare i record in base ai criteri specificati o eseguire una chiamata API personalizzata all'API [!DNL Adobe Target].
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
+TQID: 'https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2370
-ht-degree: 31%
-
+source-wordcount: '2384'
+ht-degree: 32%
 ---
-
 # [!DNL Adobe Target] moduli
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL Adobe Target], nonché collegarli a più applicazioni e servizi di terze parti. I moduli [!DNL Adobe Target] consentono di creare, leggere, aggiornare o eliminare record, elencare tutti i record di un determinato tipo, cercare i record in base ai criteri specificati o eseguire una chiamata API personalizzata all&#39;API [!DNL Adobe Target].

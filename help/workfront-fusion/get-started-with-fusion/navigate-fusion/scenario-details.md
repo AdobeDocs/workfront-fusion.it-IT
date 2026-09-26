@@ -4,16 +4,18 @@ description: Dettagli dello scenario in Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-TQID: https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q
+TQID: 'https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 576
+source-wordcount: '576'
 ht-degree: 18%
-
 ---
-
 # Panoramica dei dettagli delllo scenario
 
 La pagina dei dettagli dello scenario è la home page di uno scenario specifico. Consente di accedere a informazioni specifiche per lo scenario rappresentato nella pagina.
@@ -72,11 +74,11 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
       <td>Questa scheda visualizza la rappresentazione visiva dello scenario. Il diagramma è lo stesso visualizzato nell’editor di scenari.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Scheda Rapporti di  </td> 
+      <td role="rowheader">Scheda Rapporti di [!UICONTROL] </td> 
       <td> <p>Apri questa scheda per visualizzare un grafico del numero di operazioni eseguite da questo scenario per gli ultimi 30 giorni.</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Scheda Cronologia di  </td> 
+      <td role="rowheader">Scheda Cronologia di [!UICONTROL] </td> 
       <td> <p>Apri questa scheda per visualizzare una cronologia dello scenario, incluse le modifiche apportate allo scenario. </p> <p>La scheda [!UICONTROL Cronologia] fornisce inoltre la cronologia di esecuzione di ogni esecuzione, che include quanto segue:</p> 
        <ul> 
         <li>Stato di ciascuna esecuzione (riuscita o errore)</li> 
@@ -120,7 +122,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
       <td>Questa area mostra informazioni relative all’esecuzione attualmente in esecuzione.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>Pannello Cronologia di </p> <p> </p> </td> 
+      <td role="rowheader"> <p>Pannello Cronologia di [!UICONTROL]</p> <p> </p> </td> 
       <td> <p>In quest'area vengono visualizzate informazioni relative alle ultime esecuzioni dello scenario. Per ogni esecuzione viene visualizzato:</p> 
        <ul> 
         <li>Data di esecuzione</li> 

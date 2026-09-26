@@ -4,18 +4,21 @@ description: Un archivio dati di Adobe Workfront Fusion, simile a un database o 
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
+TQID: 'https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1139
+source-wordcount: '1139'
 ht-degree: 30%
-
 ---
-
 # [!UICONTROL Moduli archivio dati]
 
 Un archivio dati di Adobe Workfront Fusion, simile a un database o a una semplice tabella, può memorizzare i dati di scenari, rendendo possibile il trasferimento di dati tra scenari singoli o tra esecuzioni di scenari singoli. È possibile utilizzare un archivio dati per memorizzare nuovi dati provenienti da vari sistemi durante la sincronizzazione.
@@ -104,7 +107,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 
@@ -133,7 +136,7 @@ Specificare l&#39;archivio dati e la chiave del record.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -156,7 +159,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati contenente i record che si desidera conteggiare.</p> </td> 
   </tr> 
  </tbody> 
@@ -175,7 +178,7 @@ Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati che si desidera verificare per verificare l'esistenza del record.</p> </td> 
   </tr> 
   <tr> 
@@ -196,7 +199,7 @@ Specifica l’archivio dati.
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati  </td> 
+   <td>Archivio dati [!UICONTROL] </td> 
    <td> <p>Selezionare l'archivio dati da cui si desidera eliminare tutti i record.</p> </td> 
   </tr> 
  </tbody> 
@@ -215,7 +218,7 @@ Il modulo restituisce l’ID del record e gli eventuali campi associati, insieme
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare l'archivio dati da cui si desidera recuperare un record</p> </td> 
   </tr> 
   <tr> 
@@ -238,7 +241,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Seleziona l’archivio dati in cui desideri eseguire la ricerca.</p> </td> 
   </tr> 
   <tr> 
@@ -275,7 +278,7 @@ Durante la configurazione di questo modulo, vengono visualizzati i seguenti camp
  <col> 
  <tbody> 
   <tr> 
-   <td>Archivio dati </td> 
+   <td>Archivio dati [!UICONTROL]</td> 
    <td> <p> Selezionare o aggiungere l'archivio dati in cui si desidera creare un record. </p> </td> 
   </tr> 
   <tr> 

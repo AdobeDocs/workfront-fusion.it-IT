@@ -4,18 +4,21 @@ description: In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi
 author: Becky
 feature: Workfront Fusion
 exl-id: c8138d82-fa5a-4e69-b3cb-aa232099cb33
-TQID: https://experienceleague.adobe.com/1k6WyDRiula-WnmQkPxPSeASokz25JpE4dp1eeSo7K8
+TQID: 'https://experienceleague.adobe.com/1k6WyDRiula-WnmQkPxPSeASokz25JpE4dp1eeSo7K8'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1458
+source-wordcount: '1458'
 ht-degree: 28%
-
 ---
-
 # Moduli [!DNL OpenAI (ChatGPT & DALL-E)]
 
 In uno scenario Adobe Workfront Fusion, puoi automatizzare i flussi di lavoro che utilizzano [!DNL OpenAI (ChatGPT & DALL-E)], nonché collegarli a più applicazioni e servizi di terze parti.
@@ -201,7 +204,7 @@ Questo modulo di azione restituisce una versione modificata di un prompt fornito
    <td> Immettere o mappare il testo da modificare. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Istruzione </td> 
+   <td role="rowheader">Istruzione [!UICONTROL]</td> 
    <td> Immetti o mappa le istruzioni per la modifica. Esempio: "Correggi gli errori di ortografia". </td> 
   </tr> 
   <tr> 

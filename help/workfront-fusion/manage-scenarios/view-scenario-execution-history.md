@@ -4,16 +4,18 @@ description: È possibile visualizzare informazioni sugli eventi o sulle esecuzi
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
+TQID: 'https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 915
+source-wordcount: '915'
 ht-degree: 12%
-
 ---
-
 # Visualizzare la cronologia delle esecuzioni di uno scenario
 
 È possibile visualizzare informazioni sugli eventi o sulle esecuzioni di uno scenario oppure cercare dati specifici in tutte le esecuzioni dello scenario.
@@ -144,7 +146,7 @@ You can sort the scenario execution history.
    Oppure
 
    Digitare **Ctrl+Maiusc+F** (Windows) o **Cmd+Maiusc+F** (Mac)
-Viene visualizzata la finestra [!UICONTROL Cerca nella cronologia].
+   Viene visualizzata la finestra [!UICONTROL Cerca nella cronologia].
 
 1. (Facoltativo) Per cercare esecuzioni contenenti testo specifico, immettere il testo nella barra di ricerca della finestra **[!UICONTROL Cerca nella cronologia]**.
 
