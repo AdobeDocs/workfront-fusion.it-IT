@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e84d0b7b77dd55c6f045c0b8d4d13aa16bfd29e6
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 99%
+source-wordcount: '2657'
+ht-degree: 86%
 ---
 # Moduli [!DNL Marketo]
 
@@ -214,9 +214,12 @@ Questo modulo di attivazione avvia uno scenario quando viene creato o aggiornato
 
 * [[!UICONTROL Aggiungi lead a un elenco]](#add-leads-to-a-list)
 * [[!UICONTROL Clona un programma]](#clone-a-program)
+* [[!UICONTROL Crea un processo di estrazione in blocco]](#create-a-bulk-extract-job)
 * [[!UICONTROL Crea un record]](#create-a-record)
 * [[!UICONTROL Chiamata API personalizzata]](#custom-api-call)
+* [[!UICONTROL Scarica un file di estrazione in blocco]](#download-a-bulk-extract-file)
 * [[!UICONTROL Scarica un file]](#download-a-file)
+* [[!UICONTROL Ottieni stato processo estrazione in blocco]](#get-bulk-extract-job-status)
 * [[!UICONTROL Leggi un record]](#read-a-record)
 * [[!UICONTROL Rimuovi lead da un elenco]](#remove-leads-from-a-list)
 * [[!UICONTROL Pianifica una campagna]](#schedule-a-campaign)
@@ -269,6 +272,45 @@ Questo modulo di azione crea una copia di un programma utilizzando l’ID del pr
   <tr> 
    <td role="rowheader">[!UICONTROL ID cartella]</td> 
    <td>Inserisci oppure mappa l’ID della cartella in cui desideri posizionare il nuovo programma.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Crea un processo di estrazione in blocco]
+
+Questo modulo di azione crea un processo di estrazione in blocco per i record Lead e Persona. Utilizza [!UICONTROL Ottieni stato processo di estrazione in blocco] per controllare il processo, quindi [!UICONTROL Scarica un file di estrazione in blocco] per recuperare l&#39;esportazione completata. Questo modulo restituisce l’ID esportazione utilizzato dai moduli di stato e download.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connessione]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’account [!DNL Marketo] a Workfront Fusion, consulta <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Marketo] a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Campi]</td> 
+   <td> <p>Per ogni campo da aggiungere al processo di estrazione in blocco, fare clic su <b>Aggiungi elemento</b> e immettere il nome API del campo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Formato di output]</td> 
+   <td> <p>Selezionare il formato di file per l'estrazione: CSV, TSV o SSV.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Filtra per]</td> 
+   <td> <p>Seleziona il filtro per questo modulo, quindi immetti le informazioni richieste nei campi visualizzati:</p>
+   <ul> 
+    <li> <p><strong>[!UICONTROL Elenco Avanzato]</strong> </p> <p>Immetti o mappa l’ID dell’elenco avanzato.</p> </li> 
+    <li> <p><strong>[!UICONTROL Intervallo date creato]</strong> </p> <p>Selezionare le date di inizio e di fine in cui si desidera eseguire la ricerca.</p> </li> 
+   </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Intestazioni di colonna personalizzate]</td> 
+   <td> <p>Per ogni intestazione di colonna personalizzata che si desidera includere nel processo di estrazione, fare clic su <b>Aggiungi elemento</b> e immettere il nome API del campo e il testo dell'intestazione di colonna.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Accoda immediatamente il processo]</td> 
+   <td> <p>Selezionare Sì per accodare il processo in modo che venga eseguito immediatamente dopo la creazione. Selezionare No per accodare il processo in un secondo momento con un passaggio separato.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,6 +404,33 @@ Questo modulo di azione consente di effettuare una chiamata autenticata personal
    <td role="rowheader">[!UICONTROL Campi]</td> 
    <td> <p>Per ogni campo che desideri aggiungere alla chiamata API, fai clic su <b>Aggiungi elemento</b> e inserisci la chiave e il valore del campo.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body Type]</td> 
+   <td> <p>Selezionare il formato del corpo della richiesta: <b>[!UICONTROL URL-encoded (Fields)]</b> o <b>[!UICONTROL JSON]</b>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Request Body (JSON)]</td> 
+   <td> <p>Utilizzato solo quando [!UICONTROL Body Type] è impostato su [!UICONTROL JSON]. Inserisci un corpo JSON non elaborato.</p> <p>Importante: quando si utilizza JSON, modificare l'intestazione [!UICONTROL Content-Type] in alto da <code>application/x-www-form-urlencoded</code> a <code>application/json</code>, altrimenti Marketo potrebbe rifiutare la richiesta.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Scarica un file di estrazione in blocco]
+
+Questo modulo di azione recupera il file per un processo di estrazione in blocco completato.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connessione]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’account [!DNL Marketo] a Workfront Fusion, consulta <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Marketo] a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID esportazione]</td> 
+   <td>Immetti o mappa l’ID del processo di estrazione in blocco per il quale desideri scaricare il file.</td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -380,6 +449,25 @@ Questo modulo di azione scarica un file utilizzando l’ID file.
   <tr> 
    <td role="rowheader">[!UICONTROL ID file]</td> 
    <td>Inserisci oppure mappa l’ID del file che desideri scaricare.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Ottieni stato processo estrazione in blocco]
+
+Questo modulo di azione recupera lo stato di un processo di estrazione in blocco utilizzando il relativo ID processo.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connessione]</p> </td> 
+   <td> <p>Per istruzioni sulla connessione dell’account [!DNL Marketo] a Workfront Fusion, consulta <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connettere [!DNL Marketo] a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID esportazione]</td> 
+   <td>Immetti o mappa l’ID del processo di estrazione in blocco di cui desideri controllare lo stato.</td> 
   </tr> 
  </tbody> 
 </table>
