@@ -1,9 +1,9 @@
 ---
 title: Strumenti server Adobe Workfront Fusion MCP
 description: Elenco di riferimento degli strumenti esposti dal server MCP di Adobe Workfront Fusion alle piattaforme AI e a Coworker.
-source-git-commit: 322a34df48a5218bc045e6cac6a5a8b3837e8c2e
+source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1162'
 ht-degree: 7%
 ---
 
@@ -175,4 +175,5 @@ Tutti gli strumenti in questo articolo sono disponibili in Collaboratore, sia si
 ## Come vengono aggiornati gli strumenti
 
 Quando Adobe rilascia una nuova versione del server Fusion MCP, gli agenti collegati raccolgono automaticamente il set di strumenti aggiornato. Non è necessario riconnettersi.
+
 
