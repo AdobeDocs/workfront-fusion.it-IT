@@ -1388,7 +1388,7 @@ Per configurare il webhook per il modulo Osserva eventi di approvazione:
       <td>Selezionare il tipo di record di approvazione che si desidera controllare nel modulo.</td> 
      </tr> 
      <tr> 
-      <td>Tipo di configurazione [!UICONTROL]</td> 
+      <td>Tipo di configurazione </td> 
       <td>Seleziona se desideri utilizzare un filtro semplice o avanzato.<p>Per informazioni sui filtri semplici o avanzati, vedere <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">Utilizzo di filtri avanzati</a> nell'articolo dei moduli di Workfront.</p></td> 
      </tr> 
      <tr> 
