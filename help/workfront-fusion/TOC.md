@@ -3,9 +3,9 @@ user-guide-title: Documentazione di Adobe Workfront Fusion
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Utilizza documenti, tutorial e risorse aggiuntive per scoprire come implementare e utilizzare in modo efficace Adobe Workfront Fusion nella tua organizzazione.
 nudge: true
-source-git-commit: 740f7e0e96d0eb4e6290f42f52b75eb64de791dc
+source-git-commit: 9e08c421a53c7ca499715fa8e32be6c10fbde1d9
 workflow-type: tm+mt
-source-wordcount: '2710'
+source-wordcount: '2715'
 ht-degree: 48%
 ---
 
@@ -415,6 +415,7 @@ ht-degree: 48%
       * [Moduli Adobe Journey Optimizer](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
       * [Moduli Adobe Lightroom](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
       * [Moduli Adobe Marketo](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
+      * [Modulo MCP Adobe Marketo Engage](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md)
       * [Moduli Adobe PDF Services](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
       * [Moduli Adobe Photoshop](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
       * [Moduli Adobe Substance](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
