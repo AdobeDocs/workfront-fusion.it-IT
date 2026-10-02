@@ -243,6 +243,6 @@ Poiché ogni esecuzione è indipendente, l’intelligenza artificiale non dispon
 ## Reference links used while compiling this
 
 * Adobe Marketo Engage MCP server (developer documentation):
-  https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server
+  https://experienceleague.adobe.com/it/docs/marketo-developer/marketo/mcp-server
 
   -->
