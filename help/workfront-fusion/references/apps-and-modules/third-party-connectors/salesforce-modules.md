@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 08224dc1e04d56e422cb177c65efadf5db71b136
 workflow-type: tm+mt
-source-wordcount: '3056'
+source-wordcount: '3078'
 ht-degree: 34%
 ---
 # Moduli [!DNL Salesforce]
@@ -115,6 +115,13 @@ Per ulteriori informazioni sulle possibilità di ricerca, vedere la documentazio
 ## Creare una connessione ad [!DNL Salesforce]
 
 Per creare una connessione per i moduli [!DNL Salesforce], è possibile eseguire l&#39;autenticazione utilizzando OAuth 2 o PKCE.
+
+>[!NOTE]
+>
+>Se si esegue l&#39;autenticazione con PKCE, in Salesforce devono essere abilitati i seguenti ambiti.
+>
+>* Accesso completo: `full`
+>* Eseguire le richieste in qualsiasi momento: `refresh_token`, `offline_access`
 
 1. In qualsiasi modulo di [!DNL Salesforce], fai clic su **[!UICONTROL Aggiungi]** accanto alla casella Connessione.
 
