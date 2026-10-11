@@ -4,7 +4,7 @@ description: Il modulo di richiesta Adobe Workfront Fusion HTTP > Make a JWT inv
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f8c0b0d-085a-4b49-b350-4fd4cca1d0a7
-TQID: 'https://experienceleague.adobe.com/'
+TQID: 'https://experienceleague.adobe.com/it'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
