@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e3b9a5e08e78c9ddd4829ab288c353a058409a5c
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 19%
+source-wordcount: '1194'
+ht-degree: 16%
 ---
 # [!UICONTROL HTTP] > [!UICONTROL Richiedi un modulo]
 
@@ -128,6 +128,14 @@ Quando configuri il modulo [!UICONTROL HTTP] > [!UICONTROL Effettua una richiest
   <tr> 
    <td role="rowheader">[!UICONTROL Timeout] </td> 
    <td> <p>Specifica il timeout della richiesta in secondi (1-300). Il valore predefinito è 40 secondi.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL - Conteggio tentativi]</td> 
+   <td> <p>Specificare il numero di tentativi di richiesta in caso di errori di connessione (ETIMEDOUT, ECONNRESET, EPROTO). Il valore predefinito è 3. Imposta su 0 per disabilitare i nuovi tentativi.</p> <p>Questa impostazione ha effetto solo quando [!UICONTROL Valuta tutti gli stati come errori] è abilitato.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Codici di stato dei tentativi aggiuntivi]</td> 
+   <td> <p>Specificare codici di stato HTTP aggiuntivi da considerare come ripetibili quando [!UICONTROL Valuta tutti gli stati come errori] è abilitato. Per impostazione predefinita, solo 408, 429 e tutti i codici 5xx possono essere ripetuti.</p> <p>Quando si aggiunge un codice di stato a questo campo, si verifica un errore di connessione ripetibile e vengono attivati nuovi tentativi in base all'impostazione [!UICONTROL Conteggio tentativi]. I codici di stato non elencati mantengono il comportamento predefinito. I codici che di solito non sono ripetibili, come 404 o 422, possono essere resi ripetibili aggiungendoli qui.</p> <p><b>Esempio:</b> se si abilita [!UICONTROL Valuta tutti gli stati come errori], si imposta [!UICONTROL Conteggio tentativi] su 4 e si aggiunge 422 a questo campo, una risposta HTTP 422 verrà trattata come ripetibile e verrà eseguito un nuovo tentativo come altri errori del tipo di connessione.</p> <p><b>Nota:</b> l'impostazione [!UICONTROL Timeout] controlla il tempo di attesa di ogni tentativo. Non definisce una pausa tra nuovi tentativi. Questa impostazione ha effetto solo quando [!UICONTROL Valuta tutti gli stati come errori] è abilitato.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Condividi i cookie con altri moduli HTTP]</td> 

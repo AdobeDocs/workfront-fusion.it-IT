@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 50583b23190de0fee568f020722482d8e9aed76b
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '639'
 ht-degree: 24%
 ---
 # HTTP > Altri moduli
@@ -80,6 +80,7 @@ Per informazioni sulle licenze di Adobe Workfront Fusion, consulta [Licenze di A
 Per istruzioni specifiche sul modulo di richiesta, consulta i seguenti articoli:
 
 * [[!UICONTROL HTTP] > [!UICONTROL Richiedi un modulo]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Crea una richiesta JWT] modulo](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
 * [Modulo [!UICONTROL HTTP] > [!UICONTROL Effettua una richiesta di autorizzazione di base]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [Modulo [!UICONTROL HTTP] > [!UICONTROL Effettua una richiesta OAuth 2.0]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [Modulo [!UICONTROL HTTP] > [!UICONTROL Effettua una richiesta di autorizzazione con certificato client]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
