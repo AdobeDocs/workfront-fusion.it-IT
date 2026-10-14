@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 7c25013f7a94000651e8331199ad985d40651ae3
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 26%
+source-wordcount: '2637'
+ht-degree: 16%
 ---
 # Moduli AWS S3
 
@@ -88,6 +88,195 @@ Il connettore AWS S3 utilizza quanto segue:
 
 ## Connettere [!DNL AWS] a Workfront Fusion {#connect-aws-to-workfront-fusion}
 
+* [Connettere AWS a Workfront Fusion utilizzando una connessione federata](#connect-aws-to-workfront-fusion-using-a-federated-connection)
+* [Connettere AWS a Workfront Fusion utilizzando un utente API](#connect-aws-to-workfront-fusion-using-an-api-user)
+
+### Connettere AWS a Workfront Fusion utilizzando una connessione federata
+
++++ Espandere per visualizzare le istruzioni per questo tipo di connessione.
+
+* [Prerequisiti per la connessione di AWS a Workfront Fusion tramite una connessione federata](#prerequisites-to-connecting-aws-to-workfront-fusion-using-a-federated-connection)
+* [Aggiungere Workfront Fusion come provider di identità in AWS](#add-workfront-fusion-as-an-identity-provider-in-aws)
+* [Creare il ruolo IAM](#create-the-iam-role)
+* [Creare la connessione in Workfront Fusion](#create-the-connection-in-workfront-fusion)
+* [Aggiungere la connessione al criterio di attendibilità del ruolo](#add-the-connection-to-the-roles-trust-policy)
+* [Verificare la connessione](#verify-the-connection)
+* [Risoluzione dei problemi](#troubleshooting)
+
+Una connessione federata consente a Workfront Fusion di accedere all’account AWS senza dover creare un utente IAM o archiviare una chiave di accesso in Fusion.
+Al contrario, si registra Workfront Fusion come provider di identità attendibile nell&#39;account AWS e si configura quale singola connessione Fusion è autorizzata a utilizzare un particolare ruolo IAM. Quando la connessione viene eseguita, Fusion presenta una prova di identità di breve durata e AWS restituisce credenziali temporanee che scadono autonomamente. Non viene mai creata, memorizzata o ruotata alcuna chiave di lunga durata.
+
+>[!NOTE]
+>
+>La configurazione di questa connessione richiede due visite alla console AWS. È innanzitutto necessario creare il ruolo, quindi creare la connessione in Workfront Fusion, quindi tornare ad AWS per completare il criterio di attendibilità. Questo perché parte del criterio di attendibilità identifica una connessione specifica e tale identificatore non esiste finché non viene creata la connessione.
+
+#### Prerequisiti per la connessione di AWS a Workfront Fusion tramite una connessione federata
+
+Per creare questa connessione, è necessario disporre dei seguenti elementi:
+
+* Autorizzazione in AWS IAM per creare un provider di identità e per creare e modificare ruoli. Questo di solito significa la polizza o equivalente. Se non disponi di questo accesso, chiedi a qualcuno sul tuo cloud o
+team di sicurezza per completare i passaggi di AWS.
+* Possibilità di creare connessioni in Workfront Fusion.
+
+
+#### Aggiungere Workfront Fusion come provider di identità in AWS
+
+Questo passaggio indica ad AWS che i token rilasciati da Workfront Fusion possono essere considerati attendibili. Puoi eseguire questa operazione una volta per ogni account AWS. Se un utente dell&#39;organizzazione ha già aggiunto questo provider, passa a [Crea il ruolo IAM](#create-the-iam-role).
+
+1. Accedi alla console AWS e passa a **IAM** > **Provider di identità**.
+1. Selezionare **Aggiungi provider**.
+1. Per Tipo provider, selezionare **Connessione OpenID**.
+1. Nell&#39;URL del provider, immetti quanto segue, quindi seleziona **Ottieni identificazione personale**:
+
+   ```
+   https://oidc.automations.adobe.com
+   ```
+
+1. In Pubblico, immetti quanto segue:
+
+   ```
+   sts.amazonaws.com
+   ```
+
+1. Selezionare **Aggiungi provider**.
+1. Continuare a [Creare il ruolo IAM](#create-the-iam-role).
+
+#### Creare il ruolo IAM
+
+Il ruolo definisce l’operazione che la connessione può eseguire nell’account AWS. È possibile creare un ruolo per ogni connessione, in modo che l&#39;accesso di ogni connessione possa essere concesso e revocato in modo indipendente.
+
+1. In IAM, vai a **Ruoli** e seleziona **Crea ruolo**.
+1. Per Tipo di entità attendibile, selezionare **Identità Web**.
+1. Nel provider di identità, selezionare `oidc.automations.adobe.com`.
+1. In Pubblico, selezionare `sts.amazonaws.com`.
+1. Seleziona **Avanti**, quindi allega i criteri di autorizzazione necessari per la connessione.
+Concedi solo le autorizzazioni effettivamente utilizzate dalla connessione. Ad esempio, una connessione che legge solo da
+per un bucket non è necessario `AmazonS3FullAccess`.
+1. Assegna al ruolo un nome chiaro e riconoscibile. Ad esempio, `WorkfrontFusionFederatedConnection`.
+1. Seleziona **Crea ruolo**.
+1. Aprire il ruolo appena creato e copiare il relativo ARN dall&#39;area Riepilogo. Si presenta così: `arn:aws:iam::123456789012:role/WorkfrontFusionFederatedConnection`
+
+1. Continua con [Crea la connessione in Workfront Fusion](#create-the-connection-in-workfront-fusion).
+
+#### Creare la connessione in Workfront Fusion
+
+1. Nella schermata di configurazione della connessione del modulo, seleziona il tipo di connessione federata.
+1. Immettere il ruolo ARN copiato in [Creare il ruolo IAM](#create-the-iam-role).
+1. Seleziona **Crea**.
+In Workfront Fusion vengono visualizzati tre valori. Utilizzale nella procedura successiva.
+
+<table>
+  <tr>
+    <td>Emittente</td>
+    <td>Sempre <code>https://oidc.automations.adobe.com</code>. Corrisponde al provider di identità aggiunto in AWS.</td>
+  </tr>
+  <tr>
+    <td>Soggetto</td>
+    <td>Identifica questa connessione. È <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>. È diversa per ogni connessione creata.</td>
+  </tr>
+  <tr>
+    <td>Pubblico</td>
+    <td>Sempre <code>sts.amazonaws.com</code>.</td>
+  </tr>
+</table>
+
+1. Lasciate aperto questo pannello e copiate il valore Oggetto.
+
+   >[!NOTE]
+   >
+   >Non chiudere il pannello e non selezionare Annulla. La connessione non viene completata fino a quando non vengono completate le procedure rimanenti. Se chiudi il pannello, devi eliminare la connessione e riavviarla, perché a una nuova connessione viene assegnato un nuovo Oggetto.
+
+1. Continua con [Aggiungi la connessione al criterio di attendibilità del ruolo](#add-the-connection-to-the-roles-trust-policy).
+
+#### Aggiungere la connessione al criterio di attendibilità del ruolo
+
+Fino a quando non si completa questa procedura, il ruolo considera attendibile Workfront Fusion in generale, ma non consente ancora l&#39;utilizzo di questa connessione specifica.
+
+1. In una nuova scheda del browser, torna alla console AWS e apri il ruolo creato.
+1. Selezionare la scheda **Relazioni di trust**, quindi selezionare **Modifica criterio di attendibilità**.
+1. Sostituisci il criterio con il seguente, sostituendo i tuoi valori:
+
+   * Sostituisci `123456789012` con il tuo ID account AWS
+   * Sostituire il valore `sub` con l&#39;oggetto copiato da Workfront Fusion.
+
+
+   ```
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Effect": "Allow", 
+         "Principal": {
+           "Federated": "arn:aws:iam::123456789012:oidc-provider/oidc.automations.adobe.com"
+       },
+       "Action": "sts:AssumeRoleWithWebIdentity", "Condition": {
+        "StringEquals": {
+          "oidc.automations.adobe.com:sub": "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", 
+          "oidc.automations.adobe.com:aud": "sts.amazonaws.com"
+        }
+       }
+      }
+    ]
+   }
+   ```
+
+1. Seleziona **Aggiorna criterio**.
+1. Continua con [Verifica la connessione](#verify-the-connection).
+
+>[!TIP]
+>
+>Per consentire a più connessioni di utilizzare lo stesso ruolo, elencare i soggetti come un array. AWS consente di utilizzare il ruolo se il token corrisponde a qualsiasi valore nell’elenco:
+>
+>```
+>"oidc.automations.adobe.com:sub": [ "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:29011"
+>]
+>```
+>
+>Non sostituire il valore secondario con un carattere jolly. In questo modo qualsiasi connessione dell’organizzazione può utilizzare il ruolo, incluse le connessioni create in seguito da altri utenti
+
+
+#### Verificare la connessione
+
+1. Tornare alla scheda del browser Workfront Fusion, dove il pannello di connessione è ancora aperto.
+1. Fai clic su **Salva**.
+
+   Workfront Fusion contatta AWS, che controlla il criterio di attendibilità e restituisce credenziali temporanee. Se tutto è configurato correttamente, la connessione viene convalidata correttamente e puoi procedere con la configurazione del modulo.
+   Se la verifica non riesce, il pannello rimane aperto e visualizza l’errore. Correggi il problema in AWS e seleziona nuovamente Salva. Non è necessario ricreare la connessione e l&#39;oggetto non cambia.
+
+Da questo punto in poi, la connessione rinnova le proprie credenziali. Non c&#39;è alcuna chiave da ruotare e non c&#39;è nessuna scadenza da mantenere.
+
+#### Risoluzione dei problemi
+
+
+<table>
+  <tr>
+    <th>Errore</th>
+    <th>Che cosa significa</th>
+    <th>Cosa controllare</th>
+  </tr>
+  <tr>
+    <td>InvalidIdentityToken</td>
+    <td>AWS non è riuscito a far corrispondere il token con un provider di identità registrato.</td>
+    <td>Verifica di aver aggiunto il provider di identità descritto in Aggiungere Workfront Fusion come provider di identità in AWS e che il relativo URL sia esattamente https://oidc.automations.adobe.com, senza barra finale.</td>
+  </tr>
+  <tr>
+    <td>Accesso negato quando si assume il ruolo</td>
+    <td>Il provider di identità è registrato, ma i criteri di attendibilità non corrispondono a questa connessione.</td>
+    <td>Verificare che il valore secondario nel criterio di attendibilità sia identico a carattere per carattere all'oggetto visualizzato in Workfront Fusion e che il valore aud sia sts.amazonaws.com. La causa più comune è un oggetto copiato da una connessione diversa.</td>
+  </tr>
+  <tr>
+    <td>La connessione funziona, quindi ha esito negativo in un secondo momento</td>
+    <td> </td>
+    <td>Verificare se i criteri di autorizzazione del ruolo sono stati modificati o se il ruolo è stato eliminato e ricreato. La ricreazione di un ruolo non modifica il relativo ARN, ma reimposta i criteri di attendibilità.</td>
+  </tr>
+</table>
+
++++
+
+### Connettere AWS a Workfront Fusion utilizzando un utente API
+
++++ Espandere per visualizzare le istruzioni per questo tipo di connessione.
+
 Per connettere [!DNL AWS S3] a Workfront Fusion è necessario connettere l&#39;account [!DNL AWS] a Workfront Fusion. A tale scopo, è innanzitutto necessario creare un utente API in [!DNL AWS] [!UICONTROL IAM].
 
 1. Accedi al tuo account [!DNL AWS] [!UICONTROL IAM].
@@ -105,7 +294,12 @@ Per connettere [!DNL AWS S3] a Workfront Fusion è necessario connettere l&#39;a
 
 La connessione è stata stabilita. Puoi procedere con la configurazione del modulo.
 
++++
+
 ## Moduli [!DNL AWS S3] e relativi campi
+
+* [Azioni](#actions)
+* [Ricerche](#searches)
 
 Quando configuri i moduli [!DNL AWS S3], in Workfront Fusion vengono visualizzati i campi elencati di seguito. Insieme a questi, potrebbero essere visualizzati altri campi di [!DNL AWS S3], a seconda di fattori quali il tuo livello di accesso nell’app o nel servizio. Un titolo in grassetto in un modulo indica un campo obbligatorio.
 
