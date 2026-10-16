@@ -1,9 +1,9 @@
 ---
 title: Strumenti server Adobe Workfront Fusion MCP
 description: Elenco di riferimento degli strumenti esposti dal server MCP di Adobe Workfront Fusion alle piattaforme AI e a Coworker.
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1546'
 ht-degree: 7%
 ---
 
@@ -31,6 +31,25 @@ L&#39;organizzazione attiva viene applicata a tutti gli altri strumenti della se
 | --- | --- | --- | --- |
 | Elenca organizzazioni | `fusion_orgs_list` | Leggi | Elenca le organizzazioni di Fusion a cui è possibile accedere, con ID, regione (zona) ed etichetta. |
 | Imposta organizzazione attiva | `fusion_orgs_set` | Session | Cambia l&#39;organizzazione attiva per la sessione corrente. Non modifica i dati di Fusion. |
+| Ottieni organizzazione corrente | `fusion_organizations_get` | Leggi | Restituisce l&#39;organizzazione corrente. |
+| Elenca organizzazioni | `fusion_organizations_list` | Leggi | Elenca tutte le organizzazioni visualizzabili. |
+
+## Team
+
+| Strumento | Nome | Azione | Descrizione |
+| --- | --- | --- | --- |
+| Elencare i team | `fusion_teams_list` | Leggi | Elenca i team dell’organizzazione che è possibile visualizzare. |
+| Ottieni team | `fusion_teams_get` | Leggi | Restituisce un singolo team in un&#39;organizzazione. |
+| Elimina team | `fusion_teams_delete` | Scrittura | Elimina un team. Questo arresta anche i suoi scenari e rimuove le sue autorizzazioni. Non può essere annullato tramite l’API e richiede conferma. |
+
+## Utenti
+
+| Strumento | Nome | Azione | Descrizione |
+| --- | --- | --- | --- |
+| Ottieni aree geografiche di Fusion | `fusion_users_get_regions` | Leggi | Restituisce le aree geografiche e le organizzazioni di Fusion a cui è possibile accedere. Utilizzala per trovare ID organizzazione validi. |
+| Ottieni utente corrente | `fusion_users_get_me` | Leggi | Restituisce il tuo profilo con i ruoli organizzazione e team. |
+| Elenca utenti | `fusion_users_list` | Leggi | Elenca gli utenti dell’organizzazione. |
+| Ottieni utente | `fusion_users_get` | Leggi | Restituisce un singolo utente in un&#39;organizzazione. |
 
 ## Strumenti scenario
 
@@ -40,6 +59,7 @@ L&#39;organizzazione attiva viene applicata a tutti gli altri strumenti della se
 | --- | --- | --- | --- |
 | Elencare scenari | `fusion_scenarios_list` | Leggi | Elenca gli scenari dell’organizzazione. |
 | Ottieni scenario | `fusion_scenarios_get` | Leggi | Restituisce uno scenario, inclusa la sua blueprint completa. |
+| Ottieni collegamento scenario | `fusion_scenarios_get_link` | Leggi | Restituisce il collegamento all’interfaccia utente di Fusion per aprire uno scenario nel browser. |
 | Ottieni dipendenze scenario | `fusion_scenarios_getDependencies` | Leggi | Restituisce connessioni, chiavi, archivi dati, strutture di dati e webhook dei riferimenti blueprint dello scenario. |
 | Trova scenari dipendenti | `fusion_scenarios_dependents` | Leggi | Trova scenari che fanno riferimento a un determinato webhook, archivio dati, struttura dati, connessione, chiave o scenario. Utile per l’analisi di impatto prima di modificare o eliminare una risorsa. |
 | Convalida blueprint | `fusion_scenarios_validate_blueprint` | Leggi | Convalida strutturalmente una blueprint rispetto a un team (riferimenti ai moduli, connessioni, campi obbligatori) senza salvare nulla. |
@@ -63,6 +83,7 @@ Esempio di prompt:
 | --- | --- | --- | --- |
 | Elenca versioni scenario | `fusion_scenario_versions_list` | Leggi | Elenca le versioni salvate di uno scenario. Filtra per `version`, `createdAt`, `comment`. |
 | Ottieni versione scenario | `fusion_scenario_versions_get` | Leggi | Restituisce il blueprint e i metadati per una versione specifica. |
+| Crea versione scenario | `fusion_scenario_versions_create` | Scrittura | Pubblica una blueprint come nuova versione dello scenario, che diventa la blueprint live. Le versioni precedenti vengono mantenute e la pubblicazione di una blueprint identica non ha alcun effetto. |
 
 Esempio di prompt:
 
@@ -109,8 +130,10 @@ Questi strumenti restituiscono solo i metadati. Non restituiscono credenziali, t
 | --- | --- | --- | --- |
 | Cerca connessioni | `fusion_connections_search` | Leggi | Elenca le connessioni. Filtra per `name`, `accountName`, `accountType`, `expire`, `teamId`, `scopesCount`, `editable`, `environmentType`, `authenticationType`. |
 | Ottieni connessione | `fusion_connections_get` | Leggi | Restituisce i dettagli di una singola connessione. |
+| Elimina connessione | `fusion_connections_delete` | Scrittura | Elimina una connessione. Non riesce se un webhook dipende ancora da esso. Gli scenari che la utilizzano vengono scollegati anziché bloccare l’eliminazione. |
 | Cerca chiavi | `fusion_keys_search` | Leggi | Elenca le chiavi. Filtra per `name`, `typeName`, `teamId`. |
 | Ottieni chiave | `fusion_keys_get` | Leggi | Restituisce i dettagli di una singola chiave. |
+| Elimina chiave | `fusion_keys_delete` | Scrittura | Elimina una chiave. Gli scenari che la utilizzano non bloccano l’eliminazione. |
 
 Esempio di prompt:
 
@@ -124,6 +147,9 @@ Esempio di prompt:
 | --- | --- | --- | --- |
 | Elencare webhook | `fusion_hooks_list` | Leggi | Elenca i webhook. Filtra per `name`, `teamId`, `type`, `enabled`, `gone`, `typeName`, `scenarioId`, `priority`, `detached` e altri. |
 | Ottieni webhook | `fusion_hooks_get` | Leggi | Restituisce la configurazione di un webhook, l&#39;associazione del proprietario e i riferimenti esterni. |
+| Ottieni dipendenze webhook | `fusion_hooks_dependencies` | Leggi | Elenca la connessione, la struttura dati e la chiave a cui fa riferimento un webhook. Esegui prima della clonazione. |
+| Clona webhook | `fusion_hooks_clone` | Scrittura | Copia un webhook con un nuovo URL, facoltativamente in un altro team. Può sostituire la connessione, la struttura dati o la chiave. |
+| Elimina webhook | `fusion_hooks_delete` | Scrittura | Elimina un webhook e i relativi eventi in coda. Solo il creatore del webhook può eliminarlo. |
 | Trova webhook dipendenti | `fusion_hooks_dependents` | Leggi | Trova i webhook che fanno riferimento a una determinata connessione. |
 
 ### Coda webhook
@@ -133,7 +159,7 @@ Esempio di prompt:
 | Ottieni statistiche coda | `fusion_queue_stats` | Leggi | Restituisce il numero di eventi in coda, il limite di coda e se il webhook è abilitato. |
 | Coda elenco | `fusion_queue_list` | Leggi | Elenchi di eventi webhook ricevuti in attesa di elaborazione. |
 | Ottieni elemento coda | `fusion_queue_get` | Leggi | Restituisce un singolo evento in coda, incluso il relativo payload decodificato. |
-| Elimina elementi coda | `fusion_queue_delete` | Scrittura | Elimina eventi specifici in coda (fino a 50) o cancella la coda, escludendo facoltativamente alcuni eventi. Impossibile eliminare gli eventi in corso di elaborazione. |
+| Elimina elementi coda | `fusion_hook_queue_delete` | Scrittura | Elimina gli eventi webhook in coda per ID (fino a 50) o tutti con esclusioni facoltative. Il nome dello strumento connesso è `fusion_hook_queue_delete` e non corrisponde al nome `fusion_queue_delete` precedente. |
 
 Esempio di prompt:
 
@@ -146,10 +172,14 @@ Esempio di prompt:
 | --- | --- | --- | --- |
 | Elencare archivi dati | `fusion_datastores_list` | Leggi | Elenca gli archivi dati con numero di record, dimensioni e dimensioni massime. |
 | Ottieni archivio dati | `fusion_datastores_get` | Leggi | Restituisce i metadati e l’utilizzo di un archivio dati, la struttura dei dati collegati e l’impostazione di convalida rigorosa. |
+| Elimina archivio dati | `fusion_datastores_delete` | Scrittura | Elimina un archivio dati e tutti i relativi record. Ha esito negativo se uno scenario lo utilizza ancora. |
 | Elenca i record dell’archivio dati | `fusion_data_list` | Leggi | Legge i record (chiave + dati JSON) da un archivio dati, con paging offset. |
+| Elimina record archivio dati | `fusion_data_stores_data_delete` | Scrittura | Elimina diversi record per chiave oppure tutti i record con esclusioni facoltative. |
+| Elimina record archivio dati | `fusion_data_stores_data_key_delete` | Scrittura | Elimina un record per chiave. Ha esito positivo anche se la chiave non esiste. |
 | Trova archivi dati dipendenti | `fusion_datastores_dependents` | Leggi | Trova archivi di dati che utilizzano una determinata struttura di dati. |
 | Cercare strutture di dati | `fusion_data_structures_search` | Leggi | Elenca le strutture di dati. Filtra per `name`, `strict`, `teamId`. |
 | Ottieni struttura dati | `fusion_data_structures_get` | Leggi | Restituisce una struttura di dati, inclusa la specifica completa del campo. |
+| Eliminare la struttura dati | `fusion_data_structures_delete` | Scrittura | Elimina una struttura di dati. Non riesce se un archivio dati lo utilizza ancora. |
 
 Esempio di prompt:
 
@@ -167,6 +197,12 @@ Esempio di prompt:
 
 * _Chi ha eliminato gli scenari negli ultimi 7 giorni?_
 * _Esporta tutte le modifiche di connessione di questo trimestre in Excel._
+
+## Feedback
+
+| Strumento | Nome | Azione | Descrizione |
+| --- | --- | --- | --- |
+| Invia feedback | `fusion_feedback_submit` | Scrittura | Invia il tuo feedback (bug, risultato errato, richiesta di funzionalità, elogi o altro) al team di Fusion. |
 
 ## Collaboratore
 
