@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
+source-git-commit: c0d5bb30cb41d9ad8db07c1ea13a533df10bcb43
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3193'
 ht-degree: 6%
 ---
 # Webhook
@@ -326,10 +326,6 @@ Quando crei o modifichi un webhook personalizzato in Fusion, il campo Origini co
 
 Se un webhook riceve dati e non esiste uno scenario attivo che preveda tali dati, questi vengono memorizzati nella coda. Una volta attivato lo scenario, elabora in sequenza tutti i bundle in attesa nella coda.
 
->[!IMPORTANT]
->
->Le code dei webhook sono condivise tra scenari che utilizzano lo stesso webhook. Se uno degli scenari è disattivato, tutti i dati in arrivo vengono mantenuti nella coda.
-
 ## Formati di dati in arrivo supportati
 
 Workfront Fusion supporta 3 formati di dati in ingresso: [!UICONTROL Stringa query], [!UICONTROL Dati modulo] e [!UICONTROL JSON].
@@ -473,27 +469,27 @@ Il timeout per l’invio di una risposta è di 5 minuti. Se la risposta non è d
 >Configura il modulo [!UICONTROL Risposta webhook] come segue:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
->&gt;   <td> <p>Codice di stato HTTP 2xx, ad esempio 200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Corpo] </td> 
->&gt;   <td> <p>Codice HTML</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>Chiave</strong>: tipo di contenuto</li> 
->&gt;     <li><strong>Valore</strong>: text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
+&gt;   <td> <p>Codice di stato HTTP 2xx, ad esempio 200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Corpo] </td> 
+&gt;   <td> <p>Codice HTML</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>Chiave</strong>: tipo di contenuto</li> 
+&gt;     <li><strong>Valore</strong>: text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Intestazioni personalizzate](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -508,23 +504,23 @@ Il timeout per l’invio di una risposta è di 5 minuti. Se la risposta non è d
 >**Esempio:** Configura il modulo [!UICONTROL Risposta webhook] come segue:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
->&gt;   <td> <p>Codice di stato HTTP del reindirizzamento 3xx, ad esempio 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL Key]</strong>: Location</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>: l'URL a cui si desidera reindirizzare.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Stato] </td> 
+&gt;   <td> <p>Codice di stato HTTP del reindirizzamento 3xx, ad esempio 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Intestazioni personalizzate]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL Key]</strong>: Location</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>: l'URL a cui si desidera reindirizzare.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Risposta webhook](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
