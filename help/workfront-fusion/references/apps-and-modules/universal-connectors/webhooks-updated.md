@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
+source-git-commit: c0d5bb30cb41d9ad8db07c1ea13a533df10bcb43
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3193'
 ht-degree: 6%
 ---
 # Webhook
@@ -325,10 +325,6 @@ Quando crei o modifichi un webhook personalizzato in Fusion, il campo Origini co
 ## La coda del webhook
 
 Se un webhook riceve dati e non esiste uno scenario attivo che preveda tali dati, questi vengono memorizzati nella coda. Una volta attivato lo scenario, elabora in sequenza tutti i bundle in attesa nella coda.
-
->[!IMPORTANT]
->
->Le code dei webhook sono condivise tra scenari che utilizzano lo stesso webhook. Se uno degli scenari è disattivato, tutti i dati in arrivo vengono mantenuti nella coda.
 
 ## Formati di dati in arrivo supportati
 
