@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 20%
+source-wordcount: '1550'
+ht-degree: 19%
 ---
 # Moduli Workfront Fusion
 
@@ -127,12 +127,12 @@ Questo modulo crea una copia del record specificato.
    <td> Selezionare il tipo di record da clonare. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID scenario</td> 
-   <td> Inserisci o mappa l’ID dello scenario da clonare. </td> 
+   <td role="rowheader">ID scenario / ID hook / ID struttura dati</td> 
+   <td> Immetti o mappa l’ID dell’elemento da clonare. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Nome</td> 
-   <td> Immetti o mappa un nome per il nuovo scenario.</td> 
+   <td> Immettere o mappare un nome per il nuovo scenario, hook o struttura dati.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,6 +202,10 @@ Questo modulo restituisce un elenco di record impaginato utilizzando il paging b
   <tr> 
    <td role="rowheader">Tipo di record</td> 
    <td>Selezionare il tipo di record di cui si desidera restituire un elenco.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campi</td> 
+   <td>Selezionare i campi da includere nei risultati.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Proprietà</td> 
@@ -380,9 +384,36 @@ Questo modulo ottiene le dipendenze del record.
    <td> Selezionare il tipo di record per il quale si desidera recuperare le dipendenze. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ID scenario</td> 
+   <td role="rowheader">ID scenario/ID hook</td> 
    <td> Immettere o mappare l'ID del record per il quale si desidera recuperare le dipendenze. </td> 
   </tr> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Recupera gli elementi dipendenti del record
+
+Questo modulo identifica ciò che dipende da una determinata risorsa. Utilizza questo modulo prima di eliminare una risorsa, per verificare se qualcosa dipende da tale risorsa e può essere influenzato dalla sua eliminazione.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
+   <td> <p>Per istruzioni sulla connessione di Workfront Fusion a Workfront Fusion, vedere <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connessione di Workfront Fusion a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo di record</td> 
+   <td>Selezionare il tipo di record che si desidera verificare per gli elementi dipendenti.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo</td> 
+   <td>Selezionare il tipo di dipendenti che si desidera verificare.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID</td> 
+   <td>Immettere o mappare l'ID del record per il quale si desidera restituire gli elementi dipendenti.</td> 
   </tr> 
  </tbody> 
 </table>
