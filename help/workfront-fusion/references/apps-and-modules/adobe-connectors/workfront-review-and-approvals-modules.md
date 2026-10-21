@@ -15,7 +15,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: a6430648344a5d02960bac7447331679e8abebe4
+source-git-commit: 8ea986eb6573bb49accfad312bb0796faa2642ab
 workflow-type: tm+mt
 source-wordcount: '5905'
 ht-degree: 16%
@@ -24,7 +24,7 @@ ht-degree: 16%
 
 Con i moduli Revisione e approvazioni unificate di Adobe Workfront, puoi ottenere i dettagli di approvazione, prendere una decisione su una risorsa, aggiungere o eliminare partecipanti all’approvazione, aggiungere o aggiornare fasi di approvazione, bloccare o sbloccare e effettuare chiamate API personalizzate.
 
-Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/it/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
+Per informazioni sulla revisione e le approvazioni unificate di Workfront, vedere [Panoramica sulla revisione e l&#39;approvazione unificate](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) nella documentazione di Workfront.
 
 ## Requisiti di accesso
 
@@ -335,7 +335,12 @@ Questo modulo di azione crea un’approvazione con i dati della fase specificati
 </table>
 
 <!--
-BECKY CHECK ME: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
+
+AUTHOR: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
+
+-->
+
+<!--
 
 #### Delete a decision on a stage
 
@@ -1353,8 +1358,6 @@ Questo modulo di ricerca cerca le approvazioni raggruppate utilizzando una vista
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
-
 ### Trigger
 
 * [Guarda gli eventi di approvazione](#watch-approval-events)
@@ -1388,7 +1391,7 @@ Per configurare il webhook per il modulo Osserva eventi di approvazione:
       <td>Selezionare il tipo di record di approvazione che si desidera controllare nel modulo.</td> 
      </tr> 
      <tr> 
-      <td>Tipo di configurazione </td> 
+      <td>Tipo di configurazione [!UICONTROL]</td> 
       <td>Seleziona se desideri utilizzare un filtro semplice o avanzato.<p>Per informazioni sui filtri semplici o avanzati, vedere <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">Utilizzo di filtri avanzati</a> nell'articolo dei moduli di Workfront.</p></td> 
      </tr> 
      <tr> 
