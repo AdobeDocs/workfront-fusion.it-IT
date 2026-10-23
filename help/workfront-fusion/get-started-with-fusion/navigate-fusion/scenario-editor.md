@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: b800142d824927e5765eed50a831731e6b5d9925
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 16%
@@ -98,7 +98,7 @@ Per visualizzare alcuni di questi controlli, potrebbe essere necessario fare cli
 ![pannello strumenti](assets/tools-scenario-editor.png)
 
 | Azione | Dettagli |
-|---------- | ---------- |
+| ---------- | ---------- |
 | Controllo del flusso | Configura le impostazioni per controllare il modo in cui i dati scorrono all’interno di esso. Per ulteriori informazioni, [consulta collegamento necessario]. |
 | Strumenti | La sezione Strumenti contiene diversi moduli utili che possono migliorare gli scenari. Per ulteriori informazioni, [consulta collegamento necessario]. |
 | Parser testo | Utilizzare lo strumento parser di testo per analizzare il testo da utilizzare in altri moduli scenario. Il parser di testo non richiede una connessione. Per ulteriori informazioni, [consulta collegamento necessario]. |
