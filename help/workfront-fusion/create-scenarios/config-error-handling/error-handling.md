@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 9%
+source-wordcount: '1677'
+ht-degree: 6%
 ---
 # Aggiungere la gestione degli errori
 
@@ -39,6 +39,10 @@ Per ulteriori informazioni sulle direttive per la gestione degli errori, vedere 
 >
 >Workfront Fusion supporta la gestione degli errori a livello di route, consentendo di definire una logica di gestione degli errori una volta per route, anziché associare gestori degli errori a ogni singolo modulo.
 >Poiché la gestione degli errori a livello di route è un metodo più scalabile, coerente e pulito dal punto di vista dell&#39;architettura per gestire gli errori, soprattutto nelle automazioni avanzate multi-branch, si consiglia di utilizzare la gestione degli errori a livello di route come best practice.
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 ## Requisiti di accesso
 
@@ -88,9 +92,9 @@ Gli errori vengono gestiti dalla seguente gerarchia:
 
 ### Esempio
 
-Prendi in considerazione lo scenario di esempio seguente:
+Considera il seguente scenario di esempio, mostrato qui in visualizzazione compatta per la leggibilità:
 
-![Scenario di esempio che mostra route e gestori di errori](assets/error-handling-route-example-with-numbers.png)
+![Scenario di esempio che mostra route e gestori di errori](assets/new-error-handler-examples-with-numbers.png)
 
 1. Questo modulo ha un gestore di errori. Qualsiasi errore in questo modulo viene gestito dalla direttiva Commit.
 1. Questo modulo non dispone di un gestore di errori. Se questo modulo rileva un errore, l&#39;errore viene gestito dal gestore sul router che ha creato la route del modulo. Qualsiasi errore in questo modulo viene gestito dalla direttiva di rollback.
@@ -113,7 +117,41 @@ Prendi in considerazione lo scenario di esempio seguente:
 
 ### Aggiungere un gestore degli errori a un modulo
 
-Per aggiungere un gestore degli errori a un modulo:
+* [Aggiungere un gestore degli errori a un modulo nella nuova esperienza (scelta consigliata)](#add-an-error-handler-to-a-module-in-the-new-experience-recommended)
+* [Aggiungere un gestore degli errori a un modulo nell’esperienza classica](#add-an-error-handler-to-a-module-in-the-classic-experience)
+
+#### Aggiungere un gestore degli errori a un modulo nella nuova esperienza (scelta consigliata)
+
+1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
+1. Selezionare lo scenario in cui si desidera aggiungere un ciclo di lavorazione per la gestione degli errori.
+1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
+1. Fare clic con il pulsante destro del mouse sul modulo dopo il quale si desidera aggiungere una route del gestore degli errori e selezionare **[!UICONTROL Aggiungi gestore errori]**:
+
+   ![Aggiungi gestore errori nel menu](assets/new-add-error-handler-in-menu.png)
+
+   Al modulo viene aggiunta una route di gestore degli errori. Se il modulo è l’ultimo modulo di una route, il gestore degli errori segue direttamente il modulo. Se il modulo contiene più moduli, viene aggiunta una route separata del gestore degli errori.
+
+   Il modulo di gestione degli errori mostra un elenco di direttive e delle app utilizzate nel tuo scenario.
+
+   ![Errore durante la gestione delle direttive](assets/new-error-handling-directives.png)
+
+1. Selezionare una delle direttive.
+
+   Oppure
+
+   Aggiungere uno o più moduli alla route del gestore degli errori.
+
+   Se si aggiungono altri moduli alla route, per impostazione predefinita viene applicata la direttiva Ignora. Se si verifica un errore, vengono elaborati i moduli successivi di tale route.
+
+   Per ulteriori informazioni sulle direttive, vedere [Errore nella gestione delle direttive](#error-handling-directives) in questo articolo.
+
+1. (Facoltativo) Aggiungi un filtro al percorso di gestione degli errori. Per istruzioni, vedere [Aggiungere filtri e nidificazioni alle route di gestione degli errori](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Una route del gestore errori è contrassegnata da una linea tratteggiata con un&#39;etichetta rossa **[!UICONTROL Gestore errori]**.
+
+#### Aggiungere un gestore degli errori a un modulo nell’esperienza classica
 
 1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Selezionare lo scenario in cui si desidera aggiungere un ciclo di lavorazione per la gestione degli errori.
@@ -145,6 +183,40 @@ Per aggiungere un gestore degli errori a un modulo:
 >Si noti che una route del gestore degli errori è composta da cerchi trasparenti, mentre una route regolare è composta da cerchi solidi.
 
 ### Aggiungere un gestore degli errori a un router
+
+* [Aggiungere un gestore degli errori a un router nella nuova esperienza (scelta consigliata)](#add-an-error-handler-to-a-router-in-the-new-experience-recommended)
+* [Aggiungere un gestore degli errori a un router nell&#39;esperienza classica](#add-an-error-handler-to-a-router-in-the-classic-experience)
+
+#### Aggiungere un gestore degli errori a un router nella nuova esperienza (scelta consigliata)
+
+1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
+1. Selezionare lo scenario in cui si desidera aggiungere un ciclo di lavorazione per la gestione degli errori.
+1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
+1. Fare clic con il pulsante destro del mouse sul router in cui si desidera aggiungere una route del gestore degli errori e selezionare **[!UICONTROL Aggiungi gestore errori]**.
+
+   Al router viene aggiunta una route di gestore degli errori.
+
+   Il modulo di gestione degli errori mostra un elenco di direttive e delle app utilizzate nel tuo scenario.
+
+   ![Errore durante la gestione delle direttive](assets/new-error-handling-directives.png)
+
+1. Selezionare una delle direttive.
+
+   Oppure
+
+   Aggiungere uno o più moduli alla route del gestore degli errori.
+
+   Se si aggiungono altri moduli alla route, per impostazione predefinita viene applicata la direttiva Ignora. Se si verifica un errore, vengono elaborati i moduli successivi di tale route.
+
+   Per ulteriori informazioni sulle direttive, vedere [Errore nella gestione delle direttive](#error-handling-directives) in questo articolo.
+
+1. (Facoltativo) Aggiungi un filtro al percorso di gestione degli errori. Per istruzioni, vedere [Aggiungere filtri e nidificazioni alle route di gestione degli errori](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Una route del gestore errori è contrassegnata da una linea tratteggiata con un&#39;etichetta rossa **[!UICONTROL Gestore errori]**.
+
+#### Aggiungere un gestore degli errori a un router nell&#39;esperienza classica
 
 1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Selezionare lo scenario in cui si desidera aggiungere un ciclo di lavorazione per la gestione degli errori.

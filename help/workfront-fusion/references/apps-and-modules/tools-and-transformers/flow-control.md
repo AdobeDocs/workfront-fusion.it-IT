@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 16%
+source-wordcount: '684'
+ht-degree: 15%
 ---
 # Controllo del flusso
 
 Quando crei o modifichi uno scenario, puoi configurare le impostazioni per controllare il modo in cui i dati scorrono all’interno di esso.
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 ## Requisiti di accesso
 
@@ -75,7 +79,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 Ad esempio, puoi utilizzare un modulo [!UICONTROL Repeater] per inviare cinque e-mail con gli oggetti &quot;Hello 1&quot;, &quot;Hello 2&quot; e così via, collegando il modulo **[!UICONTROL Email] >[!UICONTROL Send me an email]** al modulo [!UICONTROL Repeater].
 
-1. Fai clic sull&#39;icona [!UICONTROL Controllo di flusso] ![Icona Controllo di flusso](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) nella parte inferiore dello schermo, quindi fai clic su **[!UICONTROL Ripetitore]** nel menu visualizzato.
+1. Fai clic sull&#39;icona [!UICONTROL Controllo di flusso] ![Icona Controllo di flusso](/help/workfront-fusion/references/apps-and-modules/assets/new-flow-control-icon.png) nella parte inferiore dello schermo, quindi fai clic su **[!UICONTROL Ripetitore]** nel menu visualizzato.
 1. Fai clic sul modulo [!UICONTROL Repeater], quindi fai clic su **[!UICONTROL Connetti automaticamente]** nella casella visualizzata.
 
    Viene visualizzato il modulo Repeater (Ripetitore).
@@ -84,7 +88,7 @@ Ad esempio, puoi utilizzare un modulo [!UICONTROL Repeater] per inviare cinque e
 
    In questo esempio, immetti 5.
 
-   ![Ripetitore](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![Ripetitore](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
 
    Il valore dell&#39;elemento aumenta in ogni ripetizione di questo valore specificato nel campo **[!UICONTROL Passaggio]**, che puoi visualizzare selezionando **[!UICONTROL Mostra impostazioni avanzate]**. Questo numero è 1 per impostazione predefinita.
 
@@ -95,7 +99,7 @@ Ad esempio, puoi utilizzare un modulo [!UICONTROL Repeater] per inviare cinque e
 
    Nel nostro esempio di e-mail, dovresti digitare Hello nella casella [!UICONTROL Oggetto], quindi mappare `i` dal modulo del ripetitore.
 
-   ![Ripetitore](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![Ripetitore](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
 
 
 

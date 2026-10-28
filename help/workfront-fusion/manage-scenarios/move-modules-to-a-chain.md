@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 17%
+source-wordcount: '563'
+ht-degree: 16%
 ---
 # Spostare i moduli in una catena
 
@@ -21,6 +21,10 @@ ht-degree: 17%
 >Questa funzione è disponibile in Beta e non è consigliata per flussi di lavoro di produzione mission-critical. In quanto funzione di Beta, il comportamento può cambiare e i casi limite potrebbero non essere gestiti completamente.
 
 È possibile selezionare un gruppo di moduli in uno scenario e spostarli in un nuovo scenario concatenato, senza ricreare manualmente mappature o strutture di dati. Questo consente di modulare facilmente scenari di grandi dimensioni.
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 Quando si sposta un gruppo di moduli in una catena, Workfront Fusion:
 

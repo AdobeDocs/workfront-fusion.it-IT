@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '371'
 ht-degree: 27%
 ---
 # Aggiornare un modulo a una nuova versione
@@ -74,7 +74,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 ## Aggiornare un modulo non Workfront a una nuova versione
 
 1. Fai clic sull&#39;icona **Aggiorna modulo** ![Icona Aggiorna](assets/upgrade-icon.png) nel modulo che desideri aggiornare a una nuova versione.
-   ![Icona aggiornamento](assets/update-indicator.png)
+   <!--![Update icon](assets/update-indicator.png)-->
 1. Fare clic su **Scegli nuovo**.
 1. Selezionare il modulo che si desidera sostituire al modulo precedente.
 1. Configura il modulo con le stesse impostazioni del modulo esistente.

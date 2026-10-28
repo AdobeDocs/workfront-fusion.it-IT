@@ -10,15 +10,15 @@ exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
 TQID: https://experienceleague.adobe.com/F0kYjSMVgit8t-gPAR4U7O-1v8Qxy7UxSRK6uYxKItg
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 607
-ht-degree: 18%
-
+source-wordcount: '1116'
+ht-degree: 10%
 ---
-
 # Utilizzare una funzione per aggiornare un progetto in uno scenario di base
 
 L’aggiornamento di un elemento di lavoro di Workfront è un caso d’uso comune per Workfront Fusion. In questo esempio, utilizzerai una funzione per modificare il nome di un progetto in lettere maiuscole.
@@ -26,6 +26,10 @@ L’aggiornamento di un elemento di lavoro di Workfront è un caso d’uso comun
 Fusion include molti tipi di funzioni che consentono di trasformare ed eseguire logica condizionale sui dati. Per ulteriori informazioni sull&#39;utilizzo delle funzioni, vedere [Panoramica delle funzioni](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
 In questo esempio viene modificato lo scenario creato in [Crea uno scenario di base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 ## Requisiti di accesso
 
@@ -60,16 +64,20 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 È necessario creare lo scenario descritto in [Creare uno scenario di base](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) prima di seguire questa procedura.
 
-## Utilizzare una funzione per aggiornare un progetto
+## Utilizza una funzione per aggiornare un progetto nella nuova esperienza (scelta consigliata)
 
-### Aggiungi il modulo Aggiorna record allo scenario
+* [Aggiungere il modulo Aggiorna record allo scenario](#add-the-update-a-record-module-to-your-scenario)
+* [Mappa la funzione per l’aggiornamento del nome](#map-the-function-for-the-name-update)
+* [Test e attivazione](#test-and-activate)
+
+### Aggiungere il modulo Aggiorna record allo scenario
 
 1. Apri lo scenario nell’editor dello scenario.
-1. Passa il puntatore del mouse sul cerchio parziale a destra del del secondo modulo, quindi fai clic su **[!UICONTROL Aggiungi un altro modulo]**.
-1. Seleziona Adobe Workfront dall&#39;elenco delle applicazioni, quindi scegli il modulo **[!UICONTROL Aggiorna record]**.
+1. Passa il puntatore del mouse sul bordo destro del secondo modulo, quindi fai clic su **[!UICONTROL Aggiungi un altro modulo]** quando viene visualizzato.
+1. Seleziona Adobe Workfront dall&#39;elenco delle applicazioni, quindi scegli il modulo **[!UICONTROL Aggiorna un record]**.
 1. Nel campo ID, seleziona il blocco ID che si trova sotto il modulo Converti oggetto. Questo è l&#39;ID del progetto generato da quel modulo.
 
-   ![ID da Converti oggetto](assets/id-convert-object.png)
+   ![ID mappato nel modulo Aggiorna un record](assets/new-mapped-update-record.png)
 
 1. Nel campo Tipo di record selezionare Progetto, poiché l&#39;oggetto da aggiornare è un progetto.
 1. Nell&#39;area Seleziona campi da mappare selezionare Nome.
@@ -78,6 +86,72 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. Continua a [Mappare la funzione per l&#39;aggiornamento del nome](#map-the-function-for-the-name-update).
 
 ### Mappa la funzione per l’aggiornamento del nome
+
+Quando questo scenario converte una richiesta in un progetto, il nome del progetto è uguale alla richiesta. La funzione in questo caso prende il nome e le lettere in maiuscolo.
+
+1. Fai clic sul campo **Nome**.
+
+   Viene visualizzato il pannello di mappatura.
+1. Nel pannello di mappatura, fai clic sull&#39;icona **Funzioni testo e binarie**. ![Icona funzioni testo](assets/new-text-binary-function.png)
+1. Selezionare la funzione **upper**.
+
+   La funzione viene visualizzata nel campo Nome, inclusa la formattazione dell&#39;input previsto.
+
+   L’input per questo esempio è il nome del problema da cui è stato convertito il progetto.
+
+1. Spostare il cursore tra le parentesi, perché è qui che andrà l&#39;input.
+1. Nel pannello di mappatura, fai clic sull&#39;icona **Output modulo**. ![Icona output modulo](assets/new-module-output-icon.png)
+1. Seleziona il blocco del nome restituito dal primo modulo.
+
+   Il blocco del nome viene visualizzato nella funzione.
+
+   ![Blocco nome nella funzione](assets/new-mapped-name-block.png)
+
+1. Fare clic su **OK** per salvare le impostazioni del modulo.
+
+### Test e attivazione
+
+1. Verifica lo scenario facendo clic sull&#39;icona **[!UICONTROL Esegui una volta]**.
+
+   Esegui una volta è solo un’icona nella nuova esperienza. Passa il puntatore sull&#39;icona per visualizzare la descrizione comando **[!UICONTROL Esegui una volta]**.
+
+   ![pulsante esegui scenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Esamina l’output per garantire che lo scenario sia stato eseguito come previsto.
+1. Quando si è certi che lo scenario funziona come previsto, fare clic sull&#39;opzione **Pianificazione** per passare a **Il**.
+
+   Questo attiva lo scenario. Gli scenari attivi vengono eseguiti in base alla pianificazione impostata nel modulo trigger.
+
+   ![Interruttore pianificazione](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Fai clic sull&#39;icona **Salva** ![Salva icona](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) nell&#39;area Controlli per salvare l&#39;avanzamento dello scenario.
+
+   >[!IMPORTANT]
+   >
+   >Risparmia spesso quando affili e testa uno scenario. Per attivare lo scenario, potrebbe essere necessario creare un nuovo problema nell’account Workfront.
+
+## Utilizzare una funzione per aggiornare un progetto nell’esperienza classica
+
+* [Aggiungere il modulo Aggiorna record allo scenario (Classic)](#add-the-update-a-record-module-to-your-scenario-classic)
+* [Mappa la funzione per l’aggiornamento del nome (Classic)](#map-the-function-for-the-name-update-classic)
+* [Test e attivazione (Classic)](#test-and-activate-classic)
+
+### Aggiungere il modulo Aggiorna record allo scenario (Classic)
+
+1. Apri lo scenario nell’editor dello scenario.
+1. Passa il puntatore del mouse sul cerchio parziale a destra del del secondo modulo, quindi fai clic su **[!UICONTROL Aggiungi un altro modulo]**.
+1. Seleziona Adobe Workfront dall&#39;elenco delle applicazioni, quindi scegli il modulo **[!UICONTROL Aggiorna un record]**.
+1. Nel campo ID, seleziona il blocco ID che si trova sotto il modulo Converti oggetto. Questo è l&#39;ID del progetto generato da quel modulo.
+
+   ![ID da Converti oggetto](assets/id-convert-object.png)
+
+1. Nel campo Tipo di record selezionare Progetto, poiché l&#39;oggetto da aggiornare è un progetto.
+1. Nell&#39;area Seleziona campi da mappare selezionare Nome.
+
+   Viene aperto un campo Nome.
+1. Continua a [Mappare la funzione per l&#39;aggiornamento del nome (Classic)](#map-the-function-for-the-name-update-classic).
+
+### Mappa la funzione per l’aggiornamento del nome (Classic)
 
 Quando questo scenario converte una richiesta in un progetto, il nome del progetto è uguale alla richiesta. La funzione in questo caso prende il nome e le lettere in maiuscolo.
 
@@ -101,7 +175,7 @@ Quando questo scenario converte una richiesta in un progetto, il nome del proget
 
 1. Fare clic su **OK** per salvare le impostazioni del modulo.
 
-### Test e attivazione
+### Test e attivazione (Classic)
 
 1. Verificare lo scenario facendo clic su **Esegui una volta** nell&#39;angolo inferiore sinistro della schermata.
 1. Esamina l’output per garantire che lo scenario sia stato eseguito come previsto.

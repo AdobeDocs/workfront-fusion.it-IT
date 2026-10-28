@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '370'
 ht-degree: 0%
 ---
 # Utilizza Esegui una volta per testare uno scenario
@@ -23,6 +23,10 @@ Puoi anche eseguire uno scenario una volta per configurare le strutture di dati
 >[!TIP]
 >
 >È consigliabile eseguire test frequenti durante la creazione e l’ottimizzazione degli scenari.
+
+>[!NOTE]
+>
+>Nella nuova esperienza, Esegui una volta mantiene sempre i dettagli di richieste e risposte. Per le esecuzioni regolari dello scenario, puoi raccoglierle attivando i registri di debug temporanei nelle impostazioni dello scenario. Per ulteriori informazioni, vedere [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).
 
 ## Utilizzare la funzionalità Esegui una volta
 

@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '580'
 ht-degree: 7%
 ---
 # Visualizzare e risolvere le esecuzioni incomplete
@@ -26,9 +26,11 @@ Nella cartella [!UICONTROL Esecuzioni incomplete] sono memorizzate esecuzioni de
 >
 >Per ulteriori informazioni sulle impostazioni dello scenario, vedere [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
-## Anteprima evidenziata per l&#39;articolo completo {#highlighted-preview-article-level}
+Anteprima evidenziata per l&#39;articolo completo {#highlighted-preview-article-level}
 
-<span class="preview">Le informazioni contenute in questa pagina si riferiscono a funzionalità non ancora generalmente disponibili. È disponibile solo nell&#39;ambiente Sandbox di anteprima.</span>## Visualizza esecuzioni incomplete
+<span class="preview">Le informazioni contenute in questa pagina si riferiscono a funzionalità non ancora generalmente disponibili. È disponibile solo nell&#39;ambiente Sandbox di anteprima.</span>
+
+## Visualizzare le esecuzioni incomplete
 
 Se un modulo rileva un errore durante l’operazione, viene aggiunta una nuova esecuzione incompleta alla cartella Esecuzioni incomplete. Ogni esecuzione incompleta contiene il blueprint dello scenario e tutti i bundle che possono essere mappati nel modulo non riuscito. Per aprire l&#39;elenco delle esecuzioni incomplete, fare clic sulla scheda [!UICONTROL Esecuzioni incomplete] nella pagina dei dettagli dello scenario.
 
@@ -61,7 +63,7 @@ Quando viene memorizzata una nuova esecuzione incompleta, è possibile risolverl
 1. Apri il registro del modulo in cui vengono visualizzate tutte le operazioni del modulo.
 1. Individuare l&#39;operazione non riuscita e fare clic su **[!UICONTROL Risolvi]**:
 
-   ![Pulsante Risolvi](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 
 
@@ -75,7 +77,7 @@ Se si desidera visualizzare il registro di tutte le operazioni del modulo prima 
 1. Apri il registro del modulo in cui vengono visualizzate tutte le operazioni del modulo.
 1. Individuare l&#39;operazione non riuscita e fare clic su **[!UICONTROL Risolvi]**:
 
-   ![Pulsante Risolvi](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 ## Opzioni relative alle esecuzioni incomplete
 

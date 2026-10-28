@@ -16,15 +16,18 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 98%
+source-wordcount: '976'
+ht-degree: 93%
 ---
 # Glossario di Adobe Workfront Fusion
 
 Il glossario seguente spiega il significato di alcuni termini comuni in Adobe Workfront Fusion.
 
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 <table style="table-layout:auto">
  <col> 
@@ -88,7 +91,7 @@ Il glossario seguente spiega il significato di alcuni termini comuni in Adobe Wo
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Modulo</p> </td> 
-   <td> <p>Un singolo passaggio all’interno di uno scenario che esegue una funzione, ad esempio la creazione di un record, nell’app o nel servizio associato.</p> <p>Ogni app o servizio dispone di vari moduli che definiscono il modo in cui risponde a una richiesta.</p>  <p> <img src="assets/module.png"> </p> <p>Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Panoramica dei moduli</a>.</p> </td> 
+   <td> <p>Un singolo passaggio all’interno di uno scenario che esegue una funzione, ad esempio la creazione di un record, nell’app o nel servizio associato.</p> <p>Ogni app o servizio dispone di vari moduli che definiscono il modo in cui risponde a una richiesta.</p>  <p> <img src="assets/new-module.png"> </p> <p>Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Panoramica dei moduli</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Operazione</p> </td> 
@@ -104,7 +107,7 @@ Il glossario seguente spiega il significato di alcuni termini comuni in Adobe Wo
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Scenario</p> </td> 
-   <td> <p>Serie di passaggi automatizzati creati dall’utente, ciascuno rappresentato ed eseguito da un modulo. Lo scopo di uno scenario è quello di spostare e manipolare i dati.</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <p> Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">Panoramica degli scenari</a>.</p> </td> 
+   <td> <p>Serie di passaggi automatizzati creati dall’utente, ciascuno rappresentato ed eseguito da un modulo. Lo scopo di uno scenario è quello di spostare e manipolare i dati.</p> <p> <img src="assets/new-scenario-example-unmarked.png" style="width: 350;height: 92;"> </p> <p> Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">Panoramica degli scenari</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Segmento dello scenario</p> </td> 

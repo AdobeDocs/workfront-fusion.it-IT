@@ -10,20 +10,24 @@ exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
 TQID: https://experienceleague.adobe.com/4SeGiWeAsMRQbbk15I5IoL8-ZYe5WLeF6z9URFpTQQI
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 347280547bea92c0ee498da519495569a3cac661
 workflow-type: tm+mt
-source-wordcount: 1426
-ht-degree: 12%
-
+source-wordcount: '2691'
+ht-degree: 6%
 ---
-
 # Creare uno scenario di base
 
 Il ruolo di Adobe Workfront Fusion è quello di automatizzare i processi, in modo che tu possa concentrarti su nuove attività anziché ripetere le stesse attività più volte. Funziona collegando azioni all’interno e tra le app e o servizi per creare uno scenario che trasferisce e trasforma automaticamente i dati. Lo scenario creato controlla i dati in un’app o in un servizio e li elabora in modo da fornire il risultato desiderato.
 
 Questo esempio illustra come creare uno scenario che cerca una richiesta in Workfront e la converte in un progetto.
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 ## Requisiti di accesso
 
@@ -54,9 +58,176 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 +++
 
-## Creare uno scenario di esercitazione
+## Crea uno scenario di esercitazione nella nuova esperienza (scelta consigliata)
+
+* [Inizia a creare lo scenario](#begin-creating-the-scenario)
+* [Aggiungere e configurare il primo modulo](#add-and-configure-the-first-module)
+* [Aggiungere e configurare il secondo modulo](#add-and-configure-the-second-module)
+* [Verifica lo scenario](#test-the-scenario)
+* [Attiva lo scenario](#activate-the-scenario)
 
 ### Inizia a creare lo scenario
+
+1. Nell&#39;area **Scenari**, fare clic su **Crea un nuovo scenario**.
+
+   Per individuare l&#39;area Scenari, vedere [Navigare in Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md).
+
+   Viene visualizzato l’editor scenario, contenente al centro un modulo segnaposto vuoto.
+
+   ![Modulo segnaposto](assets/new-placeholder-module.png)
+
+1. Fai clic sul nome dello scenario nell’angolo in alto a sinistra, quindi immetti un nome.
+1. Continua con [Aggiungi e configura il primo modulo](#add-and-configure-the-first-module).
+
+### Aggiungere e configurare il primo modulo
+
+1. Fai clic sul modulo segnaposto per aprire l’elenco delle app e dei servizi.
+
+   Un pannello si apre a destra del modulo.
+
+   ![Selettore app e servizi](assets/new-connector-picker.png)
+
+1. Seleziona **Adobe Workfront**:
+
+   * Sfoglia per categoria utilizzando il pannello a sinistra ([!UICONTROL Preferiti], [!UICONTROL Tutte le app], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative &amp; Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI] o [!UICONTROL Incorporato]), oppure
+   * Immettere un termine nella casella di ricerca per filtrare l&#39;elenco.
+
+   L’elenco viene modificato in modo da visualizzare tutti i moduli Workfront utilizzabili.
+
+1. Fare clic sul modulo **[!UICONTROL Cerca]**.
+
+   Viene visualizzata la finestra di configurazione del modulo.
+
+1. Nella casella [!UICONTROL Connessione], seleziona la tua connessione Workfront.
+
+   Se non disponi di una connessione Workfront, vedi [Creare una connessione](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+1. Nella casella [!UICONTROL Tipo di record], seleziona **[!UICONTROL Problema]**. Questo imposta il modulo in modo che esegua la ricerca solo dei problemi, che includono le richieste.
+
+   Puoi trovare **[!UICONTROL Problema]** nell&#39;elenco se inizi a digitare la parola &quot;[!UICONTROL Problema].&quot;
+
+1. Nella casella **[!UICONTROL Set di risultati]** selezionare **[!UICONTROL Primo record corrispondente]**.
+
+   In questo modo il modulo restituirà solo il primo record che soddisfa i criteri.
+1. Nell&#39;area **[!UICONTROL Criteri di ricerca]** configurare i criteri per restituire l&#39;attività specifica.
+
+   1. Nella prima casella in [!UICONTROL Criteri di ricerca], selezionare il campo che si desidera includere nella ricerca. Per questo esempio, selezionare **[!UICONTROL Nome]**.
+
+      Puoi trovare **[!UICONTROL Name]** nell&#39;elenco se inizi a digitare la parola &quot;[!UICONTROL name].&quot;
+   1. Per l&#39;operatore, fare clic sulla freccia a discesa accanto a **Esiste** e modificarla in [!UICONTROL **Contiene (senza distinzione maiuscole/minuscole)**].
+
+      Questo consente al modulo di trovare i progetti il cui nome contiene le parole scelte, anche se non si inserisce il nome completo o si inserisce il nome con lettere maiuscole non corrette.
+   1. Nell&#39;ultimo campo in [!UICONTROL Criteri di ricerca], immettere una parola o una frase che si sa essere nel nome dell&#39;attività che si sta cercando.
+
+1. Nell&#39;elenco **[!UICONTROL Output]** selezionare i campi che si desidera vengano generati dal modulo. Per questo esempio, selezionare i campi **[!UICONTROL ID]** e **[!UICONTROL Nome]**.
+
+   >[!TIP]
+   >
+   >È possibile utilizzare **Cmd+F** ([!DNL Mac] OS) o **Ctrl-F** ([!DNL Windows] OS) per trovare rapidamente un campo.
+
+1. Fare clic su **[!UICONTROL OK]** per salvare la configurazione del modulo.
+
+1. Fare clic con il pulsante destro del mouse sul modulo, scegliere **[!UICONTROL Rinomina]**, quindi digitare un nome che descriva le operazioni che si desidera eseguire (ad esempio &quot;Cerca richieste&quot;), quindi fare clic su **[!UICONTROL OK]**.
+
+   Il nome viene visualizzato appena sotto il modulo. Di seguito è riportata una breve descrizione del tipo di azione eseguita dal modulo in Workfront Fusion.
+
+   ![Modulo rinominato](assets/new-renamed-module.png)
+
+1. Continua con [Aggiungi e configura il secondo modulo](#add-and-configure-the-second-module).
+
+### Aggiungere e configurare il secondo modulo
+
+1. Passa il puntatore del mouse sul bordo destro del modulo, quindi fai clic su **[!UICONTROL Aggiungi un altro modulo]** quando viene visualizzato.
+1. Seleziona **Adobe Workfront** dall&#39;elenco delle applicazioni, quindi scegli il modulo **[!UICONTROL Converti oggetto]**.
+1. Nel campo [!UICONTROL Connessione], seleziona la stessa connessione Workfront utilizzata nel modulo precedente.
+1. Nel campo **[!UICONTROL Tipo di record]**, seleziona **[!UICONTROL problema]**, perché il modulo convertirà un problema.
+1. Nel campo **[!UICONTROL Converti in]**, selezionare **Progetto**.
+1. Accanto al campo ID attività, fai clic sull’interruttore di mappatura per abilitarlo.
+
+   L’interruttore diventa blu quando è attivato. Questo consente di mappare l’ID attività dal modulo precedente.
+
+   ![Pulsante di attivazione/disattivazione Mappa](assets/new-map-toggle.png)
+1. Fare clic sul campo **[!UICONTROL ID attività]**.
+
+   Viene visualizzato un pannello che consente di selezionare l’ID dell’attività da convertire in progetto. Poiché hai abilitato la mappatura, il pannello include l’output di tutti i moduli precedenti. Hai selezionato ID come output del modulo precedente, quindi ora è disponibile nel pannello.
+
+   Questo pannello è denominato pannello di mappatura. Per ulteriori informazioni sul pannello di mappatura, vedi [Panoramica mappatura](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
+1. Seleziona **ID** nel pannello di mappatura.
+
+   Nel campo ID viene visualizzato un blocco ID. Mostra il numero del modulo da cui è mappato e il campo mappato.
+
+   ![ID mappa](assets/new-map-id.png)
+
+1. Fare clic sul campo **ID modello**, iniziare a digitare il nome del modello di Workfront che si desidera utilizzare per il progetto, quindi selezionarlo quando viene visualizzato nell&#39;elenco.
+1. Fare clic su **[!UICONTROL OK]** per salvare la configurazione del modulo.
+
+1. Fare clic con il pulsante destro del mouse sul modulo, scegliere **[!UICONTROL Rinomina]**, quindi digitare un nome che descriva le operazioni che si desidera eseguire (ad esempio &quot;Converti in progetto&quot;), quindi fare clic su **[!UICONTROL OK]**.
+
+1. Continua a [Verificare lo scenario](#test-the-scenario).
+
+### Verifica lo scenario
+
+Prima di attivare lo scenario, è importante testarlo eseguendolo almeno una volta e visualizzando i risultati. Questo ti aiuta a capire come i dati scorrono attraverso lo scenario e a trovare eventuali errori.
+
+In questo caso, se il test ha esito positivo, la richiesta viene individuata e convertita in un progetto.
+
+1. Fai clic sull&#39;icona **[!UICONTROL Esegui una volta]**.
+
+   Esegui una volta è solo un’icona nella nuova esperienza. Passa il puntatore sull&#39;icona per visualizzare la descrizione comando **[!UICONTROL Esegui una volta]**.
+
+   ![pulsante esegui scenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Al termine dell’esecuzione dello scenario, fai clic sul fumetto sopra il primo modulo per visualizzare informazioni sul bundle di dati elaborato dal modulo, inclusi i dati estratti dalla richiesta restituita dal modulo.
+
+1. Fai clic sul fumetto del controllo dell’esecuzione sopra il secondo modulo per visualizzare l’input (la richiesta) e l’output (il progetto convertito).
+
+   ![Bolla di controllo dell&#39;esecuzione](assets/new-execution-bubble.png)
+
+   Per ulteriori informazioni sui dati contenuti nelle bolle di ispezione, vedere:
+
+   * Per informazioni generali, vedere [Flusso di esecuzione dello scenario](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
+   * Per informazioni sui bundle elaborati, vedere [Esecuzione scenario, cicli e fasi](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+
+1. Fai clic sull&#39;icona **Salva** ![Salva icona](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) nell&#39;area Controlli per salvare l&#39;avanzamento dello scenario.
+
+   >[!IMPORTANT]
+   >
+   >Risparmia spesso quando affili e testa uno scenario. Per attivare lo scenario, potrebbe essere necessario creare un nuovo problema nell’account Workfront.
+
+>[!TIP]
+>
+>È consigliabile aggiungere note su ciascun modulo in modo facoltativo ma utile.
+>
+>1. Fai clic con il pulsante destro del mouse su un modulo, quindi seleziona **[!UICONTROL Aggiungi una nota]**.
+>1. Nella nota visualizzata, digita una panoramica del modulo.
+>
+>    È possibile aggiungere più note per un modulo.
+>
+>1. Chiudi l&#39;area **[!UICONTROL Note]**.
+>
+>     Dopo aver aggiunto una nota a uno scenario, nell&#39;area Controlli viene visualizzato un punto sull&#39;icona **[!UICONTROL Note]** ![Note con punto](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png).
+>
+>1. Fai clic sull&#39;icona **[!UICONTROL Note]** ![Note con punto](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png) per visualizzare le note. Quando le note sono aperte, viene visualizzato un cerchio attorno all&#39;icona Note.
+>
+
+### Attiva lo scenario
+
+L’ultimo passaggio nella creazione di uno scenario è quello di attivarlo.
+
+Poiché questo scenario è alla ricerca di un problema specifico, non è necessario attivarlo. L’attivazione di uno scenario ne determina l’esecuzione secondo una pianificazione o quando si verifica un’azione specifica in un’applicazione. Dopo aver attivato uno scenario, per impostazione predefinita viene eseguito ogni 15 minuti. Puoi modificare questa impostazione definendo quando e con quale frequenza desideri che venga eseguita.
+
+Per ulteriori informazioni sull&#39;attivazione degli scenari, vedere [Attivare o disattivare uno scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+
+Per informazioni sulle pianificazioni, vedere [Pianificare uno scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
+
+## Creare uno scenario di esercitazione nell’esperienza classica
+
+* [Inizia a creare lo scenario (Classic)](#begin-creating-the-scenario-classic)
+* [Aggiungere e configurare il primo modulo (Classic)](#add-and-configure-the-first-module-classic)
+* [Aggiungere e configurare il secondo modulo (Classic)](#add-and-configure-the-second-module-classic)
+* [Test dello scenario (Classic)](#test-the-scenario-classic)
+* [Attiva lo scenario (classico)](#activate-the-scenario-classic)
+
+### Inizia a creare lo scenario (Classic)
 
 1. Nell&#39;area **Scenari**, fare clic su **Crea un nuovo scenario**.
 
@@ -65,9 +236,9 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
    Viene visualizzato l’editor scenario, contenente un modulo vuoto al centro.
 
 1. Seleziona il nome del segnaposto **[!UICONTROL Nuovo scenario]** nell&#39;angolo superiore sinistro, quindi immetti un nome.
-1. Continua con [Aggiungi e configura il primo modulo](#add-and-configure-the-first-module).
+1. Continua con [Aggiungi e configura il primo modulo (Classic)](#add-and-configure-the-first-module-classic).
 
-### Aggiungere e configurare il primo modulo
+### Aggiungere e configurare il primo modulo (Classic)
 
 1. Fai clic sul modulo vuoto per scegliere l’app dalla quale selezionare un modulo.
 
@@ -115,9 +286,9 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
    ![Modulo rinominato](assets/module-renamed-wf.png)
 
-1. Continua con [Aggiungi e configura il secondo modulo](#add-and-configure-the-second-module).
+1. Continua con [Aggiungi e configura il secondo modulo (Classic)](#add-and-configure-the-second-module-classic).
 
-## Aggiungere e configurare il secondo modulo
+### Aggiungere e configurare il secondo modulo (Classic)
 
 1. Passa il puntatore del mouse sul cerchio parziale a destra della sezione del modulo, quindi fai clic su **[!UICONTROL Aggiungi un altro modulo]**.
 1. Selezionare Adobe Workfront dall&#39;elenco delle applicazioni, quindi scegliere il modulo **[!UICONTROL Converti oggetto]**.
@@ -145,9 +316,9 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 1. Fare clic con il pulsante destro del mouse sul modulo, scegliere **[!UICONTROL Rinomina]**, quindi digitare un nome che descriva le operazioni che si desidera eseguire (ad esempio &quot;Converti in progetto&quot;), quindi fare clic su **[!UICONTROL OK]**.
 
-1. Continua a [Verificare lo scenario](#test-the-scenario).
+1. Continua con [Test dello scenario (classico)](#test-the-scenario-classic).
 
-## Verifica lo scenario
+### Test dello scenario (Classic)
 
 Prima di attivare lo scenario, è importante testarlo eseguendolo almeno una volta e visualizzando i risultati. Questo ti aiuta a capire come i dati scorrono attraverso lo scenario e a trovare eventuali errori.
 
@@ -185,7 +356,7 @@ In questo caso, se il test ha esito positivo, la richiesta viene individuata e c
 >1. Fai clic sull&#39;icona **[!UICONTROL Note]** ![Note con punto](assets/notes-icon-w-dot.png) per visualizzare le note. Quando le note sono aperte, viene visualizzato un cerchio attorno all&#39;icona Note.
 >
 
-## Attiva lo scenario
+### Attiva lo scenario (classico)
 
 L’ultimo passaggio nella creazione di uno scenario è quello di attivarlo.
 

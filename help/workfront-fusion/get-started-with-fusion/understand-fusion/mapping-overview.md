@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 96%
+source-wordcount: '488'
+ht-degree: 75%
 ---
 # Panoramica della mappatura
 
@@ -23,6 +23,10 @@ La mappatura è il processo di assegnazione degli output di un modulo ai campi d
 Il funzionamento di un modulo produce come output zero, uno o più bundle. Un bundle è costituito da uno o più elementi.
 
 Puoi mappare questi elementi ai campi nei moduli successivi.
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 Quando fai clic su un campo in cui puoi inserire un valore generato da un modulo precedente in uno scenario, viene visualizzato il pannello di mappatura. Qui puoi selezionare l’elemento che desideri mappare. Una mappatura può includere uno o più dei seguenti elementi:
 
@@ -37,15 +41,15 @@ Quando fai clic su un campo in cui puoi inserire un valore generato da un modulo
 
 Elemento singolo
 
-![Mappa singolo elemento](assets/map-single.png)
+![Mappa singolo elemento](assets/new-map-single.png)
 
 Più elementi con testo
 
-![Mappa più elementi](assets/map-multiple-with-text.png)
+![Mappa più elementi](assets/new-map-multiple-with-text.png)
 
 Funzione con più elementi e testo
 
-![Mappa una formula con testo](assets/map-formula-with-text.png)
+![Mappa una formula con testo](assets/new-map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -61,11 +65,11 @@ Per istruzioni sulla mappatura, consulta gli articoli in [Mappatura dati: indice
 
 Quando fai clic su un campo in cui puoi mappare i dati, viene aperto il pannello di mappatura.
 
-La prima scheda ![Mappa da altri moduli](assets/toolbar-icon-functions-you-map-from-other-modules.png) mostra gli elementi che puoi mappare da altri moduli.
+Nella prima scheda vengono visualizzati gli elementi che è possibile mappare da altri moduli.
 
 Le altre schede includono funzioni, operatori e parole chiave che puoi utilizzare per creare formule. Le formule vengono ordinate in schede diverse in base al tipo di dati che gestiscono.
 
-![Pannello di mappatura](assets/mapping-panel-blank.png)
+![Pannello di mappatura](assets/new-mapping-panel-blank.png)
 
 
 Per ulteriori informazioni sulle schede delle funzioni, consulta [Panoramica delle funzioni](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
@@ -78,13 +82,13 @@ Gli elementi possono contenere più valori di tipi diversi. Questi sono elementi
 
 I bundle di tipo raccolta mostrano `(Collection)` accanto all’etichetta del bundle nell’output del modulo.
 
-![Raccolta](assets/collection.png)
+![Raccolta](assets/new-collection.png)
 
 Nella maggior parte dei casi vengono mappati gli elementi della raccolta anziché l’elemento che rappresenta l’intera raccolta.
 
 Per individuare l’elemento di una raccolta nel pannello di mappatura, fai clic sulla freccia accanto alla raccolta.
 
-![Menu a discesa della raccolta](assets/collection-dropdown.png)
+![Menu a discesa della raccolta](assets/new-collection-dropdown.png)
 
 Per ulteriori informazioni sulle raccolte, consulta [Tipi di dati degli elementi](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -96,8 +100,8 @@ Gli elementi possono contenere più valori dello stesso tipo. Questi elementi so
 
 I bundle di tipo array mostrano `(Array)` accanto all’etichetta del bundle nell’output del modulo.
 
-Nel pannello di mappatura, gli array vengono mostrati con parentesi quadre. Puoi identificare un elemento di tipo array tramite le parentesi quadre alla fine dell’etichetta dell’elemento. Per individuare un elemento array specifico nel pannello di mappatura, fai clic sulla freccia accanto all’array.
+Nel pannello di mappatura, gli array vengono visualizzati con parentesi quadre. È possibile identificare un elemento di tipo array tramite le parentesi quadre alla fine dell&#39;etichetta dell&#39;elemento. Per individuare un elemento di array specifico nel pannello di mappatura, fate clic sulla freccia accanto all&#39;array.
 
-![Array](assets/array.png)
+![Array](assets/new-array.png)
 
 Per informazioni e istruzioni sulla mappatura di array ed elementi di array, consulta [Mappare array ed elementi array](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

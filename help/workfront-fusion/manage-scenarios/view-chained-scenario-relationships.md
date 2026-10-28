@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 16%
 ---
 # Visualizzare e gestire le relazioni tra scenari concatenati
@@ -64,21 +64,17 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 È possibile visualizzare una mappa dello scenario corrente e dei relativi scenari padre o figlio. La mappa mostra un diagramma del flusso di dati in tutti gli scenari concatenati.
 
-![Relazioni tra scenari concatenati](assets/chained-scenario-relationships-2.png)
-
-<!--get a better picture-->
-
 Per visualizzare la mappa delle relazioni per uno scenario concatenato:
 
 1. Fai clic sulla scheda **[!UICONTROL Scenario]** nel pannello a sinistra, quindi fai clic sullo scenario.
 
    Oppure
 
-   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
+   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
 1. Fare clic sulla scheda **Relazioni**.
 
-   ![Scheda Relazioni](assets/relations-tab.png)
+   ![Scheda Relazioni](assets/new-relationships-tab.png)
 
 1. Per informazioni generali su ogni scenario concatenato, controlla i tag.
 

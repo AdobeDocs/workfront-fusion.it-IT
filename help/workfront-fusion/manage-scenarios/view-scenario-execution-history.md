@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 12%
+source-wordcount: '987'
+ht-degree: 11%
 ---
 # Visualizzare la cronologia delle esecuzioni di uno scenario
 
@@ -26,7 +26,13 @@ Un evento scenario è una modifica allo scenario, ad esempio la modifica, l’at
 
 >[!NOTE]
 >
->La cronologia di uno scenario visualizza tutte le esecuzioni dello scenario negli ultimi 30 giorni.
+>* La cronologia di uno scenario visualizza tutte le esecuzioni dello scenario negli ultimi 30 giorni.
+>* Nella nuova esperienza, l’editor scenario dispone anche di un pannello Cronologia di esecuzione. Mostra lo stato, la durata, le operazioni e le dimensioni dei dati di ogni esecuzione. Qui è possibile:
+>
+>   * Filtra per stato
+>   * Cerca eventi
+>   * Usa **Precedente** e **Successivo** per spostarti tra le esecuzioni senza tornare all&#39;elenco di esecuzione
+>   * Seleziona un evento per centrare ed evidenziare il modulo corrispondente nell’area di lavoro. Quando sono disponibili i dettagli dell’operazione, si apre il pannello Richiesta e risposta per tale evento.
 
 ## Requisiti di accesso
 
@@ -72,7 +78,7 @@ La scheda [!UICONTROL Cronologia] mostra più dettagli di quelli disponibili nel
 
    Oppure
 
-   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
+   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/new-exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
 1. Fare clic su **Cronologia** accanto al nome dello scenario.
    ![scheda cronologia](assets/history-tab.png)
@@ -103,7 +109,7 @@ La scheda [!UICONTROL Cronologia] mostra più dettagli di quelli disponibili nel
 
    Oppure
 
-   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
+   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/new-exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
 1. Fai clic sulla scheda **[!UICONTROL Cronologia]** nel pannello di destra.
 1. (Facoltativo) Per informazioni dettagliate sull’esecuzione di uno scenario selezionato, fai clic sull’esecuzione nel pannello a destra.

@@ -11,16 +11,20 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 18%
+source-wordcount: '1508'
+ht-degree: 8%
 ---
 # Aggiungere un modulo a uno scenario
 
 Uno scenario è costituito da una serie di moduli che indicano come i dati devono essere trasformati all’interno di un’app o trasferiti tra le app e i servizi web. Puoi creare un modulo aggiungendo e configurando i moduli.
 
 Questo articolo descrive il processo di base per l’aggiunta di un modulo a uno scenario. Per istruzioni più specifiche su come aggiungere uno scenario, vedere gli altri articoli in [Aggiungi moduli: indice articolo](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 ## Requisiti di accesso
 
@@ -57,6 +61,46 @@ Il primo modulo di uno scenario è in genere un modulo trigger.
 
 Per ulteriori informazioni sui moduli trigger, vedere [Moduli trigger](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) nell&#39;articolo Panoramica dei moduli.
 
+* [Aggiungi il primo modulo nella nuova esperienza (scelta consigliata)](#add-the-first-module-in-the-new-experience-recommended)
+* [Aggiungi il primo modulo nell’esperienza classica](#add-the-first-module-in-the-classic-experience)
+
+### Aggiungi il primo modulo nella nuova esperienza (scelta consigliata)
+
+1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
+1. Inizia a creare uno scenario facendo clic su **Crea un nuovo scenario** nell&#39;angolo superiore destro della schermata.
+
+   Viene aperto l’editor dello scenario, con un modulo segnaposto e l’elenco dei connettori disponibili.
+
+   ![Modulo segnaposto](/help/workfront-fusion/build-practice-scenarios/assets/new-placeholder-module.png)
+
+   ![Selettore app e servizi](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
+
+1. Seleziona il connettore o il webhook che avvierà questo scenario:
+
+   * Sfoglia per categoria utilizzando il pannello a sinistra ([!UICONTROL Preferiti], [!UICONTROL Tutte le app], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative &amp; Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI] o [!UICONTROL Incorporato]), oppure
+   * Immettere un termine nella casella di ricerca. I risultati vengono aggiornati durante la digitazione e le corrispondenze del connettore vengono elencate prima che il nome del modulo e la descrizione corrispondano.
+
+1. Fare clic sul modulo che si desidera aggiungere allo scenario.
+
+1. Configura il modulo.
+
+   Le impostazioni del modulo si aprono nel pannello sul lato destro dell’area di lavoro.
+
+   Per istruzioni sulla configurazione di moduli specifici, vedere l&#39;articolo relativo alle applicazioni selezionate, elencate in [Riferimenti alle applicazioni Fusion e ai relativi moduli: indice articolo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>* Nell’elenco dei connettori, i badge identificano le app private, premium e beta.
+>* I moduli per le app di grandi dimensioni sono organizzati in gruppi.
+>* Quando aggiungi un gestore degli errori, vengono elencate per prime le direttive.
+>* Se un connettore dispone di più versioni, sarà possibile selezionare la versione dopo aver selezionato il connettore.
+
+>[!NOTE]
+>
+>Se hai rimosso il primo modulo da uno scenario e desideri sostituirlo, fai clic sul modulo segnaposto per aprire l’elenco dei connettori.
+
+### Aggiungi il primo modulo nell’esperienza classica
+
 1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Inizia a creare uno scenario facendo clic su **Crea un nuovo scenario** nell&#39;angolo superiore destro della schermata.
 
@@ -75,6 +119,32 @@ Per ulteriori informazioni sui moduli trigger, vedere [Moduli trigger](/help/wor
 
 ## Aggiungere un altro modulo a uno scenario
 
+* [Aggiungi un altro modulo nella nuova esperienza (scelta consigliata)](#add-another-module-in-the-new-experience-recommended)
+* [Aggiungi un altro modulo nell’esperienza classica](#add-another-module-in-the-classic-experience)
+
+### Aggiungi un altro modulo nella nuova esperienza (scelta consigliata)
+
+1. Se non ti trovi nell&#39;editor scenari dello scenario in cui desideri aggiungere un modulo, fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
+1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
+1. Per aggiungere un modulo dopo un altro modulo, passa il cursore sul bordo destro del modulo dopo il quale vuoi aggiungere un modulo, quindi fai clic su **Aggiungi un altro modulo** quando viene visualizzato.
+
+   Viene visualizzato l’elenco dei connettori, con tutti i connettori già utilizzati nello scenario.
+
+1. (Facoltativo) Per selezionare un altro connettore, fare clic su **Aggiungi un altro modulo** nell&#39;elenco, quindi selezionare il connettore:
+
+   * Sfoglia per categoria utilizzando il pannello a sinistra ([!UICONTROL Preferiti], [!UICONTROL Tutte le app], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative &amp; Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI] o [!UICONTROL Incorporato]), oppure
+   * Immettere un termine nella casella di ricerca. I risultati vengono aggiornati durante la digitazione e le corrispondenze del connettore vengono elencate prima che il nome del modulo e la descrizione corrispondano.
+
+1. Fare clic sul modulo che si desidera aggiungere allo scenario.
+
+1. Configura il modulo.
+
+   Le impostazioni del modulo si aprono nel pannello sul lato destro dell’area di lavoro.
+
+   Per istruzioni sulla configurazione di moduli specifici, vedere l&#39;articolo relativo alle applicazioni selezionate, elencate in [Riferimenti alle applicazioni Fusion e ai relativi moduli: indice articolo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+### Aggiungi un altro modulo nell’esperienza classica
+
 1. Se non ti trovi nell&#39;editor scenari dello scenario in cui desideri aggiungere un modulo, fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
 1. Per aggiungere un modulo a un altro modulo, passa il cursore sull&#39;handle destro del modulo dopo il quale vuoi aggiungere un modulo, quindi fai clic su **Aggiungi un altro modulo** quando viene visualizzato.
@@ -87,6 +157,45 @@ Per ulteriori informazioni sui moduli trigger, vedere [Moduli trigger](/help/wor
    Per istruzioni sulla configurazione di moduli specifici, vedere l&#39;articolo relativo alle applicazioni selezionate, elencate in [Riferimenti alle applicazioni Fusion e ai relativi moduli: indice articolo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
 ## Inserire un modulo tra moduli esistenti in uno scenario
+
+* [Inserire un modulo nella nuova esperienza (scelta consigliata)](#insert-a-module-in-the-new-experience-recommended)
+* [Inserire un modulo nell’esperienza classica](#insert-a-module-in-the-classic-experience)
+
+### Inserire un modulo nella nuova esperienza (scelta consigliata)
+
+1. Se non ti trovi nell&#39;editor scenari dello scenario in cui desideri aggiungere un modulo, fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
+1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
+1. Fare clic con il pulsante destro del mouse sul percorso tra i moduli in cui si desidera inserire un modulo, quindi selezionare **Aggiungi modulo**.
+
+   ![Aggiungi un modulo tra moduli esistenti](assets/add-a-module-between-modules.png)
+
+   Viene visualizzato l’elenco dei connettori, con tutti i connettori già utilizzati nello scenario.
+
+1. (Facoltativo) Per selezionare un altro connettore, fare clic su **Aggiungi un altro modulo** nell&#39;elenco, quindi selezionare il connettore:
+
+   * Sfoglia per categoria utilizzando il pannello a sinistra ([!UICONTROL Preferiti], [!UICONTROL Tutte le app], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative &amp; Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI] o [!UICONTROL Incorporato]), oppure
+   * Immettere un termine nella casella di ricerca. I risultati vengono aggiornati durante la digitazione e le corrispondenze del connettore vengono elencate prima che il nome del modulo e la descrizione corrispondano.
+
+1. Fare clic sul modulo che si desidera aggiungere allo scenario.
+
+1. Configura il modulo.
+
+   Le impostazioni del modulo si aprono nel pannello sul lato destro dell’area di lavoro.
+
+   Per istruzioni sulla configurazione di moduli specifici, vedere l&#39;articolo relativo alle applicazioni selezionate, elencate in [Riferimenti alle applicazioni Fusion e ai relativi moduli: indice articolo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>Per creare un collegamento a un modulo specifico, aggiungere `?moduleId=<module-id>` all&#39;URL durante la visualizzazione delle pagine seguenti:
+>
+>* Pagina di modifica scenario (l&#39;URL termina in `/edit`)
+>* Esecuzione di uno scenario specifico (l&#39;URL termina in `/logs/<log-id>`)
+>
+>`<module-id>` fa riferimento al numero accanto all&#39;etichetta del modulo durante la visualizzazione dello scenario.
+>
+>Questo può essere utile quando si eseguono scenari di debug o si copia la configurazione del modulo.
+
+### Inserire un modulo nell’esperienza classica
 
 1. Se non ti trovi nell&#39;editor scenari dello scenario in cui desideri aggiungere un modulo, fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.

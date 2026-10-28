@@ -11,22 +11,38 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 36%
+source-wordcount: '392'
+ht-degree: 26%
 ---
 # Visualizzare il flusso di dati di uno scenario in esecuzione
 
 Puoi guardare uno scenario in esecuzione per vedere come scorrono i dati.
 
-Durante l’esecuzione di uno scenario, il modulo attivo è contrassegnato da un anello in crescita intorno al modulo. L’anello mostra solo che il modulo è in esecuzione, non il suo avanzamento. I moduli che vengono eseguiti rapidamente possono visualizzare solo una piccola parte dell&#39;anello.
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
-![Chiama il modulo](assets/ring-around-module.png)
+Durante l’esecuzione di uno scenario, il modulo attivo è contrassegnato da un anello che ruota sull’icona del modulo nella nuova esperienza o da un anello in crescita intorno al modulo nell’esperienza classica. L’anello mostra solo che il modulo è in esecuzione, non il suo avanzamento. I moduli che vengono eseguiti rapidamente possono visualizzare solo una piccola parte dell&#39;anello.
+
+Nuova esperienza
+
+![Anello di rotazione sull&#39;icona del modulo nella nuova esperienza](assets/new-spinning-icon.png)
+
+Esperienza classica
+
+![Chiama il modulo nell&#39;esperienza classica](assets/ring-around-module.png)
 
 Dopo l&#39;esecuzione del modulo, viene visualizzato un indicatore di output.
 
-![Indicatore di output](assets/data-flow-output.png)
+Nuova esperienza
+
+![Indicatore di output nella nuova esperienza](assets/new-output-indicator.png)
+
+Esperienza classica
+
+![Indicatore di output nell&#39;esperienza classica](assets/data-flow-output.png)
 
 Se il modulo elabora più di un bumdle, l&#39;anello appare per ogni bundle elaborato e l&#39;indicatore di output conta per ogni bundle che produce.
 
@@ -65,6 +81,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Seleziona lo scenario in cui desideri visualizzare il flusso di dati.
+1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
 1. Se lo scenario non è in esecuzione, attivarlo o fare clic su **Esegui una volta** per avviare l&#39;esecuzione dello scenario.
 1. Seleziona l’esecuzione da visualizzare nella sezione Attualmente in esecuzione del pannello Cronologia esecuzione.
 

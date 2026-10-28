@@ -13,7 +13,7 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 59%
@@ -44,7 +44,7 @@ Il pannello di mappatura include le seguenti schede. Ciascuna scheda include fun
 | **Data e ora** <br> ![Funzioni data e ora](assets/toolbar-icon-date-time-functions.png) | <ul><li>[Funzioni data e ora](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Token per la formattazione di data e ora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Token per l’analisi di data e ora](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **Funzioni per l’utilizzo degli array**<br> ![Funzioni array](assets/toolbar-icon-functions-for-arrays.png) | [Funzioni array](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![Barra degli strumenti Funzioni](assets/functions-toolbar-350x189.png)
+![Barra degli strumenti Funzioni](assets/new-functions-toolbar.png)
 
 ## Funzioni personalizzate
 
@@ -52,4 +52,4 @@ Il pannello di mappatura include le seguenti schede. Ciascuna scheda include fun
 
 Poiché le funzioni personalizzate funzionano tramite Adobe App Builder, la tua organizzazione deve disporre di una licenza Adobe App Builder per utilizzarle.
 
-Per informazioni e istruzioni per le funzioni personalizzate, consulta Dati app tramite funzioni personalizzate.
+Per informazioni e istruzioni sulle funzioni personalizzate, vedere [Mappare i dati utilizzando le funzioni personalizzate](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).

@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 25%
@@ -67,7 +67,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 Per generare un errore in modo condizionale, puoi configurare un modulo in modo che, durante il suo funzionamento, abbia intenzionalmente esito negativo. È possibile utilizzare il modulo [!UICONTROL JSON] > [!UICONTROL Analizza JSON], configurato per generare facoltativamente un errore (`BundleValidationError` in questo caso):
 
-![Errore JSON](assets/json-parse-json.png)
+![Errore JSON](assets/new-json-parse-json.png)
 
 È quindi possibile allegare una delle direttive di gestione degli errori al percorso di gestione degli errori:
 
@@ -78,4 +78,4 @@ Per generare un errore in modo condizionale, puoi configurare un modulo in modo 
 
 Nell&#39;esempio seguente viene illustrato l&#39;utilizzo della direttiva [!DNL Rollback]:
 
-![Direttiva di rollback](assets/rollback-directive.png)
+![Direttiva di rollback](assets/new-rollback-directive.png)

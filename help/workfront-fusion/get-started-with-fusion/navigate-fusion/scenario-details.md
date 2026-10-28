@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '583'
 ht-degree: 18%
 ---
 # Panoramica dei dettagli delllo scenario
@@ -59,11 +59,11 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
    Oppure
 
-   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
+   Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
 1. Nella pagina visualizzata, puoi esaminare gli elementi elencati nella tabella seguente:
 
-   ![Dettagli scenario](assets/scenario-detail-350x207.png)
+   ![Dettagli scenario](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -111,9 +111,11 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
       <td role="rowheader">[!UICONTROL Opzioni]</td> 
       <td> <p>Questo menu offre opzioni aggiuntive senza dover aprire l’editor di scenari. Comprendono:</p> 
        <ul> 
+        <li>[!UICONTROL Sblocca esecuzione]</li> 
         <li>[!UICONTROL Scheduling]</li> 
         <li>[!UICONTROL Rinomina]</li> 
         <li>[!UICONTROL Clone]</li> 
+        <li>[!UICONTROL Clone as template]</li> 
         <li>[!UICONTROL Elimina]</li> 
        </ul> </td> 
      </tr> 

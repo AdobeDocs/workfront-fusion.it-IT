@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 850372a59529141a31a1a55035c55a3e506e69fb
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 6%
+source-wordcount: '1757'
+ht-degree: 5%
 ---
 # Configurare le impostazioni di uno scenario
 
 Puoi configurare impostazioni specifiche per gli scenari nel pannello delle impostazioni dello scenario.
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 ## Requisiti di accesso
 
@@ -51,6 +55,23 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 +++
 
 ## Apri le impostazioni dello scenario
+
+* [Apri le impostazioni dello scenario nella nuova esperienza (scelta consigliata)](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [Apri le impostazioni dello scenario nell’esperienza classica](#open-the-scenario-settings-in-the-classic-experience)
+
+### Apri le impostazioni dello scenario nella nuova esperienza (scelta consigliata)
+
+1. Fai clic su **Scenari** nel pannello a sinistra.
+1. Individua lo scenario desiderato, quindi fai clic sul nome.
+1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor dello scenario.
+1. Fare clic sull&#39;icona **Impostazioni scenario** ![Icona Impostazioni scenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png) nell&#39;area Controlli.
+
+   Per visualizzarla, potrebbe essere necessario fare clic sull&#39;icona a tre punti nell&#39;area Controlli.
+
+   Nel pannello [!UICONTROL Impostazioni scenario] visualizzato, puoi configurare varie impostazioni avanzate per lo scenario.
+1. Attiva o disattiva le impostazioni dello scenario in base alle esigenze. Consulta [Opzioni impostazioni scenario](#scenario-settings-options) di seguito.
+
+### Apri le impostazioni dello scenario nell’esperienza classica
 
 1. Fai clic su **Scenari** nel pannello a sinistra.
 1. Individua lo scenario desiderato, quindi fai clic sul nome.
@@ -150,13 +171,13 @@ L&#39;impostazione di più cicli può essere utile quando si desidera evitare l&
 
 **Esempi:** Workfront > [!UICONTROL Osserva il record] verifica la presenza di nuovi problemi e Workfront >[!UICONTROL Converti oggetto] converte la nuova richiesta in un progetto e le assegna il modello appropriato.
 
-![Impostazioni scenario](assets/scenario-settings-ex-1-350x157.png)
+![Impostazioni scenario](assets/new-scenario-settings-ex-1.png)
 
 L&#39;impostazione [!UICONTROL altri cicli] viene applicata solo quando si pianifica l&#39;esecuzione dello scenario. Quando si utilizza il pulsante [!UICONTROL Esegui una volta], vengono prese in considerazione le impostazioni del ciclo.
 
 #### Il numero massimo di cicli è impostato su 1 (impostazione predefinita)
 
-![Numero massimo di cicli](assets/max-number-cycles-1-350x201.png)
+![Numero massimo di cicli](assets/new-max-number-cycles.png)
 
 Il numero massimo di cicli nel modulo Workfront > Osserva record è impostato su `10`.
 Se vengono inviate 100 richieste a Workfront e il campo Numero massimo di cicli è impostato su 10, 90 file vengono lasciati non elaborati dopo l’esecuzione di uno scenario. I successivi 10 file vengono elaborati nella successiva esecuzione pianificata dello scenario.
@@ -169,9 +190,7 @@ Se vengono aggiunti 100 file alla cartella Dropbox e l&#39;opzione Numero massim
 
 Tutti i file vengono elaborati entro 1 esecuzione dello scenario.
 
-Puoi visualizzare i cicli già eseguiti nei dettagli dello scenario:
-
-![Dettagli scenario](assets/scenario-detail-350x207.png)
+È possibile visualizzare i cicli già eseguiti nell&#39;area Cronologia della pagina Dettagli scenario.
 
 Per ulteriori informazioni su questa pagina, vedere [Dettagli scenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
@@ -192,6 +211,34 @@ Per ulteriori informazioni sugli errori, vedere [Tipi di errore](/help/workfront
 Per impostare una sostituzione a livello di scenario per un tipo di notifica, selezionare o deselezionare la casella accanto al tipo di notifica.
 
 Per informazioni sulle impostazioni di notifica, incluse le sostituzioni a livello di scenario, vedere [Impostare le opzioni di notifica](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md).
+
+### Registri di debug temporanei
+
+>[!NOTE]
+>
+>* I registri di debug temporanei sono disponibili solo nel nuovo Designer di scenari e solo se la funzione è abilitata per la tua organizzazione.
+>* La modifica dell’impostazione richiede l’autorizzazione per modificare lo scenario.
+
+I dettagli di richieste e risposte non vengono conservati per ogni esecuzione pianificata o attivata, perché richiedono molto spazio di archiviazione. Esegui una volta li tiene sempre.
+
+Per raccogliere i dettagli della richiesta e della risposta per le esecuzioni regolari dello scenario, scegli la durata della raccolta:
+
+* Per la prossima ora
+* Per il giorno successivo
+* Per l&#39;esecuzione successiva
+* Per le prossime 10 esecuzioni
+
+La modifica viene applicata immediatamente. Non è necessario salvare lo scenario.
+
+Quando i registri di debug temporanei sono attivi, l’impostazione mostra quando rimangono attivi fino a, o quante esecuzioni rimangono. Per interrompere la raccolta dei dettagli della richiesta e della risposta prima di tale data, fare clic su **Disattiva**.
+
+I registri di debug si disattivano automaticamente al termine del tempo o del numero di esecuzioni. Ogni esecuzione conta, incluse quelle pianificate che non trovano nuovi dati.
+
+>[!NOTE]
+>
+>I registri di debug temporanei sono disponibili solo nella nuova esperienza e solo se la funzione è abilitata per la tua organizzazione. Per modificare questa impostazione, è necessario disporre dell&#39;autorizzazione per modificare lo scenario.
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
 
 ### Pool di lavoro
 
