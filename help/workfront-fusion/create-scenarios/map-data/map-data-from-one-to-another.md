@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 17%
@@ -75,7 +75,7 @@ Per assegnare elementi di output ai campi di input di un modulo:
    I risultati della ricerca contengono il termine di ricerca e non fanno distinzione tra maiuscole e minuscole.
 1. Per selezionare un valore che sia un elemento di una raccolta, fai clic sulla freccia accanto alla raccolta, quindi seleziona l’elemento quando viene visualizzato.
 
-   ![Elemento raccolta](assets/collection-dropdown.png)
+   ![Elemento raccolta](/help/workfront-fusion/get-started-with-fusion/understand-fusion/assets/new-collection-dropdown.png)
 
 1. Fai clic su un elemento dal pannello di mappatura per inserirlo nel campo.
 

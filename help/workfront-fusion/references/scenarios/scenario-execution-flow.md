@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 1%
+source-wordcount: '821'
+ht-degree: 0%
 ---
 # Flusso di esecuzione di uno scenario
 
 Questo articolo spiega come viene eseguito uno scenario, come scorrono i dati al suo interno e come visualizzare i dati elaborati da ciascun modulo.
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 Per visualizzare il modo in cui i dati scorrono attraverso uno scenario attivo, vedere [Visualizzare il flusso di dati in uno scenario in esecuzione](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
@@ -43,7 +47,7 @@ Il primo passaggio dello scenario, eseguito dal primo modulo, consiste nel contr
 
 Se il primo modulo restituisce un bundle, il bundle passa attraverso il resto dello scenario. In questo esempio, il bundle passerebbe al secondo modulo, che converte la richiesta in un progetto.
 
-![Flusso di esecuzione dello scenario Workfront](assets/example-execution-flow-wf-only.png)
+![Flusso di esecuzione dello scenario Workfront](assets/new-example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -57,7 +61,7 @@ Il primo passaggio dello scenario, eseguito dal primo modulo, consiste nel contr
 
 Se viene restituito un bundle, questo passa attraverso il resto dello scenario. In questo esempio, il resto dello scenario è costituito dal secondo modulo, che carica il bundle nella cartella [!DNL Dropbox].
 
-![Flusso di esecuzione dello scenario di integrazione](assets/example-execution-flow-wf-dropbox.png)
+![Flusso di esecuzione dello scenario di integrazione](assets/new-example-execution-flow-wf-dropbox.png)
 
 Se il primo modulo restituisce più bundle, il primo viene caricato in [!DNL Dropbox] prima del secondo. Poi viene caricato il secondo bundle, poi il terzo e così via.
 
@@ -78,7 +82,7 @@ Per ogni modulo, il bundle passa attraverso un processo in 4 fasi prima di passa
 
 Al termine dell’esecuzione di uno scenario, ogni modulo visualizza un’icona che mostra il numero di operazioni eseguite. Puoi fare clic su questa icona per visualizzare informazioni dettagliate sui bundle elaborati per ogni passaggio del processo. Puoi vedere quali impostazioni del modulo sono state utilizzate e quali bundle sono stati restituiti da ciascun modulo.
 
-![Bundle elaborati](assets/Info-processed-bundles.png)
+![Bundle elaborati](assets/new-Info-processed-bundles.png)
 
 In questo esempio, il modulo ha ricevuto informazioni di input quali:
 

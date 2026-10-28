@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 16%
@@ -82,7 +82,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. Individua l’esecuzione da riattivare nell’elenco Esecuzioni sul lato destro della pagina.
 1. Fai clic su **Riattiva** per lo scenario.
 
-![Riavvio dal diagramma](assets/retrigger-from-diagram.png)
+![Riavvio dal diagramma](assets/new-retrigger-from-diagram.png)
 
 ### Attivare un’esecuzione dalla cronologia dello scenario
 
@@ -95,7 +95,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. Individua l’esecuzione da riattivare. Se necessario, è possibile utilizzare la ricerca full-text.
 1. Fai clic su **Riattiva** per lo scenario.
 
-![Riavvio dalla cronologia](assets/retrigger-from-history.png)
+![Riavvio dalla cronologia](assets/new-retrigger-from-history.png)
 
 ### Riattivare uno scenario dalla pagina di esecuzione dello scenario
 
@@ -108,7 +108,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. Nella pagina di esecuzione, fare clic su **Trigger**.
 
 
-![Riavvio dall&#39;esecuzione](assets/retrigger-from-execution.png)
+![Riavvio dall&#39;esecuzione](assets/new-retrigger-from-execution.png)
 
 
 

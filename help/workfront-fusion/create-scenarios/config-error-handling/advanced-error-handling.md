@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 12%
+source-wordcount: '950'
+ht-degree: 11%
 ---
 # Aggiungere filtri e nidificazione a percorsi di gestione degli errori
 
 Puoi aggiungere tecniche avanzate di gestione degli errori al percorso di gestione degli errori includendo filtri e nidificazione.
+
+>[!NOTE]
+>
+>Workfront Fusion sta passando dall’editor dello scenario a una nuova esperienza. Durante questa transizione, sono disponibili sia le esperienze classiche che quelle nuove, e puoi passare da una all’altra in qualsiasi momento. È consigliabile utilizzare la nuova esperienza. Per ulteriori informazioni, consulta [Esperienze nuove e classiche](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) nell&#39;articolo Editor scenari.
 
 ## Requisiti di accesso
 
@@ -74,7 +78,13 @@ Per informazioni su come Fusion valuta ed elabora vari tipi di dati, vedere [Tip
 
 ### Esempio: gestione degli errori con i filtri
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>In questo esempio viene utilizzato l’editor di scenario classico.
 
 Questo scenario di esempio mostra il funzionamento di questi filtri per la gestione degli errori.
 
@@ -122,7 +132,13 @@ La direttiva Riprendi fornisce quindi il percorso della cartella come output per
 
 È possibile creare e configurare route del gestore errori in tutti i moduli, ad eccezione dei router. È pertanto possibile creare una route di gestore degli errori per un modulo che fa già parte di una route di gestore degli errori esistente.
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>In questo esempio viene utilizzato l’editor di scenario classico.
 
 Esempio:
 

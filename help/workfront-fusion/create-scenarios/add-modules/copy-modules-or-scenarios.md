@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f11394266811578664228f44a6202bc6621a75a0
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '966'
 ht-degree: 10%
 ---
 # Copiare moduli o scenari
@@ -69,18 +69,19 @@ Quando si incollano moduli in uno scenario diverso, considera quanto segue:
 
 ### Copia moduli
 
-La copia di un gruppo di moduli è simile alla copia di un singolo modulo.
+Puoi copiare un singolo modulo o un gruppo di moduli.
+
+
+>[!NOTE]
+>
+>Per selezionare più moduli, tieni premuto [!UICONTROL shift] e fai clic sui moduli da copiare. Copiando un gruppo di moduli vengono copiate anche le linee di connessione, i filtri o la logica di routing tra di essi.
 
 1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
 1. Seleziona lo scenario in cui desideri copiare un modulo.
 1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
-1. Fai clic con il pulsante destro del mouse sul modulo che desideri copiare.
-
-   >[!NOTE]
-   >
-   >Per selezionare più moduli, tieni premuto [!UICONTROL shift] e fai clic sui moduli da copiare. Copiando un gruppo di moduli vengono copiate anche le linee di connessione, i filtri o la logica di routing tra di essi.
-
-1. Seleziona **[!UICONTROL Copia modulo]**.
+1. Se copi più moduli, tieni premuto Maiusc e fai clic sui moduli da copiare.
+1. Fai clic con il pulsante destro del mouse sul modulo o su uno dei moduli che desideri copiare.
+1. Selezionare **[!UICONTROL Copia modulo]** o **[!UICONTROL Copia moduli]**.
 1. Spostare il cursore nell&#39;area dello scenario in cui si desidera copiare lo scenario.
 1. Fare clic con il pulsante destro del mouse e selezionare **[!UICONTROL Incolla]**.
 1. Connetti i moduli incollati allo scenario trascinandoli nella posizione appropriata nello scenario.
@@ -101,7 +102,7 @@ La clonazione di uno scenario ne crea una copia, che potrai quindi modificare.
 
       Oppure
 
-      Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
+      Se si sta lavorando sullo scenario nell&#39;editor scenario, fare clic sulla freccia sinistra ![Esci dalla modifica](assets/new-exit-editing-arrow.png) nell&#39;angolo superiore sinistro della finestra.
 
 1. Fai clic con il pulsante destro del mouse su **[!UICONTROL Opzioni]** in alto a destra della pagina.
 1. Selezionare **[!UICONTROL Clone]**.

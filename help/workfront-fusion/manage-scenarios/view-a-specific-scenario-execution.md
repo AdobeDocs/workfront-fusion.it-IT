@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cd90795caaf835de238b52e30fddbcc6da9e9443
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 23%
+source-wordcount: '695'
+ht-degree: 15%
 ---
 # Visualizzare una specifica esecuzione di uno scenario
 
@@ -74,7 +74,7 @@ Puoi visualizzare un’esecuzione dalla cronologia dello scenario.
 
 1. Per visualizzare l’output di un modulo, fai clic sulla bolla dei dettagli di output accanto al modulo. Il numero nella bolla rappresenta il numero di bundle generati dal modulo.
 
-   ![Bolla di output vicino a un modulo](assets/output-bubble.png)
+   ![Bolla di output vicino a un modulo](assets/new-output-bubble.png)
 
 1. Per visualizzare i bundle passati attraverso un filtro, fai clic sul filtro. Il numero accanto al filtro rappresenta il numero di bundle passati attraverso il filtro.
 1. Per cercare un modulo o un evento specifico nel pannello di esecuzione, immettere il termine di ricerca nella casella **Cerca eventi di esecuzione**. I risultati vengono visualizzati durante la digitazione.
@@ -93,3 +93,21 @@ Puoi visualizzare un’esecuzione dalla cronologia dello scenario.
 >`<module-id>` fa riferimento al numero accanto all&#39;etichetta del modulo durante la visualizzazione dello scenario.
 >
 >Questo può essere utile quando si eseguono scenari di debug o si copia la configurazione del modulo.
+
+## Rivedere un’esecuzione nel nuovo editor di scenari
+
+Nella nuova esperienza, quando apri un’esecuzione dalla cronologia di esecuzione, i controlli accanto al lato destro dell’area di lavoro consentono di individuare l’errore senza modificare lo scenario:
+
+![Rivedere un&#39;esecuzione](assets/review-an-execution.png)
+
+| Controllo | Dettagli |
+| ---------- | ---------- |
+| Passa all&#39;errore o all&#39;avviso successivo | Mostra quanti moduli hanno avuto un problema nel ciclo corrente. Ogni clic passa al successivo, prima gli errori e poi gli avvisi, da sinistra a destra. Il modulo viene centrato e viene aperta la prima operazione non riuscita. Il pulsante è nascosto quando l’esecuzione non presentava errori o avvisi. |
+| Moduli di ricerca | Trova un modulo per nome e centralo sull’area di lavoro. Premere Ctrl+K (Windows) o Comando+K (Mac). |
+| Note | Mostrare o nascondere le note dello scenario. Questo controllo viene visualizzato solo quando lo scenario include note e le note sono di sola lettura. |
+| Spiega flusso | Animare l&#39;ordine di esecuzione dei moduli dello scenario. Fare di nuovo clic su di esso oppure premere ESC per interrompere. |
+| Zoom in, Zoom out, Focus e minimap | Funziona come in modalità di modifica. |
+
+Nell&#39;angolo superiore destro è disponibile anche l&#39;opzione **Visualizzazione compatta**. Quando si esamina un’esecuzione, questo cambia il layout solo mentre si osserva tale esecuzione. Non modifica l’impostazione della vista Compatta per la modifica e non viene salvato nulla nello scenario.
+
+Seleziona un evento nell’esecuzione per centrare ed evidenziare il modulo corrispondente. Quando sono disponibili i dettagli dell’operazione, viene visualizzato il pannello Richiesta e risposta. Se il pannello non dispone di dati, i dettagli delle richieste e delle risposte non vengono conservati per tale esecuzione. Per raccoglierli per le esecuzioni future, vedere [Log di debug temporanei](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).

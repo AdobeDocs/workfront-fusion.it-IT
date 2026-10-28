@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 7%
+source-wordcount: '1962'
+ht-degree: 5%
 ---
 # Eseguire il debug di uno scenario
 
@@ -29,10 +29,30 @@ Adobe Workfront Fusion Devtool consente di comprendere e risolvere gli scenari. 
 >
 >La registrazione nel pannello Debugger sarà limitata o non disponibile per scenari riservati, esecuzioni automatiche e operazioni di successo.
 
+>[!NOTE]
+>
+>Nella nuova esperienza, diversi strumenti DevTool sono incorporati nell’editor di scenari, in modo da poterli utilizzare senza aprire DevTool:
+>
+>| Strumento | Dove trovarlo nella nuova esperienza |
+>| ---------- | ---------- |
+>| Ottenere i metadati dell’app | Fare clic con il pulsante destro del mouse su un modulo e selezionare **Metadati app**. |
+>| Copia mappatura | Fare clic con il pulsante destro del mouse sul modulo di origine, selezionare **Copia mapping**, quindi incollarlo in un modulo compatibile. |
+>| Copia filtro | Fare clic con il pulsante destro del mouse sul collegamento filtrato, selezionare **Copia filtro**, quindi incollarlo in un altro collegamento. |
+>| Copia nome modulo | Fare clic con il pulsante destro del mouse su un modulo e selezionare **Copia nome modulo** o **Incolla nome modulo**. |
+>| Scambia connessione | Apri Trova e sostituisci, quindi utilizza la scheda **Connessione**. |
+>| Scambia variabile | Apri Trova e sostituisci, quindi utilizza la scheda **Variabile**. |
+>| Rimappatura origine | Apri Trova e sostituisci, quindi utilizza la scheda **Source**. |
+>
+>Questi strumenti sono ancora disponibili nella scheda **Strumenti** di DevTool, insieme a Focus a module, Find module by mapping e Base 64. È inoltre possibile utilizzare le funzioni `base64()` e di conversione binaria nelle mappature.
+>
+>Puoi anche visualizzare i dettagli delle richieste e delle risposte direttamente da [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) e la cronologia di esecuzione nell&#39;editor di scenari. Per ulteriori informazioni su Trova e sostituisci, vedere [Trovare e sostituire variabili, origini e connessioni in uno scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+<!-- BECKY CHECK ME: DevTool screenshots (10/27/26) show all ten tools still on the Tools tab, so this note now says the seven built-in tools are available in both places. The release notes implied only Focus a module, Find modules by mapping, and Base 64 would remain. Confirm after release whether the other seven are removed from the DevTool, and update this note and the Tools section if so.  -->
+<!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
+
 Per un video introduttivo e una descrizione dettagliata dello strumento Fusion Devtool, vedere
 
 * [Strumento di sviluppo Fusion](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Procedura dettagliata Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=it)
+* [Procedura dettagliata Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Requisiti di accesso
 
@@ -67,6 +87,26 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 Se utilizzi Fusion in Adobe Unified Shell o hai eseguito l’aggiornamento alla nuova esperienza Fusion, puoi accedere a Devtool dall’editor scenari.
 
+### Accedere a Devtool nella nuova esperienza
+
+1. Passare all&#39;editor scenario per lo scenario di cui si desidera eseguire il debug.
+
+   Per individuare l&#39;editor scenario, vedere [L&#39;editor scenario](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
+
+1. Fare clic sull&#39;icona a tre punti nell&#39;area Controlli, quindi selezionare **DevTool**.
+
+Oppure:
+
+1. Passare all&#39;editor scenario per lo scenario di cui si desidera eseguire il debug.
+1. Fai clic con il pulsante destro del mouse in un’area vuota della pagina (non in un modulo).
+1. Selezionare **Apri Devtool**.
+
+DevTool si apre in un pannello sotto l’area di lavoro.
+
+<!-- BECKY CHECK ME: new-experience access steps from your 10/27/26 notes (three-dot menu in Controls, or right-click). Confirm the menu label ('DevTool') and the 'panel below the canvas' description, and add a screenshot. I assumed the Helper tools icon steps below apply to the classic experience only; confirm. -->
+
+### Accedere a Devtool nell’esperienza classica
+
 1. Fai clic sull&#39;icona **Helper tools** ![Helper tools](assets/debugger-icon.png) nella parte inferiore dello schermo.
 
 Oppure:
@@ -80,15 +120,20 @@ Oppure:
 
 ## Utilizzare Workfront Fusion Devtool
 
-Workfront Fusion Devtool è suddiviso in 3 sezioni principali. Puoi trovarli nel pannello a sinistra della finestra di Devtool.
+Workfront Fusion Devtool è suddiviso in 3 sezioni principali, più un collegamento di aiuto. Puoi trovarli nel pannello a sinistra della finestra di Devtool.
 
 * [Flusso live](#live-stream)
 * [Debugger scenario](#scenario-debugger)
 * [Strumenti](#tools)
+* **Guida di DevTool**: fare clic sull&#39;icona del punto interrogativo per aprire l&#39;articolo relativo a DevTool.
+
+<!-- BECKY CHECK ME: the DevTool left panel now has a fourth item, 'DevTool help' (question mark icon), per your 10/27/26 screenshots. Confirm the label, that it opens this article or another one, and whether to apply this to the classic experience too. Retake the left-panel screenshot. -->
 
 ### Live Stream
 
 Live Stream mostra cosa accade in background quando fai clic su Esegui una volta nello scenario.
+
+<!-- BECKY CHECK ME: HOLD: in the new experience, Live Stream shows a 'no events available' message even while a scenario is running, which may be a bug. No updates have been made to this section. Re-test after release before changing anything here. If it is intended behavior, this section may need to point to Live Trail instead. -->
 
 1. Fai clic sull&#39;icona **[!UICONTROL Live Stream]** ![Live Stream icon](assets/live-stream-icon.png) per aprire la sezione Live Stream.
 1. Effettua una delle seguenti operazioni:
@@ -149,18 +194,42 @@ Live Stream mostra cosa accade in background quando fai clic su Esegui una volta
 Scenario Debugger è utile per scenari più complessi. Visualizza la cronologia dello scenario eseguito e consente di cercare i moduli in base al nome o all’ID.
 
 1. Fai clic sull&#39;icona **[!UICONTROL Scenario Debugger]** ![icona Debugger](assets/scenario-debugger-icon.png) per aprire Scenario Debugger.
-1. (Facoltativo) Immetti il termine di ricerca (nome o ID modulo) nel campo di ricerca.
+
+   Scenario Debugger elenca i moduli dello scenario. Ogni modulo mostra il proprio nome, l’app e l’azione, e un badge numerato con l’ID del modulo.
+
+1. (Facoltativo) Immetti il termine di ricerca (nome o ID modulo) nel campo **Moduli di ricerca per nome o ID**.
 1. Fai clic sul nome del modulo.
-1. Fare clic sull&#39;operazione per visualizzare i dettagli della richiesta.
+
+   I cicli dell’esecuzione più recente del modulo sono elencati accanto all’elenco dei moduli. Se il modulo non contiene dati di esecuzione, Scenario Debugger visualizza **Nessun risultato trovato**.
+
+1. Espandere un ciclo, quindi fare clic su un&#39;operazione.
+
+   Ogni operazione indica se è stata eseguita correttamente e il tempo impiegato, ad esempio **Operazione 1** con una durata di 0 ms.
+
+1. Rivedi i dettagli della richiesta. Utilizza le schede per visualizzare:
+
+   * **Intestazioni richiesta**: l&#39;URL dell&#39;endpoint API, il metodo HTTP, quando è stata chiamata la richiesta e le intestazioni della richiesta.
+   * **Corpo richiesta**
+   * **Intestazioni risposta**
+   * **Corpo risposta**
+
+1. (Facoltativo) Per copiare la richiesta, fai clic su **Copia RAW** o **Copia cURL**.
+
+<!-- BECKY CHECK ME: Scenario Debugger steps expanded from your 10/27/26 new-experience DevTool screenshots. Confirm: (1) the 'Search modules by Name or ID' label; (2) that the module list sub-labels, badge (module ID), cycle/operation layout, and 'No Result found' state are described correctly; (3) the tab names, since Response Body was partly hidden behind the Copy buttons in the screenshot; (4) whether Copy RAW and Copy cURL copy the request only or the request and response; (5) whether the classic experience's Scenario Debugger looks the same, or this needs a new/classic split. The screenshot also shows a collapsed 'Live trail' tab with an event count on the right edge of the editor; see the Live Trail article. Retake the Scenario Debugger screenshots. -->
 
 ### Strumenti
 
 Workfront Fusion Devtool offre strumenti che semplificano la configurazione dello scenario.
 
 1. Fai clic sull&#39;icona **[!UICONTROL Strumenti]** ![Strumenti console](assets/console-tools-icon.png) per aprire gli Strumenti.
+1. (Facoltativo) Per trovare uno strumento, immetterne il nome nel campo **Ricerca per nome**.
 1. Selezionare lo strumento che si desidera utilizzare
 1. Configura i campi come descritto di seguito.
 1. Fare clic su **[!UICONTROL Esegui]**.
+
+Fino a quando non selezionate uno strumento, il lato destro del pannello richiede di selezionarne uno. Un collegamento nella parte inferiore della scheda Strumenti consente di accedere all&#39;articolo relativo a DevTool.
+
+<!-- BECKY CHECK ME: added from your 10/27/26 screenshots: the 'Search tool by name' field, the select-a-tool prompt, and the link to the DevTool article. Confirm the field label and link destination; retake the Tools screenshot. -->
 
 Strumenti e relativi campi:
 
@@ -195,7 +264,7 @@ Consente di cercare i valori dei moduli per un termine specificato. L’output c
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Parola chiave </td> 
+   <td role="rowheader">Parola chiave [!UICONTROL]</td> 
    <td> <p> Immettere il termine che si desidera cercare. </p> </td> 
   </tr> 
   <tr> 
@@ -330,7 +399,7 @@ Consente di codificare i dati immessi in Base64 o di decodificare Base64. Alcune
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Dati Non Elaborati]</p> </td> 
-   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo Operazione  precedente.</p> </td> 
+   <td> <p> Immettere i dati che si desidera codificare in Base64 o Base64 se si desidera decodificare in dati non elaborati, a seconda dell'opzione selezionata nel campo Operazione [!UICONTROL] precedente.</p> </td> 
   </tr> 
  </tbody> 
 </table>

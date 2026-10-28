@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 25%
+source-wordcount: '446'
+ht-degree: 22%
 ---
 # Gestire le connessioni
 
@@ -71,6 +71,10 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. (Facoltativo) Per autorizzare nuovamente una connessione, fare clic su **Riautorizza** nella riga relativa alla connessione.
 1. (Facoltativo) Per verificare che la connessione al servizio funzioni, fare clic su **Verifica** nella riga della connessione.
 1. (Facoltativo) Per eliminare una connessione, fare clic su **Elimina** nella riga relativa alla connessione, quindi fare clic su **Realmente?**.
+
+>[!NOTE]
+>
+>Per utilizzare una connessione diversa nei moduli di uno scenario, nell’editor di scenari puoi copiare una connessione a uno o a tutti i moduli compatibili dalla stessa app. Per ulteriori informazioni, vedere [Trovare e sostituire variabili, origini e connessioni in uno scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
 
 ## Rinnovare una connessione
 

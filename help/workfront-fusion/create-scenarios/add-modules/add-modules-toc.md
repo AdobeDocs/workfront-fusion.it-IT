@@ -13,10 +13,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 68%
+source-wordcount: '89'
+ht-degree: 62%
 ---
 # Aggiungi moduli: indice articolo
 
@@ -24,6 +24,7 @@ ht-degree: 68%
 * [Configurare un modulo](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 * [Aggiungi un prompt di IA allo scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
 * [Copiare moduli o scenari](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+* [Salvare e riutilizzare le sezioni di scenario con snippet](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
 * [Creare scenari con i modelli di Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
 * [Utilizzare cURL per aggiungere un modulo HTTP](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
 * [Configurare un webhook per un servizio web senza connettori](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)

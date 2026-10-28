@@ -13,16 +13,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 51%
+source-wordcount: '133'
+ht-degree: 44%
 ---
 # Gestisci scenari: indice articoli
 
 * [Gestire le connessioni](/help/workfront-fusion/manage-scenarios/manage-connections.md)
 * [Attivare o disattivare uno scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
 * [Eseguire il debug di uno scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+* [Utilizza Live Trail per rivedere l’esecuzione di uno scenario](/help/workfront-fusion/manage-scenarios/live-trail.md)
+* [Trovare e sostituire variabili, origini e connessioni in uno scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
 * [Ripristinare una versione dello scenario](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
 * [Aggiornare un modulo a una nuova versione](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
 * [Gestire gli scenari bloccati](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
