@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
 workflow-type: tm+mt
-source-wordcount: '7725'
+source-wordcount: '7804'
 ht-degree: 92%
 ---
 # Moduli Adobe Workfront
@@ -312,6 +312,13 @@ Dopo la creazione del webhook puoi visualizzare l’indirizzo dell’endpoint al
 Per ulteriori informazioni, consulta la sezione [Esempi di payload di eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) nell’articolo API sottoscrizione eventi della documentazione di Workfront.
 
 Per un elenco dei tipi di oggetto Workfront per i quali puoi utilizzare questo modulo, consulta [Tipi di oggetto Workfront disponibili per ciascun modulo di Workfront](#workfront-object-types-available-for-each-workfront-module).
+
+>[!NOTE]
+>
+>Il rilevamento duplicati si applica alle notifiche che includono un&#39;intestazione `x-event-id` e identificano `User-Agent` come `Workfront Event Subscription`.
+>
+>Quando Fusion riceve una notifica idonea, registra l&#39;ID evento per il webhook per **un&#39;ora**. Se un’altra notifica con lo stesso ID evento arriva allo stesso webhook durante questo periodo, Fusion la riconosce senza inoltrarla per l’elaborazione dello scenario.
+>Il rilevamento dei duplicati è specifico per ogni webhook. Lo stesso evento può essere elaborato in modo indipendente da webhook diversi. La ricezione di un duplicato non riavvia il periodo di un’ora.
 
 #### [!UICONTROL Osserva campo]
 
