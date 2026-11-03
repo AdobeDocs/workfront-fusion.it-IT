@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 849e1bd273945528faba033d8d77a97990e1cda1
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 22%
+source-wordcount: '476'
+ht-degree: 21%
 ---
 # Gestire le connessioni
 
@@ -60,21 +60,24 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 >Per selezionare un nuovo team, fai clic sulla freccia a discesa accanto al nome del team, nella parte superiore della pagina. Selezionare un nuovo team dall&#39;elenco.
 
 1. Per aprire l&#39;area Connessioni, fare clic su Connessioni ![icona Connessioni](assets/connections-icon.png) nell&#39;area di navigazione a sinistra.
+1. (Facoltativo) Per rinominare o modificare il nome di una connessione, fai clic sul nome e apporta la modifica.
+1. Per modificare i metadati di una connessione, fai clic sul campo dei metadati e apporta la modifica.
+
+   I metadati sono un campo di testo o e-mail, in base al connettore. È possibile utilizzare questo campo per includere informazioni sulla connessione, utile quando si dispone di più connessioni per lo stesso connettore.
+1. (Facoltativo) Per visualizzare le autorizzazioni assegnate a Workfront Fusion per una connessione, fare clic sull&#39;icona Visualizza ![Visualizza autorizzazioni di connessione](assets/view-connection-permissions.png) per la connessione.
 1. (Facoltativo) Per specificare l’ambiente o il tipo, fai clic sui menu a discesa Ambiente e Tipo e seleziona un’opzione.
 
    >[!NOTE]
    >
    >L’ambiente e il tipo sono utili solo per identificare facilmente le connessioni. Non hanno alcun effetto sulla funzionalità della connessione.
 
-1. (Facoltativo) Per visualizzare le autorizzazioni assegnate a Workfront Fusion per una connessione, fare clic sull&#39;icona Visualizza ![Visualizza autorizzazioni di connessione](assets/view-connection-permissions.png) per la connessione.
-1. (Facoltativo) Per rinominare o modificare il nome di una connessione, fai clic sul nome e apporta la modifica.
-1. (Facoltativo) Per autorizzare nuovamente una connessione, fare clic su **Riautorizza** nella riga relativa alla connessione.
-1. (Facoltativo) Per verificare che la connessione al servizio funzioni, fare clic su **Verifica** nella riga della connessione.
-1. (Facoltativo) Per eliminare una connessione, fare clic su **Elimina** nella riga relativa alla connessione, quindi fare clic su **Realmente?**.
+1. (Facoltativo) Per autorizzare nuovamente una connessione, fai clic sulla connessione, quindi fai clic su **Riautorizza** nel banner nella parte inferiore della schermata.
 
->[!NOTE]
->
->Per utilizzare una connessione diversa nei moduli di uno scenario, nell’editor di scenari puoi copiare una connessione a uno o a tutti i moduli compatibili dalla stessa app. Per ulteriori informazioni, vedere [Trovare e sostituire variabili, origini e connessioni in uno scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+   >[!NOTE]
+   >
+   >Autorizzare nuovamente reimposta i metadati sul valore predefinito.
+1. (Facoltativo) Per verificare che la connessione al servizio funzioni, fai clic sulla connessione, quindi fai clic su **Verifica** nel banner nella parte inferiore della schermata.
+1. (Facoltativo) Per eliminare una connessione, fai clic sulla connessione, quindi fai clic su **Elimina** nel banner nella parte inferiore della schermata.
 
 ## Rinnovare una connessione
 

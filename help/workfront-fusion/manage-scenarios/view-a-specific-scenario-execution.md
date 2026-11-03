@@ -11,14 +11,16 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 15%
+source-wordcount: '953'
+ht-degree: 11%
 ---
 # Visualizzare una specifica esecuzione di uno scenario
 
 Puoi visualizzare i dettagli di una specifica esecuzione dello scenario, inclusi il filtro e la ricerca di eventi dello scenario.
+
+Puoi anche visualizzare i dettagli di esecuzione dello scenario per ciascun modulo e filtro.
 
 ## Requisiti di accesso
 
@@ -74,9 +76,13 @@ Puoi visualizzare un’esecuzione dalla cronologia dello scenario.
 
 1. Per visualizzare l’output di un modulo, fai clic sulla bolla dei dettagli di output accanto al modulo. Il numero nella bolla rappresenta il numero di bundle generati dal modulo.
 
+   Per visualizzare bundle specifici nell’output del modulo, puoi utilizzare la barra di ricerca del pannello di output o filtrare i bundle con uno stato specifico (ad esempio Riuscito, Avviso o Non riuscito).
+
    ![Bolla di output vicino a un modulo](assets/new-output-bubble.png)
 
 1. Per visualizzare i bundle passati attraverso un filtro, fai clic sul filtro. Il numero accanto al filtro rappresenta il numero di bundle passati attraverso il filtro.
+
+   Per visualizzare bundle specifici gestiti dal filtro, puoi utilizzare la barra di ricerca del filtro o filtrare per bundle con uno stato specifico (ad esempio Superato o Non riuscito).
 1. Per cercare un modulo o un evento specifico nel pannello di esecuzione, immettere il termine di ricerca nella casella **Cerca eventi di esecuzione**. I risultati vengono visualizzati durante la digitazione.
 1. Per limitare i risultati della ricerca nel pannello di esecuzione in base allo stato, ad esempio Completato o Avviso, fare clic sul menu a discesa **Filtro stato** e selezionare lo stato.
 
@@ -93,6 +99,23 @@ Puoi visualizzare un’esecuzione dalla cronologia dello scenario.
 >`<module-id>` fa riferimento al numero accanto all&#39;etichetta del modulo durante la visualizzazione dello scenario.
 >
 >Questo può essere utile quando si eseguono scenari di debug o si copia la configurazione del modulo.
+
+
+## Esaminare l’output di moduli e filtri
+
+Puoi esaminare l’output dello scenario per verificare se si è comportato come previsto.
+
+1. Per visualizzare l’output di un modulo, fai clic sulla bolla dei dettagli di output accanto al modulo. Il numero nella bolla rappresenta il numero di bundle generati dal modulo.
+
+   Per visualizzare bundle specifici nell’output del modulo, puoi utilizzare la barra di ricerca del pannello di output o filtrare i bundle con uno stato specifico (ad esempio Riuscito, Avviso o Non riuscito).
+
+   ![Bolla di output vicino a un modulo](assets/output-bubble.png)
+
+1. Per visualizzare i bundle passati attraverso un filtro, fai clic sul filtro. Il numero accanto al filtro rappresenta il numero di bundle passati attraverso il filtro.
+
+   Per visualizzare bundle specifici gestiti dal filtro, puoi utilizzare la barra di ricerca del filtro o filtrare per bundle con uno stato specifico (ad esempio Superato o Non riuscito).
+1. Per cercare un modulo o un evento specifico nel pannello di esecuzione, immettere il termine di ricerca nella casella **Cerca eventi di esecuzione**. I risultati vengono visualizzati durante la digitazione.
+1. Per limitare i risultati della ricerca nel pannello di esecuzione in base allo stato, ad esempio Completato o Avviso, fare clic sul menu a discesa **Filtro stato** e selezionare lo stato.
 
 ## Rivedere un’esecuzione nel nuovo editor di scenari
 
