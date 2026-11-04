@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 45c755a2f6152b6e230864e4c840d0334705bd22
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1334'
 ht-degree: 3%
 ---
 # Visualizzare la dashboard Approfondimenti per un’organizzazione
@@ -208,6 +208,7 @@ Utilizza il registro di esecuzione per trovare le esecuzioni degli scenari che h
    Per la maggior parte dei filtri, puoi scegliere di far corrispondere solo i valori selezionati o tutto tranne loro.
 
 1. Fai clic su un’esecuzione per visualizzare ulteriori dettagli sul relativo errore.
+1. Per ottenere una spiegazione in linguaggio semplice di un errore, passa il cursore sull&#39;esecuzione non riuscita e fai clic su **[!UICONTROL Spiega]**. Per ulteriori informazioni, vedere [Spiegare un errore di scenario con IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 1. Per riattivare uno o più scenari disattivati automaticamente dopo errori ripetuti, selezionare le esecuzioni, quindi fare clic su **Attiva**.
 
    >[!NOTE]
