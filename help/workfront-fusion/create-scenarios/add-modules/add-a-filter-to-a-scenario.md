@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 11%
+source-wordcount: '1012'
+ht-degree: 10%
 ---
 # Aggiungere un filtro a uno scenario
 
@@ -77,6 +77,10 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 1. Fai clic con il pulsante sinistro del mouse sul percorso tra i moduli in cui desideri aggiungere un filtro.
 
    La finestra **[!UICONTROL Configura filtro]** si apre direttamente. Facendo clic con il pulsante destro del mouse sul tracciato viene invece aperto un menu diverso.
+
+   Il pannello dei filtri mostra i due moduli tra cui si trova il filtro. Accanto al titolo del pannello vengono visualizzati gli ID del modulo, ad esempio **#12 → #13**. Sopra le impostazioni del filtro, una riga come **Between ● Router #12 → ● HTTP #13** mostra il colore e il nome di ogni modulo. Passa il puntatore del mouse sul nome di un modulo per visualizzarne l’azione. Quando il pannello è aperto, l’etichetta del filtro sulla connessione presenta un contorno tratteggiato in movimento.
+
+   ![Pannello filtri](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
 
 1. Nella casella visualizzata, immettere un **[!UICONTROL Etichetta]** per il filtro.
 1. Definisci il filtro **[!UICONTROL Condizione]**.

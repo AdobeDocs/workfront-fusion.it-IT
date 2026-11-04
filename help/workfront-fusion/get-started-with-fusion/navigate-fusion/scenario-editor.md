@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2755'
 ht-degree: 5%
 ---
 # Editor scenario
@@ -72,6 +72,7 @@ La nuova esperienza include:
 * [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md), un pannello che mostra uno scenario eseguito mentre si verifica.
 * Diversi Strumenti per sviluppatori ora incorporati nell’editor di scenari.
 * Registri di debug temporanei, che puoi attivare nelle impostazioni dello scenario.
+* Ricerca che consente di trovare i nomi dei moduli, i valori mappati, le impostazioni dei moduli, le condizioni dei filtri e le scelte rapide da tastiera per le azioni più comuni dei pannelli.
 
 Per passare dall’esperienza classica a quella nuova:
 
@@ -110,6 +111,7 @@ Se l’interruttore non è visibile, la nuova esperienza potrebbe non essere anc
 * [Chiedi AI](#ask-ai)
 * [Navigazione area di lavoro](#canvas-navigation)
 * [Visualizzazione area di lavoro](#canvas-display)
+* [Scelte rapide da tastiera](#keyboard-shortcuts)
 
 #### Modifica delle azioni
 
@@ -148,7 +150,7 @@ Per visualizzare alcuni di questi controlli, potrebbe essere necessario fare cli
 | Impostazioni scenario <p>![Icona impostazioni scenario](assets/scenario-settings-icon-new.png)</p> | Il pannello delle impostazioni dello scenario contiene le impostazioni avanzate per lo scenario. Per ulteriori informazioni sulle impostazioni disponibili, vedere [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). I dettagli di richiesta e risposta non vengono conservati per ogni esecuzione. Per raccoglierli per le esecuzioni regolari dello scenario, attiva i registri di debug temporanei. Per ulteriori informazioni, vedere [Log di debug temporanei](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs). |
 | Note <p>![Icona note](assets/notes-icon-new.png)</p> | Prendi nota dello scenario. Altri utenti possono visualizzare queste note quando si trovano nello scenario. Per ulteriori informazioni, vedere [Aggiungere note a uno scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
 | Allineamento automatico <p>![Icona Allineamento automatico](assets/auto-align-icon-new.png)</p> | Allinea automaticamente i moduli nello scenario. |
-| Moduli di ricerca <p>![Icona moduli di ricerca](assets/search-modules-icon-new.png)</p> | Seleziona un modulo dall’elenco per passare a quel modulo nello scenario, oppure immetti un termine di ricerca per individuare un modulo, quindi fai clic sui risultati della ricerca da portare a quel modulo. Puoi eseguire ricerche per nome del modulo, ID, tipo o applicazione. |
+| Cerca <p>![Icona ricerca](assets/search-modules-icon-new.png)</p> | Aprire la ricerca (premere **Ctrl + K** su Windows o **⌘K** su Mac). La ricerca trova i moduli per nome o ID. Inoltre, trova ogni valore mappato, ogni impostazione del modulo e ogni condizione del filtro nello scenario. Ogni risultato mostra dove è stata trovata la corrispondenza, ad esempio _Mapper · ID approvazione_, con il testo corrispondente evidenziato. I filtri sono elencati nella rispettiva sezione. Per trovare tutti i luoghi che utilizzano un valore, incollare un riferimento come `{{1.name}}`. La ricerca trova esattamente tale riferimento, ma non `{{21.name}}` o `{{1.names}}`. Fai clic su un risultato per aprire il modulo o il filtro. Il campo corrispondente viene brevemente evidenziato e scorruto nella visualizzazione. Quando ci si sposta tra i risultati del filtro con i tasti freccia, l’area di lavoro mostra il filtro e i due moduli che connette. <!-- BECKY CHECK ME: Search row rewritten from the 11/2/26 release note (fusion-2026-11-2.md) (renamed from 'Search modules' to 'Search'). The old text also said you can search by module type or application; the release note does not mention that, so I removed it. Confirm, and confirm the icon and the tool tip label. --> |
 | Trova e sostituisci <p>![Icona Trova e sostituisci](assets/find-and-replace-icon-new.png)</p> | <p>Cerca e sostituisci variabili, origini di valori mappate o connessioni tra i moduli dello scenario. Utilizza le schede per:</p><ul><li>Sostituisci una variabile mappata in tutto lo scenario o in un modulo.</li><li>Rimappatura dei riferimenti da un modulo di origine a un altro.</li><li>Copia una connessione a uno o a tutti i moduli compatibili dalla stessa app.</li></ul><p>Il pannello visualizza in anteprima i moduli che saranno interessati prima di apportare la modifica. Seleziona una riga nell’anteprima per passare al modulo nell’area di lavoro.</p> <p>Per ulteriori informazioni, vedere [Trovare e sostituire variabili, origini e connessioni in uno scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
 | Frammenti <p>![Icona snippet](assets/snippets-icon-new.png)</p> | <p>I frammenti sono sezioni di scenario salvate come un&#39;unità. Per crearne uno, seleziona i moduli e salvali come snippet. Nel pannello Snippet potete cercare, assegnare tag, visualizzare in anteprima, fissare, ordinare e trascinare e rilasciare snippet, nonché importarli ed esportarli. È possibile condividere snippet con team o organizzazioni o inviarne una copia direttamente a un altro utente. Gli snippet condivisi vengono visualizzati nella relativa scheda.</p> <p>Per ulteriori informazioni, vedere [Salvare e riutilizzare le sezioni dello scenario con snippet](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> |
 | Spiega flusso <p>![Icona Spiega flusso](assets/explain-flow-icon-new.png)</p> | Visualizza un’animazione in cui i punti in movimento mostrano il modo in cui i dati scorrono nello scenario. |
@@ -208,7 +210,25 @@ La nuova area di lavoro cambia anche l’aspetto degli scenari mentre si lavora.
 | Dettagli zoom | I dettagli della scheda vengono visualizzati durante lo zoom avanti. Quando si esegue lo zoom indietro, i moduli si semplificano con le icone in modo da poter ancora visualizzare l’intero scenario. |
 | Piegare un router | In modalità di modifica è possibile piegare un router per nasconderne le route. Per ulteriori informazioni, vedere [Piegare un router](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
 | Modalità scura | L’area di lavoro segue l’impostazione dell’aspetto scuro nelle preferenze di Adobe, tra cui schede di moduli, collegamenti, pannelli, controlli e informazioni sullo stato. |
-| Pannello a destra | La configurazione del modulo, l&#39;ispezione del modulo, il browser del modulo, Trova e sostituisci, Snippet, [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) e i dettagli di richiesta e risposta si aprono nello stesso pannello sul lato destro dell&#39;area di lavoro. |
+| Apri modulo o filtro | Quando apri un modulo, l’area di lavoro non si sposta più. Al modulo viene invece applicato un profilo tratteggiato in movimento. Quando apri un filtro, la relativa etichetta sulla connessione ottiene la stessa struttura. Il colore del contorno corrisponde al colore del modulo e viene regolato automaticamente in modo da rimanere visibile in modalità chiara e scura. |
+| Pannello a destra | La configurazione del modulo, l&#39;ispezione del modulo, il browser del modulo, Trova e sostituisci, Snippet, [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) e i dettagli di richiesta e risposta si aprono nello stesso pannello sul lato destro dell&#39;area di lavoro. </br>Per ridimensionare il pannello, trascinarne il bordo sinistro per ingrandirlo o ridurlo oppure fare doppio clic sul bordo per tornare alla larghezza predefinita. La tua larghezza viene memorizzata, anche quando accedi da un altro browser. Su uno schermo più piccolo, il pannello si adatta automaticamente alla finestra. Quando un pannello è ingrandito, non è possibile modificarne la larghezza. |
+
+#### Scelte rapide da tastiera
+
+Queste scelte rapide consentono di lavorare nei pannelli senza spostare il mouse.
+
+| Collegamento (Mac / Windows) | Funzionamento |
+| ---------- | ---------- |
+| **⌘Invio** / **Ctrl + Invio** | Conferma il pannello aperto (come **OK**). Funziona durante la digitazione. Se non è aperto alcun pannello, esegue lo scenario una volta. |
+| **ESC** | Chiude il pannello aperto senza salvare. Se il pannello di mappatura è aperto, viene chiuso solo tale pannello. |
+| **⌥←** / **⌥→** (Mac), **Alt + ←** / **Alt + →** (Windows) | Conferma il pannello e apre il modulo precedente o successivo. Disponibile anche come pulsante **‹ ›** nell&#39;intestazione del pannello. Funziona quando il cursore non si trova in un campo di testo. |
+| **⌘Maiusc + Invio** / **Ctrl + Maiusc + Invio** | Conferma il pannello aperto ed esegue lo scenario una volta. Se il pannello presenta errori, non viene eseguito nulla. |
+| **⌘K** / **Ctrl + K** | Apre Ricerca. |
+| **?** | Mostra l&#39;elenco di tutte le scelte rapide di Progettazione scenari. Disponibile anche nel menu a tre punti, in **Scelte rapide da tastiera**. |
+
+* I pannelli larghi mostrano un promemoria delle scelte rapide di conferma e annullamento nella parte inferiore.
+* I pulsanti **Esegui una volta** e **Salva** mostrano le relative scelte rapide nelle descrizioni comandi.
+* Quando passi al modulo successivo o precedente e questo è nascosto dietro il pannello o fuori schermo, l’area di lavoro si sposta quanto basta per mostrarlo.
 
 ## Utilizza l’editor di scenari nell’esperienza classica
 

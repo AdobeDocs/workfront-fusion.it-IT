@@ -18,7 +18,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: dc9c66c09f6df175be6c0b1440b54df80751568b
 workflow-type: tm+mt
 source-wordcount: '1406'
 ht-degree: 15%
@@ -96,7 +96,7 @@ Per utilizzare i moduli FTP, è necessario disporre di un account con un servizi
       <td> <p>Immetti il nome host del server FTP. Esempio: <code>myftp123.server.com</code></p> </td> 
      </tr> 
      <tr> 
-      <td>Porta  </td> 
+      <td>Porta [!UICONTROL] </td> 
       <td> <p>Immettere il numero di porta del server FTP. Esempio: <code>21</code></p> </td> 
      </tr> 
      <tr> 
@@ -196,7 +196,7 @@ Questo modulo di azione modifica le impostazioni delle autorizzazioni di un file
             <td>[!UICONTROL Autorizzazioni]</td>
             <td>
                <p>Imposta le autorizzazioni per il file o la cartella desiderate. Utilizzare i parametri chmod. Ad esempio: <code>777 </code> o <code>-rwxrwxrwx</code>.</p>
-               <p>Le autorizzazioni devono corrispondere al pattern <code> /(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3,4}/</code>.</p>
+               <p>Le autorizzazioni devono corrispondere al pattern <code> /(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3,4}/</code>.</p>
             </td>
          </tr>
    </tbody>

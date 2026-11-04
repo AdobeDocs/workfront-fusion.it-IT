@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '810'
 ht-degree: 3%
 ---
 # Flusso di lavoro per creare uno scenario
@@ -185,6 +185,10 @@ Durante la creazione o la modifica di uno scenario è possibile utilizzare le se
   </tr> 
  </tbody> 
 </table>
+
+>[!NOTE]
+>
+>Il nuovo editor di scenari dispone di scelte rapide da tastiera aggiuntive, tra cui scelte rapide per confermare o chiudere i pannelli, spostarsi tra i moduli e aprire un elenco di tutte le scelte rapide. Per ulteriori informazioni, consulta [Scelte rapide da tastiera](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#keyboard-shortcuts) nell&#39;articolo Editor scenari.
 
 
 

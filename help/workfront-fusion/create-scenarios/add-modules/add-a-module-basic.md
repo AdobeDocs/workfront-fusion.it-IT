@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1538'
 ht-degree: 8%
 ---
 # Aggiungere un modulo a uno scenario
@@ -84,7 +84,7 @@ Per ulteriori informazioni sui moduli trigger, vedere [Moduli trigger](/help/wor
 
 1. Configura il modulo.
 
-   Le impostazioni del modulo si aprono nel pannello sul lato destro dell’area di lavoro.
+   Le impostazioni del modulo si aprono nel pannello sul lato destro dell’area di lavoro. Potete ridimensionare il pannello trascinandone il bordo sinistro.
 
    Per istruzioni sulla configurazione di moduli specifici, vedere l&#39;articolo relativo alle applicazioni selezionate, elencate in [Riferimenti alle applicazioni Fusion e ai relativi moduli: indice articolo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -139,7 +139,7 @@ Per ulteriori informazioni sui moduli trigger, vedere [Moduli trigger](/help/wor
 
 1. Configura il modulo.
 
-   Le impostazioni del modulo si aprono nel pannello sul lato destro dell’area di lavoro.
+   Le impostazioni del modulo si aprono nel pannello sul lato destro dell’area di lavoro. Potete ridimensionare il pannello trascinandone il bordo sinistro.
 
    Per istruzioni sulla configurazione di moduli specifici, vedere l&#39;articolo relativo alle applicazioni selezionate, elencate in [Riferimenti alle applicazioni Fusion e ai relativi moduli: indice articolo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -180,7 +180,7 @@ Per ulteriori informazioni sui moduli trigger, vedere [Moduli trigger](/help/wor
 
 1. Configura il modulo.
 
-   Le impostazioni del modulo si aprono nel pannello sul lato destro dell’area di lavoro.
+   Le impostazioni del modulo si aprono nel pannello sul lato destro dell’area di lavoro. Potete ridimensionare il pannello trascinandone il bordo sinistro.
 
    Per istruzioni sulla configurazione di moduli specifici, vedere l&#39;articolo relativo alle applicazioni selezionate, elencate in [Riferimenti alle applicazioni Fusion e ai relativi moduli: indice articolo](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 

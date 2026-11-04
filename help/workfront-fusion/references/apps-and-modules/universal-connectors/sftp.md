@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 2e3a811de0e4336305997cbf46e86db3553f4770
 workflow-type: tm+mt
 source-wordcount: '2241'
 ht-degree: 15%
@@ -90,7 +90,7 @@ Per connettere l’account SFTP a Workfront Fusion è necessario creare una conn
    <td> <p>Immetti il nome host del server SFTP che desideri connettere.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Porta  </td> 
+   <td role="rowheader">Porta [!UICONTROL] </td> 
    <td> <p>Immetti la porta del server SFTP. Ad esempio, 22.</p> </td> 
   </tr> 
   <tr> 
@@ -258,7 +258,7 @@ Questo modulo di azione crea una nuova cartella nel percorso specificato.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Autorizzazioni]</p> </td> 
-   <td> <p>Imposta le autorizzazioni della cartella desiderate. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
+   <td> <p>Imposta le autorizzazioni della cartella desiderate. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -349,7 +349,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome del file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento </td> 
+   <td>Ordinamento [!UICONTROL]</td> 
    <td> <p> Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -390,7 +390,7 @@ Questo modulo restituisce file da una cartella specificata.
    <td> <p> Specificare se si desidera ordinare i risultati in base al nome file, alla dimensione, alla data dell'ultimo accesso o alla data dell'ultima modifica.</p> </td> 
   </tr> 
   <tr> 
-   <td>Ordinamento  </td> 
+   <td>Ordinamento [!UICONTROL] </td> 
    <td> <p>Seleziona se restituire il risultato in ordine crescente o decrescente.</p> </td> 
   </tr> 
   <tr> 
@@ -466,7 +466,7 @@ Consente di modificare le autorizzazioni del file.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Autorizzazioni]</p> </td> 
-   <td> <p>Imposta le autorizzazioni file desiderate. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
+   <td> <p>Imposta le autorizzazioni file desiderate. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -493,7 +493,7 @@ Questo modulo ti consente di caricare un file sul server SFTP.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Autorizzazioni]</p> </td> 
-   <td> <p>Impostare le autorizzazioni desiderate per il file o la cartella. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
+   <td> <p>Impostare le autorizzazioni desiderate per il file o la cartella. Utilizzare i parametri chmod. Ad esempio, <code>777</code> o <code>-rwxrwxrwx</code>.</p> <p>Queste autorizzazioni devono corrispondere al pattern <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>Per ulteriori informazioni su chmod, vedere la <a href="https://ss64.com/bash/chmod.html">documentazione chmod</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Dimensione buffer (B)]</p> </td> 
