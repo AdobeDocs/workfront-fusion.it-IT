@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 54%
+source-wordcount: '208'
+ht-degree: 47%
 ---
 # Modificare le impostazioni di profilo
 
@@ -59,3 +59,5 @@ Questo menu consente di:
 * Imposta **[!UICONTROL Preferenze]** per [!DNL Adobe Experience Cloud], incluse le preferenze per la lingua primaria e secondaria.
 * Accedi al tuo **[!UICONTROL profilo Workfront]**. Una volta inserito nel profilo, fai clic sul menu **[!UICONTROL Altro]** e seleziona **[!UICONTROL Modifica]**.
 * **[!UICONTROL Esci]** da Adobe Experience Cloud.
+
+Il profilo di Fusion include anche impostazioni del fuso orario che influiscono sulla visualizzazione e sull’interpretazione di date e ore. Per ulteriori informazioni, vedere [Visualizzare e gestire i fusi orari](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).

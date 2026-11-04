@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 2%
+source-wordcount: '616'
+ht-degree: 1%
 ---
 # Tipi di dati elemento
 
@@ -47,7 +47,7 @@ Per informazioni sui tipi di elementi consentiti da Workfront Fusion per la conv
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data</p> </td> 
-   <td> <p>Le date vengono immesse nel formato data ISO 8601, ad esempio <code>2015-09-18T11:58Z</code>. È possibile modificare il fuso orario nelle impostazioni del profilo. </p> <p>Se fai clic su un campo che richiede una data, nelle impostazioni del modulo viene visualizzato un calendario a comparsa. L'ora non è richiesta per alcuni elementi.</p> <p>I valori degli elementi Data vengono formattati utilizzando il fuso orario locale e Web selezionato nel profilo. Puoi visualizzare la versione ISO 8601 del valore di un elemento data passando il cursore sopra l’elemento.</p> <p>Nota: se il valore ISO non viene visualizzato, l’elemento è probabilmente un testo, non una data.</p> <p>L'ora viene immessa nel formato <code>hours:minutes:seconds</code>, ad esempio <code>14:03:52</code>.</p> </td> 
+   <td> <p>Le date vengono immesse nel formato data ISO 8601, ad esempio <code>2015-09-18T11:58Z</code>. È possibile modificare il fuso orario nelle impostazioni del profilo. </p> <p>Se fai clic su un campo che richiede una data, nelle impostazioni del modulo viene visualizzato un calendario a comparsa. L'ora non è richiesta per alcuni elementi.</p> <p>I valori degli elementi Data vengono formattati utilizzando il fuso orario locale e Web selezionato nel profilo. Puoi visualizzare la versione ISO 8601 del valore di un elemento data passando il cursore sopra l’elemento.</p> <p>Per informazioni sulla visualizzazione e la gestione delle impostazioni del fuso orario nel profilo di Fusion, vedere [Visualizzare e gestire i fusi orari](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).</p> <p>Nota: se il valore ISO non viene visualizzato, l’elemento è probabilmente un testo, non una data.</p> <p>L'ora viene immessa nel formato <code>hours:minutes:seconds</code>, ad esempio <code>14:03:52</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Buffer (dati binari)</p> </td> 

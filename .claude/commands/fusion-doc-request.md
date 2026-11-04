@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gestire una richiesta di documentazione di Fusion da #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
-source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
+source-git-commit: 535a10407766d054b00d31869e511753bf07a9b7
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1572'
 ht-degree: 0%
 ---
 
@@ -23,11 +23,11 @@ Le connessioni Slack in questo ambiente sono incomplete (token scaduti, disconne
 
 Il modello di richiesta include i campi seguenti: estrarre ciascuno:
 
-&#x200B;* **Titolo funzionalità**
-&#x200B;* **Descrizione**
-&#x200B;* **Punti da aggiungere alla documentazione** *(talvolta presenti - sezioni/dettagli specifici richiesti dal richiedente; trattarli come obbligatori, non facoltativi, se forniti)*
-&#x200B;* **Data di rilascio prevista**
-&#x200B;* **Annuncio necessario** *(Sì/No - solo informativo; vedere la nota precedente. Non intervenire su questo campo.)*
+* **Titolo funzionalità**
+* **Descrizione**
+* **Punti da aggiungere alla documentazione** *(talvolta presenti - sezioni/dettagli specifici richiesti dal richiedente; trattarli come obbligatori, non facoltativi, se forniti)*
+* **Data di rilascio prevista**
+* **Annuncio necessario** *(Sì/No - solo informativo; vedere la nota precedente. Non intervenire su questo campo.)*
 
 Se la richiesta è collegata a una pagina wiki di Confluence con le specifiche complete, recuperarla (`get_wiki_content`) prima di scrivere la documentazione. Non fare affidamento solo sul riepilogo di Slack per i dettagli tecnici (nomi di campo esatti, passaggi, etichette dell’interfaccia utente) - richiamare quelli dalla specifica wiki quando ne viene collegata una.
 
@@ -47,13 +47,13 @@ Questa abilità crea e impegna il ramo, ma non lo invia né apre una richiesta d
 
 Trova gli articoli esistenti rilevanti in questo archivio (grep per i nomi dei moduli, le etichette dell’interfaccia utente o i nomi delle impostazioni correlati, non indovinare il file). Aggiornali per riflettere la modifica, seguendo la struttura esistente dell’articolo, il livello di intestazione e lo stile della casa.
 
-&#x200B;* Non inventare dettagli tecnici (nomi di campo esatti, ambiti di autorizzazione, passaggi di configurazione) che non sono presenti nella richiesta Slack o nelle specifiche wiki collegate. Se qualcosa non è confermato, contrassegnalo in linea come commento HTML (ad esempio `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) invece di indovinare - mai come callout visibile. Non deve essere riprodotto sulla pagina pubblicata.
-&#x200B;* Se questo richiede un file di articolo nuovo di zecca (non solo una modifica a uno esistente), segui le convenzioni di posizione di questo repository: nessun `exl-id`/`TQID` creato in frontmatter, e converti il file in CRLF/no-BOM dopo averlo creato (lo strumento `Write` predefinito è LF).
-&#x200B;* Inserire una nuova pagina nel &quot;sommario&quot; significa ENTRAMBE queste, non una sola: una pagina può essere collegata da un sottoindice pur rimanendo invisibile ai lettori:
+* Non inventare dettagli tecnici (nomi di campo esatti, ambiti di autorizzazione, passaggi di configurazione) che non sono presenti nella richiesta Slack o nelle specifiche wiki collegate. Se qualcosa non è confermato, contrassegnalo in linea come commento HTML (ad esempio `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) invece di indovinare - mai come callout visibile. Non deve essere riprodotto sulla pagina pubblicata.
+* Se questo richiede un file di articolo nuovo di zecca (non solo una modifica a uno esistente), segui le convenzioni di posizione di questo repository: nessun `exl-id`/`TQID` creato in frontmatter, e converti il file in CRLF/no-BOM dopo averlo creato (lo strumento `Write` predefinito è LF).
+* Inserire una nuova pagina nel &quot;sommario&quot; significa ENTRAMBE queste, non una sola: una pagina può essere collegata da un sottoindice pur rimanendo invisibile ai lettori:
   - Il file di navigazione principale per l&#39;area di prodotto (ad esempio `help/workfront-fusion/TOC.md`): è questo che determina la struttura di navigazione pubblicata.
   - Qualsiasi sottoindice/pagina di destinazione nel contenuto che collega anche articoli di questo tipo (ad esempio `apps-and-modules-toc.md` per una nuova pagina di moduli connettore).
     Seleziona esplicitamente e conferma che la nuova voce si trovi nello stesso elenco, allo stesso livello di nidificazione, in quanto gli articoli di pari livello più vicini in ciascun file - non presumere di aggiungerla a una copre l’altra.
-&#x200B;* Lascia non confermate le modifiche della documentazione nel ramo. Non eseguire `git commit` (o `git add`) come parte di questa abilità: l&#39;utente si impegna quando è pronto, dopo aver esaminato le modifiche. Esegui il commit solo se l’utente ti chiede esplicitamente di farlo.
+* Lascia non confermate le modifiche della documentazione nel ramo. Non eseguire `git commit` (o `git add`) come parte di questa abilità: l&#39;utente si impegna quando è pronto, dopo aver esaminato le modifiche. Esegui il commit solo se l’utente ti chiede esplicitamente di farlo.
 
 ## Passaggio 4: creare l&#39;attività Workfront
 
@@ -73,7 +73,10 @@ Campi attività:
 | `DE:Preview Date Known` | `Yes`, per impostazione predefinita |
 | `DE:Preview Date` | la data indicata nel messaggio originale di Slack (la **data di rilascio prevista** della richiesta), per impostazione predefinita |
 | `taskConstraint` + `constraintDate` | Imposta `taskConstraint` su `MFO` (Deve finire il) con `constraintDate` = la data citata nel messaggio originale di Slack (la **data di rilascio prevista** della richiesta), quindi la data di completamento pianificata dell&#39;attività corrisponde anche a essa. |
+| `DE:Articles to update` | l’elenco degli articoli creati o aggiornati per questa richiesta (vedi di seguito) |
 | Prodotto/Area | selezionare `Fusion` (un campo enum nel modulo Documentazione prodotto; confermare il nome esatto del campo con `insights_search_fields` se non è mai chiaro) |
+
+`DE:Articles to update` (un campo di testo nel modulo di documentazione del prodotto) elenca ogni file di articolo creato o modificato nel passaggio 3, un percorso relativo all&#39;archivio per riga (ad esempio `help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`). Includi nuovi articoli (aggiungi `(new)` dopo il percorso) ed eventuali file di sommario o di indice modificati. Poiché le modifiche alla documentazione avvengono nel passaggio 3, l’elenco è noto al momento della creazione dell’attività, pertanto è necessario impostarlo nella stessa chiamata di creazione. Se l’utente ti chiede di creare l’attività senza apportare modifiche alla documentazione, lascia vuoto il campo e, in caso di modifiche alla documentazione, aggiornalo in un secondo momento.
 
 Imposta i campi della data di anteprima e della data di completamento pianificata come parte della stessa chiamata di creazione: non lasciarli per un momento successivo o in attesa di una richiesta. Se l’utente assegna una data diversa in un secondo momento o dice che la data non è ancora nota, effettua l’aggiornamento di conseguenza, ma per impostazione predefinita questa viene compilata ogni volta.
 
@@ -102,18 +105,19 @@ Prima della chiamata di creazione, chiama `read_workflow_docs` con `workfront://
 
 Report semplice:
 
-&#x200B;* Il ramo creato (eseguito localmente, non inviato e nessuna richiesta pull aperta, secondo il passaggio 2).
-&#x200B;* Quali file di documenti hai modificato e cosa hai aggiunto.
-&#x200B;* Le modifiche non vengono applicate al ramo, in attesa della revisione dell’utente.
-&#x200B;* Il nome dell’attività e l’URL.
-&#x200B;* I valori esatti dei campi impostati, inclusi i campi della data di anteprima.
-&#x200B;* Tutto ciò per cui non eri completamente sicuro: ad esempio, Slack non era raggiungibile e lavoravi solo con testo incollato, l&#39;articolo del documento di destinazione era ambiguo, o un dettaglio tecnico non era nel materiale sorgente e veniva segnalato invece di essere indovinato.
+* Il ramo creato (eseguito localmente, non inviato e nessuna richiesta pull aperta, secondo il passaggio 2).
+* Quali file di documenti hai modificato e cosa hai aggiunto.
+* Gli articoli modificati sono elencati nel campo `Articles to update` dell&#39;attività.
+* Le modifiche non vengono applicate al ramo, in attesa della revisione dell’utente.
+* Il nome dell’attività e l’URL.
+* I valori esatti dei campi impostati, inclusi i campi della data di anteprima.
+* Tutto ciò per cui non eri completamente sicuro: ad esempio, Slack non era raggiungibile e lavoravi solo con testo incollato, l&#39;articolo del documento di destinazione era ambiguo, o un dettaglio tecnico non era nel materiale sorgente e veniva segnalato invece di essere indovinato.
 
 ## Valori noti (da esecuzioni precedenti)
 
 Conferma che questi siano ancora risolti, anziché presupporre che siano permanenti:
 
-&#x200B;* Il progetto &quot;Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica&quot; è mappato sull&#39;ID `5e69583f00236b9f767c3e3944100ee4`
-&#x200B;* L&#39;attività padre &quot;Becky - Tasks from Fusion-Documentation channel&quot; è mappata sull&#39;ID `6a9b065100003a7554832780c2015e93` (nello stesso progetto) - resolve con `insights_find_id_by_name` (entità `task`) anziché mediante codifica fissa, nel caso in cui cambi mai
-&#x200B;* Il modulo personalizzato per la documentazione del prodotto (`categoryID`) è `5d7275b9000514604bd969d418725843`
-&#x200B;* Campi personalizzati utilizzati: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Il progetto &quot;Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica&quot; è mappato sull&#39;ID `5e69583f00236b9f767c3e3944100ee4`
+* L&#39;attività padre &quot;Becky - Tasks from Fusion-Documentation channel&quot; è mappata sull&#39;ID `6a9b065100003a7554832780c2015e93` (nello stesso progetto) - resolve con `insights_find_id_by_name` (entità `task`) anziché mediante codifica fissa, nel caso in cui cambi mai
+* Il modulo personalizzato per la documentazione del prodotto (`categoryID`) è `5d7275b9000514604bd969d418725843`
+* Campi personalizzati utilizzati: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`

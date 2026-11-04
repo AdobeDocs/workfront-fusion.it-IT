@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 11%
+source-wordcount: '980'
+ht-degree: 10%
 ---
 # Visualizzare una specifica esecuzione di uno scenario
 
@@ -85,6 +85,7 @@ Puoi visualizzare un’esecuzione dalla cronologia dello scenario.
    Per visualizzare bundle specifici gestiti dal filtro, puoi utilizzare la barra di ricerca del filtro o filtrare per bundle con uno stato specifico (ad esempio Superato o Non riuscito).
 1. Per cercare un modulo o un evento specifico nel pannello di esecuzione, immettere il termine di ricerca nella casella **Cerca eventi di esecuzione**. I risultati vengono visualizzati durante la digitazione.
 1. Per limitare i risultati della ricerca nel pannello di esecuzione in base allo stato, ad esempio Completato o Avviso, fare clic sul menu a discesa **Filtro stato** e selezionare lo stato.
+1. Per ottenere una spiegazione semplice di un errore nell&#39;esecuzione, fare clic su **[!UICONTROL Spiega]** sotto l&#39;errore. Per ulteriori informazioni, vedere [Spiegare un errore di scenario con IA](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 
 
 

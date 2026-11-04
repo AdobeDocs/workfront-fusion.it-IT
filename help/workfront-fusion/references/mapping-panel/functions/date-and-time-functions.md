@@ -14,12 +14,14 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2413'
 ht-degree: 3%
 ---
 # Funzioni di data e ora
+
+Per informazioni sulla visualizzazione e la gestione delle impostazioni del fuso orario utilizzate dal profilo di Fusion, vedere [Visualizzare e gestire i fusi orari](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).
 
 ## Variabili
 
