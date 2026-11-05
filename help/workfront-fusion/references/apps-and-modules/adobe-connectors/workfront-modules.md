@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
+source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
 workflow-type: tm+mt
-source-wordcount: '7804'
-ht-degree: 92%
+source-wordcount: '7761'
+ht-degree: 90%
 ---
 # Moduli Adobe Workfront
 
@@ -84,14 +84,15 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ## Connettere Workfront a Workfront Fusion
 
-Il connettore Workfront utilizza OAuth 2.0 per connettersi a Workfront.
-
 Puoi creare una connessione al tuo account Workfront direttamente dall’interno di un modulo Workfront Fusion.
 
-* [Connettersi a Workfront utilizzando l’ID client e il Segreto client](#connect-to-workfront-using-client-id-and-client-secret)
+Accedi con il tuo account Adobe (accesso di Adobe IMS o Experience Cloud) alle nuove connessioni e alle connessioni nuovamente autorizzate. Non utilizzano un’applicazione Workfront OAuth2.
+
+* [Connettiti a Workfront con il tuo account Adobe](#connect-to-workfront-using-your-adobe-account)
+* [Riautorizzare una connessione esistente](#reauthorize-an-existing-connection)
 * [Connettersi a Workfront utilizzando una connessione da server a server](#connect-to-workfront-using-a-server-to-server-connection)
 
-### Connettersi a Workfront utilizzando l’ID client e il Segreto client
+### Connettiti a Workfront con il tuo account Adobe
 
 1. In qualsiasi modulo di Adobe Workfront, fai clic su **Aggiungi** accanto al campo Connessione.
 1. Compila i seguenti campi:
@@ -115,32 +116,38 @@ Puoi creare una connessione al tuo account Workfront direttamente dall’interno
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL ID client]</td>
-        <td>Inserisci il tuo ID client. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Apri l’applicazione specifica a cui ti stai connettendo per visualizzare l’ID client.</td>
+        <td role="rowheader">[!UICONTROL Nome istanza]</td>
+        <td>
+          <p>Inserisci i il nome dell’istanza, noto anche come dominio.</p><p>Esempio: se l’URL è <code>https://example.my.workfront.com</code>, inserisci <code>example</code>.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client Secret] (Segreto client)</td>
-        <td>Inserisci il Segreto client di Workfront. Questo è disponibile nell’area Applicazioni OAuth2 in Configurazione di Workfront. Se non disponi di un Segreto client per l’applicazione OAuth2 in Workfront, puoi generarne un altro. Per istruzioni, consulta la documentazione di Workfront.</td>
+        <td role="rowheader">[!UICONTROL Percorso dell’istanza]</td>
+        <td>
+          <p>Inserisci il tipo di ambiente della connessione.</p><p>Esempio: se l’URL è <code>https://example.my.workfront.com</code>, inserisci <code>my</code>.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL URL di autenticazione]</td>
-        <td>Questo può rimanere il valore predefinito, oppure puoi inserire l’URL dell’istanza Workfront, seguito da <code>/integrations/oauth2</code>. <p>Esempio: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+        <td role="rowheader">[!UICONTROL Scopes] <i>(Facoltativo)</i></td>
+        <td>Immettere eventuali ambiti aggiuntivi per la connessione. Lascia questo campo vuoto per usare gli ambiti predefiniti.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Prefisso host]</td>
-        <td>Nella maggior parte dei casi, questo valore deve essere <code>origin</code>.
+        <td>Nella maggior parte dei casi, questo valore deve essere <code>origin</code>.</td>
       </tr>
     </tbody>
     </table>
 
 1. Fai clic su **[!UICONTROL Continua]** per salvare la connessione e tornare al modulo.
 
-   Se non hai effettuato l’accesso a Workfront, verrà aperta una schermata di accesso. Dopo aver effettuato l’accesso, puoi autorizzare la connessione.
+   Se non hai effettuato l’accesso al tuo account Adobe, vieni indirizzato alla pagina di accesso di Adobe. Dopo aver effettuato l’accesso, puoi consentire la connessione.
 
 >[!NOTE]
 >
->* Le connessioni OAuth 2.0 all’API Workfront non sono più basate sulle chiavi API.
->* Per creare una connessione a un ambiente sandbox di Workfront, è necessario creare un’applicazione OAuth2 in tale ambiente e quindi utilizzare l’ID client e il Segreto client generati da tale applicazione nella connessione.
+>Le connessioni create prima del 5 novembre 2026 continuano a funzionare. Per passare a una connessione esistente a Adobe, autorizzala nuovamente.
+
+Per autorizzare nuovamente una connessione, vedere [Gestire le connessioni](/help/workfront-fusion/manage-scenarios/manage-connections.md).
+
 
 ### Connettersi a Workfront utilizzando una connessione da server a server
 
@@ -1062,7 +1069,7 @@ Workfront ha recentemente rilasciato una nuova versione del servizio di sottoscr
 
 Per ulteriori informazioni sulla nuova versione di sottoscrizione a eventi, consulta [Controllo delle versioni per sottoscrizioni a eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 
-Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=it).
+Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2378,7 +2385,7 @@ I filtri nelle sottoscrizioni di eventi ti consentono di garantire che gli scena
 >
 >   Per ulteriori informazioni sulla nuova versione di sottoscrizione a eventi, consulta [Controllo delle versioni per sottoscrizioni a eventi](https://experienceleague.adobe.com/it/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) nella documentazione di Workfront
 >
->   Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=it).
+>   Per le risorse sulla conservazione degli scenari di Workfront Fusion durante l’aggiornamento di sottoscrizione eventi, inclusa la registrazione di un webinar, consulta [Conservazione degli scenari di Fusion durante l’aggiornamento alla versione 2 di sottoscrizione eventi](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 Il modulo [!UICONTROL Osserva eventi] di Workfront attiva scenari basati su un webhook che crea una sottoscrizione a eventi nell’API Workfront. La sottoscrizione a eventi consiste in un set di dati che determina quali eventi vengono inviati al webhook. Ad esempio, se imposti un modulo [!UICONTROL Osserva eventi] per rilevare eventuali problemi, la sottoscrizione a eventi invia solo eventi relativi ai problemi.
 
