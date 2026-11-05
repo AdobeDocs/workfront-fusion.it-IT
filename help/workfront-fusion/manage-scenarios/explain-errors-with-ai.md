@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: e2420c8a25fd9e38c4b0300b00560fe1837a5e43
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '577'
 ht-degree: 15%
 ---
 # Spiegare un errore di scenario con IA
@@ -27,6 +27,8 @@ Quando l’esecuzione di uno scenario non riesce, l’intelligenza artificiale p
 >[!NOTE]
 >
 >Il pulsante **[!UICONTROL Spiega]** è disponibile solo nella nuova finestra di progettazione degli scenari. Non è disponibile nella finestra di progettazione dello scenario precedente.
+>
+>Per utilizzare questa funzione, la tua organizzazione deve disporre di una licenza di IA.
 
 ## Requisiti di accesso
 

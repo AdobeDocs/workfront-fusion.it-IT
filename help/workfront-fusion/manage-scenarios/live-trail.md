@@ -6,9 +6,9 @@ feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: 94449f8511d7480f1a4fc0ac6e8db9b067977abd
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '539'
 ht-degree: 17%
 ---
 
@@ -58,7 +58,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 
 
-Live Trail si apre nel pannello sul lato destro dell’area di lavoro. Se chiudi il pannello durante un’esecuzione, una piccola scheda a destra dello schermo ti consente di aprirlo nuovamente senza perdere gli eventi acquisiti.
+Live Trail si apre nel pannello sul lato destro dell’area di lavoro. Potete ridimensionare il pannello trascinandone il bordo sinistro. Se chiudi il pannello durante un’esecuzione, una piccola scheda a destra dello schermo ti consente di aprirlo nuovamente senza perdere gli eventi acquisiti.
 
 ## Rivedi gli eventi in Live Trail
 

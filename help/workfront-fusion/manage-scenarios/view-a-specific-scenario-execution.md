@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '981'
 ht-degree: 10%
 ---
 # Visualizzare una specifica esecuzione di uno scenario
@@ -127,7 +127,7 @@ Nella nuova esperienza, quando apri un’esecuzione dalla cronologia di esecuzio
 | Controllo | Dettagli |
 | ---------- | ---------- |
 | Passa all&#39;errore o all&#39;avviso successivo | Mostra quanti moduli hanno avuto un problema nel ciclo corrente. Ogni clic passa al successivo, prima gli errori e poi gli avvisi, da sinistra a destra. Il modulo viene centrato e viene aperta la prima operazione non riuscita. Il pulsante è nascosto quando l’esecuzione non presentava errori o avvisi. |
-| Moduli di ricerca | Trova un modulo per nome e centralo sull’area di lavoro. Premere Ctrl+K (Windows) o Comando+K (Mac). |
+| Cerca | Trova un modulo per nome o ID e centralo sull’area di lavoro. Premere Ctrl+K (Windows) o Comando+K (Mac). |
 | Note | Mostrare o nascondere le note dello scenario. Questo controllo viene visualizzato solo quando lo scenario include note e le note sono di sola lettura. |
 | Spiega flusso | Animare l&#39;ordine di esecuzione dei moduli dello scenario. Fare di nuovo clic su di esso oppure premere ESC per interrompere. |
 | Zoom in, Zoom out, Focus e minimap | Funziona come in modalità di modifica. |
