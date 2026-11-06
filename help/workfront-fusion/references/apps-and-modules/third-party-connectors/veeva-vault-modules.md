@@ -16,9 +16,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cb90aa39325068566e17bbb102969a537e527dc2
 workflow-type: tm+mt
-source-wordcount: '4127'
+source-wordcount: '4322'
 ht-degree: 13%
 ---
 # Moduli Veeva Vault
@@ -1152,13 +1152,65 @@ Questo modulo restituisce un elenco di file e cartelle per il percorso specifica
 
 ### Altro
 
-* [Effettua chiamata API personalizzata](#make-a-custom-api-call)
+* [Effettuare una chiamata API personalizzata](#make-a-custom-api-call)
+* [Effettuare una chiamata API personalizzata (legacy)](#make-a-custom-api-call-legacy)
 * [Creare una query VQL](#make-a-vql-query)
 * [Leggi registri](#read-logs)
 
-#### Effettua chiamata API personalizzata
+#### Effettuare una chiamata API personalizzata
 
-Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vault.
+Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vault. Supporta più tipi di corpo della richiesta.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione</td> 
+   <td> <p>Per istruzioni sulla connessione dell'account Veeva Vault a Workfront Fusion, vedere <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connessione di Veeva Vault a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>Inserisci un percorso relativo a <code>baseurl/api/v</code>.  Ad esempio: <code>/objects/documents</code>. Non includere <code>baseurl/api/v/</code>, poiché è già incluso.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Metodo</td> 
+   <td> <p>Seleziona il metodo di richiesta HTTP necessario per configurare la chiamata API. Per ulteriori informazioni, consulta <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">Metodi di richiesta HTTP</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Intestazioni</td> 
+   <td> <p>Aggiungi le intestazioni della richiesta sotto forma di oggetto JSON standard.</p> <p>Ad esempio: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion aggiunge automaticamente le intestazioni di autorizzazione.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Stringa query</td> 
+   <td> <p>Aggiungi la query per la chiamata API come oggetto JSON standard.</p> <p>Ad esempio: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo di corpo</td> 
+   <td> <p>Seleziona il tipo di corpo da inviare con la richiesta:</p>
+     <ul>
+       <li><code>urlencoded</code></li>
+       <li><code>multipart_form_data</code></li>
+       <li><code>raw</code></li>
+       <li><code>binary</code></li>
+     </ul>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Richiedi contenuto</td> 
+   <td> <p>Se utilizzi un tipo di corpo non elaborato o binario, inserisci o mappa il contenuto del corpo per la chiamata API.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campi</td> 
+   <td> <p>Se si utilizza un tipo di corpo dati o un tipo di corpo binario per un modulo codificato o multipart, fare clic su <b>Aggiungi elemento</b> per ogni campo per il quale si desidera aggiungere dati e immettere la chiave e il valore del campo.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### Effettuare una chiamata API personalizzata (legacy)
+
+Questo modulo di azione effettua una chiamata personalizzata all’API Veeva Vault. Questo modulo supporta solo il tipo di corpo `raw`. Per utilizzare altri tipi di corpo, utilizzare il modulo [Effettua una chiamata API personalizzata](#make-a-custom-api-call).
 
 <table style="table-layout:auto"> 
  <col> 
