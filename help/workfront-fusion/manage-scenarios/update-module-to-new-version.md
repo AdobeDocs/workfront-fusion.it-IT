@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 1eeb0f543b77b52c18c45ebc773e0322391d2042
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 27%
@@ -22,7 +22,7 @@ Poiché le applicazioni a cui Workfront Fusion si connette possono aggiornare o 
 
 Se in uno scenario viene visualizzata l&#39;icona verde del modulo Aggiornamento, Workfront Fusion ha rilasciato una nuova versione di tale modulo.
 
-![Icona aggiornamento](assets/update-indicator-workfront.png)
+![Icona aggiornamento](assets/new-update-indicator-workfront.png)
 
 Puoi aggiornare il modulo senza creare un nuovo scenario.
 
@@ -57,8 +57,8 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ## Aggiornare un modulo Workfront a una nuova versione
 
-1. Fai clic sull&#39;icona **Aggiorna modulo** ![Icona Aggiorna](assets/upgrade-icon.png) nel modulo che desideri aggiornare a una nuova versione.
-   ![Icona aggiornamento](assets/update-indicator-workfront.png)
+1. Fai clic sull&#39;icona **Aggiorna modulo** ![Icona Aggiorna](assets/new-upgrade-icon.png) nel modulo che desideri aggiornare a una nuova versione.
+   ![Icona aggiornamento](assets/new-update-indicator-workfront.png)
 1. Scegliere una delle opzioni seguenti:
 
    * Per selezionare un nuovo modulo da sostituire (anziché aggiornare il modulo), fare clic su **Scegli nuovo**, quindi procedere come descritto in [Aggiornare un modulo non Workfront a una nuova versione](#upgrade-a-non-workfront-module-to-a-new-version).
@@ -73,7 +73,7 @@ Per ulteriori dettagli sulle informazioni contenute in questa tabella, consulta 
 
 ## Aggiornare un modulo non Workfront a una nuova versione
 
-1. Fai clic sull&#39;icona **Aggiorna modulo** ![Icona Aggiorna](assets/upgrade-icon.png) nel modulo che desideri aggiornare a una nuova versione.
+1. Fai clic sull&#39;icona **Aggiorna modulo** ![Icona Aggiorna](assets/new-upgrade-icon.png) nel modulo che desideri aggiornare a una nuova versione.
    <!--![Update icon](assets/update-indicator.png)-->
 1. Fare clic su **Scegli nuovo**.
 1. Selezionare il modulo che si desidera sostituire al modulo precedente.

@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: ddf7d3e48a5aee72d8f39b5b6746d1e3e884a7d0
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '554'
 ht-degree: 7%
 ---
 # Visualizzare e risolvere le esecuzioni incomplete
@@ -25,10 +25,6 @@ Nella cartella [!UICONTROL Esecuzioni incomplete] sono memorizzate esecuzioni de
 >Per impostazione predefinita, la memorizzazione di esecuzioni incomplete è disabilitata. Per abilitarla, abilita l&#39;opzione [!UICONTROL Consenti l&#39;archiviazione di esecuzioni incomplete] nelle impostazioni avanzate dello scenario.
 >
 >Per ulteriori informazioni sulle impostazioni dello scenario, vedere [Configurare le impostazioni dello scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
-
-Anteprima evidenziata per l&#39;articolo completo {#highlighted-preview-article-level}
-
-<span class="preview">Le informazioni contenute in questa pagina si riferiscono a funzionalità non ancora generalmente disponibili. È disponibile solo nell&#39;ambiente Sandbox di anteprima.</span>
 
 ## Visualizzare le esecuzioni incomplete
 
