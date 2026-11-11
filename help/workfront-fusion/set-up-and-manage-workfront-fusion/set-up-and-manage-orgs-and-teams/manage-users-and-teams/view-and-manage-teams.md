@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 35%
+source-wordcount: '323'
+ht-degree: 33%
 ---
 # Visualizzare e gestire i team
 
@@ -29,6 +29,8 @@ I team sono gruppi di utenti che condividono l’accesso a risorse specifiche. T
 * Impostazioni delle notifiche e-mail
 
 Puoi visualizzare un elenco dei team della tua organizzazione e modificare i nomi dei team.
+
+Per creare e gestire i ruoli in un team, vedere [Visualizzare e gestire i ruoli del team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
 
 Per aggiungere utenti ai team, vedere [Aggiungere un utente a un team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
