@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 6%
+source-wordcount: '324'
+ht-degree: 5%
 ---
 # Ruoli per organizzazioni e team
 
@@ -82,6 +82,10 @@ Questo articolo descrive l’accesso e le funzionalità disponibili per i divers
 
 
 ## Ruoli di team
+
+>[!NOTE]
+>
+>Nelle tabelle seguenti vengono visualizzate le autorizzazioni dei ruoli di team predefiniti. Oltre a questi ruoli, puoi creare ruoli personalizzati per un team. Per ulteriori informazioni, vedere [Ruoli team personalizzati](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md#custom-team-roles) e [Visualizzare e gestire i ruoli team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
 
 ### Scenari
 

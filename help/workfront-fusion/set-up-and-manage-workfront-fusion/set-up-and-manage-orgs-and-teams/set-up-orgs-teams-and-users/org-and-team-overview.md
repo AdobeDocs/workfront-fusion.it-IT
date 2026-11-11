@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '795'
+ht-degree: 1%
 ---
 # Panoramica sulle organizzazioni e sui team di Adobe Workfront Fusion
 
@@ -87,3 +87,25 @@ Un utente ha uno dei seguenti ruoli in ciascuno dei propri team:
 * **[!UICONTROL Membro con restrizioni team]**: la funzionalità per questo ruolo non è attualmente disponibile e sarà disponibile prossimamente. Non è consigliabile assegnare gli utenti a questo ruolo in questo momento.
 
 Per informazioni sulle azioni specifiche disponibili per gli utenti in ogni ruolo del team, vedere [Ruoli organizzazione e team](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
+
+### Ruoli di team personalizzati
+
+<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
+
+Oltre ai ruoli di team predefiniti, ogni team dispone di una scheda **[!UICONTROL Ruoli]** in cui è possibile creare ruoli personalizzati. È possibile creare, aggiornare ed eliminare ruoli e scegliere esattamente quali autorizzazioni includere in ogni ruolo. Non sei più limitato a un set fisso di ruoli.
+
+Per istruzioni, vedere [Visualizzare e gestire i ruoli del team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
+Con i ruoli personalizzati, puoi:
+
+* Offri a ogni persona solo l’accesso di cui ha bisogno per il lavoro, riducendo il rischio di modifiche accidentali a scenari critici.
+* Imposta l’accesso in base al funzionamento dell’organizzazione, anziché adattare i team ai ruoli predefiniti.
+* Gestisci autonomamente l’accesso, senza contattare il supporto tecnico.
+
+Chiunque disponga dell&#39;autorizzazione **[!UICONTROL Gestione membri]** in un team può creare, aggiornare, eliminare e assegnare gli utenti ai ruoli del team. Nei ruoli predefiniti, questa autorizzazione è inclusa nei ruoli Amministratore team e Proprietario organizzazione.
+
+* I proprietari dell’organizzazione possono creare e gestire ruoli in tutti i team.
+* Gli amministratori dell&#39;organizzazione possono gestire i ruoli solo nei team di cui sono membri e in cui dispongono dell&#39;autorizzazione **[!UICONTROL Gestisci membri]**.
+* Gli amministratori del team possono gestire i ruoli nei propri team.
+
+<!-- BECKY CHECK ME: The source does not describe the steps in the Roles tab, the list of permissions that you can choose from, or whether you can edit or delete the predefined roles. Add the steps and permissions list once confirmed. Also confirm that Team Admins can manage roles (the source says the Manage members permission was previously given to Team Admin and Org Owner roles, and that team and org admins can create roles only in the teams where they are admins). -->
