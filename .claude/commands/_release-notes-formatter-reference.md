@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # Modelli di riferimento per le note sulla versione
 
@@ -144,8 +143,7 @@ Ogni sezione dell’area di prodotto H3 contiene una tabella HTML. Utilizza ques
 - Cella funzione: `<a>` tag con `class="MCXref xref" xrefformat="{para}"` seguito da `<p>` descrizione
 - I collegamenti `href` alla pagina dell&#39;area di prodotto (non un ancoraggio specifico)
 - Celle data: racchiuse in `<p>` tag
-- Per gli elementi fuori pianificazione, aggiungi `<p>[!BADGE Off schedule]{type=Neutral}</p>` dopo il collegamento
-- Svuota `<p></p>` dopo che il collegamento è accettabile quando non è necessario un badge
+- Per gli elementi fuori pianificazione, aggiungi `<p>[!BADGE Off schedule]{type=Neutral}</p>` come proprio paragrafo direttamente sotto il paragrafo del collegamento, prima del paragrafo della descrizione- Vuoto `<p></p>` dopo che il collegamento è accettabile quando non è necessario alcun badge
 - Mantieni il rientro di HTML coerente con i file esistenti
 
 ### Sezioni finali della panoramica
