@@ -71,7 +71,7 @@ Regole:
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **Corpo**: descrizione funzione, quindi collegamento alla documentazione
+&#x200B;5. **Corpo**: descrizione funzione, quindi collegamento alla documentazione
 
 #### Pagine Panoramica
 
@@ -90,11 +90,11 @@ Regole:
 
 - Se una sezione dell’area prodotto viene esclusa da un commento, rimuovi completamente il relativo collegamento da questo elenco. Non commentare il collegamento.
 
-5. **H3 per area di prodotto** con tabella delle funzionalità di HTML (vedere .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+&#x200B;5. **H3 per area di prodotto** con tabella delle funzionalità di HTML (vedere .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
    - All&#39;interno di ogni tabella, **prima le funzionalità più recenti**. La riga più recente viene visualizzata nella parte superiore della tabella (dopo la riga di intestazione)
    - Se una funzionalità dispone di un badge (ad esempio `[!BADGE Off schedule]{type=Neutral}`), inseriscilo nel proprio `<p>` direttamente sotto il paragrafo del collegamento della funzionalità, prima del paragrafo della descrizione.
 
-6. **Sezioni finali** (H2): note sulla versione per altre aree, aggiornamenti del visualizzatore per la verifica del desktop, annunci, versione API, aggiornamenti di manutenzione, aggiornamenti di formazione
+&#x200B;6. **Sezioni finali** (H2): note sulla versione per altre aree, aggiornamenti del visualizzatore per la verifica del desktop, annunci, versione API, aggiornamenti di manutenzione, aggiornamenti di formazione
 
 ### Passaggio 3: Convalidare i collegamenti
 
