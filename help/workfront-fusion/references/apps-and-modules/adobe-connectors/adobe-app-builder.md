@@ -92,7 +92,7 @@ La connessione utilizza le credenziali Adobe I/O Runtime di un’area di lavoro 
       <td>Immettere la password dal valore <code>auth</code> dell'area di lavoro (la parte dopo i due punti).</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Spazio dei nomi [!UICONTROL]</td> 
+      <td role="rowheader">Spazio dei nomi </td> 
       <td>Immetti il valore <code>namespace</code> dalla sezione <code>runtime</code> del file di configurazione dell'area di lavoro.</td> 
      </tr> 
     </tbody> 
