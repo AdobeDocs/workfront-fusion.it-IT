@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # Modelli di riferimento per le note sulla versione
 
@@ -11,7 +10,7 @@ Modelli dettagliati per ogni tipo di pagina per le note sulla versione. Si basan
 `help/quicksilver/product-announcements/product-releases/release-note-templates/` e
 la formattazione effettiva utilizzata nelle ultime versioni trimestrali.
 
-&#x200B;---
+---
 
 ## Modello per pagina area di prodotto
 
@@ -57,17 +56,15 @@ For more information, see [Help article title](/help/quicksilver/path/to/article
   >Production fast release: {date}
   >Production for everyone: {date}
   ```
-
 - Se una funzione è stata temporaneamente rimossa, aggiungi una riga dopo la data:
 
   ```
   >
   >This feature has been temporarily removed from the Production environment on {date}.
   ```
-
 - I collegamenti della Guida utilizzano percorsi assoluti a partire da `/help/quicksilver/`
 
-&#x200B;---
+---
 
 ## Modello per pagina panoramica
 
@@ -144,8 +141,7 @@ Ogni sezione dell’area di prodotto H3 contiene una tabella HTML. Utilizza ques
 - Cella funzione: `<a>` tag con `class="MCXref xref" xrefformat="{para}"` seguito da `<p>` descrizione
 - I collegamenti `href` alla pagina dell&#39;area di prodotto (non un ancoraggio specifico)
 - Celle data: racchiuse in `<p>` tag
-- Per gli elementi fuori pianificazione, aggiungi `<p>[!BADGE Off schedule]{type=Neutral}</p>` dopo il collegamento
-- Svuota `<p></p>` dopo che il collegamento è accettabile quando non è necessario un badge
+- Per gli elementi fuori pianificazione, aggiungi `<p>[!BADGE Off schedule]{type=Neutral}</p>` come proprio paragrafo direttamente sotto il paragrafo del collegamento, prima del paragrafo della descrizione- Vuoto `<p></p>` dopo che il collegamento è accettabile quando non è necessario alcun badge
 - Mantieni il rientro di HTML coerente con i file esistenti
 
 ### Sezioni finali della panoramica
@@ -157,7 +153,7 @@ Dopo tutte le tabelle dell&#39;area di prodotto:
 
 ### Workfront Fusion enhancements
 
-New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/it/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
+New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
 
 ### Workfront Planning enhancements
 
@@ -183,14 +179,14 @@ There are no updates for the following at this point in the release:
 
 ### Workfront Maintenance Updates
 
-For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=it).
+For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html).
 
 ### Training updates
 
-Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html?lang=it).
+Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html).
 ```
 
-&#x200B;---
+---
 
 ## Modello per pagina look and feel
 
@@ -219,7 +215,7 @@ For a list of all changes available with the {Written Quarter} {Year} release, s
 Description of the look-and-feel change.
 ```
 
-&#x200B;---
+---
 
 ## Formati di callout data
 
@@ -249,7 +245,7 @@ Description of the look-and-feel change.
 >Preview release: February 9, 2023; Planned Production release: February 23, 2023
 ```
 
-&#x200B;---
+---
 
 ## Incongruenze note da rilevare
 

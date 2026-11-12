@@ -1,13 +1,11 @@
 ---
 name: release-notes-formatter
 description: Formatta e convalida le note sulla versione di Workfront per coerenza, struttura corretta e collegamento corretto. Da utilizzare solo per i file delle note sulla versione nelle directory delle versioni di prodotto o quando l’utente cita note sulla versione, versioni di prodotto o versioni trimestrali. Non applicare ad articoli tutorial o alla documentazione generale.
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 2%
-
+source-wordcount: '1013'
+ht-degree: 1%
 ---
-
 
 # Note sulla versione Formatter
 
@@ -73,7 +71,7 @@ Regole:
 >Production for everyone: {Month Day, Year}
 ```
 
-&#x200B;5. **Corpo**: descrizione funzione, quindi collegamento alla documentazione
+5. **Corpo**: descrizione funzione, quindi collegamento alla documentazione
 
 #### Pagine Panoramica
 
@@ -90,16 +88,19 @@ Regole:
 * [Document enhancements](#document-enhancements)
 ```
 
-&#x200B;5. **H3 per area di prodotto** con tabella delle funzionalità di HTML (vedere .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
-   - All&#39;interno di ogni tabella, **prima le funzionalità più recenti**. La riga più recente viene visualizzata nella parte superiore della tabella (dopo la riga di intestazione)
+- Se una sezione dell’area prodotto viene esclusa da un commento, rimuovi completamente il relativo collegamento da questo elenco. Non commentare il collegamento.
 
-&#x200B;6. **Sezioni finali** (H2): note sulla versione per altre aree, aggiornamenti del visualizzatore per la verifica del desktop, annunci, versione API, aggiornamenti di manutenzione, aggiornamenti di formazione
+5. **H3 per area di prodotto** con tabella delle funzionalità di HTML (vedere .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+   - All&#39;interno di ogni tabella, **prima le funzionalità più recenti**. La riga più recente viene visualizzata nella parte superiore della tabella (dopo la riga di intestazione)
+   - Se una funzionalità dispone di un badge (ad esempio `[!BADGE Off schedule]{type=Neutral}`), inseriscilo nel proprio `<p>` direttamente sotto il paragrafo del collegamento della funzionalità, prima del paragrafo della descrizione.
+
+6. **Sezioni finali** (H2): note sulla versione per altre aree, aggiornamenti del visualizzatore per la verifica del desktop, annunci, versione API, aggiornamenti di manutenzione, aggiornamenti di formazione
 
 ### Passaggio 3: Convalidare i collegamenti
 
 - **Collegamento alla panoramica nelle pagine dell&#39;area di prodotto**: deve puntare allo stesso trimestre
-   - Corretto: `26-q2-release-activity/26-q2-release-overview.md`
-   - Sbagliato: `26-q1-release-activity/26-q1-release-overview.md`
+  - Corretto: `26-q2-release-activity/26-q2-release-overview.md`
+  - Sbagliato: `26-q1-release-activity/26-q1-release-overview.md`
 - **Collegamenti di ancoraggio nella panoramica**: devono corrispondere agli ID H3 (lettere minuscole, trattini)
 - **Collegamenti alle funzionalità nelle tabelle di panoramica**: deve utilizzare `class="MCXref xref" xrefformat="{para}"`
 - **Collegamenti alla documentazione della Guida**: deve iniziare con `/help/quicksilver/`
@@ -124,6 +125,9 @@ Applica queste correzioni durante la formattazione:
 | Spazi aggiuntivi nelle linee del callout | Ritaglia spazio vuoto finale |
 | HTML nelle pagine dell’area prodotti | Mantieni come markdown (HTML è solo per tabelle di panoramica) |
 | Manca `exl-id` | Escludilo — non generarne uno |
+| Badge posizionato dopo la descrizione in una tabella di panoramica | Spostala in un proprio `<p>` direttamente sotto il collegamento della funzione |
+| Collegamento mini sommario a una sezione commentata | Rimuovi il collegamento dall’elenco, non aggiungerlo come commento |
+| Tabella dei miglioramenti nella panoramica senza collegamento mini-sommario | Aggiungi un collegamento all’elenco dei miglioramenti di Adobe Workfront, nello stesso ordine delle tabelle |
 
 ### Passaggio 6: aggiornare il sommario
 
@@ -133,9 +137,9 @@ Dove aggiungerlo:
 
 - Il sommario include una sezione al trimestre sotto un&#39;intestazione come `* 2026 Q3 Release {#release-26-q3}`. Se il titolo del trimestre non esiste ancora (prima pagina di un nuovo trimestre), aggiungilo sopra il trimestre precedente in modo che sia in alto il trimestre più recente.
 - Sotto l’intestazione del trimestre, elenca le pagine nell’ordine seguente:
-   1. **Panoramica** (`Third Quarter 2026 release overview`).
-   2. **Pagine dell&#39;area di prodotto** in ordine alfabetico per nome area (amministratore, documenti, operazioni dell&#39;organizzazione, progetti, reporting, richiesta).
-   3. **Altri miglioramenti** sono stati apportati per ultimi (sempre dopo le aree alfabetiche dei prodotti).
+  1. **Panoramica** (`Third Quarter 2026 release overview`).
+  2. **Pagine dell&#39;area di prodotto** in ordine alfabetico per nome area (amministratore, documenti, operazioni dell&#39;organizzazione, progetti, reporting, richiesta).
+  3. **Altri miglioramenti** sono stati apportati per ultimi (sempre dopo le aree alfabetiche dei prodotti).
 
 Ogni voce del sommario è un collegamento di markdown che utilizza il titolo della pagina e il percorso assoluto dell’archivio:
 
@@ -184,6 +188,8 @@ Durante la revisione di un file delle note sulla versione, verificare:
 - [ ] righe della tabella delle funzionalità nella panoramica corrispondono al contenuto della pagina dell&#39;area di prodotto
 - [ ] Nessun collegamento interno interrotto
 - [ ] I collegamenti di ancoraggio nella panoramica corrispondono agli ID sezione H3
+- [ ] Ogni tabella dei miglioramenti nella panoramica che non viene commentata ha un collegamento corrispondente nel mini sommario, quindi le sezioni aggiunte nuovamente quando non si aggiungono commenti non vengono perse
+- [ ] Il mini sommario della panoramica non contiene collegamenti alle sezioni di commento e i badge si trovano direttamente sotto il collegamento della funzione
 - [ Le funzionalità di ] sono ordinate in ordine di novità (sia nelle pagine dell&#39;area di prodotto che nelle tabelle di panoramica)
 - [ ] Le nuove pagine delle note sulla versione sono elencate in `help/quicksilver/TOC.md` nel trimestre corretto, con la prima panoramica e le aree di prodotto in ordine alfabetico (Altre ultime)
 
