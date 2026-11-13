@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Gestire una richiesta di documentazione di Fusion da #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
-source-git-commit: 535a10407766d054b00d31869e511753bf07a9b7
+source-git-commit: 17a2d521197e676e41b4b899f7be142430a18c2f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -36,6 +36,8 @@ Se invece la richiesta è collegata a un’origine secondaria non di Confluence 
 ## Passaggio 2: creare un ramo per la richiesta
 
 Prima di toccare qualsiasi file, crea un nuovo ramo Git per questa richiesta ed estrailo. Ramo del ramo predefinito corrente (`main`), non disattivato qualsiasi ramo venga estratto.
+
+Se l&#39;utente ha già creato e denominato il ramo, utilizzarlo invece di crearne uno nuovo e registrare tale nome nel campo `Documentation Branch` dell&#39;attività nel passaggio 4.
 
 Denomina il ramo `becky-{short-kebab-case-description}`, derivato dal **Titolo funzionalità**. La prima parola deve essere `becky`, corrispondente alla convenzione di ramo esistente dell&#39;archivio (ad esempio `becky-webhook-update`, `becky-storage-beta-sos`). Breve: poche parole, non il titolo completo.
 
@@ -74,9 +76,12 @@ Campi attività:
 | `DE:Preview Date` | la data indicata nel messaggio originale di Slack (la **data di rilascio prevista** della richiesta), per impostazione predefinita |
 | `taskConstraint` + `constraintDate` | Imposta `taskConstraint` su `MFO` (Deve finire il) con `constraintDate` = la data citata nel messaggio originale di Slack (la **data di rilascio prevista** della richiesta), quindi la data di completamento pianificata dell&#39;attività corrisponde anche a essa. |
 | `DE:Articles to update` | l’elenco degli articoli creati o aggiornati per questa richiesta (vedi di seguito) |
+| `DE:Documentation Branch` | il nome del ramo git in cui sono attive le modifiche alla documentazione (vedi di seguito) |
 | Prodotto/Area | selezionare `Fusion` (un campo enum nel modulo Documentazione prodotto; confermare il nome esatto del campo con `insights_search_fields` se non è mai chiaro) |
 
 `DE:Articles to update` (un campo di testo nel modulo di documentazione del prodotto) elenca ogni file di articolo creato o modificato nel passaggio 3, un percorso relativo all&#39;archivio per riga (ad esempio `help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`). Includi nuovi articoli (aggiungi `(new)` dopo il percorso) ed eventuali file di sommario o di indice modificati. Poiché le modifiche alla documentazione avvengono nel passaggio 3, l’elenco è noto al momento della creazione dell’attività, pertanto è necessario impostarlo nella stessa chiamata di creazione. Se l’utente ti chiede di creare l’attività senza apportare modifiche alla documentazione, lascia vuoto il campo e, in caso di modifiche alla documentazione, aggiornalo in un secondo momento.
+
+`DE:Documentation Branch` (un campo di testo nel modulo di documentazione del prodotto) contiene il nome esatto del ramo Git su cui si trovano le modifiche del documento, ad esempio `becky-explain-errors-with-ai`. Utilizza il ramo denominato dall’utente o quello attualmente estratto nell’archivio modificato; non inventare un nome. Impostalo nella stessa chiamata di creazione degli altri campi. Se l’utente ti chiede di creare l’attività senza apportare modifiche alla documentazione e non esiste ancora alcun ramo, lascia vuoto il campo e aggiornalo in un secondo momento.
 
 Imposta i campi della data di anteprima e della data di completamento pianificata come parte della stessa chiamata di creazione: non lasciarli per un momento successivo o in attesa di una richiesta. Se l’utente assegna una data diversa in un secondo momento o dice che la data non è ancora nota, effettua l’aggiornamento di conseguenza, ma per impostazione predefinita questa viene compilata ogni volta.
 
@@ -108,6 +113,7 @@ Report semplice:
 * Il ramo creato (eseguito localmente, non inviato e nessuna richiesta pull aperta, secondo il passaggio 2).
 * Quali file di documenti hai modificato e cosa hai aggiunto.
 * Gli articoli modificati sono elencati nel campo `Articles to update` dell&#39;attività.
+* Il nome del ramo immesso nel campo `Documentation Branch` dell&#39;attività.
 * Le modifiche non vengono applicate al ramo, in attesa della revisione dell’utente.
 * Il nome dell’attività e l’URL.
 * I valori esatti dei campi impostati, inclusi i campi della data di anteprima.
@@ -120,4 +126,4 @@ Conferma che questi siano ancora risolti, anziché presupporre che siano permane
 * Il progetto &quot;Attività di documentazione del prodotto - per problemi di sviluppo che richiedono la messaggistica&quot; è mappato sull&#39;ID `5e69583f00236b9f767c3e3944100ee4`
 * L&#39;attività padre &quot;Becky - Tasks from Fusion-Documentation channel&quot; è mappata sull&#39;ID `6a9b065100003a7554832780c2015e93` (nello stesso progetto) - resolve con `insights_find_id_by_name` (entità `task`) anziché mediante codifica fissa, nel caso in cui cambi mai
 * Il modulo personalizzato per la documentazione del prodotto (`categoryID`) è `5d7275b9000514604bd969d418725843`
-* Campi personalizzati utilizzati: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Campi personalizzati utilizzati: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`, `DE:Articles to update`, `DE:Documentation Branch`
