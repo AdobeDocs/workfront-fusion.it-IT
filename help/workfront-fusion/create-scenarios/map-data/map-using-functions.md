@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 23%
+source-wordcount: '1137'
+ht-degree: 15%
 ---
 # Mappare un elemento utilizzando le funzioni incorporate
 
@@ -126,6 +126,64 @@ Per nidificare una funzione:
 1. Nel pannello di mappatura, fai clic sulla funzione nidificata. In questo esempio, questa è la funzione `trim`.
 1. Continuare a configurare la funzione come desiderato.
 1. Continuare la configurazione del modulo oppure fare clic su **OK**.
+
+### Generare un’espressione con IA
+
+Invece di scrivere autonomamente la sintassi di un’espressione, puoi descrivere ciò che desideri in linguaggio semplice e AI genera l’espressione al posto tuo. Ad esempio, puoi richiedere quanto segue:
+
+* Unisci questi nomi con una virgola.
+* Aggiungi tre giorni alla data di scadenza.
+
+AI trasforma la richiesta in un’espressione che utilizza le funzioni integrate di Workfront Fusion, in modo che il risultato sia leggibile e facile da rivedere prima di utilizzarla.
+
+Per generare un&#39;espressione:
+
+1. Fai clic sulla scheda **[!UICONTROL Scenari]** nel pannello a sinistra.
+1. Seleziona lo scenario in cui desideri mappare i dati.
+1. Fai clic in un punto qualsiasi dello scenario per accedere all’editor scenario.
+1. Fai clic sul modulo in cui desideri aggiungere un’espressione, quindi fai clic sul campo.
+
+   Viene visualizzato il pannello di mappatura.
+
+1. Fai clic sulla scheda **[!UICONTROL Riempi per IA]** (icona a forma di bacchetta magica) nel pannello di mappatura.
+
+   ![Compila per scheda IA](assets/fill-by-ai-tab.png)
+
+1. Nella casella **[!UICONTROL Descrivi il contenuto del campo]**, descrivi il risultato desiderato in linguaggio semplice.
+
+   Per aggiungere alla richiesta un campo di un modulo precedente, fare clic su di esso nell&#39;elenco **[!UICONTROL Campi disponibili]**. Per iniziare una nuova riga nel prompt, premere MAIUSC+INVIO.
+
+   Ad esempio, per ottenere solo il dominio da un indirizzo e-mail, puoi immettere il seguente prompt:
+
+   `Show only the domain of {{1.data.json.email}} like "user@acme.com" -> "acme.com"`
+
+1. Fai clic su **[!UICONTROL Genera]**.
+
+   L&#39;espressione generata da IA viene visualizzata in **[!UICONTROL Espressione suggerita]**.
+
+   ![Espressione suggerita](assets/fill-by-ai-suggested-expression.png)
+
+1. Rivedi l’espressione, quindi effettua una delle seguenti operazioni:
+
+   * Fai clic su **[!UICONTROL Applica]** per inserire l&#39;espressione nel campo.
+   * Fare clic su **[!UICONTROL Rigenera]** per fare in modo che AI generi un&#39;espressione diversa.
+
+1. (Facoltativo) Se necessario, modifica l’espressione nel campo.
+
+1. Continuare la configurazione del modulo oppure fare clic su **[!UICONTROL OK]**.
+
+#### Generazione di espressioni da parte di IA
+
+Quando IA genera un’espressione, esegue le seguenti operazioni:
+
+* **Utilizza il contesto dello scenario.** IA considera i campi disponibili per la mappatura, i relativi tipi, il campo di destinazione e le impostazioni internazionali e del fuso orario.
+* **Convalida l&#39;espressione.** Prima che IA restituisca un’espressione come riuscita, verifica la presenza di funzioni non supportate, argomenti mancanti, riferimenti a campi sconosciuti ed errori comuni con matrici e date.
+* **Corregge e semplifica l&#39;espressione.** L’intelligenza artificiale corregge gli errori di sintassi più comuni e sostituisce le soluzioni alternative riconosciute con funzioni incorporate.
+* **Riprova se la convalida non riesce.** IA utilizza il feedback specifico della convalida per rigenerare l’espressione. Se non è comunque possibile creare un&#39;espressione valida, restituisce un errore di cancellazione anziché un risultato non valido.
+
+>[!NOTE]
+>
+>Le espressioni generate dall’intelligenza artificiale possono essere incomplete o imprecise. Rivedi ogni espressione e verifica lo scenario prima di affidarti al risultato.
 
 ### Utilizza le funzioni [!DNL Google Sheets]
 
