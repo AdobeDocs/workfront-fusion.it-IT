@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 75%
+source-wordcount: '522'
+ht-degree: 70%
 ---
 # Panoramica della mappatura
 
@@ -68,6 +68,9 @@ Quando fai clic su un campo in cui puoi mappare i dati, viene aperto il pannello
 Nella prima scheda vengono visualizzati gli elementi che è possibile mappare da altri moduli.
 
 Le altre schede includono funzioni, operatori e parole chiave che puoi utilizzare per creare formule. Le formule vengono ordinate in schede diverse in base al tipo di dati che gestiscono.
+
+La scheda **[!UICONTROL Compila per IA]** ti consente di descrivere in linguaggio semplice ciò che desideri che un campo contenga e AI genera un&#39;espressione per te. Per ulteriori informazioni, vedere [Generare un&#39;espressione con IA](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai).
+
 
 ![Pannello di mappatura](assets/new-mapping-panel-blank.png)
 
