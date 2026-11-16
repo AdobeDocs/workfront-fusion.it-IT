@@ -16,9 +16,9 @@ feature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 29913d8252c39b66cfe4688d760bffb074dbf56c
+source-git-commit: 88b8663ed3f2ec4da1234e5c1c93531133d1e61c
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2436'
 ht-degree: 0%
 ---
 # Modelli di Adobe Workfront Fusion attualmente disponibili
@@ -162,36 +162,6 @@ Questo modello numera i progetti in sequenza. Si presuppone che sia stato creato
 #### Workfront - Serie numerazione sequenziale: problemi
 
 Questo modello numererà i problemi in sequenza. Si presuppone che sia stato creato un modulo e un campo personalizzato utilizzando il modello Campo e modulo personalizzato Workfront - Serie numerazione sequenziale, ma che sia possibile utilizzare un modulo e un campo esistenti.
-
-### Workfront: creare un progetto con il flusso di lavoro di AEM
-
-[!BADGE Nuovo!]{type=Informative}
-
-<!--New November 11, 2026-->
-
-<!-- BECKY CHECK ME: The request is titled "Automation New Templates" and lists the fields of two templates, "Create project with AEM workflow" and "Create multiple records". It does not give the exact template names, the trigger, or a description of what each template does. I wrote the descriptions from the field list. Confirm the template names as they appear in the Templates area, the trigger for each template, and the descriptions. -->
-
-Questo modello consente di creare un progetto a partire da un modello di progetto, creare le cartelle collegate di AEM configurate per il modello di progetto e collegarle al nuovo progetto.
-
->[!TIP]
->
->* Le cartelle collegate di AEM vengono create solo se nel modello di progetto selezionato è abilitato [flusso di lavoro di AEM](https://experienceleague.adobe.com/it/docs/workfront/using/administration-and-setup/configure-integrations/configure-aacs-integration#set-up-workflows-optional) con almeno una struttura di cartelle. In caso contrario, il progetto viene creato senza cartelle collegate.
->* Gli alberi delle cartelle vengono ricavati dal modello di progetto quando si salva l’automazione. Se in seguito aggiungi o rimuovi strutture di cartelle nel modello di progetto, devi modificare e salvare nuovamente l’automazione per includere le modifiche.
-
-### Workfront - Creazione di più record
-
-[!BADGE Nuovo!]{type=Informative}
-
-<!--New November 11, 2026-->
-
-Questo modello crea uno o più record in un tipo di record, in base alle scelte effettuate in un campo del record corrente.
-
->[!TIP]
->
->* Viene creato un record per ogni scelta presente nel record corrente e con un mapping di campi. Le scelte senza mappatura vengono ignorate e non viene creato alcun record per esse.
->* Per assegnare un nome ai record creati, mappare un campo di origine al campo principale (nome) del nuovo tipo di record. Ogni record viene quindi denominato *[nome record corrente] valore di scelta*. Se non si esegue il mapping del campo principale, il nome del record viene lasciato vuoto.
->* Se nessuno dei record selezionati contiene una scelta mappata nel campo scelto, non viene creato alcun record e viene visualizzato un messaggio che indica quale campo è vuoto.
->* Le scelte e le mappature dei campi vengono lette dal tipo di record corrente quando si salva l&#39;automazione. Se successivamente aggiungi o modifichi campi o scelte, devi modificare e salvare nuovamente l’automazione per includere le modifiche.
 
 ## Workfront - Modelli Workfront Proof
 
