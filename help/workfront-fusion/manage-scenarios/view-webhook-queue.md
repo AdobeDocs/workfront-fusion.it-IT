@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 1c28e4007e3e9d6503618482002e506f9393ee57
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 29%
+source-wordcount: '590'
+ht-degree: 16%
 ---
 # Visualizzare la coda di un webhook
 
@@ -61,12 +61,40 @@ Se uno scenario al momento presenta una coda, in tale scenario viene visualizzat
 
 ![Banner coda](assets/queue-banner.png)
 
-Per visualizzare la coda di un webhook:
+La pagina della coda del webhook ha lo stesso layout degli elenchi **[!UICONTROL Scenari]** e **[!UICONTROL Webhook]**.
+
+>[!NOTE]
+>
+>La ricerca e l’ordinamento si applicano solo agli eventi attualmente caricati nella tabella, non all’intera coda. Per includere altri eventi, carica prima gli eventi aggiuntivi.
+
+Per visualizzare e gestire la coda di un webhook:
 
 1. Fai clic su **[!UICONTROL Webhook]** nel menu a sinistra.
 1. Individuare il webhook per il quale si desidera visualizzare la coda.
-1. Individua il numero di eventi nel pulsante Eventi ricevuti.
+1. Individuare il numero di eventi nella colonna Coda completa.
 
    ![Coda webhook](assets/webhook-queue.png)
 
-1. Fai clic sul pulsante per visualizzare i dettagli sugli eventi in coda.
+1. Fare clic sul pulsante **Operazioni** per visualizzare i dettagli sugli eventi nella coda.
+
+   Viene visualizzata la pagina di coda del webhook. Nella pagina sono elencati gli eventi nella coda in una tabella con le colonne seguenti: **[!UICONTROL ID]**, **[!UICONTROL Creato alle]**, **[!UICONTROL Dimensione]** e **[!UICONTROL Dettagli]**.
+
+1. (Facoltativo) Per filtrare gli eventi nella tabella, immettere il testo nel campo **[!UICONTROL Ricerca]** sopra la tabella.
+1. (Facoltativo) Per ordinare gli eventi, fai clic sull&#39;intestazione della colonna **[!UICONTROL ID]**, **[!UICONTROL Creato alle]** o **[!UICONTROL Dimensione]**.
+1. (Facoltativo) Per modificare il numero di eventi visualizzati in ogni pagina, selezionare un numero nell&#39;elenco a discesa **[!UICONTROL Mostra]** nella parte inferiore della pagina.
+1. (Facoltativo) Per spostarsi tra le pagine degli eventi, fai clic su **[!UICONTROL Primo]**, **[!UICONTROL Precedente]**, **[!UICONTROL Successivo]** o **[!UICONTROL Ultimo]** nella parte inferiore della pagina.
+
+   Questi pulsanti non sono disponibili quando la coda dispone di una sola pagina di eventi.
+
+1. (Facoltativo) Per visualizzare il payload di un evento, fai clic su **[!UICONTROL Dettagli]** nella riga dell&#39;evento.
+
+   Viene visualizzata la finestra di dialogo dei dettagli con il payload dell’evento.
+
+1. (Facoltativo) Per eliminare gli eventi:
+
+   1. Selezionare gli eventi che si desidera eliminare eseguendo una delle operazioni seguenti:
+
+      * Seleziona la casella di controllo accanto a ogni evento che desideri selezionare.
+      * Selezionare la casella di controllo **[!UICONTROL Seleziona tutto]** per selezionare l&#39;intera coda, non solo gli eventi attualmente caricati. È quindi possibile deselezionare la casella di controllo per tutti gli eventi che si desidera escludere dalla selezione.
+
+   1. Nella barra nella parte inferiore della schermata, fai clic su **Elimina**.
