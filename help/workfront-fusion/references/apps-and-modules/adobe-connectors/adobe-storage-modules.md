@@ -22,10 +22,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 231f1c67031a396b8752fb84a5ff6d017df94267
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 27%
+source-wordcount: '1542'
+ht-degree: 25%
 ---
 # Moduli Adobe Storage
 
@@ -366,4 +366,35 @@ Questo modulo di azione invia una richiesta HTTP personalizzata all’API di arc
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
+</table>
+
+#### Caricare un file
+
+Questo modulo di azione carica un file nell’archiviazione Adobe in un singolo passaggio. Crea il file di destinazione, inizializza il caricamento, trasferisce il contenuto del file tramite un URL predefinito e finalizza il caricamento. Non è necessario configurare passaggi di trasferimento e finalizzazione separati.
+
+Il modulo supporta file di grandi dimensioni.
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connessione</td> 
+   <td>Per istruzioni sulla creazione di una connessione ad Adobe Storage, vedere <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Creare una connessione ad Adobe Storage</a> in questo articolo.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Progetto</td> 
+   <td>Seleziona il progetto contenente la cartella in cui desideri caricare il file.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Cartella</td> 
+   <td>Seleziona la cartella in cui desideri caricare il file. Per caricare il file nella directory principale del progetto, selezionare <code>/</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File di origine</td> 
+   <td>Seleziona un file da un modulo precedente o mappane il nome, il contenuto e il tipo di contenuto.</td> 
+  </tr> 
+ </tbody> 
 </table>
