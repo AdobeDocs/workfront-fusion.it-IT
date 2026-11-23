@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
+source-git-commit: 06b6c3b3a37d2b66eae61951ffc0aaf558d1b180
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 19%
+source-wordcount: '1806'
+ht-degree: 17%
 ---
 # Moduli Workfront Fusion
 
@@ -97,9 +97,53 @@ Se visualizzi il pulsante Map (Mappa) sopra un campo o una funzione, puoi utiliz
 
 ![Pulsante di attivazione/disattivazione Mappa](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Trigger](#triggers)
 * [Azioni](#actions)
 * [Esporta](#export)
 * [Varie](#misc)
+
+### Trigger
+
+* [Osserva i record](#watch-records)
+
+#### Osserva i record
+
+Questo modulo di attivazione avvia uno scenario quando vengono creati, aggiornati o entrambi i record di Workfront Fusion. Puoi utilizzare i filtri per concentrarti sulle modifiche che contano per il tuo team, in modo da non dover controllare manualmente Workfront Fusion.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connessione]</td> 
+   <td> <p>Per istruzioni sulla connessione di Workfront Fusion a Workfront Fusion, vedere <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connessione di Workfront Fusion a Workfront Fusion</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Osserva</td> 
+   <td>Seleziona il tipo di modifica per cui desideri che il modulo controlli.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Tipo di record</td> 
+   <td>Selezionare il tipo di record da controllare: <b>Scenario</b> o <b>Esecuzione</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID scenario</td> 
+   <td><p>Se stai guardando le esecuzioni, seleziona o mappa lo scenario per il quale desideri guardare le esecuzioni.</p><p>Questo campo è facoltativo. Se lo lasci vuoto, il modulo cerca le esecuzioni nell’organizzazione.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Mostra esecuzioni di controllo</td> 
+   <td><p>Se stai guardando l’esecuzione, seleziona se i risultati includono esecuzioni di controlli:</p><ul><li><b>Sì</b>: Includi esecuzioni di controllo.</li><li><b>No</b>: non includere esecuzioni di controllo.</li><li><b>Non definito</b>: non filtrare i risultati in base alle esecuzioni dei controlli.</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtro</td> 
+   <td>In <b>Proprietà</b>, per ogni filtro proprietà che si desidera utilizzare, fare clic su <b>Aggiungi elemento</b>, selezionare il campo e l'operatore, quindi immettere o mappare il valore per il quale si desidera filtrare. Un campo di valori viene visualizzato solo per gli operatori che ne necessitano. Ad esempio, un operatore come <b>Exists</b> non richiede un valore. I filtri delle proprietà sono gli stessi per i tipi di record Scenario ed Esecuzione.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Limite</td> 
+   <td>Immettere o mappare il numero massimo di risultati utilizzati da Workfront Fusion durante un ciclo di esecuzione. Il valore predefinito è 200.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Azioni
 
@@ -471,8 +515,3 @@ Questo modulo restituisce l’ID di regione e organizzazione per ogni organizzaz
   </tr> 
  </tbody> 
 </table>
-
-
-
-
-
