@@ -186,7 +186,7 @@ Il modulo restituisce le seguenti informazioni in **[!UICONTROL Dati]**. Puoi ma
    <td> <p>Dettagli sull’elaborazione del prompt e delle chiamate allo strumento, inclusi argomenti, risultati, tempi e informazioni di successo. Gestisci questi dettagli in base ai requisiti di gestione dei dati della tua organizzazione.</p> </td> 
   </tr> 
   <tr> 
-   <td>Riepilogo [!UICONTROL] (<code>data.summary</code>)</td> 
+   <td>Riepilogo  (<code>data.summary</code>)</td> 
    <td> <p>Il numero di chiamate allo strumento, il tempo di elaborazione e lo stato di esecuzione. Esaminare il riepilogo insieme alla risposta e all'audit trail, inclusi i risultati di <code>partial_success</code>.</p> </td> 
   </tr> 
   <tr> 
