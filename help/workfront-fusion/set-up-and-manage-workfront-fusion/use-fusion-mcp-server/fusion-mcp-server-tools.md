@@ -1,9 +1,9 @@
 ---
 title: Strumenti server Adobe Workfront Fusion MCP
 description: Elenco di riferimento degli strumenti esposti dal server MCP di Adobe Workfront Fusion alle piattaforme AI e a Coworker.
-source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
+source-git-commit: daed5498e4830c7eb66e295081dfd486d3ef610b
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1632'
 ht-degree: 7%
 ---
 
@@ -22,6 +22,8 @@ Ogni strumento è classificato come:
 
 * **Lettura**: recupera le informazioni senza modificare nulla, ad esempio elencando scenari o ottenendo un&#39;esecuzione.
 * **Scrittura**: crea, modifica, esegue o elimina dati di Fusion, ad esempio clonando uno scenario o cancellando una coda del webhook.
+
+I proprietari e gli amministratori dell’organizzazione possono consentire o disabilitare strumenti di sola lettura e strumenti di scrittura per l’intera organizzazione. Gli strumenti disattivati non vengono visualizzati nell&#39;elenco degli strumenti e Fusion li rifiuta se un agente li chiama. Questa impostazione limita solo le chiamate agli strumenti effettuate tramite il server ufficiale MCP di Fusion. Le azioni eseguite dagli utenti nell’interfaccia di Fusion, tramite l’API o tramite qualsiasi altra integrazione sono ancora controllate dalle autorizzazioni di ciascun utente in Fusion. Per ulteriori informazioni, consulta [Gestire le preferenze MCP per la tua organizzazione](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/configure-fusion-mcp-server.md#manage-mcp-preferences-for-your-organization).
 
 ## Strumenti di organizzazione
 
@@ -204,7 +206,7 @@ Esempio di prompt:
 | --- | --- | --- | --- |
 | Invia feedback | `fusion_feedback_submit` | Scrittura | Invia il tuo feedback (bug, risultato errato, richiesta di funzionalità, elogi o altro) al team di Fusion. |
 
-## Collaboratore
+## Coworker
 
 Tutti gli strumenti in questo articolo sono disponibili in Collaboratore, sia singolarmente che nella barra a destra di Fusion, in base alle stesse impostazioni di lettura/scrittura e alle autorizzazioni dell’utente.
 

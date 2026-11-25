@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
+source-git-commit: dbe4560cea79834a0d967cbaf6b98772d8ee09ce
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '2153'
 ht-degree: 6%
 ---
 # Moduli Adobe CX Enterprise Coworker
@@ -24,8 +24,6 @@ Il connettore fornisce due moduli:
 * **[!UICONTROL Ottieni stato esecuzione]** controlla una richiesta avviata in precedenza.
 
 ## Requisiti di accesso
-
-<!-- BECKY CHECK ME: This table is copied from other Fusion connector articles. The source material does not list access requirements, but says you need an Adobe account that has access to Coworker. Confirm the requirements and whether Coworker needs its own license or entitlement. -->
 
 +++ Espandi per visualizzare i requisiti di accesso per la funzionalità descritta in questo articolo.
 
@@ -166,6 +164,10 @@ Ogni esecuzione invia il prompt una volta e avvia una nuova conversazione. Non �
    <td> <p>Questa opzione è attivata per impostazione predefinita. Abilita questa opzione se desideri che il modulo attenda il completamento dell’attività o richieda attenzione. Disattivarla per restituire immediatamente il risultato iniziale.</p><p>Per ulteriori informazioni, vedere <a href="#wait-for-completion">Attendere il completamento</a> in questo articolo.</p> </td> 
   </tr> 
   <tr> 
+   <td>[!UICONTROL Conferma tutte le azioni dello strumento] <i>(Facoltativo, avanzato)</i></td> 
+   <td> <p>Questa opzione è disattivata per impostazione predefinita. Abilita questa opzione se desideri che, durante questa esecuzione, il collaboratore approvi automaticamente le richieste di autorizzazione degli strumenti supportate. Gli strumenti possono modificare o eliminare dati.</p><p>Per ulteriori informazioni, vedere <a href="#confirm-all-tool-actions">Confermare tutte le azioni dello strumento</a> in questo articolo.</p> </td> 
+  </tr> 
+  <tr> 
    <td>[!UICONTROL Include raw result] <i>(Facoltativo, avanzato)</i></td> 
    <td> <p>Questa opzione è disattivata per impostazione predefinita. Abilita questa opzione se desideri che il modulo includa nell’output la risposta completa del Collaboratore. La risposta potrebbe contenere informazioni riservate.</p> </td> 
   </tr> 
@@ -187,6 +189,19 @@ Quando **[!UICONTROL Attendi completamento]** è disattivato, il modulo restitui
 L’attesa è soggetta al timeout del modulo di Fusion. Se il modulo si interrompe o si interrompe, è possibile che Collaborator continui a lavorare. In tal caso, potrebbe non essere possibile ricevere un output o un ID attività.
 
 Per un lavoro più lungo, disattiva l&#39;attesa e salva l&#39;**[!UICONTROL ID attività]** iniziale in modo da poter controllare l&#39;attività in un secondo momento. Non eseguire di nuovo automaticamente il prompt dopo un timeout. La prima richiesta potrebbe essere già in corso e la sua ripetizione potrebbe duplicare le modifiche.
+
+#### Conferma tutte le azioni dello strumento
+
+Quando **[!UICONTROL Conferma tutte le azioni dello strumento]** è attivo, il modulo approva automaticamente le richieste di autorizzazione dello strumento supportate durante l&#39;esecuzione, fino a 20 turni di approvazione e 100 chiamate dello strumento. Questa opzione è disattivata per impostazione predefinita.
+
+>[!WARNING]
+>
+>Gli strumenti possono modificare o eliminare dati. L’attivazione di questa opzione richiede il tuo consenso solo per questa esecuzione. Non è una concessione di autorizzazione permanente.
+
+Si applicano le seguenti condizioni:
+
+* Questa opzione richiede **[!UICONTROL Attendi il completamento]** e un flusso di autorizzazioni live compatibile.
+* Limiti, richieste ripetute, accesso, domande e altre approvazioni richiedono una revisione manuale.
 
 
 ## Uscita modulo
@@ -238,7 +253,7 @@ Utilizza **[!UICONTROL il testo finale dell&#39;assistente]** per la risposta in
 
 Il collaboratore potrebbe aver bisogno di ulteriori informazioni o autorizzazioni prima di continuare. In questo caso, **[!UICONTROL Richiede attenzione]** è true e **[!UICONTROL Completed]** è false. Instrada il risultato a una persona invece di trattarlo come lavoro completato.
 
-Questi moduli non possono rispondere a una domanda di follow-up né approvare un’azione per tuo conto. **[!UICONTROL Ottieni stato esecuzione]** può verificare se lo stato dell&#39;attività è cambiato, ma non risolve la richiesta di input o autorizzazione.
+Questi moduli non possono rispondere a una domanda di follow-up o approvare un&#39;azione per tuo conto, ad eccezione delle richieste di autorizzazione per lo strumento supportate che **[!UICONTROL Conferma tutte le azioni dello strumento]** approvate automaticamente. **[!UICONTROL Ottieni stato esecuzione]** può verificare se lo stato dell&#39;attività è cambiato, ma non risolve la richiesta di input o autorizzazione.
 
 ### Usa le risposte precedenti
 
@@ -318,6 +333,7 @@ Non rieseguire il prompt originale solo per verificarne l&#39;avanzamento.
 * Questi moduli non consentono di limitare i singoli strumenti. Istruzioni come &quot;non modificare nulla&quot; descrivono l’intento, ma non sono una modalità di sola lettura imposta.
 * Gli strumenti e le competenze disponibili variano a seconda dell’account. Il connettore non fornisce un selettore di abilità né garantisce una particolare azione, ad esempio la creazione di un percorso o l’aggiornamento di un progetto. Non presumere che le richieste che richiedono l’approvazione vengano completate in modo automatico.
 * Il connettore si avvia e controlla le richieste di Collaboratore. Non monitora le modifiche al progetto o salva automaticamente le risposte a un’altra applicazione. Aggiungi i moduli trigger, di archiviazione e di follow-on appropriati allo scenario in base alle esigenze.
+* Attiva **[!UICONTROL Conferma tutte le azioni dello strumento]** solo per i prompt attendibili. Quando questa opzione è attivata, Collaboratore approva automaticamente le richieste di autorizzazione degli strumenti supportate e gli strumenti possono modificare o eliminare i dati.
 * Le risposte generate dall’intelligenza artificiale possono essere incomplete o imprecise. Convalida i risultati importanti prima di utilizzarli per apportare modifiche o prendere decisioni.
 * Il connettore non ritenta automaticamente una richiesta non riuscita. Assicurati che la gestione degli errori dello scenario non ripeta un prompt il cui risultato è incerto.
 
