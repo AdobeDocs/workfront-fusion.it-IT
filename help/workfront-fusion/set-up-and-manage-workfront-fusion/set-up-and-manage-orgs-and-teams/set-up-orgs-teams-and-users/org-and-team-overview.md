@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
+source-git-commit: bf67d1764395a48715cd8a5f665318857d0bdff1
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
@@ -89,8 +89,6 @@ Un utente ha uno dei seguenti ruoli in ciascuno dei propri team:
 Per informazioni sulle azioni specifiche disponibili per gli utenti in ogni ruolo del team, vedere [Ruoli organizzazione e team](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
 
 ### Ruoli di team personalizzati
-
-<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
 
 Oltre ai ruoli di team predefiniti, ogni team dispone di una scheda **[!UICONTROL Ruoli]** in cui è possibile creare ruoli personalizzati. È possibile creare, aggiornare ed eliminare ruoli e scegliere esattamente quali autorizzazioni includere in ogni ruolo. Non sei più limitato a un set fisso di ruoli.
 
