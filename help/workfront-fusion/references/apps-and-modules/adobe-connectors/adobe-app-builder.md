@@ -4,10 +4,10 @@ description: Il connettore App Builder di Adobe consente di utilizzare funzioni 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 16%
+source-wordcount: '787'
+ht-degree: 15%
 ---
 # Modulo Adobe App Builder
 
@@ -64,6 +64,8 @@ La connessione utilizza le credenziali Adobe I/O Runtime di un’area di lavoro 
 
 ### Creare la connessione
 
+Utilizza questi passaggi per connettere un progetto App Builder già esistente. Per i passaggi per utilizzare questa connessione per impostare funzioni personalizzate in Fusion, vedere [Connettere un progetto App Builder esistente](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
+
 1. Nel modulo, fai clic su **Aggiungi** accanto al campo **Connessione**.
 1. Compila i seguenti campi:
 
@@ -92,7 +94,7 @@ La connessione utilizza le credenziali Adobe I/O Runtime di un’area di lavoro 
       <td>Immettere la password dal valore <code>auth</code> dell'area di lavoro (la parte dopo i due punti).</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Spazio dei nomi </td> 
+      <td role="rowheader">Spazio dei nomi [!UICONTROL]</td> 
       <td>Immetti il valore <code>namespace</code> dalla sezione <code>runtime</code> del file di configurazione dell'area di lavoro.</td> 
      </tr> 
     </tbody> 
